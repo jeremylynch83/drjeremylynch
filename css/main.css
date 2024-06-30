@@ -32,10 +32,11 @@
                 height: 100%;
                 color: #777;
                 line-height: 1.8;
+                font-family: 'Roboto', sans-serif;
             }
             
             p {
-              font-family: "Lora", serif;
+              
                                 color:black;
 
 				font-size:14px!important;;
