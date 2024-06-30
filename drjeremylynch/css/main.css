@@ -1,0 +1,177 @@
+
+            body {
+				/*background-color: rgb(105, 107, 107);*/
+
+			}
+			
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                  font-family: 'Playfair Display', serif;
+                  color:black;
+            }
+            
+            h3 {
+				text-align:center!important;
+				letter-spacing:2px;
+				padding-top: 32px;
+				font-size:30px;				
+			}
+			
+			h4 {
+				text-align:center!important;
+
+			}
+
+            body,
+            html {
+                height: 100%;
+                color: #777;
+                line-height: 1.8;
+            }
+            
+            p {
+              font-family: "Lora", serif;
+                                color:black;
+
+				font-size:14px!important;;
+				text-align:left;
+			}
+
+            /* Create a Parallax Effect */
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* First image (Logo. Full height) */
+            .bgimg-1 {
+                min-height: 25%;
+                background-color: rgb(5, 8, 9);
+            }
+
+            /* Second image (Portfolio) */
+            .bgimg-2 {
+                background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+                min-height: 400px;
+				background-attachment: initial;
+            }
+
+            /* Third image (Contact) */
+            .bgimg-3 {
+                background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+                min-height: 400px;
+				background-attachment: initial;
+            }
+
+            .w3-wide {
+                letter-spacing: 10px;
+            }
+
+            .w3-hover-opacity {
+                cursor: pointer;
+            }
+            
+		.your-video-class {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+			transform: translate(-50%, -50%);
+			   filter: grayscale(20%);
+		}
+	
+		.main-title {
+
+			font-size:25px; 
+			letter-spacing:2px;
+	
+		}
+		
+		.letters {
+			font-size:20px; letter-spacing:4px
+		}
+		
+		.treatment {
+			padding: 10px;
+		}
+		
+		.picture-main {
+			margin-left: 50px; 
+			margin-right: 50px;
+		
+		}
+		
+		.picture-title {
+			text-align: center;
+			font-size: 25px;
+			font-family: 'Playfair Display', serif;
+			text-transform: uppercase;
+		}
+		
+
+    .fade {
+
+	  transition: opacity 0.3s ease-in;
+	}
+
+	.fadeOut {    }
+	.fadeIn {  }
+	
+	    select option {
+        padding: 5px;
+    }
+    
+    .degree-style {
+		width: 70%;
+    }
+
+            
+		@media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
+					.bgimg-1 {
+       				}
+				
+				.w3-xlarge {
+					font-size:12px!important; /* smaller padding for small screens */
+				}
+				.w3-medium {
+					font-size:9px!important; /* smaller padding for small screens */
+				}
+				h3 {
+					letter-spacing:3px!important;
+				}
+							
+					.w3-row {
+				flex-direction: column!important;
+				}
+				p {
+				font-size:18px;
+				}
+				
+				.letters {
+				font-size:8px; letter-spacing:2px
+				}
+				
+						.picture-main {
+			margin-left: 30px; 
+			margin-right: 30px;
+		}
+				
+						.picture-title {
+			text-align: center;
+			font-size: 25px;
+			font-family: 'Playfair Display', serif;
+			text-transform: uppercase;
+		}
+
+      
