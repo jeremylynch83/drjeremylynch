@@ -1,3 +1,72 @@
+# About {0} 
+
+## Biography
+
+Dr Jeremy Lynch MBHCB MRCS FRCR is a London-based Consultant Interventional Neuroradiologist. He has been an NHS doctor for 13 years and is experienced in the diagnosis and treatment of vascular diseases involving the brain, head and neck, and spine. Dr Lynch trained in Medicine at the University of Bristol and qualified in 2007. He underwent several years of surgical training, during which he gained membership of the Royal College of Surgeons. He then underwent further specialisation in interventional radiology and neuroradiology in a range of specialist hospitals in London including the National Hospital for Neurology and Neurosurgery, Great Ormond Street Hospital, Kings College Hospital, St George’s Hospital, and Queen’s Hospital. He underwent a further international fellowship in Toronto Western Hospital in Canada where he was one of the first doctors in the world to gain experience in robotic endovascular techniques. 
+
+Dr Lynch has published several academic book chapters and journal articles. He is a reviewer for Clinical Neuroradiology. His special interests include the role of new technologies including artificial intelligence in the diagnosis of neurovascular disease. He has been invited to lecture on interventional neuroradiology and neuroimaging in international conferences. He is the author of the popular neurointerventional educational website neurotool.org.
+
+## Training
+
+* International Fellowship Interventional Neuroradiology - Toronto Western Hospital (Ontario, Canada)
+
+* CCT Interventional Radiology (GMC registration)
+
+* Fellowship Interventional Neuroradiology - National Hospital for Neurology and Neurosurgery, Great Ormonds Street Hospital, Kings College Hospital, St George’s Hospital, and Queen’s Hospital (London)
+
+* Radiology/interventional Radiology Training Rotation - Chelsea and Westminster Hospital
+
+* Surgical Training Rotation - Kent, Surrey, and Sussex and Wessex Deaneries
+
+* FRCR - Royal College of Radiologists
+
+* MRCS - Royal College of Surgeons
+
+* Clinical Medicine - University of Bristol
+
+## Research
+
+* Sood A, Mansoor N, Memmi C, Lynch M, Lynch J. Generative pretrained transformer-4, an artificial intelligence text predictive model, has a high capability for passing novel written radiology exam questions. Int J Comput Assist Radiol Surg. 2024 Apr;19(4):645-653.
+* Pasarikovski CR, Lynch J, Corrin M, Ku JC, Kumar A, Pereira VM, Krings T, da Costa L, Black SE, Agid R, Yang VX. Carotid stenting for symptomatic carotid artery web: Multicenter experience. Interv Neuroradiol. 2024 Jan 17:15910199231226293. 
+* Benger, M., Wood, D., Kafiabadi, S., Al Busaidi, A., Guilhem, E., Lynch, J., Townend, M., Montvila, A., Siddiqui, J., Gadapa, N., Barker, G. J., Ourselin, S., Cole, J. H., & Booth, T. (Year). Factors affecting the labeling accuracy of brain MRI studies relevant for deep learning abnormality detection. Frontiers in Radiology, Neuroradiology. 
+* Hendriks EJ, Guardini F, Chung E, Lynch J, Krings T. Delayed foreshortening and prolapse of Silk Vista Baby into superior cerebellar artery aneurysm. World Neurosurg. 2023 Oct 11:S1878-8750(23)01430-4. 
+* Booth TC, Bassiouny A, Lynch J, Sonwalkar H, Bleakley A, Iqbal A, Minett T, Buwanabala J, Narata AP, Patankar T, Islim FI, Kandasamy N, Balasundaram P, Sciacca S, Siddiqui J, Walsh D, Tolias C, Kailaya-Vasan A, Sultan AA, Abd El-Latif M, Mortimer A, Sastry A. Outcome study of the Pipeline Vantage Embolization Device (second version) in unruptured (and ruptured) aneurysms (PEDVU(R) study). J Neurointerv Surg. 2023 Dec 9:jnis-2023-020754. 
+* Sciacca S, Bassiouny A, Mansoor N, Minett T, Balasundaram P, Siddiqui J, Joshi Y, Derakhshani S, Kandasamy N, Booth TC, Lynch J. Early Outcomes of the Pipeline Vantage Flow Diverter : A Multicentre Study. Clin Neuroradiol. 2023 Jun 28. doi: 10.1007/s00062-023-01314-x. Epub ahead of print. PMID: 37378843. 
+* Batur H, Lynch J, Sayin B, Derakhshani S, Akmangit I, Daglioglu E, Arat A. Utility of flow diverters in treatment of acutely ruptured uncoilable aneurysms of the posterior circulation of the brain. Jpn J Radiol. 2023 Mar 15. 
+* Dhillon, Permesh Singh; Butt, Waleed; Podlasek, Anna; Bhogal, Pervinder; McConachie, Norman; Lenthall, Robert; Nair, Sujit; Malik, Luqman; Lynch, Jeremy; Goddard, Tony; Barrett, Emma; Krishnan, Kailash; Dineen, Robert A .; England, Timothy J. Effect of proximal blood flow arrest during endovascular thrombectomy (ProFATE): Study protocol for a multicentre randomised controlled trial. European Stroke Journal. 2023;0(0). 
+* Vollherbst DF, Cekirge HS, Saatci I, Baltacioglu F, Onal B, Koc O, Rautio R, Sinisalo M, Tomasello A, Vega P, Martínez-Galdámez M, Lynch J, Mendes Pereira V, Bendszus M, Möhlenbruch MA. First clinical multicenter experience with the new Pipeline Vantage flow diverter. J Neurointerv Surg. 2022 Feb 16:neurintsurg-2021-018480. 
+* Wood DA, Kafiabadi S, Al Busaidi A, Guilhem EL, Lynch J, Townend MK, Montvila A, Kiik M, Siddiqui J, Gadapa N, Benger MD, Mazumder A, Barker G, Ourselin S, Cole JH, Booth TC. Deep learning to automate the labelling of head MRI datasets for computer vision applications. Eur Radiol. 2022 Jan;32(1):725-736. 
+* Wood DA, Kafiabadi S, Busaidi AA, Guilhem E, Montvila A, Lynch J, Townend M, Agarwal S, Mazumder A, Barker GJ, Ourselin S, Cole JH, Booth TC. Accurate brain-age models for routine clinical MRI examinations. Neuroimage. 2022 Jan 5;249:118871. 
+* Martínez-Galdámez M, Onal Y, Cohen JE, Kalousek V, Rivera R, Sordo JG, Echeverria D, Pereira VM, Blasco J, Mardighian D, Velioglu M, van Adel B, Wang BH, Gomori JM, Filioglo A, Čulo B, Lynch J, Binboga AB, Onay M, Galvan Fernandez J, Schüller Arteaga M, Guio JD, Bhogal P, Makalanda L, Wong K, Aggour M, Gentric JC, Gavrilovic V, Navia P, Fernandez Prieto A, González E, Aldea J, López JL, Lorenzo-Gorriz A, Madelrieux T, Rouchaud A, Mounayer C. First multicenter experience using the Silk Vista flow diverter in 60 consecutive intracranial aneurysms: technical aspects. J Neurointerv Surg. 2021 Dec;13(12):1145-1151. 
+* Crinnion W, Jackson B, Sood A, Lynch J, Bergeles C, Liu H, Rhode K, Mendes Pereira V, Booth TC. Robotics in neurointerventional surgery: a systematic review of the literature. J Neurointerv Surg. 2021 Nov 19:neurintsurg-2021-018096. 
+* Wood DA, Kafiabadi S, Busaidi AA, Guilhem E, Montvila A, Lynch J, Townend M, Agarwal S, Mazumder A, Barker GJ, Ourselin S, Cole JH, Booth TC. Deep learning models for triaging hospital head MRI examinations. Med Image Anal. 2022 May;78:102391. 
+* Eef J Hendriks, Lynch J, Saravana Kumar Swaminathan, Patrick Nicholson, Ronit Agid, Ivan Radovanovic, Vitor M Pereira, Karel terBrugge1, Timo Krings. Embolization Strategies for Intracranial Dural Arteriovenous Fistulas with an Isolated Sinus: a Single-Center Experience in 20 Patients. J Neurointerv Surg. 2021 Jun 3;neurintsurg-2021-017652. 
+* Cancelliere NM, Lynch J, Nicholson P, Dobrocky T, Swaminathan SK, Hendriks EJ, Krings T, Radovanovic I, Drake KE, Turner R, Sungur JM, Pereira VM. Robotic-assisted intracranial aneurysm treatment: 1 year follow-up imaging and clinical outcomes. J Neurointerv Surg. 2021 Dec 15:neurintsurg-2021-017865. 
+* Zeleňák K, Krajina A, Meyer L, Fiehler J, Esmint Artificial Intelligence And Robotics Ad Hoc Committee, Behme D, Bulja D, Caroff J, Chotai AA, Da Ros V, Gentric JC, Hofmeister J, Kass-Hout O, Kocatürk Ö, Lynch J, Pearson E, Vukasinovic I.How to Improve the Management of Acute Ischemic Stroke by Modern Technologies, Artificial Intelligence, and New Treatment Methods. Life (Basel, Switzerland). 2021 May;11(6).
+* Dobrocky T, Lee H, Nicholson P, Agid R, Lynch J, Swaminathan SK, Krings T, Radovanovic I, Pereira VM. When Two Is Better than One : The Buddy-wire Technique in Flow-diversion Procedures. Clin Neuroradiol. 2021 Jul 8. 
+* Lynch J, Sciacca S, Siddiqui J, Kanagarajah L, Derakhshani S. Safety and Efficacy of the Neuroform Atlas Stent for Treatment of Intracranial Aneurysms : A Systematic Review and Meta-Analysis. Clin Neuroradiol. 2021 Dec;31(4):1167-1180. 
+* Dobrocky T, Piechowiak EI, Goldberg J, Barvulsky Aleman E, Nicholson P, Lynch J, Bervini D, Kaesmacher J, Agid R, Krings T, Raabe A, Gralla J, Pereira VM, Mordasini P. Absence of pontine perforators in vertebrobasilar dolichoectasia on ultra-high resolution cone-beam computed tomography. J Neurointerv Surg. 2021 Jun;13(6):580-584. 
+* Wood DA, Kafiabadi S, Al Busaidi A, Guilhem E, Lynch J, Townend M, Montvila A,Siddiqui J, Gadapa N, Benger M, Barker G, Ourselin S, Cole JH, Booth T.C. Labelling imaging datasets on the basis of neuroradiology reports: a validation study. 
+* Wood, David A.; Lynch, Jeremy; Kafiabadi, Sina; Guilhem, Emily; Al Busaidi, Aisha; Montvila, Antanas; Varsavsky, Thomas; Siddiqui, Juveria; Gadapa, Naveen; Townend, Matthew; Kiik, Martin; Patel, Keena; Barker, Gareth; Ourselin, Sebastian; Cole, James H.; Booth, Thomas C. Automated Labelling using an Attention model for Radiology reports of MRI scans (ALARM). February 2020 . 
+* D. Atasoy, N. Kandasamy, J. Hart, J. Lynch, S.-H. Yang, D. Walsh, C. Tolias and T.C. Booth. Outcome Study of the Pipeline Embolization Device with Shield Technology in Unruptured Aneurysms (PEDSU). American Journal of Neuroradiology December 2019, 40 (12) 2094-2101
+* Sciacca S, Lynch J, Dagnanam I. Barker RP. Midbrain, pons and medulla anatomy and syndromes – an attempt to (brain)stem the rising tide of uncertainty. RadioGraphics.
+* Lynch J, Carlton L. The Apparently Normal CT Head: A review of some of the most commonly encountered missed pathologies. Rad Magazine. 01/01/2019
+* Lynch J, Parameswaran R. Management of Unilateral Recurrent Laryngeal Nerve Injury after Thyroid Surgery: A review. Head & Neck. 2017 Apr 3. 
+* Shelmerdine S, Lynch J, Arthurs OJ. Presentation to Publication: Abstract to Publication Ratios for ESPR, SPR and IPR. Pediatric Radiology 2016 Sep 13;46(10):1371-7
+* Lynch J, Cox A, Vasdev N, Patel A. Bilateral Obstruction of Bilaterally Duplicated Collecting Systems Requiring Upper and Lower Moiety Drainage. Ann R Coll Surg Engl. 2016 Apr;98(4)
+* Craciun H, Mankad K, Lynch J. Risk management in radiology departments. World J Radiol 2015. June 28; 7(6): 00-00
+* S Shelmerdine, S Ameli-Renani, Lynch J, M Gonsalves. Transarterial catheter embolisation for an unusual cause of upper gastrointestinal haemorrhage. BMJ Case Reports. 2015 May 28;2015
+* Shelmerdine SC, Lynch J. Smartphone applications in paediatric radiology: availability and authority. Pediatr Radiol. 2015 Aug;45(9):1293-302. 
+* Lynch J, Montgomery M, Shelmerdine S, Taylor J, Singh S. Ruptured Aneurysm of an Aberrant Left Hepatic Artery: A Case Report. BMJ Case Rep. 2013 Nov 5;2013
+* Lynch J, Belgaumkar A. Bariatric Surgery is Effective and Safe in Patients Over 55: A Systematic Review and Meta-Analysis. Obesity Surgery. 2012 Sep;22(9):1507-16.
+* Hashim B, Lynch J, Gywali P. An audit into anticoagulation and junior doctor education. Journal of Clinical Audits 2012. 4:2
+* Lynch J, Etkind S. Spontaneous Liver Haematoma as a Result of Thrombolytic Therapy. Grand Rounds Journal. 2010. 10:1-4
+* Lynch J, Aughwane P, Hammond TM. Video Games And Surgical Ability: A Literature Review. Journal of Surgical Education. May-Jun 2010;67(3):184-9.
+
+# Interventional neuroradiology {0} 
+
+Interventional neuroradiology (otherwise known as neurointerventional radiology or endovascular neurosurgery) is a medical specialty that deals with minimally invasive treatments for diseases of the brain and spine involving blood vessels. Common conditions that are treated include brain aneurysms, strokes, carotid stenosis, and brain tumour embolisation. 
+
 #  Introduction to brain aneurysms {1}
 
 ## What is an aneurysm?
@@ -289,75 +358,555 @@ However, in skilled hands, surgical clipping can provide a solution for many typ
 
 * [DrBulletin](https://www.drbulletin.com/): The latest medical research news for a range of subjects including neurointervention and neurosurgery. 
 
+#  Introduction to AVMs {2}
 
-# About {3} 
 
-## Biography
+A brain arteriovenous malformation (AVM) is a complex, abnormal network of blood vessels in the brain. In a healthy brain, blood circulates from arteries to veins via tiny vessels called capillaries. The capillaries allow for the exchange of oxygen and nutrients from the blood to the brain tissue, and the removal of waste products. However, in a brain AVM, direct connections form between the arteries and veins, bypassing these capillaries. This abnormality can disrupt normal blood flow and oxygen circulation. 
 
-Dr Jeremy Lynch MBHCB MRCS FRCR is a London-based Consultant Interventional Neuroradiologist. He has been an NHS doctor for 13 years and is experienced in the diagnosis and treatment of vascular diseases involving the brain, head and neck, and spine. Dr Lynch trained in Medicine at the University of Bristol and qualified in 2007. He underwent several years of surgical training, during which he gained membership of the Royal College of Surgeons. He then underwent further specialisation in interventional radiology and neuroradiology in a range of specialist hospitals in London including the National Hospital for Neurology and Neurosurgery, Great Ormond Street Hospital, Kings College Hospital, St George’s Hospital, and Queen’s Hospital. He underwent a further international fellowship in Toronto Western Hospital in Canada where he was one of the first doctors in the world to gain experience in robotic endovascular techniques. 
+<div class="responsive-image">
+{{< figure src="/img/avm.svg">}}
+</div>
 
-Dr Lynch has published several academic book chapters and journal articles. He is a reviewer for Clinical Neuroradiology. His special interests include the role of new technologies including artificial intelligence in the diagnosis of neurovascular disease. He has been invited to lecture on interventional neuroradiology and neuroimaging in international conferences. He is the author of the popular neurointerventional educational website neurotool.org.
 
-## Training
+Whilst AVMs may lead to health problems, many do not cause any problems and can be left alone without treatment. 
 
-* International Fellowship Interventional Neuroradiology - Toronto Western Hospital (Ontario, Canada)
+The most frequently observed problems related to a cerebral AVM are headaches and seizures. These headaches can vary in intensity and frequency, potentially mimicking migraines in some instances. Seizures may manifest in various ways, ranging from changes in a person's behavior or consciousness to involuntary movements or loss of control over movement. In serious cases, the abnormal blood vessels in an AVM may rupture, causing bleeding within the brain (intracranial haemorrhage). Bleeding from a ruptured AVM can cause a sudden, severe headache, nausea, vomiting, incontinence, blurred vision, and even loss of consciousness. Depending on the location of the bleed, impairments caused by local brain tissue damage are also possible, including seizure, weakness on one side of the body (hemiparesis), a loss of touch sensation on one side of the body, and deficits in language processing (aphasia).
 
-* CCT Interventional Radiology (GMC registration)
+## Cause 
 
-* Fellowship Interventional Neuroradiology - National Hospital for Neurology and Neurosurgery, Great Ormonds Street Hospital, Kings College Hospital, St George’s Hospital, and Queen’s Hospital (London)
+The exact cause of brain AVMs is not fully understood, but they are most commonly believed to originate before birth. They may grow over time or remain static in size. 
 
-* Radiology/interventional Radiology Training Rotation - Chelsea and Westminster Hospital
+## Epidemiology of Brain AVMs
 
-* Surgical Training Rotation - Kent, Surrey, and Sussex and Wessex Deaneries
+Brain AVMs are relatively rare, with an estimated annual detection rate of around 1 per 100,000 people. The prevalence in adults is approximately 18 per 100,000.
 
-* FRCR - Royal College of Radiologists
+AVMs seem to occur more often in males than females. However, symptoms may start or worsen in females during pregnancy due to the increased blood flow and volume. There is also a significant occurrence (15-20%) of AVMs in patients with hereditary hemorrhagic telangiectasia, also known as Osler-Weber-Rendu syndrome, which is a genetic disorder that leads to abnormal blood vessel formation.
 
-* MRCS - Royal College of Surgeons
 
-* Clinical Medicine - University of Bristol
 
-## Research
 
-* Sood A, Mansoor N, Memmi C, Lynch M, Lynch J. Generative pretrained transformer-4, an artificial intelligence text predictive model, has a high capability for passing novel written radiology exam questions. Int J Comput Assist Radiol Surg. 2024 Apr;19(4):645-653.
-* Pasarikovski CR, Lynch J, Corrin M, Ku JC, Kumar A, Pereira VM, Krings T, da Costa L, Black SE, Agid R, Yang VX. Carotid stenting for symptomatic carotid artery web: Multicenter experience. Interv Neuroradiol. 2024 Jan 17:15910199231226293. 
-* Benger, M., Wood, D., Kafiabadi, S., Al Busaidi, A., Guilhem, E., Lynch, J., Townend, M., Montvila, A., Siddiqui, J., Gadapa, N., Barker, G. J., Ourselin, S., Cole, J. H., & Booth, T. (Year). Factors affecting the labeling accuracy of brain MRI studies relevant for deep learning abnormality detection. Frontiers in Radiology, Neuroradiology. 
-* Hendriks EJ, Guardini F, Chung E, Lynch J, Krings T. Delayed foreshortening and prolapse of Silk Vista Baby into superior cerebellar artery aneurysm. World Neurosurg. 2023 Oct 11:S1878-8750(23)01430-4. 
-* Booth TC, Bassiouny A, Lynch J, Sonwalkar H, Bleakley A, Iqbal A, Minett T, Buwanabala J, Narata AP, Patankar T, Islim FI, Kandasamy N, Balasundaram P, Sciacca S, Siddiqui J, Walsh D, Tolias C, Kailaya-Vasan A, Sultan AA, Abd El-Latif M, Mortimer A, Sastry A. Outcome study of the Pipeline Vantage Embolization Device (second version) in unruptured (and ruptured) aneurysms (PEDVU(R) study). J Neurointerv Surg. 2023 Dec 9:jnis-2023-020754. 
-* Sciacca S, Bassiouny A, Mansoor N, Minett T, Balasundaram P, Siddiqui J, Joshi Y, Derakhshani S, Kandasamy N, Booth TC, Lynch J. Early Outcomes of the Pipeline Vantage Flow Diverter : A Multicentre Study. Clin Neuroradiol. 2023 Jun 28. doi: 10.1007/s00062-023-01314-x. Epub ahead of print. PMID: 37378843. 
-* Batur H, Lynch J, Sayin B, Derakhshani S, Akmangit I, Daglioglu E, Arat A. Utility of flow diverters in treatment of acutely ruptured uncoilable aneurysms of the posterior circulation of the brain. Jpn J Radiol. 2023 Mar 15. 
-* Dhillon, Permesh Singh; Butt, Waleed; Podlasek, Anna; Bhogal, Pervinder; McConachie, Norman; Lenthall, Robert; Nair, Sujit; Malik, Luqman; Lynch, Jeremy; Goddard, Tony; Barrett, Emma; Krishnan, Kailash; Dineen, Robert A .; England, Timothy J. Effect of proximal blood flow arrest during endovascular thrombectomy (ProFATE): Study protocol for a multicentre randomised controlled trial. European Stroke Journal. 2023;0(0). 
-* Vollherbst DF, Cekirge HS, Saatci I, Baltacioglu F, Onal B, Koc O, Rautio R, Sinisalo M, Tomasello A, Vega P, Martínez-Galdámez M, Lynch J, Mendes Pereira V, Bendszus M, Möhlenbruch MA. First clinical multicenter experience with the new Pipeline Vantage flow diverter. J Neurointerv Surg. 2022 Feb 16:neurintsurg-2021-018480. 
-* Wood DA, Kafiabadi S, Al Busaidi A, Guilhem EL, Lynch J, Townend MK, Montvila A, Kiik M, Siddiqui J, Gadapa N, Benger MD, Mazumder A, Barker G, Ourselin S, Cole JH, Booth TC. Deep learning to automate the labelling of head MRI datasets for computer vision applications. Eur Radiol. 2022 Jan;32(1):725-736. 
-* Wood DA, Kafiabadi S, Busaidi AA, Guilhem E, Montvila A, Lynch J, Townend M, Agarwal S, Mazumder A, Barker GJ, Ourselin S, Cole JH, Booth TC. Accurate brain-age models for routine clinical MRI examinations. Neuroimage. 2022 Jan 5;249:118871. 
-* Martínez-Galdámez M, Onal Y, Cohen JE, Kalousek V, Rivera R, Sordo JG, Echeverria D, Pereira VM, Blasco J, Mardighian D, Velioglu M, van Adel B, Wang BH, Gomori JM, Filioglo A, Čulo B, Lynch J, Binboga AB, Onay M, Galvan Fernandez J, Schüller Arteaga M, Guio JD, Bhogal P, Makalanda L, Wong K, Aggour M, Gentric JC, Gavrilovic V, Navia P, Fernandez Prieto A, González E, Aldea J, López JL, Lorenzo-Gorriz A, Madelrieux T, Rouchaud A, Mounayer C. First multicenter experience using the Silk Vista flow diverter in 60 consecutive intracranial aneurysms: technical aspects. J Neurointerv Surg. 2021 Dec;13(12):1145-1151. 
-* Crinnion W, Jackson B, Sood A, Lynch J, Bergeles C, Liu H, Rhode K, Mendes Pereira V, Booth TC. Robotics in neurointerventional surgery: a systematic review of the literature. J Neurointerv Surg. 2021 Nov 19:neurintsurg-2021-018096. 
-* Wood DA, Kafiabadi S, Busaidi AA, Guilhem E, Montvila A, Lynch J, Townend M, Agarwal S, Mazumder A, Barker GJ, Ourselin S, Cole JH, Booth TC. Deep learning models for triaging hospital head MRI examinations. Med Image Anal. 2022 May;78:102391. 
-* Eef J Hendriks, Lynch J, Saravana Kumar Swaminathan, Patrick Nicholson, Ronit Agid, Ivan Radovanovic, Vitor M Pereira, Karel terBrugge1, Timo Krings. Embolization Strategies for Intracranial Dural Arteriovenous Fistulas with an Isolated Sinus: a Single-Center Experience in 20 Patients. J Neurointerv Surg. 2021 Jun 3;neurintsurg-2021-017652. 
-* Cancelliere NM, Lynch J, Nicholson P, Dobrocky T, Swaminathan SK, Hendriks EJ, Krings T, Radovanovic I, Drake KE, Turner R, Sungur JM, Pereira VM. Robotic-assisted intracranial aneurysm treatment: 1 year follow-up imaging and clinical outcomes. J Neurointerv Surg. 2021 Dec 15:neurintsurg-2021-017865. 
-* Zeleňák K, Krajina A, Meyer L, Fiehler J, Esmint Artificial Intelligence And Robotics Ad Hoc Committee, Behme D, Bulja D, Caroff J, Chotai AA, Da Ros V, Gentric JC, Hofmeister J, Kass-Hout O, Kocatürk Ö, Lynch J, Pearson E, Vukasinovic I.How to Improve the Management of Acute Ischemic Stroke by Modern Technologies, Artificial Intelligence, and New Treatment Methods. Life (Basel, Switzerland). 2021 May;11(6).
-* Dobrocky T, Lee H, Nicholson P, Agid R, Lynch J, Swaminathan SK, Krings T, Radovanovic I, Pereira VM. When Two Is Better than One : The Buddy-wire Technique in Flow-diversion Procedures. Clin Neuroradiol. 2021 Jul 8. 
-* Lynch J, Sciacca S, Siddiqui J, Kanagarajah L, Derakhshani S. Safety and Efficacy of the Neuroform Atlas Stent for Treatment of Intracranial Aneurysms : A Systematic Review and Meta-Analysis. Clin Neuroradiol. 2021 Dec;31(4):1167-1180. 
-* Dobrocky T, Piechowiak EI, Goldberg J, Barvulsky Aleman E, Nicholson P, Lynch J, Bervini D, Kaesmacher J, Agid R, Krings T, Raabe A, Gralla J, Pereira VM, Mordasini P. Absence of pontine perforators in vertebrobasilar dolichoectasia on ultra-high resolution cone-beam computed tomography. J Neurointerv Surg. 2021 Jun;13(6):580-584. 
-* Wood DA, Kafiabadi S, Al Busaidi A, Guilhem E, Lynch J, Townend M, Montvila A,Siddiqui J, Gadapa N, Benger M, Barker G, Ourselin S, Cole JH, Booth T.C. Labelling imaging datasets on the basis of neuroradiology reports: a validation study. 
-* Wood, David A.; Lynch, Jeremy; Kafiabadi, Sina; Guilhem, Emily; Al Busaidi, Aisha; Montvila, Antanas; Varsavsky, Thomas; Siddiqui, Juveria; Gadapa, Naveen; Townend, Matthew; Kiik, Martin; Patel, Keena; Barker, Gareth; Ourselin, Sebastian; Cole, James H.; Booth, Thomas C. Automated Labelling using an Attention model for Radiology reports of MRI scans (ALARM). February 2020 . 
-* D. Atasoy, N. Kandasamy, J. Hart, J. Lynch, S.-H. Yang, D. Walsh, C. Tolias and T.C. Booth. Outcome Study of the Pipeline Embolization Device with Shield Technology in Unruptured Aneurysms (PEDSU). American Journal of Neuroradiology December 2019, 40 (12) 2094-2101
-* Sciacca S, Lynch J, Dagnanam I. Barker RP. Midbrain, pons and medulla anatomy and syndromes – an attempt to (brain)stem the rising tide of uncertainty. RadioGraphics.
-* Lynch J, Carlton L. The Apparently Normal CT Head: A review of some of the most commonly encountered missed pathologies. Rad Magazine. 01/01/2019
-* Lynch J, Parameswaran R. Management of Unilateral Recurrent Laryngeal Nerve Injury after Thyroid Surgery: A review. Head & Neck. 2017 Apr 3. 
-* Shelmerdine S, Lynch J, Arthurs OJ. Presentation to Publication: Abstract to Publication Ratios for ESPR, SPR and IPR. Pediatric Radiology 2016 Sep 13;46(10):1371-7
-* Lynch J, Cox A, Vasdev N, Patel A. Bilateral Obstruction of Bilaterally Duplicated Collecting Systems Requiring Upper and Lower Moiety Drainage. Ann R Coll Surg Engl. 2016 Apr;98(4)
-* Craciun H, Mankad K, Lynch J. Risk management in radiology departments. World J Radiol 2015. June 28; 7(6): 00-00
-* S Shelmerdine, S Ameli-Renani, Lynch J, M Gonsalves. Transarterial catheter embolisation for an unusual cause of upper gastrointestinal haemorrhage. BMJ Case Reports. 2015 May 28;2015
-* Shelmerdine SC, Lynch J. Smartphone applications in paediatric radiology: availability and authority. Pediatr Radiol. 2015 Aug;45(9):1293-302. 
-* Lynch J, Montgomery M, Shelmerdine S, Taylor J, Singh S. Ruptured Aneurysm of an Aberrant Left Hepatic Artery: A Case Report. BMJ Case Rep. 2013 Nov 5;2013
-* Lynch J, Belgaumkar A. Bariatric Surgery is Effective and Safe in Patients Over 55: A Systematic Review and Meta-Analysis. Obesity Surgery. 2012 Sep;22(9):1507-16.
-* Hashim B, Lynch J, Gywali P. An audit into anticoagulation and junior doctor education. Journal of Clinical Audits 2012. 4:2
-* Lynch J, Etkind S. Spontaneous Liver Haematoma as a Result of Thrombolytic Therapy. Grand Rounds Journal. 2010. 10:1-4
-* Lynch J, Aughwane P, Hammond TM. Video Games And Surgical Ability: A Literature Review. Journal of Surgical Education. May-Jun 2010;67(3):184-9.
+## Prognosis of Brain AVMs
 
-# Interventional neuroradiology {3} 
+The main risk associated with brain arteriovenous malformations (AVMs) is intracranial hemorrhage, which is bleeding inside the skull. This risk varies among patients and is difficult to measure because many patients with AVMs don't show symptoms and therefore never seek medical attention.
 
-Interventional neuroradiology (otherwise known as neurointerventional radiology or endovascular neurosurgery) is a medical specialty that deals with minimally invasive treatments for diseases of the brain and spine involving blood vessels. Common conditions that are treated include brain aneurysms, strokes, carotid stenosis, and brain tumour embolisation. 
+The earlier in life an AVM appears, the greater the likelihood of experiencing a haemorrhage over one's lifetime. Ruptured AVMs can lead to serious health complications. Ruptures may cause loss of life or permanent disability. 
+
+#  Symptoms of AVMs {2}
+
+Brain and spine arteriovenous malformations (AVMs) are abnormal tangles of blood vessels consisting of connections between the arteries and veins. They often do not cause any clinical problems until they rupture. AVMs can cause symptoms either by bleeding (rupturing), pressing on the brain or spinal cord, or by reducing the amount of oxygen reaching the brain tissue. 
+
+Symptoms might include the following: 
+
+## Bleeding
+
+Brain AVMs may cause bleeding into the brain (haemorrhage), causing sudden, severe headaches, confusion, nausea, vomiting, and may lead to a loss of consciousness. 
+
+
+## Seizures
+
+Seizures are a sudden, uncontrolled electrical disturbance in the brain that can cause changes in behavior, movements, feelings, and levels of consciousness. They can range in severity, from virtually undetectable periods of inattention or staring to full-blown convulsions. 
+
+Seizures can be categorized into focal (partial) and generalized (total) seizures:
+
+1. **Focal (Partial) Seizures**: These seizures appear to result from abnormal activity in just one part of the brain. Focal seizures can occur without a loss of consciousness or with a change in consciousness. Symptoms might include sudden, jerky movements of one part of the body, distortions in hearing or seeing, stomach discomfort, or a sudden sense of fear. These seizures can also progress to a loss of consciousness and convulsions, a progression known as a focal-to-bilateral tonic-clonic seizure.
+
+2. **Generalized (Total) Seizures**: These seizures involve all areas of the brain. They can cause a loss of consciousness, falls, muscle spasms, or convulsions. Generalized seizures are further categorized into several types including absence (formerly known as petit mal), tonic-clonic (formerly known as grand mal), atonic, and myoclonic seizures.
+
+Convulsions refer to repeated, uncontrolled body movements. These are often seen in tonic-clonic seizures where the person may stiffen and have jerking muscle activity. The person may also lose consciousness. Finally, a person's "level of consciousness" refers to their awareness of themselves and their environment. Changes in a person's level of consciousness include being fully awake, responsive, unresponsive, or anything in between.
+
+In the context of AVMs, these symptoms can result from the AVM disrupting the normal electrical activity of the brain. 
+
+
+## Neurological Symptoms
+
+ These depend on the location of the AVM and can include muscle weakness or paralysis in one part of the body, a loss of coordination (ataxia) that can lead to such problems as gait disturbances, difficulties carrying out tasks that require planning, memory deficits, dizziness, visual disturbances such as a loss of part of the visual field, difficulties with speech (dysarthria), and abnormal sensations such as numbness, tingling, or spontaneous pain (paresthesia or dysesthesia).
+
+
+#  Diagnosis of AVMs {2}
+
+There are three primary imaging techniques used in the diagnosis and investigation of brain AVMs: computed tomography (CT), magnetic resonance imaging (MRI), and cerebral angiography.
+
+**Computed Tomography (CT)**
+
+A CT scan is usually the initial imaging study performed when a patient is symptomatic. A CT scan is a type of X-ray that produces detailed cross-sectional images of the brain. It can suggest the approximate site of a bleed if one has occurred. 
+
+For a more detailed view, a computerized tomography angiogram (CTA) may be performed. In a CTA, a contrast agent (a type of dye) is injected into the patient's bloodstream. The contrast agent helps to illuminate the blood vessels on the CT scan, providing a more detailed view of the AVM's structure.
+
+**Magnetic Resonance Imaging (MRI)**
+
+MRI is more sensitive than CT in diagnosing AVMs and provides better information about the exact location of the malformation. MRI uses a powerful magnetic field and radio waves to create detailed images of the brain and other structures. An MRI can provide a clear, detailed view of the brain's soft tissues, making it particularly useful in imaging AVMs. For even more detailed imaging, a magnetic resonance angiogram (MRA) can be performed, similar to a CTA, a contrast agent is injected into the bloodstream to highlight the blood vessels.
+
+**Cerebral Angiography**
+
+Cerebral angiography, sometimes also called a cerebral arteriogram, provides the most detailed images of a cerebral AVM. This procedure involves threading a catheter (a thin, flexible tube) through an artery in the arm or leg up to the arteries in the head. A contrast agent is then injected through the catheter. As the contrast agent flows through the blood vessels of the brain, a sequence of X-ray images are taken. These images can provide a highly detailed view of the AVM, showing the exact location, size, and the blood flow pattern.
+
+
+#  Treatment of AVMs {2}
+
+The treatment of brain arteriovenous malformations (AVMs) depends on several factors, including the AVM's location and size, and whether it has caused bleeding.
+
+**Medical Treatment**
+
+Anticonvulsant medications, such as phenytoin, are used to control seizures. Other medications or procedures can be employed to relieve pressure inside the skull caused by the AVM. Curative treatment may be required eventually to prevent  hemorrhage. However, all interventions come with some risk of causing neurological deficits.
+
+**Surgical Treatment**
+
+Surgical removal of the involved blood vessels is a preferred treatment for many types of AVMs. In this procedure, a neurosurgeon temporarily removes part of the skull (craniotomy), separates the AVM from the surrounding brain tissue, and removes (resects) the abnormal vessels. This method can result in an immediate, complete removal of the AVM, but the risks depend on the size and location of the malformation. Not all AVMs are suitable for surgical treatment, and the decision depends on several factors, including the AVM's size, location, and the patient's overall health status.
+
+**Radiosurgical Treatment**
+
+Radiosurgery, such as Gamma Knife therapy, can successfully treat small and medium sized AVMs. This method precisely delivers controlled radiation doses to the AVM area in the brain. While radiosurgery does not require an incision or craniotomy, it may take three or more years to fully know the treatment's effects, during which time there's still a risk of bleeding. Some patients may need repeat treatments. Radiosurgery can also have risks such as headache, seizures, or permanent neurological deficits. 
+
+**Neuroendovascular Therapy**
+
+Embolisation is a treatment approach performed by specialists known as interventional neuroradiologists. This procedure involves injecting substances into the blood vessels feeding the AVM to block them, reducing blood flow to the AVM. These substances are delivered via a catheter guided by real-time imaging. Embolisation is may be the primary therapy, or an additional treatment before surgery or radiosurgery to reduce the AVM size. 
+
+#  Further information {2}
+
+## United Kingdom
+
+* [The Butterfly AVM Charity](https://www.butterflyavmcharity.org.uk/): The first specific AVM charity in the UK.
+
+* [The Brain & Spine Foundation](https://www.brainandspine.org.uk/): The Brain & Spine Foundation provides professional information and support for neurological conditions affecting those living in the UK.
+
+* [Different Strokes](https://differentstrokes.co.uk/): Different Strokes is a UK based stroke charity run by younger stroke survivors for younger stroke survivors.
+
+* [National Stroke Association](https://www.stroke.org/): Provides resources on stroke prevention, treatment, and recovery, as well as resources for healthcare professionals and stroke survivors.
+
+
+
+## United States
+
+* [DrBulletin](https://www.drbulletin.com/): The latest medical research news for a range of subjects including neurointervention and neurosurgery. 
+
+# Introduction to DAVF {3}
+
+## What is a dural arteriovenous fistula? 
+
+A dural arteriovenous fistula (DAVF) is an abnormal connection between the arteries and veins of the brain. 
+
+Normally a fine network of microscopic capillaries connects arteries and veins in all tissues including the brain. Capillaries assist in slowing down the blood flow between arteries and veins. A DAVF is a tangle of feeding arteries and draining veins in the brain that have abnormal connections which bypass the normal capillaries. The word “dura” refers to the membrane covering the brain and spinal cord. The high pressure blood flowing from arteries directly into thinner walled draining veins or venous sinuses results in a risk of brain haemorrhage (bleeding). This abnormal blood flow between arteries and veins is called a shunt. DAVF can vary in size, between a few millimetres to several centimetres and can occur anywhere in the dura directly outside of the brain or spinal cord.
+
+<div class="responsive-image">
+{{< figure src="/img/davf.svg">}}
+</div>
+
+
+The cause of DAVF in a specific patient may not be always be discovers. In general they are not thought to be inherited from parents but instead caused by previous blood clots in the large draining veins of the brain (called venous thrombosis), head injuries, previous brain surgery, or brain infections. Some types of DAVF, termed "high-grade" fistulas, have a risk of bleeding into or around the brain which may have severe consequences. The risk is further increased following a previous bleed. Other types of fistula may have very little risk, termed "low-grade". Some patients have no symptoms and the DAVF is discovered incidentally on a CT or MRI scan. Nevertheless this does not mean that the DAVF carries no risk and further investigation is commonly [required](diagnosis). 
+
+# Symptoms of DAVF {3}
+
+A Dural Arteriovenous Fistula (DAVF) is an abnormal connection between an artery and a vein in the tough covering over the brain or spine (the dura). It is a rare, but serious condition.
+
+Not everyone with a Dural Arteriovenous Fistula will experience symptoms, and symptoms can vary based on the location and characteristics of the DAVF. The symptoms may develop gradually and subtly or can become suddenly apparent. If you experience any of these symptoms, especially the severe ones, it's important to seek immediate medical help.
+
+# Why do DAVF cause symptoms?
+
+Normally, blood flows from arteries to capillaries, then into veins. Arteries carry blood with a high amount of pressure from the heart, whereas veins carry blood back to the heart at a lower pressure. The capillaries are small, thin blood vessels in between, which act as a kind of 'buffer' system that slows down the flow of blood and allows for the exchange of nutrients and waste products between your blood and your body's cells.
+
+When a DAVF is present there is an abnormal direct connection between the high-pressure arteries and the low-pressure veins, bypassing the capillaries. This abnormal connection can cause high-pressure blood to flow directly into the veins, which are not designed to handle such high pressure. This increased pressure can dilate and even rupture the veins and small vessels around the DAVF, causing bleeding in or around the brain. 
+
+In addition, the high-pressure blood flow can cause the blood in the veins to flow in the wrong direction, a condition called venous reflux. This venous reflux can lead to the congestion of blood and reduction of blood flow to certain areas of the brain or spinal cord. Over time, this can result in tissue damage and loss of function in the affected areas, which can cause symptoms such as weakness, numbness, or even seizures.
+
+In addition, DAVFs can divert blood away from normal brain or spinal tissues. Because of this diversion, these areas may not receive enough oxygen and nutrients, which can cause various neurological symptoms.
+
+The specific symptoms a person experiences can depend on the location of the DAVF and the extent of blood flow disturbance it causes. For example, a DAVF located near the ear may lead to a symptom called pulsatile tinnitus, a whooshing or ringing noise in the ear that corresponds with the heartbeat.
+
+# Types of symptoms
+
+## Neurological symptoms
+
+* Headaches: Unusual or chronic headaches that are different from previous headaches in pattern and intensity.
+* Visual disturbances: This can include blurry vision, double vision, or loss of vision.
+* Problems with balance or coordination: Difficulty walking or clumsiness may be noticed.
+* Weakness or numbness: This is typically on one side of the body.
+
+## Auditory symptoms
+
+* Pulsatile tinnitus: This refers to a whooshing sound in the ears, typically in sync with the heartbeat.
+
+## Severe symptoms
+
+* Seizures: This is a sudden, uncontrolled electrical disturbance in the brain. It can cause changes in your behavior, movements or feelings, and in levels of consciousness. There are several types of seizures, but a typical, large, seizure consists of sudden collapse, loss of consciousness, and convulsions (body shaking rapidly and uncontrollably). 
+
+* Stroke-like symptoms: This can include difficulty speaking, facial drooping, or sudden onset of weakness on one side of the body.
+
+
+# Diagnosis of DAVF {3}
+
+Diagnosing a dural arteriovenous fistula (DAVF) is a step-by-step process that involves various tests and examinations. The goal is not only to confirm the presence of a DAVF, but also to understand its size, location, and the precise pattern of abnormal blood flow. This helps doctors formulate a suitable treatment plan.
+
+## Medical History and Physical Examination
+
+The first step in diagnosing a DAVF typically involves a thorough review of your medical history. Your doctor will ask you detailed questions about your symptoms, including their nature, duration, and severity. They may also ask you about your overall health, including any other medical conditions you may have and any medications you are currently taking.
+
+In addition, they might inquire about any history of trauma, infection, or surgery. This is because these factors can sometimes contribute to the development of a DAVF. For instance, a prior injury or surgery to the head might damage the blood vessels, leading to the abnormal connections seen in DAVFs. Similarly, certain infections can also affect the blood vessels in the dura.
+
+In the process of diagnosing a DAVF, understanding your symptoms plays a crucial role. The symptoms of a DAVF can vary greatly from person to person, depending on factors like the location of the fistula and the pattern of abnormal blood flow.
+
+Common symptoms that your doctor may ask about include:
+
+* **Headaches or neck pain**: These can range from mild to severe and might be the first noticeable sign of a DAVF.
+
+* **Pulsatile tinnitus**: This is a condition where you hear a rhythmic whooshing or humming sound in one or both of your ears. It is often caused by altered blood flow, such as that seen in a DAVF.
+
+* **Vision changes**: This could involve blurry vision, vision loss, or even double vision. These changes can occur if the DAVF affects the blood supply to your eyes.
+
+* **Neurological symptoms**: These can encompass a wide range of issues, from muscle weakness and balance difficulties to more severe problems like seizures or even stroke-like symptoms. These occur due to the altered blood flow in the brain.
+
+Following this, your doctor will carry out a physical examination. They will likely focus on your neurological health, looking for signs of issues such as muscle weakness, vision changes, or balance difficulties. This can involve testing your reflexes, assessing your sense of touch and pain, and examining your eyes, among other things. These checks are important because DAVFs can affect your neurological function due to the altered blood flow in your brain.
+
+## Imaging Tests
+
+Several types of imaging tests can help visualize the blood vessels in the brain and detect any abnormalities. These include:
+
+- **Magnetic Resonance Imaging (MRI):** An MRI is a non-invasive imaging technique that employs powerful magnets and radio waves to generate comprehensive images of the brain and spinal cord. These images can often highlight the presence of a DAVF or illustrate the impact it has on the brain or spinal cord. MRI can also be combined with angiography (MRA) to visualize blood vessels and the flow of blood, offering a detailed view of any abnormal vascular structures associated with DAVF.
+
+- **Computed Tomography (CT):** A CT scan uses X-ray technology to capture images from various angles, creating cross-sectional views of the brain. These can reveal abnormalities or changes in the brain that might be indicative of a DAVF. Additionally, a CT scan can be combined with angiography (CTA) to provide detailed images of the blood vessels, enhancing the visualization of a possible DAVF.
+
+- **Digital Subtraction Angiogram (DSA):** DSA is a more invasive procedure that is often used when other imaging tests are inconclusive or when precise details of the blood vessels are needed for treatment planning. In this test, a contrast dye is injected into your blood vessels through a catheter, usually inserted in your groin. As the dye travels through your vessels, a series of X-ray images are taken, which can provide a clear, detailed view of the blood flow and reveal the exact location and characteristics of a DAVF. While more involved and with more potential risks than other imaging studies, DSA is considered the "gold standard" for diagnosing DAVFs due to its high level of detail.
+
+# Treatment of DAVF {3}
+
+## How can endovascular treatment help?
+
+“Endovascular” means that access to the brain or surroundings is achieved by threading a very fine tube through your arteries. Embolisation is a way of blocking abnormal blood vessels and is usually carried out to prevent the DAVF from bleeding. This is done by injecting a special glue-like liquid into the DAVF to cut off the blood vessels supplying the fistula. 
+
+Endovascular treatment is performed by specialist doctors called interventional neuroradiologists (INRs)
+
+If the DAVF is particularly large or complex, an embolisation may be performed prior to further surgical excision (removal) of the lesion to reduce blood flow to the DAVF and ensure that further surgical treatment is safer. 
+
+
+## What are the risks of DAVF embolisation? 
+
+All treatments and procedures have risks associated with them. Risks may vary depending on the size, position, and configuration of the blood vessels. Rarely it is not possible to embolise a DAVF safely. 
+
+During the DAVF embolisation a contrast agent (iodine based) will be injected into the arteries. This allows for the doctor to visualise the blood vessels when an X-Ray is taken. Contrast agents are considered safe but have the potential to cause an allergic reaction. The department and team are well equipped to deal with reactions in the rare event of this happening. It is important that you contact the department as soon as possible before your procedure if you have reacted to an x-ray contrast agent before or have severe asthma and have been admitted to hospital with an asthma attack in the past year. The contrast agent is excreted through the kidneys and may affect the kidney function after the procedure. This is more common in patients with pre-existing kidney dysfunction and some patients will have a blood test to test the kidney function beforehand to ensure that it is safe to have contrast. The procedure will need to take place under a general anaesthetic. The anaesthetist will discuss the risks of general anaesthesia with you.
+
+
+DAVF embolisation may be a complex procedure. Serious complications are rare but possible:
+
+The procedure may cause a stroke, the risk varies but is in the range of approximately 5% (1 in 20 patients) in most cases. This may be caused by rupture of the aneurysm during treatment or occlusion of blood vessels. Strokes can take different forms but most commonly involve weakness in the arms or legs and difficulty with speech or vision. This may be temporary or permanent, mild or severe. There is a very rare risk of catastrophic brain injury resulting in death of approximately 1% (1 in 100 patients). 
+
+* The use of X-rays during any procedure results in a very small increase in the risk of developing cancer in the future. Very rarely there is temporary hair loss and skin reddening that may occur up to a few weeks after the procedure.. We make every effort to reduce radiation dose to as low as possible. 
+
+* We are required by law to ask patients of childbearing capacity between the ages of 12 and 55 years are required by law to be asked about the possibility of pregnancy when undergoing examinations involving x-ray. In the urgent case of a thrombectomy, the procedure will most likely still go ahead but with additional precautions in place. .
+
+* The small bruise at the place where the needle is inserted (usually the groin or wrist) may become large and uncomfortable and you may need more treatment, including surgery.
+
+
+## Are there any alternatives? 
+
+Surgical excision is an alternative. This involves making an incision in the skull (craniotomy) to allow the surgeon to access the DAVF. The feeding arteries and draining veins that remain in the brain are then clipped off. Surgery is a well established and effective treatment and can provide protection from DAVF rupture or haemorrhage. Surgical excision has its own specific risks and your neurosurgeon will discuss these in detail with you. 
+
+
+## What happens during the embolisation procedure? 
+
+The DAVF embolisation is performed while you are under a general anaesthetic. The anaesthetic team will put you to sleep prior to the procedure. The procedure is performed by your doctor in the angiography suite in the neuroradiology department and it usually takes between one and three hours. A dedicated team of radiologists, radiographers, anaesthetists, and nurses in the angiography suite will monitor you closely throughout the procedure. 
+
+Once the procedure has started your doctor will place a thin flexible plastic tube (catheter) into the femoral artery in the groin or artery in the wrist. The catheter then passes through the main artery in the body called the aorta and finally into the arteries in the neck and brain (cerebral arteries). When the most accessible feeding blood vessel is identified, further catheters (including a microcatheter) are placed inside the first catheter and into this artery and up to the point of the fistulous connection. Embolic material (glue-like) is then injected into this point to obliterate the DAVF. Occasionally small platinum coils will be used in addition. The embolic material creates an artificial blood clot and blocks further blood flowing into the DAVF. X-Rays are taken during the procedure to ensure the DAVF is obliterated. 
+
+After the procedure the catheters are removed and the blood vessel in the groin or wrist is sealed off with a collagen plug or manual compression to prevent bleeding.
+
+The procedure usually takes takes 2-3 hours.
+
+
+## Will it hurt? 
+
+The procedure is done under a general anaesthetic and therefore you should not feel any pain. Sometimes it can be uncomfortable around the wrist or groin access site afterwards, but usually this settles with simple analgesics.
+
+## What happens after the embolisation? 
+
+When you arrive on the ward you will need to stay in bed for a few hours to recover. During this time, the ward nurse will check you regularly, including looking at the site where you had the catheter put into your groin, to make sure there is no bleeding. If you do have bleeding, we will ask you to stay in bed resting a bit longer. You may have some bruising around your groin, which can be sore, but most people have little or no after effects. 
+
+# Introduction to spinal vascular disease {4}
+
+Spinal vascular malformations are uncommon conditions that involve abnormal connections between blood vessels in your spinal cord. They are essential to recognize because, if left undiagnosed and untreated, they can lead to serious complications. Symptoms can vary from person to person and can include pain, numbness, weakness, or difficulty moving your limbs. Bladder and bowel function can be impaired. The process of diagnosing these conditions is frequently prolonged due to the gradual onset of symptoms and limited awareness of the disease among non-expert practitioners. Radiological investigation can also be challenging as these conditions can resemble other non-vascular processes. 
+
+There are a number of different types.
+
+
+## Arteriovenous Fistulae
+
+Arteriovenous fistulae form when there is a direct connection between an artery and a vein, bypassing the capillaries. This abnormal shunting of blood can put additional pressure on your heart and blood vessels and can deprive tissues of the necessary oxygen and nutrients, leading to various symptoms such as pain or numbness.
+
+
+## Arteriovenous Malformations (AVMs)
+
+AVMs are a tangled web of arteries and veins with no capillaries in between. These abnormalities can disrupt normal blood flow and oxygen circulation, causing nearby tissues to suffer. Over time, these vessels can enlarge and rupture, leading to bleeding into the spinal cord. This can cause sudden pain and other neurological issues.
+
+
+## Cavernous Malformations
+
+Cavernous malformations, also known as cavernomas, are clusters of abnormal, tiny blood vessels and larger, dilated vessels filled with slow-moving blood. They can form anywhere in the body, but when they occur in the spinal cord, they can compress neural structures leading to pain, numbness, or weakness in your limbs.
+
+## Capillary Telangiectasia
+
+Capillary telangiectasia involves clusters of widened capillaries that do not have a normal vessel wall. While they are typically the least symptomatic of spinal vascular malformations, they can occasionally put pressure on the spinal cord, causing symptoms such as difficulty walking or loss of bowel or bladder control.
+
+# Symptoms of spinal vascular disease {4}
+
+The symptoms of spinal vascular malformations can widely vary from person to person. They are largely dependent on the location and severity of the malformation. Some individuals may not experience noticeable symptoms for many years, or even at all, while others may endure symptoms that severely disrupt daily activities or present life-threatening risks.
+
+These conditions typically present symptoms during early adulthood, but it's worth noting that a significant percentage of those diagnosed are under the age of 16.
+
+The onset of symptoms can either be abrupt or gradual. Common initial symptoms often include:
+
+   - Difficulty with walking or climbing stairs
+   - Unexpected numbness, tingling, or sudden pain in the legs
+   - Weakness affecting one or both sides of the body
+
+As the condition worsens, additional symptoms might manifest, such as:
+
+   - Sudden, severe back pain
+   - Loss of sensation in the legs
+   - Problems with urination or bowel movements
+   - Headaches
+   - A stiff neck
+   - Increased sensitivity to light
+
+Without timely and appropriate treatment, spinal vascular malformations can progressively lead to disability due to damage to the spinal cord and nearby tissues. Potential complications may include:
+
+   - Difficulties with movement (motor deficits)
+   - Pain, tingling sensations, and numbness (sensory deficits)
+   - Deformities of the spinal column
+   - Bulging of a blood vessel (aneurysm)
+   - Increased blood pressure in the veins (venous hypertension), which can cause fluid accumulation (edema) and tissue death from lack of oxygen (spinal cord infarction)
+   - Bleeding (hemorrhage), which can accelerate damage to the spinal cord
+   
+# Diagnosis of spinal vascular disease {4}
+
+Spinal vascular malformations can be challenging to diagnose due to their symptoms often mirroring those of other spinal conditions, such as spinal dural arteriovenous fistula, spinal stenosis, multiple sclerosis, or a spinal cord tumor.
+
+To determine the cause of your symptoms, your doctor will likely recommend several tests, including:
+
+   - **Magnetic Resonance Imaging (MRI):** This imaging test uses strong magnetic fields and radio waves to produce detailed images of your spinal cord. An MRI can help identify abnormalities such as a mass resulting from irregularly connected blood vessels often seen in vascular malformations.
+
+   - **Angiography:** This test is typically required to pinpoint the exact location and characteristics of the blood vessels involved in the malformation. During an angiography, a slender tube, known as a catheter, is inserted into an artery in the groin and carefully directed towards the spinal cord. A dye is then injected into the blood vessels in the spinal cord, making them visible under X-ray imaging. This helps provide a clearer picture of any vascular irregularities.
+   
+# Treatment of spinal vascular disease {4}
+
+Treating spinal vascular malformations typically involves a combination of methods aimed at alleviating symptoms and minimizing the risk of potential complications. The treatment plan is customized based on various factors such as the size, location, and blood flow of the malformation, your neurological exam findings, and your overall health status.
+
+The primary aim of treating spinal vascular malformations is to mitigate the risk of bleeding and halt or prevent the progression of disability and other symptoms. Given the close proximity of the malformation to the spinal cord, surgery for spinal vascular malformations is often a technically demanding and complex procedure. 
+
+## Medication
+
+Medications to relieve pain may be prescribed to manage symptoms like back discomfort and stiffness. However, many spinal vascular malformations might ultimately necessitate surgical intervention.
+
+## Surgery
+
+Surgical removal of the malformation is sometimes required. There are three main surgical approaches. In this method, a surgeon makes an incision in the skin to remove the malformation, ensuring careful avoidance of the spinal cord and nearby regions. This approach is generally favored when the malformation is relatively small and situated in an easily accessible area of the spinal cord.
+
+## Endovascular Embolisation
+
+This is a minimally invasive procedure, often used to reduce the risk of bleeding and other complications related to spinal vascular malformations. A catheter is inserted into an artery in the leg and navigated to the artery in the spinal cord supplying the malformation. Small particles of a glue-like substance are then injected to block the artery, hence reducing blood flow into the malformation. This procedure doesn't permanently eliminate the malformation. Your doctor may suggest endovascular embolization before other types of surgery to lower the risk of bleeding during surgery or to shrink the malformation, making surgical removal more effective.
+
+## Radiosurgery
+This treatment uses targeted radiation to destroy the malformation's blood vessels. Over time, these vessels degenerate and close off. Radiosurgery is frequently employed to treat small, unruptured malformations.
+
+# Introduction to stroke {5}
+
+## What is a Stroke?
+
+A stroke is a medical emergency caused by a sudden interruption in the blood flow to the brain, leading to cell death due to lack of oxygen. This is often due to a blood clot blocking a vessel (ischaemic stroke) or bleeding in or around the brain (hemorrhagic stroke). When oxygen supply is cut off, neurological functions become impaired, manifesting in a variety of symptoms. The majority of strokes occurring in those over 65 years old
+
+## Types of Stroke
+
+There are two major categories of strokes:
+
+1. **Ischaemic Stroke**: This is the most common type of stroke, accounting for about 87% of all cases. It is caused by a blood clot blocking a blood vessel in the brain, resulting in a lack of blood flow and oxygen to the brain tissue. 
+
+<div class="responsive-image">
+{{< figure src="/img/ischaemic-stroke.svg">}}
+</div>
+
+
+
+2. **Hemorrhagic Stroke**: This is less common but can be more serious. It is caused by bleeding directly into the brain or the space around the brain, typically due to a ruptured blood vessel or an abnormal vascular structure. 
+
+<div class="responsive-image">
+{{< figure src="/img/haemorrhagic-stroke.svg">}}
+</div>
+
+## Symptoms
+
+Symptoms of a stroke usually appear suddenly and may include:
+
+- Weakness or numbness on one side of the body
+- Drooping of one side of the face
+- Difficulty in speaking or understanding
+- Dizziness or loss of balance
+- Loss of vision to one side
+- Severe headache (typically in hemorrhagic stroke)
+
+In some cases, the symptoms may be temporary, lasting a few minutes or persisting up to 24 hours. This is known as a transient ischaemic attack (TIA) or a "mini-stroke." Even if symptoms resolve they should be treated urgently as they often serve as a warning for an impending full stroke. 
+
+## Risk Factors
+
+Key risk factors for stroke include high blood pressure, high blood cholesterol, smoking, obesity, diabetes mellitus, a previous TIA, end-stage kidney disease, and atrial fibrillation. 
+
+## Diagnosis and Treatment
+
+Stroke is diagnosed based on physical examination and medical imaging like CT scans or MRI scans. Other tests like ECG and blood tests help determine risk factors and rule out other causes.
+
+Time is critical in stroke treatment. For ischaemic strokes, a medication that can break down the clot may be effective if given within the first few hours. Procedures may be necessary in certain instances to remove the obstructing blood clot, called mechanical thrombectomy. 
+
+Additionally, if the stroke leads to brain swelling surgery might be necessary to mitigate pressure on other parts of the brain.
+
+## Prevention
+
+Prevention measures include managing risk factors, surgery for problematic carotid narrowing, and medication in certain cases. 
+
+## Long-term Implications
+
+Strokes can have permanent symptoms such as persistent weakness, inability to walk and speak normally, and impaired vision. Stroke rehabilitation is essential to help recover lost functions.
+
+
+# Symptoms of stroke {5}
+
+# Recognizing the Symptoms of a Stroke
+
+A stroke can be a life-threatening condition, and it's crucial to recognise the signs and act quickly to get medical help. If you suspect that you or someone else is experiencing a stroke, it's essential to seek medical help immediately. Rapid action can significantly improve outcomes and reduce the long-term effects of a stroke. Remember, every minute counts.
+
+
+## 1. Understanding Stroke Symptoms 
+
+A stroke can cause a range of symptoms, depending on which part of the brain is affected. These symptoms usually begin suddenly and may not progress further. 
+
+Symptoms of stroke can include:
+
+- **Hemiplegia and muscle weakness**: This can affect your face or cause one arm to drift downward when you try to raise it. 
+- **Numbness or reduced sensory sensation**: You may experience this on one side of your body or face.
+- **Speech difficulty**: You may find it hard to speak clearly or to understand what others are saying.
+- **Vision problems**: You may lose vision in one or both eyes, or see double.
+- **Severe headache**: This may occur with a hemorrhagic stroke, which involves bleeding in the brain.
+- **Balance problems and vertigo**: You may feel dizzy, unsteady or have difficulty walking.
+
+## 2. Remember the FAST Mnemonic
+
+To help you remember the main symptoms of a stroke, you can use the FAST mnemonic:
+
+- **F (Face)**: Ask the person to smile. Does one side of the face droop?
+- **A (Arms)**: Ask the person to raise both arms. Does one arm drift downward?
+- **S (Speech)**: Ask the person to repeat a simple phrase. Is their speech slurred or strange?
+- **T (Time)**: If you observe any of these signs, call your local emergency number immediately.
+
+## 3. Other Symptoms
+
+Depending on the exact part of the brain affected by the stroke, specific symptoms may be experienced: 
+
+- **Problems with taste, smell, hearing or vision**
+- **Drooping of an eyelid and weakness of ocular muscles**
+- **Decreased reflexes, such as a reduced gag or swallow reflex**
+- **Altered breathing and heart rate**
+- **Confusion or lack of insight into their disability**
+- **Difficulty with voluntary movements (apraxia) or issues with coordination**
+
+The more extensive the area of the brain affected, the more functions are likely to be lost. 
+
+## 5. Regular Check-ups
+
+If you have any risk factors for a stroke, such as high blood pressure, obesity, diabetes or a previous mini-stroke (TIA), it's important to have regular check-ups with your doctor. They can help you manage your risk and possibly prevent a stroke from occurring.
+
+The symptoms of a stroke can be alarming. Knowing what to look for and acting quickly can make a significant difference. Remember, if you suspect a stroke, don't wait — seek help immediately.
+
+# Diagnosis of stroke {5}
+
+Diagnosing a stroke involves the use of imaging technologies to view the brain and detect any abnormalities. Let's delve into the details of how doctors diagnose a stroke.
+
+Radiology scans are the primary diagnostic tools for identifying stroke. They help distinguish between ischaemic stroke (caused by a blockage) and haemorrhagic stroke (caused by bleeding).
+
+## Computed Tomography (CT) Scan
+
+A CT scan of the brain is often the first imaging modality used in suspected stroke cases because it is quick, affordable, and widely available. While CT is excellent for excluding hemorrhage, it has limited sensitivity in detecting an ischemic stroke in the acute setting. Over time, however, the effects of stroke become more pronounced and obvious on CT scans. 
+
+The main goals of an acute CT scan are to:
+1. Exclude intracranial hemorrhage, which would rule out the use of thrombolytic therapy.
+2. Look for early signs of ischemia.
+3. Exclude other conditions that might mimic a stroke, such as a brain tumor.
+
+## CT Angiography
+
+CT angiography involves the injection of a contrast dye into the veins to  identify clots within an intracranial blood vessel, provide insights into the stroke's etiology, assess the carotid and vertebral arteries in the neck, and help to guide intra-arterial thrombolysis or clot retrieval. 
+
+
+## CT Perfusion
+
+CT perfusion is another type of test involving the injection of a contrast dye that can increase the accuracy of stroke diagnosis and helps to determine patient selection for reperfusion therapy. It enables the visualisation of the infarct core (the area of the brain that will not recover) and the penumbra (the area of the brain that is starved of oxygen but has not yet infarcted and may still be salvaged). 
+
+## Magnetic Resonance Imaging (MRI)
+
+MRI provides higher sensitivity and specificity than CT for diagnosing acute ischemic stroke. However, it is more time-consuming and not as readily available as CT. MR angiography can also be performed which is similar to CT angiography, and can help identify the location of the blood clot. MR angiography does not necessitate the injection of dye, however. 
+
+
+## 3. Further Investigations 
+
+Once a stroke has been diagnosed, additional studies are conducted to determine the underlying cause. These may include:
+
+-  Ultrasound/Doppler study: These tests look at the carotid arteries to detect narrowing (stenosis) or a tear in the artery wall (dissection).
+- Electrocardiogram (ECG) and Echocardiogram : These heart tests can identify irregular heart rhythms and clots that could lead to stroke.
+-  Holter monitor : This device is worn for 24 to 72 hours to identify intermittent abnormal heart rhythms.
+- Angiogram: This procedure involves injecting a contrast dye into the blood vessels to make them visible under X-rays. It can identify any abnormalities such as aneurysms or arteriovenous malformations.
+- Blood tests: Various blood tests are conducted to identify possible stroke causes, such as high cholesterol or an abnormal bleeding tendency.
+
+
+# Treatment of stroke {5}
+
+Stroke treatment involves immediate interventions like thrombolysis and thrombectomy, neurosurgical procedures, and supportive care, followed by long-term risk factor management. This article delves into these strategies, outlining their significance in stroke recovery and future stroke prevention.
+
+
+## Thrombolysis
+
+Thrombolysis, a procedure involving the dissolution of blood clots, plays a crucial role in the treatment of acute ischemic stroke. It is especially effective when administered within the first three hours of symptom onset. Using recombinant tissue plasminogen activator (rtPA), a 10% overall benefit regarding living without disability can be achieved, although this treatment does not improve chances of survival. The sooner it's administered, the greater the benefits.
+
+However, the effect of thrombolysis becomes less certain when administered between three and four and a half hours after symptom onset. Beyond four and a half hours, thrombolysis can result in adverse outcomes. Certain patients with findings of salvageable tissue on medical imaging between 4.5 hours and 9 hours after symptom onset, or those who wake up with a stroke, may still benefit from alteplase treatment.
+
+Endorsements for the use of thrombolysis come from reputable organizations such as the American Heart Association, the American College of Emergency Physicians, and the American Academy of Neurology. It's worth noting that 6.4% of patients with large strokes could experience substantial brain bleeding as a complication of rtPA administration, contributing to increased short-term mortality.
+
+Intra-arterial fibrinolysis, where a catheter is passed up an artery into the brain and the medication is injected at the site of thrombosis, can also enhance outcomes in people with acute ischemic stroke.
+
+## Thrombectomy
+
+Thrombectomy is a surgical procedure for removing a blood clot. In mechanical thrombectomy, the procedure involves using a special retrieval device to remove the clot and restore normal blood flow. If the clot is removed before it causes permanent damage, the prognosis usually improves. It's performed globally in specialist hospitals and is suitable for many, but not all, stroke patients.
+
+Risks associated with mechanical thrombectomy include potential failure to retrieve the clot, potential allergic reactions to contrast dye agents, and potential kidney dysfunction resulting from the excretion of the contrast agent. Additionally, the procedure requires general anesthesia, posing its own risks. More serious, but rarer, complications include severe brain injury, post-procedure brain bleeding, and radiation-induced health issues.
+
+Mechanical thrombectomy is usually considered an emergency and potentially life-saving treatment. An alternative to thrombectomy is the administration of a ‘clot-busting’ thrombolytic drug, although this option may not be as effective or suitable for all patients due to various risk factors.
+
+# Neurosurgical Intervention and Supportive Care
+
+In certain cases, neurosurgical intervention can be employed to help patients survive the period of maximal swelling after a stroke. Such interventions include decompressive craniectomies, performed with or without duroplasty. These procedures are particularly useful for younger patients with large Middle Cerebral Artery (MCA) infarcts or posterior fossa infarcts.
+
+Moreover, supportive care is integral to the treatment of stroke patients. This often involves dedicated inpatient stroke units to prevent the numerous complications encountered by stroke patients, such as aspiration pneumonia and pressure ulcers.
+
+# Risk Factor Management in Stroke
+
+Risk factor management is a fundamental part of stroke treatment and aims to reduce the chances of future stroke events. This involves lifestyle modifications, such as a balanced diet, regular exercise, smoking cessation, and limited alcohol consumption, combined with appropriate medical therapy. Underlying medical conditions, such as hypertension, diabetes, high cholesterol, and atrial fibrillation, need to be appropriately managed with the help of medication and lifestyle changes.
+
+
+# Further information  {5}
+
+## United Kingdom
+
+* [Different Strokes](https://differentstrokes.co.uk/): Different Strokes is a UK based stroke charity run by younger stroke survivors for younger stroke survivors.
+
+- [National Stroke Association](https://www.stroke.org/): Provides resources on stroke prevention, treatment, and recovery, as well as resources for healthcare professionals and stroke survivors.
+
+* [The Brain & Spine Foundation](https://www.brainandspine.org.uk/): The Brain & Spine Foundation provides professional information and support for neurological conditions affecting those living in the UK.
+
+## United States
+
+- [American Stroke Association](http://www.strokeassociation.org/): A division of the American Heart Association. This site provides comprehensive information on all types of stroke, including risk factors, warning signs, and treatment.
+
+- [National Institute of Neurological Disorders and Stroke](https://www.ninds.nih.gov/): A service of the National Institutes of Health. Provides detailed, scientifically reliable information about a variety of neurological disorders, including aneurysms and stroke.
+
+- [World Stroke Organization](https://www.world-stroke.org/): Offers resources about stroke awareness, prevention, and treatment, as well as stories from stroke survivors around the world.
+
+
+- [Brain & Life](https://www.brainandlife.org/): Published by the American Academy of Neurology, it provides information about various neurological conditions, including aneurysms and strokes.
+
+* [DrBulletin](https://www.drbulletin.com/): The latest medical research news for a range of subjects including neurointervention and neurosurgery. 
 
 ________________
 
