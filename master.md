@@ -1,10 +1,15 @@
-# About {0} 
+# About Dr Lynch {0} 
 
 ## Biography
 
 Dr Jeremy Lynch MBHCB MRCS FRCR is a London-based Consultant Interventional Neuroradiologist. He has been an NHS doctor for 13 years and is experienced in the diagnosis and treatment of vascular diseases involving the brain, head and neck, and spine. Dr Lynch trained in Medicine at the University of Bristol and qualified in 2007. He underwent several years of surgical training, during which he gained membership of the Royal College of Surgeons. He then underwent further specialisation in interventional radiology and neuroradiology in a range of specialist hospitals in London including the National Hospital for Neurology and Neurosurgery, Great Ormond Street Hospital, Kings College Hospital, St George’s Hospital, and Queen’s Hospital. He underwent a further international fellowship in Toronto Western Hospital in Canada where he was one of the first doctors in the world to gain experience in robotic endovascular techniques. 
 
 Dr Lynch has published several academic book chapters and journal articles. He is a reviewer for Clinical Neuroradiology. His special interests include the role of new technologies including artificial intelligence in the diagnosis of neurovascular disease. He has been invited to lecture on interventional neuroradiology and neuroimaging in international conferences. He is the author of the popular neurointerventional educational website neurotool.org.
+
+
+## Interventional neuroradiology 
+
+Interventional neuroradiology (otherwise known as neurointerventional radiology or endovascular neurosurgery) is a medical specialty that deals with minimally invasive treatments for diseases of the brain and spine involving blood vessels. Common conditions that are treated include brain aneurysms, strokes, carotid stenosis, and brain tumour embolisation. 
 
 ## Training
 
@@ -24,7 +29,7 @@ Dr Lynch has published several academic book chapters and journal articles. He i
 
 * Clinical Medicine - University of Bristol
 
-## Research
+# Research {0}
 
 * Sood A, Mansoor N, Memmi C, Lynch M, Lynch J. Generative pretrained transformer-4, an artificial intelligence text predictive model, has a high capability for passing novel written radiology exam questions. Int J Comput Assist Radiol Surg. 2024 Apr;19(4):645-653.
 * Pasarikovski CR, Lynch J, Corrin M, Ku JC, Kumar A, Pereira VM, Krings T, da Costa L, Black SE, Agid R, Yang VX. Carotid stenting for symptomatic carotid artery web: Multicenter experience. Interv Neuroradiol. 2024 Jan 17:15910199231226293. 
@@ -62,10 +67,6 @@ Dr Lynch has published several academic book chapters and journal articles. He i
 * Hashim B, Lynch J, Gywali P. An audit into anticoagulation and junior doctor education. Journal of Clinical Audits 2012. 4:2
 * Lynch J, Etkind S. Spontaneous Liver Haematoma as a Result of Thrombolytic Therapy. Grand Rounds Journal. 2010. 10:1-4
 * Lynch J, Aughwane P, Hammond TM. Video Games And Surgical Ability: A Literature Review. Journal of Surgical Education. May-Jun 2010;67(3):184-9.
-
-# Interventional neuroradiology {0} 
-
-Interventional neuroradiology (otherwise known as neurointerventional radiology or endovascular neurosurgery) is a medical specialty that deals with minimally invasive treatments for diseases of the brain and spine involving blood vessels. Common conditions that are treated include brain aneurysms, strokes, carotid stenosis, and brain tumour embolisation. 
 
 #  Introduction to brain aneurysms {1}
 
