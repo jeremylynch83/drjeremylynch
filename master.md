@@ -283,9 +283,8 @@ A flow diverter, similar to a stent, is a small tubular mesh device that's place
 
 Over time, this decreased blood flow into the aneurysm encourages the formation of a blood clot within the aneurysm, which helps to seal it off from the rest of the blood vessel. As the aneurysm shrinks and heals, the artery resumes a more normal shape and function. This process can take several weeks to months.
 
-<div class="responsive-image">
-{{< figure src="/img/flow-diversion.svg">}}
-</div>
+![](img/flow-diversion.svg)
+
 
 Flow diversion is particularly effective for recurrent, large, wide-necked, or thrombosed aneurysms that can't be adequately treated with other methods. It is also necessary to take antiplatelets after insertion of flow diverters. 
 
@@ -364,10 +363,7 @@ However, in skilled hands, surgical clipping can provide a solution for many typ
 
 A brain arteriovenous malformation (AVM) is a complex, abnormal network of blood vessels in the brain. In a healthy brain, blood circulates from arteries to veins via tiny vessels called capillaries. The capillaries allow for the exchange of oxygen and nutrients from the blood to the brain tissue, and the removal of waste products. However, in a brain AVM, direct connections form between the arteries and veins, bypassing these capillaries. This abnormality can disrupt normal blood flow and oxygen circulation. 
 
-<div class="responsive-image">
-{{< figure src="/img/avm.svg">}}
-</div>
-
+![](img/avm.svg)
 
 Whilst AVMs may lead to health problems, many do not cause any problems and can be left alone without treatment. 
 
@@ -488,9 +484,7 @@ A dural arteriovenous fistula (DAVF) is an abnormal connection between the arter
 
 Normally a fine network of microscopic capillaries connects arteries and veins in all tissues including the brain. Capillaries assist in slowing down the blood flow between arteries and veins. A DAVF is a tangle of feeding arteries and draining veins in the brain that have abnormal connections which bypass the normal capillaries. The word “dura” refers to the membrane covering the brain and spinal cord. The high pressure blood flowing from arteries directly into thinner walled draining veins or venous sinuses results in a risk of brain haemorrhage (bleeding). This abnormal blood flow between arteries and veins is called a shunt. DAVF can vary in size, between a few millimetres to several centimetres and can occur anywhere in the dura directly outside of the brain or spinal cord.
 
-<div class="responsive-image">
-{{< figure src="/img/davf.svg">}}
-</div>
+![](img/davf.svg)
 
 
 The cause of DAVF in a specific patient may not be always be discovers. In general they are not thought to be inherited from parents but instead caused by previous blood clots in the large draining veins of the brain (called venous thrombosis), head injuries, previous brain surgery, or brain infections. Some types of DAVF, termed "high-grade" fistulas, have a risk of bleeding into or around the brain which may have severe consequences. The risk is further increased following a previous bleed. Other types of fistula may have very little risk, termed "low-grade". Some patients have no symptoms and the DAVF is discovered incidentally on a CT or MRI scan. Nevertheless this does not mean that the DAVF carries no risk and further investigation is commonly [required](diagnosis). 
@@ -718,17 +712,15 @@ There are two major categories of strokes:
 
 1. **Ischaemic Stroke**: This is the most common type of stroke, accounting for about 87% of all cases. It is caused by a blood clot blocking a blood vessel in the brain, resulting in a lack of blood flow and oxygen to the brain tissue. 
 
-<div class="responsive-image">
-{{< figure src="/img/ischaemic-stroke.svg">}}
-</div>
+![](img/ischaemic-stroke.svg)
+
 
 
 
 2. **Hemorrhagic Stroke**: This is less common but can be more serious. It is caused by bleeding directly into the brain or the space around the brain, typically due to a ruptured blood vessel or an abnormal vascular structure. 
 
-<div class="responsive-image">
-{{< figure src="/img/haemorrhagic-stroke.svg">}}
-</div>
+![](img/haemorrhagic-stroke.svg)
+
 
 ## Symptoms
 
@@ -909,55 +901,130 @@ Risk factor management is a fundamental part of stroke treatment and aims to red
 
 * [DrBulletin](https://www.drbulletin.com/): The latest medical research news for a range of subjects including neurointervention and neurosurgery. 
 
-________________
+
+# Interventional neuroradiology  {6}
+
+## What is an interventional neuroradiology doctor?
+
+Interventional neuroradiologists, otherwise known as neurointerventional radiologists, neurointerventionalists, or endovascular neurosurgeons, are doctors who perform procedures upon the brain or spine without making large incisions. Instead the minimally invasive procedures are performed through the blood vessels, or through small needles. The use of “neuro” in “Neurointerventional” means we particularly focus on treatments for disease or disorders of the nervous system located within the head, neck and spine systems of the body. They use advanced imaging equipment to guide their procedures. 
+
+## Are interventional neuroradiologists surgeons? 
+
+Interventional neuroradiology procedures are complex procedures requiring a high degree of manual dexterity and anatomical knowledge and many years of training. Another name for the specialty is endovascular neurosurgery. A distinction is often made from the more traditional open microvascular neurosurgery which involves making incisions in the skull to perform procedures under a microscope. 
+
+Many practitioners come from a background in radiology, which might seem odd at first. However, the specialty evolved from first performing diagnostic procedures, called angiograms, by injecting substances into the bloodstream to visualise diseases. After many advances in techniques and technology practitioners were able to actually treat diseases using tiny instruments directly inside the blood vessels themselves. As well as radiology, practitioners may also have backgrounds in neurosurgery, and neurology. 
+
+## Are these techniques safe or are they considered experimental?
+
+Interventional neuroradiology employs techniques that have been proven, through rigorous clinical trials, to be safe and effective. Many vascular diseases of the brain and spine, previously treated through open surgery, can now be treated with reduced complication rates associated with the interventional neuroradiology. As an added benefit there is usually reduced pain and shorter recovery time. Neurointerventionalists work closely with other specialists including neurosurgeons to ensure that the correct treatment is chosen. Many of our patients are referred to us by our surgical colleagues who also recognize the benefits of minimally invasive treatments.
+
+## What are the most common types of diseases that are treated?
+
+There are many conditions treated by interventional neuroradiologists. 
+
+Brain aneurysms are bulges on the wall of an artery. We treat them before they burst to prevent a stroke. In the emergency setting we also treat aneurysms that have already burst to stop further bleeding. Approximately 3% of the population have brain aneurysms, however not all of these are dangerous and need treating.  
+
+We treat stroke patients by removing the clot which is blocking the artery in the brain. If this is done quickly enough (normally just a few hours after the stroke onset) then the prognosis is much better. Stroke is one of the leading causes of death in the United Kingdom. 
+
+We treat stenosis (narrowing) in the blood vessels of the neck or brain using stents or balloons in order to increase the blood flow and prevent stroke. 
+
+We treat a disease called arteriovenous fistula, which is an abnormal connection between arteries and veins within the brain or spine. This causes abnormally high pressure in the veins and can lead to symptoms such as tinnitus, vision or hearing loss, or stroke. A related condition, known as arteriovenous malformation, can also often be treated using interventional techniques. 
+
+We often treat patients with tumours of the brain, face, or neck who are going to have a surgical resection. We can often shrink the tumour down by blocking the blood flow (embolisation) using tiny particles. 
+
+A common procedure that we perform is called a cerebral angiogram. “Cerebral” meaning brain, “angio-” meaning blood vessel, and “-gram” indicating that an X-ray is being performed. This is a diagnostic, minimally invasive procedure to diagnose diseases of the blood vessels of the brain. 
+
+## How do interventional neuroradiologists perform their procedures?
+
+This is achieved via inserting a tiny tube called a catheter into an artery or vein. The usual entrance site is the groin or the wrist, as these are easily accessible and safe places. We then advance the tube into the blood vessel involved in the disease process. We can place tiny devices, such as coils or stents, or retrieve blood clots, through these tubes. As the tubes inside the body we use advanced imaging equipment, such as X-rays, CT, or MRI to guide them. 
+
+# Cerebral angiography  {7}
+
+## What is a cerebral angiogram?
+
+An angiogram is an X-ray test that produces high-resolution images of the blood vessels. Cerebral angiograms produce imaging of the blood vessels of the head and neck. 
+
+The test involves insertion of a tube in the groin or wrist that is then navigated through the body to the vessel of interest. An iodine based dye (known as 'contrast') is then injected through the tube.
+
+Why is cerebral angiography performed?
+Cerebral angiograms are commonly performed to diagnose diseases of the blood vessels such as:
+
+* Cerebral aneurysms
+
+* Carotid stenosis
+
+* Dural arteriovenous fistulas
+
+They are also used to follow-up diseases previously treated.
+
+## Why not just do a CT or MRI?
+
+The image quality is often superior when using angiography, allowing the discovery of diseases that do not show up on alternative scans and allowing the planning of certain procedures. As CT and MRI scans are safer, faster, and usually more pleasant to undergo we only do cerebral angiograms when we need to. Having said that, generally the risk (and degree of unpleasantness) is not usually very great. 
+
+## Can I eat or drink before the procedure?
+
+In some hospitals you may be given instructions not to eat or drink for a few hours before the procedure. This main reason for this is just in case general anaesthesia or sedation is needed during the procedure. Anaesthetists ideally do not like you to have food or drink in the stomach if you are to have general anaesthesia as there is a risk of regurgitation in to the lungs. 
+
+Having said this, the great majority of angiograms do not require general anaesthesia or sedation and so in many other hospitals you are allowed to have a light breakfast before coming to hospital and drink clear fluids until the examination. Exact instructions will be given to you before your angiogram. 
+
+## Should I take my normal medications?
+
+You should your medication as usual unless instructed otherwise (this includes any aspirin-based or anti-platelet medication, for example clopidogrel). You can take your normal medication with small sips of water. 
+
+## I have allergies. Can I still take the test?
+It is important to inform the staff if you have any allergies. It is especially important to mention allergies to:
+
+Iodine or iodine based contrast agents.
+
+Latex.
+
+Plasters.
+
+Cleaning solutions such as chlorhexidine. 
+
+## Can I have an angiogram if I am pregnant?
+
+Cerebral angiograms involve small doses of radiation, but usually directed towards the head. The dose to any developing foetus is very low, and can be further lowered by wearing protective lead clothing. Angiograms are sometimes performed in emergency settings where there may be a danger to the mother if they are not performed. However, if the procedure can be avoided by performing an alternative test, or delayed until after the pregnancy this is preferred. If you are pregnant, trying to get pregnant, or if there is any chance that you could possibly be pregnant however unlikely, please inform the staff. 
+
+## What is it like to have an angiogram?
+
+At least a few days before the procedure you would have routine blood tests performed. 
+
+Typically you would enter the hospital on the day of the procedure. A nurse will go through your medical history. You will then be given a gown to wear during the procedure and remove your underwear. You will then be consented for the procedure by a doctor. You should use the toilet before the procedure. 
+
+The angiogram is done in a dedicated angiography suite where you will lie flat on the table. In the room there will be members of the team who help to perform the procedure, including a nurse, a radiographer/technologist (who will help operate the machine), and a doctor (usually an interventional neuroradiologist) who will perform the procedure. 
+
+The wrist or groin is usually the site that is used for delivery of the instruments for the procedure and this is shaved and cleaned with sterile solution. Drapes are then placed around the site. The doctor will inject a small amount of local anaesthesia (which unfortunately stings when it goes in) to numb the skin. They will then insert a plastic tube in to the artery and navigate a long thin plastic tube called a catheter through the body and in to the blood vessels of the neck. Through this tube 'contrast' dye is injected whilst performing an X-ray to obtain images of the blood vessels. You do not feel the tube as it passes through the blood vessels in your body as they have no sensory receptors. You may feel some pushing and pulling at the groin. 
+
+The x-ray machines will move into position over your head. They will move around you during the procedure but will not touch you. You may experience funny sensations such as flashing lights in the eyes, hot or cold over the side of the face, a funny taste in the mouth, or pressure at the back of the head during the examination. These are all normal and tend to pass within a few seconds.. They result from the contrast dye travelling through the blood vessels. The whole examination usually takes less than an hour, although the time can be variable due to the ease or difficulty of the procedure. 
+
+It is very important you stay still throughout the procedure to ensure the pictures taken are as clear as possible. If you feel unwell or in pain please let us know. You can talk to your doctor during the exam. 
+
+After all the imaging is finished the tube in the access site is removed. If the puncture site was the groin sometimes a collagen "plug" is used to seal the blood vessel. Alternatively, usually just applying firm pressure to the blood vessel for 10 minutes is sufficient as the hole is fairly small. If the puncture site was the wrist then an inflatable compression device is applied for a few hours after. 
+
+## What happens after the exam?
+
+You will be monitored by a nurse for a few hours after the angiogram. If the access site was the groin you will be instructed to lie flat for a variable length of time (typically over 1 hour but less than 6 hours). The nursing staff will carry out regular observations, including checking your groin site and foot pulses. You should be able to eat and drink on returning to the ward, but please check with nursing staff first. Sometimes patients experience some bruising around the groin. This is nothing to worry about and will fade over a few days.
+
+Most people can go home on the same day as the procedure. It is not advised to use public transport after you’ve had an angiogram in case you feel unwell, so it’s important that you make arrangements for someone to collect you from the ward and take you home by car. 
+
+## What should I do when I return home?
+
+You should make advance arrangements for someone to stay with you for 24 hours after you get home. To avoid provoking bleeding at the access site avoid strenuous activities such as heavy lifting, running and cycling for 1 week. Do not operate machinery or drive for 48 hours.
+
+## When will I receive the results?
+
+Sometimes the doctor can tell you at the end of the procedure. It is not unusual, however, for it to be necessary for the images to be analysed on a computer before they can be interpreted. In this case the final results will be delivered later at a clinic attendance or over the phone.  
+
+## Does the procedure involve any risk?
+
+A cerebral angiogram is considered safe, however any medical procedure can involve small risks. It is important to understand that the risks involved in not undertaking the test (for example, non-diagnosis of a serious disease) usually outweigh the small risks of the procedure. 
+
+The main potential complication of cerebral angiography is of having a stroke, with a rate of approximately 0.5% (or 1 in 200 people). This risk varies with a few different factors and would likely be lower if you are normally in good health and not very elderly. The symptoms can involve one or more of the following: weakness of the face, arms, or legs; difficulty with speech; or difficulty with vision. Strokes can also be of variable severity: from brief and barely noticeable to very severe. They can also be temporary or result in permanent deficit. The good news is that strokes that result from cerebral angiogram often tend to be of the lesser severity with good potential for recovery. As strokes tend to occur during, or shortly after the procedure you are also in the best place (under direct medical supervision) if they were to occur. 
+
+The second main risk is of damage to artery at the access site. It is common to get small amounts of bleeding after the procedure and this usually stops spontaneously. If the bleeding is heavier or if there is internal bleeding then sometimes special injections or surgery is required. It is rare for this to be necessary, however. Very rarely the artery can become blocked, resulting in not enough blood getting to the leg. This condition requires surgery to remedy. 
 
 
-# Front page
-About 
-Dr Ali is a Dental Surgeon who graduated from King’s College London with distinction and honours, having won multiple undergraduate dental awards. l
-Her academic pursuits began at the University of Bristol where she studied pre-clinical Medicine, before graduating from the same institution with a Bachelor of Science in Neurophysiology. She then undertook a Master of Research in Translational Medicine at the prestigious Imperial College London, where she excelled with Distinction, before transitioning to dentistry. 
- 
-Dr Ali is committed to rigorous academic learning, completing her Membership of the Faculty of Dental Surgery examination at the Royal College of Surgeons of England whilst simultaneously undertaking post-graduate training in facial aesthetics at the London Academy of Aesthetic Medicine. 
+# All topics  {8}
 
-
-Dr Ali’s services include general dentistry, restorative and cosmetic dentistry, and non-surgical facial aesthetic treatments. 
-PHILOSOPHY
-Dr Ali focuses on personalised treatment plans for aesthetic enhancement, meticulously aligned with each individual's unique goals. Her approach involves selecting specific products and techniques to complement her patients’ skin type, facial structure, teeth and smile. She adopts a minimally-invasive approach towards both cosmetic dentistry and facial aesthetics, believing that less is more. She is passionate about enhancing her patients’ natural smiles and beauty with subtle ‘tweaks’ to achieve beautiful yet natural results.
-
-
-DR COUSINS
-Photo of Me
-Founder and Medical Director
-
-
-Dr Cousins is dual trained in dentistry and facial aesthetics. She is well respected in her fields having achieved multiple academic qualifications and awards. Her expertise in facial rejuvenation, focusing on non-surgical and minimally invasive approaches, is deeply rooted in her thorough understanding of the physiological aspects of aging. This knowledge allows her to appreciate the subtle nuances of how the skin and underlying structures change over time, enabling her to tailor her approach to each individual's unique needs.
-
-
-About Ali
-Dr. Alison Cousins is a highly skilled dentist and an expert in aesthetic botox injections, renowned for her comprehensive educational background and remarkable achievements in the field of dentistry and translational medicine. Her academic pursuits began with a Bachelor of Science in Physiological Science from the University of Bristol, where she graduated with First Class Honours. She furthered her studies at the same institution, embarking on Medicine (MBChB) before transitioning to a Master of Research in Translational Medicine at Imperial College London, where she excelled with Distinction.
-
-
-Dr. Cousins' dedication to dentistry was solidified at King’s College London, where she earned a Bachelor of Dental Surgery with Honours. Her commitment to continuous learning is evident from her completion of the Dental Foundation Training at Quality Dental Fulham and her participation in the MFDS at the Royal College of Surgeons of England.
-
-
-Her academic excellence is matched by her numerous awards, including The School Prize and Gold Star Award from the Faculty of Dentistry, Oral and Craniofacial Sciences at Guy’s, King’s and St. Thomas’s Hospitals, and the War Memorial Prize from the Dental Institute at the same institution. Dr. Cousins has also been actively involved in various courses and conferences, enhancing her expertise in recent advances in dentistry and aesthetics. 
-
-
-Dr. Cousins holds memberships in several prestigious professional bodies, including the General Dental Council and the British Dental Association, and contributes to journals like the British Dental Journal and Dental Update. Her work experience spans across various respected dental practices, showcasing her versatility and depth of knowledge in general dentistry, endodontics, and restorative dentistry.
-
-
-Her commitment to her profession is further demonstrated by her involvement in audits and continuous professional development, covering critical areas such as infection control, medical emergencies, and special patient groups. Dr. Cousins' blend of academic rigor, practical experience, and a passion for patient-centered care make her a distinguished figure in her field.
-
-
-________________
-
-# CONTACT US 
-
-# TERMS AND CONDITIONS
-
-# CANCELLATIONS
-
-
-
-
-
+Here

@@ -1,178 +1,317 @@
+/* Base & Typography */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	color: #777;
+	line-height: 1.8;
+	font-family: 'Roboto', sans-serif;
+	scroll-padding-top: 56px;
+	scroll-behavior: smooth;
+}
 
-            body {
-				/*background-color: rgb(105, 107, 107);*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: inherit;
+	color: #000;
+	font-weight: 900;
+	margin: 0;
+}
 
-			}
-			
-            body,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                  font-family: 'Playfair Display', serif;
-                  color:black;
-            }
-            
-            h3 {
-				text-align:center!important;
-				letter-spacing:2px;
-				padding-top: 32px;
-				font-size:30px;				
-			}
-			
-			h4 {
-				text-align:center!important;
+h3 {
+	text-align: center !important;
+	letter-spacing: 2px;
+	padding-top: 32px;
+	font-size: 30px;
+}
 
-			}
+h4 {
+	text-align: center !important;
+}
 
-            body,
-            html {
-                height: 100%;
-                color: #777;
-                line-height: 1.8;
-                font-family: 'Roboto', sans-serif;
-            }
-            
-            p {
-              
-                                color:black;
+p {
+	color: #000;
+	font-size: 19px !important;
+	text-align: left;
+	margin: 0 0 1em;
+}
 
-				font-size:14px!important;;
-				text-align:left;
-			}
+/* Parallax backgrounds */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
-            /* Create a Parallax Effect */
-            .bgimg-1,
-            .bgimg-2,
-            .bgimg-3 {
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
+.bgimg-2 {
+	background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+	min-height: 400px;
+	background-attachment: initial;
+}
 
-            /* First image (Logo. Full height) */
-            .bgimg-1 {
-                min-height: 25%;
-                background-color: rgb(5, 8, 9);
-            }
+.bgimg-3 {
+	background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+	min-height: 400px;
+	background-attachment: initial;
+}
 
-            /* Second image (Portfolio) */
-            .bgimg-2 {
-                background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
-                min-height: 400px;
-				background-attachment: initial;
-            }
+/* Navbar centering & links */
+.w3-top .w3-bar {
+	display: flex !important;
+	justify-content: center;
+}
 
-            /* Third image (Contact) */
-            .bgimg-3 {
-                background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
-                min-height: 400px;
-				background-attachment: initial;
-            }
+.w3-bar .w3-bar-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
-            .w3-wide {
-                letter-spacing: 10px;
-            }
+/* Utility & animations */
+.w3-wide { letter-spacing: 10px; }
+.w3-hover-opacity { cursor: pointer; }
+.fade { transition: opacity 0.3s ease-in; }
+.fadeIn {}
+.fadeOut {}
 
-            .w3-hover-opacity {
-                cursor: pointer;
-            }
-            
-		.your-video-class {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center;
-			transform: translate(-50%, -50%);
-			   filter: grayscale(20%);
-		}
-	
-		.main-title {
+/* Profile section */
+.profile-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	max-width: 800px;
+	margin: 0 auto;
+}
 
-			font-size:25px; 
-			letter-spacing:2px;
-	
-		}
-		
-		.letters {
-			font-size:20px; letter-spacing:4px
-		}
-		
-		.treatment {
-			padding: 10px;
-		}
-		
-		.picture-main {
-			margin-left: 50px; 
-			margin-right: 50px;
-		
-		}
-		
-		.picture-title {
-			text-align: center;
-			font-size: 25px;
-			font-family: 'Playfair Display', serif;
-			text-transform: uppercase;
-		}
-		
+.profile-image-col,
+.profile-text-col {
+	padding: 20px;
+}
 
-    .fade {
+.profile-image-col {
+	flex: 1 1 33.33%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
-	  transition: opacity 0.3s ease-in;
+.profile-image-col img {
+	max-width: 200px;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.profile-text-col {
+	flex: 1 1 66.67%;
+}
+
+@media screen and (max-width: 600px) {
+	.profile-image-col,
+	.profile-text-col {
+		flex: 1 1 100%;
 	}
+}
 
-	.fadeOut {    }
-	.fadeIn {  }
-	
-	    select option {
-        padding: 5px;
-    }
-    
-    .degree-style {
-		width: 70%;
-    }
+/* Media elements & custom text */
+.your-video-class {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transform: translate(-50%, -50%);
+	filter: grayscale(20%);
+}
 
-            
-		@media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
-					.bgimg-1 {
-       				}
-				
-				.w3-xlarge {
-					font-size:12px!important; /* smaller padding for small screens */
-				}
-				.w3-medium {
-					font-size:9px!important; /* smaller padding for small screens */
-				}
-				h3 {
-					letter-spacing:3px!important;
-				}
-							
-					.w3-row {
-				flex-direction: column!important;
-				}
-				p {
-				font-size:18px;
-				}
-				
-				.letters {
-				font-size:8px; letter-spacing:2px
-				}
-				
-						.picture-main {
-			margin-left: 30px; 
-			margin-right: 30px;
+.main-title {
+	font-size: 25px;
+	letter-spacing: 2px;
+}
+
+.letters {
+	font-size: 20px;
+	letter-spacing: 4px;
+}
+
+/* Treatments & pictures */
+.treatment { padding: 10px; }
+.picture-main { margin: 0 50px; }
+.picture-img { width: 100%; height: auto; }
+.picture-title {
+	color: #000;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+
+
+}
+
+
+.locations-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;                /* even spacing */
+	max-width: 900px;
+	margin: 2rem auto 4rem;
+}
+.location-card {
+	text-align: center;
+	max-width: 200px;
+}
+.location-card a {
+	text-decoration: none;
+	color: inherit;
+}
+.location-logo {
+	width: 150px;
+	height: 150px;
+	object-fit: contain;      /* preserve logo, no cropping */
+	background: #fff;
+	padding: 8px;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.location-title {
+	margin-top: 0.75rem;
+	font-weight: 700;         /* bold */
+}
+.location-desc {
+	margin-top: 0.25rem;
+	font-weight: 600;         /* semi-bold */
+	color: #555;
+	font-size: 0.9em;
+}
+
+.content-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.main-content {
+	flex: 1 1 60%;
+	min-width: 300px;
+}
+
+.main-content img {
+	max-width: 100%;
+	width: 80%; /* adjust as needed */
+	height: auto;
+	display: block;
+	margin: 0 auto; /* optional: center images */
+}
+
+.article-links {
+	flex: 0 0 30%;
+	min-width: 200px;
+	text-align: left;
+}
+/* Header styling */
+.article-links h4 {
+	text-align: left !important;
+	margin: 0 0 0.5em 0;
+	padding: 0;
+}
+.article-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.article-links li {
+	margin-bottom: 0.5em;
+}
+/* On narrower screens, stack vertically */
+@media (max-width: 800px) {
+	.content-wrapper {
+		flex-direction: column;
+	}
+	.article-links {
+		order: 2;
+	}
+}
+
+/* Sticky top nav */
+.navbar-knowledge {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+	z-index: 1000;
+}
+/* Brand styling */
+.navbar-knowledge .brand {
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: #333;
+}
+/* Nav links */
+.navbar-knowledge .nav-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.navbar-knowledge .nav-links li {
+	margin-left: 1rem;
+}
+.navbar-knowledge .nav-links a {
+	text-decoration: none;
+	padding: 0.5rem;
+	color: #555;
+	transition: color 0.2s;
+}
+.navbar-knowledge .nav-links a:hover {
+	color: #0078d4;
+}
+/* Responsive (simple mobile collapse) */
+@media (max-width: 600px) {
+	.navbar-knowledge {
+		flex-wrap: wrap;
+		justify-content: center; /* center everything by default */
+	}
+	.navbar-knowledge .brand {
+		width: 100%;            /* force new line */
+		text-align: center;     /* center the text */
+		order: 0;               /* ensure it stays on top */
+	}
+	.navbar-knowledge .nav-links {
+		width: 100%;
+		justify-content: space-around;
+		order: 1;
+		margin-top: 0.5rem;
+	}
+}
+
+/* Forms & selects */
+select option { padding: 5px; }
+.degree-style { width: 70%; }
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+	.w3-xlarge { font-size: 12px !important; }
+	.w3-medium { font-size: 9px !important; }
+	h3 { letter-spacing: 3px !important; }
+	p { font-size: 18px; }
+	.letters { font-size: 8px; letter-spacing: 2px; }
+	.picture-main { margin: 0 30px; }
+
+	.nav-toggle { display: none; }
+	.nav-mobile { display: none; }
+	.nav-toggle:checked ~ .nav-mobile { display: block; }
+	.nav-mobile .w3-bar-item { display: block; }
+
+		.main-content {
+			padding-top: 2rem; /* adjust value as needed */
 		}
-				
-						.picture-title {
-			text-align: center;
-			font-size: 25px;
-			font-family: 'Playfair Display', serif;
-			text-transform: uppercase;
-		}
 
-      
+
+}
