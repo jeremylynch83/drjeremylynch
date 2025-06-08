@@ -214,7 +214,7 @@ For brain aneurysms there are generally three management strategies:
 
 
 
-1. No treatment: a period of observation may be undertaken to ensure the aneurysm is not growing or changing.
+1. Monitoring: a period of observation may be undertaken to ensure the aneurysm is not growing or changing.
 2. Endovascular treatment. This involves treating the aneurysm through the blood vessels. Generally, a small incision is made in the groin or wrist and a very thin tube is directed, under X-rays, into the aneurysm. Through this tube tiny coils and stents can be inserted to block off the aneurysm. This is less invasive than surgical treatment. 
 3. Surgical clipping. This is an operation involving temporarily removing some of the skull bone ('craniotomy') to access the aneurysm and place a clip around its neck. It is by nature more invasive than endovascular treatment. As the brain is very delicate this procedure is carried out with the use of an operating microscope. 
 
@@ -258,9 +258,11 @@ The procedure starts with the patient being placed under general anesthesia so t
 
 Once the catheter is in position, small platinum coils are threaded through the catheter and into the aneurysm. These coils are soft and flexible, allowing them to adapt to the shape of the aneurysm. The role of the coils is to promote the formation of blood clots within the aneurysm. As the blood comes into contact with the coils, it begins to clot, gradually filling up the aneurysm over time. This process effectively isolates the aneurysm from the rest of the circulatory system, thus preventing it from rupturing. The coils are left in place and do not need to be removed. 
 
-![](img/aneurysm coiling.svg)
+![Illustration demonstrating coil embolisation of a brain aneurysm. ](img/aneurysm coiling.svg)
 
 After the coils are properly placed, the catheter is carefully withdrawn from the body. The patient is usually required to stay in the hospital for the night following the procedure to enable the medical team to monitor the recovery.
+
+![Real case of coil embolisation of a cerebral aneurysm. (A) 3-dimensional representation of the aneurysm is acquired, used for planning the rest of the procedure. (B) Angiography of the aneurysm is performed. (C) The aneurysm has had several coils inserted, ensuring that blood no longer fills it.  ](img/an_coiling.png){#fig:aneurysm_angio}
 
 
 ## What is stent assisted coiling?
@@ -278,6 +280,9 @@ Once the stent is in place, small coils are threaded through the catheter and pl
 
 After the procedure, you will likely need to take antiplatelet medications such as aspirin or clopidogrel, which help to prevent the formation of blood clots around the stent. This is a routine precaution and an important part of ensuring the success of the procedure. Antiplatelet medications are given in low doses and make the platelets in your blood less sticky, reducing the chance that a clot will form. 
 
+![Real case of stent & coil embolisation of a cerebral aneurysm. (A) An aneurysm is seen at the tip of the basilar artery. (B) A stent is deployed across the neck of the aneurysm, and a single coil has been placed in the aneurysm (C) Angiography during placement of the stent. (D) The aneurysm has been filled with coils. ](img/stent_coiling.png){#fig:aneurysm_angio}
+
+
 
 ## What is flow diversion?
 
@@ -291,6 +296,9 @@ Over time, this decreased blood flow into the aneurysm encourages the formation 
 
 
 Flow diversion is particularly effective for recurrent, large, wide-necked, or thrombosed aneurysms that can't be adequately treated with other methods. It is also necessary to take antiplatelets after insertion of flow diverters. 
+
+![Real case of flow diversion of a cerebral aneurysm. (A) An aneurysm is seen of the internal carotid artery (ICA). (B) A flow-diverting stent is deployed across the neck of the aneurysm. (C) The flow-diverting stent is seen from a different angle. (D) The stent is seen within the blood vessel. ](img/flow_diversion.png){#fig:aneurysm_angio}
+
 
 
 ## What is an intrasaccular device?

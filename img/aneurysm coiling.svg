@@ -6,7 +6,7 @@
    version="1.1"
    id="svg158"
    sodipodi:docname="aneurysm coiling.svg"
-   inkscape:version="1.2.2 (1:1.2.2+202212051552+b0a8486541)"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -24,12 +24,12 @@
      showgrid="false"
      inkscape:zoom="1.5938011"
      inkscape:cx="293.63764"
-     inkscape:cy="99.134076"
-     inkscape:window-width="1884"
-     inkscape:window-height="1031"
-     inkscape:window-x="36"
-     inkscape:window-y="25"
-     inkscape:window-maximized="1"
+     inkscape:cy="98.820361"
+     inkscape:window-width="1512"
+     inkscape:window-height="830"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer2" />
   <style
      id="style2"><![CDATA[.B{fill:#c50119}.C{stroke-width:.9}.D{stroke-linecap:round}.E{stroke-miterlimit:10}.F{font-family:sans-serif}]]></style>
@@ -225,7 +225,8 @@
        linejoin_type="spiro"
        miter_limit="4"
        scale_width="1"
-       end_linecap_type="round" />
+       end_linecap_type="round"
+       message="" />
     <inkscape:path-effect
        effect="simplify"
        id="path-effect132077"
@@ -252,7 +253,8 @@
        linejoin_type="spiro"
        miter_limit="4"
        scale_width="1"
-       end_linecap_type="round" />
+       end_linecap_type="round"
+       message="" />
     <inkscape:path-effect
        effect="simplify"
        id="path-effect132059"
@@ -279,7 +281,8 @@
        linejoin_type="spiro"
        miter_limit="4"
        scale_width="1"
-       end_linecap_type="round" />
+       end_linecap_type="round"
+       message="" />
     <inkscape:path-effect
        effect="simplify"
        id="path-effect131831"
@@ -306,7 +309,8 @@
        linejoin_type="spiro"
        miter_limit="4"
        scale_width="1"
-       end_linecap_type="round" />
+       end_linecap_type="round"
+       message="" />
     <inkscape:path-effect
        effect="simplify"
        id="path-effect131824"
@@ -344,7 +348,8 @@
        linejoin_type="spiro"
        miter_limit="4"
        scale_width="1"
-       end_linecap_type="round" />
+       end_linecap_type="round"
+       message="" />
     <inkscape:path-effect
        effect="simplify"
        id="path-effect131813"
@@ -2360,10 +2365,10 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;white-space:pre;shape-inside:url(#rect132239);display:inline;fill:#000000;fill-opacity:1;stroke:none"><tspan
            x="215.79688"
            y="237.42214"
-           id="tspan357607">Catheter inserted into </tspan><tspan
+           id="tspan1">Catheter inserted into </tspan><tspan
            x="215.79688"
            y="254.08876"
-           id="tspan357609">aneurysm</tspan></text>
+           id="tspan2">aneurysm</tspan></text>
     </g>
     <g
        transform="matrix(0.3579469,0,0,-0.3579469,3.4987764,177.4429)"
@@ -2593,10 +2598,10 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;white-space:pre;shape-inside:url(#rect132239-6);display:inline;fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="215.79688"
          y="237.42214"
-         id="tspan357611">Aneurysm filled with </tspan><tspan
+         id="tspan3">Aneurysm filled with </tspan><tspan
          x="215.79688"
          y="254.08876"
-         id="tspan357613">platinum coils</tspan></text>
+         id="tspan4">platinum coils</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.2645836,0,0,0.2645836,0,-4.2809625e-5)"
@@ -2623,18 +2628,6 @@
        transform="matrix(0.2645836,0,0,0.2645836,0,-4.2809625e-5)"
        id="text141858"
        style="font-size:40px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;white-space:pre;shape-inside:url(#rect141860);display:inline" />
-    <text
-       xml:space="preserve"
-       transform="matrix(0.2645836,0,0,0.2645836,-31.750032,12.699969)"
-       id="text141868"
-       style="font-size:18.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;white-space:pre;shape-inside:url(#rect141870);display:inline"
-       x="4.5299478"
-       y="0"><tspan
-         x="259.88516"
-         y="18.101222"
-         id="tspan357617"><tspan
-           style="font-weight:bold"
-           id="tspan357615">Endovascular coil embolisation</tspan></tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
