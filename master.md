@@ -74,9 +74,13 @@ Interventional neuroradiology (otherwise known as neurointerventional radiology 
 
 An aneurysm is a bulge in the wall of a blood vessel caused by a small area of weakness. Aneurysms can occur in various parts of the body, but one of the most common locations is the brain. These are known as intracranial or cerebral aneurysms. Some aneurysms have the potential to rupture which can result in severe bleeding around the brain which is called subarachnoid haemorrhage. 
 
-Brain aneurysms primarily affect middle aged and older adults with a higher prevalence in women. They are extremely rare in children. The cause of aneurysms is unknown in most cases, although some individuals have a genetic predisposition to developing them. Aneurysms can also rarely develop after certain infections or trauma. 
+![Illustration of a cerebral aneurysm. ](img/aneurysm.svg){#fig:aneurysm }
 
-![](img/aneurysm.svg)
+Brain aneurysms most commonly affect middle aged and older adults with a higher prevalence in women. They are extremely rare in children. The cause of any particular aneurysms is unknown in most cases, although some individuals have a genetic predisposition to developing them. Aneurysms can also rarely develop after certain infections or trauma. 
+
+![Angiogram of an aneurysm. ](img/an_angio.png){#fig:aneurysm_angio}
+
+
 
 ## What is the prevalence of brain aneurysms?
 
@@ -93,7 +97,7 @@ Brain aneurysms are present in about 3% of the population (3 in 100 people) [1].
 
 ## Are brain aneurysms dangerous?
 
-Many aneurysms are benign: they cause no symptoms and will never rupture. However, other aneurysms do rupture causing life-threatening bleeding around the brain, called subarachnoid haemorrhage. Rarely aneurysms can cause symptoms without rupturing, such as reduced vision, double vision, seizures, or strokes. These effects are caused by inflammation or pressure on the surrounding brain structures, or due to the development of blood clots. Unfortunately there is no test that can accurately identify aneurysms that will go on to rupture, although we do have some idea of [factors which make certain aneurysms more likely to do so](../unruptured-aneurysms#factors).
+Many aneurysms are benign: they cause no symptoms and will never rupture. However, other aneurysms do rupture causing life-threatening bleeding around the brain, called subarachnoid haemorrhage. Rarely aneurysms can cause symptoms without rupturing, such as reduced vision, double vision, seizures, or strokes. These effects are caused by inflammation or pressure on the surrounding brain structures, or due to the development of blood clots. Unfortunately there is no test that can accurately identify aneurysms that will go on to rupture, although we do have some idea of factors which make certain aneurysms more likely to do so. 
 
 ## References
 
