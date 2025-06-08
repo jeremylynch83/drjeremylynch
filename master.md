@@ -159,7 +159,7 @@ A lumbar puncture, often known as a spinal tap, is a medical procedure where a n
 
 In relation to diagnosing potential ruptured intracranial aneurysms, a lumbar puncture can be useful. This procedure is typically performed when doctors suspect an aneurysm as ruptured but other imaging tests, such as a CT scan, aren't conclusive. This could be because the bleed was minimal, or the blood has dispersed over time. During a lumbar puncture, the collected CSF is meticulously examined for the presence of blood or xanthochromia. The latter is a yellowish or pinkish discoloration that results from the breakdown of red blood cells in the CSF — both of these signs point towards a recent subarachnoid hemorrhage.
 
-#  Ruptured aneurysms {1}
+#  Ruptured aneurysm treatment {1}
 
 ## What are the consequences of aneurysm rupture?
 
@@ -198,7 +198,7 @@ It is possible to make a full recovery from aneurysm rupture. Unfortunately, som
 2. Molyneux AJ, Birks J, Clarke A, Sneade M, Kerr RS. The durability of endovascular coiling versus neurosurgical clipping of ruptured brain aneurysms: 18 year follow-up of the UK cohort of the International Subarachnoid Aneurysm Trial (ISAT). Lancet. 2015 Feb 21;385(9969):691-7. 
 
 
-#  Unruptured aneurysms {1}
+#  Unruptured aneurysm treatment {1}
 
 ## I have an aneurysm. Does it need to be treated?
 
