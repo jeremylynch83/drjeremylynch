@@ -86,18 +86,32 @@ Brain aneurysms most commonly affect middle aged and older adults with a higher 
 
 Brain aneurysms are present in about 3% of the population (3 in 100 people) [1]. There are some factors that increase the risk of developing a brain aneurysm [2]: 
 
-1. Family history of brain aneurysm or subarachnoid haemorrhage (bleeding around the brain).
-2. Atherosclerosis: This is a condition characterised by the buildup of plaque in the arteries. It is associated with an increased risk of brain aneurysms. 
-3. Smoking
-4. High blood pressure 
-3. Female gender: Women have a higher risk of developing brain aneurysms compared to men.
-4. Age: The risk of brain aneurysms may increase with age.
-5. Autosomal Dominant Polycystic Kidney Disease (ADPKD): This is a genetic condition leading to the development of multiple cysts in the kidneys. It is also associated with brain aneurysms. 
-6. Sickle cell disease: This is a disorder of the red blood cells that is also associated with brain aneurysms. 
+1. **Family history of brain aneurysm or subarachnoid haemorrhage (bleeding around the brain)**
+2. **Atherosclerosis**: This is a condition characterised by the buildup of plaque in the arteries. It is associated with an increased risk of brain aneurysms.
+3. **Smoking**
+4. **High blood pressure**
+5. **Female gender**: Women have a higher risk of developing brain aneurysms compared to men.
+6. **Age**: The risk of brain aneurysms may increase with age.
+7. **Autosomal Dominant Polycystic Kidney Disease (ADPKD)**: This is a genetic condition leading to the development of multiple cysts in the kidneys. It is also associated with brain aneurysms.
+8. **Sickle cell disease**: This is a disorder of the red blood cells that is also associated with brain aneurysms.
+
 
 ## Are brain aneurysms dangerous?
 
-Many aneurysms are benign: they cause no symptoms and will never rupture. However, other aneurysms do rupture causing life-threatening bleeding around the brain, called subarachnoid haemorrhage. Rarely aneurysms can cause symptoms without rupturing, such as reduced vision, double vision, seizures, or strokes. These effects are caused by inflammation or pressure on the surrounding brain structures, or due to the development of blood clots. Unfortunately there is no test that can accurately identify aneurysms that will go on to rupture, although we do have some idea of factors which make certain aneurysms more likely to do so. 
+Many aneurysms are benign: they cause no symptoms and never rupture. However, some do rupture, leading to life-threatening bleeding around the brain known as subarachnoid haemorrhage. In rare cases, unruptured aneurysms can still cause symptoms such as reduced vision, double vision, seizures, or strokes. These symptoms result from inflammation, pressure on nearby brain structures, or the formation of blood clots. Unfortunately, there is no test that can reliably predict which aneurysms will rupture, though certain factors are known to increase the risk:
+
+* **Aneurysm size**: Larger aneurysms carry a higher risk
+* **Location**: Aneurysms on the posterior circulation (e.g. basilar artery) are more prone to rupture
+* **Growth over time**: Increasing size on follow-up imaging suggests higher risk
+* **Previous rupture**: Patients who have had one ruptured aneurysm are at higher risk of another rupturing
+* **Family history**: A strong family history of aneurysmal subarachnoid haemorrhage increases risk
+* **Smoking**: Significantly associated with both aneurysm formation and rupture
+* **Hypertension**: High blood pressure is a known risk factor
+* **Age and sex**: Rupture risk increases with age and is more common in females
+* **Aneurysm shape**: Irregular or lobulated shapes are more likely to rupture than smooth, round ones
+
+
+
 
 ## References
 
