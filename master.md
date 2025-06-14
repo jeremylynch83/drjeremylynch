@@ -922,9 +922,7 @@ Interventional neuroradiologists, otherwise known as neurointerventional radiolo
 
 ## Are interventional neuroradiologists surgeons? 
 
-Interventional neuroradiology procedures are complex procedures requiring a high degree of manual dexterity and anatomical knowledge and many years of training. Another name for the specialty is endovascular neurosurgery. A distinction is often made from the more traditional open microvascular neurosurgery which involves making incisions in the skull to perform procedures under a microscope. 
-
-Many practitioners come from a background in radiology, which might seem odd at first. However, the specialty evolved from first performing diagnostic procedures, called angiograms, by injecting substances into the bloodstream to visualise diseases. After many advances in techniques and technology practitioners were able to actually treat diseases using tiny instruments directly inside the blood vessels themselves. As well as radiology, practitioners may also have backgrounds in neurosurgery, and neurology. 
+Doctors who perform interventional neuroradiology procedures undergo many years of specialised training and may come from backgrounds in radiology, surgery, or neurology. The field is also known as neurointervention or endovascular neurosurgery. Unlike traditional open neurosurgery—which requires opening the skull and operating under a microscope—interventional neuroradiology uses minimally invasive techniques. Despite the different approaches, both specialties often treat the same conditions, such as aneurysms and arteriovenous malformations (AVMs).
 
 ## Are these techniques safe or are they considered experimental?
 
