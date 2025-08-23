@@ -40,7 +40,7 @@ def parse_headings_and_group(file_path: str):
     """
     Parse H1 headings with '{SectionName}' to build:
       - grouped_headings: { section_label: ["- url: link\\n  text: Text", ...] }
-      - section_links:    { "# Text": section_label }
+      - page_to_section:  { "SectionSlug_TitleSlug.html": section_label }
       - group_names:      { section_label: section_label }
       - section_first:    { section_label: first page link }  (for breadcrumb URL)
     """
@@ -48,7 +48,7 @@ def parse_headings_and_group(file_path: str):
         lines = f.read().splitlines()
 
     grouped_headings: Dict[str, List[str]] = {}
-    section_links: Dict[str, str] = {}
+    page_to_section: Dict[str, str] = {}
     group_names: Dict[str, str] = {}
     section_first: Dict[str, str] = {}
 
@@ -65,7 +65,7 @@ def parse_headings_and_group(file_path: str):
         link = f"{slugify(section)}_{slugify(text)}.html"
 
         grouped_headings.setdefault(section, []).append(f"- url: {link}\n  text: {text}")
-        section_links[f"# {text}"] = section
+        page_to_section[link] = section
 
         # store first page in this section as the section breadcrumb target
         if section not in section_first:
@@ -73,13 +73,13 @@ def parse_headings_and_group(file_path: str):
         if section not in group_names:
             group_names[section] = section
 
-    return grouped_headings, section_links, group_names, section_first
+    return grouped_headings, page_to_section, group_names, section_first
 
 
 def create_md_content_from_headings(
     file_path: str,
     grouped_headings: Dict[str, List[str]],
-    section_links: Dict[str, str],
+    page_to_section: Dict[str, str],
     group_names: Dict[str, str],
     section_first: Dict[str, str],
 ) -> List[Tuple[str, str]]:
@@ -128,8 +128,8 @@ def create_md_content_from_headings(
             yaml_lines.insert(0, f"title: {yaml_quote(title_text)}")
 
             # Related links (if this H1 is in a section)
-            if current_heading_text in section_links:
-                sec = section_links[current_heading_text]
+            sec = page_to_section.get(current_heading_filename)
+            if sec:
                 links_yaml = "\n".join(grouped_headings.get(sec, []))
                 if links_yaml:
                     yaml_lines.append("links:")
@@ -138,8 +138,7 @@ def create_md_content_from_headings(
             # Breadcrumbs: Home -> Section (links to that section's FIRST page) -> Page
             yaml_lines.append("breadcrumbs:")
             yaml_lines.append(f"- text: Home\n  url: index.html")
-            if current_heading_text in section_links:
-                sec = section_links[current_heading_text]
+            if sec:
                 section_name = group_names.get(sec, sec)
                 section_url = section_first.get(sec)
                 if title_text != section_name and section_url:
@@ -194,7 +193,7 @@ def _extract_title_from_md(md_content: str) -> str:
 
 def create_all_topics(
     md_sections: List[Tuple[str, str]],
-    section_links: Dict[str, str],
+    page_to_section: Dict[str, str],
     group_names: Dict[str, str],
     section_first: Dict[str, str],
     template_path: str
@@ -209,7 +208,7 @@ def create_all_topics(
     section_pages: Dict[str, List[Tuple[str, str]]] = {}
     for filename, md_content in md_sections:
         title = _extract_title_from_md(md_content) or os.path.splitext(filename)[0]
-        sec = section_links.get(f"# {title}")
+        sec = page_to_section.get(filename)
         section = sec if sec else "Misc"
         section_pages.setdefault(section, []).append((title, filename))
 
@@ -256,13 +255,13 @@ def main():
 
     delete_all_html()
 
-    grouped_headings, section_links, group_names, section_first = parse_headings_and_group(master_md)
+    grouped_headings, page_to_section, group_names, section_first = parse_headings_and_group(master_md)
     md_sections = create_md_content_from_headings(
-        master_md, grouped_headings, section_links, group_names, section_first
+        master_md, grouped_headings, page_to_section, group_names, section_first
     )
 
     create_index()
-    create_all_topics(md_sections, section_links, group_names, section_first, template_path)
+    create_all_topics(md_sections, page_to_section, group_names, section_first, template_path)
 
     for filename, md_content in md_sections:
         convert_md_to_html(md_content, filename, template_path)
