@@ -18,6 +18,9 @@ def slugify(text: str) -> str:
     text = '_'.join(text.split())
     return text.strip('_') or "section"
 
+def yaml_quote(s: str) -> str:
+    """Quote a string safely for simple YAML metadata usage."""
+    return '"' + s.replace('"', '\\"') + '"'
 
 def delete_all_html() -> None:
     """Delete ALL .html files in the current directory."""
@@ -121,6 +124,9 @@ def create_md_content_from_headings(
 
             yaml_lines: List[str] = []
 
+            # --- Add page title to YAML to satisfy Pandoc (<title>) ---
+            yaml_lines.insert(0, f"title: {yaml_quote(title_text)}")
+
             # Related links (if this H1 is in a section)
             if current_heading_text in section_links:
                 sec = section_links[current_heading_text]
@@ -178,6 +184,68 @@ def convert_md_to_html(md_content: str, html_filename: str, template_path: str) 
     )
 
 
+def _extract_title_from_md(md_content: str) -> str:
+    """Return the first '# ' heading text found in a markdown string."""
+    for line in md_content.splitlines():
+        if line.startswith("# "):
+            return line[2:].strip()
+    return ""
+
+
+def create_all_topics(
+    md_sections: List[Tuple[str, str]],
+    section_links: Dict[str, str],
+    group_names: Dict[str, str],
+    section_first: Dict[str, str],
+    template_path: str
+) -> None:
+    """
+    Build All_topics.html hierarchically:
+      Section
+        - Page1
+        - Page2
+    """
+    # Collect per-section pages
+    section_pages: Dict[str, List[Tuple[str, str]]] = {}
+    for filename, md_content in md_sections:
+        title = _extract_title_from_md(md_content) or os.path.splitext(filename)[0]
+        sec = section_links.get(f"# {title}")
+        section = sec if sec else "Misc"
+        section_pages.setdefault(section, []).append((title, filename))
+
+    # Sort pages within each section
+    for sec in section_pages:
+        section_pages[sec].sort(key=lambda t: t[0].lower())
+
+    # Sort sections alphabetically
+    sorted_sections = sorted(section_pages.keys(), key=lambda s: s.lower())
+
+    # YAML (include proper <title>)
+    yaml_block = (
+        "---\n"
+        f"title: {yaml_quote('All topics')}\n"
+        "breadcrumbs:\n"
+        "- text: Home\n  url: index.html\n"
+        "- text: All topics\n"
+        "---"
+    )
+
+    # Body
+    body_lines = ["# All topics", ""]
+    for sec in sorted_sections:
+        sec_name = group_names.get(sec, sec)
+        # To make section headers clickable to first page, replace next line with:
+        # body_lines.append(f"## [{sec_name}]({section_first.get(sec, '')})")
+        body_lines.append(f"## {sec_name}")
+        for title, filename in section_pages[sec]:
+            body_lines.append(f"- [{title}]({filename})")
+        body_lines.append("")
+
+    md = f"{yaml_block}\n\n" + "\n".join(body_lines)
+    convert_md_to_html(md, "All_topics.html", template_path)
+    print("Created HTML file: All_topics.html")
+
+
 # =======================
 # Orchestration
 # =======================
@@ -194,6 +262,7 @@ def main():
     )
 
     create_index()
+    create_all_topics(md_sections, section_links, group_names, section_first, template_path)
 
     for filename, md_content in md_sections:
         convert_md_to_html(md_content, filename, template_path)

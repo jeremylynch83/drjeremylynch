@@ -100,6 +100,12 @@ button:focus-visible,
     border-radius: 6px;
 }
 
+.consultant-title {
+    font-size: clamp(0.55rem, 1.2vw, 0.75rem); /* min, preferred, max */
+    line-height: 1.2;
+    display: block;
+}
+
 /* Remove rounded edges on all Bootstrap buttons */
 /* Tweak buttons for lighter, smaller style */
 .btn {
@@ -352,6 +358,11 @@ figcaption {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+main {
+    max-width: 800px; /* set your desired width */
+    margin: 0 auto; /* center the content */
 }
 
 .main-content {

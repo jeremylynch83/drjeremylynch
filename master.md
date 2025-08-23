@@ -1057,6 +1057,3 @@ The main potential complication of cerebral angiography is of having a stroke, w
 The second main risk is of damage to artery at the access site. It is common to get small amounts of bleeding after the procedure and this usually stops spontaneously. If the bleeding is heavier or if there is internal bleeding then sometimes special injections or surgery is required. It is rare for this to be necessary, however. Very rarely the artery can become blocked, resulting in not enough blood getting to the leg. This condition requires surgery to remedy.
 
 
-# All topics  {All}
-
-Here
