@@ -1,324 +1,530 @@
-/* Base & Typography */
-html, body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	color: #777;
-	line-height: 1.8;
-	font-family: 'Roboto', sans-serif;
-	scroll-padding-top: 56px;
-	scroll-behavior: smooth;
+/* =========================================
+   Jeremy Lynch Neuroradiology — Refactored CSS
+   - Consistent design tokens (CSS variables)
+   - Better accessibility & focus states
+   - Leaner overrides (fewer !important)
+   - Responsive, Bootstrap-friendly
+   ========================================= */
+
+/* ===== Design tokens ===== */
+:root {
+    --clr-bg: #ffffff;
+    --clr-text: #222222;
+    --clr-text-muted: #555555;
+    --clr-heading: #000000;
+    --clr-brand: #0078d4; /* accent / link hover */
+    --clr-card-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    --clr-card-shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+    --ff-base: Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+
+    /* Type scale (use with clamp for fluid sizing) */
+    --fs-body: 1rem; /* 16px */
+    --fs-p: clamp(1rem, 0.98rem + 0.2vw, 1.125rem);
+    --fs-h3: clamp(1.25rem, 1.1rem + 0.8vw, 1.625rem);
+    --fs-h4: clamp(1.125rem, 1.05rem + 0.5vw, 1.375rem);
+
+    /* Layout helpers */
+    --navbar-height: 72px;
+    --radius-md: 12px;
+    --radius-sm: 8px;
+
+    /* Motion */
+    --elevate: 150ms ease;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: inherit;
-	color: #000;
-	font-weight: 900;
-	margin: 0;
+/* ===== Base & Typography ===== */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--clr-text);
+    background: var(--clr-bg);
+    line-height: 1.8;
+    font-family: var(--ff-base);
+    scroll-padding-top: var(--navbar-height);
+    scroll-behavior: smooth;
+    font-size: 16px; /* respect user zoom; avoid locking smaller sizes */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    color: var(--clr-heading);
+    font-weight: 900;
+    margin: 0;
 }
 
 h3 {
-	text-align: center !important;
-	letter-spacing: 2px;
-	padding-top: 32px;
-	font-size: 26px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding-top: 32px;
+    font-size: var(--fs-h3);
 }
 
 h4 {
-	text-align: center !important;
+    text-align: center;
+    font-size: var(--fs-h4);
 }
 
 p {
-	color: #000;
-	font-size: 17px !important;
-	text-align: left;
-	margin: 0 0 1em;
+    color: var(--clr-text);
+    font-size: var(--fs-p);
+    text-align: left;
+    margin: 0 0 1em;
 }
 
-/* Parallax backgrounds */
+/* ===== Links & focus visibility ===== */
+a {
+    color: inherit;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.15em;
+}
+
+a:hover {
+    color: var(--clr-brand);
+}
+
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+.nav-link:focus-visible,
+.btn:focus-visible {
+    outline: 2px solid var(--clr-brand);
+    outline-offset: 2px;
+    border-radius: 6px;
+}
+
+/* Remove rounded edges on all Bootstrap buttons */
+/* Tweak buttons for lighter, smaller style */
+.btn {
+    border-radius: 0 !important; /* keep square edges */
+    font-size: 0.8rem !important; /* slightly smaller than Bootstrap default */
+    font-weight: 400; /* lighter face */
+    padding: 0.45rem 1rem; /* a bit slimmer vertical padding */
+}
+
+/* ===== Parallax backgrounds (kept lightweight) ===== */
 .bgimg-1,
 .bgimg-2,
 .bgimg-3 {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bgimg-2 {
-	background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
-	min-height: 400px;
-	background-attachment: initial;
+    background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+    min-height: 400px;
+    background-attachment: initial; /* avoid jank on mobile */
 }
 
 .bgimg-3 {
-	background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
-	min-height: 400px;
-	background-attachment: initial;
+    background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+    min-height: 400px;
+    background-attachment: initial;
 }
 
-/* Navbar centering & links */
+/* ===== Optional W3 navbar helpers (if used) ===== */
 .w3-top .w3-bar {
-	display: flex !important;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .w3-bar .w3-bar-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Utility & animations */
-.w3-wide { letter-spacing: 10px; }
-.w3-hover-opacity { cursor: pointer; }
-.fade { transition: opacity 0.3s ease-in; }
-.fadeIn {}
-.fadeOut {}
+/* ===== Utilities & reduced motion ===== */
+.w3-wide {
+    letter-spacing: 0.1em;
+}
+.w3-hover-opacity {
+    cursor: pointer;
+}
 
-/* Profile section */
+.fade {
+    transition: opacity 0.3s ease-in;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ===== Profile section ===== */
 .profile-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	max-width: 800px;
-	margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 0; /* rely on internal padding */
 }
 
 .profile-image-col,
 .profile-text-col {
-	padding: 20px;
+    padding: 20px;
 }
 
 .profile-image-col {
-	flex: 1 1 33.33%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.profile-image-col img {
-	max-width: 200px;
-	width: 100%;
-	height: auto;
-	display: block;
+    flex: 1 1 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-text-col {
-	flex: 1 1 66.67%;
+    flex: 1 1 66.67%;
+    min-width: 0;
 }
 
+.profile-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 992px) {
+    .profile-image {
+        max-width: 360px;
+    }
+}
 
 figcaption {
-	text-align: center;      /* centres the caption text */
-
+    text-align: center;
 }
 
-
-@media screen and (max-width: 600px) {
-	.profile-image-col,
-	.profile-text-col {
-		flex: 1 1 100%;
-	}
+@media (max-width: 600px) {
+    .profile-image-col,
+    .profile-text-col {
+        flex: 1 1 100%;
+    }
 }
 
-/* Media elements & custom text */
+/* ===== Media elements & custom text ===== */
 .your-video-class {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center;
-	transform: translate(-50%, -50%);
-	filter: grayscale(20%);
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: translate(0, 0);
+    filter: grayscale(20%);
 }
 
 .main-title {
-	font-size: 25px;
-	letter-spacing: 2px;
+    font-size: clamp(1.25rem, 1.05rem + 1.2vw, 1.75rem);
+    letter-spacing: 0.06em;
 }
 
 .letters {
-	font-size: 20px;
-	letter-spacing: 4px;
+    font-size: clamp(0.9rem, 0.8rem + 0.6vw, 1.25rem);
+    letter-spacing: 0.12em;
 }
 
-/* Treatments & pictures */
-.treatment { padding: 10px; }
-.picture-main { margin: 0 50px; }
-.picture-img { width: 100%; height: auto; }
+/* ===== Treatments & pictures ===== */
+.treatment {
+    padding: 10px;
+}
+
+.picture-main {
+    margin: 0 50px;
+}
+
+.picture-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    display: block;
+}
+
 .picture-title {
-	color: #000;
-	text-align: center;
-	font-size: 18px;
-	font-family: 'Roboto', sans-serif;
-
-
+    color: var(--clr-heading);
+    text-align: center;
+    font-size: 1.125rem;
+    font-family: var(--ff-base);
+    font-weight: 600;
 }
 
-
+/* ===== Locations (clean cards) ===== */
 .locations-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 2rem;                /* even spacing */
-	max-width: 900px;
-	margin: 2rem auto 4rem;
-}
-.location-card {
-	text-align: center;
-	max-width: 200px;
-}
-.location-card a {
-	text-decoration: none;
-	color: inherit;
-}
-.location-logo {
-	width: 150px;
-	height: 150px;
-	object-fit: contain;      /* preserve logo, no cropping */
-	background: #fff;
-	padding: 8px;
-	border-radius: 8px;
-	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-.location-title {
-	margin-top: 0.75rem;
-	font-weight: 700;         /* bold */
-}
-.location-desc {
-	margin-top: 0.25rem;
-	font-weight: 600;         /* semi-bold */
-	color: #555;
-	font-size: 0.9em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 2rem auto 4rem;
 }
 
-.content-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 20px;
+.location-card {
+    text-align: center;
+    width: 100%;
+    max-width: none;
+    display: flex;
+    flex-direction: column; /* equal height */
+    border: 0;
+    border-radius: var(--radius-md);
+    box-shadow: var(--clr-card-shadow);
+    transition:
+        transform var(--elevate),
+        box-shadow var(--elevate);
+    background: #fff;
 }
+@media (min-width: 576px) {
+    .location-card {
+        width: auto;
+        max-width: 260px;
+    }
+}
+
+.location-card:hover,
+.location-card:focus-within {
+    transform: translateY(-3px);
+    box-shadow: var(--clr-card-shadow-hover);
+}
+
+.location-media {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 14px;
+    background: #fff;
+    border-top-left-radius: var(--radius-md);
+    border-top-right-radius: var(--radius-md);
+}
+
+.location-logo {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.location-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 16px 16px;
+}
+
+.location-title {
+    margin: 0 0 0.25rem;
+    font-weight: 700;
+}
+
+.location-desc {
+    margin: 0;
+    font-weight: 600;
+    color: var(--clr-text-muted);
+    font-size: 0.92rem;
+}
+
+/* Neutralize any global image/border styles inside cards */
+.card.location-card {
+    border: 0;
+}
+.card.location-card img {
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+    border: 0;
+}
+
+/* ===== Articles layout ===== */
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .main-content {
-	flex: 1 1 60%;
-	min-width: 300px;
+    flex: 1 1 60%;
+    min-width: 300px;
 }
 
 .main-content img {
-	max-width: 100%;
-	width: 80%; /* adjust as needed */
-	height: auto;
-	display: block;
-	margin: 0 auto; /* optional: center images */
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .article-links {
-	flex: 0 0 30%;
-	min-width: 200px;
-	text-align: left;
+    flex: 0 0 30%;
+    min-width: 200px;
+    text-align: left;
 }
-/* Header styling */
+
 .article-links h4 {
-	text-align: left !important;
-	margin: 0 0 0.5em 0;
-	padding: 0;
+    text-align: left;
+    margin: 0 0 0.5em 0;
+    padding: 0;
 }
+
 .article-links ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
 .article-links li {
-	margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
-/* On narrower screens, stack vertically */
+
 @media (max-width: 800px) {
-	.content-wrapper {
-		flex-direction: column;
-	}
-	.article-links {
-		order: 2;
-	}
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .article-links {
+        order: 2;
+    }
 }
 
-/* Sticky top nav */
+/* ===== Sticky top knowledge nav (if used separately) ===== */
 .navbar-knowledge {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background: #fff;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0.5rem 1rem;
-	z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--clr-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
 }
-/* Brand styling */
+
 .navbar-knowledge .brand {
-	font-size: 1.25rem;
-	font-weight: bold;
-	color: #333;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--clr-text);
 }
-/* Nav links */
+
 .navbar-knowledge .nav-links {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
+
 .navbar-knowledge .nav-links li {
-	margin-left: 1rem;
+    margin-left: 1rem;
 }
+
 .navbar-knowledge .nav-links a {
-	text-decoration: none;
-	padding: 0.5rem;
-	color: #555;
-	transition: color 0.2s;
+    text-decoration: none;
+    padding: 0.5rem;
+    color: var(--clr-text-muted);
+    transition: color 0.2s;
 }
+
 .navbar-knowledge .nav-links a:hover {
-	color: #0078d4;
+    color: var(--clr-brand);
 }
-/* Responsive (simple mobile collapse) */
+
 @media (max-width: 600px) {
-	.navbar-knowledge {
-		flex-wrap: wrap;
-		justify-content: center; /* center everything by default */
-	}
-	.navbar-knowledge .brand {
-		width: 100%;            /* force new line */
-		text-align: center;     /* center the text */
-		order: 0;               /* ensure it stays on top */
-	}
-	.navbar-knowledge .nav-links {
-		width: 100%;
-		justify-content: space-around;
-		order: 1;
-		margin-top: 0.5rem;
-	}
+    .navbar-knowledge {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar-knowledge .brand {
+        width: 100%;
+        text-align: center;
+        order: 0;
+    }
+    .navbar-knowledge .nav-links {
+        width: 100%;
+        justify-content: space-around;
+        order: 1;
+        margin-top: 0.5rem;
+    }
 }
 
-/* Forms & selects */
-select option { padding: 5px; }
-.degree-style { width: 70%; }
+/* ===== Forms & selects ===== */
+select option {
+    padding: 5px;
+}
 
-/* Responsive adjustments */
-@media only screen and (max-width: 768px) {
-	.w3-xlarge { font-size: 12px !important; }
-	.w3-medium { font-size: 9px !important; }
-	h3 { letter-spacing: 3px !important; }
-	p { font-size: 18px; }
-	.letters { font-size: 8px; letter-spacing: 2px; }
-	.picture-main { margin: 0 30px; }
+/* ===== Degree logos ===== */
+.degree-style {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
 
-	.nav-toggle { display: none; }
-	.nav-mobile { display: none; }
-	.nav-toggle:checked ~ .nav-mobile { display: block; }
-	.nav-mobile .w3-bar-item { display: block; }
+/* ===== Utilities ===== */
+.text-smallcaps {
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
 
-		.main-content {
-			padding-top: 2rem; /* adjust value as needed */
-		}
+/* ===== Responsive adjustments ===== */
+@media (max-width: 768px) {
+    /* Make small screens comfortable to read; don't shrink too far */
+    h3 {
+        letter-spacing: 0.08em;
+    }
+    .letters {
+        letter-spacing: 0.08em;
+    }
+    .picture-main {
+        margin: 0 30px;
+    }
 
+    /* Mobile nav helpers (if using custom nav toggles elsewhere) */
+    .nav-toggle {
+        display: none;
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .nav-toggle:checked ~ .nav-mobile {
+        display: block;
+    }
+    .nav-mobile .w3-bar-item {
+        display: block;
+    }
 
+    .main-content {
+        padding-top: 2rem;
+    }
+}
+
+/* ===== Space for fixed-top navbar ===== */
+main {
+    padding-top: var(--navbar-height);
+}
+
+/* ===== Bootstrap-specific fine-tunes ===== */
+/* Make Bootstrap navbar brand + small text a bit tighter */
+.navbar .navbar-brand small {
+    line-height: 1.2;
+    color: var(--clr-text-muted);
+}
+
+/* Improve hover/active for Bootstrap nav links */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--clr-brand);
+}
+.navbar .nav-link[aria-current="page"] {
+    font-weight: 700;
 }
