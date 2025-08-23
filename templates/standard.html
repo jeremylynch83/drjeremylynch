@@ -72,10 +72,14 @@
                 position: sticky;
                 top: 96px;
             }
+            .crumb-wrap {
+                border: 1px solid #cfe4e7;
+                border-radius: 0.25rem;
+                padding: 0.5rem 1rem;
+            }
         </style>
     </head>
     <body>
-        <!-- Navbar -->
         <!-- Navbar -->
         <nav
             class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top"
@@ -116,6 +120,35 @@
 
         <main>
             <section class="container py-4">
+                <!-- Breadcrumbs (shown only when 'breadcrumbs' is provided by the page) -->
+                $if(breadcrumbs)$
+                <div
+                    class="crumb-wrap mb-4"
+                    role="navigation"
+                    aria-label="Breadcrumb"
+                >
+                    <nav>
+                        <ol class="breadcrumb mb-0">
+                            $for(breadcrumbs)$
+                            <li
+                                class="breadcrumb-item$if(breadcrumbs.active)$ active$endif$"
+                                $if(breadcrumbs.active)$aria-current="page"
+                                $endif$
+                            >
+                                $if(breadcrumbs.url)$
+                                <a
+                                    href="$breadcrumbs.url$"
+                                    class="text-decoration-none"
+                                    >$breadcrumbs.text$</a
+                                >
+                                $else$ $breadcrumbs.text$ $endif$
+                            </li>
+                            $endfor$
+                        </ol>
+                    </nav>
+                </div>
+                $endif$
+
                 <div class="row g-4">
                     <!-- Main Content -->
                     <div class="col-md-8">$body$</div>
@@ -143,7 +176,7 @@
             </section>
         </main>
 
-        $footer$
+        $for(include-after)$ $include-after$ $endfor$
 
         <script src="js/main.js"></script>
         <!-- Bootstrap 5 JS bundle -->
