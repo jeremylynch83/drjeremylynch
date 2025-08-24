@@ -183,7 +183,7 @@ Many aneurysms are benign: they cause no symptoms and never rupture. However, so
 
 #  Symptoms of brain aneurysms {Aneurysms}
 
-A brain aneurysm typically doesn't present symptoms until it's large or ruptures. However, it's crucial to recognise potential signs to seek timely medical help.
+A brain aneurysm typically doesn't cause symptoms until it's large or it ruptures. 
 
 ## Ruptured Brain Aneurysm
 
@@ -198,13 +198,13 @@ A ruptured aneurysm is a medical emergency. Symptoms may include:
 * Difficulty walking or sudden dizziness
 * Sudden weakness and numbness
 
-Most of the time aneurysm rupture is a serious and dramatic event that would be very noticeable to the patient. Commonly there is a severe headache, neck, pain, and sensitivity to light, which may be accompanied by loss of consciousness and patients are usually immediately brought to the hospital for further investigation and treatment.
+Aneurysm rupture is a serious and dramatic event that is very noticeable. Commonly there is a severe headache, neck, pain, and sensitivity to light, which may be accompanied by loss of consciousness and patients are usually immediately brought to the hospital for further investigation and treatment.
 
 Rarely, however, aneurysm rupture can produce less noticeable symptoms. Typically, there is still a severe headache. If you have any concerns you should immediately contact emergency medical services, especially if you’re known to have a brain aneurysm.
 
 ## Unruptured Brain Aneurysm
 
-Most aneurysms do not give any symptoms until they rupture. In rare instances unruptured aneurysms symptoms might include:
+Most aneurysms do not cause symptoms until they rupture. In rare instances unruptured aneurysms symptoms might include:
 
 * Pain above and behind an eye
 * Dilated pupil
@@ -213,37 +213,35 @@ Most aneurysms do not give any symptoms until they rupture. In rare instances un
 
 #  Diagnosis of brain aneurysms {Aneurysms}
 
-When it comes to diagnosing brain aneurysms, a range of imaging technologies may be used. Here is an overview of these different modalities:
-
 ## Computerised Tomography (CT Scan)
 
-A CT scan employs X-rays to create a detailed image of the brain. This technology is widely available, quick, and particularly effective in identifying bleeding in or around the brain, which can occur if an aneurysm ruptures. The scan may be performed with or without a 'contrast' dye, which helps in distinguishing different brain structures more clearly. Although a CT scan does involve a small amount of radiation, the dosage is generally not high enough to pose a significant risk to the patient.
+A CT scan utilises X-rays to create a detailed image of the brain. This technology is widely available, quick, and particularly effective in identifying bleeding in or around the brain, which can occur if an aneurysm ruptures. The scan may be performed with or without a iodinated 'contrast' dye, which helps in distinguishing different brain structures more clearly, such as the blood vessels. Although a CT scan does involve a small amount of radiation, the dosage is generally not high enough to pose a significant risk to the patient.
 
-CT Angiography is a specialized CT scan that uses an injection of contrast dye to visualize the blood vessels, making it an effective tool in the diagnosis of brain aneurysms. As the contrast dye highlights the blood vessels, it allows doctors to see the shape and size of an aneurysm, if present. This procedure is mostly non-invasive, other than the small injection required for the contrast dye.
+CT Angiography is a specialized CT scan that uses an injection of contrast dye to visualize the blood vessels, making it an effective tool in the diagnosis of brain aneurysms. It is usually possible to see the shape and size of an aneurysm, if present. The procedure is mostly non-invasive, other than the small injection required for the contrast.
 
 CT scans involve being placed in a donut shaped machine. Scans usually take about 10 minutes.
 
 ## Magnetic Resonance Imaging (MRI)
 
-MRI and MR angiography (MRA) are techniques that generate high-resolution images of the brain and blood vessels respectively, without using X-rays. Instead, they use strong magnetic fields. These methods can offer a more detailed image of an aneurysm and its exact location, compared to CT scans. However, they are generally slower, more expensive, and cannot be used on patients with certain metallic implants, due to the powerful magnets involved.
+MRI and MR angiography (MRA) are techniques that generate high-resolution images of the brain and blood vessels respectively, without using X-rays. Instead, they use strong magnetic fields. These methods can can see certain aneurysms in more detail, and are used in the follow-up of embolised (but not clipped) aneurysms. However, they are generally slower, more expensive, and cannot be used on patients with certain metallic implants, due to the powerful magnets involved.
 
-MRI scans involve being positioned in a tunnel and typically take 20-60 minutes to complete the scan.
+MRI scans involve being positioned in a tunnel and typically take 20-60 minutes.
 
 ## Cerebral Angiography
 
-Cerebral angiography is a diagnostic procedure that uses X-rays to produce very high-resolution images of the brain's blood vessels, and it is the gold-standard method for identifying aneurysms. During this test, a small incision is made in the patient's groin or wrist, through which a catheter is guided to the blood vessels in the brain. Contrast dye is then injected through the catheter to visualize the aneurysm. This procedure provides the most detailed images of an aneurysm, but it is more invasive than MRI or CT/CTA scans. While it's a generally safe procedure, there is a small risk (less than 0.5%) of a patient suffering a stroke as a result of the procedure.
+Cerebral angiography is a more invasive diagnostic procedure that uses X-rays to produce very high-resolution images of the brain's blood vessels, and it is the gold-standard method for identifying aneurysms. During this test, a small incision is made in the patient's groin or wrist, through which a catheter is guided to the blood vessels in the neck. Contrast dye is then injected through the catheter to visualize the aneurysm. This procedure provides the most detailed images of an aneurysm, but it is more invasive than MRI or CT/CTA scans. The major risk is of developing a stroke during the procedure, on the order of 0.5%.
 
 ## Lumbar Puncture
 
 A lumbar puncture, often known as a spinal tap, is a medical procedure where a needle is inserted into the lower portion of the spine (the lumbar region) to extract a sample of cerebrospinal fluid (CSF). This fluid envelops your brain and spinal cord, acting as a protective layer and facilitating a stable environment.
 
-In relation to diagnosing potential ruptured intracranial aneurysms, a lumbar puncture can be useful. This procedure is typically performed when doctors suspect an aneurysm as ruptured but other imaging tests, such as a CT scan, aren't conclusive. This could be because the bleed was minimal, or the blood has dispersed over time. During a lumbar puncture, the collected CSF is meticulously examined for the presence of blood or xanthochromia. The latter is a yellowish or pinkish discoloration that results from the breakdown of red blood cells in the CSF — both of these signs point towards a recent subarachnoid haemorrhage.
+In the context of aneurysms, it is usually performed when doctors suspect an aneurysm as having ruptured but other imaging tests, such as a CT scan, aren't conclusive. This could be because the bleed was minimal, or the blood has already dispersed. During a lumbar puncture, the collected CSF is meticulously examined for the presence of blood or xanthochromia. The latter is a yellowish or pinkish discoloration that results from the breakdown of red blood cells in the CSF — both of these signs point towards a recent subarachnoid haemorrhage.
 
 #  Ruptured aneurysm treatment {Aneurysms}
 
 ## What are the consequences of aneurysm rupture?
 
-Aneurysm rupture results in a severe headache caused by bleeding around the brain, termed subarachnoid haemorrhage. A common description of this is a "thunderclap" headache. It may be accompanied by a stiff neck, sickness, vomiting, sensitivity to light, and loss of consciousness. Aneurysmal haemorrhage may lead to death. Rates of death vary in different studies and range from 20-50% [1]. It is likely that the death rate from aneurysm rupture is decreasing over time due to advances in medical care.
+Aneurysm rupture results in a severe headache caused by bleeding around the brain, termed subarachnoid haemorrhage. A common description of this is a "thunderclap" headache. It may be accompanied by a stiff neck, sickness, vomiting, sensitivity to light, and loss of consciousness. Aneurysmal haemorrhage may lead to death. Rates of mortality vary in different studies and range from 20-50% [1]. There is some evidence that the mortality rate from aneurysm rupture is decreasing over time due to advances in medical care.
 
 ![](img/ruptured_aneurysm.svg)
 
@@ -288,9 +286,7 @@ Aneurysms can be dangerous but some require no treatment at all. The decision to
 
 For brain aneurysms there are generally three management strategies:
 
-
-
-1. Monitoring: a period of observation may be undertaken to ensure the aneurysm is not growing or changing.
+1. Monitoring with scans: a period of observation may be undertaken to ensure the aneurysm is not growing or changing.
 2. Endovascular treatment. This involves treating the aneurysm through the blood vessels. Generally, a small incision is made in the groin or wrist and a very thin tube is directed, under X-rays, into the aneurysm. Through this tube tiny coils and stents can be inserted to block off the aneurysm. This is less invasive than surgical treatment.
 3. Surgical clipping. This is an operation involving temporarily removing some of the skull bone ('craniotomy') to access the aneurysm and place a clip around its neck. It is by nature more invasive than endovascular treatment. As the brain is very delicate this procedure is carried out with the use of an operating microscope.
 
@@ -413,7 +409,7 @@ Surgical clipping is an established but more invasive method of treatment that s
 
 ![](img/aneurysm-clipping.svg)
 
-Recovery times vary but are typically longer than for endovascular treatment. Like all surgical procedures clipping carries some risks. Strokes occur in about 5% of cases which can manifest as weakness in the limbs, disturbances in speech, or visual problems. There is about a 1% chance of catastrophic brain injury resulting in death. The surgery might also affect the area of your brain near the aneurysm. This could lead to short-term effects due to swelling or bruising, or in rare cases, long-term effects. These effects would be specific to the location of each aneurysm and may also cause neurological stroke-like symptoms.
+Recovery times vary but are typically longer than for endovascular treatment. Like all surgical procedures clipping carries some risks. Strokes occur in about 5-15% of cases which can manifest as weakness in the limbs, disturbances in speech, or visual problems. There is about a 1% chance of catastrophic brain injury resulting in death. The surgery might also affect the area of your brain near the aneurysm. This could lead to short-term effects due to swelling or bruising, or in rare cases, long-term effects. These effects would be specific to the location of each aneurysm and may also cause neurological stroke-like symptoms.
 
 The procedure can lead to some physical discomfort in the days following the surgery. Swelling and bruising to the face are common, which might cause your eyes to close temporarily. Alongside this headaches are relatively common. The wound site can become infected. One unusual sensation some patients note is the feeling that the bone flap, the piece of bone removed during the surgery, seeming to move. This sensation, while strange, is not dangerous. The bone flap is secured with plates during the operation and will heal properly in time. The muscle used for chewing food might be impacted temporarily by the operation. As this muscle heals, you might find it challenging to open your mouth or chew, but these symptoms typically resolve within six months.
 
@@ -449,13 +445,15 @@ However, in skilled hands, surgical clipping can provide a solution for many typ
 #  Introduction to AVMs {AVM}
 
 
-A brain arteriovenous malformation (AVM) is a complex, abnormal network of blood vessels in the brain. In a healthy brain, blood circulates from arteries to veins via tiny vessels called capillaries. The capillaries allow for the exchange of oxygen and nutrients from the blood to the brain tissue, and the removal of waste products. However, in a brain AVM, direct connections form between the arteries and veins, bypassing these capillaries. This abnormality can disrupt normal blood flow and oxygen circulation.
+A brain arteriovenous malformation (AVM) is a complex, abnormal network of blood vessels in the brain. In a healthy brain, blood circulates from arteries to veins via tiny vessels called capillaries. The capillaries allow for the exchange of oxygen and nutrients from the blood to the brain tissue, and the removal of waste products. However, in a brain AVM, there is a direct connections between the arteries and veins, bypassing these capillaries. 
 
 ![](img/avm.svg)
 
 Whilst AVMs may lead to health problems, many do not cause any problems and can be left alone without treatment.
 
-The most frequently observed problems related to a cerebral AVM are headaches and seizures. These headaches can vary in intensity and frequency, potentially mimicking migraines in some instances. Seizures may manifest in various ways, ranging from changes in a person's behavior or consciousness to involuntary movements or loss of control over movement. In serious cases, the abnormal blood vessels in an AVM may rupture, causing bleeding within the brain (intracranial haemorrhage). Bleeding from a ruptured AVM can cause a sudden, severe headache, nausea, vomiting, incontinence, blurred vision, and even loss of consciousness. Depending on the location of the bleed, impairments caused by local brain tissue damage are also possible, including seizure, weakness on one side of the body (hemiparesis), a loss of touch sensation on one side of the body, and deficits in language processing (aphasia).
+The most frequent problems are headaches and seizures. Headaches can vary in intensity and frequency, potentially mimicking migraines in some instances. Seizures may manifest in various ways, ranging from changes in a person's behavior or consciousness to involuntary movements or loss of control over movement. 
+
+In serious cases, the abnormal blood vessels in an AVM may rupture, causing bleeding within the brain (intracranial haemorrhage). Bleeding from a ruptured AVM can cause a sudden, severe headache, nausea, vomiting, incontinence, blurred vision, and even loss of consciousness. Depending on the location of the bleed, impairments caused by local brain tissue damage are also possible, including seizure, weakness on one side of the body (hemiparesis), a loss of touch sensation on one side of the body, and deficits in language processing (aphasia).
 
 ## Cause
 
@@ -575,44 +573,58 @@ Normally a fine network of microscopic capillaries connects arteries and veins i
 ![](img/davf.svg)
 
 
-The cause of DAVF in a specific patient may not be always be discovered. In general they are not thought to be inherited from parents but instead caused by previous blood clots in the large draining veins of the brain (called venous thrombosis), head injuries, previous brain surgery, or brain infections. Some types of DAVF, termed "high-grade" fistulas, have a risk of bleeding into or around the brain which may have severe consequences. The risk is further increased following a previous bleed. Other types of fistula may have very little risk, termed "low-grade". Some patients have no symptoms and the DAVF is discovered incidentally on a CT or MRI scan. Nevertheless this does not mean that the DAVF carries no risk and further investigation is commonly [required](diagnosis).
+The exact cause of a dural arteriovenous fistula (DAVF) is often unknown. In most cases, DAVFs are not inherited but are thought to develop after events such as blood clots in the brain’s large draining veins (venous thrombosis), head injury, brain surgery, or infection.
+
+DAVFs are classified by risk. High-grade fistulas carry a significant chance of bleeding into or around the brain, especially if bleeding has occurred before, and this can have serious consequences. Low-grade fistulas have little or no risk of bleeding.
+
+Some patients have no symptoms, and the DAVF may be found incidentally on a CT or MRI scan. However, even when discovered by chance, further investigation is usually needed to assess potential risk.
+
+Here’s a cleaner, more structured version of your draft that makes the flow easier to follow while keeping it patient-friendly but accurate:
+
+---
+
+Good point — bleeding should be highlighted clearly, because it’s one of the most serious risks with DAVFs. Here’s how you could integrate it into the structured version you already have:
+
+---
 
 # Symptoms of DAVF {DAVF}
 
-A Dural Arteriovenous Fistula (DAVF) is an abnormal connection between an artery and a vein in the tough covering over the brain or spine (the dura). It is a rare, but serious condition.
+Not everyone with a **dural arteriovenous fistula (DAVF)** develops symptoms. When symptoms do occur, they can vary widely depending on the location of the DAVF and the way it affects blood flow. Some people develop symptoms gradually, while others may notice them suddenly.
 
-Not everyone with a Dural Arteriovenous Fistula will experience symptoms, and symptoms can vary based on the location and characteristics of the DAVF. The symptoms may develop gradually and subtly or can become suddenly apparent. If you experience any of these symptoms, especially the severe ones, it's important to seek immediate medical help.
+## Why DAVFs Cause Symptoms
 
-## Why do DAVF cause symptoms? 
+A DAVF creates an abnormal connection between high-pressure arteries and low-pressure veins, bypassing the normal capillary network. This leads to several possible problems:
 
-Normally, blood flows from arteries to capillaries, then into veins. Arteries carry blood with a high amount of pressure from the heart, whereas veins carry blood back to the heart at a lower pressure. The capillaries are small, thin blood vessels in between, which act as a kind of 'buffer' system that slows down the flow of blood and allows for the exchange of nutrients and waste products between your blood and your body's cells.
+1. **Increased venous pressure**
+   High-pressure arterial blood enters the veins, which are not designed to handle it. This can cause veins to stretch, dilate, or rupture, leading to bleeding in or around the brain.
 
-When a DAVF is present there is an abnormal direct connection between the high-pressure arteries and the low-pressure veins, bypassing the capillaries. This abnormal connection can cause high-pressure blood to flow directly into the veins, which are not designed to handle such high pressure. This increased pressure can dilate and even rupture the veins and small vessels around the DAVF, causing bleeding in or around the brain.
+2. **Venous reflux (reverse blood flow)**
+   Blood may flow backwards in the veins, causing congestion and reduced blood flow in parts of the brain or spinal cord. Over time, this can damage tissue and cause symptoms such as weakness, numbness, or seizures.
 
-In addition, the high-pressure blood flow can cause the blood in the veins to flow in the wrong direction, a condition called venous reflux. This venous reflux can lead to the congestion of blood and reduction of blood flow to certain areas of the brain or spinal cord. Over time, this can result in tissue damage and loss of function in the affected areas, which can cause symptoms such as weakness, numbness, or even seizures.
+3. **Blood flow diversion**
+   Some DAVFs steal blood away from normal brain or spinal tissue. This can deprive those areas of oxygen and nutrients, resulting in neurological problems.
 
-In addition, DAVFs can divert blood away from normal brain or spinal tissues. Because of this diversion, these areas may not receive enough oxygen and nutrients, which can cause various neurological symptoms.
+4. **Location-specific effects**
+   The exact symptoms depend on where the DAVF is located. For example, a DAVF near the ear can cause **pulsatile tinnitus**—a whooshing sound that matches the heartbeat.
 
-The specific symptoms a person experiences can depend on the location of the DAVF and the extent of blood flow disturbance it causes. For example, a DAVF located near the ear may lead to a symptom called pulsatile tinnitus, a whooshing or ringing noise in the ear that corresponds with the heartbeat.
+## Neurological Symptoms
 
+* **Headaches** – New or persistent headaches, often different in pattern or severity from previous ones.
+* **Visual disturbances** – Blurred vision, double vision, or partial loss of sight.
+* **Balance and coordination problems** – Difficulty walking or clumsiness.
+* **Weakness or numbness** – Often affecting one side of the body.
 
-## Neurological symptoms
+## Auditory Symptoms
 
-* Headaches: Unusual or chronic headaches that are different from previous headaches in pattern and intensity.
-* Visual disturbances: This can include blurry vision, double vision, or loss of vision.
-* Problems with balance or coordination: Difficulty walking or clumsiness may be noticed.
-* Weakness or numbness: This is typically on one side of the body.
+* **Pulsatile tinnitus** – A rhythmic whooshing or ringing sound in the ear, in sync with the heartbeat.
 
-## Auditory symptoms
+## Severe Symptoms (Emergency)
 
-* Pulsatile tinnitus: This refers to a whooshing sound in the ears, typically in sync with the heartbeat.
+These are medical emergencies and require urgent assessment:
 
-## Severe symptoms
-
-* Seizures: This is a sudden, uncontrolled electrical disturbance in the brain. It can cause changes in your behavior, movements or feelings, and in levels of consciousness. There are several types of seizures, but a typical, large, seizure consists of sudden collapse, loss of consciousness, and convulsions (body shaking rapidly and uncontrollably).
-
-* Stroke-like symptoms: This can include difficulty speaking, facial drooping, or sudden onset of weakness on one side of the body.
-
+* **Bleeding in or around the brain (intracranial haemorrhage)** – May present with sudden severe headache (“worst ever”), vomiting, loss of consciousness, or neurological deficits such as weakness or difficulty speaking.
+* **Seizures** – Sudden, uncontrolled electrical activity in the brain. This may cause collapse, loss of consciousness, and convulsions (violent body shaking).
+* **Stroke-like symptoms** – Sudden weakness on one side, facial drooping, or difficulty speaking.
 
 # Diagnosis of DAVF {DAVF}
 
@@ -620,7 +632,7 @@ Diagnosing a dural arteriovenous fistula (DAVF) is a step-by-step process that i
 
 ## Medical History and Physical Examination
 
-The first step in diagnosing a DAVF typically involves a thorough review of your medical history. Your doctor will ask you detailed questions about your symptoms, including their nature, duration, and severity. They may also ask you about your overall health, including any other medical conditions you may have and any medications you are currently taking.
+The first step involves a thorough review of your medical history. Your doctor will ask you detailed questions about your symptoms, including their nature, duration, and severity. They may also ask you about your overall health, including any other medical conditions you may have and any medications you are currently taking.
 
 In addition, they might inquire about any history of trauma, infection, or surgery. This is because these factors can sometimes contribute to the development of a DAVF. For instance, a prior injury or surgery to the head might damage the blood vessels, leading to the abnormal connections seen in DAVFs. Similarly, certain infections can also affect the blood vessels in the dura.
 
@@ -636,15 +648,13 @@ Common symptoms that your doctor may ask about include:
 
 * **Neurological symptoms**: These can encompass a wide range of issues, from muscle weakness and balance difficulties to more severe problems like seizures or even stroke-like symptoms. These occur due to the altered blood flow in the brain.
 
-Following this, your doctor will carry out a physical examination. They will likely focus on your neurological health, looking for signs of issues such as muscle weakness, vision changes, or balance difficulties. This can involve testing your reflexes, assessing your sense of touch and pain, and examining your eyes, among other things. These checks are important because DAVFs can affect your neurological function due to the altered blood flow in your brain.
-
 ## Imaging Tests
 
 Several types of imaging tests can help visualize the blood vessels in the brain and detect any abnormalities. These include:
 
-- **Magnetic Resonance Imaging (MRI):** An MRI is a non-invasive imaging technique that employs powerful magnets and radio waves to generate comprehensive images of the brain and spinal cord. These images can often highlight the presence of a DAVF or illustrate the impact it has on the brain or spinal cord. MRI can also be combined with angiography (MRA) to visualize blood vessels and the flow of blood, offering a detailed view of any abnormal vascular structures associated with DAVF.
-
 - **Computed Tomography (CT):** A CT scan uses X-ray technology to capture images from various angles, creating cross-sectional views of the brain. These can reveal abnormalities or changes in the brain that might be indicative of a DAVF. Additionally, a CT scan can be combined with angiography (CTA) to provide detailed images of the blood vessels, enhancing the visualization of a possible DAVF.
+
+- **Magnetic Resonance Imaging (MRI):** An MRI is a non-invasive imaging technique that employs powerful magnets and radio waves to generate comprehensive images of the brain and spinal cord. These images can often highlight the presence of a DAVF or illustrate the impact it has on the brain or spinal cord. MRI can also be combined with angiography (MRA) to visualize blood vessels and the flow of blood, offering a detailed view of any abnormal vascular structures associated with DAVF.
 
 - **Digital Subtraction Angiogram (DSA):** DSA is a more invasive procedure that is often used when other imaging tests are inconclusive or when precise details of the blood vessels are needed for treatment planning. In this test, a contrast dye is injected into your blood vessels through a catheter, usually inserted in your groin. As the dye travels through your vessels, a series of X-ray images are taken, which can provide a clear, detailed view of the blood flow and reveal the exact location and characteristics of a DAVF. While more involved and with more potential risks than other imaging studies, DSA is considered the "gold standard" for diagnosing DAVFs due to its high level of detail.
 
