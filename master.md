@@ -76,6 +76,60 @@ Interventional neuroradiology (otherwise known as neurointerventional radiology 
 * Lynch J, Etkind S. Spontaneous Liver Haematoma as a Result of Thrombolytic Therapy. Grand Rounds Journal. 2010. 10:1-4
 * Lynch J, Aughwane P, Hammond TM. Video Games And Surgical Ability: A Literature Review. Journal of Surgical Education. May-Jun 2010;67(3):184-9.
 
+# Terms and Conditions {General}
+
+The content provided on this website is for general informational and educational purposes only. It does not constitute medical advice and should not be relied upon as such.
+
+No doctor–patient relationship is established by accessing or reading the information on this site. A professional relationship is created only when a user books and attends a consultation or clinic appointment with the doctor through the appropriate booking channels provided.
+
+Although reasonable efforts are made to ensure that the information on this website is accurate and up to date, no representations, warranties, or guarantees (express or implied) are given regarding its completeness, accuracy, reliability, or suitability for any particular purpose.
+
+To the fullest extent permitted by law, the website owner shall not be held liable for any loss, injury, or damage, whether direct, indirect, or consequential, arising out of, or in connection with, the use of this website or reliance on any information contained herein.
+
+Users are strongly advised to consult a healthcare professionals regarding any medical concerns or conditions. Never disregard or delay seeking professional medical advice because of information obtained from this website.
+
+# Fees {General}
+
+## Consultation Fees
+
+The fee for an outpatient consultation with Dr Jeremy Lynch, Consultant Interventional Neuroradiologist, is £250.
+
+This fee covers a clinic appointment to discuss your condition, review relevant medical information, and provide specialist advice. Please note that this does not include the cost of any investigations, imaging, or procedures, which will be charged separately if required.
+
+If you have private health insurance, the consultation fee may be covered by your insurer. Please note that you may still be responsible for any policy excess, co-payment, or shortfall depending on the terms of your cover. Self-paying patients are welcome and the consultation fee is payable before the appointment.
+
+## CT or MRI Imaging Investigations
+
+If a CT or MRI scan is required, this will be arranged at an appropriate facility. The cost of imaging investigations can vary depending on the type of scan and the provider, and is therefore charged separately from the consultation fee.
+
+Patients with private health insurance will usually have the cost of imaging covered by their insurer, subject to the terms of their policy (including any excess or shortfall). Self-paying patients will be advised of the likely cost before proceeding.
+
+## Cerebral or Spinal Angiography
+
+In some cases, an angiogram may be recommended to obtain detailed images of the blood vessels in the brain or spine. This is a specialist procedure carried out in a hospital setting under local anaesthetic, with X-ray guidance.
+
+As this is a more complex investigation, the cost can vary depending on the hospital and specific requirements. Fees for cerebral angiography are therefore separate from the consultation fee.
+
+Patients with private health insurance will usually have the procedure covered by their insurer, subject to the terms of their policy (including any excess or shortfall). Self-paying patients will be provided with an estimate of costs before the procedure is arranged.
+
+##  Treatments such as Embolisation
+
+In some cases, treatment of a vascular condition may be recommended using minimally invasive techniques such as endovascular embolisation. These are highly specialised procedures performed in hospital under imaging guidance.
+
+The cost of such procedures will vary depending on the nature and complexity of the treatment, as well as any additional requirements such as anaesthesia, hospital stay, or follow-up care.
+
+Patients with private health insurance will usually have these treatments covered by their insurer, subject to the terms of their policy (including any excess or shortfall). Self-paying patients will be provided with a clear estimate before proceeding.
+
+# Cancellations {General}
+
+If you are unable to attend a booked appointment, please provide at least 48 hours’ notice of cancellation. This allows the appointment to be offered to another patient.
+
+Cancellations made with less than 48 hours’ notice, or non-attendance without prior notice, may incur a cancellation fee at the discretion of the clinic.
+
+If the doctor needs to cancel or reschedule an appointment, all reasonable efforts will be made to notify you as soon as possible and to offer an alternative appointment. No liability is accepted for any costs or inconvenience arising from such changes.
+
+By booking an appointment, you acknowledge and agree to these terms.
+
 #  Introduction to brain aneurysms {Aneurysms}
 
 ## What is an aneurysm?
@@ -529,7 +583,7 @@ A Dural Arteriovenous Fistula (DAVF) is an abnormal connection between an artery
 
 Not everyone with a Dural Arteriovenous Fistula will experience symptoms, and symptoms can vary based on the location and characteristics of the DAVF. The symptoms may develop gradually and subtly or can become suddenly apparent. If you experience any of these symptoms, especially the severe ones, it's important to seek immediate medical help.
 
-# Why do DAVF cause symptoms?
+## Why do DAVF cause symptoms? 
 
 Normally, blood flows from arteries to capillaries, then into veins. Arteries carry blood with a high amount of pressure from the heart, whereas veins carry blood back to the heart at a lower pressure. The capillaries are small, thin blood vessels in between, which act as a kind of 'buffer' system that slows down the flow of blood and allows for the exchange of nutrients and waste products between your blood and your body's cells.
 
@@ -541,7 +595,6 @@ In addition, DAVFs can divert blood away from normal brain or spinal tissues. Be
 
 The specific symptoms a person experiences can depend on the location of the DAVF and the extent of blood flow disturbance it causes. For example, a DAVF located near the ear may lead to a symptom called pulsatile tinnitus, a whooshing or ringing noise in the ear that corresponds with the heartbeat.
 
-# Types of symptoms
 
 ## Neurological symptoms
 
@@ -792,7 +845,7 @@ Strokes can have permanent symptoms such as persistent weakness, inability to wa
 
 # Symptoms of stroke {Stroke}
 
-# Recognizing the Symptoms of a Stroke
+## Recognizing the Symptoms of a Stroke
 
 A stroke can be a life-threatening condition, and it's crucial to recognise the signs and act quickly to get medical help. If you suspect that you or someone else is experiencing a stroke, it's essential to seek medical help immediately. Rapid action can significantly improve outcomes and reduce the long-term effects of a stroke. Remember, every minute counts.
 
@@ -901,13 +954,13 @@ Risks associated with mechanical thrombectomy include potential failure to retri
 
 Mechanical thrombectomy is usually considered an emergency and potentially life-saving treatment. An alternative to thrombectomy is the administration of a ‘clot-busting’ thrombolytic drug, although this option may not be as effective or suitable for all patients due to various risk factors.
 
-# Neurosurgical Intervention and Supportive Care
+## Neurosurgical Intervention and Supportive Care
 
 In certain cases, neurosurgical intervention can be employed to help patients survive the period of maximal swelling after a stroke. Such interventions include decompressive craniectomies, performed with or without duroplasty. These procedures are particularly useful for younger patients with large Middle Cerebral Artery (MCA) infarcts or posterior fossa infarcts.
 
 Moreover, supportive care is integral to the treatment of stroke patients. This often involves dedicated inpatient stroke units to prevent the numerous complications encountered by stroke patients, such as aspiration pneumonia and pressure ulcers.
 
-# Risk Factor Management in Stroke
+## Risk Factor Management in Stroke
 
 Risk factor management is a fundamental part of stroke treatment and aims to reduce the chances of future stroke events. This involves lifestyle modifications, such as a balanced diet, regular exercise, smoking cessation, and limited alcohol consumption, combined with appropriate medical therapy. Underlying medical conditions, such as hypertension, diabetes, high cholesterol, and atrial fibrillation, need to be appropriately managed with the help of medication and lifestyle changes.
 
@@ -993,6 +1046,8 @@ They are also used to follow-up diseases previously treated.
 
 The image quality is often superior when using angiography, allowing the discovery of diseases that do not show up on alternative scans and allowing the planning of certain procedures. As CT and MRI scans are safer, faster, and usually more pleasant to undergo we only do cerebral angiograms when we need to. Having said that, generally the risk (and degree of unpleasantness) is not usually very great.
 
+# Before a Cerebral Angiogram  {Angiography}
+
 ## Can I eat or drink before the procedure?
 
 In some hospitals you may be given instructions not to eat or drink for a few hours before the procedure. This main reason for this is just in case general anaesthesia or sedation is needed during the procedure. Anaesthetists ideally do not like you to have food or drink in the stomach if you are to have general anaesthesia as there is a risk of regurgitation in to the lungs.
@@ -1018,13 +1073,27 @@ Cleaning solutions such as chlorhexidine.
 
 Cerebral angiograms involve small doses of radiation, but usually directed towards the head. The dose to any developing foetus is very low, and can be further lowered by wearing protective lead clothing. Angiograms are sometimes performed in emergency settings where there may be a danger to the mother if they are not performed. However, if the procedure can be avoided by performing an alternative test, or delayed until after the pregnancy this is preferred. If you are pregnant, trying to get pregnant, or if there is any chance that you could possibly be pregnant however unlikely, please inform the staff.
 
-## What is it like to have an angiogram?
+## Are blood tests necessary?
 
-At least a few days before the procedure you would have routine blood tests performed.
+At least a few days before the procedure you may have routine blood tests performed, although this is not always necessary if you are in good health otherwise. 
+
+# Risks  {Angiography}
+
+A cerebral angiogram is considered safe, however any medical procedure can involve small risks. It is important to understand that the risks involved in not undertaking the test (for example, non-diagnosis of a serious disease) usually outweigh the small risks of the procedure.
+
+The main potential complication of cerebral angiography is of having a stroke, with a rate of approximately 0.5% (or 1 in 200 people). This risk varies with a few different factors and would likely be lower if you are normally in good health and not very elderly. The symptoms can involve one or more of the following: weakness of the face, arms, or legs; difficulty with speech; or difficulty with vision. Strokes can also be of variable severity: from brief and barely noticeable to very severe. They can also be temporary or result in permanent deficit. The good news is that strokes that result from cerebral angiogram often tend to be of the lesser severity with good potential for recovery. As strokes tend to occur during, or shortly after the procedure you are also in the best place (under direct medical supervision) if they were to occur.
+
+The second main risk is of damage to artery at the access site. It is common to get small amounts of bleeding after the procedure and this usually stops spontaneously. If the bleeding is heavier or if there is internal bleeding then sometimes special injections or surgery is required. It is rare for this to be necessary, however. Very rarely the artery can become blocked, resulting in not enough blood getting to the leg. This condition requires surgery to remedy.
+
+# During a Cerebral Angiogram  {Angiography}
+
+## What happens on the day?
 
 Typically you would enter the hospital on the day of the procedure. A nurse will go through your medical history. You will then be given a gown to wear during the procedure and remove your underwear. You will then be consented for the procedure by a doctor. You should use the toilet before the procedure.
 
 The angiogram is done in a dedicated angiography suite where you will lie flat on the table. In the room there will be members of the team who help to perform the procedure, including a nurse, a radiographer/technologist (who will help operate the machine), and a doctor (usually an interventional neuroradiologist) who will perform the procedure.
+
+## The procedure
 
 The wrist or groin is usually the site that is used for delivery of the instruments for the procedure and this is shaved and cleaned with sterile solution. Drapes are then placed around the site. The doctor will inject a small amount of local anaesthesia (which unfortunately stings when it goes in) to numb the skin. They will then insert a plastic tube in to the artery and navigate a long thin plastic tube called a catheter through the body and in to the blood vessels of the neck. Through this tube 'contrast' dye is injected whilst performing an X-ray to obtain images of the blood vessels. You do not feel the tube as it passes through the blood vessels in your body as they have no sensory receptors. You may feel some pushing and pulling at the groin.
 
@@ -1033,6 +1102,8 @@ The x-ray machines will move into position over your head. They will move around
 It is very important you stay still throughout the procedure to ensure the pictures taken are as clear as possible. If you feel unwell or in pain please let us know. You can talk to your doctor during the exam.
 
 After all the imaging is finished the tube in the access site is removed. If the puncture site was the groin sometimes a collagen "plug" is used to seal the blood vessel. Alternatively, usually just applying firm pressure to the blood vessel for 10 minutes is sufficient as the hole is fairly small. If the puncture site was the wrist then an inflatable compression device is applied for a few hours after.
+
+# After a Cerebral Angiogram  {Angiography}
 
 ## What happens after the exam?
 
@@ -1048,12 +1119,6 @@ You should make advance arrangements for someone to stay with you for 24 hours a
 
 Sometimes the doctor can tell you at the end of the procedure. It is not unusual, however, for it to be necessary for the images to be analysed on a computer before they can be interpreted. In this case the final results will be delivered later at a clinic attendance or over the phone.
 
-## Does the procedure involve any risk?
 
-A cerebral angiogram is considered safe, however any medical procedure can involve small risks. It is important to understand that the risks involved in not undertaking the test (for example, non-diagnosis of a serious disease) usually outweigh the small risks of the procedure.
-
-The main potential complication of cerebral angiography is of having a stroke, with a rate of approximately 0.5% (or 1 in 200 people). This risk varies with a few different factors and would likely be lower if you are normally in good health and not very elderly. The symptoms can involve one or more of the following: weakness of the face, arms, or legs; difficulty with speech; or difficulty with vision. Strokes can also be of variable severity: from brief and barely noticeable to very severe. They can also be temporary or result in permanent deficit. The good news is that strokes that result from cerebral angiogram often tend to be of the lesser severity with good potential for recovery. As strokes tend to occur during, or shortly after the procedure you are also in the best place (under direct medical supervision) if they were to occur.
-
-The second main risk is of damage to artery at the access site. It is common to get small amounts of bleeding after the procedure and this usually stops spontaneously. If the bleeding is heavier or if there is internal bleeding then sometimes special injections or surgery is required. It is rare for this to be necessary, however. Very rarely the artery can become blocked, resulting in not enough blood getting to the leg. This condition requires surgery to remedy.
 
 
