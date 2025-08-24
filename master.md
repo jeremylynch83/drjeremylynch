@@ -10,7 +10,7 @@ The best part of my job is being able to care for someone personally while also 
 
 ## Biography
 
-Dr Jeremy Lynch MBHCB MRCS FRCR is a London-based Consultant Interventional Neuroradiologist. He has been an NHS doctor for 13 years and is experienced in the diagnosis and treatment of vascular diseases involving the brain, head and neck, and spine. Dr Lynch trained in Medicine at the University of Bristol and qualified in 2007. He underwent several years of surgical training, during which he gained membership of the Royal College of Surgeons. He then underwent further specialisation in interventional radiology and neuroradiology in a range of specialist hospitals in London including the National Hospital for Neurology and Neurosurgery, Great Ormond Street Hospital, Kings College Hospital, St George’s Hospital, and Queen’s Hospital. He underwent a further international fellowship in Toronto Western Hospital in Canada where he was one of the first doctors in the world to gain experience in robotic endovascular techniques.
+Dr Jeremy Lynch MBChB MRCS FRCR is a London-based Consultant Interventional Neuroradiologist. He has been an NHS doctor for 13 years and is experienced in the diagnosis and treatment of vascular diseases involving the brain, head and neck, and spine. Dr Lynch trained in Medicine at the University of Bristol and qualified in 2007. He underwent several years of surgical training, during which he gained membership of the Royal College of Surgeons. He then underwent further specialisation in interventional radiology and neuroradiology in a range of specialist hospitals in London including the National Hospital for Neurology and Neurosurgery, Great Ormonds Street Hospital, Kings College Hospital, St George’s Hospital, and Queen’s Hospital. He underwent a further international fellowship in Toronto Western Hospital in Canada where he was one of the first doctors in the world to gain experience in robotic endovascular techniques.
 
 Dr Lynch has published several academic book chapters and journal articles. He is a reviewer for Clinical Neuroradiology. His special interests include the role of new technologies including artificial intelligence in the diagnosis of neurovascular disease. He has been invited to lecture on interventional neuroradiology and neuroimaging in international conferences. He is the author of the popular neurointerventional educational website neurotool.org.
 
@@ -92,9 +92,9 @@ Users are strongly advised to consult a healthcare professionals regarding any m
 
 ## Consultation Fees
 
-The fee for an outpatient consultation with Dr Jeremy Lynch, Consultant Interventional Neuroradiologist, is £250.
+The fee for an outpatient consultation is £250.
 
-This fee covers a clinic appointment to discuss your condition, review relevant medical information, and provide specialist advice. Please note that this does not include the cost of any investigations, imaging, or procedures, which will be charged separately if required.
+This covers a clinic appointment to discuss your condition, review relevant medical information, and provide specialist advice. Please note that this does not include the cost of any investigations, imaging, or procedures, which will be charged separately if required.
 
 If you have private health insurance, the consultation fee may be covered by your insurer. Please note that you may still be responsible for any policy excess, co-payment, or shortfall depending on the terms of your cover. Self-paying patients are welcome and the consultation fee is payable before the appointment.
 
@@ -134,7 +134,7 @@ By booking an appointment, you acknowledge and agree to these terms.
 
 ## What is an aneurysm?
 
-An aneurysm is a bulge in the wall of a blood vessel caused by a small area of weakness. Aneurysms can occur in various parts of the body, but one of the most common locations is the brain. These are known as intracranial or cerebral aneurysms. Some aneurysms have the potential to rupture which can result in severe bleeding around the brain which is called subarachnoid haemorrhage.
+An aneurysm is a bulge in the wall of a blood vessel caused by a small area of weakness. Aneurysms can occur in various parts of the body, but one of the most common locations is the brain. These are known as intracranial or cerebral aneurysms. Some aneurysms have the potential to rupture which can result in bleeding around the brain called subarachnoid haemorrhage.
 
 ![Illustration of a cerebral aneurysm. ](img/aneurysm.svg){#fig:aneurysm }
 
@@ -237,7 +237,7 @@ Cerebral angiography is a diagnostic procedure that uses X-rays to produce very 
 
 A lumbar puncture, often known as a spinal tap, is a medical procedure where a needle is inserted into the lower portion of the spine (the lumbar region) to extract a sample of cerebrospinal fluid (CSF). This fluid envelops your brain and spinal cord, acting as a protective layer and facilitating a stable environment.
 
-In relation to diagnosing potential ruptured intracranial aneurysms, a lumbar puncture can be useful. This procedure is typically performed when doctors suspect an aneurysm as ruptured but other imaging tests, such as a CT scan, aren't conclusive. This could be because the bleed was minimal, or the blood has dispersed over time. During a lumbar puncture, the collected CSF is meticulously examined for the presence of blood or xanthochromia. The latter is a yellowish or pinkish discoloration that results from the breakdown of red blood cells in the CSF — both of these signs point towards a recent subarachnoid hemorrhage.
+In relation to diagnosing potential ruptured intracranial aneurysms, a lumbar puncture can be useful. This procedure is typically performed when doctors suspect an aneurysm as ruptured but other imaging tests, such as a CT scan, aren't conclusive. This could be because the bleed was minimal, or the blood has dispersed over time. During a lumbar puncture, the collected CSF is meticulously examined for the presence of blood or xanthochromia. The latter is a yellowish or pinkish discoloration that results from the breakdown of red blood cells in the CSF — both of these signs point towards a recent subarachnoid haemorrhage.
 
 #  Ruptured aneurysm treatment {Aneurysms}
 
@@ -379,7 +379,7 @@ Flow diversion is particularly effective for recurrent, large, wide-necked, or t
 
 ## What is an intrasaccular device?
 
-Intrasaccuar devices such as the WEB (Woven EndoBridge) device may be used in the treatment of wide neck aneurysms which would otherwise require stents or flow diverters.
+Intrasaccular devices such as the WEB (Woven EndoBridge) device may be used in the treatment of wide neck aneurysms which would otherwise require stents or flow diverters.
 
 The WEB device, made of ultra-fine braided wires, is a flexible, self-expanding mesh that resembles a tiny basket. It is introduced into the aneurysm using a catheter navigated through the blood vessels from a small incision usually made in the wrist or groin. Once inside the aneurysm, the WEB device expands to fit the shape and size of the aneurysm, serving as a barrier that disrupts the blood flow within. This promotes clot formation within the aneurysm, sealing it off and isolating it from the rest of the circulation, thereby reducing or eliminating the risk of rupture.
 
@@ -394,7 +394,7 @@ Yes. Endovascular treatment is highly effective at providing lifelong protection
 
 In preventing adverse consequences such as disability or death endovascular treatment is as effective as surgical clipping. It is the recommended treatment in ruptured aneurysms as studies have shown that endovascular treatment is safer.
 
-However, like any treatment, there is no absolute guarantee that an aneurysm treated with endovascular therapy will never recur necessitating additional procedures. In a large study retreatment was carried out in 4.9% of patients [1]. Rebleeding was exceedingly rare, occuring in less than 1 in 200 patients. It's worth noting that surgical clipping, much like endovascular treatment, isn't exempt from the possibility of requiring further intervention. For this reason endovascularly treated aneurysms are regularly monitored with follow-up scans to ensure that the treatment remains effective. If a further treatment is required this can normally be performed safely in a planned elective setting also with an endovascular procedure.
+However, like any treatment, there is no absolute guarantee that an aneurysm treated with endovascular therapy will never recur necessitating additional procedures. In a large study retreatment was carried out in 4.9% of patients [1]. Rebleeding was exceedingly rare, occurring in less than 1 in 200 patients. It's worth noting that surgical clipping, much like endovascular treatment, isn't exempt from the possibility of requiring further intervention. For this reason endovascularly treated aneurysms are regularly monitored with follow-up scans to ensure that the treatment remains effective. If a further treatment is required this can normally be performed safely in a planned elective setting also with an endovascular procedure.
 
 Overall, endovascular therapy provides a highly effective and durable treatment. After embolisation of a brain aneurysm you would be more likely to die from another completely unrelated cause such as cancer of heart disease, than from recurrence of the aneurysm [3].
 
@@ -402,7 +402,7 @@ Overall, endovascular therapy provides a highly effective and durable treatment.
 
 Endovascular embolisation of aneurysms is normally performed successfully without complication, but all medical treatments carry the potential for risk.
 
-Recovery is usually relatively rapid after endovascular treatment. Patients typically spend one night in hospital for monitoring and are discharged the day after. The site of arterial entry in the wrist or groin might be sore for a few days when it heals. Rarele there are minor side effects like oozing or bleeding from these sites. Applying pressure usually stops this. A small, typically temporary bruise may also form. Occasionally the patient might experience headaches that typically settle over days to weeks.
+Recovery is usually relatively rapid after endovascular treatment. Patients typically spend one night in hospital for monitoring and are discharged the day after. The site of arterial entry in the wrist or groin might be sore for a few days when it heals. Rarely there are minor side effects like oozing or bleeding from these sites. Applying pressure usually stops this. A small, typically temporary bruise may also form. Occasionally the patient might experience headaches that typically settle over days to weeks.
 
 Serious but rare risks include a 5% chance of stroke from the procedure due to aneurysm rupture or blood vessel occlusion, causing potential limb weakness, speech or vision difficulty which could be temporary or permanent. A very rare 1% risk of a severe brain injury leading to death exists. There is a small chance of vessel damage in the groin or wrist from the catheter entry necessitating surgery.
 
@@ -472,7 +472,7 @@ AVMs seem to occur more often in males than females. However, symptoms may start
 
 ## Prognosis of Brain AVMs
 
-The main risk associated with brain arteriovenous malformations (AVMs) is intracranial hemorrhage, which is bleeding inside the skull. This risk varies among patients and is difficult to measure because many patients with AVMs don't show symptoms and therefore never seek medical attention.
+The main risk associated with brain arteriovenous malformations (AVMs) is intracranial haemorrhage, which is bleeding inside the skull. This risk varies among patients and is difficult to measure because many patients with AVMs don't show symptoms and therefore never seek medical attention.
 
 The earlier in life an AVM appears, the greater the likelihood of experiencing a haemorrhage over one's lifetime. Ruptured AVMs can lead to serious health complications. Ruptures may cause loss of life or permanent disability.
 
@@ -532,7 +532,7 @@ The treatment of brain arteriovenous malformations (AVMs) depends on several fac
 
 **Medical Treatment**
 
-Anticonvulsant medications, such as phenytoin, are used to control seizures. Other medications or procedures can be employed to relieve pressure inside the skull caused by the AVM. Curative treatment may be required eventually to prevent  hemorrhage. However, all interventions come with some risk of causing neurological deficits.
+Anticonvulsant medications, such as phenytoin, are used to control seizures. Other medications or procedures can be employed to relieve pressure inside the skull caused by the AVM. Curative treatment may be required eventually to prevent  haemorrhage. However, all interventions come with some risk of causing neurological deficits.
 
 **Surgical Treatment**
 
@@ -575,7 +575,7 @@ Normally a fine network of microscopic capillaries connects arteries and veins i
 ![](img/davf.svg)
 
 
-The cause of DAVF in a specific patient may not be always be discovers. In general they are not thought to be inherited from parents but instead caused by previous blood clots in the large draining veins of the brain (called venous thrombosis), head injuries, previous brain surgery, or brain infections. Some types of DAVF, termed "high-grade" fistulas, have a risk of bleeding into or around the brain which may have severe consequences. The risk is further increased following a previous bleed. Other types of fistula may have very little risk, termed "low-grade". Some patients have no symptoms and the DAVF is discovered incidentally on a CT or MRI scan. Nevertheless this does not mean that the DAVF carries no risk and further investigation is commonly [required](diagnosis).
+The cause of DAVF in a specific patient may not be always be discovered. In general they are not thought to be inherited from parents but instead caused by previous blood clots in the large draining veins of the brain (called venous thrombosis), head injuries, previous brain surgery, or brain infections. Some types of DAVF, termed "high-grade" fistulas, have a risk of bleeding into or around the brain which may have severe consequences. The risk is further increased following a previous bleed. Other types of fistula may have very little risk, termed "low-grade". Some patients have no symptoms and the DAVF is discovered incidentally on a CT or MRI scan. Nevertheless this does not mean that the DAVF carries no risk and further investigation is commonly [required](diagnosis).
 
 # Symptoms of DAVF {DAVF}
 
@@ -690,7 +690,7 @@ Once the procedure has started your doctor will place a thin flexible plastic tu
 
 After the procedure the catheters are removed and the blood vessel in the groin or wrist is sealed off with a collagen plug or manual compression to prevent bleeding.
 
-The procedure usually takes takes 2-3 hours.
+The procedure usually takes 2–3 hours.
 
 
 ## Will it hurt?
@@ -754,7 +754,7 @@ Without timely and appropriate treatment, spinal vascular malformations can prog
    - Deformities of the spinal column
    - Bulging of a blood vessel (aneurysm)
    - Increased blood pressure in the veins (venous hypertension), which can cause fluid accumulation (edema) and tissue death from lack of oxygen (spinal cord infarction)
-   - Bleeding (hemorrhage), which can accelerate damage to the spinal cord
+   - Bleeding (haemorrhage), which can accelerate damage to the spinal cord
 
 # Diagnosis of spinal vascular disease {Spinal}
 
@@ -899,10 +899,10 @@ Radiology scans are the primary diagnostic tools for identifying stroke. They he
 
 ## Computed Tomography (CT) Scan
 
-A CT scan of the brain is often the first imaging modality used in suspected stroke cases because it is quick, affordable, and widely available. While CT is excellent for excluding hemorrhage, it has limited sensitivity in detecting an ischemic stroke in the acute setting. Over time, however, the effects of stroke become more pronounced and obvious on CT scans.
+A CT scan of the brain is often the first imaging modality used in suspected stroke cases because it is quick, affordable, and widely available. While CT is excellent for excluding haemorrhage, it has limited sensitivity in detecting an ischemic stroke in the acute setting. Over time, however, the effects of stroke become more pronounced and obvious on CT scans.
 
 The main goals of an acute CT scan are to:
-1. Exclude intracranial hemorrhage, which would rule out the use of thrombolytic therapy.
+1. Exclude intracranial haemorrhage, which would rule out the use of thrombolytic therapy.
 2. Look for early signs of ischemia.
 3. Exclude other conditions that might mimic a stroke, such as a brain tumor.
 
@@ -1056,7 +1056,7 @@ Having said this, the great majority of angiograms do not require general anaest
 
 ## Should I take my normal medications?
 
-You should your medication as usual unless instructed otherwise (this includes any aspirin-based or anti-platelet medication, for example clopidogrel). You can take your normal medication with small sips of water.
+You should take your medication as usual unless instructed otherwise (this includes any aspirin-based or anti-platelet medication, for example clopidogrel). You can take your normal medication with small sips of water.
 
 ## I have allergies. Can I still take the test?
 It is important to inform the staff if you have any allergies. It is especially important to mention allergies to:
