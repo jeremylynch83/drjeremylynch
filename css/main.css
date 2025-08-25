@@ -67,6 +67,51 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible, .nav-link:
 /* ===== Space for fixed-top navbar ===== */
 main { padding-top: var(--navbar-height); max-width: 800px; margin: 0 auto; }
 
+
+/* Constrain article media inside the main text column */
+main .col-md-8 :where(img, picture, svg, video, canvas) {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make standalone images behave like block elements and center them */
+main .col-md-8 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Optional: round figures without upscaling small images */
+main .col-md-8 figure > :where(img, picture, svg, video, canvas) {
+  border-radius: 0.5rem;
+}
+
+/* Style figure captions */
+main .col-md-8 figcaption {
+  font-size: 0.875rem;   /* smaller than body (≈14px) */
+  font-weight: 200;      /* semi-bold */
+  line-height: 1.4;
+  color: var(--clr-text-muted);
+  text-align: center;
+  margin-top: 0.4rem;
+}
+
+/* Reset a figure counter at the start of each article */
+main .col-md-8 {
+  counter-reset: figure;
+}
+
+/* Increment for each figure and prepend the number */
+main .col-md-8 figure figcaption::before {
+  counter-increment: figure;
+  content: "Figure " counter(figure) ": ";
+  font-weight: 700;            /* keeps the number bold */
+  color: var(--clr-heading);
+}
+
+
+
+
 /* ===== Buttons ===== */
 .btn { border-radius: 0 !important; font-size: 0.8rem !important; font-weight: 400; padding: 0.45rem 1rem; }
 

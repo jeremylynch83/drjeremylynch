@@ -237,13 +237,13 @@ A lumbar puncture, often known as a spinal tap, is a medical procedure where a n
 
 In the context of aneurysms, it is usually performed when doctors suspect an aneurysm as having ruptured but other imaging tests, such as a CT scan, aren't conclusive. This could be because the bleed was minimal, or the blood has already dispersed. During a lumbar puncture, the collected CSF is meticulously examined for the presence of blood or xanthochromia. The latter is a yellowish or pinkish discoloration that results from the breakdown of red blood cells in the CSF — both of these signs point towards a recent subarachnoid haemorrhage.
 
-#  Ruptured aneurysm treatment {Aneurysms}
+#  Ruptured aneurysms {Aneurysms}
 
 ## What are the consequences of aneurysm rupture?
 
 Aneurysm rupture results in a severe headache caused by bleeding around the brain, termed subarachnoid haemorrhage. A common description of this is a "thunderclap" headache. It may be accompanied by a stiff neck, sickness, vomiting, sensitivity to light, and loss of consciousness. Aneurysmal haemorrhage may lead to death. Rates of mortality vary in different studies and range from 20-50% [1]. There is some evidence that the mortality rate from aneurysm rupture is decreasing over time due to advances in medical care.
 
-![](img/ruptured_aneurysm.svg)
+![Ruptured aneurysm. ](img/ruptured_aneurysm.svg)
 
 A patient with a ruptured aneurysm is admitted to hospital. In the initial phase, the individual is placed in an intensive care unit (ICU) where healthcare professionals can closely monitor their condition. The duration of the hospital stay will differ from person to person. Depending on the severity of the condition, it may range from a couple of weeks to a longer duration.
 
@@ -256,11 +256,11 @@ Another significant complication that may follow aneurysm rupture is cerebral va
 
 Ruptured aneurysms require immediate treatment to prevent further bleeding, as the consequences of this may be disastrous. Two techniques are available to achieve this. The primary and less invasive method is endovascular coiling. In this procedure, a catheter is inserted into a blood vessel and guided towards the aneurysm, whereupon small coils are released. These coils facilitate blood clotting, thus averting further rupture. The National Institute for Health and Care Excellence (NICE) recommends endovascular treatment for aneurysmal rupture if it possible due to the significantly improved chance of survival following the treatment [1]. In addition, patients have a higher likelihood of living independently coupled with a reduced risk of developing seizures. This is based on evidence from high-quality clinical trials such as the International Subarachnoid Aneurysm Trial conducted over a period of 16 years [2].
 
-![](img/aneurysm coiling.svg)
+![Aneurysm coil embolisation. ](img/aneurysm coiling.svg)
 
 The alternative method, surgical clipping, involves a neurosurgeon creating an opening in the skull and placing a metallic clip on the aneurysm's neck, effectively blocking the blood flow within. This is performed in the minority of cases where endovascular treatment is not possible.
 
-![](img/aneurysm-clipping.svg)
+![Aneurysm clipping. ](img/aneurysm-clipping.svg)
 
 
 ## What are the long-term consequences of aneurysm rupture?
@@ -276,7 +276,7 @@ It is possible to make a full recovery from aneurysm rupture. Unfortunately, som
 2. Molyneux AJ, Birks J, Clarke A, Sneade M, Kerr RS. The durability of endovascular coiling versus neurosurgical clipping of ruptured brain aneurysms: 18 year follow-up of the UK cohort of the International Subarachnoid Aneurysm Trial (ISAT). Lancet. 2015 Feb 21;385(9969):691-7.
 
 
-#  Unruptured aneurysm treatment {Aneurysms}
+#  Unruptured aneurysms {Aneurysms}
 
 ## I have an aneurysm. Does it need to be treated?
 
@@ -303,7 +303,7 @@ There are no medications that can be given to shrink aneurysms, however stopping
 * Smoking: Aneurysms are more likely to rupture in people who smoke and cessation is recommended if possible.
 
 
-
+# Endovascular treatment of aneurysms {Aneurysms}
 
 
 ## What does endovascular treatment involve?
@@ -348,7 +348,7 @@ Similar to coil embolisation, a tiny catheter is navigated through the blood ves
 Once the stent is in place, small coils are threaded through the catheter and placed into the aneurysm. The coils promote blood clotting, thereby filling the aneurysm and preventing it from rupturing. The stent helps to hold these coils in place and prevents them from slipping into the normal blood vessel. It's particularly useful in treating wide-neck aneurysms, where the risk of coils slipping into the parent vessel (the blood vessel supplying the aneurysm) is higher.
 
 
-![](img/stent-coiling.svg)
+![Illustration of aneurysm coiling.](img/stent-coiling.svg)
 
 After the procedure, you will likely need to take antiplatelet medications such as aspirin or clopidogrel, which help to prevent the formation of blood clots around the stent. This is a routine precaution and an important part of ensuring the success of the procedure. Antiplatelet medications are given in low doses and make the platelets in your blood less sticky, reducing the chance that a clot will form.
 
@@ -364,7 +364,7 @@ A flow diverter, similar to a stent, is a small tubular mesh device that's place
 
 Over time, this decreased blood flow into the aneurysm encourages the formation of a blood clot within the aneurysm, which helps to seal it off from the rest of the blood vessel. As the aneurysm shrinks and heals, the artery resumes a more normal shape and function. This process can take several weeks to months.
 
-![](img/flow-diversion.svg)
+![Flow diversion. ](img/flow-diversion.svg)
 
 
 Flow diversion is particularly effective for recurrent, large, wide-necked, or thrombosed aneurysms that can't be adequately treated with other methods. It is also necessary to take antiplatelets after insertion of flow diverters.
@@ -379,7 +379,7 @@ Intrasaccular devices such as the WEB (Woven EndoBridge) device may be used in t
 
 The WEB device, made of ultra-fine braided wires, is a flexible, self-expanding mesh that resembles a tiny basket. It is introduced into the aneurysm using a catheter navigated through the blood vessels from a small incision usually made in the wrist or groin. Once inside the aneurysm, the WEB device expands to fit the shape and size of the aneurysm, serving as a barrier that disrupts the blood flow within. This promotes clot formation within the aneurysm, sealing it off and isolating it from the rest of the circulation, thereby reducing or eliminating the risk of rupture.
 
-![](img/web-device.svg)
+![The WEB intrasaccular device.](img/web-device.svg)
 
 A benefit of the WEB device is related to post-procedure medications. With stents or flow diverters, patients are typically required to take antiplatelet medications for a period of time to prevent blood clot formation around the treatment site. However, because of the way the WEB device works, patients usually do not need to take these medications for a prolonged period.
 
@@ -402,12 +402,12 @@ Recovery is usually relatively rapid after endovascular treatment. Patients typi
 
 Serious but rare risks include a 5% chance of stroke from the procedure due to aneurysm rupture or blood vessel occlusion, causing potential limb weakness, speech or vision difficulty which could be temporary or permanent. A very rare 1% risk of a severe brain injury leading to death exists. There is a small chance of vessel damage in the groin or wrist from the catheter entry necessitating surgery.
 
+# Surgical treatment of aneurysms {Aneurysms}
 
-## Surgical treatment
 
 Surgical clipping is an established but more invasive method of treatment that still has a role in managing certain cerebral aneurysms. The procedure involves making an opening in the skull (a procedure called a craniotomy) to locate the aneurysm. With the help of a microscope, the surgeon places the clip on the aneurysm's neck, sealing it off from the rest of the blood vessel.
 
-![](img/aneurysm-clipping.svg)
+![Clipping of a cerebral aneurysm.](img/aneurysm-clipping.svg)
 
 Recovery times vary but are typically longer than for endovascular treatment. Like all surgical procedures clipping carries some risks. Strokes occur in about 5-15% of cases which can manifest as weakness in the limbs, disturbances in speech, or visual problems. There is about a 1% chance of catastrophic brain injury resulting in death. The surgery might also affect the area of your brain near the aneurysm. This could lead to short-term effects due to swelling or bruising, or in rare cases, long-term effects. These effects would be specific to the location of each aneurysm and may also cause neurological stroke-like symptoms.
 
@@ -447,7 +447,7 @@ However, in skilled hands, surgical clipping can provide a solution for many typ
 
 A brain arteriovenous malformation (AVM) is a complex, abnormal network of blood vessels in the brain. In a healthy brain, blood circulates from arteries to veins via tiny vessels called capillaries. The capillaries allow for the exchange of oxygen and nutrients from the blood to the brain tissue, and the removal of waste products. However, in a brain AVM, there is a direct connections between the arteries and veins, bypassing these capillaries. 
 
-![](img/avm.svg)
+![Arteriovenous malformations.](img/avm.svg)
 
 Whilst AVMs may lead to health problems, many do not cause any problems and can be left alone without treatment.
 
@@ -570,7 +570,7 @@ A dural arteriovenous fistula (DAVF) is an abnormal connection between the arter
 
 Normally a fine network of microscopic capillaries connects arteries and veins in all tissues including the brain. Capillaries assist in slowing down the blood flow between arteries and veins. A DAVF is a tangle of feeding arteries and draining veins in the brain that have abnormal connections which bypass the normal capillaries. The word “dura” refers to the membrane covering the brain and spinal cord. The high pressure blood flowing from arteries directly into thinner walled draining veins or venous sinuses results in a risk of brain haemorrhage (bleeding). This abnormal blood flow between arteries and veins is called a shunt. DAVF can vary in size, between a few millimetres to several centimetres and can occur anywhere in the dura directly outside of the brain or spinal cord.
 
-![](img/davf.svg)
+![Dural fistulas. ](img/davf.svg)
 
 
 The exact cause of a dural arteriovenous fistula (DAVF) is often unknown. In most cases, DAVFs are not inherited but are thought to develop after events such as blood clots in the brain’s large draining veins (venous thrombosis), head injury, brain surgery, or infection.
@@ -809,14 +809,14 @@ There are two major categories of strokes:
 
 1. **Ischaemic Stroke**: This is the most common type of stroke, accounting for about 87% of all cases. It is caused by a blood clot blocking a blood vessel in the brain, resulting in a lack of blood flow and oxygen to the brain tissue.
 
-![](img/ischaemic-stroke.svg)
+![Ischaemic stroke. ](img/ischaemic-stroke.svg)
 
 
 
 
 2. **Hemorrhagic Stroke**: This is less common but can be more serious. It is caused by bleeding directly into the brain or the space around the brain, typically due to a ruptured blood vessel or an abnormal vascular structure.
 
-![](img/haemorrhagic-stroke.svg)
+![Hemorrhagic Stroke](img/haemorrhagic-stroke.svg)
 
 
 ## Symptoms
@@ -1089,11 +1089,21 @@ At least a few days before the procedure you may have routine blood tests perfor
 
 # Risks  {Angiography}
 
-A cerebral angiogram is considered safe, however any medical procedure can involve small risks. It is important to understand that the risks involved in not undertaking the test (for example, non-diagnosis of a serious disease) usually outweigh the small risks of the procedure.
+Any medical procedure can involve risks. It is first important to understand that a cerebral angiogram is recommended when the risks involved in not undertaking the test (for example, non-diagnosis of a serious disease) outweigh the risks of the procedure.
 
-The main potential complication of cerebral angiography is of having a stroke, with a rate of approximately 0.5% (or 1 in 200 people). This risk varies with a few different factors and would likely be lower if you are normally in good health and not very elderly. The symptoms can involve one or more of the following: weakness of the face, arms, or legs; difficulty with speech; or difficulty with vision. Strokes can also be of variable severity: from brief and barely noticeable to very severe. They can also be temporary or result in permanent deficit. The good news is that strokes that result from cerebral angiogram often tend to be of the lesser severity with good potential for recovery. As strokes tend to occur during, or shortly after the procedure you are also in the best place (under direct medical supervision) if they were to occur.
+The overwhelming majority of patients undergoing cerebral angiography do not have a complication. However, if a complication does occur, it can be significant. 
 
-The second main risk is of damage to artery at the access site. It is common to get small amounts of bleeding after the procedure and this usually stops spontaneously. If the bleeding is heavier or if there is internal bleeding then sometimes special injections or surgery is required. It is rare for this to be necessary, however. Very rarely the artery can become blocked, resulting in not enough blood getting to the leg. This condition requires surgery to remedy.
+## Stroke
+
+The main potential complication of cerebral angiography is of having a stroke, with a rate of approximately 0.5% (or 1 in 200 people). This risk varies and is likely lower if you are normally in good health without other disease. A stroke is caused by a blood clot obstructing the normal flow of blood to the brain. The symptoms can involve one or more of the following: weakness of the face, arms, or legs, difficulty with speech, or difficulty with vision. Strokes can also be of variable severity: from brief and barely noticeable to very severe. They can be temporary or result in permanent deficit. The good news is that strokes that result from cerebral angiogram tend to be of lesser severity with good potential for recovery. As strokes tend to occur during, or shortly after the procedure you are also in the best place (under direct medical supervision) if they were to occur.
+
+## Bleeding from the access site
+
+The second main risk is of damage to the artery at the access site. It is common to get small amount of bleeding after the procedure and this usually stops spontaneously. If the bleeding is heavier or if there is internal bleeding then this sometimes require treatment, such as an injection of thrombin or even surgical repair. It is very rare for this to be necessary, however. The risk is lower if the wrist (rather than the groin) is used as the access site.
+
+## Bleeding from the access site
+
+Another rare complication is blockage of the artery at the access site, resulting in not enough blood getting to the arm or leg. This condition may require surgery to remedy. 
 
 # During a Cerebral Angiogram  {Angiography}
 
@@ -1129,6 +1139,255 @@ You should make advance arrangements for someone to stay with you for 24 hours a
 
 Sometimes the doctor can tell you at the end of the procedure. It is not unusual, however, for it to be necessary for the images to be analysed on a computer before they can be interpreted. In this case the final results will be delivered later at a clinic attendance or over the phone.
 
+
+# About the brain {Essential knowledge}
+
+
+The brain is the most complex organ in the body. It coordinates movement, sensation, language, memory, and thought, while also regulating unconscious functions such as breathing, heart rate, and sleep. Although it makes up only about 2% of body weight, the brain uses around 20% of the body’s oxygen and energy supply.
+
+To meet these demands, the brain relies on a dense and highly specialised network of blood vessels. These arteries and veins are arranged to deliver oxygen-rich blood to different regions of the brain and to remove waste products efficiently. Even short interruptions in this blood supply can cause damage to brain cells, which is why vascular problems such as **stroke, aneurysms, or intracranial haemorrhage** can have rapid and severe consequences.
+
+The surface of the brain is folded into ridges (gyri) and grooves (sulci), which allow a large surface area to fit within the skull. Different regions are specialised:
+
+* The **cerebral hemispheres** control higher functions like speech, movement, sensation, reasoning, and memory.
+* The **cerebellum**, at the back of the brain, fine-tunes balance and coordination.
+* The **brainstem**, at the base, connects the brain to the spinal cord and regulates vital life functions.
+
+All of these regions depend on a delicate balance between structure and circulation. The protective layers (meninges), the fluid spaces (ventricles and subarachnoid space), and the branching arterial system together form an environment that supports healthy brain activity but is vulnerable to disruption when disease affects the vessels.
+
+
+## Brain Coverings and Fluid
+
+* **Meninges** – Three thin layers of tissue that cover and protect the brain and spinal cord (dura, arachnoid, and pia mater).
+* **Subarachnoid space** – The space between these layers where clear fluid flows.
+* **Cerebrospinal fluid (CSF)** – A cushioning fluid that surrounds the brain and spinal cord, helping to protect them from injury.
+* **Ventricles** – Fluid-filled spaces inside the brain where CSF is made and circulated.
+
+## Blood Supply to the Brain
+
+The brain receives blood through four main arteries in the neck:
+
+* **Carotid arteries** (front of the neck) – Carry blood to the front and middle parts of the brain.
+* **Vertebral arteries** (back of the neck) – Join together to form the basilar artery, supplying the back of the brain.
+
+Together, these arteries form a ring at the base of the brain called the **Circle of Willis**, which helps provide an alternative route for blood flow if one vessel is narrowed or blocked.
+
+## Intracranial Arteries – The Brain’s Blood Highways
+
+Once blood reaches the base of the brain it travels along smaller arteries that spread across the brain’s surface and deep into its tissues. These are known as the **intracranial arteries**.
+
+The main groups are:
+
+* **Anterior cerebral arteries (ACA)**
+
+  * Branch from the carotid arteries.
+  * Supply blood to the front and inner parts of the brain, including areas that control movement and sensation of the legs.
+
+* **Middle cerebral arteries (MCA)**
+
+  * The largest branches of the carotid arteries.
+  * Provide blood to much of the outer surface of the brain, especially areas involved in speech, movement, sensation of the face and arms, and vision.
+  * Blockage here is the most common cause of major stroke.
+
+* **Posterior cerebral arteries (PCA)**
+
+  * Arise from the back circulation (vertebral–basilar system).
+  * Supply the back of the brain, especially the **occipital lobes**, which control vision, and parts of the temporal lobes, which help with memory.
+
+* **Basilar artery**
+
+  * Formed by the joining of the two vertebral arteries.
+  * Supplies the brainstem and cerebellum—vital for balance, coordination, and life-sustaining functions like breathing.
+
+These arteries are linked together by small connecting vessels, the anterior and posterior communicating arteries, that form the **Circle of Willis**. This network helps protect the brain: if one pathway becomes narrowed or blocked, blood can sometimes still reach the affected area through alternative routes.
+
+# About the spine {Essential knowledge}
+
+The spine, or **vertebral column**, forms the central supporting structure of the body. It protects the spinal cord, allows upright posture, and provides flexibility for movement. The spine is made up of 33 vertebrae, stacked one on top of the other, separated by discs that act as shock absorbers.
+
+Running through the centre of the vertebrae is the **spinal canal**, which contains the spinal cord and its protective coverings. The spinal cord is a continuation of the brainstem and acts as the main communication highway between the brain and the rest of the body. Nerves branch off the cord through small openings in the vertebrae, carrying signals to and from muscles, skin, and organs.
+
+Just like the brain, the spinal cord depends on a constant blood supply. Interruption of this supply, due to narrowing, blockage, or bleeding in the spinal vessels, can cause loss of function, weakness, or paralysis.
+
+## Structure of the Spine
+
+* **Cervical spine** – The top 7 vertebrae (neck region). Supports the head and allows movement such as turning and nodding.
+* **Thoracic spine** – The next 12 vertebrae (upper and mid-back). These connect to the ribs and help protect the chest organs.
+* **Lumbar spine** – 5 vertebrae in the lower back. These bear much of the body’s weight and allow bending and twisting.
+* **Sacrum and coccyx** – The base of the spine, fused bones that connect to the pelvis.
+
+## Spinal Cord and Nerves
+
+The spinal cord is divided into regions that correspond with the spine: cervical, thoracic, lumbar, and sacral. Each region gives rise to pairs of **spinal nerves**, which exit the spine through small gaps between vertebrae. These nerves carry:
+
+* **Motor signals** – from the brain to the muscles (movement).
+* **Sensory signals** – from the skin and body back to the brain (touch, pain, temperature).
+* **Autonomic signals** – to organs, controlling functions such as blood pressure, bladder, and bowel control.
+
+## Coverings and Fluid
+
+* **Meninges** – As in the brain, three protective layers (dura, arachnoid, pia mater) surround the spinal cord.
+* **Subarachnoid space** – The space between these layers where **cerebrospinal fluid (CSF)** circulates.
+* **CSF** – Cushions the spinal cord, provides nutrients, and helps remove waste products.
+
+## Blood Supply to the Spine
+
+The spinal cord is supplied by a network of arteries:
+
+* **Anterior spinal artery** – Runs along the front of the cord, supplying the majority of the spinal cord tissue. They are joined by the **anterior communicating arteries (ACOMs)**. 
+* **Posterior spinal arteries** – Run along the back of the cord, supplying the remaining sections. They connect to the internal carotid arteries via the **posterior communicating artery (PCOM)**. 
+* **Radicular and segmental arteries** – Branches from larger vessels (such as the aorta) that reinforce the spinal circulation at different levels. 
+
+Because the spinal cord relies on this delicate blood supply, any blockage or bleed can cause serious neurological problems, such as weakness, numbness, or loss of bladder and bowel control.
+
+
+# Glossary {Essential knowledge}
+
+
+### A
+
+* **Aneurysm** – A weak, bulging area in a blood vessel wall that can burst and cause bleeding.
+* **Angiogram / Cerebral angiography / Arteriogram** – An X-ray test using contrast dye to see blood vessels in the brain or neck.
+* **Antiplatelet medication (aspirin, clopidogrel)** – Medicines that make blood less “sticky” to reduce clot risk.
+* **Aphasia** – Difficulty speaking, understanding, reading, or writing caused by brain damage.
+* **Arachnoid catheter** – A thin tube placed in the fluid-filled space around the brain or spinal cord to drain fluid.
+* **Arteriovenous fistula (AVF)** – An abnormal connection between an artery and a vein.
+* **Arteriovenous malformation (AVM)** – A tangle of abnormal blood vessels in the brain or spine that can bleed.
+* **Atherosclerosis** – Hardening and narrowing of the arteries due to fatty deposits.
+* **Autosomal Dominant Polycystic Kidney Disease (ADPKD)** – An inherited condition causing kidney cysts, linked to higher risk of brain aneurysms.
+
+### B
+
+* **Balloon angioplasty** – A procedure using a small balloon to widen narrowed blood vessels.
+* **Brain aneurysm (cerebral / intracranial aneurysm)** – A weak spot in a brain blood vessel that can swell or rupture.
+* **Brainstem** – The lower part of the brain that controls vital functions like breathing and heart rate.
+
+### C
+
+* **Capillary telangiectasia** – Small clusters of widened capillaries in the brain, usually harmless.
+* **Carotid artery** – A major neck artery supplying blood to the brain.
+* **Cavernoma / Cavernous malformation** – A cluster of abnormal blood vessels that may bleed.
+* **Cerebral vasospasm** – Narrowing of brain blood vessels, usually after bleeding, reducing blood flow.
+* **Cerebrospinal fluid (CSF)** – The clear fluid surrounding and cushioning the brain and spinal cord.
+* **Collagen plug** – A material used to seal a blood vessel puncture site after a procedure.
+* **Coil embolisation / Endovascular coiling** – A treatment where tiny coils are placed inside an aneurysm to block blood flow.
+* **Computed tomography (CT / CT scan)** – A detailed X-ray scan showing brain and body structures.
+* **CT angiography (CTA)** – A CT scan with dye to show blood vessels.
+* **CT perfusion** – A CT scan to measure blood flow in the brain.
+* **Contrast dye (iodinated contrast, contrast agent)** – A special liquid injected during scans to make blood vessels visible.
+* **Convulsions / Seizures** – Episodes of uncontrolled electrical activity in the brain, causing shaking or other symptoms.
+* **Craniotomy** – An operation where part of the skull is temporarily removed to reach the brain.
+
+### D
+
+* **Digital subtraction angiography (DSA)** – A detailed type of angiogram showing blood vessels more clearly.
+* **Dissection** – A tear in the wall of a blood vessel, creating a false passage for blood.
+* **Dural arteriovenous fistula (DAVF)** – An abnormal artery-to-vein connection in the brain’s covering (dura).
+* **Dysarthria** – Slurred or unclear speech due to weakness or poor control of the muscles used for speaking.
+
+### E
+
+* **Embolisation** – Blocking a blood vessel (e.g. with coils, glue, or particles) to stop bleeding or reduce blood flow to an abnormality.
+* **Endovascular / Endovascular treatment / Neuroendovascular therapy** – Minimally invasive treatment inside blood vessels using catheters.
+* **External ventricular drain (EVD)** – A temporary tube that drains excess brain fluid to relieve pressure.
+
+### F
+
+* **Flow diversion / Flow diverter** – A stent-like device placed in an artery to divert blood away from an aneurysm.
+* **Fluoroscopy** – A type of real-time X-ray used during procedures.
+
+### G
+
+* **General anaesthetic** – Medicine that makes a patient completely unconscious during surgery.
+
+### H
+
+* **Haematoma** – A collection of blood outside blood vessels (a bruise inside the body).
+* **Haemorrhage** – Bleeding, either inside or outside the body.
+* **Hemiparesis** – Weakness on one side of the body.
+* **Hydrocephalus** – A build-up of fluid in the brain, causing pressure.
+
+### I
+
+* **Infarction** – Tissue damage caused by loss of blood supply.
+* **Interventional neuroradiology (neurointerventional radiology / endovascular neurosurgery)** – A specialty using imaging and minimally invasive tools to treat brain and spine conditions.
+* **Intracerebral haemorrhage (ICH)** – Bleeding directly into the brain tissue.
+* **Intrasaccular device (e.g. WEB device)** – A device placed inside an aneurysm to seal it off.
+* **Ischaemia** – Reduced blood flow to tissue, leading to oxygen shortage.
+
+### L
+
+* **Lumbar puncture / Spinal tap** – A procedure using a needle in the lower back to collect spinal fluid for testing.
+
+### M
+
+* **Magnetic resonance imaging (MRI)** – A scan that uses magnets and radio waves to create detailed brain and body images.
+* **Microcatheter** – A very thin tube used in blood vessels during endovascular treatment.
+* **Microscope (operating microscope)** – A high-powered microscope used in surgery to see small details.
+* **MR angiography (MRA)** – An MRI scan that shows blood vessels.
+
+### N
+
+* **Neurocritical care** – Specialised intensive care for patients with serious brain or spine conditions.
+* **Neurological deficit** – Loss of normal brain or nerve function, such as weakness, speech problems, or vision loss.
+* **Neuroimaging** – Any scan that shows the brain or spinal cord (CT, MRI, angiography).
+* **Neurointervention** – Minimally invasive procedures to treat brain or spine blood vessel problems.
+* **Neuroform Atlas Stent** – A stent used with coiling to treat brain aneurysms.
+
+### O
+
+* **Occlusion** – A blockage of a blood vessel.
+
+### P
+
+* **Paresthesia / Dysesthesia** – Tingling, prickling, or abnormal skin sensations.
+* **Perfusion** – The flow of blood through body tissues.
+* **Photophobia** – Sensitivity to light.
+* **Pipeline Vantage Embolization Device / Flow Diverter (PED, PED Shield)** – A device to treat large or wide-necked aneurysms.
+* **Posterior circulation** – The blood supply from the back part of the brain (supplied by vertebral and basilar arteries).
+* **Pulsatile tinnitus** – Hearing a rhythmic “whooshing” sound in the ear, often from blood flow.
+
+### R
+
+* **Radiosurgery (Gamma Knife)** – A precise form of radiation therapy to treat brain conditions without open surgery.
+* **Recanalisation** – The reopening of a previously blocked blood vessel.
+
+### S
+
+* **Shunt** – A tube implanted to divert excess fluid from the brain to another part of the body.
+* **Sickle cell disease** – A blood disorder that increases the risk of stroke and other complications.
+* **Spinal cord infarction** – A stroke affecting the spinal cord due to lack of blood flow.
+* **Spinal vascular malformation** – Abnormal blood vessels in the spinal cord.
+* **Stenosis** – Narrowing of a blood vessel.
+* **Stent** – A small mesh tube used to support a blood vessel.
+* **Stent-assisted coiling** – Using a stent alongside coils to treat an aneurysm.
+* **Stroke (ischaemic, haemorrhagic, transient ischaemic attack – TIA)** – Sudden loss of brain function due to blocked or burst blood vessel.
+* **Subarachnoid haemorrhage** – Bleeding in the space around the brain, usually from an aneurysm.
+* **Subarachnoid space** – The fluid-filled space between the brain and its coverings.
+* **Subdural haematoma (SDH)** – A bleed between the brain surface and its outer covering.
+* **Surgical clipping** – A surgery where a metal clip is placed across an aneurysm to stop blood flow.
+* **Symptoms (general category)** – Patient-experienced signs of disease (weakness, speech problems, headaches, etc).
+
+### T
+
+* **Thrombectomy / Mechanical thrombectomy** – A procedure to physically remove a clot from a brain artery.
+* **Thrombolysis** – Breaking up a blood clot with medicines.
+* **Thrombosis** – Formation of a blood clot inside a blood vessel.
+* **Thrombectomy / Thrombolysis (duplicate consolidated)** – Covered above.
+* **Thrombosis / Venous thrombosis** – A clot in a vein.
+* **Tissue plasminogen activator (tPA)** – A clot-busting drug given in some strokes.
+* **Transient ischaemic attack (TIA)** – A “mini-stroke” where symptoms are temporary and resolve fully.
+
+### V
+
+* **Vasospasm** – Sudden narrowing of a blood vessel, often after bleeding in the brain.
+* **Venous hypertension** – High pressure in the veins, sometimes linked to vascular malformations.
+* **Ventricles** – Fluid-filled spaces inside the brain.
+* **Vertebral artery** – An artery in the neck that supplies blood to the back of the brain.
+
+### X
+
+* **Xanthochromia** – Yellow colouring of spinal fluid, usually a sign of previous bleeding in the brain.
 
 
 
