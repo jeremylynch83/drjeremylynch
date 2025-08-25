@@ -197,264 +197,263 @@ neuroradiology</a>
     </main>
 
      <!doctype html>
-<html>
-    <head>
-        <!-- W3.CSS for quick layout helpers -->
-        <link
-            rel="stylesheet"
-            href="https://www.w3schools.com/w3css/4/w3.css"
-        />
-        <!-- Font Awesome for the tick icon -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        />
-    </head>
-    <body>
-        <footer class="w3-center w3-black">
-            <div
-                id="book"
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Book Appointment</title>
+
+    <!-- W3.CSS for quick layout helpers -->
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/w3css/4/w3.css"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      /* Optional: keep footer text crisp over backgrounds */
+      footer .w3-text-white { text-shadow: 0 1px 2px rgba(0,0,0,.35); }
+      /* Ensure select placeholder looks dim */
+      select:invalid { color: gray; }
+      option[value=""] { color: gray; }
+    </style>
+  </head>
+
+  <body>
+    <footer class="w3-center w3-black">
+      <div
+        id="book"
+        style="
+          background-image: url('img/footer.png');
+          min-height: 700px;
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+        class="w3-display-container"
+      >
+        <!-- Everything that will be replaced after successful submit lives inside this wrapper -->
+        <div id="bookingContent" class="w3-display-middle" style="max-width: 520px;">
+          <span class="w3-xxlarge w3-text-white w3-wide">BOOK APPOINTMENT</span>
+
+          <p
+            class="w3-text-white w3-center"
+            style="text-align:center; margin-top:20px; font-size:14px !important;"
+          >
+            To book an in-person consultation, enter your details below and our practice
+            management team will contact you to schedule the appointment.
+          </p>
+
+          <form
+            id="appointmentForm"
+            class="w3-center"
+            style="margin-top:32px; font-size:12px"
+          >
+            <div class="form-group" style="margin-bottom:5px">
+              <input
+                type="text"
+                class="w3-input"
+                name="contact-name"
+                placeholder="Your name"
+                required
+                autocomplete="name"
+                style="background-color:#fff; border-radius:0"
+              />
+            </div>
+
+            <div class="form-group" style="margin-bottom:5px">
+              <input
+                type="tel"
+                class="w3-input"
+                name="contact-tel"
+                placeholder="Your telephone number"
+                required
+                autocomplete="tel"
+                style="background-color:#fff; border-radius:0; color:#000;"
+              />
+            </div>
+
+            <div class="form-group" style="margin-bottom:5px">
+              <input
+                type="email"
+                class="w3-input"
+                name="contact-email"
+                placeholder="Your email"
+                required
+                autocomplete="email"
+                style="background-color:#fff; border-radius:0"
+              />
+            </div>
+
+            <div class="form-group" style="margin-bottom:5px">
+              <select
+                class="w3-select"
+                name="Topic"
+                required
                 style="
-                    background-image: url(&quot;img/footer.png&quot;);
-                    min-height: 700px;
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                  background-color:#fff;
+                  border-radius:0;
+                  -webkit-appearance:none;
+                  height:40px;
+                  color:gray;
+                  padding-left:10px;
                 "
-                class="w3-display-container"
-            >
-                <!-- Everything that will be replaced after successful submit lives inside this wrapper -->
-                <div id="bookingContent" class="w3-display-middle">
-                    <span class="w3-xxlarge w3-text-white w3-wide"
-                        >BOOK APPOINTMENT</span
-                    >
-                    <p
-                        class="w3-text-white w3-center"
-                        style="
-                            text-align: center;
-                            margin-top: 20px;
-                            font-size: 14px !important;
-                        "
-                    >
-                        To book an in‑person consultation, enter your details
-                        below and our practice management team will contact you
-                        to schedule the appointment.
-                    </p>
-
-                    <form
-                        id="appointmentForm"
-                        class="w3-center"
-                        style="margin-top: 32px; font-size: 12px"
-                    >
-                        <div class="form-group" style="margin-bottom: 5px">
-                            <input
-                                type="text"
-                                class="w3-input"
-                                name="contact-name"
-                                placeholder="Your name"
-                                required
-                                style="background-color: #fff; border-radius: 0"
-                            />
-                        </div>
-                        <div class="form-group" style="margin-bottom: 5px">
-                            <input
-                                type="tel"
-                                class="w3-input"
-                                name="contact-tel"
-                                placeholder="Your telephone number"
-                                required
-                                style="
-                                    background-color: #fff;
-                                    border-radius: 0;
-                                    color: #000;
-                                "
-                            />
-                        </div>
-                        <div class="form-group" style="margin-bottom: 5px">
-                            <input
-                                type="email"
-                                class="w3-input"
-                                name="contact-email"
-                                placeholder="Your email"
-                                required
-                                style="background-color: #fff; border-radius: 0"
-                            />
-                        </div>
-                        <div class="form-group" style="margin-bottom: 5px">
-                            <select
-                                class="w3-select"
-                                name="Topic"
-                                required
-                                style="
-                                    background-color: #fff;
-                                    border-radius: 0;
-                                    -webkit-appearance: none;
-                                    height: 40px;
-                                    color: gray;
-                                    padding-left: 10px;
-                                "
-                            >
-                                <option value="" disabled selected>
-                                    Topic of consultation
-                                </option>
-                                <option value="Aneurysm">Aneurysm</option>
-                                <option value="Dural fistula">
-                                    Dural fistula
-                                </option>
-                                <option value="AVM">AVM</option>
-                                <option value="Spinal">Spinal</option>
-                                <option value="Cerebral angiogram">
-                                    Cerebral angiogram
-                                </option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group" style="margin-bottom: 5px">
-                            <select
-                                class="w3-select"
-                                name="Insurance"
-                                required
-                                style="
-                                    background-color: #fff;
-                                    border-radius: 0;
-                                    -webkit-appearance: none;
-                                    height: 40px;
-                                    color: gray;
-                                    padding-left: 10px;
-                                "
-                            >
-                                <option value="" disabled selected>
-                                    Do you have medical insurance?
-                                </option>
-                                <option value="no">No</option>
-                                <option value="bupa">BUPA</option>
-                                <option value="AXA">AXA Health</option>
-                                <option value="VitalityHealth">
-                                    VitalityHealth
-                                </option>
-                                <option value="The Exeter">The Exeter</option>
-                                <option
-                                    value="WPA (Western Provident Association)"
-                                >
-                                    WPA (Western Provident Association)
-                                </option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group" style="margin-bottom: 5px">
-                            <textarea
-                                class="w3-input"
-                                name="extra-info"
-                                placeholder="Additional information (optional)"
-                                style="
-                                    background-color: #fff;
-                                    border-radius: 0;
-                                    height: 100px;
-                                    resize: vertical;
-                                "
-                            ></textarea>
-                        </div>
-
-                        <button
-                            class="w3-button w3-padding-large w3-light-grey"
-                            style="margin-top: 32px"
-                            type="submit"
-                        >
-                            BOOK CONSULTATION
-                        </button>
-                    </form>
-                </div>
+              >
+                <option value="" disabled selected>Topic of consultation</option>
+                <option value="Aneurysm">Aneurysm</option>
+                <option value="Dural fistula">Dural fistula</option>
+                <option value="AVM">AVM</option>
+                <option value="Spinal">Spinal</option>
+                <option value="Cerebral angiogram">Cerebral angiogram</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
-            <!-- Footer Links -->
+
+            <div class="form-group" style="margin-bottom:5px">
+              <select
+                class="w3-select"
+                name="Insurance"
+                required
+                style="
+                  background-color:#fff;
+                  border-radius:0;
+                  -webkit-appearance:none;
+                  height:40px;
+                  color:gray;
+                  padding-left:10px;
+                "
+              >
+                <option value="" disabled selected>Do you have medical insurance?</option>
+                <option value="no">No</option>
+                <option value="bupa">BUPA</option>
+                <option value="AXA">AXA Health</option>
+                <option value="VitalityHealth">VitalityHealth</option>
+                <option value="The Exeter">The Exeter</option>
+                <option value="WPA (Western Provident Association)">WPA (Western Provident Association)</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom:5px">
+              <textarea
+                class="w3-input"
+                name="extra-info"
+                placeholder="Additional information (optional)"
+                style="background-color:#fff; border-radius:0; height:100px; resize:vertical;"
+              ></textarea>
+            </div>
+
+            <button
+              id="submitBtn"
+              class="w3-button w3-padding-large w3-light-grey"
+              style="margin-top:32px"
+              type="submit"
+            >
+              BOOK CONSULTATION
+            </button>
+
             <div
-                class="w3-row w3-padding-32"
-                style="max-width: 500px; margin: auto"
-            >
-                <div class="w3-col s4 w3-center">
-                    <a
-                        href="General_Fees.html"
-                        class="w3-text-white"
-                        style="text-decoration: none; font-size: 12px"
-                        >FEES</a
-                    >
-                </div>
-                <div class="w3-col s4 w3-center">
-                    <a
-                        href="General_Terms_and_Conditions.html"
-                        class="w3-text-white"
-                        style="text-decoration: none; font-size: 12px"
-                        >TERMS AND CONDITIONS</a
-                    >
-                </div>
-                <div class="w3-col s4 w3-center">
-                    <a
-                        href="General_Cancellations.html"
-                        class="w3-text-white"
-                        style="text-decoration: none; font-size: 12px"
-                        >CANCELLATIONS</a
-                    >
-                </div>
-            </div>
+              id="submitStatus"
+              class="w3-small w3-center w3-text-white"
+              aria-live="polite"
+              style="margin-top:8px; min-height:1em;"
+            ></div>
+          </form>
+        </div>
+      </div>
 
-            <!-- Dark Gray Section -->
-            <div
-                style="background-color: #151515; border-top: 2px solid #2a2a2a"
-            >
-                <p
-                    class="w3-small w3-center"
-                    style="margin: 0; padding: 20px; color: #fff"
-                >
-                    ©
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>
-                    Dr&nbsp;Jeremy&nbsp;Lynch
-                </p>
-            </div>
-        </footer>
+      <!-- Footer Links -->
+      <div class="w3-row w3-padding-32" style="max-width:500px; margin:auto">
+        <div class="w3-col s4 w3-center">
+          <a href="General_Fees.html" class="w3-text-white" style="text-decoration:none; font-size:12px">FEES</a>
+        </div>
+        <div class="w3-col s4 w3-center">
+          <a href="General_Terms_and_Conditions.html" class="w3-text-white" style="text-decoration:none; font-size:12px">TERMS AND CONDITIONS</a>
+        </div>
+        <div class="w3-col s4 w3-center">
+          <a href="General_Cancellations.html" class="w3-text-white" style="text-decoration:none; font-size:12px">CANCELLATIONS</a>
+        </div>
+      </div>
 
-        <script>
-            const appointmentForm = document.getElementById("appointmentForm");
+      <!-- Dark Gray Section -->
+      <div style="background-color:#151515; border-top:2px solid #2a2a2a">
+        <p class="w3-small w3-center" style="margin:0; padding:20px; color:#fff">
+          © <script>document.write(new Date().getFullYear());</script>
+          Dr&nbsp;Jeremy&nbsp;Lynch
+        </p>
+      </div>
+    </footer>
 
-            appointmentForm.addEventListener("submit", function (event) {
-                event.preventDefault();
+    <script>
+      const appointmentForm = document.getElementById("appointmentForm");
+      const submitBtn = document.getElementById("submitBtn");
+      const statusEl = document.getElementById("submitStatus");
 
-                if (!appointmentForm.checkValidity()) {
-                    alert(
-                        "Please fill in all parts of the form before submitting.",
-                    );
-                    return;
-                }
+      // Optional: abort long requests (prevents multi-clicks when network is slow)
+      function fetchWithTimeout(resource, options = {}) {
+        const { timeout = 20000 } = options; // 20s
+        const controller = new AbortController();
+        const id = setTimeout(() => controller.abort(), timeout);
+        return fetch(resource, { ...options, signal: controller.signal })
+          .finally(() => clearTimeout(id));
+      }
 
-                const formData = new FormData(appointmentForm);
+      appointmentForm.addEventListener("submit", function (event) {
+        event.preventDefault();
 
-                fetch("https://www.radiologytemplates.org/send_email_ali", {
-                    method: "POST",
-                    body: formData,
-                })
-                    .then((response) => {
-                        if (!response.ok)
-                            throw new Error(
-                                "Server returned an error response",
-                            );
-                        return response.text();
-                    })
-                    .then(() => {
-                        // Replace ALL previous content (heading, paragraph and form) with a white thank‑you message + tick icon
-                        document.getElementById("bookingContent").innerHTML = `
-          <div class="w3-center">
-            <i class="fa-solid fa-circle-check w3-jumbo w3-text-white" aria-hidden="true"></i>
-            <h3 class="w3-text-white" style="margin-top:16px;">Thank you, your request has been submitted</h3>
-          </div>`;
-                    })
-                    .catch((error) =>
-                        console.error(
-                            "There was a problem with the fetch operation:",
-                            error,
-                        ),
-                    );
-            });
-        </script>
-    </body>
+        if (!appointmentForm.checkValidity()) {
+          alert("Please fill in all parts of the form before submitting.");
+          return;
+        }
+
+        // Visual + accessibility feedback to prevent double-clicks
+        submitBtn.disabled = true;
+        submitBtn.dataset.originalHtml = submitBtn.innerHTML;
+        submitBtn.classList.add("w3-opacity");
+        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Submitting…';
+        appointmentForm.setAttribute("aria-busy", "true");
+        statusEl.textContent = "Submitting your request…";
+
+        const formData = new FormData(appointmentForm);
+
+        fetchWithTimeout("https://www.radiologytemplates.org/send_email_ali", {
+          method: "POST",
+          body: formData,
+          timeout: 20000
+        })
+          .then((response) => {
+            if (!response.ok) throw new Error("Server returned an error response");
+            return response.text();
+          })
+          .then(() => {
+            // Success UI
+            document.getElementById("bookingContent").innerHTML = `
+              <div class="w3-center">
+                <i class="fa-solid fa-circle-check w3-jumbo w3-text-white" aria-hidden="true"></i>
+                <h3 class="w3-text-white" style="margin-top:16px;">Thank you, your request has been submitted</h3>
+              </div>`;
+          })
+          .catch((error) => {
+            console.error("There was a problem with the fetch operation:", error);
+            // Restore UI so the user can try again
+            submitBtn.disabled = false;
+            submitBtn.classList.remove("w3-opacity");
+            submitBtn.innerHTML = submitBtn.dataset.originalHtml || "BOOK CONSULTATION";
+            appointmentForm.setAttribute("aria-busy", "false");
+            statusEl.textContent = "Sorry, something went wrong. Please try again.";
+          });
+      });
+    </script>
+
+    <noscript>
+      <div class="w3-panel w3-red w3-center">Please enable JavaScript to submit this form.</div>
+    </noscript>
+  </body>
 </html> 
 
     <script src="js/main.js"></script>
