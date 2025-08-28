@@ -102,7 +102,7 @@ If you have private health insurance, the consultation fee may be covered by you
 
 If a CT or MRI scan is required, this will be arranged at an appropriate facility. The cost of imaging investigations can vary depending on the type of scan and the provider, and is therefore charged separately from the consultation fee.
 
-Patients with private health insurance will usually have the cost of imaging covered by their insurer, subject to the terms of their policy (including any excess or shortfall). Self-paying patients will be advised of the likely cost before proceeding.
+Patients with private health insurance will usually have the cost of imaging covered by their insurer, subject to the terms of their policy. Self-paying patients will be advised of the likely cost before proceeding.
 
 ## Cerebral or Spinal Angiography
 
@@ -138,7 +138,7 @@ An aneurysm is a bulge in the wall of a blood vessel caused by a small area of w
 
 ![Illustration of a cerebral aneurysm. ](img/aneurysm.svg){#fig:aneurysm }
 
-Brain aneurysms most commonly affect middle aged and older adults with a higher prevalence in women. They are extremely rare in children. The cause of any particular aneurysms is unknown in most cases, although some individuals have a genetic predisposition to developing them. Aneurysms can also rarely develop after certain infections or trauma.
+Brain aneurysms most commonly affect middle aged and older adults with a higher prevalence in women. They are extremely rare in children. The cause of a particular aneurysm usually is unknown, although some individuals have a genetic predisposition to developing them. Aneurysms can also rarely develop after certain infections or trauma.
 
 ![Angiogram of an aneurysm. ](img/an_angio.png){#fig:aneurysm_angio}
 
@@ -146,31 +146,31 @@ Brain aneurysms most commonly affect middle aged and older adults with a higher 
 
 ## What is the prevalence of brain aneurysms?
 
-Brain aneurysms are present in about 3% of the population (3 in 100 people) [1]. There are some factors that increase the risk of developing a brain aneurysm [2]:
+Brain aneurysms are present in about 3% of the population (3 in 100 people). There are some factors that increase the risk of developing a brain aneurysm:
 
 1. **Family history of brain aneurysm or subarachnoid haemorrhage (bleeding around the brain)**
 2. **Atherosclerosis**: This is a condition characterised by the buildup of plaque in the arteries. It is associated with an increased risk of brain aneurysms.
-3. **Smoking**
-4. **High blood pressure**
-5. **Female gender**: Women have a higher risk of developing brain aneurysms compared to men.
-6. **Age**: The risk of brain aneurysms may increase with age.
+3. **Smoking**: This can result in damage to the blood vessels due to chemicals inhaled. 
+4. **High blood pressure**: This causes greater pressure on the walls o blood vessels. 
+5. **Female gender**
+6. **increased Age**
 7. **Autosomal Dominant Polycystic Kidney Disease (ADPKD)**: This is a genetic condition leading to the development of multiple cysts in the kidneys. It is also associated with brain aneurysms.
 8. **Sickle cell disease**: This is a disorder of the red blood cells that is also associated with brain aneurysms.
 
 
 ## Are brain aneurysms dangerous?
 
-Many aneurysms are benign: they cause no symptoms and never rupture. However, some do rupture, leading to life-threatening bleeding around the brain known as subarachnoid haemorrhage. In rare cases, unruptured aneurysms can still cause symptoms such as reduced vision, double vision, seizures, or strokes. These symptoms result from inflammation, pressure on nearby brain structures, or the formation of blood clots. Unfortunately, there is no test that can reliably predict which aneurysms will rupture, though certain factors are known to increase the risk:
+Many aneurysms are benign, causing no symptoms and never rupturing. However, some do rupture, leading to life-threatening bleeding around the brain known as subarachnoid haemorrhage. Rarely, unruptured aneurysms cause symptoms such as impaired vision,  seizures, or strokes. These symptoms result from inflammation, pressure on nearby brain structures, or the formation of blood clots. Unfortunately, there is no test that can reliably predict which aneurysms will rupture or cause symptoms, though certain factors are known to increase the risk:
 
-* **Aneurysm size**: Larger aneurysms carry a higher risk
-* **Location**: Aneurysms on the posterior circulation (e.g. basilar artery) are more prone to rupture
-* **Growth over time**: Increasing size on follow-up imaging suggests higher risk
-* **Previous rupture**: Patients who have had one ruptured aneurysm are at higher risk of another rupturing
-* **Family history**: A strong family history of aneurysmal subarachnoid haemorrhage increases risk
-* **Smoking**: Significantly associated with both aneurysm formation and rupture
-* **Hypertension**: High blood pressure is a known risk factor
-* **Age and sex**: Rupture risk increases with age and is more common in females
-* **Aneurysm shape**: Irregular or lobulated shapes are more likely to rupture than smooth, round ones
+* **Aneurysm size**: Larger aneurysms carry a higher risk.
+* **Location**: Aneurysms in the posterior circulation (e.g. basilar artery) are more prone to rupture.
+* **Growth over time**: Increasing size on follow-up imaging suggests higher risk.
+* **Previous rupture**: Patients who have had one ruptured aneurysm are at higher risk of another rupturing.
+* **Family history**: A strong family history of aneurysmal subarachnoid haemorrhage increases risk.
+* **Smoking**: Significantly associated with both aneurysm formation and rupture.
+* **Hypertension**: High blood pressure is a known risk factor.
+* **Age and sex**: Rupture risk increases with age and is more common in females. 
+* **Aneurysm shape**: Irregular or lobulated shapes are more likely to rupture than smooth, round ones.
 
 
 
@@ -183,39 +183,28 @@ Many aneurysms are benign: they cause no symptoms and never rupture. However, so
 
 #  Symptoms of brain aneurysms {Aneurysms}
 
-A brain aneurysm typically doesn't cause symptoms until it's large or it ruptures. 
+A brain aneurysm typically doesn't cause symptoms until it's very large or it ruptures. 
 
 ## Ruptured Brain Aneurysm
 
-A ruptured aneurysm is a medical emergency. Symptoms may include:
-
-* Sudden, severe headache ("worst headache of your life")
-* Neck stiffness or pain
-* Light sensitivity (photophobia)
-* Sudden blurred or double vision
-* Sudden pain above or behind the eye
-* Changes in mental status or awareness
-* Difficulty walking or sudden dizziness
-* Sudden weakness and numbness
-
 Aneurysm rupture is a serious and dramatic event that is very noticeable. Commonly there is a severe headache, neck, pain, and sensitivity to light, which may be accompanied by loss of consciousness and patients are usually immediately brought to the hospital for further investigation and treatment.
 
-Rarely, however, aneurysm rupture can produce less noticeable symptoms. Typically, there is still a severe headache. If you have any concerns you should immediately contact emergency medical services, especially if you’re known to have a brain aneurysm.
+Rarely, however, aneurysm rupture can produce less noticeable symptoms although typically, there is still a severe headache. If you have any concerns you should immediately contact emergency medical services, especially if you’re known to have a brain aneurysm.
 
 ## Unruptured Brain Aneurysm
 
 Most aneurysms do not cause symptoms until they rupture. In rare instances unruptured aneurysms symptoms might include:
 
-* Pain above and behind an eye
-* Dilated pupil
-* Vision changes (e.g., double vision)
-* Facial numbness
+* Pain above and behind an eye.
+* Dilated pupil.
+* Vision changes (e.g., double vision).
+* Facial numbness.
 
 #  Diagnosis of brain aneurysms {Aneurysms}
 
 ## Computerised Tomography (CT Scan)
 
-A CT scan utilises X-rays to create a detailed image of the brain. This technology is widely available, quick, and particularly effective in identifying bleeding in or around the brain, which can occur if an aneurysm ruptures. The scan may be performed with or without a iodinated 'contrast' dye, which helps in distinguishing different brain structures more clearly, such as the blood vessels. Although a CT scan does involve a small amount of radiation, the dosage is generally not high enough to pose a significant risk to the patient.
+A CT scan utilises X-rays to create a detailed image of the brain. This technology is widely available, quick, and particularly effective in identifying bleeding in or around the brain, which can occur if an aneurysm ruptures. The scan may be performed with or without an iodinated 'contrast' dye, which helps in distinguishing different brain structures more clearly, such as the blood vessels. Although a CT scan does involve a small amount of radiation, the dosage is generally not high enough to pose a significant risk to the patient.
 
 CT Angiography is a specialized CT scan that uses an injection of contrast dye to visualize the blood vessels, making it an effective tool in the diagnosis of brain aneurysms. It is usually possible to see the shape and size of an aneurysm, if present. The procedure is mostly non-invasive, other than the small injection required for the contrast.
 
@@ -241,7 +230,7 @@ In the context of aneurysms, it is usually performed when doctors suspect an ane
 
 ## What are the consequences of aneurysm rupture?
 
-Aneurysm rupture results in a severe headache caused by bleeding around the brain, termed subarachnoid haemorrhage. A common description of this is a "thunderclap" headache. It may be accompanied by a stiff neck, sickness, vomiting, sensitivity to light, and loss of consciousness. Aneurysmal haemorrhage may lead to death. Rates of mortality vary in different studies and range from 20-50% [1]. There is some evidence that the mortality rate from aneurysm rupture is decreasing over time due to advances in medical care.
+Aneurysm rupture results in a severe headache caused by bleeding around the brain, termed subarachnoid haemorrhage. A common description of this is a "thunderclap" headache. It may be accompanied by a stiff neck, sickness, vomiting, sensitivity to light, and loss of consciousness. Aneurysmal haemorrhage may lead to death. Rates of mortality vary in different studies and range from 20-50%. There is some evidence that the mortality rate from aneurysm rupture is decreasing over time due to advances in medical care.
 
 ![Ruptured aneurysm. ](img/ruptured_aneurysm.svg)
 
@@ -254,7 +243,7 @@ Another significant complication that may follow aneurysm rupture is cerebral va
 
 ## How are ruptured aneurysms treated?
 
-Ruptured aneurysms require immediate treatment to prevent further bleeding, as the consequences of this may be disastrous. Two techniques are available to achieve this. The primary and less invasive method is endovascular coiling. In this procedure, a catheter is inserted into a blood vessel and guided towards the aneurysm, whereupon small coils are released. These coils facilitate blood clotting, thus averting further rupture. The National Institute for Health and Care Excellence (NICE) recommends endovascular treatment for aneurysmal rupture if it possible due to the significantly improved chance of survival following the treatment [1]. In addition, patients have a higher likelihood of living independently coupled with a reduced risk of developing seizures. This is based on evidence from high-quality clinical trials such as the International Subarachnoid Aneurysm Trial conducted over a period of 16 years [2].
+Ruptured aneurysms require immediate treatment to prevent further bleeding, as the consequences of this may be disastrous. Two techniques are available to achieve this. The primary and less invasive method is endovascular coiling. In this procedure, a catheter is inserted into a blood vessel and guided towards the aneurysm, whereupon small coils are released. These coils facilitate blood clotting, thus averting further rupture. The UK National Institute for Health and Care Excellence (NICE) recommends endovascular treatment for aneurysmal rupture if it possible due to the significantly improved chance of survival following the treatment. In addition, patients have a higher likelihood of living independently coupled with a reduced risk of developing seizures. This is based on evidence from high-quality clinical trials such as the International Subarachnoid Aneurysm Trial conducted over a period of 16 years.
 
 ![Aneurysm coil embolisation. ](img/aneurysm coiling.svg)
 
@@ -266,8 +255,6 @@ The alternative method, surgical clipping, involves a neurosurgeon creating an o
 ## What are the long-term consequences of aneurysm rupture?
 
 It is possible to make a full recovery from aneurysm rupture. Unfortunately, some patients are left with permanent disabilities, such as weakness in the face, hands, or legs, or speech or visual difficulties. Patients may also experience more vague symptoms that persist over time, such as a reduced ability to concentrate and frequent headaches.
-
-
 
 ## References
 
@@ -282,21 +269,21 @@ It is possible to make a full recovery from aneurysm rupture. Unfortunately, som
 
 Not necessarily.
 
-Aneurysms can be dangerous but some require no treatment at all. The decision to treat is often a complex one and requires discussion with an experienced medical professional. Any medical treatment involves a degree of risk, no matter how small. It is probable that for certain low-risk aneurysms the risk of the aneurysm is outweighed by the risk of the treatment.
+Aneurysms can be dangerous but some require no treatment at all. The decision to treat is often a complex one and requires discussion with an experienced medical professional. Any medical treatment involves a degree of risk, no matter how small. It is probable that for certain low-risk aneurysms the risk of the aneurysm is outweighed by the risk of the treatment. 
 
-For brain aneurysms there are generally three management strategies:
+For incidentally discovered unruptured brain aneurysms there are three broad management strategies:
 
 1. Monitoring with scans: a period of observation may be undertaken to ensure the aneurysm is not growing or changing.
-2. Endovascular treatment. This involves treating the aneurysm through the blood vessels. Generally, a small incision is made in the groin or wrist and a very thin tube is directed, under X-rays, into the aneurysm. Through this tube tiny coils and stents can be inserted to block off the aneurysm. This is less invasive than surgical treatment.
-3. Surgical clipping. This is an operation involving temporarily removing some of the skull bone ('craniotomy') to access the aneurysm and place a clip around its neck. It is by nature more invasive than endovascular treatment. As the brain is very delicate this procedure is carried out with the use of an operating microscope.
+2. Endovascular treatment. This involves treating the aneurysm through the blood vessels. Generally, a small incision is made in the groin or wrist and a very thin tube is directed, under X-rays, into the aneurysm. Through this tube tiny coils and stents can be inserted to block off the aneurysm. This is less invasive and usually safer than surgical treatment.
+3. Surgical clipping. This is an operation involving temporarily removing some of the skull bone ('craniotomy') to access the aneurysm and place a clip around its neck. It is by nature more invasive than endovascular treatment. The procedure is carried out with the use of an operating microscope.
 
-There are no medications that can be given to shrink aneurysms, however stopping smoking and controlling blood pressure if it is high can reduce the risk of it rupturing.
+There are no medications that can be given to shrink aneurysms, however stopping smoking and controlling blood pressure (if it is high) can reduce the risk of rupture.
 
 ## What factors might lead to an aneurysm being treated? {#factors}
 
 * Symptoms: If the aneurysm is causing symptoms such as double vision or headaches. This is uncommon, however, as most aneurysms do not cause symptoms.
 * Location: Aneurysms located in certain parts of the brain are more dangerous than others. This includes aneurysms within the ‘posterior' circulation, which includes the basilar, vertebral, and posterior cerebral arteries.
-* Size: Larger aneurysms are more likely to rupture. This rule does not hold universally true, however, as it is not uncommon to see ruptured smaller aneurysms.
+* Size: Larger aneurysms are more likely to rupture. This rule does not hold universally true, however, as it is not uncommon to see ruptured smaller aneurysms. Conversely large aneurysms in certain locations (such as cavernous aneurysms) are not thought to be very risky. 
 * Shape: Aneurysms with an irregular shape have been associated with increased rupture rates.
 * Previous aneurysm rupture: If the aneurysm has previously ruptured, or the patient has other brain aneurysms which have bled before, then treatment is more likely to be recommended.
 * High blood pressure: Blood pressure should be controlled in patients with aneurysms as it predisposes aneurysms to rupture.
