@@ -92,7 +92,7 @@ Users are strongly advised to consult a healthcare professionals regarding any m
 
 ## Consultation Fees
 
-The fee for an outpatient consultation is £250.
+The fee for an in-person outpatient consultation is £250 and online/telephone consultation is £200.
 
 This covers a clinic appointment to discuss your condition, review relevant medical information, and provide specialist advice. Please note that this does not include the cost of any investigations, imaging, or procedures, which will be charged separately if required.
 
@@ -108,7 +108,7 @@ Patients with private health insurance will usually have the cost of imaging cov
 
 In some cases, an angiogram may be recommended to obtain detailed images of the blood vessels in the brain or spine. This is a specialist procedure carried out in a hospital setting under local anaesthetic, with X-ray guidance.
 
-As this is a more complex investigation, the cost can vary depending on the hospital and specific requirements. Fees for cerebral angiography are therefore separate from the consultation fee.
+As this is a more complex investigation, the cost can vary depending on the hospital and specific requirements. 
 
 Patients with private health insurance will usually have the procedure covered by their insurer, subject to the terms of their policy (including any excess or shortfall). Self-paying patients will be provided with an estimate of costs before the procedure is arranged.
 
