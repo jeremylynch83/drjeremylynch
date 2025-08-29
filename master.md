@@ -376,7 +376,7 @@ A benefit of the WEB device is related to post-procedure medications. With stent
 
 Endovascular treatment is highly effective at permanently eliminating the aneurysm and providing lifelong protection from rupture. For this reason it is now the most common method to treat brain aneurysms worldwide and has been employed to save countless lives. 
 
-In preventing adverse consequences such as disability or death endovascular treatment is as effective as surgical clipping. It is the recommended treatment in ruptured aneurysms as studies have shown that endovascular treatment is safer.
+In preventing adverse consequences such as disability or death endovascular treatment is comparable surgical clipping. It is the recommended treatment in ruptured aneurysms as studies have shown that endovascular treatment is safer.
 
 However whilst very high, as with every medical treatment, including surgical clipping, the success rate is not 100%. In a large study at least one further treatment was necessary in 4.9% of patients to eliminate the risk from the aneurysm. For this reason, endovascularly treated aneurysms are  monitored with follow-up scans for a period of time to ensure that the aneurysm is eliminated. If a further treatment is required this can normally be performed safely in a planned elective setting also with an endovascular procedure.
 
@@ -1379,4 +1379,6 @@ Because the spinal cord relies on this delicate blood supply, any blockage or bl
 * **Xanthochromia** – Yellow colouring of spinal fluid, usually a sign of previous bleeding in the brain.
 
 
+# Idiopathic intracranial hypertension {Idiopathic intracranial hypertension}
 
+fdsfds
