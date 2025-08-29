@@ -78,15 +78,15 @@ Interventional neuroradiology (otherwise known as neurointerventional radiology 
 
 # Terms and Conditions {General}
 
-The content provided on this website is for general informational and educational purposes only. It does not constitute medical advice and should not be relied upon as such.
+The content on this website is provided for general information and educational purposes only. It is not medical advice and should not be relied upon as such.
 
-No doctor–patient relationship is established by accessing or reading the information on this site. A professional relationship is created only when a user books and attends a consultation or clinic appointment with the doctor through the appropriate booking channels provided.
+Accessing or reading this information does not create a doctor–patient relationship. A professional relationship is established only when you book and attend a consultation or clinic appointment through the appropriate booking channels.
 
-Although reasonable efforts are made to ensure that the information on this website is accurate and up to date, no representations, warranties, or guarantees (express or implied) are given regarding its completeness, accuracy, reliability, or suitability for any particular purpose.
+While reasonable efforts are made to ensure that the information is accurate and up to date, no guarantee is given regarding its completeness, accuracy, reliability, or suitability for any particular purpose.
 
-To the fullest extent permitted by law, the website owner shall not be held liable for any loss, injury, or damage, whether direct, indirect, or consequential, arising out of, or in connection with, the use of this website or reliance on any information contained herein.
+To the fullest extent permitted by law, the website owner accepts no liability for any loss, injury, or damage, whether direct or indirect, arising from use of this website or reliance on its content.
 
-Users are strongly advised to consult a healthcare professionals regarding any medical concerns or conditions. Never disregard or delay seeking professional medical advice because of information obtained from this website.
+Users are strongly advised to seek advice from a qualified healthcare professional regarding any medical concerns or conditions. Never disregard or delay seeking medical advice because of information found on this website.
 
 # Fees {General}
 
@@ -151,7 +151,7 @@ Brain aneurysms are present in about 3% of the population (3 in 100 people). The
 1. **Family history of brain aneurysm or subarachnoid haemorrhage (bleeding around the brain)**
 2. **Atherosclerosis**: This is a condition characterised by the buildup of plaque in the arteries. It is associated with an increased risk of brain aneurysms.
 3. **Smoking**: This can result in damage to the blood vessels due to chemicals inhaled. 
-4. **High blood pressure**: This causes greater pressure on the walls of blood vessels. 
+4. **High blood pressure**: This causes greater pressure on the walls o blood vessels. 
 5. **Female gender**
 6. **increased Age**
 7. **Autosomal Dominant Polycystic Kidney Disease (ADPKD)**: This is a genetic condition leading to the development of multiple cysts in the kidneys. It is also associated with brain aneurysms.
@@ -292,30 +292,31 @@ There are no medications that can be given to shrink aneurysms, however stopping
 
 # Endovascular treatment of aneurysms {Aneurysms}
 
+The development of endovascular techniques has completely revolutionised the treatment of brain aneurysms increasing the safety of the procedure and reducing the invasiveness and recovery time. The majority of brain aneurysms are now treated using endovascular techniques. There are very few aneurysms that cannot now be treated endovascularly. 
+
 
 ## What does endovascular treatment involve?
 
-Endovascular treatment is a minimally invasive procedure to treat aneurysms. Rather than requiring a large incision and direct surgical access to the aneurysm, endovascular treatment achieves its goal by guiding small, specialized devices through the patient's blood vessels to the site of the aneurysm. Embolisation means to promote clot formation within the aneurysm, commonly by inserting platinum coils or placing stents of flow diverters acoss its neck. These techniques seal off the aneurysm, preventing blood from entering it.
+Rather than requiring a large incision and direct surgical access to the aneurysm, endovascular treatment achieves its goal by guiding small, specialized devices through the patient's blood vessels (the body’s own natural highways) to the site of the aneurysm. Embolisation means to promote clot formation within the aneurysm, commonly by inserting devices such as coils into the aneurysm or placing stents acoss its neck. 
+
+## How does it work?
+
+All endovascular treatments aim to initiate the body’s natural healing process and involve first filling the aneurysm with a stable clot. This seals off the aneurysm, preventing blood from entering it. The wall of the blood vessel remodels over time, completing the healing and eliminating the aneurysm.
 
 ## What are the types of endovascular treatment?
 
 
-
-1. Coiling (Endovascular Coiling or Coil Embolization). Coiling is a method where small, soft platinum coils are threaded through a catheter and placed directly into the aneurysm. The aim is to initiate a blood clotting process that fills the aneurysm with a stable clot. This effectively isolates the aneurysm from your blood circulation, reducing the risk of rupture.
-2. Stent-Assisted Coiling. Stent-assisted coiling uses a small, tube-shaped device called a stent in conjunction with coiling. The stent provides support to the weakened arterial wall and helps keep the coils within the aneurysm sac. This method is often used when the aneurysm has a wider neck or irregular shape that makes regular coiling challenging. The stent remains in the artery permanently.
-3. Flow Diversion. Flow diversion is a treatment method that uses a device called a flow diverter, similar to a stent but denser. It's placed in the artery carrying blood to the aneurysm. Instead of filling the aneurysm with coils, the flow diverter redirects blood flow away from the aneurysm. This reduced blood flow into the aneurysm promotes clotting within the aneurysm, leading to its closure. Flow diverters may also be used with coils although this is less necessary.
-4. Intrasaccular devices such as Woven Endobridge (WEB). Intrasaccular devices are a newer development in aneurysm treatment. These devices are placed directly into the aneurysm sac via a catheter, similar to coiling, but are able to treat aneurysms that would otherwise require stents.
-
-
-## What is coil embolisation?
+1. Coiling (Endovascular Coiling or Coil Embolization). This involves small, soft platinum coils being threaded through a catheter and placed directly into the aneurysm. 
+2. Stent-Assisted Coiling. Stents are  small, tube-shaped devices that are used in conjunction with coils to provide support to the weakened arterial wall. They also help keep the coils within the aneurysm sac. The stent remains in the artery permanently.
+3. Flow Diversion. This treatment employs a device called a flow diverter, similar to a stent but with denser walls. It's placed in the artery carrying blood to the aneurysm. Instead of filling the aneurysm with coils, the flow diverter redirects blood flow away from the aneurysm. This reduced blood flow into the aneurysm promotes clotting within the aneurysm, leading to its closure. Coils are not mandatory but are sometimes also placed.
+4. Intrasaccular devices such as the Woven Endobridge (WEB). These are placed directly into the aneurysm sac via a catheter, similar to coiling, but are able to treat aneurysms that would otherwise require stents.
 
 
+## How is coil embolisation performed?
 
-Coil embolisation, also known as endovascular coiling, is a procedure to treat brain aneurysms. The process is minimally invasive and is a proven technique to prevent the rupture of the aneurysm.
+Coil embolisation is undertaken during general anaesthesia. The doctor  makes a small incision of about 3 mm, typically in the wrist or groin, to access a blood vessel. Following this, they insert a long, thin tube, called a catheter, through the incision into the blood vessel. Using a method called fluoroscopy, which involves real-time X-ray imaging, the doctor is able to navigate the catheter through the patient's vascular system until it reaches the blood vessels of the brain where the aneurysm is located.
 
-The procedure starts with the patient being placed under general anesthesia so that they do not experience any pain during the operation. The doctor then makes a small incision, typically in the wrist or groin, to access a blood vessel. Following this, the doctor inserts a long, thin tube, called a catheter, through the incision into the blood vessel. Using a method called fluoroscopy, which involves real-time X-ray imaging, the doctor is able to navigate the catheter through the patient's vascular system until it reaches the blood vessels of the brain where the aneurysm is located.
-
-Once the catheter is in position, small platinum coils are threaded through the catheter and into the aneurysm. These coils are soft and flexible, allowing them to adapt to the shape of the aneurysm. The role of the coils is to promote the formation of blood clots within the aneurysm. As the blood comes into contact with the coils, it begins to clot, gradually filling up the aneurysm over time. This process effectively isolates the aneurysm from the rest of the circulatory system, thus preventing it from rupturing. The coils are left in place and do not need to be removed.
+Once the catheter is in position, small platinum coils are threaded through the catheter and into the aneurysm. These coils are soft and flexible, allowing them to adapt to the shape of the aneurysm. As the blood comes into contact with the coils, it begins to clot, gradually filling up the aneurysm over time. This process effectively isolates the aneurysm from the rest of the circulatory system, thus preventing it from rupturing. The coils are left in place and do not need to be removed.
 
 ![Illustration demonstrating coil embolisation of a brain aneurysm. ](img/aneurysm coiling.svg)
 
@@ -328,19 +329,19 @@ After the coils are properly placed, the catheter is carefully withdrawn from th
 
 
 
-Stent-assisted coiling involves the insertion of a small, mesh-like tube called a stent in addition to tiny coils to treat the aneurysm.
+Stent-assisted coiling involves the insertion of a small, mesh-like tube called a stent in addition to coils.
 
-Similar to coil embolisation, a tiny catheter is navigated through the blood vessels, starting from an access point typically in the wrist or groin, all the way up to the site of the aneurysm in the brain. A stent is then placed across the opening of the aneurysm, acting like a small scaffold that provides support to the blood vessel wall, which can be weakened due to the aneurysm.
+Similar to coil embolisation, a tiny catheter is navigated through the blood vessels, starting from an access point typically in the wrist or groin, all the way up to the site of the aneurysm in the brain. The stent is then placed across the opening of the aneurysm, acting like a small scaffold that provides support to the blood vessel wall, which can be weakened due to the aneurysm.
 
-Once the stent is in place, small coils are threaded through the catheter and placed into the aneurysm. The coils promote blood clotting, thereby filling the aneurysm and preventing it from rupturing. The stent helps to hold these coils in place and prevents them from slipping into the normal blood vessel. It's particularly useful in treating wide-neck aneurysms, where the risk of coils slipping into the parent vessel (the blood vessel supplying the aneurysm) is higher.
+Once the stent is in place, small coils are threaded through the catheter and placed into the aneurysm. The coils promote blood clotting, thereby filling the aneurysm and preventing it from rupturing. The stent helps to hold these coils in place and prevents them from slipping into the normal blood vessel. It's particularly useful in treating wide-neck aneurysms, where the risk of coils slipping into the parent vessel (the blood vessel supplying the aneurysm) is higher. The stent also typically increases the durability of the procedure, reducing the risk of recurrence. 
+
 
 
 ![Illustration of aneurysm coiling.](img/stent-coiling.svg)
 
-After the procedure, you will likely need to take antiplatelet medications such as aspirin or clopidogrel, which help to prevent the formation of blood clots around the stent. This is a routine precaution and an important part of ensuring the success of the procedure. Antiplatelet medications are given in low doses and make the platelets in your blood less sticky, reducing the chance that a clot will form.
+After the procedure, you will likely need to take a course of antiplatelet medications such as clopidogrel, in addition to aspirin. These help to prevent the formation of blood clots around the stent. This is a routine precaution and an important part of ensuring the success of the procedure. Antiplatelet medications are given in low doses and make the platelets in your blood less sticky, reducing the chance that a clot will form. These are often stopped at 6 months, with aspirin continuing for 1-2 years. 
 
 ![Real case of stent & coil embolisation of a cerebral aneurysm. (A) An aneurysm is seen at the tip of the basilar artery. (B) A stent is deployed across the neck of the aneurysm, and a single coil has been placed in the aneurysm (C) Angiography during placement of the stent. (D) The aneurysm has been filled with coils. ](img/stent_coiling.png){#fig:aneurysm_angio}
-
 
 
 ## What is flow diversion?
@@ -349,12 +350,12 @@ Flow diversion is another minimally invasive endovascular treatment designed to 
 
 A flow diverter, similar to a stent, is a small tubular mesh device that's placed inside the parent artery, the blood vessel supplying the aneurysm. The flow diverter is designed to alter the blood flow dynamics in the artery, thereby diverting blood away from the aneurysm. They can be used with or without placement of coils in the aneurysm.
 
-Over time, this decreased blood flow into the aneurysm encourages the formation of a blood clot within the aneurysm, which helps to seal it off from the rest of the blood vessel. As the aneurysm shrinks and heals, the artery resumes a more normal shape and function. This process can take several weeks to months.
+Over time, this decreased blood flow into the aneurysm encourages the formation of a blood clot within the aneurysm, which helps to seal it off from the rest of the blood vessel. As the aneurysm shrinks and heals, the artery regains a more normal shape and function. This process can take several weeks to months.
 
 ![Flow diversion. ](img/flow-diversion.svg)
 
 
-Flow diversion is particularly effective for recurrent, large, wide-necked, or thrombosed aneurysms that can't be adequately treated with other methods. It is also necessary to take antiplatelets after insertion of flow diverters.
+Flow diversion is particularly effective for recurrent, large, wide-necked, or thrombosed aneurysms that can't be adequately treated with other methods. It is also necessary to take a course of antiplatelet medications after insertion of flow diverters.
 
 ![Real case of flow diversion of a cerebral aneurysm. (A) An aneurysm is seen of the internal carotid artery (ICA). (B) A flow-diverting stent is deployed across the neck of the aneurysm. (C) The flow-diverting stent is seen from a different angle. (D) The stent is seen within the blood vessel. ](img/flow_diversion.png){#fig:aneurysm_angio}
 
@@ -368,18 +369,19 @@ The WEB device, made of ultra-fine braided wires, is a flexible, self-expanding 
 
 ![The WEB intrasaccular device.](img/web-device.svg)
 
-A benefit of the WEB device is related to post-procedure medications. With stents or flow diverters, patients are typically required to take antiplatelet medications for a period of time to prevent blood clot formation around the treatment site. However, because of the way the WEB device works, patients usually do not need to take these medications for a prolonged period.
+A benefit of the WEB device is related to post-procedure medications. With stents or flow diverters, patients are typically required to take antiplatelet medications for a period of time to prevent blood clot formation around the treatment site. However, because of the way the WEB sits in the aneurysm itself rather than the blood vessel, patients usually do not need to take these medications.
 
 
 ## Is endovascular treatment durable?
 
-Yes. Endovascular treatment is highly effective at providing lifelong protection from brain aneurysms. For this reason it is now the most common method to treat brain aneurysms worldwide and has been employed to save countless lives.
+Endovascular treatment is highly effective at permanently eliminating the aneurysm and providing lifelong protection from rupture. For this reason it is now the most common method to treat brain aneurysms worldwide and has been employed to save countless lives. 
 
 In preventing adverse consequences such as disability or death endovascular treatment is as effective as surgical clipping. It is the recommended treatment in ruptured aneurysms as studies have shown that endovascular treatment is safer.
 
-However, like any treatment, there is no absolute guarantee that an aneurysm treated with endovascular therapy will never recur necessitating additional procedures. In a large study retreatment was carried out in 4.9% of patients [1]. Rebleeding was exceedingly rare, occurring in less than 1 in 200 patients. It's worth noting that surgical clipping, much like endovascular treatment, isn't exempt from the possibility of requiring further intervention. For this reason endovascularly treated aneurysms are regularly monitored with follow-up scans to ensure that the treatment remains effective. If a further treatment is required this can normally be performed safely in a planned elective setting also with an endovascular procedure.
+However whilst very high, as with every medical treatment, including surgical clipping, the success rate is not 100%. In a large study at least one further treatment was necessary in 4.9% of patients to eliminate the risk from the aneurysm. For this reason, endovascularly treated aneurysms are  monitored with follow-up scans for a period of time to ensure that the aneurysm is eliminated. If a further treatment is required this can normally be performed safely in a planned elective setting also with an endovascular procedure.
 
-Overall, endovascular therapy provides a highly effective and durable treatment. After embolisation of a brain aneurysm you would be more likely to die from another completely unrelated cause such as cancer of heart disease, than from recurrence of the aneurysm [3].
+The key benefit arises from the low invasiveness of the procedure, reducing harm incurred during the treatment itself. 
+
 
 ## What are the risks of endovascular treatment?
 
