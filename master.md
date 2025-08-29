@@ -151,10 +151,10 @@ Brain aneurysms are present in about 3% of the population (3 in 100 people). The
 1. **Family history of brain aneurysm or subarachnoid haemorrhage (bleeding around the brain)**
 2. **Atherosclerosis**: This is a condition characterised by the buildup of plaque in the arteries. It is associated with an increased risk of brain aneurysms.
 3. **Smoking**: This can result in damage to the blood vessels due to chemicals inhaled. 
-4. **High blood pressure**: This causes greater pressure on the walls o blood vessels. 
+4. **High blood pressure**: This causes greater pressure on the walls of blood vessels. 
 5. **Female gender**
 6. **increased Age**
-7. **Autosomal Dominant Polycystic Kidney Disease (ADPKD)**: This is a genetic condition leading to the development of multiple cysts in the kidneys. It is also associated with brain aneurysms.
+7. **Autosomal Dominant Polycystic Kidney Disease (ADPKD)**: This is a genetic condition leading to the development of multiple cysts in the kidneys. walls o bloodIt is also associated with brain aneurysms.
 8. **Sickle cell disease**: This is a disorder of the red blood cells that is also associated with brain aneurysms.
 
 
