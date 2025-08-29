@@ -568,13 +568,6 @@ DAVFs are classified by risk. High-grade fistulas carry a significant chance of 
 
 Some patients have no symptoms, and the DAVF may be found incidentally on a CT or MRI scan. However, even when discovered by chance, further investigation is usually needed to assess potential risk.
 
-Here’s a cleaner, more structured version of your draft that makes the flow easier to follow while keeping it patient-friendly but accurate:
-
----
-
-Good point — bleeding should be highlighted clearly, because it’s one of the most serious risks with DAVFs. Here’s how you could integrate it into the structured version you already have:
-
----
 
 # Symptoms of DAVF {DAVF}
 
@@ -1379,6 +1372,131 @@ Because the spinal cord relies on this delicate blood supply, any blockage or bl
 * **Xanthochromia** – Yellow colouring of spinal fluid, usually a sign of previous bleeding in the brain.
 
 
-# Idiopathic intracranial hypertension {Idiopathic intracranial hypertension}
+# Introduction to idiopathic Intracranial Hypertension {Idiopathic Intracranial Hypertension}
 
-fdsfds
+## What is IIH?
+
+Idiopathic intracranial hypertension is a condition where the pressure inside the skull is too high without a clear cause.
+
+* **Idiopathic** means no known cause.
+* **Intracranial** means inside the skull.
+* **Hypertension** means high pressure.
+
+The pressure rises because the fluid that cushions the brain and spinal cord (cerebrospinal fluid or CSF) builds up. This can press on the brain and the optic nerves, which are needed for sight.
+
+IIH was previously called **pseudotumour cerebri** because its symptoms can resemble those of a brain tumour, however there is no tumour.
+
+## How common is it?
+
+IIH is uncommon. On average about 5 in 100,000 people are diagnosed each year. It is more common in young women with obesity.
+
+## Is it serious?
+
+IIH is not usually life-threatening. However, without treatment it can cause permanent changes to your vision. Early assessment and treatment help protect your sight and reduce symptoms.
+
+## What causes it?
+
+The exact cause is not known. Possible factors include:
+
+* Problems with how CSF flows and is absorbed.
+* Narrowing of large veins in the brain (venous sinuses), which can slow drainage and raise pressure.
+
+## Is it inherited?
+
+There is no proven hereditary link at present.
+
+## Who is more at risk?
+
+Anyone can develop IIH, but the risk is higher if you:
+
+* Have a body mass index (BMI) over 30.
+* Are female.
+* Are aged 20 to 45.
+
+# Symptoms {Idiopathic Intracranial Hypertension}
+
+## What symptoms can it cause?
+
+* Headaches that can be severe, with nausea or vomiting.
+* Visual symptoms, such as brief episodes of dimming or loss of vision, blurred vision, double vision or blind spots. If untreated this can rarely lead to permanent sight loss.
+* A whooshing or pulsing noise in the ears in time with your heartbeat (pulsatile tinnitus).
+* Swelling of the optic nerves seen on an eye exam (papilloedema). This can be in one or both eyes and may not cause symptoms at first.
+
+# Diagnosis {Idiopathic Intracranial Hypertension}
+## How is IIH diagnosed?
+
+Tests usually include:
+
+1. **Eye tests**, including visual fields, to check for blind spots and optic nerve swelling.
+2. **Brain imaging** with MRI or CT to exclude other problems and look for features that fit with raised pressure.
+3. **Lumbar puncture (spinal tap)** to measure CSF pressure and test the fluid.
+
+Doctors use agreed criteria to make the diagnosis. These include symptoms of raised pressure, no other cause found on examination or scans, and raised CSF pressure on lumbar puncture.
+
+
+# Treatment {Idiopathic Intracranial Hypertension}
+
+The goals are to lower the pressure, relieve symptoms and protect your sight. Your plan is tailored to you and depends on how severe your symptoms and eye findings are.
+
+## Weight management
+
+If you are living with obesity, weight loss often helps reduce pressure and symptoms. Your team can support you with a structured weight management programme.
+
+## Medicines
+
+* **Acetazolamide or topiramate** to reduce CSF production.
+* **Diuretics (water tablets)** in some cases to reduce fluid retention.
+
+## Procedures and surgery
+
+Used when vision is at risk, symptoms are severe, or medicines are not enough.
+
+* **Venous sinus stenting**
+  A tiny mesh tube (stent) is placed in a narrowed brain vein to improve drainage and lower pressure.
+
+* **CSF shunt**
+  A thin tube is placed to drain extra CSF from the brain to another part of the body. Shunts can relieve pressure but have a notable risk of blockage or needing further surgery.
+
+* **Optic nerve sheath fenestration**
+  Eye surgery that makes small openings in the covering of the optic nerve to release pressure and protect sight.
+
+## Outlook (prognosis)
+
+With timely treatment, most people improve and the risk of permanent sight loss falls. IIH does not usually affect life expectancy. Ongoing follow-up is important, especially regular eye checks.
+
+# Venous sinus stenting {Idiopathic Intracranial Hypertension}
+
+## When is it considered?
+
+* Your sight is at risk from IIH.
+* Medicines have not worked well or cause side effects you cannot tolerate.
+* Sometimes for severe pulsatile tinnitus or headaches that greatly affect quality of life.
+
+## What does the procedure involve?
+
+* You will usually have a general anaesthetic so you are asleep.
+* A doctor inserts a thin tube into a vein at the top of the leg or wrist and guides it to the brain veins using X-ray imaging.
+* Pressures are measured across the narrowed vein in the brain (venous sinus).
+* A small mesh tube called a stent is placed to hold the vein open and improve drainage.
+* You will take two antiplatelet medicines, usually for 6 months, then continue one long term as advised.
+* Most people stay in hospital overnight and go home the next day.
+* A follow-up CT or MR venogram is usually performed to assess the stents.
+
+## What are the risks?
+
+Figures below are approximate and depend on your individual health. Your team will discuss what they mean for you.
+
+* Bleeding in the brain (intracranial haemorrhage) in fewer than 2 in 100 people.
+* Temporary headaches are common, possibly in up to half of patients.
+* Clotting or narrowing in or near the stent that may need further treatment in about 9 in 100 people.
+* Permanent neurological problems in fewer than 2 in 100 people.
+* A risk to life in fewer than 1 in 100 people.
+* General risks linked to angiography, such as bruising at the puncture site or contrast allergy.
+
+## Aftercare and follow-up
+
+* Take your medicines exactly as prescribed, especially antiplatelets after stenting.
+* Attend all eye and clinic appointments to monitor your vision and pressure.
+* Seek urgent help if you have sudden worsening headache, new neurological symptoms, new or worsening visual loss, severe groin or wrist pain or swelling, or an allergic reaction.
+
+
