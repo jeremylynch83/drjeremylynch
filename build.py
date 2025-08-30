@@ -84,7 +84,7 @@ def create_md_content_from_headings(
     section_first: Dict[str, str],
 ) -> List[Tuple[str, str]]:
     """
-    Split master.md into sections at each H1. Insert YAML with links + breadcrumbs.
+    Split master markdown into sections at each H1. Insert YAML with links and breadcrumbs.
     Returns list of (output_filename, markdown_content).
     """
     if not os.path.exists(file_path):
@@ -124,7 +124,7 @@ def create_md_content_from_headings(
 
             yaml_lines: List[str] = []
 
-            # --- Add page title to YAML to satisfy Pandoc (<title>) ---
+            # Add page title to YAML to satisfy Pandoc (<title>)
             yaml_lines.insert(0, f"title: {yaml_quote(title_text)}")
 
             # Related links (if this H1 is in a section)
@@ -135,7 +135,7 @@ def create_md_content_from_headings(
                     yaml_lines.append("links:")
                     yaml_lines.append(links_yaml)
 
-            # Breadcrumbs: Home -> Section (links to that section's FIRST page) -> Page
+            # Breadcrumbs: Home -> Section (first page) -> Page
             yaml_lines.append("breadcrumbs:")
             yaml_lines.append(f"- text: Home\n  url: index.html")
             if sec:
@@ -169,7 +169,7 @@ def create_index() -> None:
 
 
 def convert_md_to_html(md_content: str, html_filename: str, template_path: str) -> None:
-    """Convert markdown to HTML via pandoc with template + footer include."""
+    """Convert markdown to HTML via pandoc with template and footer include."""
     subprocess.run(
         [
             "pandoc",
@@ -199,12 +199,10 @@ def create_all_topics(
     template_path: str
 ) -> None:
     """
-    Build All_topics.html hierarchically:
-      Section
-        - Page1
-        - Page2
+    Build All_topics.html.
+    Pages under each section keep the order they appear in the master markdown.
     """
-    # Collect per-section pages
+    # Collect per-section pages in encounter order
     section_pages: Dict[str, List[Tuple[str, str]]] = {}
     for filename, md_content in md_sections:
         title = _extract_title_from_md(md_content) or os.path.splitext(filename)[0]
@@ -212,14 +210,9 @@ def create_all_topics(
         section = sec if sec else "Misc"
         section_pages.setdefault(section, []).append((title, filename))
 
-    # Sort pages within each section
-    for sec in section_pages:
-        section_pages[sec].sort(key=lambda t: t[0].lower())
-
-    # Sort sections alphabetically
+    # Sections remain alphabetically ordered, but page lists are not sorted
     sorted_sections = sorted(section_pages.keys(), key=lambda s: s.lower())
 
-    # YAML (include proper <title>)
     yaml_block = (
         "---\n"
         f"title: {yaml_quote('All topics')}\n"
@@ -229,12 +222,9 @@ def create_all_topics(
         "---"
     )
 
-    # Body
     body_lines = ["# All topics", ""]
     for sec in sorted_sections:
         sec_name = group_names.get(sec, sec)
-        # To make section headers clickable to first page, replace next line with:
-        # body_lines.append(f"## [{sec_name}]({section_first.get(sec, '')})")
         body_lines.append(f"## {sec_name}")
         for title, filename in section_pages[sec]:
             body_lines.append(f"- [{title}]({filename})")
@@ -245,15 +235,41 @@ def create_all_topics(
     print("Created HTML file: All_topics.html")
 
 
+
 # =======================
 # Orchestration
 # =======================
 
 def main():
-    master_md = 'master.md'
     template_path = "templates/standard.html"
 
     delete_all_html()
+
+    # Combine any .md files found in the 'master' directory
+    md_dir = "master"
+    md_files = sorted(glob.glob(os.path.join(md_dir, "*.md")))
+    if not md_files:
+        print("No .md files found in the 'master' directory.")
+        return
+
+    combined_path = "_combined_master.md"
+    with open(combined_path, "w", encoding="utf-8-sig") as out:
+        for i, path in enumerate(md_files):
+            try:
+                with open(path, "r", encoding="utf-8-sig") as f:
+                    content = f.read().strip()
+                    if not content:
+                        continue
+                    if i > 0:
+                        out.write("\n\n")
+                    out.write(content)
+                    if not content.endswith("\n"):
+                        out.write("\n")
+                print(f"Included: {path}")
+            except OSError as e:
+                print(f"Skipping {path}: {e}")
+
+    master_md = combined_path
 
     grouped_headings, page_to_section, group_names, section_first = parse_headings_and_group(master_md)
     md_sections = create_md_content_from_headings(

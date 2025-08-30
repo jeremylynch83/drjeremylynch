@@ -151,7 +151,14 @@ main .col-md-8 figure figcaption::before {
 .navbar .nav-link[aria-current="page"] { font-weight: 700; }
 
 /* ===== Hero / headings microtype ===== */
-.consultant-title { font-size: clamp(0.55rem, 1.2vw, 0.75rem); line-height: 1.2; display: block; }
+.consultant-title {
+  font-size: clamp(0.55rem, 1.2vw, 0.75rem);
+  line-height: 1.2;
+  display: block;
+  letter-spacing: -0.12em; /* pull letters closer */
+  font-weight: 100;
+}
+
 
 /* ===== Profile section ===== */
 .profile-container { display: flex; flex-wrap: wrap; align-items: center; max-width: 800px; margin: 0 auto; gap: 0; }
@@ -228,6 +235,7 @@ select option { padding: 5px; }
 .w3-hover-opacity { cursor: pointer; }
 .fade { transition: opacity 0.3s ease-in; }
 
+
 @media (prefers-reduced-motion: reduce) {
     * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
@@ -250,3 +258,4 @@ select option { padding: 5px; }
 
     .main-content { padding-top: 2rem; }
 }
+

@@ -1499,4 +1499,145 @@ Figures below are approximate and depend on your individual health. Your team wi
 * Attend all eye and clinic appointments to monitor your vision and pressure.
 * Seek urgent help if you have sudden worsening headache, new neurological symptoms, new or worsening visual loss, severe groin or wrist pain or swelling, or an allergic reaction.
 
+# Introduction to Spontaneous Intracranial Hypotension {Spontaneous Intracranial Hypotension}
 
+## What is SIH?
+
+Spontaneous intracranial hypotension (SIH) happens when fluid that cushions the brain and spinal cord (cerebrospinal fluid, or CSF) leaks from the covering of the spine. The most common symptom is a sudden, ongoing headache that is worse when upright and better when lying flat. You may also notice neck stiffness, nausea, light sensitivity, ringing in the ears, reduced hearing, dizziness, or tiredness. Some people describe “brain fog”.
+
+SIH can be caused by tiny tears in the spinal lining, small outpouchings that rupture, or a CSF-venous fistula where CSF drains abnormally into nearby veins. Finding the exact leak can be difficult. Brain scans can look normal and a lumbar puncture pressure can be normal. Special spinal imaging is often needed.
+
+## How common is it?
+
+SIH is more common than once thought. Around 4 to 5 people in every 100,000 develop it each year. It is seen more often in women and in people with connective tissue conditions such as Marfan syndrome, Ehlers–Danlos syndrome, or generalised joint hypermobility.
+
+## Is it serious?
+
+Yes, because symptoms can be very disabling. Untreated SIH can lead to complications in a small number of people. The good news is that most people improve with the right treatment. Early diagnosis and treatment give the best chance of full recovery.
+
+## What causes it?
+
+SIH is due to a CSF leak from the spine. Common patterns include:
+
+* A tear on the front of the dura from a sharp disc or bony spur.
+* A tear on the side of the dura due to thin or fragile tissue.
+* A CSF-venous fistula where CSF drains into a spinal vein, often near a nerve root.
+* A small leak from a nerve root sleeve into nearby soft tissues.
+
+## Who is more at risk?
+
+Women, and people with conditions that make connective tissues more stretchy or fragile, such as Marfan syndrome, Ehlers–Danlos syndrome, or general joint hypermobility.
+
+# Symptoms {Spontaneous Intracranial Hypotension}
+
+## What symptoms can it cause?
+
+Headache is common. It often starts as a positional headache, worse when upright and better when lying down. With time the pattern can change and may no longer be clearly positional. Some people have non-positional headaches, headaches that start after being upright for a while, cough or exertional headaches, thunderclap onset, or even headaches that feel worse when flat.
+
+Other symptoms can include:
+
+* Neck or between-shoulder-blade pain
+* Nausea
+* Ear and balance problems, such as tinnitus, dizziness, vertigo, imbalance, hearing change, or a feeling of fullness in the ear
+* Blurred vision and light sensitivity
+* Thinking or memory problems, from “brain fog” to more marked changes
+* Tremor, slurred speech, swallowing difficulty, or Parkinsonism-like symptoms
+* Tiredness
+* Rarely, hormonal effects such as raised prolactin with possible milky nipple discharge
+
+# Diagnosis {Spontaneous Intracranial Hypotension}
+
+## MRI
+
+A contrast brain MRI is usually the first test. Certain scan features can suggest a leak, although a normal brain MRI does not rule SIH out. Because most leaks start in the spine, a spinal MRI may also be done. This can show fluid outside the sac that holds the spinal cord, which helps guide further tests.
+
+## LP
+
+A lumbar puncture is not a reliable way to confirm or exclude SIH. The pressure can be low, normal, or occasionally high. SIH is mainly a problem of low CSF volume rather than always low pressure.
+
+## Conventional CT myelography
+
+This test injects contrast into the CSF and then scans with CT after a delay. It shows the CSF space well but often does not pinpoint the leak. It usually does not show CSF-venous fistulas.
+
+## Dynamic myelography
+
+This is the best test for finding fast leaks and CSF-venous fistulas. Contrast is injected into the CSF and imaging starts straight away using fluoroscopy or CT. Lying on the side and simple breathing or pressure manoeuvres can make a hidden fistula show up.
+
+In simple terms, the fluoroscopic approach involves:
+
+* Local anaesthesia, usually without sedation.
+* Careful positioning based on MRI findings.
+* A small needle in the lower back to inject saline and contrast.
+* Short, real-time X-ray runs to look for leak sites, with extra runs if needed.
+* A low-dose CT afterwards in some cases.
+* Usual post-lumbar puncture care and brief bed rest.
+
+# Treatment {Spontaneous Intracranial Hypotension}
+
+## Conservative measures
+
+Long periods of bed rest, extra fluids, caffeine, or abdominal binders have weak evidence. Waiting too long can make diagnosis harder and may delay effective treatment. Early active treatment is often advised.
+
+## Epidural blood patches
+
+An epidural blood patch (EBP) is the first-line treatment. A small amount of your own blood is injected into the space outside the dura in the spine. This can seal the leak and can also reduce CSF loss by gentle pressure.
+
+* Non-targeted EBP: usually in the lower back, often using 20 mL or more of blood.
+* Targeted EBP: given at the exact leak site using imaging guidance. Sometimes a fibrin sealant is added. A transforaminal route can reach leaks at the front or side.
+
+What to expect:
+
+* Earlier and larger-volume patches tend to work better.
+* More than one patch may be needed.
+* Plan to lie flat for about 2 hours after the procedure.
+
+Possible effects and risks:
+
+* Rebound intracranial hypertension can occur within 1 to 2 days. The headache may become worse when lying down and feel different in location. It often responds to acetazolamide.
+* Temporary back or shooting leg pain during or after the patch is common and usually settles within weeks.
+* Rare risks include epidural or subdural haematoma, infection, venous thrombosis, cauda equina syndrome, or inflammation if blood accidentally enters the CSF.
+
+## Targetted fibrin glue patches
+
+If a specific leak is found, a doctor can inject a medical glue (fibrin sealant) into the epidural space near the leak, sometimes with a small blood patch. This can be done under fluoroscopy or CT, using interlaminar or transforaminal routes to reach front or side defects. It is often used when standard blood patches have not worked. Risks are similar to targeted EBPs.
+
+## Outlook (prognosis)
+
+Many people improve or are cured with EBPs, targeted sealant, or treatment of a CSF-venous fistula. Some need repeat treatments. A small group have persistent or recurring symptoms and benefit from advanced imaging and specialist care. Earlier treatment improves the chance of full recovery and lowers the risk of long-term problems.
+
+# CSF venous embolisation {Spontaneous Intracranial Hypotension}
+
+## When is it considered?
+
+When a CSF-venous fistula is proven on dynamic myelography, especially if symptoms continue after blood or glue patches, or when the fistula is clearly the main cause.
+
+## What does the procedure involve?
+
+Usually a day-case under conscious sedation or general anaesthesia.
+
+* A vein in the leg, arm, or neck is used for access.
+* Catheters are guided into the azygos vein system, then into the small spinal vein that drains the fistula.
+* A microcatheter is placed close to the target near the intervertebral foramen.
+* The team double-checks the level and side against your imaging.
+* A liquid embolic agent is injected to block the abnormal pathway by filling the small veins around the nerve root and nearby epidural veins.
+* The access site is compressed by hand to stop bleeding.
+
+## What are the risks?
+
+* Small tears in spinal veins. These are rare and often settle on their own or with more embolic.
+* Serious complications are very uncommon. No deaths have been reported in published series, although risk is never zero.
+* Rebound intracranial hypertension in about 1 in 10, often managed with a short course of acetazolamide.
+* Tiny pulmonary emboli of the liquid agent can occur and are usually symptom-free.
+* Bruising at the access site, which usually settles with pressure.
+* Local pain at the treatment site, managed with simple pain relief.
+
+## Aftercare and follow-up
+
+* A quick CT may be done straight after to confirm the position of the embolic if needed.
+* Most people go home the same day after observation. Take simple pain relief if required.
+* You will be told what to look for with rebound intracranial hypertension and whom to contact.
+
+Follow up
+
+* MRI of the brain and spine is usually arranged at about 3 months.
+* A simple headache score before and after treatment helps track improvement.
