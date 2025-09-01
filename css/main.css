@@ -15,7 +15,7 @@
     --clr-card-shadow: 0 2px 6px rgba(0,0,0,0.08);
     --clr-card-shadow-hover: 0 8px 20px rgba(0,0,0,0.12);
 
-    --ff-base: Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    --ff-base: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 
     --fs-body: 1rem;
     --fs-p: clamp(1rem, 0.98rem + 0.2vw, 1.125rem);
@@ -37,11 +37,15 @@ html, body {
     color: var(--clr-text);
     background: var(--clr-bg);
     line-height: 1.8;
-    font-family: var(--ff-base);
+    font-family: var(--ff-base) !important;
     scroll-padding-top: var(--navbar-height);
     scroll-behavior: smooth;
-    font-size: 16px;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: inherit;
@@ -258,4 +262,7 @@ select option { padding: 5px; }
 
     .main-content { padding-top: 2rem; }
 }
+
+.font-serif{font-family:Georgia,"Times New Roman",Times,serif}
+.object-fit-cover{object-fit:cover}
 

@@ -204,34 +204,43 @@
             malformations, they can occasionally put pressure on the
             spinal cord, causing symptoms such as difficulty walking or
             loss of bowel or bladder control.</p>
-          </div>
-
-          <!-- Article Links -->
-                      <aside class="col-md-4 related">
-              <div class="sticky-sidebar">
-                <h4 class="h6 text-uppercase text-muted mb-3">Related Articles</h4>
-                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item px-0">
-                    <a href="Spinal_Introduction_to_spinal_vascular_disease.html" class="text-decoration-none d-inline-block">Introduction
-to spinal vascular disease</a>
-                  </li>
-                                    <li class="list-group-item px-0">
-                    <a href="Spinal_Symptoms_of_spinal_vascular_disease.html" class="text-decoration-none d-inline-block">Symptoms
-of spinal vascular disease</a>
-                  </li>
-                                    <li class="list-group-item px-0">
-                    <a href="Spinal_Diagnosis_of_spinal_vascular_disease.html" class="text-decoration-none d-inline-block">Diagnosis
-of spinal vascular disease</a>
-                  </li>
-                                    <li class="list-group-item px-0">
-                    <a href="Spinal_Treatment_of_spinal_vascular_disease.html" class="text-decoration-none d-inline-block">Treatment
-of spinal vascular disease</a>
-                  </li>
-                                  </ul>
-
-              </div>
-            </aside>
             
+                    <hr class="my-4">
+          <p class="text-start">
+            <a href="Spinal_Symptoms_of_spinal_vascular_disease.html" class="text-decoration-none">Next: Symptoms
+of spinal vascular disease</a>
+          </p>
+        
+          </div>
+          
+
+
+
+        <!-- Article Links -->
+                  <aside class="col-md-4 related">
+            <div class="sticky-sidebar">
+              <h4 class="h6 text-uppercase text-muted mb-3">Related Articles</h4>
+              <ul class="list-group list-group-flush text-center">
+                                <li class="list-group-item px-0">
+                                      <span class="fw-semibold d-inline-block">Introduction
+to spinal vascular disease</span>
+                                  </li>
+                                <li class="list-group-item px-0">
+                                      <a href="Spinal_Symptoms_of_spinal_vascular_disease.html" class="text-decoration-none d-inline-block">Symptoms
+of spinal vascular disease</a>
+                                  </li>
+                                <li class="list-group-item px-0">
+                                      <a href="Spinal_Diagnosis_of_spinal_vascular_disease.html" class="text-decoration-none d-inline-block">Diagnosis
+of spinal vascular disease</a>
+                                  </li>
+                                <li class="list-group-item px-0">
+                                      <a href="Spinal_Treatment_of_spinal_vascular_disease.html" class="text-decoration-none d-inline-block">Treatment
+of spinal vascular disease</a>
+                                  </li>
+                              </ul>
+            </div>
+          </aside>
+        
         </div>
       </section>
     </main>
@@ -245,105 +254,167 @@ of spinal vascular disease</a>
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
     <title>Book Appointment</title>
-
-    <!-- W3.CSS for quick layout helpers -->
-    <link
-      rel="stylesheet"
-      href="https://www.w3schools.com/w3css/4/w3.css"
-    />
     <!-- Font Awesome for icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <style>
-      /* Optional: keep footer text crisp over backgrounds */
-      footer .w3-text-white { text-shadow: 0 1px 2px rgba(0,0,0,.35); }
-      /* Ensure select placeholder looks dim */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      footer {
+        background-color: #000;
+        text-align: center;
+        color: #fff;
+      }
+      footer .text-white {
+        text-shadow: 0 1px 2px rgba(0,0,0,.35);
+      }
+      #book {
+        background-image: url('img/footer.png');
+        min-height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #bookingContent {
+        max-width: 520px;
+        text-align: center;
+      }
+      #bookingContent h1 {
+        font-size: 28px;
+        letter-spacing: 2px;
+        margin: 0;
+        color: #fff;
+      }
+      #bookingContent p {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #fff;
+      }
+      form {
+        margin-top: 32px;
+        font-size: 12px;
+      }
+      .form-group {
+        margin-bottom: 5px;
+      }
+      input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 0;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #000;
+      }
       select:invalid { color: gray; }
       option[value=""] { color: gray; }
+      textarea {
+        height: 100px;
+        resize: vertical;
+      }
+      button {
+        background-color: #f1f1f1;
+        border: none;
+        padding: 12px 24px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 32px;
+      }
+      button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+      #submitStatus {
+        margin-top: 8px;
+        min-height: 1em;
+        font-size: 12px;
+        color: #fff;
+      }
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        max-width: 500px;
+        margin: auto;
+        padding: 32px 0;
+      }
+      .footer-links div {
+        flex: 1;
+        text-align: center;
+      }
+      .footer-links a {
+        color: #fff;
+        font-size: 12px;
+        text-decoration: none;
+      }
+      .footer-bottom {
+        background-color: #151515;
+        border-top: 2px solid #2a2a2a;
+        padding: 20px;
+        font-size: 12px;
+        margin: 0;
+      }
+      .noscript-warning {
+        background: #f44336;
+        color: #fff;
+        padding: 12px;
+        text-align: center;
+        font-size: 14px;
+      }
     </style>
   </head>
 
   <body>
-    <footer class="w3-center w3-black">
-      <div
-        id="book"
-        style="
-          background-image: url('img/footer.png');
-          min-height: 700px;
-          background-repeat: no-repeat;
-          background-size: cover;
-        "
-        class="w3-display-container"
-      >
-        <!-- Everything that will be replaced after successful submit lives inside this wrapper -->
-        <div id="bookingContent" class="w3-display-middle" style="max-width: 520px;">
-          <span class="w3-xxlarge w3-text-white w3-wide">BOOK APPOINTMENT</span>
+    <footer>
+      <div id="book">
+        <!-- Wrapper -->
+        <div id="bookingContent">
+          <h1>BOOK APPOINTMENT</h1>
 
-          <p
-            class="w3-text-white w3-center"
-            style="text-align:center; margin-top:20px; font-size:14px !important;"
-          >
-            To book an in-person consultation, enter your details below and our practice
-            management team will contact you to schedule the appointment.
+          <p>
+            To book an in-person consultation, enter your details below and our
+            practice management team will contact you to schedule the appointment.
           </p>
 
-          <form
-            id="appointmentForm"
-            class="w3-center"
-            style="margin-top:32px; font-size:12px"
-          >
-            <div class="form-group" style="margin-bottom:5px">
+          <form id="appointmentForm">
+            <div class="form-group">
               <input
                 type="text"
-                class="w3-input"
                 name="contact-name"
                 placeholder="Your name"
                 required
                 autocomplete="name"
-                style="background-color:#fff; border-radius:0"
               />
             </div>
 
-            <div class="form-group" style="margin-bottom:5px">
+            <div class="form-group">
               <input
                 type="tel"
-                class="w3-input"
                 name="contact-tel"
                 placeholder="Your telephone number"
                 required
                 autocomplete="tel"
-                style="background-color:#fff; border-radius:0; color:#000;"
               />
             </div>
 
-            <div class="form-group" style="margin-bottom:5px">
+            <div class="form-group">
               <input
                 type="email"
-                class="w3-input"
                 name="contact-email"
                 placeholder="Your email"
                 required
                 autocomplete="email"
-                style="background-color:#fff; border-radius:0"
               />
             </div>
 
-            <div class="form-group" style="margin-bottom:5px">
-              <select
-                class="w3-select"
-                name="Topic"
-                required
-                style="
-                  background-color:#fff;
-                  border-radius:0;
-                  -webkit-appearance:none;
-                  height:40px;
-                  color:gray;
-                  padding-left:10px;
-                "
-              >
+            <div class="form-group">
+              <select name="Topic" required>
                 <option value="" disabled selected>Topic of consultation</option>
                 <option value="Aneurysm">Aneurysm</option>
                 <option value="Dural fistula">Dural fistula</option>
@@ -354,20 +425,8 @@ of spinal vascular disease</a>
               </select>
             </div>
 
-            <div class="form-group" style="margin-bottom:5px">
-              <select
-                class="w3-select"
-                name="Insurance"
-                required
-                style="
-                  background-color:#fff;
-                  border-radius:0;
-                  -webkit-appearance:none;
-                  height:40px;
-                  color:gray;
-                  padding-left:10px;
-                "
-              >
+            <div class="form-group">
+              <select name="Insurance" required>
                 <option value="" disabled selected>Do you have medical insurance?</option>
                 <option value="no">No</option>
                 <option value="bupa">BUPA</option>
@@ -379,53 +438,31 @@ of spinal vascular disease</a>
               </select>
             </div>
 
-            <div class="form-group" style="margin-bottom:5px">
+            <div class="form-group">
               <textarea
-                class="w3-input"
                 name="extra-info"
                 placeholder="Additional information (optional)"
-                style="background-color:#fff; border-radius:0; height:100px; resize:vertical;"
               ></textarea>
             </div>
 
-            <button
-              id="submitBtn"
-              class="w3-button w3-padding-large w3-light-grey"
-              style="margin-top:32px"
-              type="submit"
-            >
-              BOOK CONSULTATION
-            </button>
+            <button id="submitBtn" type="submit">BOOK CONSULTATION</button>
 
-            <div
-              id="submitStatus"
-              class="w3-small w3-center w3-text-white"
-              aria-live="polite"
-              style="margin-top:8px; min-height:1em;"
-            ></div>
+            <div id="submitStatus" aria-live="polite"></div>
           </form>
         </div>
       </div>
 
       <!-- Footer Links -->
-      <div class="w3-row w3-padding-32" style="max-width:500px; margin:auto">
-        <div class="w3-col s4 w3-center">
-          <a href="General_Fees.html" class="w3-text-white" style="text-decoration:none; font-size:12px">FEES</a>
-        </div>
-        <div class="w3-col s4 w3-center">
-          <a href="General_Terms_and_Conditions.html" class="w3-text-white" style="text-decoration:none; font-size:12px">TERMS AND CONDITIONS</a>
-        </div>
-        <div class="w3-col s4 w3-center">
-          <a href="General_Cancellations.html" class="w3-text-white" style="text-decoration:none; font-size:12px">CANCELLATIONS</a>
-        </div>
+      <div class="footer-links">
+        <div><a href="General_Fees.html">FEES</a></div>
+        <div><a href="General_Terms_and_Conditions.html">TERMS AND CONDITIONS</a></div>
+        <div><a href="General_Cancellations.html">CANCELLATIONS</a></div>
       </div>
 
-      <!-- Dark Gray Section -->
-      <div style="background-color:#151515; border-top:2px solid #2a2a2a">
-        <p class="w3-small w3-center" style="margin:0; padding:20px; color:#fff">
-          © <script>document.write(new Date().getFullYear());</script>
-          Dr&nbsp;Jeremy&nbsp;Lynch
-        </p>
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        © <script>document.write(new Date().getFullYear());</script>
+        Dr&nbsp;Jeremy&nbsp;Lynch
       </div>
     </footer>
 
@@ -434,9 +471,8 @@ of spinal vascular disease</a>
       const submitBtn = document.getElementById("submitBtn");
       const statusEl = document.getElementById("submitStatus");
 
-      // Optional: abort long requests (prevents multi-clicks when network is slow)
       function fetchWithTimeout(resource, options = {}) {
-        const { timeout = 20000 } = options; // 20s
+        const { timeout = 20000 } = options;
         const controller = new AbortController();
         const id = setTimeout(() => controller.abort(), timeout);
         return fetch(resource, { ...options, signal: controller.signal })
@@ -451,10 +487,8 @@ of spinal vascular disease</a>
           return;
         }
 
-        // Visual + accessibility feedback to prevent double-clicks
         submitBtn.disabled = true;
         submitBtn.dataset.originalHtml = submitBtn.innerHTML;
-        submitBtn.classList.add("w3-opacity");
         submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Submitting…';
         appointmentForm.setAttribute("aria-busy", "true");
         statusEl.textContent = "Submitting your request…";
@@ -471,18 +505,15 @@ of spinal vascular disease</a>
             return response.text();
           })
           .then(() => {
-            // Success UI
             document.getElementById("bookingContent").innerHTML = `
-              <div class="w3-center">
-                <i class="fa-solid fa-circle-check w3-jumbo w3-text-white" aria-hidden="true"></i>
-                <h3 class="w3-text-white" style="margin-top:16px;">Thank you, your request has been submitted</h3>
+              <div style="text-align:center;">
+                <i class="fa-solid fa-circle-check" style="font-size:48px; color:#fff;" aria-hidden="true"></i>
+                <h3 style="margin-top:16px; color:#fff;">Thank you, your request has been submitted</h3>
               </div>`;
           })
           .catch((error) => {
-            console.error("There was a problem with the fetch operation:", error);
-            // Restore UI so the user can try again
+            console.error("Fetch error:", error);
             submitBtn.disabled = false;
-            submitBtn.classList.remove("w3-opacity");
             submitBtn.innerHTML = submitBtn.dataset.originalHtml || "BOOK CONSULTATION";
             appointmentForm.setAttribute("aria-busy", "false");
             statusEl.textContent = "Sorry, something went wrong. Please try again.";
@@ -491,7 +522,7 @@ of spinal vascular disease</a>
     </script>
 
     <noscript>
-      <div class="w3-panel w3-red w3-center">Please enable JavaScript to submit this form.</div>
+      <div class="noscript-warning">Please enable JavaScript to submit this form.</div>
     </noscript>
   </body>
 </html> 
