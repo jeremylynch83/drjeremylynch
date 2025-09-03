@@ -1216,8 +1216,8 @@ The spinal cord is divided into regions that correspond with the spine: cervical
 
 The spinal cord is supplied by a network of arteries:
 
-* **Anterior spinal artery** – Runs along the front of the cord, supplying the majority of the spinal cord tissue. They are joined by the **anterior communicating arteries (ACOMs)**. 
-* **Posterior spinal arteries** – Run along the back of the cord, supplying the remaining sections. They connect to the internal carotid arteries via the **posterior communicating artery (PCOM)**. 
+* **Anterior spinal artery** – Runs along the front of the cord, supplying the majority of the spinal cord tissue. 
+* **Posterior spinal arteries** – Run along the back of the cord.
 * **Radicular and segmental arteries** – Branches from larger vessels (such as the aorta) that reinforce the spinal circulation at different levels. 
 
 Because the spinal cord relies on this delicate blood supply, any blockage or bleed can cause serious neurological problems, such as weakness, numbness, or loss of bladder and bowel control.
@@ -1372,7 +1372,7 @@ Because the spinal cord relies on this delicate blood supply, any blockage or bl
 * **Xanthochromia** – Yellow colouring of spinal fluid, usually a sign of previous bleeding in the brain.
 
 
-# Introduction to idiopathic Intracranial Hypertension {Idiopathic Intracranial Hypertension}
+# Introduction to idiopathic Intracranial Hypertension {IIH}
 
 ## What is IIH?
 
@@ -1413,7 +1413,7 @@ Anyone can develop IIH, but the risk is higher if you:
 * Are female.
 * Are aged 20 to 45.
 
-# Symptoms {Idiopathic Intracranial Hypertension}
+# Symptoms {IIH}
 
 ## What symptoms can it cause?
 
@@ -1422,7 +1422,7 @@ Anyone can develop IIH, but the risk is higher if you:
 * A whooshing or pulsing noise in the ears in time with your heartbeat (pulsatile tinnitus).
 * Swelling of the optic nerves seen on an eye exam (papilloedema). This can be in one or both eyes and may not cause symptoms at first.
 
-# Diagnosis {Idiopathic Intracranial Hypertension}
+# Diagnosis {IIH}
 ## How is IIH diagnosed?
 
 Tests usually include:
@@ -1434,7 +1434,7 @@ Tests usually include:
 Doctors use agreed criteria to make the diagnosis. These include symptoms of raised pressure, no other cause found on examination or scans, and raised CSF pressure on lumbar puncture.
 
 
-# Treatment {Idiopathic Intracranial Hypertension}
+# Treatment {IIH}
 
 The goals are to lower the pressure, relieve symptoms and protect your sight. Your plan is tailored to you and depends on how severe your symptoms and eye findings are.
 
@@ -1464,7 +1464,7 @@ Used when vision is at risk, symptoms are severe, or medicines are not enough.
 
 With timely treatment, most people improve and the risk of permanent sight loss falls. IIH does not usually affect life expectancy. Ongoing follow-up is important, especially regular eye checks.
 
-# Venous sinus stenting {Idiopathic Intracranial Hypertension}
+# Venous sinus stenting {IIH}
 
 ## When is it considered?
 

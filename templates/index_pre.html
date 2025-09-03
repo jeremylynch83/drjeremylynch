@@ -108,83 +108,6 @@
     <!-- Menu CSS -->
     <style>
     
-      /* Desktop mega panels */
-      @media (min-width: 992px){
-        .desktop-mainnav .nav-item.dropdown { position: static }
-        .desktop-mainnav .dropdown-menu {
-              min-height: 300px;   /* adjust to your design */
-          left: 0;
-          right: 0;
-        border-radius: 0 !important;
-          background-color: #000;
-        border: none;
-          box-shadow: none;
-          
-        }
-        
-        .desktop-mainnav .dropdown-menu .row {
-          justify-content: center;
-        }
-        .desktop-mainnav .dropdown-menu a {
-          color: #fff !important;   /* white text */
-        }
-        
-        .desktop-mainnav .dropdown-menu h6 {
-          color: #fff;            /* white headings */
-          font-weight: 600;       /* keep them bold */
-          margin-bottom: .5rem;
-        }
-        
-        
-        .desktop-mainnav .dropdown-menu a:hover {
-              text-decoration: underline !important;
-        }
-        
-        .desktop-mainnav .nav-link {
-          display: flex;
-          align-items: center;   /* vertical centring */
-        }
-        
-        .desktop-mainnav .nav-item.dropdown > .nav-link::after {
-          content: " ▼";
-          font-size: 0.6em;
-          margin-left: 0.3em;
-          line-height: 1;        /* prevents extra offset */
-        }
-
-
-        .desktop-mainnav .nav-item.dropdown:hover > .dropdown-menu { display: block }
-        .desktop-mainnav .nav-item.dropdown:focus-within > .dropdown-menu { display: block }
-      }
-
-      .mega-col h6 { font-weight: 600; font-size: .95rem; margin-bottom: .5rem }
-      .mega-col a { display: block; padding: .25rem 0 }
-
-      /* Mobile panel: visible background and scroll */
-      #mobileNav { background-color: #fff; }
-      #mobileNav .mobile-scroller {
-        max-height: calc(100vh - var(--header-h, 64px));
-        overflow-y: auto;
-      }
-      
-      .site-header .fixed-top {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          z-index: 1030;
-        }
-        
-        body {
-          padding-top: 50px; /* adjust to match your actual header height */
-        }
-        
-        .site-header .navbar {
-          background-color: rgba(255, 255, 255, 0.8) !important; /* translucent white */
-          backdrop-filter: blur(6px);  /* optional: frosted glass effect */
-          border: none;                /* remove border line */
-        }
-        
 
     </style>
   </head>
@@ -202,7 +125,7 @@
             <!-- Mobile button -->
             <button class="navbar-toggler d-lg-none" type="button"
                     data-bs-toggle="collapse" data-bs-target="#mobileNav"
-                    aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle menu">
+                    aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle menu" >
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
@@ -384,130 +307,112 @@
         </div>
       </section>
 
-      <!-- Interventional treatments -->
-      <section id="interventional_treatments" class="container py-5">
-        <h2 class="h3 mb-4 text-center">Interventional treatments</h2>
+<section id="interventional_treatments" class="container py-5">
+  <h2 class="h3 mb-4 text-center">Treatments & Diagnostics</h2>
 
-        <div class="row g-4 pt-2">
-          <!-- Brain aneurysm -->
-          <div class="col-md-4 col-6">
-            <a
-              href="Aneurysms_Introduction_to_brain_aneurysms.html"
-              class="text-decoration-none d-block"
-            >
-              <img
-                src="img/aneurysm.png"
-                class="picture-img"
-                alt="Brain Aneurysm"
-                loading="lazy"
-                width="600"
-                height="400"
-              />
-              <div class="text-center mt-2 fw-semibold">
-                Aneurysms
-              </div>
-            </a>
-          </div>
+  <div class="row g-4 pt-2">
+    <!-- Brain aneurysm -->
+    <div class="col-md-4 col-6">
+      <a href="Aneurysms_Introduction_to_brain_aneurysms.html" class="tile" aria-label="Aneurysms">
+        <figure class="tile-figure">
+          <img src="img/front_aneurysm.png" alt="Brain Aneurysm" loading="lazy" class="tile-img">
+          <figcaption class="tile-caption">Aneurysms</figcaption>
+        </figure>
+      </a>
+    </div>
 
-          <!-- AVM -->
-          <div class="col-md-4 col-6">
-            <a
-              href="AVM_Introduction_to_AVMs.html"
-              class="text-decoration-none d-block"
-            >
-              <img
-                src="img/avm.png"
-                class="picture-img"
-                alt="AVM Treatment"
-                loading="lazy"
-                width="600"
-                height="400"
-              />
-              <div class="text-center mt-2 fw-semibold">AVMs</div>
-            </a>
-          </div>
+    <!-- AVM -->
+    <div class="col-md-4 col-6">
+      <a href="AVM_Introduction_to_AVMs.html" class="tile" aria-label="Arteriovenous malformations">
+        <figure class="tile-figure">
+          <img src="img/front_avm.png" alt="AVM Treatment" loading="lazy" class="tile-img">
+          <figcaption class="tile-caption">AVMs</figcaption>
+        </figure>
+      </a>
+    </div>
 
-          <!-- DAVF -->
-          <div class="col-md-4 col-6">
-            <a
-              href="DAVF_Introduction_to_DAVF.html"
-              class="text-decoration-none d-block"
-            >
-              <img
-                src="img/DAVF.png"
-                class="picture-img"
-                alt="Dural arteriovenous fistulas"
-                loading="lazy"
-                width="600"
-                height="400"
-              />
-              <div class="text-center mt-2 fw-semibold">
-                Dural fistulas
-              </div>
-            </a>
-          </div>
+    <!-- DAVF -->
+    <div class="col-md-4 col-6">
+      <a href="DAVF_Introduction_to_DAVF.html" class="tile" aria-label="Dural fistulas">
+        <figure class="tile-figure">
+          <img src="img/front_davf.png" alt="Dural arteriovenous fistulas" loading="lazy" class="tile-img">
+          <figcaption class="tile-caption">Dural fistulas</figcaption>
+        </figure>
+      </a>
+    </div>
 
-          <!-- Spinal AVM -->
-          <div class="col-md-4 col-6">
-            <a
-              href="Spinal_Introduction_to_spinal_vascular_disease.html"
-              class="text-decoration-none d-block"
-            >
-              <img
-                src="img/spinal_avm.png"
-                class="picture-img"
-                alt="Spinal AVM"
-                loading="lazy"
-                width="600"
-                height="400"
-              />
-              <div class="text-center mt-2 fw-semibold">
-                Spinal AVMs
-              </div>
-            </a>
-          </div>
+    <!-- Spinal AVM -->
+    <div class="col-md-4 col-6">
+      <a href="Spinal_Introduction_to_spinal_vascular_disease.html" class="tile" aria-label="Spinal AVMs">
+        <figure class="tile-figure">
+          <img src="img/front_spinal_avm.png" alt="Spinal AVM" loading="lazy" class="tile-img">
+          <figcaption class="tile-caption">Spinal AVMs</figcaption>
+        </figure>
+      </a>
+    </div>
 
-          <!-- Cerebral angiography -->
-          <div class="col-md-4 col-6">
-            <a
-              href="Angiography_Cerebral_angiography.html"
-              class="text-decoration-none d-block"
-            >
-              <img
-                src="img/dsa.png"
-                class="picture-img"
-                alt="Cerebral angiography"
-                loading="lazy"
-                width="600"
-                height="400"
-              />
-              <div class="text-center mt-2 fw-semibold">
-                Cerebral angiography
-              </div>
-            </a>
-          </div>
+    <!-- IIH -->
+    <div class="col-md-4 col-6">
+      <a href="IIH_Introduction_to_idiopathic_Intracranial_Hypertension.html" class="tile" aria-label="All topics">
+        <figure class="tile-figure">
+          <img src="img/front_iih.png" alt="Knowledge library" loading="lazy" class="tile-img">
+          <figcaption class="tile-caption">Idiopathic Intracranial Hypertension</figcaption>
+        </figure>
+      </a>
+    </div>
+    
+    <!-- SIH -->
+    <div class="col-md-4 col-6">
+      <a href="Spontaneous_Intracranial_Hypotension_Introduction_to_Spontaneous_Intracranial_Hypotension.html" class="tile" aria-label="Spontaneous intracranial hypotension">
+        <figure class="tile-figure">
+          <img src="img/front_sih.png" alt="Spontaneous intracranial hypotension" loading="lazy" class="tile-img">
+          <figcaption class="tile-caption">Spontaneous intracranial hypotension</figcaption>
+        </figure>
+      </a>
+    </div>
+    
+        <!-- CT scanning -->
+    <div class="col-md-4 col-6">
+      <a href="Angiography_Cerebral_angiography.html" class="tile" aria-label="CT scanner">
+        <figure class="tile-figure">
+          <img src="img/front_ct.jpg" alt="Cerebral angiography" loading="lazy" class="tile-img">
+          <figcaption class="tile-caption">CT scanning</figcaption>
+        </figure>
+      </a>
+    </div>
 
-          <!-- All topics -->
-          <div class="col-md-4 col-6">
+    <!-- MRI scanning -->
+    <div class="col-md-4 col-6">
+      <a href="Angiography_Cerebral_angiography.html" class="tile" aria-label="MRI Scanner">
+        <figure class="tile-figure">
+          <img src="img/front_mri.jpg" alt="Cerebral angiography" loading="lazy" class="tile-img">
+          <figcaption class="tile-caption">MRI scanning</figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <!-- Cerebral angiography -->
+    <div class="col-md-4 col-6">
+      <a href="Angiography_Cerebral_angiography.html" class="tile" aria-label="Cerebral angiography">
+        <figure class="tile-figure">
+          <img src="img/front_biplane.jpg" alt="Cerebral angiography" loading="lazy" class="tile-img">
+          <figcaption class="tile-caption">Cerebral angiography</figcaption>
+        </figure>
+      </a>
+    </div>
+
+
+
+  </div>
+  
+  <div class="text-center mt-5">
             <a
               href="All_topics.html"
-              class="text-decoration-none d-block"
+              class="btn btn-light btn-lg"
+              >ALL TOPICS</a
             >
-              <img
-                src="img/knowlege.png"
-                class="picture-img"
-                alt="Knowledge library"
-                loading="lazy"
-                width="600"
-                height="400"
-              />
-              <div class="text-center mt-2 fw-semibold">
-                All topics
-              </div>
-            </a>
           </div>
-        </div>
-      </section>
+</section>
 
       <!-- Latest features -->
       <section id="latest_features" class="container py-5">
