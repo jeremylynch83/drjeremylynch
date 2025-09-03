@@ -20,10 +20,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" />
-
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_GB" />
@@ -107,8 +106,25 @@
 
     <!-- Menu CSS -->
     <style>
-    
+      /* Mobile drawer scroller area */
+      @media (max-width: 991.98px) {
+        .mobile-scroller {
+          max-height: calc(100vh - 64px);
+          overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
 
+      /* Mobile accordion refinements */
+      @media (max-width: 991.98px) {
+        #mobileMenu .accordion-item { border: 0; border-bottom: 1px solid rgba(0,0,0,.08); border-radius: 0 }
+        #mobileMenu .accordion-button { padding: 0.875rem 0; background: transparent }
+        #mobileMenu .accordion-button:focus { box-shadow: none }
+        #mobileMenu .accordion-button:not(.collapsed) { box-shadow: none }
+        #mobileMenu .accordion-body { padding: 0.25rem 0 1rem }
+        #mobileMenu .accordion-body h6 { font-size: .8rem; letter-spacing: .04em }
+        #mobileMenu .accordion-body a { padding: .4rem 0; display: block }
+      }
     </style>
   </head>
 
@@ -116,7 +132,7 @@
     <header class="site-header">
       <div class="fixed-top">
         <!-- Top row: logo with mobile button on the right -->
-        <nav class="navbar navbar-light bg-white  py-2">
+        <nav class="navbar navbar-light bg-white py-2">
           <div class="container">
             <a class="navbar-brand" href="index.html">
               <img src="img/drj.svg" alt="Dr Jeremy Lynch Logo" height="40" />
@@ -125,16 +141,16 @@
             <!-- Mobile button -->
             <button class="navbar-toggler d-lg-none" type="button"
                     data-bs-toggle="collapse" data-bs-target="#mobileNav"
-                    aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle menu" >
+                    aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle menu">
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
         </nav>
 
         <!-- Desktop bar beneath the logo -->
-        <nav class="navbar navbar-expand  d-none d-lg-block desktop-mainnav">
+        <nav class="navbar navbar-expand d-none d-lg-block desktop-mainnav">
           <div class="container-fluid">
-<ul class="navbar-nav mx-auto" id="desktopTopLevel"></ul>
+            <ul class="navbar-nav mx-auto" id="desktopTopLevel"></ul>
           </div>
         </nav>
 
@@ -307,122 +323,112 @@
         </div>
       </section>
 
-<section id="interventional_treatments" class="container py-5">
-  <h2 class="h3 mb-4 text-center">Treatments & Diagnostics</h2>
+      <section id="interventional_treatments" class="container py-5">
+        <h2 class="h3 mb-4 text-center">Treatments & Diagnostics</h2>
 
-  <div class="row g-4 pt-2">
-    <!-- Brain aneurysm -->
-    <div class="col-md-4 col-6">
-      <a href="Aneurysms_Introduction_to_brain_aneurysms.html" class="tile" aria-label="Aneurysms">
-        <figure class="tile-figure">
-          <img src="img/front_aneurysm.png" alt="Brain Aneurysm" loading="lazy" class="tile-img">
-          <figcaption class="tile-caption">Aneurysms</figcaption>
-        </figure>
-      </a>
-    </div>
-
-    <!-- AVM -->
-    <div class="col-md-4 col-6">
-      <a href="AVM_Introduction_to_AVMs.html" class="tile" aria-label="Arteriovenous malformations">
-        <figure class="tile-figure">
-          <img src="img/front_avm.png" alt="AVM Treatment" loading="lazy" class="tile-img">
-          <figcaption class="tile-caption">AVMs</figcaption>
-        </figure>
-      </a>
-    </div>
-
-    <!-- DAVF -->
-    <div class="col-md-4 col-6">
-      <a href="DAVF_Introduction_to_DAVF.html" class="tile" aria-label="Dural fistulas">
-        <figure class="tile-figure">
-          <img src="img/front_davf.png" alt="Dural arteriovenous fistulas" loading="lazy" class="tile-img">
-          <figcaption class="tile-caption">Dural fistulas</figcaption>
-        </figure>
-      </a>
-    </div>
-
-    <!-- Spinal AVM -->
-    <div class="col-md-4 col-6">
-      <a href="Spinal_Introduction_to_spinal_vascular_disease.html" class="tile" aria-label="Spinal AVMs">
-        <figure class="tile-figure">
-          <img src="img/front_spinal_avm.png" alt="Spinal AVM" loading="lazy" class="tile-img">
-          <figcaption class="tile-caption">Spinal AVMs</figcaption>
-        </figure>
-      </a>
-    </div>
-
-    <!-- IIH -->
-    <div class="col-md-4 col-6">
-      <a href="IIH_Introduction_to_idiopathic_Intracranial_Hypertension.html" class="tile" aria-label="All topics">
-        <figure class="tile-figure">
-          <img src="img/front_iih.png" alt="Knowledge library" loading="lazy" class="tile-img">
-          <figcaption class="tile-caption">Idiopathic Intracranial Hypertension</figcaption>
-        </figure>
-      </a>
-    </div>
-    
-    <!-- SIH -->
-    <div class="col-md-4 col-6">
-      <a href="Spontaneous_Intracranial_Hypotension_Introduction_to_Spontaneous_Intracranial_Hypotension.html" class="tile" aria-label="Spontaneous intracranial hypotension">
-        <figure class="tile-figure">
-          <img src="img/front_sih.png" alt="Spontaneous intracranial hypotension" loading="lazy" class="tile-img">
-          <figcaption class="tile-caption">Spontaneous intracranial hypotension</figcaption>
-        </figure>
-      </a>
-    </div>
-    
-        <!-- CT scanning -->
-    <div class="col-md-4 col-6">
-      <a href="Angiography_Cerebral_angiography.html" class="tile" aria-label="CT scanner">
-        <figure class="tile-figure">
-          <img src="img/front_ct.jpg" alt="Cerebral angiography" loading="lazy" class="tile-img">
-          <figcaption class="tile-caption">CT scanning</figcaption>
-        </figure>
-      </a>
-    </div>
-
-    <!-- MRI scanning -->
-    <div class="col-md-4 col-6">
-      <a href="Angiography_Cerebral_angiography.html" class="tile" aria-label="MRI Scanner">
-        <figure class="tile-figure">
-          <img src="img/front_mri.jpg" alt="Cerebral angiography" loading="lazy" class="tile-img">
-          <figcaption class="tile-caption">MRI scanning</figcaption>
-        </figure>
-      </a>
-    </div>
-
-    <!-- Cerebral angiography -->
-    <div class="col-md-4 col-6">
-      <a href="Angiography_Cerebral_angiography.html" class="tile" aria-label="Cerebral angiography">
-        <figure class="tile-figure">
-          <img src="img/front_biplane.jpg" alt="Cerebral angiography" loading="lazy" class="tile-img">
-          <figcaption class="tile-caption">Cerebral angiography</figcaption>
-        </figure>
-      </a>
-    </div>
-
-
-
-  </div>
-  
-  <div class="text-center mt-5">
-            <a
-              href="All_topics.html"
-              class="btn btn-light btn-lg"
-              >ALL TOPICS</a
-            >
+        <div class="row g-4 pt-2">
+          <!-- Brain aneurysm -->
+          <div class="col-md-4 col-6">
+            <a href="Aneurysms_Introduction_to_brain_aneurysms.html" class="tile" aria-label="Aneurysms">
+              <figure class="tile-figure">
+                <img src="img/front_aneurysm.png" alt="Brain Aneurysm" loading="lazy" class="tile-img">
+                <figcaption class="tile-caption">Aneurysms</figcaption>
+              </figure>
+            </a>
           </div>
-</section>
+
+          <!-- AVM -->
+          <div class="col-md-4 col-6">
+            <a href="AVM_Introduction_to_AVMs.html" class="tile" aria-label="Arteriovenous malformations">
+              <figure class="tile-figure">
+                <img src="img/front_avm.png" alt="AVM Treatment" loading="lazy" class="tile-img">
+                <figcaption class="tile-caption">AVMs</figcaption>
+              </figure>
+            </a>
+          </div>
+
+          <!-- DAVF -->
+          <div class="col-md-4 col-6">
+            <a href="DAVF_Introduction_to_DAVF.html" class="tile" aria-label="Dural fistulas">
+              <figure class="tile-figure">
+                <img src="img/front_davf.png" alt="Dural arteriovenous fistulas" loading="lazy" class="tile-img">
+                <figcaption class="tile-caption">Dural fistulas</figcaption>
+              </figure>
+            </a>
+          </div>
+
+          <!-- Spinal AVM -->
+          <div class="col-md-4 col-6">
+            <a href="Spinal_Introduction_to_spinal_vascular_disease.html" class="tile" aria-label="Spinal AVMs">
+              <figure class="tile-figure">
+                <img src="img/front_spinal_avm.png" alt="Spinal AVM" loading="lazy" class="tile-img">
+                <figcaption class="tile-caption">Spinal AVMs</figcaption>
+              </figure>
+            </a>
+          </div>
+
+          <!-- IIH -->
+          <div class="col-md-4 col-6">
+            <a href="IIH_Introduction_to_idiopathic_Intracranial_Hypertension.html" class="tile" aria-label="All topics">
+              <figure class="tile-figure">
+                <img src="img/front_iih.png" alt="Knowledge library" loading="lazy" class="tile-img">
+                <figcaption class="tile-caption">Idiopathic Intracranial Hypertension</figcaption>
+              </figure>
+            </a>
+          </div>
+
+          <!-- SIH -->
+          <div class="col-md-4 col-6">
+            <a href="Spontaneous_Intracranial_Hypotension_Introduction_to_Spontaneous_Intracranial_Hypotension.html" class="tile" aria-label="Spontaneous intracranial hypotension">
+              <figure class="tile-figure">
+                <img src="img/front_sih.png" alt="Spontaneous intracranial hypotension" loading="lazy" class="tile-img">
+                <figcaption class="tile-caption">Spontaneous intracranial hypotension</figcaption>
+              </figure>
+            </a>
+          </div>
+
+          <!-- CT scanning -->
+          <div class="col-md-4 col-6">
+            <a href="Angiography_Cerebral_angiography.html" class="tile" aria-label="CT scanner">
+              <figure class="tile-figure">
+                <img src="img/front_ct.jpg" alt="Cerebral angiography" loading="lazy" class="tile-img">
+                <figcaption class="tile-caption">CT scanning</figcaption>
+              </figure>
+            </a>
+          </div>
+
+          <!-- MRI scanning -->
+          <div class="col-md-4 col-6">
+            <a href="Angiography_Cerebral_angiography.html" class="tile" aria-label="MRI Scanner">
+              <figure class="tile-figure">
+                <img src="img/front_mri.jpg" alt="Cerebral angiography" loading="lazy" class="tile-img">
+                <figcaption class="tile-caption">MRI scanning</figcaption>
+              </figure>
+            </a>
+          </div>
+
+          <!-- Cerebral angiography -->
+          <div class="col-md-4 col-6">
+            <a href="Angiography_Cerebral_angiography.html" class="tile" aria-label="Cerebral angiography">
+              <figure class="tile-figure">
+                <img src="img/front_biplane.jpg" alt="Cerebral angiography" loading="lazy" class="tile-img">
+                <figcaption class="tile-caption">Cerebral angiography</figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="All_topics.html" class="btn btn-light btn-lg">ALL TOPICS</a>
+        </div>
+      </section>
 
       <!-- Latest features -->
       <section id="latest_features" class="container py-5">
         <h2 class="h3 mb-4 text-center">Featured Articles</h2>
         $latest_features$
         <div class="text-center mt-5">
-          <a
-            href="Features.html"
-            class="btn btn-light btn-lg"
-          >All Articles</a>
+          <a href="Features.html" class="btn btn-light btn-lg">All Articles</a>
         </div>
       </section>
 
@@ -505,8 +511,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Booking anchor (for navbar link) -->
     </main>
 
     $footer$
@@ -515,141 +519,139 @@
     <!-- Bootstrap 5 JS bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Menu builder and layout fix -->
+    <!-- Menu builder with mobile accordion -->
     <script type="module">
-      // Menus. Desktop shows a bar with mega panels on hover.
-      // Book is a regular item next to About.
-        const menus = [
-          // Book (simple links, not mega)
-          {
-            type: 'mega',
-            label: 'Book',
-            sections: [
-              { header: 'Appointments', links: [
-                { label: 'Book an Appointment', href: '#book' },
-                { label: 'Fees', href: 'General_Fees.html' },
-                { label: 'Cancellations', href: 'General_Cancellations.html' }
-              ]}
-            ]
-          },
-        
-          // Conditions
-          {
-            type: 'mega',
-            label: 'Conditions',
-            sections: [
-              { header: 'Brain Aneurysms', links: [
-                { label: 'Introduction', href: 'Aneurysms_Introduction_to_brain_aneurysms.html' },
-                { label: 'Symptoms', href: 'Aneurysms_Symptoms_of_brain_aneurysms.html' },
-                { label: 'Diagnosis', href: 'Aneurysms_Diagnosis_of_brain_aneurysms.html' },
-                { label: 'Treatment', href: 'Aneurysms_Endovascular_treatment_of_aneurysms.html' },
-                { label: 'Surgical treatment', href: 'Aneurysms_Surgical_treatment_of_aneurysms.html' },
-                { label: 'Ruptured aneurysms', href: 'Aneurysms_Ruptured_aneurysms.html' },
-                { label: 'Unruptured aneurysms', href: 'Aneurysms_Unruptured_aneurysms.html' },
-                { label: 'Further information', href: 'Aneurysms_Further_information.html' }
-              ]},
-              { header: 'AVMs', links: [
-                { label: 'Introduction', href: 'AVM_Introduction_to_AVMs.html' },
-                { label: 'Symptoms', href: 'AVM_Symptoms_of_AVMs.html' },
-                { label: 'Diagnosis', href: 'AVM_Diagnosis_of_AVMs.html' },
-                { label: 'Treatment', href: 'AVM_Treatment_of_AVMs.html' },
-                { label: 'Further information', href: 'AVM_Further_information.html' }
-              ]},
-              { header: 'Dural Fistulas (DAVFs)', links: [
-                { label: 'Introduction', href: 'DAVF_Introduction_to_DAVF.html' },
-                { label: 'Symptoms', href: 'DAVF_Symptoms_of_DAVF.html' },
-                { label: 'Diagnosis', href: 'DAVF_Diagnosis_of_DAVF.html' },
-                { label: 'Treatment', href: 'DAVF_Treatment_of_DAVF.html' }
-              ]},
-              { header: 'Stroke', links: [
-                { label: 'Introduction', href: 'Stroke_Introduction_to_stroke.html' },
-                { label: 'Symptoms', href: 'Stroke_Symptoms_of_stroke.html' },
-                { label: 'Diagnosis', href: 'Stroke_Diagnosis_of_stroke.html' },
-                { label: 'Treatment', href: 'Stroke_Treatment_of_stroke.html' },
-                { label: 'Further information', href: 'Stroke_Further_information.html' }
-              ]},
-              { header: 'Spinal Vascular Disease', links: [
-                { label: 'Introduction', href: 'Spinal_Introduction_to_spinal_vascular_disease.html' },
-                { label: 'Symptoms', href: 'Spinal_Symptoms_of_spinal_vascular_disease.html' },
-                { label: 'Diagnosis', href: 'Spinal_Diagnosis_of_spinal_vascular_disease.html' },
-                { label: 'Treatment', href: 'Spinal_Treatment_of_spinal_vascular_disease.html' }
-              ]},
-              { header: 'Other Conditions', links: [
-                { label: 'Pulsatile Tinnitus', href: 'Pulsatile_Tinnitus_Introduction_to_Pulsatile_Tinnitus.html' },
-                { label: 'Idiopathic Intracranial Hypertension', href: 'Idiopathic_Intracranial_Hypertension_Introduction_to_idiopathic_Intracranial_Hypertension.html' },
-                { label: 'Spontaneous Intracranial Hypotension', href: 'Spontaneous_Intracranial_Hypotension_Introduction_to_Spontaneous_Intracranial_Hypotension.html' }
-              ]}
-            ]
-          },
-        
-          // Diagnostics & Procedures
-          {
-            type: 'mega',
-            label: 'Diagnostics & Procedures',
-            sections: [
-              { header: 'Cerebral Angiography', links: [
-                { label: 'Introduction', href: 'Angiography_Cerebral_angiography.html' },
-                { label: 'Before the procedure', href: 'Angiography_Before_a_Cerebral_Angiogram.html' },
-                { label: 'During the procedure', href: 'Angiography_During_a_Cerebral_Angiogram.html' },
-                { label: 'After the procedure', href: 'Angiography_After_a_Cerebral_Angiogram.html' },
-                { label: 'Risks', href: 'Angiography_Risks.html' }
-              ]},
-              { header: 'Interventions', links: [
-                { label: 'Interventional Neuroradiology (overview)', href: 'Interventional_neuroradiology_Interventional_neuroradiology.html' },
-                { label: 'Venous Sinus Stenting', href: 'Idiopathic_Intracranial_Hypertension_Venous_sinus_stenting.html' },
-                { label: 'CSF Venous Embolisation', href: 'Spontaneous_Intracranial_Hypotension_CSF_venous_embolisation.html' }
-              ]}
-            ]
-          },
-        
-          // Knowledge
-          {
-            type: 'mega',
-            label: 'Knowledge',
-            sections: [
-              { header: 'Patient Resources', links: [
-                { label: 'All Topics', href: 'All_topics.html' },
-                { label: 'Featured Articles', href: 'Features.html' }
-              ]},
-              { header: 'Essential Knowledge', links: [
-                { label: 'About the Brain', href: 'Essential_knowledge_About_the_brain.html' },
-                { label: 'About the Spine', href: 'Essential_knowledge_About_the_spine.html' },
-                { label: 'Glossary', href: 'Essential_knowledge_Glossary.html' }
-              ]}
-            ]
-          },
-        
-          // About
-          {
-            type: 'mega',
-            label: 'About',
-            sections: [
-              { header: 'About Dr Lynch', links: [
-                { label: 'Profile', href: 'General_About_Dr_Lynch.html' },
-                { label: 'Research & Publications', href: 'General_Research.html' }
-              ]},
-              { header: 'Hospitals & Locations', links: [
-                { label: 'The Wellington Hospital', href: 'https://www.hcahealthcare.co.uk/locations/hospitals/the-wellington-hospital' },
-                { label: 'King’s College Hospital', href: 'https://www.kch.nhs.uk/' },
-                { label: 'Queen’s Hospital Romford', href: 'https://www.bhrhospitals.nhs.uk' }
-              ]},
-              { header: 'Information', links: [
-                { label: 'Terms & Conditions', href: 'General_Terms_and_Conditions.html' }
-              ]}
-            ]
-          }
-        ]
+      // Menu model
+      const menus = [
+        // Book
+        {
+          type: 'mega',
+          label: 'Book',
+          sections: [
+            { header: 'Appointments', links: [
+              { label: 'Book an Appointment', href: '#book' },
+              { label: 'Fees', href: 'General_Fees.html' },
+              { label: 'Cancellations', href: 'General_Cancellations.html' }
+            ]}
+          ]
+        },
 
+        // Conditions
+        {
+          type: 'mega',
+          label: 'Conditions',
+          sections: [
+            { header: 'Brain Aneurysms', links: [
+              { label: 'Introduction', href: 'Aneurysms_Introduction_to_brain_aneurysms.html' },
+              { label: 'Symptoms', href: 'Aneurysms_Symptoms_of_brain_aneurysms.html' },
+              { label: 'Diagnosis', href: 'Aneurysms_Diagnosis_of_brain_aneurysms.html' },
+              { label: 'Treatment', href: 'Aneurysms_Endovascular_treatment_of_aneurysms.html' },
+              { label: 'Surgical treatment', href: 'Aneurysms_Surgical_treatment_of_aneurysms.html' },
+              { label: 'Ruptured aneurysms', href: 'Aneurysms_Ruptured_aneurysms.html' },
+              { label: 'Unruptured aneurysms', href: 'Aneurysms_Unruptured_aneurysms.html' },
+              { label: 'Further information', href: 'Aneurysms_Further_information.html' }
+            ]},
+            { header: 'AVMs', links: [
+              { label: 'Introduction', href: 'AVM_Introduction_to_AVMs.html' },
+              { label: 'Symptoms', href: 'AVM_Symptoms_of_AVMs.html' },
+              { label: 'Diagnosis', href: 'AVM_Diagnosis_of_AVMs.html' },
+              { label: 'Treatment', href: 'AVM_Treatment_of_AVMs.html' },
+              { label: 'Further information', href: 'AVM_Further_information.html' }
+            ]},
+            { header: 'Dural Fistulas (DAVFs)', links: [
+              { label: 'Introduction', href: 'DAVF_Introduction_to_DAVF.html' },
+              { label: 'Symptoms', href: 'DAVF_Symptoms_of_DAVF.html' },
+              { label: 'Diagnosis', href: 'DAVF_Diagnosis_of_DAVF.html' },
+              { label: 'Treatment', href: 'DAVF_Treatment_of_DAVF.html' }
+            ]},
+            { header: 'Stroke', links: [
+              { label: 'Introduction', href: 'Stroke_Introduction_to_stroke.html' },
+              { label: 'Symptoms', href: 'Stroke_Symptoms_of_stroke.html' },
+              { label: 'Diagnosis', href: 'Stroke_Diagnosis_of_stroke.html' },
+              { label: 'Treatment', href: 'Stroke_Treatment_of_stroke.html' },
+              { label: 'Further information', href: 'Stroke_Further_information.html' }
+            ]},
+            { header: 'Spinal Vascular Disease', links: [
+              { label: 'Introduction', href: 'Spinal_Introduction_to_spinal_vascular_disease.html' },
+              { label: 'Symptoms', href: 'Spinal_Symptoms_of_spinal_vascular_disease.html' },
+              { label: 'Diagnosis', href: 'Spinal_Diagnosis_of_spinal_vascular_disease.html' },
+              { label: 'Treatment', href: 'Spinal_Treatment_of_spinal_vascular_disease.html' }
+            ]},
+            { header: 'Other Conditions', links: [
+              { label: 'Pulsatile Tinnitus', href: 'Pulsatile_Tinnitus_Introduction_to_Pulsatile_Tinnitus.html' },
+              { label: 'Idiopathic Intracranial Hypertension', href: 'Idiopathic_Intracranial_Hypertension_Introduction_to_idiopathic_Intracranial_Hypertension.html' },
+              { label: 'Spontaneous Intracranial Hypotension', href: 'Spontaneous_Intracranial_Hypotension_Introduction_to_Spontaneous_Intracranial_Hypotension.html' }
+            ]}
+          ]
+        },
+
+        // Diagnostics & Procedures
+        {
+          type: 'mega',
+          label: 'Diagnostics & Procedures',
+          sections: [
+            { header: 'Cerebral Angiography', links: [
+              { label: 'Introduction', href: 'Angiography_Cerebral_angiography.html' },
+              { label: 'Before the procedure', href: 'Angiography_Before_a_Cerebral_Angiogram.html' },
+              { label: 'During the procedure', href: 'Angiography_During_a_Cerebral_Angiogram.html' },
+              { label: 'After the procedure', href: 'Angiography_After_a_Cerebral_Angiogram.html' },
+              { label: 'Risks', href: 'Angiography_Risks.html' }
+            ]},
+            { header: 'Interventions', links: [
+              { label: 'Interventional Neuroradiology (overview)', href: 'Interventional_neuroradiology_Interventional_neuroradiology.html' },
+              { label: 'Venous Sinus Stenting', href: 'Idiopathic_Intracranial_Hypertension_Venous_sinus_stenting.html' },
+              { label: 'CSF Venous Embolisation', href: 'Spontaneous_Intracranial_Hypotension_CSF_venous_embolisation.html' }
+            ]}
+          ]
+        },
+
+        // Knowledge
+        {
+          type: 'mega',
+          label: 'Knowledge',
+          sections: [
+            { header: 'Patient Resources', links: [
+              { label: 'All Topics', href: 'All_topics.html' },
+              { label: 'Featured Articles', href: 'Features.html' }
+            ]},
+            { header: 'Essential Knowledge', links: [
+              { label: 'About the Brain', href: 'Essential_knowledge_About_the_brain.html' },
+              { label: 'About the Spine', href: 'Essential_knowledge_About_the_spine.html' },
+              { label: 'Glossary', href: 'Essential_knowledge_Glossary.html' }
+            ]}
+          ]
+        },
+
+        // About
+        {
+          type: 'mega',
+          label: 'About',
+          sections: [
+            { header: 'About Dr Lynch', links: [
+              { label: 'Profile', href: 'General_About_Dr_Lynch.html' },
+              { label: 'Research & Publications', href: 'General_Research.html' }
+            ]},
+            { header: 'Hospitals & Locations', links: [
+              { label: 'The Wellington Hospital', href: 'https://www.hcahealthcare.co.uk/locations/hospitals/the-wellington-hospital' },
+              { label: 'King’s College Hospital', href: 'https://www.kch.nhs.uk/' },
+              { label: 'Queen’s Hospital Romford', href: 'https://www.bhrhospitals.nhs.uk' }
+            ]},
+            { header: 'Information', links: [
+              { label: 'Terms & Conditions', href: 'General_Terms_and_Conditions.html' }
+            ]}
+          ]
+        }
+      ];
 
       // Build desktop bar
-      const desktop = document.getElementById('desktopTopLevel')
+      const desktop = document.getElementById('desktopTopLevel');
       desktop.innerHTML = menus.map((menu, idx) => {
         if (menu.type === 'link') {
           return `
             <li class="nav-item">
               <a class="nav-link px-3" href="${menu.href}">${menu.label}</a>
             </li>
-          `
+          `;
         }
         return `
           <li class="nav-item dropdown">
@@ -657,50 +659,121 @@
               ${menu.label}
             </a>
             <div class="dropdown-menu p-4" aria-labelledby="top${idx}">
-  <div  >
-    <div class="row" style="padding-left: 30%; padding-right: 20%">
-      ${menu.sections.map(s => `
-        <div class="col mega-col mb-3" >
-          <h6>${s.header}</h6>
-          ${s.links.map(l => {
-            const external = l.href.startsWith('http')
-            return `<a class="link-body-emphasis text-decoration-none" href="${l.href}" ${external ? 'target="_blank" rel="noopener"' : ''}>${l.label}</a>`
-          }).join('')}
-        </div>
-      `).join('')}
-    </div>
-  </div>
-</div>
-
+              <div>
+                <div class="row" style="padding-left: 30%; padding-right: 20%">
+                  ${menu.sections.map(s => `
+                    <div class="col mega-col mb-3">
+                      <h6>${s.header}</h6>
+                      ${s.links.map(l => {
+                        const external = l.href.startsWith('http');
+                        return `<a class="link-body-emphasis text-decoration-none d-block py-1" href="${l.href}" ${external ? 'target="_blank" rel="noopener"' : ''}>${l.label}</a>`;
+                      }).join('')}
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            </div>
           </li>
-        `
-      }).join('')
+        `;
+      }).join('');
 
-      // Build mobile full list in one panel with solid background and scroll
-      const mobile = document.getElementById('mobileMenu')
-      mobile.innerHTML = menus.map(menu => {
+      // Build mobile accordion: top level only, tap to reveal, one open at a time
+      const mobile = document.getElementById('mobileMenu');
+      const accordionId = 'mobileAccordion';
+      mobile.innerHTML = `<div class="accordion" id="${accordionId}" role="tablist"></div>`;
+      const acc = mobile.querySelector('.accordion');
+
+      menus.forEach((menu, idx) => {
+        // Simple one-click link at top level
         if (menu.type === 'link') {
-          return `
-            <div class="mt-2">
-              <a class="d-block py-1 fw-semibold" href="${menu.href}">${menu.label}</a>
+          acc.insertAdjacentHTML('beforeend', `
+            <div class="py-2">
+              <a class="fw-semibold d-block" href="${menu.href}">${menu.label}</a>
             </div>
-          `
+          `);
+          return;
         }
-        return `
-          <h5 class="mt-2">${menu.label}</h5>
-          ${menu.sections.map(s => `
-            <div class="mt-2">
-              <h6 class="text-uppercase text-muted mb-1">${s.header}</h6>
-              ${s.links.map(l => {
-                const external = l.href.startsWith('http')
-                return `<a class="d-block py-1" href="${l.href}" ${external ? 'target="_blank" rel="noopener"' : ''}>${l.label}</a>`
-              }).join('')}
+
+        // Accordion item for a mega menu
+        const headingId = `acc-heading-${idx}`;
+        const panelId = `acc-panel-${idx}`;
+
+        const sectionsHtml = menu.sections.map(s => `
+          <div class="mt-2">
+            <h6 class="text-uppercase text-muted mb-1">${s.header}</h6>
+            ${s.links.map(l => {
+              const external = l.href.startsWith('http');
+              const attrs = external ? 'target="_blank" rel="noopener"' : '';
+              return `<a class="py-1 d-block" href="${l.href}" ${attrs}>${l.label}</a>`;
+            }).join('')}
+          </div>
+        `).join('');
+
+        acc.insertAdjacentHTML('beforeend', `
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="${headingId}">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#${panelId}"
+                      aria-expanded="false" aria-controls="${panelId}">
+                ${menu.label}
+              </button>
+            </h2>
+            <div id="${panelId}" class="accordion-collapse collapse"
+                 role="region" aria-labelledby="${headingId}"
+                 data-bs-parent="#${accordionId}">
+              <div class="accordion-body">
+                ${sectionsHtml}
+              </div>
             </div>
-          `).join('')}
-        `
-      }).join('')
+          </div>
+        `);
+      });
 
+      // Behaviour: close drawer after choosing a leaf link
+      const mobileNavEl = document.getElementById('mobileNav');
+      mobile.addEventListener('click', e => {
+        const a = e.target.closest('a[href]');
+        if (!a) return;
+        const inst = bootstrap.Collapse.getOrCreateInstance(mobileNavEl, { toggle: false });
+        inst.hide();
+      });
 
+      // Reset open panels when the drawer closes
+      mobileNavEl.addEventListener('hide.bs.collapse', () => {
+        document.querySelectorAll(`#${accordionId} .accordion-collapse.show`).forEach(p => {
+          const inst = bootstrap.Collapse.getOrCreateInstance(p, { toggle: false });
+          inst.hide();
+        });
+      });
+
+      // Focus the first top level when the drawer opens
+      mobileNavEl.addEventListener('shown.bs.collapse', () => {
+        const firstBtn = mobile.querySelector('.accordion-button, a.fw-semibold');
+        if (firstBtn) firstBtn.focus();
+      });
+
+      // Deep-link awareness: open the panel that contains the current page
+      const here = location.pathname.split('/').pop();
+      if (here) {
+        const match = mobile.querySelector(`.accordion-body a[href$="${here}"]`);
+        if (match) {
+          const panel = match.closest('.accordion-collapse');
+          const inst = bootstrap.Collapse.getOrCreateInstance(panel, { toggle: false });
+          inst.show();
+        }
+      }
     </script>
+
+    <noscript>
+      <div class="container d-lg-none py-3">
+        <p>This menu needs JavaScript. Here is a simple list of links.</p>
+        <ul>
+          <li><a href="#book">Book an Appointment</a></li>
+          <li><a href="All_topics.html">All Topics</a></li>
+          <li><a href="Features.html">Featured Articles</a></li>
+          <li><a href="General_About_Dr_Lynch.html">About Dr Lynch</a></li>
+        </ul>
+      </div>
+    </noscript>
   </body>
 </html>
