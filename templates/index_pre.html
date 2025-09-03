@@ -125,31 +125,31 @@
         #mobileMenu .accordion-body h6 { font-size: .8rem; letter-spacing: .04em }
         #mobileMenu .accordion-body a { padding: .4rem 0; display: block }
       }
-
+      
       #mobileMenu .accordion-button {
         margin-top: 0 !important;
       }
 
       /* Backdrop below header and menu */
-      .menu-backdrop{
+      .menu-backdrop {
         position: fixed;
         inset: 0;
         background: rgba(0,0,0,.4);
         opacity: 0;
         pointer-events: none;
         transition: opacity .2s ease;
-        z-index: 1020; /* below Bootstrap fixed-top (1030) */
+        z-index: 1020; /* below header and menu */
       }
-      .menu-backdrop.show{ opacity: 1; pointer-events: auto }
+      .menu-backdrop.show { opacity: 1; pointer-events: auto }
 
       /* Ensure header and mobile menu stack above the backdrop */
-      @media (max-width: 991.98px){
-        .fixed-top{ z-index: 1030 } /* Bootstrap default, noted for clarity */
-        #mobileNav{ position: relative; z-index: 1050 }
+      .fixed-top { z-index: 1040 }
+      @media (max-width: 991.98px) {
+        #mobileNav { position: relative; z-index: 1050 }
       }
 
-      /* Lock the page when menu opens, keep menu scrollable */
-      .body-lock{
+      /* Lock the page when the menu is open */
+      .body-lock {
         position: fixed;
         right: 0; left: 0;
         width: 100%;
@@ -158,18 +158,19 @@
       }
 
       /* Safer mobile scroller sizing and scroll containment */
-      @media (max-width: 991.98px){
+      @media (max-width: 991.98px) {
         :root { --header-h: 64px }
-        .mobile-scroller{
+        .mobile-scroller {
           max-height: calc(100vh - var(--header-h));
-          overflow-y: auto;
           -webkit-overflow-scrolling: touch;
-          overscroll-behavior-y: contain;
+          overscroll-behavior-y: contain; /* stop scroll chaining into body */
         }
       }
-      @supports (height: 100dvh){
-        @media (max-width: 991.98px){
-          .mobile-scroller{ max-height: calc(100dvh - var(--header-h)) }
+
+      /* Use dynamic viewport on browsers that support it */
+      @supports (height: 100dvh) {
+        @media (max-width: 991.98px) {
+          .mobile-scroller { max-height: calc(100dvh - var(--header-h)) }
         }
       }
     </style>
@@ -209,7 +210,7 @@
         </div>
       </div>
 
-      <!-- Backdrop sits UNDER the fixed header and menu -->
+      <!-- Backdrop lives below the fixed header so it never covers the menu -->
       <div class="menu-backdrop" id="menuBackdrop" hidden></div>
     </header>
 
@@ -569,7 +570,7 @@
     <!-- Bootstrap 5 JS bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Menu builder with mobile accordion + scroll lock/backdrop control -->
+    <!-- Menu builder with mobile accordion and body lock -->
     <script type="module">
       // Menu model
       const menus = [
@@ -691,17 +692,17 @@
             ]}
           ]
         }
-      ];
+      ]
 
       // Build desktop bar
-      const desktop = document.getElementById('desktopTopLevel');
+      const desktop = document.getElementById('desktopTopLevel')
       desktop.innerHTML = menus.map((menu, idx) => {
         if (menu.type === 'link') {
           return `
             <li class="nav-item">
               <a class="nav-link px-3" href="${menu.href}">${menu.label}</a>
             </li>
-          `;
+          `
         }
         return `
           <li class="nav-item dropdown">
@@ -715,8 +716,8 @@
                     <div class="col mega-col mb-3">
                       <h6>${s.header}</h6>
                       ${s.links.map(l => {
-                        const external = l.href.startsWith('http');
-                        return `<a class="link-body-emphasis text-decoration-none d-block py-1" href="${l.href}" ${external ? 'target="_blank" rel="noopener"' : ''}>${l.label}</a>`;
+                        const external = l.href.startsWith('http')
+                        return `<a class="link-body-emphasis text-decoration-none d-block py-1" href="${l.href}" ${external ? 'target="_blank" rel="noopener"' : ''}>${l.label}</a>`
                       }).join('')}
                     </div>
                   `).join('')}
@@ -724,14 +725,14 @@
               </div>
             </div>
           </li>
-        `;
-      }).join('');
+        `
+      }).join('')
 
       // Build mobile accordion: top level only, tap to reveal, one open at a time
-      const mobile = document.getElementById('mobileMenu');
-      const accordionId = 'mobileAccordion';
-      mobile.innerHTML = `<div class="accordion" id="${accordionId}" role="tablist"></div>`;
-      const acc = mobile.querySelector('.accordion');
+      const mobile = document.getElementById('mobileMenu')
+      const accordionId = 'mobileAccordion'
+      mobile.innerHTML = `<div class="accordion" id="${accordionId}" role="tablist"></div>`
+      const acc = mobile.querySelector('.accordion')
 
       menus.forEach((menu, idx) => {
         // Simple one-click link at top level
@@ -740,24 +741,24 @@
             <div class="py-2">
               <a class="fw-semibold d-block" href="${menu.href}">${menu.label}</a>
             </div>
-          `);
-          return;
+          `)
+          return
         }
 
         // Accordion item for a mega menu
-        const headingId = `acc-heading-${idx}`;
-        const panelId = `acc-panel-${idx}`;
+        const headingId = `acc-heading-${idx}`
+        const panelId = `acc-panel-${idx}`
 
         const sectionsHtml = menu.sections.map(s => `
           <div class="mt-2">
             <h6 class="text-uppercase text-muted mb-1">${s.header}</h6>
             ${s.links.map(l => {
-              const external = l.href.startsWith('http');
-              const attrs = external ? 'target="_blank" rel="noopener"' : '';
-              return `<a class="py-1 d-block" href="${l.href}" ${attrs}>${l.label}</a>`;
+              const external = l.href.startsWith('http')
+              const attrs = external ? 'target="_blank" rel="noopener"' : ''
+              return `<a class="py-1 d-block" href="${l.href}" ${attrs}>${l.label}</a>`
             }).join('')}
           </div>
-        `).join('');
+        `).join('')
 
         acc.insertAdjacentHTML('beforeend', `
           <div class="accordion-item">
@@ -776,91 +777,116 @@
               </div>
             </div>
           </div>
-        `);
-      });
+        `)
+      })
 
-      // Behaviour: close drawer after choosing a leaf link
-      const mobileNavEl = document.getElementById('mobileNav');
+      // Behaviour elements
+      const mobileNavEl = document.getElementById('mobileNav')
+
+      // Close drawer after choosing a leaf link
       mobile.addEventListener('click', e => {
-        const a = e.target.closest('a[href]');
-        if (!a) return;
-        const inst = bootstrap.Collapse.getOrCreateInstance(mobileNavEl, { toggle: false });
-        inst.hide();
-      });
+        const a = e.target.closest('a[href]')
+        if (!a) return
+        const inst = bootstrap.Collapse.getOrCreateInstance(mobileNavEl, { toggle: false })
+        inst.hide()
+      })
 
       // Reset open panels when the drawer closes
-      mobileNavEl.addEventListener('hide.bs.collapse', () => {
+      mobileNavEl.addEventListener('hide.bs.collapse', e => {
+        if (e.target !== mobileNavEl) return
         document.querySelectorAll(`#${accordionId} .accordion-collapse.show`).forEach(p => {
-          const inst = bootstrap.Collapse.getOrCreateInstance(p, { toggle: false });
-          inst.hide();
-        });
-      });
+          const inst = bootstrap.Collapse.getOrCreateInstance(p, { toggle: false })
+          inst.hide()
+        })
+      })
 
       // Focus the first top level when the drawer opens
-      mobileNavEl.addEventListener('shown.bs.collapse', () => {
-        const firstBtn = mobile.querySelector('.accordion-button, a.fw-semibold');
-        if (firstBtn) firstBtn.focus();
-      });
+      mobileNavEl.addEventListener('shown.bs.collapse', e => {
+        if (e.target !== mobileNavEl) return
+        const firstBtn = mobile.querySelector('.accordion-button, a.fw-semibold')
+        if (firstBtn) firstBtn.focus()
+      })
 
       // Deep-link awareness: open the panel that contains the current page
-      const here = location.pathname.split('/').pop();
+      const here = location.pathname.split('/').pop()
       if (here) {
-        const match = mobile.querySelector(`.accordion-body a[href$="${here}"]`);
+        const match = mobile.querySelector(`.accordion-body a[href$="${here}"]`)
         if (match) {
-          const panel = match.closest('.accordion-collapse');
-          const inst = bootstrap.Collapse.getOrCreateInstance(panel, { toggle: false });
-          inst.show();
+          const panel = match.closest('.accordion-collapse')
+          const inst = bootstrap.Collapse.getOrCreateInstance(panel, { toggle: false })
+          inst.show()
         }
       }
 
-      // Backdrop and scroll lock logic
-      const backdrop = document.getElementById('menuBackdrop');
-      let scrollY = 0;
-      let blockTouch = null;
+      // ==== Body lock + backdrop logic ====
+      const backdrop = document.getElementById('menuBackdrop')
+      let scrollY = 0
+      let blockTouch = null
 
       function lockBody(){
-        scrollY = window.scrollY || document.documentElement.scrollTop;
-        document.body.classList.add('body-lock');
-        document.body.style.top = `-${scrollY}px`;
-        backdrop.hidden = false;
-        // prevent background interaction
-        const main = document.querySelector('main');
-        const footer = document.querySelector('footer, #footer') || document.getElementById('footer');
-        main && main.setAttribute('inert', '');
-        footer && footer.setAttribute('inert', '');
+        scrollY = window.scrollY || document.documentElement.scrollTop
+        document.body.style.setProperty('--lock-top', `-${scrollY}px`)
+        document.body.classList.add('body-lock')
+        backdrop.hidden = false
+        // prevent interaction with background
+        const main = document.querySelector('main')
+        const footer = document.querySelector('footer, #footer') || document.getElementById('footer')
+        main && main.setAttribute('inert', '')
+        footer && footer.setAttribute('inert', '')
         // show backdrop
-        requestAnimationFrame(() => backdrop.classList.add('show'));
-        // iOS guard: allow scroll only inside the menu scroller
+        requestAnimationFrame(() => backdrop.classList.add('show'))
+        // iOS: only allow scroll inside the menu scroller
         blockTouch = e => {
-          if (!e.target.closest('.mobile-scroller')) e.preventDefault();
-        };
-        document.addEventListener('touchmove', blockTouch, { passive: false });
+          if (!e.target.closest('.mobile-scroller')) e.preventDefault()
+        }
+        document.addEventListener('touchmove', blockTouch, { passive: false })
       }
 
       function unlockBody(){
-        document.body.classList.remove('body-lock');
-        document.body.style.top = '';
-        window.scrollTo(0, scrollY);
-        backdrop.classList.remove('show');
-        backdrop.hidden = true;
-        const main = document.querySelector('main');
-        const footer = document.querySelector('footer, #footer') || document.getElementById('footer');
-        main && main.removeAttribute('inert');
-        footer && footer.removeAttribute('inert');
+        document.body.classList.remove('body-lock')
+        document.body.style.removeProperty('--lock-top')
+        window.scrollTo(0, scrollY)
+        backdrop.classList.remove('show')
+        backdrop.hidden = true
+        const main = document.querySelector('main')
+        const footer = document.querySelector('footer, #footer') || document.getElementById('footer')
+        main && main.removeAttribute('inert')
+        footer && footer.removeAttribute('inert')
         if (blockTouch){
-          document.removeEventListener('touchmove', blockTouch);
-          blockTouch = null;
+          document.removeEventListener('touchmove', blockTouch)
+          blockTouch = null
         }
       }
 
-      mobileNavEl.addEventListener('show.bs.collapse', lockBody);
-      mobileNavEl.addEventListener('hidden.bs.collapse', unlockBody);
+      // Only react when the top-level drawer opens or closes
+      mobileNavEl.addEventListener('show.bs.collapse', e => {
+        if (e.target !== mobileNavEl) return
+        lockBody()
+      })
+      mobileNavEl.addEventListener('hidden.bs.collapse', e => {
+        if (e.target !== mobileNavEl) return
+        unlockBody()
+      })
 
-      // Tap on the grey background closes the menu
+      // Stop inner accordion collapse events bubbling up and affecting backdrop
+      document.querySelectorAll('#mobileMenu .accordion-collapse').forEach(p => {
+        p.addEventListener('show.bs.collapse', e => e.stopPropagation())
+        p.addEventListener('hide.bs.collapse', e => e.stopPropagation())
+      })
+
+      // Tap on the grey background closes the whole menu
       backdrop.addEventListener('click', () => {
-        const inst = bootstrap.Collapse.getOrCreateInstance(mobileNavEl, { toggle: false });
-        inst.hide();
-      });
+        const inst = bootstrap.Collapse.getOrCreateInstance(mobileNavEl, { toggle: false })
+        inst.hide()
+      })
+
+      // Close with Esc
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && mobileNavEl.classList.contains('show')) {
+          const inst = bootstrap.Collapse.getOrCreateInstance(mobileNavEl, { toggle: false })
+          inst.hide()
+        }
+      })
     </script>
 
     <noscript>
