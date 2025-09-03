@@ -125,10 +125,53 @@
         #mobileMenu .accordion-body h6 { font-size: .8rem; letter-spacing: .04em }
         #mobileMenu .accordion-body a { padding: .4rem 0; display: block }
       }
-      
-        #mobileMenu .accordion-button {
-    margin-top: 0 !important;
-  }
+
+      #mobileMenu .accordion-button {
+        margin-top: 0 !important;
+      }
+
+      /* Backdrop below header and menu */
+      .menu-backdrop{
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,.4);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .2s ease;
+        z-index: 1020; /* below Bootstrap fixed-top (1030) */
+      }
+      .menu-backdrop.show{ opacity: 1; pointer-events: auto }
+
+      /* Ensure header and mobile menu stack above the backdrop */
+      @media (max-width: 991.98px){
+        .fixed-top{ z-index: 1030 } /* Bootstrap default, noted for clarity */
+        #mobileNav{ position: relative; z-index: 1050 }
+      }
+
+      /* Lock the page when menu opens, keep menu scrollable */
+      .body-lock{
+        position: fixed;
+        right: 0; left: 0;
+        width: 100%;
+        height: 100dvh;
+        overflow: hidden;
+      }
+
+      /* Safer mobile scroller sizing and scroll containment */
+      @media (max-width: 991.98px){
+        :root { --header-h: 64px }
+        .mobile-scroller{
+          max-height: calc(100vh - var(--header-h));
+          overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
+          overscroll-behavior-y: contain;
+        }
+      }
+      @supports (height: 100dvh){
+        @media (max-width: 991.98px){
+          .mobile-scroller{ max-height: calc(100dvh - var(--header-h)) }
+        }
+      }
     </style>
   </head>
 
@@ -165,6 +208,9 @@
           </div>
         </div>
       </div>
+
+      <!-- Backdrop sits UNDER the fixed header and menu -->
+      <div class="menu-backdrop" id="menuBackdrop" hidden></div>
     </header>
 
     <main id="home">
@@ -523,7 +569,7 @@
     <!-- Bootstrap 5 JS bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Menu builder with mobile accordion -->
+    <!-- Menu builder with mobile accordion + scroll lock/backdrop control -->
     <script type="module">
       // Menu model
       const menus = [
@@ -766,6 +812,55 @@
           inst.show();
         }
       }
+
+      // Backdrop and scroll lock logic
+      const backdrop = document.getElementById('menuBackdrop');
+      let scrollY = 0;
+      let blockTouch = null;
+
+      function lockBody(){
+        scrollY = window.scrollY || document.documentElement.scrollTop;
+        document.body.classList.add('body-lock');
+        document.body.style.top = `-${scrollY}px`;
+        backdrop.hidden = false;
+        // prevent background interaction
+        const main = document.querySelector('main');
+        const footer = document.querySelector('footer, #footer') || document.getElementById('footer');
+        main && main.setAttribute('inert', '');
+        footer && footer.setAttribute('inert', '');
+        // show backdrop
+        requestAnimationFrame(() => backdrop.classList.add('show'));
+        // iOS guard: allow scroll only inside the menu scroller
+        blockTouch = e => {
+          if (!e.target.closest('.mobile-scroller')) e.preventDefault();
+        };
+        document.addEventListener('touchmove', blockTouch, { passive: false });
+      }
+
+      function unlockBody(){
+        document.body.classList.remove('body-lock');
+        document.body.style.top = '';
+        window.scrollTo(0, scrollY);
+        backdrop.classList.remove('show');
+        backdrop.hidden = true;
+        const main = document.querySelector('main');
+        const footer = document.querySelector('footer, #footer') || document.getElementById('footer');
+        main && main.removeAttribute('inert');
+        footer && footer.removeAttribute('inert');
+        if (blockTouch){
+          document.removeEventListener('touchmove', blockTouch);
+          blockTouch = null;
+        }
+      }
+
+      mobileNavEl.addEventListener('show.bs.collapse', lockBody);
+      mobileNavEl.addEventListener('hidden.bs.collapse', unlockBody);
+
+      // Tap on the grey background closes the menu
+      backdrop.addEventListener('click', () => {
+        const inst = bootstrap.Collapse.getOrCreateInstance(mobileNavEl, { toggle: false });
+        inst.hide();
+      });
     </script>
 
     <noscript>
