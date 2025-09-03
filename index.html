@@ -343,6 +343,18 @@
             />
             <div>United Kingdom Neuro intervention Group</div>
           </div>
+                    <div class="col">
+            <img
+              src="img/mdu.png"
+              class="img-fluid degree-style mb-2"
+              alt="Medical Defense Union"
+              loading="lazy"
+              width="120"
+              height="120"
+            />
+            <div>Medical Defense Union</div>
+          </div>
+          
           <div class="col">
             <img
               src="img/esmint.png"
@@ -357,22 +369,12 @@
               Therapy
             </div>
           </div>
-          <div class="col">
-            <img
-              src="img/mdu.png"
-              class="img-fluid degree-style mb-2"
-              alt="Medical Defense Union"
-              loading="lazy"
-              width="120"
-              height="120"
-            />
-            <div>Medical Defense Union</div>
-          </div>
+
         </div>
       </section>
 
       <section id="interventional_treatments" class="container py-5">
-        <h2 class="h3 mb-4 text-center">Treatments & Diagnostics</h2>
+        <h2 class="h3 mb-4 text-center">Treatments</h2>
 
         <div class="row g-4 pt-2">
           <!-- Brain aneurysm -->
@@ -434,8 +436,14 @@
               </figure>
             </a>
           </div>
+       </div>
 
-          <!-- CT scanning -->
+      </section>
+      
+      <section id="diagnosis" class="container py-5">
+        <h2 class="h3 mb-4 text-center">Diagnosis</h2>
+            <div class="row g-4 pt-2">
+                  <!-- CT scanning -->
           <div class="col-md-4 col-6">
             <a href="Angiography_Cerebral_angiography.html" class="tile" aria-label="CT scanner">
               <figure class="tile-figure">
@@ -511,6 +519,9 @@
           <a href="Features.html" class="btn btn-light btn-lg">All Articles</a>
         </div>
       </section>
+      
+
+    
 
       <!-- Locations -->
       <section id="locations" class="container py-5">
@@ -883,126 +894,93 @@
     <!-- Menu builder with mobile accordion and body lock -->
     <script type="module">
       // Menu model
-      const menus = [
-        // Book
-        {
-          type: 'mega',
-          label: 'Book',
-          sections: [
-            { header: 'Appointments', links: [
-              { label: 'Book an Appointment', href: '#book' },
-              { label: 'Fees', href: 'General_Fees.html' },
-              { label: 'Cancellations', href: 'General_Cancellations.html' }
-            ]}
-          ]
-        },
+ const menus = [
+  // Book
+  {
+    type: 'mega',
+    label: 'Book',
+    sections: [
+      { header: 'Appointments', links: [
+        { label: 'Book an Appointment', href: '#book' },
+        { label: 'Fees', href: 'General_Fees.html' },
+        { label: 'Cancellations', href: 'General_Cancellations.html' }
+      ]}
+    ]
+  },
 
-        // Conditions
-        {
-          type: 'mega',
-          label: 'Conditions',
-          sections: [
-            { header: 'Brain Aneurysms', links: [
-              { label: 'Introduction', href: 'Aneurysms_Introduction_to_brain_aneurysms.html' },
-              { label: 'Symptoms', href: 'Aneurysms_Symptoms_of_brain_aneurysms.html' },
-              { label: 'Diagnosis', href: 'Aneurysms_Diagnosis_of_brain_aneurysms.html' },
-              { label: 'Treatment', href: 'Aneurysms_Endovascular_treatment_of_aneurysms.html' },
-              { label: 'Surgical treatment', href: 'Aneurysms_Surgical_treatment_of_aneurysms.html' },
-              { label: 'Ruptured aneurysms', href: 'Aneurysms_Ruptured_aneurysms.html' },
-              { label: 'Unruptured aneurysms', href: 'Aneurysms_Unruptured_aneurysms.html' },
-              { label: 'Further information', href: 'Aneurysms_Further_information.html' }
-            ]},
-            { header: 'AVMs', links: [
-              { label: 'Introduction', href: 'AVM_Introduction_to_AVMs.html' },
-              { label: 'Symptoms', href: 'AVM_Symptoms_of_AVMs.html' },
-              { label: 'Diagnosis', href: 'AVM_Diagnosis_of_AVMs.html' },
-              { label: 'Treatment', href: 'AVM_Treatment_of_AVMs.html' },
-              { label: 'Further information', href: 'AVM_Further_information.html' }
-            ]},
-            { header: 'Dural Fistulas (DAVFs)', links: [
-              { label: 'Introduction', href: 'DAVF_Introduction_to_DAVF.html' },
-              { label: 'Symptoms', href: 'DAVF_Symptoms_of_DAVF.html' },
-              { label: 'Diagnosis', href: 'DAVF_Diagnosis_of_DAVF.html' },
-              { label: 'Treatment', href: 'DAVF_Treatment_of_DAVF.html' }
-            ]},
-            { header: 'Stroke', links: [
-              { label: 'Introduction', href: 'Stroke_Introduction_to_stroke.html' },
-              { label: 'Symptoms', href: 'Stroke_Symptoms_of_stroke.html' },
-              { label: 'Diagnosis', href: 'Stroke_Diagnosis_of_stroke.html' },
-              { label: 'Treatment', href: 'Stroke_Treatment_of_stroke.html' },
-              { label: 'Further information', href: 'Stroke_Further_information.html' }
-            ]},
-            { header: 'Spinal Vascular Disease', links: [
-              { label: 'Introduction', href: 'Spinal_Introduction_to_spinal_vascular_disease.html' },
-              { label: 'Symptoms', href: 'Spinal_Symptoms_of_spinal_vascular_disease.html' },
-              { label: 'Diagnosis', href: 'Spinal_Diagnosis_of_spinal_vascular_disease.html' },
-              { label: 'Treatment', href: 'Spinal_Treatment_of_spinal_vascular_disease.html' }
-            ]},
-            { header: 'Other Conditions', links: [
-              { label: 'Pulsatile Tinnitus', href: 'Pulsatile_Tinnitus_Introduction_to_Pulsatile_Tinnitus.html' },
-              { label: 'Idiopathic Intracranial Hypertension', href: 'Idiopathic_Intracranial_Hypertension_Introduction_to_idiopathic_Intracranial_Hypertension.html' },
-              { label: 'Spontaneous Intracranial Hypotension', href: 'Spontaneous_Intracranial_Hypotension_Introduction_to_Spontaneous_Intracranial_Hypotension.html' }
-            ]}
-          ]
-        },
+  // About
+  {
+    type: 'mega',
+    label: 'About',
+    sections: [
+      { header: 'About Dr Lynch', links: [
+        { label: 'Profile', href: 'General_About_Dr_Lynch.html' },
+        { label: 'Research & Publications', href: 'General_Research.html' }
+      ]},
+      { header: 'Hospitals & Locations', links: [
+        { label: 'The Wellington Hospital', href: 'https://www.hcahealthcare.co.uk/locations/hospitals/the-wellington-hospital' },
+        { label: 'King’s College Hospital', href: 'https://www.kch.nhs.uk/' },
+        { label: 'Queen’s Hospital Romford', href: 'https://www.bhrhospitals.nhs.uk' }
+      ]},
+      { header: 'Information', links: [
+        { label: 'Terms & Conditions', href: 'General_Terms_and_Conditions.html' }
+      ]}
+    ]
+  },
 
-        // Diagnostics & Procedures
-        {
-          type: 'mega',
-          label: 'Diagnostics & Procedures',
-          sections: [
-            { header: 'Cerebral Angiography', links: [
-              { label: 'Introduction', href: 'Angiography_Cerebral_angiography.html' },
-              { label: 'Before the procedure', href: 'Angiography_Before_a_Cerebral_Angiogram.html' },
-              { label: 'During the procedure', href: 'Angiography_During_a_Cerebral_Angiogram.html' },
-              { label: 'After the procedure', href: 'Angiography_After_a_Cerebral_Angiogram.html' },
-              { label: 'Risks', href: 'Angiography_Risks.html' }
-            ]},
-            { header: 'Interventions', links: [
-              { label: 'Interventional Neuroradiology (overview)', href: 'Interventional_neuroradiology_Interventional_neuroradiology.html' },
-              { label: 'Venous Sinus Stenting', href: 'Idiopathic_Intracranial_Hypertension_Venous_sinus_stenting.html' },
-              { label: 'CSF Venous Embolisation', href: 'Spontaneous_Intracranial_Hypotension_CSF_venous_embolisation.html' }
-            ]}
-          ]
-        },
+  // Treatments
+  {
+    type: 'mega',
+    label: 'Treatments',
+    sections: [
+      { header: 'Brain', links: [
+        { label: 'Brain Aneurysms', href: 'Aneurysms_Introduction_to_brain_aneurysms.html' },
+        { label: 'AVMs', href: 'AVM_Introduction_to_AVMs.html' },
+        { label: 'Dural Fistulas (DAVFs)', href: 'DAVF_Introduction_to_DAVF.html' },
+        { label: 'Stroke', href: 'Stroke_Introduction_to_stroke.html' },
+        { label: 'Pulsatile Tinnitus', href: 'Pulsatile_Tinnitus_Introduction_to_Pulsatile_Tinnitus.html' },
+        { label: 'Idiopathic Intracranial Hypertension', href: 'Idiopathic_Intracranial_Hypertension_Introduction_to_idiopathic_Intracranial_Hypertension.html' },
+        { label: 'Spontaneous Intracranial Hypotension', href: 'Spontaneous_Intracranial_Hypotension_Introduction_to_Spontaneous_Intracranial_Hypotension.html' }
+      ]},
+      { header: 'Spine', links: [
+        { label: 'Spinal Vascular Disease', href: 'Spinal_Introduction_to_spinal_vascular_disease.html' }
+      ]}
+    ]
+  },
 
-        // Knowledge
-        {
-          type: 'mega',
-          label: 'Knowledge',
-          sections: [
-            { header: 'Patient Resources', links: [
-              { label: 'All Topics', href: 'All_topics.html' },
-              { label: 'Featured Articles', href: 'Features.html' }
-            ]},
-            { header: 'Essential Knowledge', links: [
-              { label: 'About the Brain', href: 'Essential_knowledge_About_the_brain.html' },
-              { label: 'About the Spine', href: 'Essential_knowledge_About_the_spine.html' },
-              { label: 'Glossary', href: 'Essential_knowledge_Glossary.html' }
-            ]}
-          ]
-        },
+  // Diagnostics
+  {
+    type: 'mega',
+    label: 'Diagnostics',
+    sections: [
+      { header: 'Imaging', links: [
+        { label: 'MRI', href: 'MRI.html' },
+        { label: 'CT', href: 'CT.html' }
+      ]},
+      { header: 'Angiography', links: [
+        { label: 'Cerebral Angiography', href: 'Angiography_Cerebral_angiography.html' },
+        { label: 'Spinal Angiography', href: 'Angiography_Spinal_angiography.html' }
+      ]}
+    ]
+  },
 
-        // About
-        {
-          type: 'mega',
-          label: 'About',
-          sections: [
-            { header: 'About Dr Lynch', links: [
-              { label: 'Profile', href: 'General_About_Dr_Lynch.html' },
-              { label: 'Research & Publications', href: 'General_Research.html' }
-            ]},
-            { header: 'Hospitals & Locations', links: [
-              { label: 'The Wellington Hospital', href: 'https://www.hcahealthcare.co.uk/locations/hospitals/the-wellington-hospital' },
-              { label: 'King’s College Hospital', href: 'https://www.kch.nhs.uk/' },
-              { label: 'Queen’s Hospital Romford', href: 'https://www.bhrhospitals.nhs.uk' }
-            ]},
-            { header: 'Information', links: [
-              { label: 'Terms & Conditions', href: 'General_Terms_and_Conditions.html' }
-            ]}
-          ]
-        }
-      ]
+  // Articles
+  {
+    type: 'mega',
+    label: 'Articles',
+    sections: [
+      { header: 'Patient Resources', links: [
+        { label: 'All Topics', href: 'All_topics.html' },
+        { label: 'Featured Articles', href: 'Features.html' }
+      ]},
+      { header: 'Essential Knowledge', links: [
+        { label: 'About the Brain', href: 'Essential_knowledge_About_the_brain.html' },
+        { label: 'About the Spine', href: 'Essential_knowledge_About_the_spine.html' },
+        { label: 'Glossary', href: 'Essential_knowledge_Glossary.html' }
+      ]}
+    ]
+  }
+]
 
       // Build desktop bar
       const desktop = document.getElementById('desktopTopLevel')
