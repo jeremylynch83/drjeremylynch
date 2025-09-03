@@ -233,16 +233,22 @@
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
     <title>Book Appointment</title>
-    <!-- Font Awesome for icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <style>
-      body {
+      :root {
+        --field-h: 48px;
+        --field-px: 12px;
+      }
+
+      html, body {
         margin: 0;
         font-family: Arial, sans-serif;
+        -webkit-text-size-adjust: 100%;
       }
+
       footer {
         background-color: #000;
         text-align: center;
@@ -251,6 +257,7 @@
       footer .text-white {
         text-shadow: 0 1px 2px rgba(0,0,0,.35);
       }
+
       #book {
         background-image: url('img/footer.png');
         min-height: 700px;
@@ -263,6 +270,7 @@
       #bookingContent {
         max-width: 520px;
         text-align: center;
+        padding: 0 16px;
       }
       #bookingContent h1 {
         font-size: 28px;
@@ -275,6 +283,7 @@
         font-size: 14px;
         color: #fff;
       }
+
       form {
         margin-top: 32px;
         font-size: 12px;
@@ -282,22 +291,60 @@
       .form-group {
         margin-bottom: 5px;
       }
-      input, select, textarea {
+
+      /* Consistent, iOS-friendly form controls */
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      select,
+      textarea {
         width: 100%;
-        padding: 10px;
+        box-sizing: border-box;
         background-color: #fff;
         border: 1px solid #ccc;
         border-radius: 0;
-        box-sizing: border-box;
-        font-size: 14px;
+        font-size: 16px;    /* avoids iOS zoom and evens heights */
         color: #000;
       }
-      select:invalid { color: gray; }
-      option[value=""] { color: gray; }
+
+      /* Same height for single-line controls */
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      select {
+        height: var(--field-h);
+        padding: 0 var(--field-px);
+        line-height: 1.25;
+      }
+
+      /* Textarea sizing */
       textarea {
-        height: 100px;
+        min-height: 100px;
+        padding: var(--field-px);
         resize: vertical;
       }
+
+      /* Remove native select skin and add chevron */
+      select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding-right: 44px; /* space for chevron */
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        background-size: 16px 16px;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.5 7.5l4.5 5 4.5-5" fill="none" stroke="%23000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+        -webkit-text-fill-color: #000;
+      }
+
+      /* Placeholder style for the first option */
+      select:required:invalid {
+        color: #9ca3af;
+        -webkit-text-fill-color: #9ca3af;
+      }
+      option { color: #000; }
+      option[value=""] { color: #9ca3af; }
+
       button {
         background-color: #f1f1f1;
         border: none;
@@ -310,12 +357,14 @@
         opacity: 0.6;
         cursor: not-allowed;
       }
+
       #submitStatus {
         margin-top: 8px;
         min-height: 1em;
         font-size: 12px;
         color: #fff;
       }
+
       .footer-links {
         display: flex;
         justify-content: center;
@@ -332,6 +381,7 @@
         font-size: 12px;
         text-decoration: none;
       }
+
       .footer-bottom {
         background-color: #151515;
         border-top: 2px solid #2a2a2a;
@@ -339,6 +389,7 @@
         font-size: 12px;
         margin: 0;
       }
+
       .noscript-warning {
         background: #f44336;
         color: #fff;
@@ -352,10 +403,8 @@
   <body>
     <footer>
       <div id="book">
-        <!-- Wrapper -->
         <div id="bookingContent">
           <h1>BOOK APPOINTMENT</h1>
-
           <p>
             To book an in-person consultation, enter your details below and our
             practice management team will contact you to schedule the appointment.
@@ -431,14 +480,12 @@
         </div>
       </div>
 
-      <!-- Footer Links -->
       <div class="footer-links">
         <div><a href="General_Fees.html">FEES</a></div>
         <div><a href="General_Terms_and_Conditions.html">TERMS AND CONDITIONS</a></div>
         <div><a href="General_Cancellations.html">CANCELLATIONS</a></div>
       </div>
 
-      <!-- Bottom -->
       <div class="footer-bottom">
         © <script>document.write(new Date().getFullYear());</script>
         Dr&nbsp;Jeremy&nbsp;Lynch
