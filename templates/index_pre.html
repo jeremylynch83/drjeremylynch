@@ -150,11 +150,8 @@
 
       /* Lock the page when the menu is open */
       .body-lock {
-        position: fixed;
-        right: 0; left: 0;
-        width: 100%;
-        height: 100dvh;
         overflow: hidden;
+        touch-action: none;
       }
 
       /* Safer mobile scroller sizing and scroll containment */
@@ -820,43 +817,30 @@
 
       // ==== Body lock + backdrop logic ====
       const backdrop = document.getElementById('menuBackdrop')
-      let scrollY = 0
       let blockTouch = null
 
       function lockBody(){
-        scrollY = window.scrollY || document.documentElement.scrollTop
-        document.body.style.setProperty('--lock-top', `-${scrollY}px`)
-        document.body.classList.add('body-lock')
-        backdrop.hidden = false
-        // prevent interaction with background
-        const main = document.querySelector('main')
-        const footer = document.querySelector('footer, #footer') || document.getElementById('footer')
-        main && main.setAttribute('inert', '')
-        footer && footer.setAttribute('inert', '')
-        // show backdrop
-        requestAnimationFrame(() => backdrop.classList.add('show'))
-        // iOS: only allow scroll inside the menu scroller
-        blockTouch = e => {
-          if (!e.target.closest('.mobile-scroller')) e.preventDefault()
-        }
-        document.addEventListener('touchmove', blockTouch, { passive: false })
-      }
+  document.body.classList.add('body-lock')
+  backdrop.hidden = false
+  // prevent interaction with background
+  const main = document.querySelector('main')
+  const footer = document.querySelector('footer, #footer') || document.getElementById('footer')
+  main && main.setAttribute('inert', '')
+  footer && footer.setAttribute('inert', '')
+  requestAnimationFrame(() => backdrop.classList.add('show'))
+}
 
-      function unlockBody(){
-        document.body.classList.remove('body-lock')
-        document.body.style.removeProperty('--lock-top')
-        window.scrollTo(0, scrollY)
-        backdrop.classList.remove('show')
-        backdrop.hidden = true
-        const main = document.querySelector('main')
-        const footer = document.querySelector('footer, #footer') || document.getElementById('footer')
-        main && main.removeAttribute('inert')
-        footer && footer.removeAttribute('inert')
-        if (blockTouch){
-          document.removeEventListener('touchmove', blockTouch)
-          blockTouch = null
-        }
-      }
+
+function unlockBody(){
+  document.body.classList.remove('body-lock')
+  backdrop.classList.remove('show')
+  backdrop.hidden = true
+  const main = document.querySelector('main')
+  const footer = document.querySelector('footer, #footer') || document.getElementById('footer')
+  main && main.removeAttribute('inert')
+  footer && footer.removeAttribute('inert')
+}
+
 
       // Only react when the top-level drawer opens or closes
       mobileNavEl.addEventListener('show.bs.collapse', e => {
