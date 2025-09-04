@@ -492,3 +492,93 @@ select option{ padding:5px; }
   border: 0 !important;
   box-shadow: none !important; /* use your focus-visible outline instead */
 }
+
+
+      /* Mobile drawer scroller area */
+      @media (max-width: 991.98px) {
+        .mobile-scroller {
+          max-height: calc(100vh - 64px);
+          overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+
+      /* Mobile accordion refinements */
+      @media (max-width: 991.98px) {
+        #mobileMenu .accordion-item { border: 0; border-bottom: 1px solid rgba(0,0,0,.08); border-radius: 0 }
+        #mobileMenu .accordion-button { padding: 0.875rem 0; background: transparent }
+        #mobileMenu .accordion-button:focus { box-shadow: none }
+        #mobileMenu .accordion-button:not(.collapsed) { box-shadow: none }
+        #mobileMenu .accordion-body { padding: 0.25rem 0 1rem }
+        #mobileMenu .accordion-body h6 { font-size: .8rem; letter-spacing: .04em }
+        #mobileMenu .accordion-body a { padding: .4rem 0; display: block }
+      }
+      
+      #mobileMenu .accordion-button {
+        margin-top: 0 !important;
+      }
+
+      /* Backdrop below header and menu */
+      .menu-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,.4);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .2s ease;
+        z-index: 1020; /* below header and menu */
+      }
+      .menu-backdrop.show { opacity: 1; pointer-events: auto }
+
+      /* Ensure header and mobile menu stack above the backdrop */
+      .fixed-top { z-index: 1040 }
+      @media (max-width: 991.98px) {
+        #mobileNav { position: relative; z-index: 1050 }
+      }
+
+      /* Lock the page when the menu is open */
+      .body-lock {
+        overflow: hidden;
+        touch-action: none;
+      }
+
+      /* Safer mobile scroller sizing and scroll containment */
+      @media (max-width: 991.98px) {
+        :root { --header-h: 64px }
+        .mobile-scroller {
+          max-height: calc(100vh - var(--header-h));
+          -webkit-overflow-scrolling: touch;
+          overscroll-behavior-y: contain; /* stop scroll chaining into body */
+        }
+      }
+
+      /* Use dynamic viewport on browsers that support it */
+      @supports (height: 100dvh) {
+        @media (max-width: 991.98px) {
+          .mobile-scroller { max-height: calc(100dvh - var(--header-h)) }
+        }
+      }
+      
+      /* Custom buttons */
+        .custom-btn {
+          display: inline-block;
+          border: 1px solid #0b4f6c;
+          color: #0b4f6c;
+          background: #fff;       /* white background */
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          font-size: 1rem;
+          font-weight: 600;
+          padding: 8px 16px;
+          text-decoration: none;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+        
+        .custom-btn:hover {
+          background: #0b4f6c;    /* dark fill on hover */
+          color: #fff;
+        }
+
+
+
