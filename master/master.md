@@ -1,13 +1,5 @@
 # About Dr Lynch {General}
 
-## Philosophy
-
-My role is to work out what I can do for you—without intervening simply for the sake of it. Whatever we plan must genuinely be in your best interests. I believe there is no such thing as a “small” procedure, only an overconfident doctor. The biggest operation is always the one performed on you or on someone you love. A simple principle guides me: what would I do if you were my father, my mother, or my spouse?
-
-The essential question is always: what can we do to make you better? And there is always something that can be done. But whatever we do has to make sense, and that requires a conversation. We discuss what you would like to achieve and what you are prepared to commit to. Once patients understand their options and what to expect, they are in the best position to decide.
-
-The best part of my job is being able to care for someone personally while also saying, “We have a complicated problem, but we will work through this. It’s going to be okay.” Then, with my experience, skills, and the support of my colleagues, I can deliver the best care possible. If that leads to a patient—or their loved one—saying thank you, that is by far the most rewarding part of my work.
-
 ## Biography
 
 Dr Jeremy Lynch MBChB MRCS FRCR is a London-based Consultant Interventional Neuroradiologist. He has been an NHS doctor for 13 years and is experienced in the diagnosis and treatment of vascular diseases involving the brain, head and neck, and spine. Dr Lynch trained in Medicine at the University of Bristol and qualified in 2007. He underwent several years of surgical training, during which he gained membership of the Royal College of Surgeons. He then underwent further specialisation in interventional radiology and neuroradiology in a range of specialist hospitals in London including the National Hospital for Neurology and Neurosurgery, Great Ormonds Street Hospital, Kings College Hospital, St George’s Hospital, and Queen’s Hospital. He underwent a further international fellowship in Toronto Western Hospital in Canada where he was one of the first doctors in the world to gain experience in robotic endovascular techniques.
@@ -36,6 +28,7 @@ Interventional neuroradiology (otherwise known as neurointerventional radiology 
 * MRCS - Royal College of Surgeons
 
 * Clinical Medicine - University of Bristol
+
 
 # Research {General}
 
@@ -92,7 +85,7 @@ Users are strongly advised to seek advice from a qualified healthcare profession
 
 ## Consultation Fees
 
-The fee for an in-person outpatient consultation is £250 and online/telephone consultation is £200.
+The fee for a consultation is £200.
 
 This covers a clinic appointment to discuss your condition, review relevant medical information, and provide specialist advice. Please note that this does not include the cost of any investigations, imaging, or procedures, which will be charged separately if required.
 
