@@ -11,9 +11,9 @@ const menus = [
         { label: 'Fees', href: 'General_Fees.html' }
       ]},
       { header: 'Hospitals & Locations', links: [
-        { label: 'The Wellington Hospital', href: 'https://www.hcahealthcare.co.uk/locations/hospitals/the-wellington-hospital' },
-        { label: 'King’s College Hospital', href: 'https://www.kch.nhs.uk/' },
-        { label: 'Queen’s Hospital Romford', href: 'https://www.bhrhospitals.nhs.uk' }
+        { label: 'The Wellington Hospital', href: 'Locations_The_Wellington_Hospital.html' },
+        { label: 'King’s College Hospital', href: 'Locations_Kings_College_Hospital.html' },
+        { label: 'Queen’s Hospital Romford', href: 'Locations_Queens_Hospital_in_Romford.html' }
       ]},
       { header: 'Information', links: [
         { label: 'Cancellations', href: 'General_Cancellations.html' },

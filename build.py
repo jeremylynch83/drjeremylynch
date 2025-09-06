@@ -269,6 +269,24 @@ def create_md_content_from_headings(
             yaml_block = f"---\n" + "\n".join(yaml_lines) + "\n---"
             current_text = [yaml_block, f"# {title_text}"]
 
+            # Add description text under H1 for features
+            if sec_lower == "features" and description:
+                current_text.append(f'<p class="lead text-secondary">{html.escape(description)}</p>')
+
+            # If a Feature has an image, show it under the description
+            if sec_lower == "features" and image_url:
+                alt = html.escape(title_text, quote=True)
+                figure_html = (
+                    f'<figure class="my-3">'
+                    f'<img src="{html.escape(image_url, quote=True)}" alt="{alt}" class="img-fluid rounded shadow-sm w-100">'
+                    '</figure>'
+                )
+                current_text.append(figure_html)
+
+
+
+
+
             i = next_i
             continue
 
@@ -344,12 +362,19 @@ def create_all_topics(
 
 def render_feature_cards(items: List[Tuple[str, str, str, str]]) -> str:
     """
-    Render a list of features in the same hero-row format as the Features list page.
+    Render a list of features for the front page.
+    Adds a divider between items, not after the last one.
     items: list of (title, filename, description, image_url)
     """
     out: List[str] = []
-    for t, fn, desc, img in items:
-        out.append('<article class="row g-4 align-items-center mb-4 pb-3 border-bottom">')
+    total = len(items)
+    for idx, (t, fn, desc, img) in enumerate(items):
+        is_last = (idx == total - 1)
+        row_classes = "row g-4 align-items-center mb-4 pb-3"
+        if not is_last:
+            row_classes += " border-bottom"
+
+        out.append(f'<article class="{row_classes}">')
         if img:
             out.append('<div class="col-md-6">')
             out.append('<div class="ratio ratio-16x9">')
@@ -366,6 +391,7 @@ def render_feature_cards(items: List[Tuple[str, str, str, str]]) -> str:
             out.append(f'<p class="text-secondary mb-0 small">{html.escape(desc)}</p>')
         out.append('</div></article>')
     return "\n".join(out)
+
 
 def create_index(latest_features: List[Tuple[str, str, str, str]]) -> None:
     """

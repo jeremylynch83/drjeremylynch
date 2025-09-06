@@ -1634,3 +1634,31 @@ Follow up
 
 * MRI of the brain and spine is usually arranged at about 3 months.
 * A simple headache score before and after treatment helps track improvement.
+
+
+# The Wellington Hospital {Locations}
+
+All interventional neuroradiology procedures at The Wellington Hospital are performed using its state-of-the-art biplane angiography suite and expert staff.
+
+The Wellington Hospital, in St John’s Wood, London, is the largest private hospital in the UK. It is owned by the American company HCA Healthcare. The hospital provides a broad range of services, including cardiac care, neurosurgery, liver and HPB (hepato-pancreato-biliary) medicine, rehabilitation, gynaecology, orthopaedics and oncology, along with diagnostics. The site comprises the South Building, the North Building, a Diagnostics and Outpatients Centre, and the Platinum Medical Centre, which specialises in oncology.
+
+The hospital was founded by Dr Arthur Levin and originally commissioned by British and Commonwealth Holdings. The South Building, designed by Fred Woodhead, opened in April 1974, followed by the North Building in 1978. A Diagnostics and Outpatients Centre in Golders Green opened in 2007, and the Platinum Medical Centre—with MRI and PET-CT scanners—opened in May 2011.
+
+# Kings College Hospital {Locations}
+
+King’s College Hospital in Denmark Hill, London, is a major NHS teaching hospital and one of London’s key adult and children Major Trauma Centres. It serves local areas and acts as a tertiary referral centre for much of southern England. The hospital is a cornerstone of King’s Health Partners and closely affiliated with King’s College London, offering a broad spectrum of specialist services, including neurosciences and neurosurgery 
+
+the interventional Neuroradiology at King’s treats complex vascular conditions of the head, neck, brain, and spine using image-guided techniques. These include treating cerebral aneurysm, retrieving clots in stroke patients via mechanical thrombectomy; embolising brain, head and neck tumours; managing arteriovenous malformations and fistulas; treating carotid artery and intracranial stenoses; placing venous stents for symptom relief; and addressing subdural haemorrhage and nosebleeds using embolisation. The service also performs critical diagnostic procedures, such as cerebral angiography, myelography, lumbar puncture, amytal testing, and test occlusion. 
+
+As one of the UK’s most established interventional neuroradiology programmes, King’s handles substantial caseloads—performing approximately 150–200 mechanical thrombectomies and a similar number of aneurysm treatments each year—and contributes actively to research and clinical trials that shape neurovascular practice globally. The service is supported by a multidisciplinary infrastructure, including a modern biplane angiography suite, and collaborates closely with neurosurgeons, neurologists, stroke physicians, intensive care teams, anaesthetists, and specialist nurses to ensure comprehensive, patient-centred care 
+
+# Queens Hospital in Romford {Locations}
+
+Queen’s Hospital in Romford is a large, modern NHS teaching hospital operated by the Barking, Havering and Redbridge University Hospitals NHS Trust. Serving approximately 800,000 people, it was purpose-built and opened in 2006 to replace several older hospitals in the area. The hospital consists of multiple interconnected circular towers surrounded by low-rise buildings that house wards, diagnostics, theatres, and an effective layout for inpatient and outpatient services.
+
+It features an emergency department, hyper-acute stroke unit, specialist neuroscience centre, renal dialysis, a birthing centre, 16 operating theatres, and a helipad for urgent air transfers. As a teaching site affiliated with Barts and The London School of Medicine and Dentistry, the hospital plays a key role in training future clinicians.
+
+Within its neurosurgery division, Queen’s offers a comprehensive range of adult treatments for brain, spine, and peripheral nerve disorders. This includes specialist programmes for brain tumours, cerebrovascular diseases, spinal conditions, functional neurosurgery, and peripheral nerve issues, supported by a dedicated neurosurgical ward, operating theatres, and a neuro-intensive care unit. The hospital functions as the regional neurosurgical centre for Essex and surrounding areas, providing training for junior surgeons and engaging in clinical trials and research collaborations.
+
+The vascular neurosurgery and interventional neuroradiology team treat complex cerebrovascular conditions such as aneurysms, arteriovenous malformations (AVMs), subarachnoid haemorrhages, arteriovenous fistulas, cavernous malformations, intracerebral haemorrhage, and other vascular disorders of the brain and spinal cord. 
+
