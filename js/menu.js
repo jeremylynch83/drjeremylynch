@@ -1,5 +1,6 @@
-      // Menu model
- const menus = [
+
+// Menu model
+const menus = [
   // Book
   {
     type: 'mega',
@@ -7,8 +8,16 @@
     sections: [
       { header: 'Appointments', links: [
         { label: 'Book an Appointment', href: '#book' },
-        { label: 'Fees', href: 'General_Fees.html' },
-        { label: 'Cancellations', href: 'General_Cancellations.html' }
+        { label: 'Fees', href: 'General_Fees.html' }
+      ]},
+      { header: 'Hospitals & Locations', links: [
+        { label: 'The Wellington Hospital', href: 'https://www.hcahealthcare.co.uk/locations/hospitals/the-wellington-hospital' },
+        { label: 'King’s College Hospital', href: 'https://www.kch.nhs.uk/' },
+        { label: 'Queen’s Hospital Romford', href: 'https://www.bhrhospitals.nhs.uk' }
+      ]},
+      { header: 'Information', links: [
+        { label: 'Cancellations', href: 'General_Cancellations.html' },
+        { label: 'Terms & Conditions', href: 'General_Terms_and_Conditions.html' }
       ]}
     ]
   },
@@ -19,24 +28,21 @@
     label: 'About',
     sections: [
       { header: 'About Dr Lynch', links: [
-        { label: 'Profile', href: 'General_About_Dr_Lynch.html' },
+        { label: 'Profile', href: 'General_About_Dr_Lynch.html' }
+      ]},
+      { header: 'Research', links: [
         { label: 'Research & Publications', href: 'General_Research.html' }
       ]},
-      { header: 'Hospitals & Locations', links: [
-        { label: 'The Wellington Hospital', href: 'https://www.hcahealthcare.co.uk/locations/hospitals/the-wellington-hospital' },
-        { label: 'King’s College Hospital', href: 'https://www.kch.nhs.uk/' },
-        { label: 'Queen’s Hospital Romford', href: 'https://www.bhrhospitals.nhs.uk' }
-      ]},
-      { header: 'Information', links: [
-        { label: 'Terms & Conditions', href: 'General_Terms_and_Conditions.html' }
+      { header: 'Fellowship', links: [
+        { label: 'Fellowship Information', href: 'General_Fellowship.html' }
       ]}
     ]
   },
 
-  // Treatments
+  // Treatments & Diagnostics
   {
     type: 'mega',
-    label: 'Treatments',
+    label: 'Treatments & Diagnostics',
     sections: [
       { header: 'Brain', links: [
         { label: 'Brain Aneurysms', href: 'Aneurysms_Introduction_to_brain_aneurysms.html' },
@@ -49,20 +55,10 @@
       ]},
       { header: 'Spine', links: [
         { label: 'Spinal Vascular Disease', href: 'Spinal_Introduction_to_spinal_vascular_disease.html' }
-      ]}
-    ]
-  },
-
-  // Diagnostics
-  {
-    type: 'mega',
-    label: 'Diagnostics',
-    sections: [
-      { header: 'Imaging', links: [
-        { label: 'MRI', href: 'MRI.html' },
-        { label: 'CT', href: 'CT.html' }
       ]},
-      { header: 'Angiography', links: [
+      { header: 'Diagnostics', links: [
+        { label: 'MRI', href: 'MRI.html' },
+        { label: 'CT', href: 'CT.html' },
         { label: 'Cerebral Angiography', href: 'Angiography_Cerebral_angiography.html' },
         { label: 'Spinal Angiography', href: 'Angiography_Spinal_angiography.html' }
       ]}
@@ -86,6 +82,8 @@
     ]
   }
 ]
+
+
 
       // Build desktop bar
       const desktop = document.getElementById('desktopTopLevel')
