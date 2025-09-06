@@ -634,3 +634,37 @@ select option{ padding:5px; }
   #mobileMenu .accordion-item { border: 0 }
 }
 
+/* Plain FAQ accordion */
+#faqAccordion {
+  --bs-accordion-bg: transparent;
+  --bs-accordion-border-color: transparent;
+  --bs-accordion-btn-bg: transparent;
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-active-color: inherit;
+  --bs-accordion-btn-focus-border-color: transparent;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+/* Kill any residual styles on the button */
+#faqAccordion .accordion-button {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent; /* iOS grey tap flash */
+}
+#faqAccordion .accordion-button:hover,
+#faqAccordion .accordion-button:focus,
+#faqAccordion .accordion-button:not(.collapsed) {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: inherit;
+}
+
+/* Remove item dividers */
+#faqAccordion .accordion-item { border: 0; background: transparent; }
+
+/* Optional: keep the chevron but mute it slightly */
+/* #faqAccordion .accordion-button::after { opacity: .6; } */
+
