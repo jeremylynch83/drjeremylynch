@@ -1008,6 +1008,26 @@ A common procedure that we perform is called a cerebral angiogram. “Cerebral�
 
 This is achieved via inserting a tiny tube called a catheter into an artery or vein. The usual entrance site is the groin or the wrist, as these are easily accessible and safe places. We then advance the tube into the blood vessel involved in the disease process. We can place tiny devices, such as coils or stents, or retrieve blood clots, through these tubes. As the tubes inside the body we use advanced imaging equipment, such as X-rays, CT, or MRI to guide them.
 
+# Introduction to CT scans  {CT scans}
+
+A CT scan, or computed tomography scan, is an imaging test that uses X-rays and computer processing to create detailed cross-sectional pictures of the body. It is quick, precise, and widely used in emergency and inpatient settings because it can rapidly detect conditions such as bleeding, fractures, and organ injury.
+
+In interventional neuroradiology, CT is particularly important for assessing conditions affecting the brain and blood vessels, such as haemorrhage or stroke, and in the evaluation of cerebral aneurysms. CT angiography (CTA) involves the injection of intravenous contrast dye to highlight arteries and veins, allowing clinicians to detect aneurysms, vessel narrowing, or arteriovenous malformations with high accuracy. It is often the first-line vascular imaging technique because it is fast, widely available, and non-invasive.
+
+Compared with MRI, CT is usually preferred in urgent cases, such as suspected aneurysmal subarachnoid haemorrhage or acute stroke, because it can be performed rapidly and is excellent at showing fresh blood. MRI, by contrast, offers greater detail of soft tissue and vessel walls without radiation but takes longer, is less available in emergencies, and is more affected by patient movement.
+
+CT scanning has clear advantages: it is quick, precise, and excellent for detecting bleeding and vascular pathology with CTA. Its disadvantages include the use of ionising radiation and the possibility of artefacts, particularly when metal devices such as coils or stents have already been placed, which can obscure detail in follow-up imaging.
+
+# Introduction to MRI scans  {MRI scans}
+
+MRI scanning, or magnetic resonance imaging, uses powerful magnets and radio waves rather than X-rays to generate detailed images of the body. It provides exceptional contrast between different soft tissues and can create images in multiple planes without moving the patient. Unlike CT, MRI does not involve ionising radiation, which makes it particularly valuable for repeated imaging or for younger patients.
+
+In interventional neuroradiology, MRI plays a central role in the assessment of brain and spinal conditions. It is highly sensitive for detecting ischaemia in stroke, small vascular malformations, and brain or spinal cord pathology that may not be visible on CT. It also contributes to the evaluation of aneurysms and subarachnoid haemorrhage, as it can demonstrate vessel walls, surrounding brain tissue, and the effects of blood products at different stages. MRI is especially valuable in detecting aneurysms located in regions that may be obscured by bone on CT, such as the skull base or posterior circulation, where its superior soft tissue contrast provides clearer information.
+
+Magnetic resonance angiography (MRA) is a specialised application that allows blood vessels to be imaged with or without intravenous contrast. Contrast-enhanced MRA uses gadolinium-based agents to improve vascular detail, while non-contrast techniques rely on blood flow signals to depict arteries and veins. This makes MRA particularly useful for detecting aneurysms, arteriovenous malformations, and vessel stenosis, as well as for long-term follow-up and surveillance, often avoiding the need for repeated radiation exposure.
+
+The advantages of MRI and MRA are their excellent soft tissue detail, the absence of radiation, and the ability to evaluate both vessels and surrounding structures in a single examination. They are also especially effective in areas where CT is limited by bone. Limitations include longer scanning times, sensitivity to patient movement, and contraindications in patients with certain implants or severe claustrophobia. Metallic devices such as coils or stents can cause artefacts, although these are often less pronounced than in CT. For this reason, MRI and MRA are typically used in planned or follow-up settings, while CT and CTA are preferred for rapid emergency imaging.
+
 # Cerebral angiography  {Angiography}
 
 ## What is a cerebral angiogram?
@@ -1638,9 +1658,9 @@ Follow up
 
 # The Wellington Hospital {Locations}
 
-All interventional neuroradiology procedures at The Wellington Hospital are performed using its state-of-the-art biplane angiography suite and expert staff.
-
 The Wellington Hospital, in St John’s Wood, London, is the largest private hospital in the UK. It is owned by the American company HCA Healthcare. The hospital provides a broad range of services, including cardiac care, neurosurgery, liver and HPB (hepato-pancreato-biliary) medicine, rehabilitation, gynaecology, orthopaedics and oncology, along with diagnostics. The site comprises the South Building, the North Building, a Diagnostics and Outpatients Centre, and the Platinum Medical Centre, which specialises in oncology.
+
+All interventional neuroradiology procedures at The Wellington Hospital are performed using its state-of-the-art biplane angiography suite and expert staff.
 
 The hospital was founded by Dr Arthur Levin and originally commissioned by British and Commonwealth Holdings. The South Building, designed by Fred Woodhead, opened in April 1974, followed by the North Building in 1978. A Diagnostics and Outpatients Centre in Golders Green opened in 2007, and the Platinum Medical Centre—with MRI and PET-CT scanners—opened in May 2011.
 

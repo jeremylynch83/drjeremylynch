@@ -1,7 +1,7 @@
 # Who should be screened for brain aneurysms? {features}
 ---
 description:  Who should and should not be screened for brain aneurysms, outlining the risk groups, reasons screening is not suitable for everyone, and how the screening process is carried out. 
-image: feature.jpg
+image: feature_screening.jpg
 ---
 ## What is brain aneurysm screening?
 A brain aneurysm is a weak spot in a blood vessel in the brain that can balloon out. Most never cause problems, but if an aneurysm bursts it can cause a serious type of stroke called a subarachnoid haemorrhage (SAH).  
@@ -53,7 +53,7 @@ If you are in a higher-risk group, your doctor can talk through whether screenin
 # What are the warning signs of a brain aneurysm? {features}
 ---
 description: Explains the key symptoms of a brain aneurysm rupture, what unruptured aneurysms can cause, and when to seek urgent medical help. 
-image: feature.jpg
+image: feature_an_symptoms.jpg
 
 ---
 
