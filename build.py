@@ -29,15 +29,6 @@ def yaml_quote(s: str) -> str:
     """Quote a string safely for simple YAML metadata usage."""
     return '"' + s.replace('"', '\\"') + '"'
 
-def delete_all_html() -> None:
-    """Delete ALL .html files in the current directory."""
-    for path in glob.glob("*.html"):
-        try:
-            os.remove(path)
-            print(f"Deleted old HTML file: {path}")
-        except OSError as e:
-            print(f"Could not delete {path}: {e}")
-
 def display_section_name(section: str) -> str:
     """Pretty display name for a section label."""
     if section.lower() == "features":
@@ -283,10 +274,6 @@ def create_md_content_from_headings(
                 )
                 current_text.append(figure_html)
 
-
-
-
-
             i = next_i
             continue
 
@@ -530,7 +517,7 @@ def create_special_list_pages(
 
 def main():
     template_path = "templates/standard.html"
-    delete_all_html()
+    # No up-front deletion of all HTML files
 
     md_dir = "master"
     md_files = sorted(glob.glob(os.path.join(md_dir, "*.md")))
@@ -562,26 +549,56 @@ def main():
         master_md, grouped_headings, page_to_section, group_names, section_first
     )
 
+    # Track expected outputs so we can delete only orphans at the end
+    expected_outputs = set()
+
     # Create article pages
     for filename, md_content in md_sections:
         convert_md_to_html(md_content, filename, template_path)
+        expected_outputs.add(filename)
         print(f"Created HTML file: {filename}")
 
     # Create All topics
     create_all_topics(md_sections, page_to_section, group_names, section_first, template_path)
+    expected_outputs.add("All_topics.html")
 
     # Create special listing pages with H2, optional image, and description
-    create_special_list_pages("features", special_entries.get("features", []), template_path, page_size=5)
-    create_special_list_pages("news", special_entries.get("news", []), template_path, page_size=5)
+    def _expected_paginated(base_filename: str, total_items: int, page_size: int = 5):
+        pages = (total_items + page_size - 1) // page_size
+        if pages <= 0:
+            return []
+        return [
+            f"{base_filename}.html" if p == 0 else f"{base_filename}_{p+1}.html"
+            for p in range(pages)
+        ]
+
+    feats = special_entries.get("features", [])
+    news_items = special_entries.get("news", [])
+
+    create_special_list_pages("features", feats, template_path, page_size=5)
+    expected_outputs.update(_expected_paginated("Features", len(feats), page_size=5))
+
+    create_special_list_pages("news", news_items, template_path, page_size=5)
+    expected_outputs.update(_expected_paginated("News", len(news_items), page_size=5))
 
     # Build index.html with latest three features
-    feats = special_entries.get("features", [])
     latest_features = list(reversed(feats))[:3] if feats else []
     create_index(latest_features)
+    expected_outputs.add("index.html")
 
     # Build sitemap.xml
     base_url = SITE_BASE_URL.rstrip('/') + '/'
     create_sitemap(base_url)
+
+    # Delete orphaned HTML files left from previous runs
+    current_html = set(glob.glob("*.html"))
+    orphans = sorted(current_html - expected_outputs)
+    for fn in orphans:
+        try:
+            os.remove(fn)
+            print(f"Deleted orphan HTML file: {fn}")
+        except OSError as e:
+            print(f"Could not delete {fn}: {e}")
 
 if __name__ == "__main__":
     main()
