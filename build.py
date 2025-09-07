@@ -6,7 +6,7 @@ import unicodedata
 import string
 import html
 from datetime import datetime, timezone
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Any
 
 # Optional environment override for base URL
 SITE_BASE_URL = os.environ.get("SITE_BASE_URL", "https://www.drjeremylynch.com/")
@@ -29,6 +29,7 @@ def yaml_quote(s: str) -> str:
     """Quote a string safely for simple YAML metadata usage."""
     return '"' + s.replace('"', '\\"') + '"'
 
+
 def display_section_name(section: str) -> str:
     """Pretty display name for a section label."""
     if section.lower() == "features":
@@ -36,6 +37,30 @@ def display_section_name(section: str) -> str:
     if section.lower() == "news":
         return "News"
     return section
+
+
+def parse_tags_field(tags_value: str) -> List[str]:
+    """Parse a comma separated list of tags into a clean list preserving order."""
+    if not tags_value:
+        return []
+    parts = [t.strip() for t in tags_value.split(',')]
+    # Drop empties and de-duplicate while preserving order
+    seen = set()
+    out: List[str] = []
+    for p in parts:
+        if not p:
+            continue
+        key = p.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(p)
+    return out
+
+
+def norm_tag(tag: str) -> str:
+    return unicodedata.normalize('NFKC', tag).strip().lower()
+
 
 def create_sitemap(base_url: str) -> None:
     """
@@ -137,18 +162,34 @@ def parse_headings_and_group(file_path: str):
     return grouped_headings, page_to_section, group_names, section_first
 
 
+class PageInfo:
+    __slots__ = (
+        'filename', 'title', 'section', 'sec_lower', 'tags', 'tags_norm',
+        'description', 'image_url', 'body_lines', 'yaml_lines'
+    )
+
+    def __init__(self, **kw: Any) -> None:
+        for k, v in kw.items():
+            setattr(self, k, v)
+
+
+
 def create_md_content_from_headings(
     file_path: str,
     grouped_headings: Dict[str, List[Tuple[str, str]]],
     page_to_section: Dict[str, str],
     group_names: Dict[str, str],
     section_first: Dict[str, str],
-) -> Tuple[List[Tuple[str, str]], Dict[str, List[Tuple[str, str, str, str]]]]:
+) -> Tuple[List[PageInfo], Dict[str, List[Tuple[str, str, str, str]]]]:
     """
     Split master markdown into sections at each H1. Insert YAML with breadcrumbs,
     related links, and a next link for normal sections. Collects special entries
     for features and news with optional description and image in a simple YAML
     block directly under the H1.
+
+    Now also parses a `tags:` YAML key which is a comma separated list of words or
+    phrases. Tags are recorded per page for later use and will be rendered at the
+    end of each generated page. For Feature and News pages, related links are populated into the `links:` YAML key so the template renders them in the usual place.
     """
     if not os.path.exists(file_path):
         print(f"File {file_path} does not exist.")
@@ -159,18 +200,10 @@ def create_md_content_from_headings(
 
     h1_pattern = re.compile(r'^\#\s+(.*?)\s*(\{(.+?)\})?\s*$')
 
-    sections: List[Tuple[str, str]] = []
+    pages: List[PageInfo] = []
     special_entries: Dict[str, List[Tuple[str, str, str, str]]] = {"features": [], "news": []}
 
-    current_heading_filename = None
-    current_text: List[str] = []
-
-    def flush():
-        nonlocal current_heading_filename, current_text
-        if current_heading_filename:
-            sections.append((current_heading_filename, '\n\n'.join(current_text)))
-        current_heading_filename = None
-        current_text = []
+    current: PageInfo | None = None
 
     def parse_inline_meta(start_index: int) -> Tuple[int, Dict[str, str]]:
         """Parse inline YAML under a heading."""
@@ -196,27 +229,35 @@ def create_md_content_from_headings(
         line = lines[i].rstrip()
         m = h1_pattern.match(line)
         if m:
-            flush()
+            # Finish previous page
+            if current is not None:
+                pages.append(current)
+                current = None
 
             title_text = m.group(1).strip()
             section = m.group(3).strip() if m.group(3) else None
             sec_lower = section.lower() if section else None
 
             if section:
-                current_heading_filename = f"{slugify(section)}_{slugify(title_text)}.html"
+                filename = f"{slugify(section)}_{slugify(title_text)}.html"
             else:
-                current_heading_filename = slugify(title_text) + '.html'
+                filename = slugify(title_text) + '.html'
 
             i += 1
             next_i, meta = parse_inline_meta(i)
+
             description = meta.get("description") or meta.get("desc") or ""
             image_url = meta.get("image") or meta.get("img") or ""
+            tags_list = parse_tags_field(meta.get("tags", ""))
+            tags_norm = [norm_tag(t) for t in tags_list]
+
             if image_url:
                 image_url = f"img/{image_url}"
 
             if sec_lower in SPECIAL_SECTIONS:
-                special_entries[sec_lower].append((title_text, current_heading_filename, description, image_url))
+                special_entries[sec_lower].append((title_text, filename, description, image_url))
 
+            # Build YAML for this page (without any tag-related content which will be appended in the body)
             yaml_lines: List[str] = []
             yaml_lines.append(f"title: {yaml_quote(title_text)}")
 
@@ -227,7 +268,7 @@ def create_md_content_from_headings(
                     yaml_lines.append("links:")
                     current_idx = None
                     for idx, (url, txt) in enumerate(links):
-                        if url == current_heading_filename:
+                        if url == filename:
                             yaml_lines.append(f"- text: {yaml_quote(txt)}")
                             yaml_lines.append("  current: true")
                             current_idx = idx
@@ -257,12 +298,11 @@ def create_md_content_from_headings(
                     yaml_lines.append(f"- text: {section_name}\n  url: {section_url}")
             yaml_lines.append(f"- text: {title_text}")
 
-            yaml_block = f"---\n" + "\n".join(yaml_lines) + "\n---"
-            current_text = [yaml_block, f"# {title_text}"]
+            body_lines: List[str] = [f"# {title_text}"]
 
             # Add description text under H1 for features
             if sec_lower == "features" and description:
-                current_text.append(f'<p class="lead text-secondary">{html.escape(description)}</p>')
+                body_lines.append(f'<p class="lead text-secondary">{html.escape(description)}</p>')
 
             # If a Feature has an image, show it under the description
             if sec_lower == "features" and image_url:
@@ -272,17 +312,33 @@ def create_md_content_from_headings(
                     f'<img src="{html.escape(image_url, quote=True)}" alt="{alt}" class="img-fluid rounded shadow-sm w-100">'
                     '</figure>'
                 )
-                current_text.append(figure_html)
+                body_lines.append(figure_html)
+
+            current = PageInfo(
+                filename=filename,
+                title=title_text,
+                section=section,
+                sec_lower=sec_lower,
+                tags=tags_list,
+                tags_norm=tags_norm,
+                description=description,
+                image_url=image_url,
+                body_lines=body_lines,
+                yaml_lines=yaml_lines,
+            )
 
             i = next_i
             continue
 
-        if current_heading_filename is not None:
-            current_text.append(lines[i])
+        # Add content lines
+        if current is not None:
+            current.body_lines.append(lines[i])
         i += 1
 
-    flush()
-    return sections, special_entries
+    if current is not None:
+        pages.append(current)
+
+    return pages, special_entries
 
 
 # =======================
@@ -302,11 +358,81 @@ def convert_md_to_html(md_content: str, html_filename: str, template_path: str) 
         check=True
     )
 
+
 def _extract_title_from_md(md_content: str) -> str:
     for line in md_content.splitlines():
         if line.startswith("# "):
             return line[2:].strip()
     return ""
+
+
+def build_related_links(pages: List[PageInfo], for_page: PageInfo, limit: int = 10) -> List[Tuple[str, str]]:
+    """Return up to `limit` related pages based on overlapping tags."""
+    if not for_page.tags_norm:
+        return []
+
+    # Prepare list of candidates excluding self
+    candidates: List[Tuple[int, str, str]] = []  # (-overlap, title_lower, filename)
+    my_tags = set(for_page.tags_norm)
+
+    for p in pages:
+        if p.filename == for_page.filename:
+            continue
+        if not p.tags_norm:
+            continue
+        overlap = len(my_tags.intersection(p.tags_norm))
+        if overlap <= 0:
+            continue
+        candidates.append((-overlap, p.title.lower(), p.filename))
+
+    candidates.sort()
+    out: List[Tuple[str, str]] = []
+    for _, _, fn in candidates[:limit]:
+        # Find title for filename
+        for p in pages:
+            if p.filename == fn:
+                out.append((p.title, p.filename))
+                break
+    return out
+
+
+def build_page_markdown(p: PageInfo, all_pages: List[PageInfo]) -> Tuple[str, str]:
+    """Return (filename, md_content) for a page.
+    Behaviour:
+    - For Features and News, insert tag-derived related links into YAML under `links:` (max 10),
+      so the template renders them where normal article links appear.
+    - For normal articles, keep existing `links:` and `next:` from section navigation unchanged.
+    - Append a plain "Tags: ..." line to the end of the body for display on all pages.
+    """
+    body = list(p.body_lines)
+
+    # Start from YAML lines prepared earlier
+    yaml_lines = list(p.yaml_lines)
+
+    # Only specials get tag-derived links in the YAML `links:` slot
+    if p.sec_lower in SPECIAL_SECTIONS:
+        related = build_related_links(all_pages, p, limit=10)
+        if related:
+            yaml_lines.append("links:")
+            for title, url in related:
+                yaml_lines.append(f"- url: {url}")
+                yaml_lines.append(f"  text: {yaml_quote(title)}")
+
+    yaml_block = "---\n" + "\n".join(yaml_lines) + "\n---"
+
+    # Tags line at the very end for all pages
+    if p.tags:
+        body.append("")
+        body.append('<div class="mt-4 d-flex flex-wrap gap-2" aria-label="Tags">')
+        for tag in p.tags:
+            esc_tag = html.escape(tag, quote=True)
+            body.append(f'<span class="badge rounded-pill bg-light text-secondary border">{esc_tag}</span>')
+        body.append('</div>')
+
+
+    md_content = f"{yaml_block}\n\n" + "\n".join(body)
+    return p.filename, md_content
+
 
 def create_all_topics(
     md_sections: List[Tuple[str, str]],
@@ -346,6 +472,7 @@ def create_all_topics(
     md = f"{yaml_block}\n\n" + "\n".join(body_lines)
     convert_md_to_html(md, "All_topics.html", template_path)
     print("Created HTML file: All_topics.html")
+
 
 def render_feature_cards(items: List[Tuple[str, str, str, str]]) -> str:
     """
@@ -397,6 +524,7 @@ def create_index(latest_features: List[Tuple[str, str, str, str]]) -> None:
     with open('index.html', 'w', encoding='utf-8-sig') as f:
         f.write(out_html)
     print("Created index.html with latest features")
+
 
 def create_special_list_pages(
     kind: str,
@@ -545,15 +673,19 @@ def main():
     master_md = combined_path
 
     grouped_headings, page_to_section, group_names, section_first = parse_headings_and_group(master_md)
-    md_sections, special_entries = create_md_content_from_headings(
+    pages, special_entries = create_md_content_from_headings(
         master_md, grouped_headings, page_to_section, group_names, section_first
     )
+
+    # Build final markdown for each page, now that we have global tag knowledge
+    md_sections: List[Tuple[str, str]] = []
 
     # Track expected outputs so we can delete only orphans at the end
     expected_outputs = set()
 
-    # Create article pages
-    for filename, md_content in md_sections:
+    for p in pages:
+        filename, md_content = build_page_markdown(p, pages)
+        md_sections.append((filename, md_content))
         convert_md_to_html(md_content, filename, template_path)
         expected_outputs.add(filename)
         print(f"Created HTML file: {filename}")
@@ -564,12 +696,12 @@ def main():
 
     # Create special listing pages with H2, optional image, and description
     def _expected_paginated(base_filename: str, total_items: int, page_size: int = 5):
-        pages = (total_items + page_size - 1) // page_size
-        if pages <= 0:
+        pages_cnt = (total_items + page_size - 1) // page_size
+        if pages_cnt <= 0:
             return []
         return [
             f"{base_filename}.html" if p == 0 else f"{base_filename}_{p+1}.html"
-            for p in range(pages)
+            for p in range(pages_cnt)
         ]
 
     feats = special_entries.get("features", [])

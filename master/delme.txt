@@ -1,4 +1,21 @@
-Can you prevent brain aneurysms?
+Please write about the following "" in the following format, using the above document:
+
+
+# Title of article {features}
+---
+description:  [Description of article]
+image: feature_screening.jpg
+---
+## [Subheading usually in the form of question]?
+
+[Some text]
+
+
+## Key takeaways
+- [Add in bullet point form]
+
+
+======
 
 What are the early symptoms of a brain aneurysm?
 

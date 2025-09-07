@@ -2,6 +2,7 @@
 ---
 description: We delve into if brain aneuryms are inevitable or whether you can reduce your chances.
 image: feature_screening.jpg
+tags: Aneurysm
 ---
 
 ## What causes aneurysms?
@@ -50,6 +51,7 @@ Finally, remember that the absolute risk of rupture in the general population is
 ---
 description:  Who should and should not be screened for brain aneurysms, outlining the risk groups, reasons screening is not suitable for everyone, and how the screening process is carried out.
 image: feature_screening.jpg
+tags: Aneurysm
 ---
 ## What is brain aneurysm screening?
 A brain aneurysm is a weak spot in a blood vessel in the brain that can balloon out. Most never cause problems, but if an aneurysm bursts it can cause a serious type of stroke called a subarachnoid haemorrhage (SAH).
@@ -102,7 +104,7 @@ If you are in a higher-risk group, your doctor can talk through whether screenin
 ---
 description: Explains the key symptoms of a brain aneurysm rupture, what unruptured aneurysms can cause, and when to seek urgent medical help.
 image: feature_an_symptoms.jpg
-
+tags: Aneurysm
 ---
 
 ## What is a brain aneurysm?
@@ -133,7 +135,7 @@ Call emergency services immediately if you develop a sudden, extremely severe he
 ---
 description: Covers what it means to have an aneurysm that has not ruptured, the risks involved, how doctors monitor them, and what patients can do to stay safe.
 image: feature.jpg
-
+tags: Aneurysm
 ---
 
 ## What does it mean to have an unruptured aneurysm?
@@ -167,7 +169,7 @@ Your team will focus on blood pressure and other cardiovascular risks. Aspirin h
 ---
 description: Describes the role of lifestyle in preventing aneurysms and bleeds.
 image: feature_health.jpg
-
+tags: Aneurysm
 ---
 
 ## Which risks can lifestyle influence?
@@ -201,7 +203,7 @@ Family history and certain genetic conditions such as autosomal dominant polycys
 ---
 description: Outlines the main treatment approaches for brain aneurysms, comparing coiling, clipping, and newer devices, and explains how doctors decide which option is best.
 image: feature_aneurysm_rx.jpg
-
+tags: Aneurysm
 ---
 
 ## What are the main treatment paths?
