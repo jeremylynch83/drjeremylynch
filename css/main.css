@@ -78,8 +78,6 @@ button:focus-visible,
 .font-serif{ font-family:Georgia,"Times New Roman",Times,serif }
 .object-fit-cover{ object-fit:cover }
 
-/* ===== Layout: main column and media ===== */
-main{ padding-top:var(--navbar-height); max-width:800px; margin:0 auto; }
 
 /* Constrain article media inside the main text column */
 main .col-md-8 :where(img,picture,svg,video,canvas){ max-width:100%; height:auto; }
@@ -455,7 +453,19 @@ select option{ padding:5px; }
 
 @media (min-width: 992px){
   html, body { scroll-padding-top: calc(var(--navbar-height) + 24px); }
-  main { padding-top: calc(var(--navbar-height) + 34px); }
+ main {
+     padding-top: calc(var(--navbar-height) + 40px);
+  width: 100%;
+}
+
+section,
+section.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 }
 
 @media (max-width: 767.98px){
@@ -667,4 +677,34 @@ select option{ padding:5px; }
 
 /* Optional: keep the chevron but mute it slightly */
 /* #faqAccordion .accordion-button::after { opacity: .6; } */
+
+
+/* all sections: constrain contents */
+main > section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 1rem;   /* optional breathing room */
+  padding-right: 1rem;
+}
+
+/* special case: grey background sections */
+section.bg-grey {
+  background-color: rgb(246, 245, 244); /* full-width grey background */
+  max-width: none;           /* let the section itself span 100% */
+  padding: 32px 0;
+}
+
+/* constrain the children inside grey sections */
+section.bg-grey > * {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+#qualifications .small {
+  font-size: 0.75rem;   /* ~12px on a 16px base */
+  line-height: 1.4;     /* keeps it readable */
+}
 
