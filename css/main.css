@@ -23,6 +23,7 @@
   --fs-h4:clamp(1.125rem,1.05rem + 0.5vw,1.375rem);
 
   --navbar-height:72px;
+  --navbar-height-mobile:72px;
   --radius-md:12px;
   --radius-sm:8px;
 
@@ -710,7 +711,6 @@ section.bg-grey > * {
 
 
 @media (max-width: 991.98px){
-  main {
-    padding-top: calc(var(--navbar-height-mobile) + 226px);
-  }
+  html, body { scroll-padding-top: var(--navbar-height-mobile); }
+  main { padding-top: calc(var(--navbar-height-mobile) + 16px); } /* just enough to clear the bar */
 }
