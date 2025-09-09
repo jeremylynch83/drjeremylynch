@@ -708,3 +708,9 @@ section.bg-grey > * {
   line-height: 1.4;     /* keeps it readable */
 }
 
+
+@media (max-width: 991.98px){
+  main {
+    padding-top: calc(var(--navbar-height-mobile) + 226px);
+  }
+}
