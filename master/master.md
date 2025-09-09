@@ -85,7 +85,7 @@ Users are strongly advised to seek advice from a qualified healthcare profession
 
 ## Consultation Fees
 
-The fee for a consultation is £200.
+The fee for an in-person consultation is £250 and for a virtual/telephone consultation it is £150.
 
 This covers a clinic appointment to discuss your condition, review relevant medical information, and provide specialist advice. Please note that this does not include the cost of any investigations, imaging, or procedures, which will be charged separately if required.
 
