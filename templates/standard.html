@@ -166,45 +166,40 @@
         </div>
         $endif$
 
-        <div class="row g-4">
-          <!-- Main Content -->
-          <div class="col-md-8">
-            $body$
-            
-          $if(next)$
-          <hr class="my-4">
-         <p class="text-center">
-  <a href="$next.url$" class="text-decoration-none">Next: $next.text$</a>
-</p>
+<div class="row g-4">
+  <!-- Main Content -->
+  <div class="col-12 $if(links)$col-md-8$endif$">
+    $body$
 
-        $endif$
+    $if(next)$
+    <hr class="my-4">
+    <p class="text-center">
+      <a href="$next.url$" class="text-decoration-none">Next: $next.text$</a>
+    </p>
+    $endif$
+  </div>
 
-          </div>
-          
+  $if(links)$
+  <!-- Article Links -->
+  <aside class="col-md-4 related">
+    <div class="sticky-sidebar">
+      <h4 class="h6 text-uppercase text-muted mb-3">Related Articles</h4>
+      <ul class="list-group list-group-flush text-center">
+        $for(links)$
+        <li class="list-group-item px-0">
+          $if(links.current)$
+            <span class="fw-semibold d-inline-block">$links.text$</span>
+          $else$
+            <a href="$links.url$" class="text-decoration-none d-inline-block">$links.text$</a>
+          $endif$
+        </li>
+        $endfor$
+      </ul>
+    </div>
+  </aside>
+  $endif$
+</div>
 
-
-
-        <!-- Article Links -->
-        $if(links)$
-          <aside class="col-md-4 related">
-            <div class="sticky-sidebar">
-              <h4 class="h6 text-uppercase text-muted mb-3">Related Articles</h4>
-              <ul class="list-group list-group-flush text-center">
-                $for(links)$
-                <li class="list-group-item px-0">
-                  $if(links.current)$
-                    <span class="fw-semibold d-inline-block">$links.text$</span>
-                  $else$
-                    <a href="$links.url$" class="text-decoration-none d-inline-block">$links.text$</a>
-                  $endif$
-                </li>
-                $endfor$
-              </ul>
-            </div>
-          </aside>
-        $endif$
-
-        </div>
       </section>
     </main>
 
