@@ -101,7 +101,7 @@ Patients with private health insurance will usually have the cost of imaging cov
 
 In some cases, an angiogram may be recommended to obtain detailed images of the blood vessels in the brain or spine. This is a specialist procedure carried out in a hospital setting under local anaesthetic, with X-ray guidance.
 
-As this is a more complex investigation, the cost can vary depending on the hospital and specific requirements. 
+As this is a more complex investigation, the cost can vary depending on the hospital and specific requirements.
 
 Patients with private health insurance will usually have the procedure covered by their insurer, subject to the terms of their policy (including any excess or shortfall). Self-paying patients will be provided with an estimate of costs before the procedure is arranged.
 
@@ -124,6 +124,9 @@ If the doctor needs to cancel or reschedule an appointment, all reasonable effor
 By booking an appointment, you acknowledge and agree to these terms.
 
 #  Introduction to brain aneurysms {Aneurysms}
+---
+description: Introduction to brain aneurysms: Overview of what brain aneurysms are, their causes, risks, and who is most affected.
+---
 
 ## What is an aneurysm?
 
@@ -143,8 +146,8 @@ Brain aneurysms are present in about 3% of the population (3 in 100 people). The
 
 1. **Family history of brain aneurysm or subarachnoid haemorrhage (bleeding around the brain)**
 2. **Atherosclerosis**: This is a condition characterised by the buildup of plaque in the arteries. It is associated with an increased risk of brain aneurysms.
-3. **Smoking**: This can result in damage to the blood vessels due to chemicals inhaled. 
-4. **High blood pressure**: This causes greater pressure on the walls of blood vessels. 
+3. **Smoking**: This can result in damage to the blood vessels due to chemicals inhaled.
+4. **High blood pressure**: This causes greater pressure on the walls of blood vessels.
 5. **Female gender**
 6. **increased Age**
 7. **Autosomal Dominant Polycystic Kidney Disease (ADPKD)**: This is a genetic condition leading to the development of multiple cysts in the kidneys. walls o bloodIt is also associated with brain aneurysms.
@@ -162,7 +165,7 @@ Many aneurysms are benign, causing no symptoms and never rupturing. However, som
 * **Family history**: A strong family history of aneurysmal subarachnoid haemorrhage increases risk.
 * **Smoking**: Significantly associated with both aneurysm formation and rupture.
 * **Hypertension**: High blood pressure is a known risk factor.
-* **Age and sex**: Rupture risk increases with age and is more common in females. 
+* **Age and sex**: Rupture risk increases with age and is more common in females.
 * **Aneurysm shape**: Irregular or lobulated shapes are more likely to rupture than smooth, round ones.
 
 
@@ -175,8 +178,11 @@ Many aneurysms are benign, causing no symptoms and never rupturing. However, som
 2. Juvela S. Prevalence of and risk factors for intracranial aneurysms. Lancet Neurol. 2011 Jul;10(7):595-7. doi: 10.1016/S1474-4422(11)70125-9. PMID: 21641283.
 
 #  Symptoms of brain aneurysms {Aneurysms}
+---
+description: Key warning signs and differences between ruptured and unruptured aneurysms.
+---
 
-A brain aneurysm typically doesn't cause symptoms until it's very large or it ruptures. 
+A brain aneurysm typically doesn't cause symptoms until it's very large or it ruptures.
 
 ## Ruptured Brain Aneurysm
 
@@ -194,6 +200,9 @@ Most aneurysms do not cause symptoms until they rupture. In rare instances unrup
 * Facial numbness.
 
 #  Diagnosis of brain aneurysms {Aneurysms}
+---
+description: Medical imaging and tests used to identify brain aneurysms and related complications.
+---
 
 ## Computerised Tomography (CT Scan)
 
@@ -220,6 +229,9 @@ A lumbar puncture, often known as a spinal tap, is a medical procedure where a n
 In the context of aneurysms, it is usually performed when doctors suspect an aneurysm as having ruptured but other imaging tests, such as a CT scan, aren't conclusive. This could be because the bleed was minimal, or the blood has already dispersed. During a lumbar puncture, the collected CSF is meticulously examined for the presence of blood or xanthochromia. The latter is a yellowish or pinkish discoloration that results from the breakdown of red blood cells in the CSF — both of these signs point towards a recent subarachnoid haemorrhage.
 
 #  Ruptured aneurysms {Aneurysms}
+---
+description: Consequences, treatments, and long-term outcomes following aneurysm rupture.
+---
 
 ## What are the consequences of aneurysm rupture?
 
@@ -257,12 +269,15 @@ It is possible to make a full recovery from aneurysm rupture. Unfortunately, som
 
 
 #  Unruptured aneurysms {Aneurysms}
+---
+description: When treatment is necessary, factors influencing risk, and management options.
+---
 
 ## I have an aneurysm. Does it need to be treated?
 
 Not necessarily.
 
-Aneurysms can be dangerous but some require no treatment at all. The decision to treat is often a complex one and requires discussion with an experienced medical professional. Any medical treatment involves a degree of risk, no matter how small. It is probable that for certain low-risk aneurysms the risk of the aneurysm is outweighed by the risk of the treatment. 
+Aneurysms can be dangerous but some require no treatment at all. The decision to treat is often a complex one and requires discussion with an experienced medical professional. Any medical treatment involves a degree of risk, no matter how small. It is probable that for certain low-risk aneurysms the risk of the aneurysm is outweighed by the risk of the treatment.
 
 For incidentally discovered unruptured brain aneurysms there are three broad management strategies:
 
@@ -276,7 +291,7 @@ There are no medications that can be given to shrink aneurysms, however stopping
 
 * Symptoms: If the aneurysm is causing symptoms such as double vision or headaches. This is uncommon, however, as most aneurysms do not cause symptoms.
 * Location: Aneurysms located in certain parts of the brain are more dangerous than others. This includes aneurysms within the ‘posterior' circulation, which includes the basilar, vertebral, and posterior cerebral arteries.
-* Size: Larger aneurysms are more likely to rupture. This rule does not hold universally true, however, as it is not uncommon to see ruptured smaller aneurysms. Conversely large aneurysms in certain locations (such as cavernous aneurysms) are not thought to be very risky. 
+* Size: Larger aneurysms are more likely to rupture. This rule does not hold universally true, however, as it is not uncommon to see ruptured smaller aneurysms. Conversely large aneurysms in certain locations (such as cavernous aneurysms) are not thought to be very risky.
 * Shape: Aneurysms with an irregular shape have been associated with increased rupture rates.
 * Previous aneurysm rupture: If the aneurysm has previously ruptured, or the patient has other brain aneurysms which have bled before, then treatment is more likely to be recommended.
 * High blood pressure: Blood pressure should be controlled in patients with aneurysms as it predisposes aneurysms to rupture.
@@ -284,13 +299,16 @@ There are no medications that can be given to shrink aneurysms, however stopping
 
 
 # Endovascular treatment of aneurysms {Aneurysms}
+---
+description: Minimally invasive procedures including coiling, stent-assisted coiling, flow diversion, and intrasaccular devices.
+---
 
-The development of endovascular techniques has completely revolutionised the treatment of brain aneurysms increasing the safety of the procedure and reducing the invasiveness and recovery time. The majority of brain aneurysms are now treated using endovascular techniques. There are very few aneurysms that cannot now be treated endovascularly. 
+The development of endovascular techniques has completely revolutionised the treatment of brain aneurysms increasing the safety of the procedure and reducing the invasiveness and recovery time. The majority of brain aneurysms are now treated using endovascular techniques. There are very few aneurysms that cannot now be treated endovascularly.
 
 
 ## What does endovascular treatment involve?
 
-Rather than requiring a large incision and direct surgical access to the aneurysm, endovascular treatment achieves its goal by guiding small, specialized devices through the patient's blood vessels (the body’s own natural highways) to the site of the aneurysm. Embolisation means to promote clot formation within the aneurysm, commonly by inserting devices such as coils into the aneurysm or placing stents acoss its neck. 
+Rather than requiring a large incision and direct surgical access to the aneurysm, endovascular treatment achieves its goal by guiding small, specialized devices through the patient's blood vessels (the body’s own natural highways) to the site of the aneurysm. Embolisation means to promote clot formation within the aneurysm, commonly by inserting devices such as coils into the aneurysm or placing stents acoss its neck.
 
 ## How does it work?
 
@@ -299,7 +317,7 @@ All endovascular treatments aim to initiate the body’s natural healing process
 ## What are the types of endovascular treatment?
 
 
-1. Coiling (Endovascular Coiling or Coil Embolization). This involves small, soft platinum coils being threaded through a catheter and placed directly into the aneurysm. 
+1. Coiling (Endovascular Coiling or Coil Embolization). This involves small, soft platinum coils being threaded through a catheter and placed directly into the aneurysm.
 2. Stent-Assisted Coiling. Stents are  small, tube-shaped devices that are used in conjunction with coils to provide support to the weakened arterial wall. They also help keep the coils within the aneurysm sac. The stent remains in the artery permanently.
 3. Flow Diversion. This treatment employs a device called a flow diverter, similar to a stent but with denser walls. It's placed in the artery carrying blood to the aneurysm. Instead of filling the aneurysm with coils, the flow diverter redirects blood flow away from the aneurysm. This reduced blood flow into the aneurysm promotes clotting within the aneurysm, leading to its closure. Coils are not mandatory but are sometimes also placed.
 4. Intrasaccular devices such as the Woven Endobridge (WEB). These are placed directly into the aneurysm sac via a catheter, similar to coiling, but are able to treat aneurysms that would otherwise require stents.
@@ -326,13 +344,13 @@ Stent-assisted coiling involves the insertion of a small, mesh-like tube called 
 
 Similar to coil embolisation, a tiny catheter is navigated through the blood vessels, starting from an access point typically in the wrist or groin, all the way up to the site of the aneurysm in the brain. The stent is then placed across the opening of the aneurysm, acting like a small scaffold that provides support to the blood vessel wall, which can be weakened due to the aneurysm.
 
-Once the stent is in place, small coils are threaded through the catheter and placed into the aneurysm. The coils promote blood clotting, thereby filling the aneurysm and preventing it from rupturing. The stent helps to hold these coils in place and prevents them from slipping into the normal blood vessel. It's particularly useful in treating wide-neck aneurysms, where the risk of coils slipping into the parent vessel (the blood vessel supplying the aneurysm) is higher. The stent also typically increases the durability of the procedure, reducing the risk of recurrence. 
+Once the stent is in place, small coils are threaded through the catheter and placed into the aneurysm. The coils promote blood clotting, thereby filling the aneurysm and preventing it from rupturing. The stent helps to hold these coils in place and prevents them from slipping into the normal blood vessel. It's particularly useful in treating wide-neck aneurysms, where the risk of coils slipping into the parent vessel (the blood vessel supplying the aneurysm) is higher. The stent also typically increases the durability of the procedure, reducing the risk of recurrence.
 
 
 
 ![Illustration of aneurysm coiling.](img/stent-coiling.svg)
 
-After the procedure, you will likely need to take a course of antiplatelet medications such as clopidogrel, in addition to aspirin. These help to prevent the formation of blood clots around the stent. This is a routine precaution and an important part of ensuring the success of the procedure. Antiplatelet medications are given in low doses and make the platelets in your blood less sticky, reducing the chance that a clot will form. These are often stopped at 6 months, with aspirin continuing for 1-2 years. 
+After the procedure, you will likely need to take a course of antiplatelet medications such as clopidogrel, in addition to aspirin. These help to prevent the formation of blood clots around the stent. This is a routine precaution and an important part of ensuring the success of the procedure. Antiplatelet medications are given in low doses and make the platelets in your blood less sticky, reducing the chance that a clot will form. These are often stopped at 6 months, with aspirin continuing for 1-2 years.
 
 ![Real case of stent & coil embolisation of a cerebral aneurysm. (A) An aneurysm is seen at the tip of the basilar artery. (B) A stent is deployed across the neck of the aneurysm, and a single coil has been placed in the aneurysm (C) Angiography during placement of the stent. (D) The aneurysm has been filled with coils. ](img/stent_coiling.png){#fig:aneurysm_angio}
 
@@ -367,13 +385,13 @@ A benefit of the WEB device is related to post-procedure medications. With stent
 
 ## Is endovascular treatment durable?
 
-Endovascular treatment is highly effective at permanently eliminating the aneurysm and providing lifelong protection from rupture. For this reason it is now the most common method to treat brain aneurysms worldwide and has been employed to save countless lives. 
+Endovascular treatment is highly effective at permanently eliminating the aneurysm and providing lifelong protection from rupture. For this reason it is now the most common method to treat brain aneurysms worldwide and has been employed to save countless lives.
 
 In preventing adverse consequences such as disability or death endovascular treatment is comparable surgical clipping. It is the recommended treatment in ruptured aneurysms as studies have shown that endovascular treatment is safer.
 
 However whilst very high, as with every medical treatment, including surgical clipping, the success rate is not 100%. In a large study at least one further treatment was necessary in 4.9% of patients to eliminate the risk from the aneurysm. For this reason, endovascularly treated aneurysms are  monitored with follow-up scans for a period of time to ensure that the aneurysm is eliminated. If a further treatment is required this can normally be performed safely in a planned elective setting also with an endovascular procedure.
 
-The key benefit arises from the low invasiveness of the procedure, reducing harm incurred during the treatment itself. 
+The key benefit arises from the low invasiveness of the procedure, reducing harm incurred during the treatment itself.
 
 
 ## What are the risks of endovascular treatment?
@@ -385,7 +403,9 @@ Recovery is usually relatively rapid after endovascular treatment. Patients typi
 Serious but rare risks include a 5% chance of stroke from the procedure due to aneurysm rupture or blood vessel occlusion, causing potential limb weakness, speech or vision difficulty which could be temporary or permanent. A very rare 1% risk of a severe brain injury leading to death exists. There is a small chance of vessel damage in the groin or wrist from the catheter entry necessitating surgery.
 
 # Surgical treatment of aneurysms {Aneurysms}
-
+---
+description: Explanation of surgical clipping, risks, recovery, and when it is preferred.
+---
 
 Surgical clipping is an established but more invasive method of treatment that still has a role in managing certain cerebral aneurysms. The procedure involves making an opening in the skull (a procedure called a craniotomy) to locate the aneurysm. With the help of a microscope, the surgeon places the clip on the aneurysm's neck, sealing it off from the rest of the blood vessel.
 
@@ -404,6 +424,9 @@ However, in skilled hands, surgical clipping can provide a solution for many typ
 1. Rizvi A, Seyedsaadat SM, Alzuabi M, Murad MH, Kadirvel R, Brinjikji W, Kallmes DF. Long-Term Rupture Risk in Patients with Unruptured Intracranial Aneurysms Treated with Endovascular Therapy: A Systematic Review and Meta-Analysis. AJNR Am J Neuroradiol. 2020 Jun;41(6):1043-1048. doi: 10.3174/ajnr.A6568. Epub 2020 May 28. PMID: 32467181; PMCID: PMC7342755.
 
 #  Further information {Aneurysms}
+---
+description: Additional resources and references for patients and professionals.
+---
 
 ## United Kingdom
 
@@ -427,13 +450,13 @@ However, in skilled hands, surgical clipping can provide a solution for many typ
 #  Introduction to AVMs {AVM}
 
 
-A brain arteriovenous malformation (AVM) is a complex, abnormal network of blood vessels in the brain. In a healthy brain, blood circulates from arteries to veins via tiny vessels called capillaries. The capillaries allow for the exchange of oxygen and nutrients from the blood to the brain tissue, and the removal of waste products. However, in a brain AVM, there is a direct connections between the arteries and veins, bypassing these capillaries. 
+A brain arteriovenous malformation (AVM) is a complex, abnormal network of blood vessels in the brain. In a healthy brain, blood circulates from arteries to veins via tiny vessels called capillaries. The capillaries allow for the exchange of oxygen and nutrients from the blood to the brain tissue, and the removal of waste products. However, in a brain AVM, there is a direct connections between the arteries and veins, bypassing these capillaries.
 
 ![Arteriovenous malformations.](img/avm.svg)
 
 Whilst AVMs may lead to health problems, many do not cause any problems and can be left alone without treatment.
 
-The most frequent problems are headaches and seizures. Headaches can vary in intensity and frequency, potentially mimicking migraines in some instances. Seizures may manifest in various ways, ranging from changes in a person's behavior or consciousness to involuntary movements or loss of control over movement. 
+The most frequent problems are headaches and seizures. Headaches can vary in intensity and frequency, potentially mimicking migraines in some instances. Seizures may manifest in various ways, ranging from changes in a person's behavior or consciousness to involuntary movements or loss of control over movement.
 
 In serious cases, the abnormal blood vessels in an AVM may rupture, causing bleeding within the brain (intracranial haemorrhage). Bleeding from a ruptured AVM can cause a sudden, severe headache, nausea, vomiting, incontinence, blurred vision, and even loss of consciousness. Depending on the location of the bleed, impairments caused by local brain tissue damage are also possible, including seizure, weakness on one side of the body (hemiparesis), a loss of touch sensation on one side of the body, and deficits in language processing (aphasia).
 
@@ -1080,13 +1103,13 @@ Cerebral angiograms involve small doses of radiation, but usually directed towar
 
 ## Are blood tests necessary?
 
-At least a few days before the procedure you may have routine blood tests performed, although this is not always necessary if you are in good health otherwise. 
+At least a few days before the procedure you may have routine blood tests performed, although this is not always necessary if you are in good health otherwise.
 
 # Risks  {Angiography}
 
 Any medical procedure can involve risks. It is first important to understand that a cerebral angiogram is recommended when the risks involved in not undertaking the test (for example, non-diagnosis of a serious disease) outweigh the risks of the procedure.
 
-The overwhelming majority of patients undergoing cerebral angiography do not have a complication. However, if a complication does occur, it can be significant. 
+The overwhelming majority of patients undergoing cerebral angiography do not have a complication. However, if a complication does occur, it can be significant.
 
 ## Stroke
 
@@ -1098,7 +1121,7 @@ The second main risk is of damage to the artery at the access site. It is common
 
 ## Bleeding from the access site
 
-Another rare complication is blockage of the artery at the access site, resulting in not enough blood getting to the arm or leg. This condition may require surgery to remedy. 
+Another rare complication is blockage of the artery at the access site, resulting in not enough blood getting to the arm or leg. This condition may require surgery to remedy.
 
 # During a Cerebral Angiogram  {Angiography}
 
@@ -1229,9 +1252,9 @@ The spinal cord is divided into regions that correspond with the spine: cervical
 
 The spinal cord is supplied by a network of arteries:
 
-* **Anterior spinal artery** – Runs along the front of the cord, supplying the majority of the spinal cord tissue. 
+* **Anterior spinal artery** – Runs along the front of the cord, supplying the majority of the spinal cord tissue.
 * **Posterior spinal arteries** – Run along the back of the cord.
-* **Radicular and segmental arteries** – Branches from larger vessels (such as the aorta) that reinforce the spinal circulation at different levels. 
+* **Radicular and segmental arteries** – Branches from larger vessels (such as the aorta) that reinforce the spinal circulation at different levels.
 
 Because the spinal cord relies on this delicate blood supply, any blockage or bleed can cause serious neurological problems, such as weakness, numbness, or loss of bladder and bowel control.
 
@@ -1666,11 +1689,11 @@ The hospital was founded by Dr Arthur Levin and originally commissioned by Briti
 
 # Kings College Hospital {Locations}
 
-King’s College Hospital in Denmark Hill, London, is a major NHS teaching hospital and one of London’s key adult and children Major Trauma Centres. It serves local areas and acts as a tertiary referral centre for much of southern England. The hospital is a cornerstone of King’s Health Partners and closely affiliated with King’s College London, offering a broad spectrum of specialist services, including neurosciences and neurosurgery 
+King’s College Hospital in Denmark Hill, London, is a major NHS teaching hospital and one of London’s key adult and children Major Trauma Centres. It serves local areas and acts as a tertiary referral centre for much of southern England. The hospital is a cornerstone of King’s Health Partners and closely affiliated with King’s College London, offering a broad spectrum of specialist services, including neurosciences and neurosurgery
 
-the interventional Neuroradiology at King’s treats complex vascular conditions of the head, neck, brain, and spine using image-guided techniques. These include treating cerebral aneurysm, retrieving clots in stroke patients via mechanical thrombectomy; embolising brain, head and neck tumours; managing arteriovenous malformations and fistulas; treating carotid artery and intracranial stenoses; placing venous stents for symptom relief; and addressing subdural haemorrhage and nosebleeds using embolisation. The service also performs critical diagnostic procedures, such as cerebral angiography, myelography, lumbar puncture, amytal testing, and test occlusion. 
+the interventional Neuroradiology at King’s treats complex vascular conditions of the head, neck, brain, and spine using image-guided techniques. These include treating cerebral aneurysm, retrieving clots in stroke patients via mechanical thrombectomy; embolising brain, head and neck tumours; managing arteriovenous malformations and fistulas; treating carotid artery and intracranial stenoses; placing venous stents for symptom relief; and addressing subdural haemorrhage and nosebleeds using embolisation. The service also performs critical diagnostic procedures, such as cerebral angiography, myelography, lumbar puncture, amytal testing, and test occlusion.
 
-As one of the UK’s most established interventional neuroradiology programmes, King’s handles substantial caseloads—performing approximately 150–200 mechanical thrombectomies and a similar number of aneurysm treatments each year—and contributes actively to research and clinical trials that shape neurovascular practice globally. The service is supported by a multidisciplinary infrastructure, including a modern biplane angiography suite, and collaborates closely with neurosurgeons, neurologists, stroke physicians, intensive care teams, anaesthetists, and specialist nurses to ensure comprehensive, patient-centred care 
+As one of the UK’s most established interventional neuroradiology programmes, King’s handles substantial caseloads—performing approximately 150–200 mechanical thrombectomies and a similar number of aneurysm treatments each year—and contributes actively to research and clinical trials that shape neurovascular practice globally. The service is supported by a multidisciplinary infrastructure, including a modern biplane angiography suite, and collaborates closely with neurosurgeons, neurologists, stroke physicians, intensive care teams, anaesthetists, and specialist nurses to ensure comprehensive, patient-centred care
 
 # Queens Hospital in Romford {Locations}
 
@@ -1680,5 +1703,4 @@ It features an emergency department, hyper-acute stroke unit, specialist neurosc
 
 Within its neurosurgery division, Queen’s offers a comprehensive range of adult treatments for brain, spine, and peripheral nerve disorders. This includes specialist programmes for brain tumours, cerebrovascular diseases, spinal conditions, functional neurosurgery, and peripheral nerve issues, supported by a dedicated neurosurgical ward, operating theatres, and a neuro-intensive care unit. The hospital functions as the regional neurosurgical centre for Essex and surrounding areas, providing training for junior surgeons and engaging in clinical trials and research collaborations.
 
-The vascular neurosurgery and interventional neuroradiology team treat complex cerebrovascular conditions such as aneurysms, arteriovenous malformations (AVMs), subarachnoid haemorrhages, arteriovenous fistulas, cavernous malformations, intracerebral haemorrhage, and other vascular disorders of the brain and spinal cord. 
-
+The vascular neurosurgery and interventional neuroradiology team treat complex cerebrovascular conditions such as aneurysms, arteriovenous malformations (AVMs), subarachnoid haemorrhages, arteriovenous fistulas, cavernous malformations, intracerebral haemorrhage, and other vascular disorders of the brain and spinal cord.

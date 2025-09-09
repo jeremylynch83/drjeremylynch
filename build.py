@@ -17,6 +17,24 @@ SPECIAL_SECTIONS = {"features", "news"}
 # Utilities
 # =======================
 
+def _ensure_base_url(url: str) -> str:
+    """Normalise base URL to https://.../ form."""
+    if not url.startswith(("http://", "https://")):
+        url = "https://" + url
+    if not url.endswith("/"):
+        url += "/"
+    return url
+
+BASE_URL = _ensure_base_url(SITE_BASE_URL)
+
+def abs_url(path: str) -> str:
+    """Return absolute URL for path or passthrough if already absolute."""
+    if not path:
+        return ""
+    if path.startswith(("http://", "https://")):
+        return path
+    return BASE_URL + path.lstrip("/")
+
 def slugify(text: str) -> str:
     """Make a safe filename slug from text."""
     text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode()
@@ -29,7 +47,6 @@ def yaml_quote(s: str) -> str:
     """Quote a string safely for simple YAML metadata usage."""
     return '"' + s.replace('"', '\\"') + '"'
 
-
 def display_section_name(section: str) -> str:
     """Pretty display name for a section label."""
     if section.lower() == "features":
@@ -38,13 +55,11 @@ def display_section_name(section: str) -> str:
         return "News"
     return section
 
-
 def parse_tags_field(tags_value: str) -> List[str]:
     """Parse a comma separated list of tags into a clean list preserving order."""
     if not tags_value:
         return []
     parts = [t.strip() for t in tags_value.split(',')]
-    # Drop empties and de-duplicate while preserving order
     seen = set()
     out: List[str] = []
     for p in parts:
@@ -57,21 +72,15 @@ def parse_tags_field(tags_value: str) -> List[str]:
         out.append(p)
     return out
 
-
 def norm_tag(tag: str) -> str:
     return unicodedata.normalize('NFKC', tag).strip().lower()
-
 
 def create_sitemap(base_url: str) -> None:
     """
     Create sitemap.xml for all generated .html files in the current directory.
     Uses file modification time for <lastmod>.
     """
-    # Ensure scheme and trailing slash
-    if not base_url.startswith(("http://", "https://")):
-        base_url = "https://" + base_url
-    if not base_url.endswith('/'):
-        base_url += '/'
+    base_url = _ensure_base_url(base_url)
 
     html_files = [f for f in glob.glob("*.html")]
 
@@ -140,17 +149,12 @@ def parse_headings_and_group(file_path: str):
         sec_lower = section.lower()
         link = f"{slugify(section)}_{slugify(text)}.html"
 
-        # Map page to section
         page_to_section[link] = section
-
-        # Display names
         group_names.setdefault(section, display_section_name(section))
 
-        # Special sections do not get related link groups
         if sec_lower not in SPECIAL_SECTIONS:
             grouped_headings.setdefault(section, []).append((link, text))
 
-        # Section breadcrumb target
         if section not in section_first:
             if sec_lower == "features":
                 section_first[section] = "Features.html"
@@ -173,7 +177,6 @@ class PageInfo:
             setattr(self, k, v)
 
 
-
 def create_md_content_from_headings(
     file_path: str,
     grouped_headings: Dict[str, List[Tuple[str, str]]],
@@ -183,13 +186,9 @@ def create_md_content_from_headings(
 ) -> Tuple[List[PageInfo], Dict[str, List[Tuple[str, str, str, str]]]]:
     """
     Split master markdown into sections at each H1. Insert YAML with breadcrumbs,
-    related links, and a next link for normal sections. Collects special entries
-    for features and news with optional description and image in a simple YAML
-    block directly under the H1.
-
-    Now also parses a `tags:` YAML key which is a comma separated list of words or
-    phrases. Tags are recorded per page for later use and will be rendered at the
-    end of each generated page. For Feature and News pages, related links are populated into the `links:` YAML key so the template renders them in the usual place.
+    related links, and a next link for normal sections. Collect special entries
+    for features and news with optional description and image from inline YAML.
+    Also parse optional tags for later SEO keywords and related links.
     """
     if not os.path.exists(file_path):
         print(f"File {file_path} does not exist.")
@@ -229,7 +228,6 @@ def create_md_content_from_headings(
         line = lines[i].rstrip()
         m = h1_pattern.match(line)
         if m:
-            # Finish previous page
             if current is not None:
                 pages.append(current)
                 current = None
@@ -252,12 +250,11 @@ def create_md_content_from_headings(
             tags_norm = [norm_tag(t) for t in tags_list]
 
             if image_url:
-                image_url = f"img/{image_url}"
+                image_url = f"img/{image_url}" if not image_url.startswith(("http://", "https://", "img/")) else image_url
 
             if sec_lower in SPECIAL_SECTIONS:
                 special_entries[sec_lower].append((title_text, filename, description, image_url))
 
-            # Build YAML for this page (without any tag-related content which will be appended in the body)
             yaml_lines: List[str] = []
             yaml_lines.append(f"title: {yaml_quote(title_text)}")
 
@@ -276,7 +273,6 @@ def create_md_content_from_headings(
                             yaml_lines.append(f"- url: {url}")
                             yaml_lines.append(f"  text: {yaml_quote(txt)}")
 
-                    # Next mapping except for the last item in the section
                     if current_idx is not None and current_idx < len(links) - 1:
                         next_url, next_txt = links[current_idx + 1]
                         yaml_lines.append("next:")
@@ -300,11 +296,9 @@ def create_md_content_from_headings(
 
             body_lines: List[str] = [f"# {title_text}"]
 
-            # Add description text under H1 for features
             if sec_lower == "features" and description:
                 body_lines.append(f'<p class="lead text-secondary">{html.escape(description)}</p>')
 
-            # If a Feature has an image, show it under the description
             if sec_lower == "features" and image_url:
                 alt = html.escape(title_text, quote=True)
                 figure_html = (
@@ -330,7 +324,6 @@ def create_md_content_from_headings(
             i = next_i
             continue
 
-        # Add content lines
         if current is not None:
             current.body_lines.append(lines[i])
         i += 1
@@ -358,20 +351,17 @@ def convert_md_to_html(md_content: str, html_filename: str, template_path: str) 
         check=True
     )
 
-
 def _extract_title_from_md(md_content: str) -> str:
     for line in md_content.splitlines():
         if line.startswith("# "):
             return line[2:].strip()
     return ""
 
-
 def build_related_links(pages: List[PageInfo], for_page: PageInfo, limit: int = 10) -> List[Tuple[str, str]]:
     """Return up to `limit` related pages based on overlapping tags."""
     if not for_page.tags_norm:
         return []
 
-    # Prepare list of candidates excluding self
     candidates: List[Tuple[int, str, str]] = []  # (-overlap, title_lower, filename)
     my_tags = set(for_page.tags_norm)
 
@@ -388,28 +378,50 @@ def build_related_links(pages: List[PageInfo], for_page: PageInfo, limit: int = 
     candidates.sort()
     out: List[Tuple[str, str]] = []
     for _, _, fn in candidates[:limit]:
-        # Find title for filename
         for p in pages:
             if p.filename == fn:
                 out.append((p.title, p.filename))
                 break
     return out
 
+def _seo_yaml_for_page(p: PageInfo) -> List[str]:
+    """Add SEO-related YAML fields for article-like pages."""
+    seo: List[str] = []
+    # Always set canonical
+    seo.append(f"canonical: {yaml_quote(abs_url(p.filename))}")
+    # Optional description
+    if p.description:
+        seo.append(f'description: {yaml_quote(p.description)}')
+    # Optional absolute image URL
+    if p.image_url:
+        seo.append(f'image: {yaml_quote(abs_url(p.image_url))}')
+    # Keywords from tags
+    if p.tags:
+        keywords = ", ".join(p.tags)
+        seo.append(f'keywords: {yaml_quote(keywords)}')
+    # Types for templates
+    if p.sec_lower == "news":
+        seo.append('og_type: "article"')
+        seo.append('schema_type: "NewsArticle"')
+    else:
+        seo.append('og_type: "article"')
+        seo.append('schema_type: "Article"')
+    return seo
 
 def build_page_markdown(p: PageInfo, all_pages: List[PageInfo]) -> Tuple[str, str]:
-    """Return (filename, md_content) for a page.
-    Behaviour:
-    - For Features and News, insert tag-derived related links into YAML under `links:` (max 10),
-      so the template renders them where normal article links appear.
-    - For normal articles, keep existing `links:` and `next:` from section navigation unchanged.
-    - Append a plain "Tags: ..." line to the end of the body for display on all pages.
+    """
+    Return (filename, md_content) for a page.
+    For Features and News, insert tag-derived related links into YAML under `links:` (max 10).
+    Append SEO fields: title, canonical, optional description, image, keywords, types.
+    Append visual tag badges to body.
     """
     body = list(p.body_lines)
-
-    # Start from YAML lines prepared earlier
     yaml_lines = list(p.yaml_lines)
 
-    # Only specials get tag-derived links in the YAML `links:` slot
+    # SEO fields
+    yaml_lines += _seo_yaml_for_page(p)
+
+    # Only specials get tag-derived links in YAML `links:`
     if p.sec_lower in SPECIAL_SECTIONS:
         related = build_related_links(all_pages, p, limit=10)
         if related:
@@ -420,7 +432,6 @@ def build_page_markdown(p: PageInfo, all_pages: List[PageInfo]) -> Tuple[str, st
 
     yaml_block = "---\n" + "\n".join(yaml_lines) + "\n---"
 
-    # Tags line at the very end for all pages
     if p.tags:
         body.append("")
         body.append('<div class="mt-4 d-flex flex-wrap gap-2" aria-label="Tags">')
@@ -429,10 +440,8 @@ def build_page_markdown(p: PageInfo, all_pages: List[PageInfo]) -> Tuple[str, st
             body.append(f'<span class="badge rounded-pill bg-light text-secondary border">{esc_tag}</span>')
         body.append('</div>')
 
-
     md_content = f"{yaml_block}\n\n" + "\n".join(body)
     return p.filename, md_content
-
 
 def create_all_topics(
     md_sections: List[Tuple[str, str]],
@@ -452,14 +461,17 @@ def create_all_topics(
 
     sorted_sections = sorted(section_pages.keys(), key=lambda s: s.lower())
 
-    yaml_block = (
-        "---\n"
-        f"title: {yaml_quote('All topics')}\n"
-        "breadcrumbs:\n"
-        "- text: Home\n  url: index.html\n"
-        "- text: All topics\n"
-        "---"
-    )
+    page_title = "All topics"
+    yaml_parts = [
+        f"title: {yaml_quote(page_title)}",
+        f"canonical: {yaml_quote(abs_url('All_topics.html'))}",
+        'og_type: "website"',
+        'schema_type: "WebPage"',
+        "breadcrumbs:",
+        "- text: Home\n  url: index.html",
+        "- text: All topics",
+    ]
+    yaml_block = "---\n" + "\n".join(yaml_parts) + "\n---"
 
     body_lines = ["# All topics", ""]
     for sec in sorted_sections:
@@ -472,7 +484,6 @@ def create_all_topics(
     md = f"{yaml_block}\n\n" + "\n".join(body_lines)
     convert_md_to_html(md, "All_topics.html", template_path)
     print("Created HTML file: All_topics.html")
-
 
 def render_feature_cards(items: List[Tuple[str, str, str, str]]) -> str:
     """
@@ -506,12 +517,11 @@ def render_feature_cards(items: List[Tuple[str, str, str, str]]) -> str:
         out.append('</div></article>')
     return "\n".join(out)
 
-
 def create_index(latest_features: List[Tuple[str, str, str, str]]) -> None:
     """
     Build index.html from templates/index_pre.html, inserting:
-      - $latest_features$  replaced with rendered latest features
-      - $footer$           replaced with templates/footer.html
+      - $latest_features$ replaced with rendered latest features
+      - $footer$          replaced with templates/footer.html
     """
     with open('templates/index_pre.html', 'r', encoding='utf-8-sig') as f:
         index_content = f.read()
@@ -525,7 +535,6 @@ def create_index(latest_features: List[Tuple[str, str, str, str]]) -> None:
         f.write(out_html)
     print("Created index.html with latest features")
 
-
 def create_special_list_pages(
     kind: str,
     items: List[Tuple[str, str, str, str]],
@@ -536,11 +545,11 @@ def create_special_list_pages(
     Build paginated listing pages for Features or News.
     Every item renders as a hero-style row with optional image.
     For Features, reverse the items so the last item in MD appears first.
+    Adds canonical, og_type and schema_type for SEO.
     """
     if not items:
         return
 
-    # Reverse Features ordering
     if kind == "features":
         items = list(reversed(items))
 
@@ -566,19 +575,20 @@ def create_special_list_pages(
         html_name = page_filename(p)
         title_text = base_title if p == 0 else f"{base_title} - Page {p+1}"
 
-        yaml_block = (
-            "---\n"
-            f"title: {yaml_quote(title_text)}\n"
-            "breadcrumbs:\n"
-            "- text: Home\n  url: index.html\n"
-            f"- text: {base_title}\n"
-            "---"
-        )
+        yaml_lines = [
+            f"title: {yaml_quote(title_text)}",
+            f"canonical: {yaml_quote(abs_url(html_name))}",
+            'og_type: "website"',
+            'schema_type: "WebPage"',
+            "breadcrumbs:",
+            "- text: Home\n  url: index.html",
+            f"- text: {base_title}",
+        ]
+        yaml_block = "---\n" + "\n".join(yaml_lines) + "\n---"
 
         b: List[str] = []
         b.append(f'<p class="text-uppercase text-secondary fw-semibold small mb-2">{esc(base_title)}</p>')
 
-        # Items: treat every item as a hero row
         for t, fn, desc, img in page_items:
             b.append('<article class="row g-4 align-items-center mb-4 pb-3 border-bottom">')
 
@@ -598,7 +608,6 @@ def create_special_list_pages(
                 b.append(f'<p class="text-secondary mb-0 small">{esc(desc)}</p>')
             b.append('</div></article>')
 
-        # Pagination
         if pages > 1:
             b.append(f'<nav aria-label="{esc(base_title)} pagination" class="mt-4">')
             b.append('<ul class="pagination">')
@@ -645,7 +654,6 @@ def create_special_list_pages(
 
 def main():
     template_path = "templates/standard.html"
-    # No up-front deletion of all HTML files
 
     md_dir = "master"
     md_files = sorted(glob.glob(os.path.join(md_dir, "*.md")))
@@ -677,10 +685,7 @@ def main():
         master_md, grouped_headings, page_to_section, group_names, section_first
     )
 
-    # Build final markdown for each page, now that we have global tag knowledge
     md_sections: List[Tuple[str, str]] = []
-
-    # Track expected outputs so we can delete only orphans at the end
     expected_outputs = set()
 
     for p in pages:
@@ -690,11 +695,9 @@ def main():
         expected_outputs.add(filename)
         print(f"Created HTML file: {filename}")
 
-    # Create All topics
     create_all_topics(md_sections, page_to_section, group_names, section_first, template_path)
     expected_outputs.add("All_topics.html")
 
-    # Create special listing pages with H2, optional image, and description
     def _expected_paginated(base_filename: str, total_items: int, page_size: int = 5):
         pages_cnt = (total_items + page_size - 1) // page_size
         if pages_cnt <= 0:
@@ -713,16 +716,13 @@ def main():
     create_special_list_pages("news", news_items, template_path, page_size=5)
     expected_outputs.update(_expected_paginated("News", len(news_items), page_size=5))
 
-    # Build index.html with latest three features
     latest_features = list(reversed(feats))[:3] if feats else []
     create_index(latest_features)
     expected_outputs.add("index.html")
 
-    # Build sitemap.xml
-    base_url = SITE_BASE_URL.rstrip('/') + '/'
+    base_url = BASE_URL
     create_sitemap(base_url)
 
-    # Delete orphaned HTML files left from previous runs
     current_html = set(glob.glob("*.html"))
     orphans = sorted(current_html - expected_outputs)
     for fn in orphans:
