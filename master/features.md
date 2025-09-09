@@ -1,3 +1,61 @@
+# Is brain aneurysm surgery high risk? {features}
+---
+description: What to expect from aneurysm treatment, how surgical risks compare with endovascular options, and why many aneurysms are monitored rather than operated on.
+image: feature_screening.jpg
+tags: Aneurysm
+---
+
+Brain aneurysms (otherwise known as cerebral or intracranial aneurysms) are treated to prevent them from bleeding, to stop a rebleed if one has already burst, or if they are enlarging and causing symptoms by pressing on the brain or nerves. Not every aneurysm needs an operation. Not all need treatment, with many best monitored with scans over time, alongside control of blood pressure, stopping smoking, and other lifestyle changes. Doctors use structured scoring systems such as **PHASES** (which predicts rupture risk) and **UIATS** (Unruptured Intracranial Aneurysm Treatment Score) to help decide whether treatment is necessary.
+
+There are two main treatment options:
+
+* **Surgical clipping**: An operation in which the skull is temporarily opened and a tiny metal clip is placed across the neck of the aneurysm to seal it off.
+* **Endovascular treatment**: A minimally invasive approach performed from inside the blood vessels, usually by passing catheters from the groin or wrist up to the brain. Platinum coils, stents, or flow-diverting devices are placed to seal or redirect blood flow away from the aneurysm.
+
+Historically, clipping was the only option. Since the early 2000s, large clinical studies such as the **International Subarachnoid Aneurysm Trial (ISAT)** have shown that endovascular coiling gives good outcomes for many patients. Today, most aneurysms that can be treated this way are managed endovascularly as it is a less invasive technique.
+
+## Risks and recovery with surgical clipping
+
+Risks include:
+
+* **Severe brain injury or death**: Rare, around 1%.
+* **Stroke**: Occurs in about 5–15% of cases. This can cause weakness of the arms or legs, problems with speech, or vision changes.
+* **Local effects**: The operation can affect the brain close to the aneurysm, leading to temporary swelling or bruising.
+* **Epileptic seizures**: Rarely patients can develop epileptic seizures after surgery.
+* **Infection**: The wound from the craniotomy (surgical opening in the skull) can very rarely become infected.
+
+Recovery after clipping is usually longer than after endovascular treatment. Short-term discomfort is expected. Swelling and bruising of the face are common, sometimes causing the eyes to close for a few days. Headaches often occur. Some patients notice a feeling that the **bone flap** (the piece of bone removed during surgery and secured with plates) moves. This feels unusual but is not dangerous and heals over time. The chewing muscle may be affected, making it harder to open the mouth or chew for a few months. These symptoms usually improve within six months.
+
+At home, recovery requires pacing. Patients are advised to rest regularly, stay hydrated, eat well, and build up light activity slowly. Many people need a few weeks or months off work. Returning sooner is possible but often increases fatigue.
+
+## Risks and recovery with endovascular treatment
+
+* **Severe brain injury or death**: Again rare, around 1%.
+* **Stroke**: Occurs in about 3–5% of cases.
+* **Access site complications**: The site of entry into the blood vessels is usually the groin or wrist and some discomfort is common but usually temporary. It is possible to get bleeding after the procedure and obstruction of the blood vessel, which very rarely can require treatment such as further injections or surgery.
+
+In contrast to surgery, epileptic seizures and wound infection are generally not a concern.
+
+Advances in technology are reducing risks further. **Intrasaccular devices** such as the WEB, Neqstent, and Nautilus can treat wide-necked aneurysms. These devices have shown good success rates with low complication rates.
+
+Recovery is usually fairly rapid. Many patients are up and about the same or next day. In elective (planned) cases, discharge the day after treatment is usual. Hospital stays and long-term side effects are less frequent than after surgical clipping.
+
+## Why specialist centres matter
+
+Both clipping and endovascular procedures should be performed in hospitals with experienced teams, usually neuroscience centres. Access to an intensive care or high-dependency unit is essential after either procedure. Outcomes are better in centres that perform higher volumes of these procedures, where interventional neuroradiologists (specialists in treating blood vessels from inside) and neurosurgeons work closely together.
+
+## Key takeaways
+
+* Many aneurysms are best monitored with imaging and risk-factor control.
+* Two main treatments exist: **surgical clipping** (open operation) and **endovascular therapy** (minimally invasive).
+* Historically clipping was the only option, but most aneurysms suitable for endovascular treatment are now treated this way.
+* Clipping carries risks including **stroke** (5–15%), seizures, wound infection, and a small risk of **death** (\~1%).
+* Endovascular treatment also has risks of stroke and death, in addition to access site complications, but often carries lower risks particularly for certain types of aneurysms and **quicker recovery**, with discharge the next day.
+* Newer technology and techniques are making endovascular treatment even safer.
+* These procedures are best performed in specialist centres with high volumes and access to **intensive care** support.
+
+
+
 # Can you prevent brain aneurysms? {features}
 ---
 description: We delve into if brain aneuryms are inevitable or whether you can reduce your chances.
