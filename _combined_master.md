@@ -1,10 +1,8 @@
 ﻿# How long do you need to stay in hospital for a brain aneurysm? {features}
 ---
-description: What to expect when staying in hospital for treatment of a brain aneurysm, with differences between endovascular and surgical approaches and how recovery looks afterwards.
-image: feature_screening.jpg
+description: What to expect when staying in hospital for treatment of a brain aneurysm.
+image: feature_stayhospital.jpg
 ---
-
-## How long do you need to stay in hospital for a brain aneurysm?
 
 If you are told you have a brain aneurysm, one of the first questions you may ask is how long you might need to stay in hospital for treatment. The answer depends on whether the aneurysm has **ruptured** (bled) or is **unruptured** (found before bleeding).
 
@@ -15,54 +13,33 @@ We will begin by discussing **unruptured aneurysms**, treated electively (planne
 
 Both treatments are effective. Historically, surgery was the only option. Today, most aneurysms suitable for endovascular treatment are treated that way because it is less invasive and recovery is often quicker.
 
-### Hospital stay for unruptured aneurysms
+## Hospital stay for unruptured aneurysms
 
 Staying in hospital after aneurysm treatment allows doctors to monitor closely for complications such as stroke, seizures, or bleeding. It also gives time to manage pain effectively and care for the surgical or access site wound. The hospital stay supports early mobilisation and recovery in a safe environment, while also ensuring that plans for discharge and follow-up care are properly arranged.
 
-For **endovascular treatment**, the average stay is about **one day**. Many patients go home the following morning, once routine scans and checks confirm that everything is stable.
+For **endovascular treatment**, the average stay is about **one day**. Many patients go home the following morning, once routine scans and checks confirm that everything is stable. There may be some discomfort at the groin or wrist access site, but this usually settles quickly. Patients can mobilise soon after treatment and often return to normal activities within days. Returning to work is sometimes possible within the same week if recovery is smooth.
 
-For **surgical clipping**, the hospital stay is usually **about a week**. This longer stay is because open surgery is more invasive, involves a wound in the skull, and requires closer monitoring as the body heals.
+For **surgical clipping**, the hospital stay is usually **about a week**. This longer stay is because open surgery is more invasive, involves a wound in the skull, and requires closer monitoring as the body heals. Recovery takes longer. In the first days, swelling and bruising of the face are common and can temporarily close the eyes. Headaches are frequent. Some patients notice the **bone flap** (the piece of bone replaced after surgery) feels like it moves, but this is not dangerous and heals securely. The chewing muscle can be sore, making it harder to open the mouth or chew for a few months. These symptoms usually improve within six months.
+Most people need a few weeks to months off work. Going back earlier is possible but can lead to more fatigue.
 
-### Recovery after discharge
-
-**Endovascular treatment**:
-Most people go home the next day. There may be some discomfort at the groin or wrist access site, but this usually settles quickly. Patients can mobilise soon after treatment and often return to normal activities within days. Returning to work is sometimes possible within the same week if recovery is smooth.
-
-**Surgical clipping**:
-Recovery takes longer. In the first days, swelling and bruising of the face are common and can temporarily close the eyes. Headaches are frequent. Some patients notice the **bone flap** (the piece of bone replaced after surgery) feels like it moves, but this is not dangerous and heals securely. The chewing muscle can be sore, making it harder to open the mouth or chew for a few months. These symptoms usually improve within six months.
-
-At home, recovery requires pacing. Patients are advised to rest, stay hydrated, eat well, and gradually build up activity. Most people need a few weeks to months off work. Going back earlier is possible but can lead to more fatigue.
-
-### What about ruptured aneurysms?
+## What about ruptured aneurysms?
 
 When an aneurysm **ruptures**, it causes a type of stroke called a **subarachnoid haemorrhage (SAH)**. This is a life-threatening emergency. In this situation, hospital stays are much longer, usually at least **14 days**, and often longer if complications develop. Care almost always includes time in an **intensive care unit (ICU)**.
 
 Treatment may be either endovascular or surgical, but the general trend is towards endovascular approaches when suitable, as supported by the **International Subarachnoid Aneurysm Trial (ISAT)**. This large study showed that, in patients with ruptured aneurysms suitable for either approach, endovascular treatment led to better outcomes and fewer long-term complications than open surgery.
-
-### Why hospital time matters
-
-Staying in hospital after aneurysm treatment allows doctors to:
-
-* Monitor closely for complications such as stroke, seizures, or bleeding
-* Manage pain and provide wound care
-* Support early mobilisation and recovery
-* Plan safe discharge and follow-up care
 
 ## Key takeaways
 
 * For **unruptured aneurysms**, hospital stay is about **1 day** after endovascular treatment and **about a week** after surgical clipping.
 * **Endovascular treatment** is minimally invasive, usually with a **quicker recovery** and early return to normal activities.
 * **Clipping** is more invasive, requiring a longer stay and a recovery that can take **weeks to months**.
-* For **ruptured aneurysms** (subarachnoid haemorrhage), hospital stay is usually **at least 14 days**, often with time in **ICU**.
-* The **ISAT trial** showed that endovascular treatment gives better long-term outcomes than surgery for many ruptured aneurysms.
-* Hospital time is essential to ensure **safe recovery** and reduce the risk of complications.
-
+* For **ruptured aneurysms** (subarachnoid haemorrhage), hospital stay is usually **at least 14 days**, often with time in **ICU**. * The **ISAT trial** showed that endovascular treatment gives better long-term outcomes than surgery for many ruptured aneurysms.
 
 
 # Is brain aneurysm surgery high risk? {features}
 ---
 description: What to expect from aneurysm treatment, how surgical risks compare with endovascular options, and why many aneurysms are monitored rather than operated on.
-image: feature_screening.jpg
+image: surgery.jpg
 tags: Aneurysm
 ---
 
@@ -124,7 +101,7 @@ Both clipping and endovascular procedures should be performed in hospitals with 
 # Can you prevent brain aneurysms? {features}
 ---
 description: We delve into if brain aneuryms are inevitable or whether you can reduce your chances.
-image: feature_screening.jpg
+image: prevent.png
 tags: Aneurysm
 ---
 
