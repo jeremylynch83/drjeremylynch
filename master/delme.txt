@@ -12,7 +12,7 @@ image: feature_screening.jpg
 
 
 ## Key takeaways
-- [Add in bullet point form]
+- [Add in bullet point form, highlighting important words]
 
 
 ======
@@ -32,8 +32,6 @@ What are the early warning signs of a brain aneurysm?
 What happens if you have a brain aneurysm?
 
 
-
-How long do you need to stay in hospital for a brain aneurysm?
 
 What is the best hospital for brain aneurysm surgery?
 
