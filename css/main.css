@@ -823,3 +823,71 @@ p.profile_text {
 .desktop-mainnav .nav-link[aria-current="page"]::before {
   transform: translateX(-50%) scaleX(1);
 }
+
+/* Desktop glazed dropdown (no offset issues) */
+:root{
+  --menu-glass-bg: rgba(11,17,32,0.95);
+  --menu-glass-border: rgba(255,255,255,0.10);
+  --menu-link: #f1f5f9;
+  --menu-link-muted: #cbd5e1;
+  --menu-hover: rgba(255,255,255,0.08);
+}
+
+.desktop-mainnav{ position:relative; z-index:1080; }
+
+.desktop-mainnav .dropdown-menu{
+  /* glass look */
+  background: var(--menu-glass-bg);
+  color: var(--menu-link);
+  border: 1px solid var(--menu-glass-border);
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.35);
+  backdrop-filter: blur(12px) saturate(120%);
+  -webkit-backdrop-filter: blur(12px) saturate(120%);
+  /* do NOT transform this element, Popper positions it */
+  margin-top: 0;           /* remove extra gap */
+  z-index: 1080;
+}
+
+/* Subtle motion by animating the inner container, not the menu */
+.desktop-mainnav .dropdown-menu > div{
+  transform: translateY(6px);
+  transition: transform .16s ease, opacity .16s ease;
+  opacity: .98;
+}
+.desktop-mainnav .dropdown-menu.show > div{
+  transform: none;
+  opacity: 1;
+}
+
+/* Typography and links */
+.desktop-mainnav .dropdown-menu h6{
+  color: var(--menu-link-muted);
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  font-size: .8rem;
+  margin: 0 0 .25rem 0;
+}
+.desktop-mainnav .dropdown-menu .link-body-emphasis{
+  color: var(--menu-link) !important;
+}
+.desktop-mainnav .dropdown-menu .link-body-emphasis:hover{
+  color: #fff !important;
+
+
+  padding-left: .05rem;
+  text-decoration: none;
+}
+
+/* Width on large screens (tweak if needed) */
+@media (min-width: 992px){
+  .desktop-mainnav .dropdown-menu{ min-width: 820px; }
+}
+
+/* Fallback when blur unsupported */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)){
+  .desktop-mainnav .dropdown-menu{
+    background: rgba(11,17,32,0.95);
+  }
+}
+
