@@ -183,12 +183,13 @@ def create_md_content_from_headings(
     page_to_section: Dict[str, str],
     group_names: Dict[str, str],
     section_first: Dict[str, str],
-) -> Tuple[List[PageInfo], Dict[str, List[Tuple[str, str, str, str]]]]:
+) -> Tuple[List[PageInfo], Dict[str, List[Tuple[str, str, str, str, str]]]]:
     """
     Split master markdown into sections at each H1. Insert YAML with breadcrumbs,
     related links, and a next link for normal sections. Collect special entries
     for features and news with optional description and image from inline YAML.
     Also parse optional tags for later SEO keywords and related links.
+    Returns special entries as (title, filename, description, image_url, label).
     """
     if not os.path.exists(file_path):
         print(f"File {file_path} does not exist.")
@@ -200,7 +201,7 @@ def create_md_content_from_headings(
     h1_pattern = re.compile(r'^\#\s+(.*?)\s*(\{(.+?)\})?\s*$')
 
     pages: List[PageInfo] = []
-    special_entries: Dict[str, List[Tuple[str, str, str, str]]] = {"features": [], "news": []}
+    special_entries: Dict[str, List[Tuple[str, str, str, str, str]]] = {"features": [], "news": []}
 
     current: PageInfo | None = None
 
@@ -248,12 +249,13 @@ def create_md_content_from_headings(
             image_url = meta.get("image") or meta.get("img") or ""
             tags_list = parse_tags_field(meta.get("tags", ""))
             tags_norm = [norm_tag(t) for t in tags_list]
+            label = meta.get("label") or (tags_list[0] if tags_list else "")
 
             if image_url:
                 image_url = f"img/{image_url}" if not image_url.startswith(("http://", "https://", "img/")) else image_url
 
             if sec_lower in SPECIAL_SECTIONS:
-                special_entries[sec_lower].append((title_text, filename, description, image_url))
+                special_entries[sec_lower].append((title_text, filename, description, image_url, label))
 
             yaml_lines: List[str] = []
             yaml_lines.append(f"title: {yaml_quote(title_text)}")
@@ -303,7 +305,7 @@ def create_md_content_from_headings(
                 alt = html.escape(title_text, quote=True)
                 figure_html = (
                     f'<figure class="my-3">'
-                    f'<img src="{html.escape(image_url, quote=True)}" alt="{alt}" class="img-fluid rounded shadow-sm w-100">'
+                    f'<img src="{html.escape(image_url, quote=True)}" alt="{alt}" class="img-fluid shadow-sm w-100">'
                     '</figure>'
                 )
                 body_lines.append(figure_html)
@@ -387,19 +389,14 @@ def build_related_links(pages: List[PageInfo], for_page: PageInfo, limit: int = 
 def _seo_yaml_for_page(p: PageInfo) -> List[str]:
     """Add SEO-related YAML fields for article-like pages."""
     seo: List[str] = []
-    # Always set canonical
     seo.append(f"canonical: {yaml_quote(abs_url(p.filename))}")
-    # Optional description
     if p.description:
         seo.append(f'description: {yaml_quote(p.description)}')
-    # Optional absolute image URL
     if p.image_url:
         seo.append(f'image: {yaml_quote(abs_url(p.image_url))}')
-    # Keywords from tags
     if p.tags:
         keywords = ", ".join(p.tags)
         seo.append(f'keywords: {yaml_quote(keywords)}')
-    # Types for templates
     if p.sec_lower == "news":
         seo.append('og_type: "article"')
         seo.append('schema_type: "NewsArticle"')
@@ -409,19 +406,11 @@ def _seo_yaml_for_page(p: PageInfo) -> List[str]:
     return seo
 
 def build_page_markdown(p: PageInfo, all_pages: List[PageInfo]) -> Tuple[str, str]:
-    """
-    Return (filename, md_content) for a page.
-    For Features and News, insert tag-derived related links into YAML under `links:` (max 10).
-    Append SEO fields: title, canonical, optional description, image, keywords, types.
-    Append visual tag badges to body.
-    """
+    """Return (filename, md_content) for a page."""
     body = list(p.body_lines)
     yaml_lines = list(p.yaml_lines)
-
-    # SEO fields
     yaml_lines += _seo_yaml_for_page(p)
 
-    # Only specials get tag-derived links in YAML `links:`
     if p.sec_lower in SPECIAL_SECTIONS:
         related = build_related_links(all_pages, p, limit=10)
         if related:
@@ -485,67 +474,191 @@ def create_all_topics(
     convert_md_to_html(md, "All_topics.html", template_path)
     print("Created HTML file: All_topics.html")
 
-def render_feature_cards(items: List[Tuple[str, str, str, str]]) -> str:
+# ===== CSS Grid styles injected where needed =====
+
+def _feature_grid_styles() -> str:
+    # Square corners, no gaps, medium text
+    return """
+<style>
+/* Grid: 12 columns on xl, 6 on md, 1 on sm */
+.nm-grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:.75rem;
+  grid-auto-rows:220px;     /* tile height unit */
+  grid-auto-flow:dense;     /* back-fill if possible */
+}
+@media (max-width: 991.98px){
+  .nm-grid{grid-template-columns:repeat(6,1fr);grid-auto-rows:200px}
+}
+@media (max-width: 575.98px){
+  .nm-grid{grid-template-columns:repeat(1,1fr);grid-auto-rows:220px}
+}
+
+/* Tiles */
+.nm-tile{position:relative;overflow:hidden;background:#e9ecef;border-radius:0}
+.nm-media-wrap{position:absolute;inset:0}
+.nm-media{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.nm-tile:hover .nm-media{transform:scale(1.03)}
+
+/* Width and height by spans (uniform height to avoid gaps) */
+.nm-tile--sm   {grid-column:span 4; grid-row:span 2}  /* 1/3 width */
+.nm-tile--wide {grid-column:span 8; grid-row:span 2}  /* 2/3 width */
+.nm-tile--tall {grid-column:span 4; grid-row:span 2}
+.nm-tile--hero {grid-column:span 8; grid-row:span 2}
+
+@media (max-width: 991.98px){
+  .nm-tile--sm,.nm-tile--tall{grid-column:span 3}
+  .nm-tile--wide,.nm-tile--hero{grid-column:span 6}
+}
+@media (max-width: 575.98px){
+  .nm-tile--sm,.nm-tile--wide,.nm-tile--tall,.nm-tile--hero{
+    grid-column:span 1; grid-row:span 2
+  }
+}
+
+/* Overlay and text */
+.nm-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.9))}
+.nm-content{position:absolute;left:0;right:0;bottom:0;padding:.9rem 1.1rem 1.1rem;color:#fff}
+.nm-title{margin:0 0 .32rem 0;font-weight:800;line-height:1.08;font-size:clamp(1.25rem,2.2vw,2.3rem);text-shadow:0 2px 4px rgba(0,0,0,.75)}
+.nm-desc{margin:0;max-width:48ch;line-height:1.48;color:#fff;font-weight:600;font-size:clamp(.95rem,1.05vw,1.1rem);text-shadow:0 1px 3px rgba(0,0,0,.85)}
+.nm-ribbon{position:absolute;left:0;top:0;margin:.65rem 0 0 .65rem;background:#c2185b;color:#fff;border-radius:999px;padding:.22rem .65rem;font-size:.78rem;font-weight:700}
+</style>
+""".strip()
+
+# ===== Grid rendering =====
+
+def _tile_class_for_index(idx: int) -> str:
     """
-    Render a list of features for the front page.
-    Adds a divider between items, not after the last one.
-    items: list of (title, filename, description, image_url)
+    Repeating pattern to mimic an editorial mosaic.
+    0: hero, 1: small, 2: small, 3: wide, 4: small, 5: tall, then repeat.
     """
+    pattern = ["hero", "sm", "sm", "wide", "sm", "tall"]
+    return pattern[idx % len(pattern)]
+
+def render_feature_cards(items: List[Tuple[str, str, str, str, str]]) -> str:
+    """
+    Editorial mosaic grid for the front page.
+    items: list of (title, filename, description, image_url, label)
+    """
+    def esc(s: str) -> str:
+        return html.escape(s or "", quote=True)
+
     out: List[str] = []
-    total = len(items)
-    for idx, (t, fn, desc, img) in enumerate(items):
-        is_last = (idx == total - 1)
-        row_classes = "row g-4 align-items-center mb-4 pb-3"
-        if not is_last:
-            row_classes += " border-bottom"
+    out.append(_feature_grid_styles())
+    out.append('<div class="nm-grid">')
 
-        out.append(f'<article class="{row_classes}">')
+    for idx, (t, fn, desc, img, label) in enumerate(items):
+        klass = _tile_class_for_index(idx)
+        out.append(f'<article class="nm-tile nm-tile--{klass}">')
+
+        out.append('<div class="nm-media-wrap">')
         if img:
-            out.append('<div class="col-md-6">')
-            out.append('<div class="ratio ratio-16x9">')
-            out.append(f'<a href="{html.escape(fn)}"><img src="{html.escape(img)}" alt="{html.escape(t)}" class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover"></a>')
-            out.append('</div></div>')
-            out.append('<div class="col-md-6">')
+            out.append(f'<img src="{esc(img)}" alt="{esc(t)}" class="nm-media">')
         else:
-            out.append('<div class="col-12">')
+            out.append('<div class="nm-media" style="background:#adb5bd;height:100%"></div>')
+        out.append('</div>')
 
-        out.append('<h2 class="h4 fw-bold mb-2">')
-        out.append(f'<a href="{html.escape(fn)}" class="link-dark text-decoration-none">{html.escape(t)}</a>')
-        out.append('</h2>')
+        out.append('<div class="nm-overlay"></div>')
+
+        if label:
+            out.append(f'<div class="nm-ribbon">{esc(label)}</div>')
+
+        out.append('<div class="nm-content">')
+        out.append(f'<h2 class="nm-title">{esc(t)}</h2>')
         if desc:
-            out.append(f'<p class="text-secondary mb-0 small">{html.escape(desc)}</p>')
-        out.append('</div></article>')
+            out.append(f'<p class="nm-desc">{esc(desc)}</p>')
+        out.append('</div>')
+
+        out.append(f'<a href="{esc(fn)}" class="stretched-link" aria-label="{esc(t)}"></a>')
+        out.append('</article>')
+
+    out.append('</div>')
     return "\n".join(out)
 
-def create_index(latest_features: List[Tuple[str, str, str, str]]) -> None:
+# ===== Helpers to ensure no trailing gap on the home mosaic =====
+
+def _tile_width_at(index: int) -> int:
     """
-    Build index.html from templates/index_pre.html, inserting:
-      - $latest_features$ replaced with rendered latest features
-      - $footer$          replaced with templates/footer.html
+    Desktop grid column width for the tile at position index (0-based).
+    Pattern used by render_feature_cards: hero, sm, sm, wide, sm, tall.
+    hero/wide = 8 cols, sm/tall = 4 cols on a 12-col grid.
+    """
+    pattern = [8, 4, 4, 8, 4, 4]
+    return pattern[index % len(pattern)]
+
+def _pick_count_for_full_row(total_items: int, target: int = 10, min_items: int = 6, grid_cols: int = 12) -> int:
+    """
+    Choose how many items to show so the total width of the chosen tiles
+    is a multiple of grid_cols. Guarantees at least min_items if available.
+    Picks a value near 'target' when several fit.
+    """
+    if total_items <= 0:
+        return 0
+
+    lower = min(total_items, max(min_items, 1))
+    upper = total_items
+
+    def prefix_mod(n: int) -> int:
+        s = 0
+        for i in range(n):
+            s += _tile_width_at(i)
+        return s % grid_cols
+
+    # Candidate list around target first, then fill the rest
+    base = max(lower, min(target, upper))
+    probes = list(dict.fromkeys(
+        [base] +
+        [n for k in range(1, max(upper - lower, 1) + 1) for n in (base - k, base + k)]
+    ))
+    probes = [n for n in probes if lower <= n <= upper]
+
+    for n in probes:
+        if prefix_mod(n) == 0:
+            return n
+
+    # Fallback: find the n with the smallest remainder distance to a full row
+    best_n = lower
+    best_gap = grid_cols
+    for n in range(lower, upper + 1):
+        r = prefix_mod(n)
+        gap = min(r, grid_cols - r)
+        if gap < best_gap or (gap == best_gap and abs(n - target) < abs(best_n - target)):
+            best_gap = gap
+            best_n = n
+    return best_n
+
+def create_index(all_features: List[Tuple[str, str, str, str, str]]) -> None:
+    """
+    Build index.html from templates/index_pre.html.
+    Choose a count so the last row on a 12-col grid has no whitespace.
+    Always includes at least 6 items if available.
     """
     with open('templates/index_pre.html', 'r', encoding='utf-8-sig') as f:
         index_content = f.read()
     with open('templates/footer.html', 'r', encoding='utf-8-sig') as f:
         footer_content = f.read()
 
+    feats_sorted = list(reversed(all_features)) if all_features else []
+    count = _pick_count_for_full_row(len(feats_sorted), target=10, min_items=6, grid_cols=12)
+    latest_features = feats_sorted[:count]
+
     feature_html = render_feature_cards(latest_features) if latest_features else ""
     out_html = index_content.replace('$latest_features$', feature_html).replace('$footer$', footer_content)
 
     with open('index.html', 'w', encoding='utf-8-sig') as f:
         f.write(out_html)
-    print("Created index.html with latest features")
+    print(f"Created index.html with {count} feature tiles (aiming to fill last row)")
 
 def create_special_list_pages(
     kind: str,
-    items: List[Tuple[str, str, str, str]],
+    items: List[Tuple[str, str, str, str, str]],
     template_path: str,
-    page_size: int = 5
+    page_size: int = 12
 ) -> None:
     """
-    Build paginated listing pages for Features or News.
-    Every item renders as a hero-style row with optional image.
+    Build paginated listing pages for Features or News as a mosaic grid.
     For Features, reverse the items so the last item in MD appears first.
-    Adds canonical, og_type and schema_type for SEO.
     """
     if not items:
         return
@@ -587,26 +700,35 @@ def create_special_list_pages(
         yaml_block = "---\n" + "\n".join(yaml_lines) + "\n---"
 
         b: List[str] = []
-        b.append(f'<p class="text-uppercase text-secondary fw-semibold small mb-2">{esc(base_title)}</p>')
+        b.append(_feature_grid_styles())
+        b.append(f'<p class="text-uppercase text-secondary fw-semibold small mb-3">{esc(base_title)}</p>')
+        b.append('<div class="nm-grid">')
 
-        for t, fn, desc, img in page_items:
-            b.append('<article class="row g-4 align-items-center mb-4 pb-3 border-bottom">')
+        for idx, (t, fn, desc, img, label) in enumerate(page_items):
+            klass = _tile_class_for_index(idx)
+            b.append(f'<article class="nm-tile nm-tile--{klass}">')
 
+            b.append('<div class="nm-media-wrap">')
             if img:
-                b.append('<div class="col-md-6">')
-                b.append('<div class="ratio ratio-16x9">')
-                b.append(f'<a href="{esc(fn)}"><img src="{esc(img)}" alt="{esc(t)}" class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover"></a>')
-                b.append('</div></div>')
-                b.append('<div class="col-md-6">')
+                b.append(f'<img src="{esc(img)}" alt="{esc(t)}" class="nm-media">')
             else:
-                b.append('<div class="col-12">')
+                b.append('<div class="nm-media" style="background:#adb5bd;height:100%"></div>')
+            b.append('</div>')
 
-            b.append('<h2 class="h4 fw-bold mb-2">')
-            b.append(f'<a href="{esc(fn)}" class="link-dark text-decoration-none">{esc(t)}</a>')
-            b.append('</h2>')
+            b.append('<div class="nm-overlay"></div>')
+            if label:
+                b.append(f'<div class="nm-ribbon">{esc(label)}</div>')
+
+            b.append('<div class="nm-content">')
+            b.append(f'<h2 class="nm-title">{esc(t)}</h2>')
             if desc:
-                b.append(f'<p class="text-secondary mb-0 small">{esc(desc)}</p>')
-            b.append('</div></article>')
+                b.append(f'<p class="nm-desc">{esc(desc)}</p>')
+            b.append('</div>')
+
+            b.append(f'<a href="{esc(fn)}" class="stretched-link" aria-label="{esc(t)}"></a>')
+            b.append('</article>')
+
+        b.append('</div>')
 
         if pages > 1:
             b.append(f'<nav aria-label="{esc(base_title)} pagination" class="mt-4">')
@@ -698,7 +820,7 @@ def main():
     create_all_topics(md_sections, page_to_section, group_names, section_first, template_path)
     expected_outputs.add("All_topics.html")
 
-    def _expected_paginated(base_filename: str, total_items: int, page_size: int = 5):
+    def _expected_paginated(base_filename: str, total_items: int, page_size: int = 12):
         pages_cnt = (total_items + page_size - 1) // page_size
         if pages_cnt <= 0:
             return []
@@ -710,14 +832,14 @@ def main():
     feats = special_entries.get("features", [])
     news_items = special_entries.get("news", [])
 
-    create_special_list_pages("features", feats, template_path, page_size=5)
-    expected_outputs.update(_expected_paginated("Features", len(feats), page_size=5))
+    create_special_list_pages("features", feats, template_path, page_size=12)
+    expected_outputs.update(_expected_paginated("Features", len(feats), page_size=12))
 
-    create_special_list_pages("news", news_items, template_path, page_size=5)
-    expected_outputs.update(_expected_paginated("News", len(news_items), page_size=5))
+    create_special_list_pages("news", news_items, template_path, page_size=12)
+    expected_outputs.update(_expected_paginated("News", len(news_items), page_size=12))
 
-    latest_features = list(reversed(feats))[:3] if feats else []
-    create_index(latest_features)
+    # Home page: include a count that fills the last desktop row, at least 6 if available
+    create_index(feats)
     expected_outputs.add("index.html")
 
     base_url = BASE_URL
@@ -734,3 +856,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

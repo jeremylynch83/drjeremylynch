@@ -414,39 +414,148 @@
       <!-- Latest features -->
       <section id="latest_features" class="container py-5">
         <h2 class="h3 mb-4 text-center">Featured Articles</h2>
-        <article class="row g-4 align-items-center mb-4 pb-3 border-bottom">
-<div class="col-md-6">
-<div class="ratio ratio-16x9">
-<a href="features_How_are_brain_aneurysms_treated.html"><img src="img/feature_aneurysm_rx.jpg" alt="How are brain aneurysms treated?" class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover"></a>
-</div></div>
-<div class="col-md-6">
-<h2 class="h4 fw-bold mb-2">
-<a href="features_How_are_brain_aneurysms_treated.html" class="link-dark text-decoration-none">How are brain aneurysms treated?</a>
-</h2>
-<p class="text-secondary mb-0 small">Outlines the main treatment approaches for brain aneurysms, comparing coiling, clipping, and newer devices, and explains how doctors decide which option is best.</p>
-</div></article>
-<article class="row g-4 align-items-center mb-4 pb-3 border-bottom">
-<div class="col-md-6">
-<div class="ratio ratio-16x9">
-<a href="features_Can_lifestyle_changes_reduce_the_risk_of_a_brain_aneurysm.html"><img src="img/feature_health.jpg" alt="Can lifestyle changes reduce the risk of a brain aneurysm?" class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover"></a>
-</div></div>
-<div class="col-md-6">
-<h2 class="h4 fw-bold mb-2">
-<a href="features_Can_lifestyle_changes_reduce_the_risk_of_a_brain_aneurysm.html" class="link-dark text-decoration-none">Can lifestyle changes reduce the risk of a brain aneurysm?</a>
-</h2>
-<p class="text-secondary mb-0 small">Describes the role of lifestyle in preventing aneurysms and bleeds.</p>
-</div></article>
-<article class="row g-4 align-items-center mb-4 pb-3">
-<div class="col-md-6">
-<div class="ratio ratio-16x9">
-<a href="features_Living_with_an_unruptured_brain_aneurysm.html"><img src="img/feature.jpg" alt="Living with an unruptured brain aneurysm" class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover"></a>
-</div></div>
-<div class="col-md-6">
-<h2 class="h4 fw-bold mb-2">
-<a href="features_Living_with_an_unruptured_brain_aneurysm.html" class="link-dark text-decoration-none">Living with an unruptured brain aneurysm</a>
-</h2>
-<p class="text-secondary mb-0 small">Covers what it means to have an aneurysm that has not ruptured, the risks involved, how doctors monitor them, and what patients can do to stay safe.</p>
-</div></article>
+        <style>
+/* Grid: 12 columns on xl, 6 on md, 1 on sm */
+.nm-grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:.75rem;
+  grid-auto-rows:220px;     /* tile height unit */
+  grid-auto-flow:dense;     /* back-fill if possible */
+}
+@media (max-width: 991.98px){
+  .nm-grid{grid-template-columns:repeat(6,1fr);grid-auto-rows:200px}
+}
+@media (max-width: 575.98px){
+  .nm-grid{grid-template-columns:repeat(1,1fr);grid-auto-rows:220px}
+}
+
+/* Tiles */
+.nm-tile{position:relative;overflow:hidden;background:#e9ecef;border-radius:0}
+.nm-media-wrap{position:absolute;inset:0}
+.nm-media{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.nm-tile:hover .nm-media{transform:scale(1.03)}
+
+/* Width and height by spans (uniform height to avoid gaps) */
+.nm-tile--sm   {grid-column:span 4; grid-row:span 2}  /* 1/3 width */
+.nm-tile--wide {grid-column:span 8; grid-row:span 2}  /* 2/3 width */
+.nm-tile--tall {grid-column:span 4; grid-row:span 2}
+.nm-tile--hero {grid-column:span 8; grid-row:span 2}
+
+@media (max-width: 991.98px){
+  .nm-tile--sm,.nm-tile--tall{grid-column:span 3}
+  .nm-tile--wide,.nm-tile--hero{grid-column:span 6}
+}
+@media (max-width: 575.98px){
+  .nm-tile--sm,.nm-tile--wide,.nm-tile--tall,.nm-tile--hero{
+    grid-column:span 1; grid-row:span 2
+  }
+}
+
+/* Overlay and text */
+.nm-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.9))}
+.nm-content{position:absolute;left:0;right:0;bottom:0;padding:.9rem 1.1rem 1.1rem;color:#fff}
+.nm-title{margin:0 0 .32rem 0;font-weight:800;line-height:1.08;font-size:clamp(1.25rem,2.2vw,2.3rem);text-shadow:0 2px 4px rgba(0,0,0,.75)}
+.nm-desc{margin:0;max-width:48ch;line-height:1.48;color:#fff;font-weight:600;font-size:clamp(.95rem,1.05vw,1.1rem);text-shadow:0 1px 3px rgba(0,0,0,.85)}
+.nm-ribbon{position:absolute;left:0;top:0;margin:.65rem 0 0 .65rem;background:#c2185b;color:#fff;border-radius:999px;padding:.22rem .65rem;font-size:.78rem;font-weight:700}
+</style>
+<div class="nm-grid">
+<article class="nm-tile nm-tile--hero">
+<div class="nm-media-wrap">
+<img src="img/feature_aneurysm_rx.jpg" alt="How are brain aneurysms treated?" class="nm-media">
+</div>
+<div class="nm-overlay"></div>
+<div class="nm-ribbon">Aneurysm</div>
+<div class="nm-content">
+<h2 class="nm-title">How are brain aneurysms treated?</h2>
+<p class="nm-desc">Outlines the main treatment approaches for brain aneurysms, comparing coiling, clipping, and newer devices, and explains how doctors decide which option is best.</p>
+</div>
+<a href="features_How_are_brain_aneurysms_treated.html" class="stretched-link" aria-label="How are brain aneurysms treated?"></a>
+</article>
+<article class="nm-tile nm-tile--sm">
+<div class="nm-media-wrap">
+<img src="img/feature_health.jpg" alt="Can lifestyle changes reduce the risk of a brain aneurysm?" class="nm-media">
+</div>
+<div class="nm-overlay"></div>
+<div class="nm-ribbon">Aneurysm</div>
+<div class="nm-content">
+<h2 class="nm-title">Can lifestyle changes reduce the risk of a brain aneurysm?</h2>
+<p class="nm-desc">Describes the role of lifestyle in preventing aneurysms and bleeds.</p>
+</div>
+<a href="features_Can_lifestyle_changes_reduce_the_risk_of_a_brain_aneurysm.html" class="stretched-link" aria-label="Can lifestyle changes reduce the risk of a brain aneurysm?"></a>
+</article>
+<article class="nm-tile nm-tile--sm">
+<div class="nm-media-wrap">
+<img src="img/feature.jpg" alt="Living with an unruptured brain aneurysm" class="nm-media">
+</div>
+<div class="nm-overlay"></div>
+<div class="nm-ribbon">Aneurysm</div>
+<div class="nm-content">
+<h2 class="nm-title">Living with an unruptured brain aneurysm</h2>
+<p class="nm-desc">Covers what it means to have an aneurysm that has not ruptured, the risks involved, how doctors monitor them, and what patients can do to stay safe.</p>
+</div>
+<a href="features_Living_with_an_unruptured_brain_aneurysm.html" class="stretched-link" aria-label="Living with an unruptured brain aneurysm"></a>
+</article>
+<article class="nm-tile nm-tile--wide">
+<div class="nm-media-wrap">
+<img src="img/feature_an_symptoms.jpg" alt="What are the warning signs of a brain aneurysm?" class="nm-media">
+</div>
+<div class="nm-overlay"></div>
+<div class="nm-ribbon">Aneurysm</div>
+<div class="nm-content">
+<h2 class="nm-title">What are the warning signs of a brain aneurysm?</h2>
+<p class="nm-desc">Explains the key symptoms of a brain aneurysm rupture, what unruptured aneurysms can cause, and when to seek urgent medical help.</p>
+</div>
+<a href="features_What_are_the_warning_signs_of_a_brain_aneurysm.html" class="stretched-link" aria-label="What are the warning signs of a brain aneurysm?"></a>
+</article>
+<article class="nm-tile nm-tile--sm">
+<div class="nm-media-wrap">
+<img src="img/feature_screening.jpg" alt="Who should be screened for brain aneurysms?" class="nm-media">
+</div>
+<div class="nm-overlay"></div>
+<div class="nm-ribbon">Aneurysm</div>
+<div class="nm-content">
+<h2 class="nm-title">Who should be screened for brain aneurysms?</h2>
+<p class="nm-desc">Who should and should not be screened for brain aneurysms, outlining the risk groups, reasons screening is not suitable for everyone, and how the screening process is carried out.</p>
+</div>
+<a href="features_Who_should_be_screened_for_brain_aneurysms.html" class="stretched-link" aria-label="Who should be screened for brain aneurysms?"></a>
+</article>
+<article class="nm-tile nm-tile--tall">
+<div class="nm-media-wrap">
+<img src="img/prevent.png" alt="Can you prevent brain aneurysms?" class="nm-media">
+</div>
+<div class="nm-overlay"></div>
+<div class="nm-ribbon">Aneurysm</div>
+<div class="nm-content">
+<h2 class="nm-title">Can you prevent brain aneurysms?</h2>
+<p class="nm-desc">We delve into if brain aneuryms are inevitable or whether you can reduce your chances.</p>
+</div>
+<a href="features_Can_you_prevent_brain_aneurysms.html" class="stretched-link" aria-label="Can you prevent brain aneurysms?"></a>
+</article>
+<article class="nm-tile nm-tile--hero">
+<div class="nm-media-wrap">
+<img src="img/surgery.jpg" alt="Is brain aneurysm surgery high risk?" class="nm-media">
+</div>
+<div class="nm-overlay"></div>
+<div class="nm-ribbon">Aneurysm</div>
+<div class="nm-content">
+<h2 class="nm-title">Is brain aneurysm surgery high risk?</h2>
+<p class="nm-desc">What to expect from aneurysm treatment, how surgical risks compare with endovascular options, and why many aneurysms are monitored rather than operated on.</p>
+</div>
+<a href="features_Is_brain_aneurysm_surgery_high_risk.html" class="stretched-link" aria-label="Is brain aneurysm surgery high risk?"></a>
+</article>
+<article class="nm-tile nm-tile--sm">
+<div class="nm-media-wrap">
+<img src="img/feature_stayhospital.jpg" alt="How long do you need to stay in hospital for a brain aneurysm?" class="nm-media">
+</div>
+<div class="nm-overlay"></div>
+<div class="nm-content">
+<h2 class="nm-title">How long do you need to stay in hospital for a brain aneurysm?</h2>
+<p class="nm-desc">What to expect when staying in hospital for treatment of a brain aneurysm.</p>
+</div>
+<a href="features_How_long_do_you_need_to_stay_in_hospital_for_a_brain_aneurysm.html" class="stretched-link" aria-label="How long do you need to stay in hospital for a brain aneurysm?"></a>
+</article>
+</div>
         <div class="text-center mt-5">
           <a href="Features.html" class="custom-btn">All Articles</a>
         </div>
