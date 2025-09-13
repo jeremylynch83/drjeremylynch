@@ -1,7 +1,55 @@
+# Are there any new treatments for brain aneurysms? {features}
+---
+description: What has changed in brain aneurysm treatment, and what the newest minimally invasive options mean for patients.
+image: feature_newaneurysm.jpg
+tags: Aneurysm
+---
+
+## Surgical clipping
+
+Treatment began in the 20th century with open surgery. Surgeons performed clipping, placing a small metal clip across the aneurysm’s neck to seal it. Open surgical clipping of intracranial aneurysms was pioneered in the early twentieth century, with Walter Dandy performing the first successful neck-clipping in 1937. Early procedures carried high risks because of poor visualisation, limited clip designs and inadequate anaesthesia. The introduction of the operating microscope in the late 1950s allowed surgeons to work with far greater precision, while the development of refined craniotomy approaches and more sophisticated clip designs reduced complications and improved vessel preservation. Advances in angiography, CT and MR imaging, along with intraoperative fluorescence techniques, further enhanced accuracy and safety. Modern anaesthesia and intensive care support also played a crucial role in lowering mortality. Over the decades, these innovations transformed clipping from a hazardous operation into a reliable and effective treatment, though its role has more recently been shared with less invasive endovascular methods.
+
+## Endovascular treatment 
+
+Endovascular treatment works from inside the blood vessels, usually by passing a thin tube from the wrist or groin up to the brain. The first breakthrough came in 1990 with Guglielmi detachable coils, which allowed aneurysms to be packed internally. In 1997, Jacques Moret introduced balloon remodelling, and the same year saw the first stent-assisted coiling, opening the door to treating wider-necked aneurysms. The pivotal ISAT trial in 2002 showed that for ruptured aneurysms suitable for either approach, coiling gave better long-term outcomes than clipping. 
+
+## Flow diverters
+
+In 2007, the arrival of flow-diverter stents transformed practice, offering durable reconstruction for large, giant, wide-necked, fusiform or recurrent aneurysms. Flow diverters are fine-mesh tubes placed across the aneurysm neck inside the parent artery, reducing inflow, encouraging clotting within the sac, and promoting vessel healing.
+
+## Intrasaccular devices
+
+![Intrasaccular devices for aneurysm treatment: (A) WEB SL. (B) WEB SLS. (C) Contour. (D) Neqstent. (E) Artisse. (F) Nautilus. Courtesy of Microvention, Stryker, Medtronic, and Endostream.](img/Intrasaccular.jpg){#fig:aneurysm_angio}
+
+The most recent development are intrasaccular devices. These sit inside the aneurysm itself at the neck, blocking blood entry without the need for a permanent stent. This makes them attractive in bifurcation aneurysms, since long-term dual antiplatelet therapy can usually be avoided. 
+
+Intrasaccular devices sit inside the aneurysm itself, typically at the neck, to block inflow. Many of these do not require a permanent stent, so long-term dual antiplatelet therapy is often unnecessary. They are especially attractive for bifurcation aneurysms where two vessels branch at the aneurysm neck. Some evidence suggests intrasaccular devices are the safest way to treat cerebral aneurysms. 
+
+* **WEB (Woven EndoBridge, MicroVention)**. The first widely used option, introduced in 2011. It is a soft braided mesh that fills the aneurysm neck. WEB often avoids stents and long-term dual antiplatelets. 
+* **Contour and Neqstent (Stryker)**. Neck-bridging intrasaccular implants designed to plug the neck. Contour can be used alone in select cases, while Neqstent is intended to be combined with coils passed through its struts to complete occlusion. 
+* **Artisse (Medtronic)**. A dual-layer, 72-wire mesh basket, softer than WEB when constrained, which can make deployment easier in shallow or angled aneurysms. Like WEB, it usually avoids long-term dual antiplatelets. 
+* **Nautilus (EndoStream)**. One of the most recent devices. It provides neck coverage and a flow-disruption effect, then allows coiling through a central opening. Early series report high occlusion with minimal complications. It is not widely available yet. 
+
+## What does this progress mean for patients?
+
+Modern treatments now enable a broader range of aneurysm shapes and locations, with shorter recovery, lower complication rates in many scenarios, and durable results. Intrasaccular devices, in particular, reduce the need for permanent stents and strong antiplatelet medication, which is an advantage in both elective and ruptured cases when anatomy allows.
+
+
+## Key takeaways
+
+* Modern care offers **more options**: coiling, balloon-assisted coiling, **stent-assisted** coiling, **flow diverters**, and **intrasaccular devices**.
+* **Flow diverters** give **durable** occlusion for large, wide-necked and complex aneurysms.
+* **Intrasaccular devices** like **WEB**, **Artisse**, **Contour/Neqstent**, and **Nautilus** often **avoid stents** and long-term dual antiplatelets, while achieving high occlusion rates.
+* Since **ISAT**, many ruptured aneurysms suitable for either approach are treated **endovascularly**, with better long-term outcomes than clipping.
+* Overall, endovascular therapy is becoming **safer** and **more durable**, with **shorter recovery** for many patients.
+
+
+
 # How long do you need to stay in hospital for a brain aneurysm? {features}
 ---
 description: What to expect when staying in hospital for treatment of a brain aneurysm.
 image: feature_stayhospital.jpg
+tags: Aneurysm
 ---
 
 If you are told you have a brain aneurysm, one of the first questions you may ask is how long you might need to stay in hospital for treatment. The answer depends on whether the aneurysm has **ruptured** (bled) or is **unruptured** (found before bleeding).
@@ -133,7 +181,7 @@ Population screening is not recommended because most aneurysms never rupture and
 
 Finding an aneurysm is not the same as needing an operation. Most never cause symptoms and most never bleed. The annual rupture risk for typical incidental aneurysms is well under 1 in 400. The majority of incidental aneurysms are safely observed with risk-factor control and periodic imaging. Growth risk can be estimated with tools such as ELAPSS, and rupture risk with PHASES, to guide follow up and treatment decisions in a multidisciplinary meeting.
 
-If treatment is advised, there are two main options: **neurosurgical clipping** and **endovascular treatment** such as coiling or flow diversion. Both are effective.  Endovascular treatment is minimally invasive and is often associated with shorter hospital stays and quicker recovery than open surgery.
+If treatment is advised, there are two main options: **neurosurgical clipping** and **endovascular treatment** such as coiling or flow diversion. Both are effective.Endovascular treatment is minimally invasive and is often associated with shorter hospital stays and quicker recovery than open surgery.
 
 Finally, remember that the absolute risk of rupture in the general population is low. The incidence of aneurysmal subarachnoid haemorrhage is about 6 to 8 per 100,000 people per year. Focusing on blood pressure, smoking cessation and sensible screening where appropriate will do the most to reduce risk.
 
@@ -149,7 +197,7 @@ Finally, remember that the absolute risk of rupture in the general population is
 
 # Who should be screened for brain aneurysms? {features}
 ---
-description:  Who should and should not be screened for brain aneurysms, outlining the risk groups, reasons screening is not suitable for everyone, and how the screening process is carried out.
+description:Who should and should not be screened for brain aneurysms, outlining the risk groups, reasons screening is not suitable for everyone, and how the screening process is carried out.
 image: feature_screening.jpg
 tags: Aneurysm
 ---
@@ -192,9 +240,9 @@ If you are in a higher-risk group, your doctor can talk through whether screenin
 ## Key takeaways
 - Screening is **not recommended for everyone**.
 - It is usually offered to people with:
-  - Two or more close relatives who have had a subarachnoid haemorrhage
-  - Autosomal dominant polycystic kidney disease (ADPKD)
-  - Coarctation of the aorta
+- Two or more close relatives who have had a subarachnoid haemorrhage
+- Autosomal dominant polycystic kidney disease (ADPKD)
+- Coarctation of the aorta
 - Screening starts around age 20 and may be repeated every 3–5 years until about age 60–70.
 - The test of choice is an MRI-based scan called **MRA**.
 - The goal is to improve quality of life, not just to detect aneurysms.

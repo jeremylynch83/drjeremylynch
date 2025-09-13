@@ -3,8 +3,9 @@ Please write about the following "" in the following format, using the above doc
 
 # Title of article {features}
 ---
-description:  [Description of article]
+description:  [One sentence description of article, often in the form of a question]
 image: feature_screening.jpg
+tags: Aneurysm
 ---
 ## [Subheading usually in the form of question]?
 
@@ -37,8 +38,6 @@ What is the best hospital for brain aneurysm surgery?
 
 How successful is brain aneurysm treatment?
 
-What is the best hospital to treat brain aneurysms?
-
 Can someone fully recover from a brain aneurysm?
 
 How much does it cost to treat a brain aneurysm?
@@ -47,7 +46,7 @@ Can a brain aneurysm be treated without surgery?
 
 How urgent is brain aneurysm surgery?
 
-What is the newest treatment for brain aneurysms?
+
 
 What are the treatment options for a brain aneurysm without surgery?
 
