@@ -27,7 +27,7 @@ Intrasaccular devices sit inside the aneurysm itself, typically at the neck, to 
 
 * **WEB (Woven EndoBridge, MicroVention)**. The first widely used option, introduced in 2011. It is a soft braided mesh that fills the aneurysm neck. WEB often avoids stents and long-term dual antiplatelets. 
 * **Contour and Neqstent (Stryker)**. Neck-bridging intrasaccular implants designed to plug the neck. Contour can be used alone in select cases, while Neqstent is intended to be combined with coils passed through its struts to complete occlusion. 
-* **Artisse (Medtronic)**. A dual-layer, 72-wire mesh basket, softer than WEB when constrained, which can make deployment easier in shallow or angled aneurysms. Like WEB, it usually avoids long-term dual antiplatelets. 
+* **Artisse (Medtronic)**. A softer device than WEB when constrained, which can make deployment easier in shallow or angled aneurysms. Like WEB, it usually avoids long-term dual antiplatelets. 
 * **Nautilus (EndoStream)**. One of the most recent devices. It provides neck coverage and a flow-disruption effect, then allows coiling through a central opening. Early series report high occlusion with minimal complications. It is not widely available yet. 
 
 ## What does this progress mean for patients?
@@ -42,8 +42,6 @@ Modern treatments now enable a broader range of aneurysm shapes and locations, w
 * **Intrasaccular devices** like **WEB**, **Artisse**, **Contour/Neqstent**, and **Nautilus** often **avoid stents** and long-term dual antiplatelets, while achieving high occlusion rates.
 * Since **ISAT**, many ruptured aneurysms suitable for either approach are treated **endovascularly**, with better long-term outcomes than clipping.
 * Overall, endovascular therapy is becoming **safer** and **more durable**, with **shorter recovery** for many patients.
-
-
 
 # How long do you need to stay in hospital for a brain aneurysm? {features}
 ---
@@ -148,7 +146,7 @@ Both clipping and endovascular procedures should be performed in hospitals with 
 
 # Can you prevent brain aneurysms? {features}
 ---
-description: We delve into if brain aneuryms are inevitable or whether you can reduce your chances.
+description: Are brain aneuryms inevitable or you can reduce your chances?
 image: prevent.png
 tags: Aneurysm
 ---
@@ -197,7 +195,7 @@ Finally, remember that the absolute risk of rupture in the general population is
 
 # Who should be screened for brain aneurysms? {features}
 ---
-description:Who should and should not be screened for brain aneurysms, outlining the risk groups, reasons screening is not suitable for everyone, and how the screening process is carried out.
+description:Who should and should not be screened for brain aneurysms?
 image: feature_screening.jpg
 tags: Aneurysm
 ---
@@ -281,7 +279,7 @@ Call emergency services immediately if you develop a sudden, extremely severe he
 
 # Living with an unruptured brain aneurysm {features}
 ---
-description: Covers what it means to have an aneurysm that has not ruptured, the risks involved, how doctors monitor them, and what patients can do to stay safe.
+description: Covers what it means to be diagnosed with a brain aneurysm, the risks involved, and what can patients can do to stay safe.
 image: feature.jpg
 tags: Aneurysm
 ---

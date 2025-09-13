@@ -532,6 +532,12 @@ def _feature_grid_styles() -> str:
 .nm-title{margin:0 0 .32rem 0;font-weight:800;line-height:1.08;font-size:clamp(1.25rem,2.2vw,2.3rem);text-shadow:0 2px 4px rgba(0,0,0,.75)}
 .nm-desc{margin:0;max-width:48ch;line-height:1.48;color:#fff;font-weight:600;font-size:clamp(.95rem,1.05vw,1.1rem);text-shadow:0 1px 3px rgba(0,0,0,.85)}
 .nm-ribbon{position:absolute;left:0;top:0;margin:.65rem 0 0 .65rem;background:#c2185b;color:#fff;border-radius:999px;padding:.22rem .65rem;font-size:.78rem;font-weight:700}
+.nm-title,
+.nm-title a{color:#fff !important;text-decoration:none}
+.nm-title a:hover{color:#fff !important;text-decoration:none}
+.nm-desc{color:#fff !important}
+
+
 </style>
 """.strip()
 
