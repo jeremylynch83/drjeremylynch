@@ -7,9 +7,7 @@ Dr Jeremy Lynch MBChB MRCS FRCR is a London-based Consultant Interventional Neur
 Dr Lynch has published several academic book chapters and journal articles. He is a reviewer for Clinical Neuroradiology. His special interests include the role of new technologies including artificial intelligence in the diagnosis of neurovascular disease. He has been invited to lecture on interventional neuroradiology and neuroimaging in international conferences. He is the author of the popular neurointerventional educational website neurotool.org.
 
 
-## Interventional neuroradiology
 
-Interventional neuroradiology (otherwise known as neurointerventional radiology or endovascular neurosurgery) is a medical specialty that deals with minimally invasive treatments for diseases of the brain and spine involving blood vessels. Common conditions that are treated include brain aneurysms, strokes, carotid stenosis, and brain tumour embolisation.
 
 ## Training
 
@@ -29,6 +27,10 @@ Interventional neuroradiology (otherwise known as neurointerventional radiology 
 
 * Clinical Medicine - University of Bristol
 
+
+# Interventional neuroradiology
+
+Interventional neuroradiology (otherwise known as neurointerventional radiology or endovascular neurosurgery) is a medical specialty that deals with minimally invasive treatments for diseases of the brain and spine involving blood vessels. Common conditions that are treated include brain aneurysms, strokes, carotid stenosis, and brain tumour embolisation.
 
 # Research {General}
 
