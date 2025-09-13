@@ -123,8 +123,21 @@
     <p class="lead text-secondary">
     We delve into if brain aneuryms are inevitable or whether you can reduce your chances.
     </p>
-    <figure class="my-3">
-    <img src="img/prevent.png" alt="Can you prevent brain aneurysms?" class="img-fluid shadow-sm w-100">
+    <style>
+    .feature-hero{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#e9ecef;border-radius:.25rem}
+    .feature-hero>img{
+      position:absolute;inset:0;
+      width:100%;height:100% !important;
+      object-fit:cover;display:block
+    }
+    /* Fallback for very old browsers */
+    @supports not (aspect-ratio: 1/1){
+      .feature-hero{padding-top:56.25%}
+      .feature-hero>img{position:absolute;top:0;left:0;right:0;bottom:0}
+    }
+    </style>
+    <figure class="feature-hero my-3 shadow-sm">
+    <img src="img/prevent.png" alt="Can you prevent brain aneurysms?" loading="lazy" decoding="async">
     </figure>
     <h2 id="what-causes-aneurysms">What causes aneurysms?</h2>
     <p>Unruptured intracranial aneurysms are found in about 3% of adults. Most aneurysms arise without a single identifiable cause. The vessel wall gradually weakens due to a mix of inherited and biological factors. Turbulent flow at arterial branch points and inflammation in the wall contribute to formation and growth.</p>

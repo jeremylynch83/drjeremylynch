@@ -123,8 +123,21 @@
     <p class="lead text-secondary">
     What to expect from aneurysm treatment, how surgical risks compare with endovascular options, and why many aneurysms are monitored rather than operated on.
     </p>
-    <figure class="my-3">
-    <img src="img/surgery.jpg" alt="Is brain aneurysm surgery high risk?" class="img-fluid shadow-sm w-100">
+    <style>
+    .feature-hero{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#e9ecef;border-radius:.25rem}
+    .feature-hero>img{
+      position:absolute;inset:0;
+      width:100%;height:100% !important;
+      object-fit:cover;display:block
+    }
+    /* Fallback for very old browsers */
+    @supports not (aspect-ratio: 1/1){
+      .feature-hero{padding-top:56.25%}
+      .feature-hero>img{position:absolute;top:0;left:0;right:0;bottom:0}
+    }
+    </style>
+    <figure class="feature-hero my-3 shadow-sm">
+    <img src="img/surgery.jpg" alt="Is brain aneurysm surgery high risk?" loading="lazy" decoding="async">
     </figure>
     <p>Brain aneurysms (otherwise known as cerebral or intracranial aneurysms) are treated to prevent them from bleeding, to stop a rebleed if one has already burst, or if they are enlarging and causing symptoms by pressing on the brain or nerves. Not every aneurysm needs an operation. Not all need treatment, with many best monitored with scans over time, alongside control of blood pressure, stopping smoking, and other lifestyle changes. Doctors use structured scoring systems such as <strong>PHASES</strong> (which predicts rupture risk) and <strong>UIATS</strong> (Unruptured Intracranial Aneurysm Treatment Score) to help decide whether treatment is necessary.</p>
     <p>There are two main treatment options:</p>

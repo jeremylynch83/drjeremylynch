@@ -301,11 +301,13 @@ def create_md_content_from_headings(
             if sec_lower == "features" and description:
                 body_lines.append(f'<p class="lead text-secondary">{html.escape(description)}</p>')
 
+            # Feature detail hero with fixed aspect ratio and cover
             if sec_lower == "features" and image_url:
+                body_lines.append(_feature_detail_styles())
                 alt = html.escape(title_text, quote=True)
                 figure_html = (
-                    f'<figure class="my-3">'
-                    f'<img src="{html.escape(image_url, quote=True)}" alt="{alt}" class="img-fluid shadow-sm w-100">'
+                    f'<figure class="feature-hero my-3 shadow-sm">'
+                    f'<img src="{html.escape(image_url, quote=True)}" alt="{alt}" loading="lazy" decoding="async">'
                     '</figure>'
                 )
                 body_lines.append(figure_html)
@@ -477,16 +479,16 @@ def create_all_topics(
 # ===== CSS Grid styles injected where needed =====
 
 def _feature_grid_styles() -> str:
-    # Square corners, no gaps, medium text
+    # Images fill their tiles regardless of any global img{height:auto}
     return """
 <style>
-/* Grid: 12 columns on xl, 6 on md, 1 on sm */
+/* Grid */
 .nm-grid{
   display:grid;
   grid-template-columns:repeat(12,1fr);
   gap:.75rem;
-  grid-auto-rows:220px;     /* tile height unit */
-  grid-auto-flow:dense;     /* back-fill if possible */
+  grid-auto-rows:220px;
+  grid-auto-flow:dense;
 }
 @media (max-width: 991.98px){
   .nm-grid{grid-template-columns:repeat(6,1fr);grid-auto-rows:200px}
@@ -498,12 +500,19 @@ def _feature_grid_styles() -> str:
 /* Tiles */
 .nm-tile{position:relative;overflow:hidden;background:#e9ecef;border-radius:0}
 .nm-media-wrap{position:absolute;inset:0}
-.nm-media{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+
+/* The fix: absolutely position the image and force 100% height */
+.nm-media{
+  position:absolute;inset:0;
+  width:100%;height:100% !important; /* beat any global img{height:auto} */
+  object-fit:cover;display:block;
+  transition:transform .35s ease;
+}
 .nm-tile:hover .nm-media{transform:scale(1.03)}
 
-/* Width and height by spans (uniform height to avoid gaps) */
-.nm-tile--sm   {grid-column:span 4; grid-row:span 2}  /* 1/3 width */
-.nm-tile--wide {grid-column:span 8; grid-row:span 2}  /* 2/3 width */
+/* Spans */
+.nm-tile--sm   {grid-column:span 4; grid-row:span 2}
+.nm-tile--wide {grid-column:span 8; grid-row:span 2}
 .nm-tile--tall {grid-column:span 4; grid-row:span 2}
 .nm-tile--hero {grid-column:span 8; grid-row:span 2}
 
@@ -525,6 +534,25 @@ def _feature_grid_styles() -> str:
 .nm-ribbon{position:absolute;left:0;top:0;margin:.65rem 0 0 .65rem;background:#c2185b;color:#fff;border-radius:999px;padding:.22rem .65rem;font-size:.78rem;font-weight:700}
 </style>
 """.strip()
+
+def _feature_detail_styles() -> str:
+    """16:9 hero that always crops correctly on feature detail pages."""
+    return """
+<style>
+.feature-hero{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#e9ecef;border-radius:.25rem}
+.feature-hero>img{
+  position:absolute;inset:0;
+  width:100%;height:100% !important;
+  object-fit:cover;display:block
+}
+/* Fallback for very old browsers */
+@supports not (aspect-ratio: 1/1){
+  .feature-hero{padding-top:56.25%}
+  .feature-hero>img{position:absolute;top:0;left:0;right:0;bottom:0}
+}
+</style>
+""".strip()
+
 
 # ===== Grid rendering =====
 

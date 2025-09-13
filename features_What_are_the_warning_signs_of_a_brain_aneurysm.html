@@ -123,8 +123,21 @@
     <p class="lead text-secondary">
     Explains the key symptoms of a brain aneurysm rupture, what unruptured aneurysms can cause, and when to seek urgent medical help.
     </p>
-    <figure class="my-3">
-    <img src="img/feature_an_symptoms.jpg" alt="What are the warning signs of a brain aneurysm?" class="img-fluid shadow-sm w-100">
+    <style>
+    .feature-hero{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#e9ecef;border-radius:.25rem}
+    .feature-hero>img{
+      position:absolute;inset:0;
+      width:100%;height:100% !important;
+      object-fit:cover;display:block
+    }
+    /* Fallback for very old browsers */
+    @supports not (aspect-ratio: 1/1){
+      .feature-hero{padding-top:56.25%}
+      .feature-hero>img{position:absolute;top:0;left:0;right:0;bottom:0}
+    }
+    </style>
+    <figure class="feature-hero my-3 shadow-sm">
+    <img src="img/feature_an_symptoms.jpg" alt="What are the warning signs of a brain aneurysm?" loading="lazy" decoding="async">
     </figure>
     <h2 id="what-is-a-brain-aneurysm">What is a brain aneurysm?</h2>
     <p>A brain aneurysm is a weak spot in a brain artery that can balloon out. Most never cause problems, but a rupture can lead to a serious bleed called a subarachnoid haemorrhage (SAH).</p>

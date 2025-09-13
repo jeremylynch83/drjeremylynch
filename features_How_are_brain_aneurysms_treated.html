@@ -123,8 +123,21 @@
     <p class="lead text-secondary">
     Outlines the main treatment approaches for brain aneurysms, comparing coiling, clipping, and newer devices, and explains how doctors decide which option is best.
     </p>
-    <figure class="my-3">
-    <img src="img/feature_aneurysm_rx.jpg" alt="How are brain aneurysms treated?" class="img-fluid shadow-sm w-100">
+    <style>
+    .feature-hero{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#e9ecef;border-radius:.25rem}
+    .feature-hero>img{
+      position:absolute;inset:0;
+      width:100%;height:100% !important;
+      object-fit:cover;display:block
+    }
+    /* Fallback for very old browsers */
+    @supports not (aspect-ratio: 1/1){
+      .feature-hero{padding-top:56.25%}
+      .feature-hero>img{position:absolute;top:0;left:0;right:0;bottom:0}
+    }
+    </style>
+    <figure class="feature-hero my-3 shadow-sm">
+    <img src="img/feature_aneurysm_rx.jpg" alt="How are brain aneurysms treated?" loading="lazy" decoding="async">
     </figure>
     <h2 id="what-are-the-main-treatment-paths">What are the main treatment paths?</h2>
     <p>Treatment aims to secure the aneurysm and prevent bleeding or rebleeding. Options include endovascular procedures inside the vessel, or open surgery. Decisions depend on aneurysm features and your overall health, and are best made by a multidisciplinary team.</p>

@@ -123,8 +123,21 @@
     <p class="lead text-secondary">
     Describes the role of lifestyle in preventing aneurysms and bleeds.
     </p>
-    <figure class="my-3">
-    <img src="img/feature_health.jpg" alt="Can lifestyle changes reduce the risk of a brain aneurysm?" class="img-fluid shadow-sm w-100">
+    <style>
+    .feature-hero{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#e9ecef;border-radius:.25rem}
+    .feature-hero>img{
+      position:absolute;inset:0;
+      width:100%;height:100% !important;
+      object-fit:cover;display:block
+    }
+    /* Fallback for very old browsers */
+    @supports not (aspect-ratio: 1/1){
+      .feature-hero{padding-top:56.25%}
+      .feature-hero>img{position:absolute;top:0;left:0;right:0;bottom:0}
+    }
+    </style>
+    <figure class="feature-hero my-3 shadow-sm">
+    <img src="img/feature_health.jpg" alt="Can lifestyle changes reduce the risk of a brain aneurysm?" loading="lazy" decoding="async">
     </figure>
     <h2 id="which-risks-can-lifestyle-influence">Which risks can lifestyle influence?</h2>
     <p>Several acquired risk factors are linked with aneurysm formation and rupture, including high blood pressure, smoking, heavy alcohol use, and stimulant drugs such as cocaine and amphetamines.</p>
