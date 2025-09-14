@@ -365,7 +365,7 @@ Not quite all. Aneurysms in certain locations, especially in the **posterior cir
 
 ## What are the benefits?
 
-Clipping is an established and effective therapy with a very high chance of success. It often achieves complete occlusion in a single treatment.
+Clipping is an established therapy with a good chance of protecting the aneurysm. 
 
 ## What are the risks?
 
@@ -374,7 +374,6 @@ Recovery is usually longer than with endovascular treatment. Risks include:
 * **Stroke** in 5–15% of cases, which may cause weakness, speech or vision problems.
 * About **1% risk of severe brain injury or death**.
 * Rarely, **Seizures** (epilepsy) or **infection** of the bone flap site.
-* Here’s a corrected version with smoother grammar and flow:
 * **Temporary discomfort**: Swelling and bruising of the face, sometimes causing the eyes to close for a few days; headaches; a feeling that the **bone flap** (the piece of skull replaced after surgery) moves – this is not dangerous and heals over time; and difficulty chewing or opening the mouth due to muscle healing, which usually resolves within six months.
 
 ## Can aneurysms recur after clipping?
@@ -414,7 +413,7 @@ Yes, though this is also uncommon. In the **ISAT trial**, 8% of coiled aneurysms
 
 ## Can aneurysms bleed after coiling?
 
-As with clipping, this is **extremely rare** but not completely impossible.
+As with clipping, this is extremely rare but not impossible.
 
 ## Are aneurysms monitored after coiling?
 
