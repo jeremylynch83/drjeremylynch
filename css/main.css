@@ -18,7 +18,7 @@
   --ff-base:"Source Sans Pro",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
 
   --fs-body:1rem;
-  --fs-p: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
+  --fs-p: clamp(1rem, 0.85rem + 0.2vw, 1rem);
   --fs-h3:clamp(1.25rem,1.1rem + 0.8vw,1.625rem);
   --fs-h4:clamp(1.125rem,1.05rem + 0.5vw,1.375rem);
 
