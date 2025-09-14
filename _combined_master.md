@@ -1041,7 +1041,7 @@ Diagnosing a dural arteriovenous fistula (DAVF) is a step-by-step process that i
 
 ## Medical History and Physical Examination
 
-The first step involves a thorough review of your medical history. We will ask you detailed questions about your symptoms, including their nature, duration, and severity. They may also ask you about your overall health, including any other medical conditions you may have and any medications you are currently taking.
+The first step involves a thorough review of your medical history. We will ask you detailed questions about your symptoms, including their nature, duration, and severity. We may also ask you about your overall health, including any other medical conditions you may have and any medications you are currently taking.
 
 
 ## Imaging Tests
@@ -1056,13 +1056,31 @@ Several types of imaging tests can help visualize the blood vessels in the brain
 
 # Treatment of DAVF {DAVF}
 
+
+The goals of treating a dural arteriovenous fistula are twofold: to relieve symptoms and to reduce the risk of serious bleeding around the brain in the future. The mainstay of treatment is endovascular therapy, in which a catheter is guided through the blood vessels to the site of the fistula. Special materials such as coils, glue or other embolic agents are then used to block the abnormal connection between arteries and veins, restoring more normal blood flow.
+
+
+
 ## How can endovascular treatment help?
 
 “Endovascular” means that access to the brain or surroundings is achieved by threading a very fine tube through your arteries. Embolisation is a way of blocking abnormal blood vessels and is usually carried out to prevent the DAVF from bleeding. This is done by injecting a special glue-like liquid into the DAVF to cut off the blood vessels supplying the fistula.
 
-Endovascular treatment is performed by specialist doctors called interventional neuroradiologists (INRs)
-
 If the DAVF is particularly large or complex, an embolisation may be performed prior to further surgical excision (removal) of the lesion to reduce blood flow to the DAVF and ensure that further surgical treatment is safer.
+
+## What happens during the embolisation procedure?
+
+The DAVF embolisation is performed while you are under a general anaesthetic. The anaesthetic team will put you to sleep prior to the procedure. The procedure is performed by your doctor in the angiography suite in the neuroradiology department and it usually takes between one and three hours. A dedicated team of radiologists, radiographers, anaesthetists, and nurses in the angiography suite will monitor you closely throughout the procedure.
+
+Once the procedure has started your doctor will place a thin flexible plastic tube (catheter) into the femoral artery in the groin or artery in the wrist. The catheter then passes through the main artery in the body called the aorta and finally into the arteries in the neck and brain (cerebral arteries). When the most accessible feeding blood vessel is identified, further catheters (including a microcatheter) are placed inside the first catheter and into this artery and up to the point of the fistulous connection. Embolic material (glue-like) is then injected into this point to obliterate the DAVF. Occasionally small platinum coils will be used in addition. The embolic material creates an artificial blood clot and blocks further blood flowing into the DAVF. X-Rays are taken during the procedure to ensure the DAVF is obliterated.
+
+After the procedure the catheters are removed and the blood vessel in the groin or wrist is sealed off with a collagen plug or manual compression to prevent bleeding.
+
+The procedure usually takes 2–3 hours.
+
+
+## Will it hurt?
+
+The procedure is done under a general anaesthetic and therefore you should not feel any pain. Sometimes it can be uncomfortable around the wrist or groin access site afterwards, but usually this settles with simple analgesics.
 
 
 ## What are the risks of DAVF embolisation?
@@ -1088,20 +1106,7 @@ The procedure may cause a stroke, the risk varies but is in the range of approxi
 Surgical excision is an alternative. This involves making an incision in the skull (craniotomy) to allow the surgeon to access the DAVF. The feeding arteries and draining veins that remain in the brain are then clipped off. Surgery is a well established and effective treatment and can provide protection from DAVF rupture or haemorrhage. Surgical excision has its own specific risks and your neurosurgeon will discuss these in detail with you.
 
 
-## What happens during the embolisation procedure?
 
-The DAVF embolisation is performed while you are under a general anaesthetic. The anaesthetic team will put you to sleep prior to the procedure. The procedure is performed by your doctor in the angiography suite in the neuroradiology department and it usually takes between one and three hours. A dedicated team of radiologists, radiographers, anaesthetists, and nurses in the angiography suite will monitor you closely throughout the procedure.
-
-Once the procedure has started your doctor will place a thin flexible plastic tube (catheter) into the femoral artery in the groin or artery in the wrist. The catheter then passes through the main artery in the body called the aorta and finally into the arteries in the neck and brain (cerebral arteries). When the most accessible feeding blood vessel is identified, further catheters (including a microcatheter) are placed inside the first catheter and into this artery and up to the point of the fistulous connection. Embolic material (glue-like) is then injected into this point to obliterate the DAVF. Occasionally small platinum coils will be used in addition. The embolic material creates an artificial blood clot and blocks further blood flowing into the DAVF. X-Rays are taken during the procedure to ensure the DAVF is obliterated.
-
-After the procedure the catheters are removed and the blood vessel in the groin or wrist is sealed off with a collagen plug or manual compression to prevent bleeding.
-
-The procedure usually takes 2–3 hours.
-
-
-## Will it hurt?
-
-The procedure is done under a general anaesthetic and therefore you should not feel any pain. Sometimes it can be uncomfortable around the wrist or groin access site afterwards, but usually this settles with simple analgesics.
 
 ## What happens after the embolisation?
 
