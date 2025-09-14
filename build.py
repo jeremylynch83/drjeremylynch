@@ -281,7 +281,7 @@ def create_md_content_from_headings(
                         yaml_lines.append(f"  url: {next_url}")
                         yaml_lines.append(f"  text: {yaml_quote(next_txt)}")
 
-            # Breadcrumbs
+            # Breadcrumbs: ancestors only, no current page name
             yaml_lines.append("breadcrumbs:")
             yaml_lines.append(f"- text: Home\n  url: index.html")
             if section:
@@ -292,9 +292,8 @@ def create_md_content_from_headings(
                     section_url = "News.html"
                 else:
                     section_url = section_first.get(section)
-                if title_text != section_name and section_url:
+                if section_url and section_name != title_text:
                     yaml_lines.append(f"- text: {section_name}\n  url: {section_url}")
-            yaml_lines.append(f"- text: {title_text}")
 
             body_lines: List[str] = [f"# {title_text}"]
 
@@ -463,7 +462,7 @@ def create_all_topics(
         'schema_type: "WebPage"',
         "breadcrumbs:",
         "- text: Home\n  url: index.html",
-        "- text: All topics",
+        # No current page in breadcrumbs
     ]
     yaml_block = "---\n" + "\n".join(yaml_parts) + "\n---"
 
@@ -668,7 +667,7 @@ def create_special_list_pages(
             'schema_type: "WebPage"',
             "breadcrumbs:",
             "- text: Home\n  url: index.html",
-            f"- text: {base_title}",
+            # No current page in breadcrumbs
         ]
         yaml_block = "---\n" + "\n".join(yaml_lines) + "\n---"
 

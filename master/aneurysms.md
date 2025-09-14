@@ -67,7 +67,7 @@ Rarely, however, aneurysm rupture can produce less noticeable symptoms although 
 
 ## Unruptured Brain Aneurysm
 
-Most aneurysms do not cause symptoms until they rupture. In rare instances unruptured aneurysms symptoms might include:
+In rare instances unruptured aneurysms symptoms might include:
 
 * Pain above and behind an eye.
 * Dilated pupil.
