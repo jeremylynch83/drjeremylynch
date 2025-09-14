@@ -431,7 +431,10 @@ def build_page_markdown(p: PageInfo, all_pages: List[PageInfo]) -> Tuple[str, st
             body.append(f'<span class="badge rounded-pill bg-light text-secondary border">{esc_tag}</span>')
         body.append('</div>')
 
-    md_content = f"{yaml_block}\n\n" + "\n".join(body)
+    # Wrap body lines inside a container for article content
+    body_wrapped = ["<div class=\"article-content\">"] + body + ["</div>"]
+
+    md_content = f"{yaml_block}\n\n" + "\n".join(body_wrapped)
     return p.filename, md_content
 
 def create_all_topics(
@@ -482,60 +485,6 @@ def _feature_grid_styles() -> str:
     # Images fill their tiles regardless of any global img{height:auto}
     return """
 <style>
-/* Grid */
-.nm-grid{
-  display:grid;
-  grid-template-columns:repeat(12,1fr);
-  gap:.75rem;
-  grid-auto-rows:220px;
-  grid-auto-flow:dense;
-}
-@media (max-width: 991.98px){
-  .nm-grid{grid-template-columns:repeat(6,1fr);grid-auto-rows:200px}
-}
-@media (max-width: 575.98px){
-  .nm-grid{grid-template-columns:repeat(1,1fr);grid-auto-rows:220px}
-}
-
-/* Tiles */
-.nm-tile{position:relative;overflow:hidden;background:#e9ecef;border-radius:0}
-.nm-media-wrap{position:absolute;inset:0}
-
-/* The fix: absolutely position the image and force 100% height */
-.nm-media{
-  position:absolute;inset:0;
-  width:100%;height:100% !important; /* beat any global img{height:auto} */
-  object-fit:cover;display:block;
-  transition:transform .35s ease;
-}
-.nm-tile:hover .nm-media{transform:scale(1.03)}
-
-/* Spans */
-.nm-tile--sm   {grid-column:span 4; grid-row:span 2}
-.nm-tile--wide {grid-column:span 8; grid-row:span 2}
-.nm-tile--tall {grid-column:span 4; grid-row:span 2}
-.nm-tile--hero {grid-column:span 8; grid-row:span 2}
-
-@media (max-width: 991.98px){
-  .nm-tile--sm,.nm-tile--tall{grid-column:span 3}
-  .nm-tile--wide,.nm-tile--hero{grid-column:span 6}
-}
-@media (max-width: 575.98px){
-  .nm-tile--sm,.nm-tile--wide,.nm-tile--tall,.nm-tile--hero{
-    grid-column:span 1; grid-row:span 2
-  }
-}
-
-/* Overlay and text */
-.nm-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.9))}
-.nm-content{position:absolute;left:0;right:0;bottom:0;padding:.9rem 1.1rem 1.1rem;color:#fff}
-.nm-title{margin:0 0 .32rem 0;font-weight:800;line-height:1.08;font-size:clamp(1.25rem,2.2vw,2.3rem);text-shadow:0 2px 4px rgba(0,0,0,.75)}
-.nm-desc{margin:0;max-width:48ch;line-height:1.48;color:#fff;font-weight:600;font-size:clamp(.95rem,1.05vw,1.1rem);text-shadow:0 1px 3px rgba(0,0,0,.85)}
-.nm-ribbon{position:absolute;left:0;top:0;margin:.65rem 0 0 .65rem;background:#c2185b;color:#fff;border-radius:999px;padding:.22rem .65rem;font-size:.78rem;font-weight:700}
-.nm-title,
-.nm-title a{color:#fff !important;text-decoration:none}
-.nm-title a:hover{color:#fff !important;text-decoration:none}
-.nm-desc{color:#fff !important}
 
 
 </style>
@@ -545,17 +494,7 @@ def _feature_detail_styles() -> str:
     """16:9 hero that always crops correctly on feature detail pages."""
     return """
 <style>
-.feature-hero{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#e9ecef;border-radius:.25rem}
-.feature-hero>img{
-  position:absolute;inset:0;
-  width:100%;height:100% !important;
-  object-fit:cover;display:block
-}
-/* Fallback for very old browsers */
-@supports not (aspect-ratio: 1/1){
-  .feature-hero{padding-top:56.25%}
-  .feature-hero>img{position:absolute;top:0;left:0;right:0;bottom:0}
-}
+
 </style>
 """.strip()
 
@@ -890,4 +829,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
