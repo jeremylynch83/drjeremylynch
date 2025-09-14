@@ -231,6 +231,47 @@ figcaption{ text-align:center; }
 .article-links ul{ list-style:none; padding:0; margin:0; }
 .article-links li{ margin-bottom:0.5em; }
 
+.related .sticky-sidebar {
+  background-color: #f8f9fa; /* light grey background */
+  border-radius: 12px;       /* rounded corners */
+  padding: 20px;             /* inner spacing */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+.related h4 {
+  font-weight: 600;
+  color: #6c757d; /* muted grey */
+  margin-bottom: 15px;
+}
+
+.related .list-group-item {
+  background-color: transparent;
+  border: none;              /* remove default borders */
+  padding: 10px 0;
+}
+
+.related .list-group-item a,
+.related .list-group-item span {
+  color: #212529;            /* dark text */
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.related .list-group-item a:hover {
+  text-decoration: underline; /* hover underline like in image */
+}
+
+.related .list-group-item:not(:last-child) {
+  margin-bottom: 5px;         /* small spacing between items */
+}
+
+.related .list-group-item a:hover {
+  text-decoration: underline;
+  color: #0d6efd; /* Bootstrap blue */
+}
+
+
 /* ===== Forms & selects ===== */
 select option{ padding:5px; }
 
@@ -966,7 +1007,53 @@ p.profile_text {
   font-size: 1.25rem;   /* smaller than teaser h2 */
   font-weight: 400;     /* thinner */
   line-height: 1.4;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+}
+
+.article-content h1 {
+  font-family: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 2rem;   /* smaller than teaser h2 */
+  font-weight: 600;     /* thinner */
+  line-height: 1.4;
   margin-top: 1.25rem;
   margin-bottom: 0.5rem;
   color: #1e3a8a;
 }
+
+
+.breadcrumb {
+  font-size: 0.8rem;          
+  letter-spacing: 0px;        /* no extra spacing */
+  word-spacing: -1px;         /* words closer together */
+      
+  padding: 0.35rem 0.6rem;
+  margin: 0;
+  margin-left: 0.5rem;          /* indent */
+  border-radius: 6px;
+  list-style: none;
+  display: flex;
+  gap: 0.25rem;               /* tighter space between items */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+  color: #999;
+  margin: 0 0.15rem;          /* narrower divider spacing */
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #444;
+  transition: color 0.2s;
+}
+
+.breadcrumb-item a:hover {
+  color: #000;
+}
+
+.breadcrumb-item.active {
+  color: #000;
+  font-weight: 500;
+}
+
