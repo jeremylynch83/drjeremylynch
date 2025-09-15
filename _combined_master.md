@@ -832,7 +832,7 @@ image: feature_clipcoil.jpg
 tags: Aneurysm
 ---
 
-You may be in the situation where doctors have recommended treatment for a brain aneurysm rather than  monitoring. Sometimes only one treatment is clearly best, but often patients are offered a choice between two options: clipping or coiling. This can be confusing. Each has different pros and cons, and your own priorities may align more with one treatment than the other.
+You may be in the situation where doctors have recommended treatment for a brain aneurysm but two options have been offered: clipping or coiling. This can be confusing especially since each treatment has different pros and cons. In order to make the decision, in the first instance, it is best to understand in detail the two treatments, as your own priorities may align more with one than the other.
 
 ## What is clipping?
 
@@ -844,20 +844,22 @@ Not quite all. Aneurysms in certain locations, especially in the **posterior cir
 
 ## What are the benefits?
 
-Clipping is an established therapy with a good chance of protecting the aneurysm. 
+Clipping is an established therapy with an excellent chance of protecting the aneurysm. 
 
 ## What are the risks?
 
-Recovery is usually longer than with endovascular treatment. Risks include:
+Risks include:
 
 * **Stroke** in 5–15% of cases, which may cause weakness, speech or vision problems.
+* Swelling around the brain at the site of the surgery can cause symptoms which are usually temporary. 
 * About **1% risk of severe brain injury or death**.
 * Rarely, **Seizures** (epilepsy) or **infection** of the bone flap site.
-* **Temporary discomfort**: Swelling and bruising of the face, sometimes causing the eyes to close for a few days; headaches; a feeling that the **bone flap** (the piece of skull replaced after surgery) moves – this is not dangerous and heals over time; and difficulty chewing or opening the mouth due to muscle healing, which usually resolves within six months.
+* **Temporary discomfort**: Swelling and bruising of the face, sometimes causing the eyes to close for a few days; headaches; a feeling that the **bone flap** (the piece of skull replaced after surgery) moves – this is not dangerous and heals over time; and difficulty chewing or opening the mouth due to muscle healing, which usually resolves within six months. 
+* Recovery is usually longer than with endovascular treatment. On average patients are in hospital about a week after treatment of unruptured aneurysms, although times may be more or less in individual cases. 
 
 ## Can aneurysms recur after clipping?
 
-Yes, although uncommon. No treatment is 100% effective. In the ISAT trial, 6% of clipped aneurysms were incompletely occluded. If this occurs, further treatment may be needed.
+Yes, although this is rare, however no treatment is 100% effective. In the ISAT trial, 6% of clipped aneurysms were incompletely occluded follow-up. If this occurs, further treatment may be needed.
 
 ## Can aneurysms bleed after clipping?
 
@@ -865,30 +867,35 @@ This is very rare but not impossible.
 
 ## Are aneurysms monitored after clipping?
 
-In the UK, aneurysms are usually not monitored with scans after clipping unless there is a particular concern.
+In the UK, aneurysms are usually not monitored with scans after clipping unless there is a particular concern. 
 
 ## What is coiling?
 
-Coiling is a form of **endovascular treatment** developed to overcome some of the shortcomings of surgery. A thin catheter is passed from the groin or wrist into the brain’s blood vessels. **Platinum coils** are placed into the aneurysm, blocking blood flow. Coiling is often combined with other techniques such as **stents**, **flow diverters**, or **intrasaccular devices** to make treatment safer and more effective.
+Coiling is a form of **endovascular treatment** developed to overcome some of the shortcomings of surgery. It is not a temporary treatment, the intention is to provide life-long protection against aneurysm rupture. A thin catheter is passed from the groin or wrist into the brain’s blood vessels. Platinum coils are placed into the aneurysm, blocking blood flow. Coiling is often combined with other techniques such as **stents**, **flow diverters**, or **intrasaccular devices** to make treatment safer and more effective.
 
 ## Can all aneurysms be treated with coiling?
 
-Almost all aneurysms can now be treated endovascularly, with only very rare exceptions.
+Almost all aneurysms can now be treated endovascularly, with rare exceptions. 
 
 ## What are the risks?
 
-Recovery is usually rapid. Patients typically spend one night in hospital and go home the next day. Risks include:
+Risks include:
 
-* **Stroke** in around 5% of cases due to rupture or blockage, though usually lower than for surgery
+* **Stroke** in around 3–5% of cases due to rupture or blockage, though usually lower than for surgery
 * About **1% risk of severe brain injury or death**
 * Rarely, vessel damage at the groin or wrist requiring surgery
 * Temporary sypmtoms such as: Mild soreness, or oozing at the groin or wrist access site
  headaches or pain in the groin. 
-* In some cases, **antiplatelet medication** (such as low-dose aspirin) is prescribed for several months if a stent is used. 
+* In some cases, **antiplatelet medication** (such as low-dose aspirin) is prescribed for several months if a stent is used. This can cause bruising if you knock yourself. 
+* Recovery is usually rapid. Patients typically spend one night in hospital and go home the next day. 
+
+## Will I need to take life-long blood-thinning medication?
+
+Antiplatelet (blood thinning) medication is sometimes, but not always, prescribed. This usually takes the form of two tablets, low-dose aspirin and a second tablet such as prasugrel (Plavix), clopidogrel, or ticagrelor (Brillanta). The second tablet is usually discontinued at 6-months. The low-dose aspirin is usually continued 1–2 years and then usually stopped, although rarely it is continued long-term. 
 
 ## Can aneurysms recur after coiling?
 
-Yes, though this is also uncommon. In the **ISAT trial**, 8% of coiled aneurysms were incompletely occluded. If this happens, it is usually seen on imaging and further endovascular treatment can be performed.
+Yes, though this is also uncommon. In the **ISAT trial**, 8% of coiled aneurysms were incompletely occluded at follow-up. If this happens, it is usually seen on scans and further endovascular treatment can be performed.
 
 ## Can aneurysms bleed after coiling?
 
@@ -896,18 +903,18 @@ As with clipping, this is extremely rare but not impossible.
 
 ## Are aneurysms monitored after coiling?
 
-Yes. Typically follow-up scans are performed with **MRA** (magnetic resonance angiography, no radiation) or sometimes **DSA** (digital subtraction angiography). These are usually done for a few years and then stopped if the aneurysm is stable.
+Yes. Typically follow-up scans are performed with **MRA** (magnetic resonance angiography, no radiation) or sometimes **CTA** or **DSA** (digital subtraction angiography). These are usually done for a few years and then stopped if the aneurysm is stable.
 
 ## So should I have it clipped or coiled?
 
-This is a **personal decision**.
+This is a **personal decision** and the final choice depends on your own preferences and circumstances.
 
-It is important to consider both the risk of the aneurysm and the risks of treatment. The chance of bleeding after either treatment is extremely low.
+It is important to consider both the risk of the aneurysm and the risks of treatment. Both are very effective treatments with comparable long-term rates of aneurysm protection.
 
-* **Clipping** has a slightly higher rate of complete occlusion, meaning retreatment is less often needed. However, it carries higher risks of stroke (5–15%), seizures, and wound complications, and requires a longer recovery.
+* **Clipping** has a slightly higher rate of complete occlusion, meaning retreatment is less often needed. However, it is a more invasive procedure that carries higher risks of stroke (5–15%), seizures, and wound complications, and requires a longer recovery.
 * **Coiling and endovascular treatment** also has a very high occlusion rate, though in a small number of patients follow-up treatment is required. It carries a lower stroke risk, is much less invasive, usually involves just one night in hospital, and allows much quicker recovery.
 
-The final choice depends on your own preferences and circumstances.
+
 
 ## Key takeaways
 
