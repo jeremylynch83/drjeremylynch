@@ -430,12 +430,10 @@ Yes. Typically follow-up scans are performed with **MRA** (magnetic resonance an
 
 This is a **personal decision** and the final choice depends on your own preferences and circumstances.
 
-It is important to consider both the risk of the aneurysm and the risks of treatment. Both are very effective treatments with comparable long-term rates of aneurysm protection.
+It is important to consider both the risk of the aneurysm and the risks of treatment. Both techniqes are very effective with comparable long-term rates of aneurysm protection.
 
-* **Clipping** has a slightly higher rate of complete occlusion, meaning retreatment is less often needed. However, it is a more invasive procedure that carries higher risks of stroke (5–15%), seizures, and wound complications, and requires a longer recovery.
-* **Coiling and endovascular treatment** also has a very high occlusion rate, though in a small number of patients follow-up treatment is required. It carries a lower stroke risk, is much less invasive, usually involves just one night in hospital, and allows much quicker recovery.
-
-
+* **Clipping** has a slightly higher, but not 100%, rate of complete occlusion, meaning retreatment is less often needed. However, it is a more invasive procedure that carries higher risks of stroke (5–15%), seizures, and wound complications, and requires a longer recovery.
+* **Coiling and endovascular treatment** also has a very high occlusion rate, with a small minority of patients requiring follow-up treatment. It carries a lower stroke risk, is much less invasive, usually involves just one night in hospital, and allows much quicker recovery.
 
 ## Key takeaways
 
