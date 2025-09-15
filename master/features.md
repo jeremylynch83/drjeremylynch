@@ -372,11 +372,11 @@ Clipping is an established therapy with an excellent chance of protecting the an
 Risks include:
 
 * **Stroke** in 5–15% of cases, which may cause weakness, speech or vision problems.
-* Swelling around the brain at the site of the surgery can cause symptoms which are usually temporary. 
+* **Swelling around the brain** at the site of the surgery can cause symptoms which are usually temporary. 
 * About **1% risk of severe brain injury or death**.
 * Rarely, **Seizures** (epilepsy) or **infection** of the bone flap site.
 * **Temporary discomfort**: Swelling and bruising of the face, sometimes causing the eyes to close for a few days; headaches; a feeling that the **bone flap** (the piece of skull replaced after surgery) moves – this is not dangerous and heals over time; and difficulty chewing or opening the mouth due to muscle healing, which usually resolves within six months. 
-* Recovery is usually longer than with endovascular treatment. On average patients are in hospital about a week after treatment of unruptured aneurysms, although times may be more or less in individual cases. 
+* **Recovery** is usually longer than with endovascular treatment. On average patients are in hospital about a week after treatment of unruptured aneurysms, although times may be more or less in individual cases. A period of recovery at home is also usually needed, with a period of time off work typically required. 
 
 ## Can aneurysms recur after clipping?
 
@@ -404,15 +404,13 @@ Risks include:
 
 * **Stroke** in around 3–5% of cases due to rupture or blockage, though usually lower than for surgery
 * About **1% risk of severe brain injury or death**
-* Rarely, vessel damage at the groin or wrist requiring surgery
-* Temporary sypmtoms such as: Mild soreness, or oozing at the groin or wrist access site
- headaches or pain in the groin. 
-* In some cases, **antiplatelet medication** (such as low-dose aspirin) is prescribed for several months if a stent is used. This can cause bruising if you knock yourself. 
-* Recovery is usually rapid. Patients typically spend one night in hospital and go home the next day. 
+* Rarely, vessel damage at the **groin or wrist** requiring surgery.
+* **Temporary** symptoms such as: Soreness or oozing at the groin or wrist access site. Headaches are sometimes experienced in the days following the procedure. 
+* Recovery is usually **rapid**. Patients typically spend one night in hospital and go home the next day. 
 
 ## Will I need to take life-long blood-thinning medication?
 
-Antiplatelet (blood thinning) medication is sometimes, but not always, prescribed. This usually takes the form of two tablets, low-dose aspirin and a second tablet such as prasugrel (Plavix), clopidogrel, or ticagrelor (Brillanta). The second tablet is usually discontinued at 6-months. The low-dose aspirin is usually continued 1–2 years and then usually stopped, although rarely it is continued long-term. 
+Antiplatelet (blood thinning) medication is sometimes, but not always, prescribed. This usually takes the form of two tablets: low-dose aspirin and a second tablet such as prasugrel (Plavix), clopidogrel, or ticagrelor (Brillanta). The second tablet is usually discontinued at about 6-months. The low-dose aspirin is usually continued 1–2 years and then usually stopped, although rarely it is continued long-term. You will be advised whether this is needed before any procedure. 
 
 ## Can aneurysms recur after coiling?
 
