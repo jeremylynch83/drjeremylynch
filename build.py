@@ -263,7 +263,8 @@ def create_md_content_from_headings(
             # Related links and next link for normal sections
             if section and sec_lower not in SPECIAL_SECTIONS:
                 links = grouped_headings.get(section, [])
-                if links:
+                # Only add links if the section has more than one page
+                if len(links) > 1:
                     yaml_lines.append("links:")
                     current_idx = None
                     for idx, (url, txt) in enumerate(links):
@@ -300,9 +301,8 @@ def create_md_content_from_headings(
             if sec_lower == "features" and description:
                 body_lines.append(f'<p class="lead text-secondary">{html.escape(description)}</p>')
 
-            # Feature detail hero with fixed aspect ratio and cover
+            # Feature hero figure without empty style block
             if sec_lower == "features" and image_url:
-                body_lines.append(_feature_detail_styles())
                 alt = html.escape(title_text, quote=True)
                 figure_html = (
                     f'<figure class="feature-hero my-3 shadow-sm">'
@@ -389,8 +389,11 @@ def build_related_links(pages: List[PageInfo], for_page: PageInfo, limit: int = 
 
 def _seo_yaml_for_page(p: PageInfo) -> List[str]:
     """Add SEO-related YAML fields for article-like pages."""
-    seo: List[str] = []
-    seo.append(f"canonical: {yaml_quote(abs_url(p.filename))}")
+    seo: List[str] = [
+        f"canonical: {yaml_quote(abs_url(p.filename))}",
+        'og_type: "article"',
+        'schema_type: "NewsArticle"' if p.sec_lower == "news" else 'schema_type: "Article"',
+    ]
     if p.description:
         seo.append(f'description: {yaml_quote(p.description)}')
     if p.image_url:
@@ -398,12 +401,6 @@ def _seo_yaml_for_page(p: PageInfo) -> List[str]:
     if p.tags:
         keywords = ", ".join(p.tags)
         seo.append(f'keywords: {yaml_quote(keywords)}')
-    if p.sec_lower == "news":
-        seo.append('og_type: "article"')
-        seo.append('schema_type: "NewsArticle"')
-    else:
-        seo.append('og_type: "article"')
-        seo.append('schema_type: "Article"')
     return seo
 
 def build_page_markdown(p: PageInfo, all_pages: List[PageInfo]) -> Tuple[str, str]:
@@ -431,7 +428,7 @@ def build_page_markdown(p: PageInfo, all_pages: List[PageInfo]) -> Tuple[str, st
         body.append('</div>')
 
     # Wrap body lines inside a container for article content
-    body_wrapped = ["<div class=\"article-content\">"] + body + ["</div>"]
+    body_wrapped = ['<div class="article-content">'] + body + ['</div>']
 
     md_content = f"{yaml_block}\n\n" + "\n".join(body_wrapped)
     return p.filename, md_content
@@ -462,51 +459,58 @@ def create_all_topics(
         'schema_type: "WebPage"',
         "breadcrumbs:",
         "- text: Home\n  url: index.html",
-        # No current page in breadcrumbs
     ]
     yaml_block = "---\n" + "\n".join(yaml_parts) + "\n---"
 
-    body_lines = ["# All topics", ""]
+    b: List[str] = []
+    b.append('<div id="all-topics">')
+    b.append('  <header class="topics-header">')
+    b.append('    <h1 class="topics-title">All topics</h1>')
+    b.append('  </header>')
+
     for sec in sorted_sections:
         sec_name = group_names.get(sec, sec)
-        body_lines.append(f"## {sec_name}")
+        section_id = f"section-{slugify(sec)}"
+        b.append(f'  <section class="topics-section" id="{html.escape(section_id, quote=True)}">')
+        b.append(f'    <h2 class="topics-section__title">{html.escape(sec_name)}</h2>')
+        b.append('    <ul class="topics-grid">')
         for title, filename in section_pages[sec]:
-            body_lines.append(f"- [{title}]({filename})")
-        body_lines.append("")
+            esc_title = html.escape(title, quote=True)
+            esc_href = html.escape(filename, quote=True)
+            b.append('      <li>')
+            b.append(f'        <a class="topic-card" href="{esc_href}">')
+            b.append(f'          <span class="topic-card__title">{esc_title}</span>')
+            b.append('        </a>')
+            b.append('      </li>')
+        b.append('    </ul>')
+        b.append('  </section>')
 
-    md = f"{yaml_block}\n\n" + "\n".join(body_lines)
+    b.append('</div>')
+
+    md = f"{yaml_block}\n\n" + "\n".join(b)
     convert_md_to_html(md, "All_topics.html", template_path)
     print("Created HTML file: All_topics.html")
-
-# ===== CSS Grid styles injected where needed =====
-
-def _feature_grid_styles() -> str:
-    # Images fill their tiles regardless of any global img{height:auto}
-    return """
-<style>
-
-
-</style>
-""".strip()
-
-def _feature_detail_styles() -> str:
-    """16:9 hero that always crops correctly on feature detail pages."""
-    return """
-<style>
-
-</style>
-""".strip()
 
 
 # ===== Grid rendering =====
 
+# One source of truth for the mosaic pattern and widths
+TILE_PATTERN: List[Tuple[str, int]] = [
+    ("hero", 8), ("sm", 4), ("sm", 4), ("wide", 8), ("sm", 4), ("tall", 4)
+]
+
 def _tile_class_for_index(idx: int) -> str:
+    """Return tile class name for index based on TILE_PATTERN."""
+    return TILE_PATTERN[idx % len(TILE_PATTERN)][0]
+
+# ===== Helpers to ensure no trailing gap on the home mosaic =====
+
+def _tile_width_at(index: int) -> int:
     """
-    Repeating pattern to mimic an editorial mosaic.
-    0: hero, 1: small, 2: small, 3: wide, 4: small, 5: tall, then repeat.
+    Desktop grid column width for the tile at position index.
+    Uses TILE_PATTERN widths on a 12-col grid.
     """
-    pattern = ["hero", "sm", "sm", "wide", "sm", "tall"]
-    return pattern[idx % len(pattern)]
+    return TILE_PATTERN[index % len(TILE_PATTERN)][1]
 
 def render_feature_cards(items: List[Tuple[str, str, str, str, str]]) -> str:
     """
@@ -517,7 +521,6 @@ def render_feature_cards(items: List[Tuple[str, str, str, str, str]]) -> str:
         return html.escape(s or "", quote=True)
 
     out: List[str] = []
-    out.append(_feature_grid_styles())
     out.append('<div class="nm-grid">')
 
     for idx, (t, fn, desc, img, label) in enumerate(items):
@@ -547,17 +550,6 @@ def render_feature_cards(items: List[Tuple[str, str, str, str, str]]) -> str:
 
     out.append('</div>')
     return "\n".join(out)
-
-# ===== Helpers to ensure no trailing gap on the home mosaic =====
-
-def _tile_width_at(index: int) -> int:
-    """
-    Desktop grid column width for the tile at position index (0-based).
-    Pattern used by render_feature_cards: hero, sm, sm, wide, sm, tall.
-    hero/wide = 8 cols, sm/tall = 4 cols on a 12-col grid.
-    """
-    pattern = [8, 4, 4, 8, 4, 4]
-    return pattern[index % len(pattern)]
 
 def _pick_count_for_full_row(total_items: int, target: int = 10, min_items: int = 6, grid_cols: int = 12) -> int:
     """
@@ -672,7 +664,6 @@ def create_special_list_pages(
         yaml_block = "---\n" + "\n".join(yaml_lines) + "\n---"
 
         b: List[str] = []
-        b.append(_feature_grid_styles())
         b.append(f'<p class="text-uppercase text-secondary fw-semibold small mb-3">{esc(base_title)}</p>')
         b.append('<div class="nm-grid">')
 
