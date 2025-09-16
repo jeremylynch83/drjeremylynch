@@ -645,7 +645,7 @@ The main potential complication of cerebral angiography is of having a stroke, w
 
 The second main risk is of damage to the artery at the access site. It is common to get small amount of bleeding after the procedure and this usually stops spontaneously. If the bleeding is heavier or if there is internal bleeding then this sometimes require treatment, such as an injection of thrombin or even surgical repair. It is very rare for this to be necessary, however. The risk is lower if the wrist (rather than the groin) is used as the access site.
 
-## Bleeding from the access site
+## Blockage of the access site artery
 
 Another rare complication is blockage of the artery at the access site, resulting in not enough blood getting to the arm or leg. This condition may require surgery to remedy.
 

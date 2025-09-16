@@ -592,27 +592,37 @@ def _pick_count_for_full_row(total_items: int, target: int = 10, min_items: int 
             best_n = n
     return best_n
 
-def create_index(all_features: List[Tuple[str, str, str, str, str]]) -> None:
+# ===== Modify create_index =====
+
+def create_index(
+    all_features: List[Tuple[str, str, str, str, str]],
+    template_pre_path: str = 'templates/index_pre.html',
+    footer_path: str = 'templates/footer.html',
+    out_html: str = 'index.html',
+    target_tiles: int = 10,
+) -> int:
     """
-    Build index.html from templates/index_pre.html.
-    Choose a count so the last row on a 12-col grid has no whitespace.
-    Always includes at least 6 items if available.
+    Build a front page from a given HTML template.
+    Picks a count so the last row on a 12-col grid has no whitespace.
+    Returns the number of feature tiles written.
     """
-    with open('templates/index_pre.html', 'r', encoding='utf-8-sig') as f:
+    with open(template_pre_path, 'r', encoding='utf-8-sig') as f:
         index_content = f.read()
-    with open('templates/footer.html', 'r', encoding='utf-8-sig') as f:
+    with open(footer_path, 'r', encoding='utf-8-sig') as f:
         footer_content = f.read()
 
     feats_sorted = list(reversed(all_features)) if all_features else []
-    count = _pick_count_for_full_row(len(feats_sorted), target=10, min_items=6, grid_cols=12)
+    count = _pick_count_for_full_row(len(feats_sorted), target=target_tiles, min_items=6, grid_cols=12)
     latest_features = feats_sorted[:count]
 
     feature_html = render_feature_cards(latest_features) if latest_features else ""
-    out_html = index_content.replace('$latest_features$', feature_html).replace('$footer$', footer_content)
+    out_html_content = index_content.replace('$latest_features$', feature_html).replace('$footer$', footer_content)
 
-    with open('index.html', 'w', encoding='utf-8-sig') as f:
-        f.write(out_html)
-    print(f"Created index.html with {count} feature tiles (aiming to fill last row)")
+    with open(out_html, 'w', encoding='utf-8-sig') as f:
+        f.write(out_html_content)
+    print(f"Created {out_html} with {count} feature tiles (aiming to fill last row)")
+    return count
+
 
 def create_special_list_pages(
     kind: str,
@@ -801,9 +811,24 @@ def main():
     create_special_list_pages("news", news_items, template_path, page_size=12)
     expected_outputs.update(_expected_paginated("News", len(news_items), page_size=12))
 
-    # Home page: include a count that fills the last desktop row, at least 6 if available
-    create_index(feats)
+    # Home pages
+    create_index(
+        feats,
+        template_pre_path='templates/index_pre.html',
+        footer_path='templates/footer.html',
+        out_html='index.html',
+        target_tiles=10,
+    )
     expected_outputs.add("index.html")
+
+    create_index(
+        feats,
+        template_pre_path='templates/london_pre.html',
+        footer_path='templates/footer.html',
+        out_html='index_london.html',
+        target_tiles=10,
+    )
+    expected_outputs.add("index_london.html")
 
     base_url = BASE_URL
     create_sitemap(base_url)
