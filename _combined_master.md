@@ -486,7 +486,7 @@ tags: Aneurysm
 
 ## Surgical clipping
 
-Treatment began in the 20th century with open surgery. Surgeons performed clipping, placing a small metal clip across the aneurysm’s neck to seal it. Open surgical clipping of intracranial aneurysms was pioneered in the early twentieth century, with Walter Dandy performing the first successful neck-clipping in 1937. Early procedures carried high risks because of poor visualisation, limited clip designs and inadequate anaesthesia. The introduction of the operating microscope in the late 1950s allowed surgeons to work with far greater precision, while the development of refined craniotomy approaches and more sophisticated clip designs reduced complications and improved vessel preservation. Advances in angiography, CT and MR imaging, along with intraoperative fluorescence techniques, further enhanced accuracy and safety. Modern anaesthesia and intensive care support also played a crucial role in lowering mortality. Over the decades, these innovations transformed clipping from a hazardous operation into a reliable and effective treatment, though its role has more recently been shared with less invasive endovascular methods.
+Surgeons performed clipping, placing a small metal clip across the aneurysm’s neck to seal it. Open surgical clipping of intracranial aneurysms was pioneered in the early twentieth century, with Walter Dandy performing the first successful neck-clipping in 1937. Early procedures carried high risks because of poor visualisation, limited clip designs and inadequate anaesthesia. The introduction of the operating microscope in the late 1950s allowed surgeons to work with far greater precision, while the development of refined craniotomy approaches and more sophisticated clip designs reduced complications and improved vessel preservation. Advances in angiography, CT and MR imaging, along with intraoperative fluorescence techniques, further enhanced accuracy and safety. Modern anaesthesia and intensive care support also played a crucial role in lowering mortality. Over the decades, these innovations transformed clipping from a hazardous operation into a reliable and effective treatment, though its role has more recently been shared with less invasive endovascular methods.
 
 ## Endovascular treatment 
 
@@ -542,10 +542,10 @@ Both treatments are effective. Historically, surgery was the only option. Today,
 
 Staying in hospital after aneurysm treatment allows doctors to monitor closely for complications such as stroke, seizures, or bleeding. It also gives time to manage pain effectively and care for the surgical or access site wound. The hospital stay supports early mobilisation and recovery in a safe environment, while also ensuring that plans for discharge and follow-up care are properly arranged.
 
-For **endovascular treatment**, the average stay is about **one day**. Many patients go home the following morning, once routine scans and checks confirm that everything is stable. There may be some discomfort at the groin or wrist access site, but this usually settles quickly. Patients can mobilise soon after treatment and often return to normal activities within days. Returning to work is sometimes possible within the same week if recovery is smooth.
+For **endovascular treatment**, the average stay is about **one day**. Many patients go home the following morning, once routine scans and checks confirm that everything is stable. However, if the treatment has complications then hospital stays can be longer.  There may be some discomfort at the groin or wrist access site, but this usually settles quickly. Patients can mobilise soon after treatment and often return to normal activities within days. Returning to work is sometimes possible within the same week if recovery is smooth. 
 
-For **surgical clipping**, the hospital stay is usually **about a week**. This longer stay is because open surgery is more invasive, involves a wound in the skull, and requires closer monitoring as the body heals. Recovery takes longer. In the first days, swelling and bruising of the face are common and can temporarily close the eyes. Headaches are frequent. Some patients notice the **bone flap** (the piece of bone replaced after surgery) feels like it moves, but this is not dangerous and heals securely. The chewing muscle can be sore, making it harder to open the mouth or chew for a few months. These symptoms usually improve within six months.
-Most people need a few weeks to months off work. Going back earlier is possible but can lead to more fatigue.
+For **surgical clipping**, the hospital stay is usually **about a week**. This longer stay is because open surgery is more invasive, involves a wound in the skull, and requires closer monitoring as the body heals.  In the first days, swelling and bruising of the face are common and can temporarily close the eyes. Headaches can also develop. Some patients notice the **bone flap** (the piece of bone replaced after surgery) feels like it moves, but this is not dangerous and heals securely. The chewing muscle can be sore, making it harder to open the mouth or chew for a few months. These symptoms usually improve within six months.
+Most people need a few weeks to months off work. Going back earlier is possible but can lead to more fatigue. If complications develop, similar to endovascular therapy, hospital stays can be longer.
 
 ## What about ruptured aneurysms?
 
@@ -575,7 +575,7 @@ There are two main treatment options:
 * **Surgical clipping**: An operation in which the skull is temporarily opened and a tiny metal clip is placed across the neck of the aneurysm to seal it off.
 * **Endovascular treatment**: A minimally invasive approach performed from inside the blood vessels, usually by passing catheters from the groin or wrist up to the brain. Platinum coils, stents, or flow-diverting devices are placed to seal or redirect blood flow away from the aneurysm.
 
-Historically, clipping was the only option. Since the early 2000s, large clinical studies such as the **International Subarachnoid Aneurysm Trial (ISAT)** have shown that endovascular coiling gives good outcomes for many patients. Today, most aneurysms that can be treated this way are managed endovascularly as it is a less invasive technique.
+Historically, clipping was the only option. Since the early 2000s, large clinical studies such as the **International Subarachnoid Aneurysm Trial (ISAT)** have shown that endovascular coiling gives good outcomes for many patients. Today, the majority of aneurysms that can be treated this way are managed endovascularly as it is a less invasive technique.
 
 ## Risks and recovery with surgical clipping
 
@@ -584,7 +584,7 @@ Surgical clipping is an established but more invasive method of treatment that s
 Risks include:
 
 * **Severe brain injury or death**: Rare, around 1%.
-* **Stroke**: Occurs in about 5–15% of cases. This can cause weakness of the arms or legs, problems with speech, or vision changes.
+* **Stroke**: Occurs in about 5–15% of cases. This can cause weakness of the arms or legs, problems with speech, or vision changes. The lower end is more typical for straightforward anterior circulation aneurysms. 
 * **Local effects**: The operation can affect the brain close to the aneurysm, leading to temporary swelling or bruising.
 * **Epileptic seizures**: Rarely patients can develop epileptic seizures after surgery.
 * **Infection**: The wound from the craniotomy (surgical opening in the skull) can very rarely become infected.
@@ -598,7 +598,7 @@ At home, recovery requires pacing. Patients are advised to rest regularly, stay 
 Rather than requiring an incision and direct surgical access to the aneurysm, endovascular treatment guides small, specialized devices through the patient’s blood vessels to the site of the aneurysm. Embolisation means to promote clot formation within the aneurysm by inserting devices such as coils into the aneurysm or placing stents acoss its neck.
 
 * **Severe brain injury or death**: Again rare, around 1%.
-* **Stroke**: Occurs in about 3–5% of cases.
+* **Stroke**: Occurs in about 3–5% of cases. Towards the lower end in straightforward cases. 
 * **Access site complications**: The site of entry into the blood vessels is usually the groin or wrist and some discomfort is common but usually temporary. It is possible to get bleeding after the procedure and obstruction of the blood vessel, which very rarely can require treatment such as further injections or surgery.
 
 In contrast to surgery, epileptic seizures and wound infection are generally not a concern.
@@ -664,11 +664,12 @@ Finally, remember that the absolute risk of rupture in the general population is
 
 ## Key takeaways
 
-* Short answer: you cannot prevent every aneurysm, but you can lower your risk and catch higher risk problems early.
-* Aneurysms are present in about 3% of adults. Most never rupture.
-* Most aneurysms are idiopathic in practice, but some types have defined causes such as infection, dissection and trauma.
-* Reduce risk by stopping smoking, controlling blood pressure, moderating alcohol, avoiding stimulants and maintaining overall vascular health. Consider aspirin only on clinician advice.
-* Most incidental aneurysms do not need treatment. When treatment is needed, both clipping and endovascular options are effective. Endovascular treatment is minimally invasive and often means a quicker recovery.
+* **Short** answer: you cannot prevent every aneurysm, but you can lower your risk and catch higher risk problems early.
+* Aneurysms are present in about **3%** of adults. Most never rupture.
+* Most aneurysms are **idiopathic** in practice, but some types have defined causes such as infection, dissection and trauma.
+* **Reduce** risk by stopping smoking, controlling blood pressure, moderating alcohol, avoiding stimulants and maintaining overall vascular health. Consider aspirin only on clinician advice.
+* Most incidental aneurysms do not need treatment. When treatment is needed, both **clipping** and endovascular options are effective. Endovascular treatment is minimally invasive and often means a quicker recovery.
+
 
 
 
@@ -750,9 +751,9 @@ Call emergency services immediately if you develop a sudden, extremely severe he
 ---
 
 ## Key takeaways
-- A sudden, worst-ever headache needs urgent medical assessment.
-- Other warning signs include neck stiffness, vomiting, fainting, seizures and sudden weakness or speech problems.
-- Most unruptured aneurysms are silent, but large ones can cause pain behind the eye or double vision.
+* A sudden, **worst-ever** headache needs urgent medical assessment.
+* Other warning signs include **neck** stiffness, vomiting, fainting, seizures and sudden weakness or speech problems.
+* Most unruptured aneurysms are **silent**, but large ones can cause pain behind the eye or double vision.
 
 
 
@@ -784,10 +785,11 @@ Your team will focus on blood pressure and other cardiovascular risks. Aspirin h
 ---
 
 ## Key takeaways
-- Most unruptured aneurysms do not rupture, and many are safely monitored.
-- Decisions balance aneurysm features and personal risk factors, often using PHASES and ELAPSS.
-- Monitoring includes tight control of risk factors and planned imaging follow-up.
-- Seek urgent care for a sudden, worst-ever headache or new neurological symptoms.
+
+* Most unruptured aneurysms do not **rupture**, and many are safely monitored.
+* Decisions balance aneurysm **features** and personal risk factors, often using PHASES and ELAPSS.
+* Monitoring includes tight control of risk **factors** and planned imaging follow-up.
+* Seek urgent care for a sudden, **worst-ever** headache or new neurological symptoms.
 
 
 # Can lifestyle changes reduce the risk of a brain aneurysm? {features}
@@ -832,7 +834,9 @@ image: feature_clipcoil.jpg
 tags: Aneurysm
 ---
 
-You may be in the situation where doctors have recommended treatment for a brain aneurysm but two options have been offered: clipping or coiling. This can be confusing especially since each treatment has different pros and cons. In order to make the decision, in the first instance, it is best to understand in detail the two treatments, as your own priorities may align more with one than the other.
+You may be in the situation where doctors have recommended treatment for a brain aneurysm but two options have been offered: **clipping** (surgery) or **coiling** (endovascular treatment). This can be confusing, especially since each treatment has different pros and cons. To make the decision, it is best first to understand the two treatments in detail, as your own priorities may align more with one than the other.
+
+Note that the information below is mainly applicable to unruptured aneurysms. If the aneurysm has recently ruptured then endovascular treatment is generally the first-line treatment unless it is not possible to undertake it. We mention the [ISAT trial](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(14)60975-2/fulltext) which involved ruptured aneurysms because this is one of a very few trials with systematic imaging follow-up that directly compared coiling and clipping. 
 
 ## What is clipping?
 
@@ -840,26 +844,24 @@ Clipping is a form of **open surgery** that has been used since the 20th century
 
 ## Can all aneurysms be treated with clipping?
 
-Not quite all. Aneurysms in certain locations, especially in the **posterior circulation** (the arteries at the back of the brain), are usually not clipped because surgery there is too invasive and would cause excessive local damage.
+Not quite all. Aneurysms in certain locations, especially in the **posterior circulation** (the arteries at the back of the brain), are much less commonly clipped as there is a higher risk of complications.
 
 ## What are the benefits?
 
-Clipping is an established therapy with an excellent chance of protecting the aneurysm. 
+Clipping is an established therapy with an excellent chance of protecting the aneurysm.
 
 ## What are the risks?
 
-Risks include:
-
-* **Stroke** in 5–15% of cases, which may cause weakness, speech or vision problems.
-* Swelling around the brain at the site of the surgery can cause symptoms which are usually temporary. 
+* **Stroke** in 5–15% of cases, which may cause weakness, speech, or vision problems. The lower end is more typical for straightforward anterior circulation aneurysms.
+* **Swelling around the brain** at the site of the surgery, which can cause symptoms that are usually temporary.
 * About **1% risk of severe brain injury or death**.
-* Rarely, **Seizures** (epilepsy) or **infection** of the bone flap site.
-* **Temporary discomfort**: Swelling and bruising of the face, sometimes causing the eyes to close for a few days; headaches; a feeling that the **bone flap** (the piece of skull replaced after surgery) moves – this is not dangerous and heals over time; and difficulty chewing or opening the mouth due to muscle healing, which usually resolves within six months. 
-* Recovery is usually longer than with endovascular treatment. On average patients are in hospital about a week after treatment of unruptured aneurysms, although times may be more or less in individual cases. 
+* Rarely, **seizures** (epilepsy) or **infection** of the bone flap site.
+* **Temporary discomfort** may include swelling and bruising of the face (sometimes enough to close the eyes for a few days), headaches, a sensation that the bone flap is moving (this is harmless and settles as healing progresses), and difficulty chewing or opening the mouth due to muscle recovery, which usually improves within six months.
+* **Recovery** is usually longer than with endovascular treatment. On average, patients are in hospital for about a week after treatment of unruptured aneurysms, although this may vary. A period of recovery at home is also usually needed, with time off work typically required.
 
 ## Can aneurysms recur after clipping?
 
-Yes, although this is rare, however no treatment is 100% effective. In the ISAT trial, 6% of clipped aneurysms were incompletely occluded follow-up. If this occurs, further treatment may be needed.
+Yes, although this is rare as no treatment is 100% effective. In the ISAT trial, 6% of clipped aneurysms were incompletely occluded at follow-up. If this occurs, further treatment may be needed. It is worth noting that recurrence rates for unruptured aneurysms are lower than this.
 
 ## Can aneurysms bleed after clipping?
 
@@ -867,59 +869,50 @@ This is very rare but not impossible.
 
 ## Are aneurysms monitored after clipping?
 
-In the UK, aneurysms are usually not monitored with scans after clipping unless there is a particular concern. 
+In the UK, aneurysms are usually not monitored with scans after clipping unless there is a particular concern.
 
 ## What is coiling?
 
-Coiling is a form of **endovascular treatment** developed to overcome some of the shortcomings of surgery. It is not a temporary treatment, the intention is to provide life-long protection against aneurysm rupture. A thin catheter is passed from the groin or wrist into the brain’s blood vessels. Platinum coils are placed into the aneurysm, blocking blood flow. Coiling is often combined with other techniques such as **stents**, **flow diverters**, or **intrasaccular devices** to make treatment safer and more effective.
+Coiling is a form of **endovascular treatment** developed to overcome some of the shortcomings of surgery. It is not a temporary treatment. The intention is to provide life-long protection against aneurysm rupture. A thin catheter is passed from the groin or wrist into the brain’s blood vessels. Platinum coils are placed into the aneurysm, blocking blood flow. Coiling is often combined with other techniques such as **stents**, **flow diverters**, or **intrasaccular devices** to make treatment safer and more effective.
 
-## Can all aneurysms be treated with coiling?
+## Can all aneurysms be treated with endovascular treatment?
 
-Almost all aneurysms can now be treated endovascularly, with rare exceptions. 
+Almost all aneurysms can now be treated endovascularly, with rare exceptions.
 
 ## What are the risks?
 
-Risks include:
-
-* **Stroke** in around 3–5% of cases due to rupture or blockage, though usually lower than for surgery
-* About **1% risk of severe brain injury or death**
-* Rarely, vessel damage at the groin or wrist requiring surgery
-* Temporary sypmtoms such as: Mild soreness, or oozing at the groin or wrist access site
- headaches or pain in the groin. 
-* In some cases, **antiplatelet medication** (such as low-dose aspirin) is prescribed for several months if a stent is used. This can cause bruising if you knock yourself. 
-* Recovery is usually rapid. Patients typically spend one night in hospital and go home the next day. 
+* **Stroke** in around 3–5% of cases due to rupture or blockage, usually lower than for surgery. In some series it can be slightly lower for elective, unruptured aneurysms. 
+* About **1% risk of severe brain injury or death**.
+* Rarely, vessel damage at the **groin or wrist** requiring surgery.
+* **Temporary** symptoms such as soreness or oozing at the groin or wrist access site. Headaches may also occur in the days following the procedure.
+* Recovery is usually **rapid**. Patients typically spend one night in hospital and go home the next day. Especially in older patients or those with health problems, coiling is often safer because recovery is easier.
 
 ## Will I need to take life-long blood-thinning medication?
 
-Antiplatelet (blood thinning) medication is sometimes, but not always, prescribed. This usually takes the form of two tablets, low-dose aspirin and a second tablet such as prasugrel (Plavix), clopidogrel, or ticagrelor (Brillanta). The second tablet is usually discontinued at 6-months. The low-dose aspirin is usually continued 1–2 years and then usually stopped, although rarely it is continued long-term. 
+Simple coiling or intrasaccular devices generally do not require antiplatelet (blood-thinning) medication. 
 
-## Can aneurysms recur after coiling?
+When a stent or flow diverter is used, antiplatelet medication is usually prescribed. This usually takes the form of two tablets: low-dose aspirin and a second tablet such as prasugrel (Efient), clopidogrel (Plavix), or ticagrelor (Brilinta). The second tablet is usually discontinued after about 6 months. The low-dose aspirin is usually continued for 1–2 years and then stopped, although rarely it is continued long-term. You will be advised whether this is needed before any procedure.
 
-Yes, though this is also uncommon. In the **ISAT trial**, 8% of coiled aneurysms were incompletely occluded at follow-up. If this happens, it is usually seen on scans and further endovascular treatment can be performed.
+## Can aneurysms recur after endovascular treatment?
 
-## Can aneurysms bleed after coiling?
+Yes, although this is also uncommon. In the **ISAT trial**, 8% of coiled aneurysms were incompletely occluded at follow-up. If this happens, it is usually seen on scans and further endovascular treatment can be performed. It is worth noting that recurrence rates for unruptured aneurysms are lower than this, and modern treatments such as stents, flow diverters, and intrasaccular devices have further reduced recurrence rates.
+
+## Can aneurysms bleed after endovascular treatment?
 
 As with clipping, this is extremely rare but not impossible.
 
-## Are aneurysms monitored after coiling?
+## Are aneurysms monitored after endovascular treatment?
 
-Yes. Typically follow-up scans are performed with **MRA** (magnetic resonance angiography, no radiation) or sometimes **CTA** or **DSA** (digital subtraction angiography). These are usually done for a few years and then stopped if the aneurysm is stable.
+Yes. Typically, follow-up scans are performed with **MRA** (magnetic resonance angiography, no radiation) or sometimes **CTA** or **DSA** (digital subtraction angiography). These are usually done for a few years and then stopped if the aneurysm is stable.
 
-## So should I have it clipped or coiled?
+## So should I have it clipped or endovascularly treated?
 
-This is a **personal decision** and the final choice depends on your own preferences and circumstances.
+Most commonly, a person's objectives are twofold: they do not want to come to **harm from the aneurysm**, and they do not want to come to harm from the **treatment** to eliminate it, which rarely can be as severe as aneurysm rupture itself. If these are your priorities, then endovascular treatment does have some advantages. Firstly, comparable to surgery, the aneurysm is extremely unlikely to ever rupture after endovascular treatment. Secondly, the treatment takes much less of a toll on your body due to lower invasiveness and reduced risk of life-altering complications.
 
-It is important to consider both the risk of the aneurysm and the risks of treatment. Both are very effective treatments with comparable long-term rates of aneurysm protection.
-
-* **Clipping** has a slightly higher rate of complete occlusion, meaning retreatment is less often needed. However, it is a more invasive procedure that carries higher risks of stroke (5–15%), seizures, and wound complications, and requires a longer recovery.
-* **Coiling and endovascular treatment** also has a very high occlusion rate, though in a small number of patients follow-up treatment is required. It carries a lower stroke risk, is much less invasive, usually involves just one night in hospital, and allows much quicker recovery.
-
-
+However, ultimately this is a **personal decision**, and the final choice depends on your own preferences and circumstances. We encourage you to talk to different specialists, and possibly also to those who have undergone treatment, to get as much information as you can before making the decision.
 
 ## Key takeaways
 
-* **Clipping**: open surgery, highly effective, but higher risk of **stroke**, **seizures**, and longer recovery.
-* **Coiling**: minimally invasive, lower risk of stroke, usually just **1 day in hospital**, but sometimes needs **follow-up treatment**.
 * Both treatments are **very effective**, and the risk of bleeding afterwards is **extremely low**.
 * Choice depends on aneurysm features, medical advice, and your own **preferences**.
 
@@ -936,10 +929,10 @@ tags: Aneurysm
 Treatment aims to secure the aneurysm and prevent bleeding or rebleeding. Options include endovascular procedures inside the vessel, or open surgery. Decisions depend on aneurysm features and your overall health, and are best made by a multidisciplinary team.
 
 ## What is endovascular coiling?
-A thin tube is guided into the aneurysm and soft platinum coils are packed inside to block blood flow and encourage healing of the vessel wall. Coiling is the usual first-line option when the anatomy allows.
+A thin tube is guided into the aneurysm and soft platinum coils are packed inside to block blood flow and encourage healing of the vessel wall. The majority of aneurysms are now treated endovascularly due to the reduced invasiveness. 
 
 ## What is neurosurgical clipping?
-A surgeon opens the skull and places a tiny clip across the neck of the aneurysm to stop blood entering it. Clipping is used when coiling is not suitable, for example in some anatomical patterns or when a blood clot must be removed at the same time.
+A surgeon opens the skull and places a tiny clip across the neck of the aneurysm to stop blood entering it. 
 
 ## What newer devices might be used?
 Specialist centres may use stents to support coils in wide-necked aneurysms, flow-diverting stents to redirect blood along the artery, or intrasaccular devices placed directly in the aneurysm sac.
@@ -953,16 +946,17 @@ If there has been a bleed, securing the aneurysm should happen as early as possi
 In the ISAT trial, patients suitable for either treatment had lower death and dependency at one year with coiling than with clipping. Advantages for coiling persisted at 10 and 18 years.
 
 ## How are unruptured aneurysms managed?
-Most do not rupture. Choices depend on aneurysm size, site and shape, your age and health, and whether the aneurysm is growing. Teams often use tools such as PHASES and ELAPSS to support decision-making, and may recommend monitoring rather than treatment in many cases.
+Most do not rupture and can often be monitored. Choices depend on aneurysm size, site and shape, your age and health, and whether the aneurysm is growing. Teams often use tools such as PHASES and ELAPSS to support decision-making, and may recommend monitoring rather than treatment in many cases.
 Monitoring typically includes strict control of vascular risk factors and interval imaging at 6–12 months, then yearly or every two years, tailored to growth risk.
 
 ---
 
 ## Key takeaways
-- Coiling is usually first-line when suitable. Clipping is used when anatomy or circumstances make it a better choice.
-- After a bleed, early treatment reduces rebleeding risk.
-- Newer options include stents, flow diverters and intrasaccular devices, used selectively.
-- Many unruptured aneurysms are monitored rather than treated, using structured risk tools and planned imaging.
+
+* The majority of aneurysms are now treated **endovascularly**.
+* After a bleed, early **treatment** reduces rebleeding risk.
+* Newer options include **stents**, flow diverters and intrasaccular devices, used selectively.
+* Many unruptured aneurysms are **monitored** rather than treated, using structured risk tools and planned imaging.
 
 
 #  Introduction to AVMs {AVM}
