@@ -1016,7 +1016,6 @@ p.profile_text {
   font-size: 2rem;   /* smaller than teaser h2 */
   font-weight: 600;     /* thinner */
   line-height: 1.4;
-  margin-top: 1.25rem;
   margin-bottom: 0.5rem;
   color: #1e3a8a;
 }

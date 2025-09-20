@@ -498,6 +498,85 @@ Moreover, supportive care is integral to the treatment of stroke patients. This 
 
 Risk factor management is a fundamental part of stroke treatment and aims to reduce the chances of future stroke events. This involves lifestyle modifications, such as a balanced diet, regular exercise, smoking cessation, and limited alcohol consumption, combined with appropriate medical therapy. Underlying medical conditions, such as hypertension, diabetes, high cholesterol, and atrial fibrillation, need to be appropriately managed with the help of medication and lifestyle changes.
 
+# Carotid artery stenosis {Stroke}
+
+## What is carotid artery stenosis?
+
+Carotid artery stenosis is a narrowing of one or both of the carotid arteries. These large arteries, found on each side of the neck, supply blood to the brain, face and head. Narrowing usually happens because of atherosclerosis, where fatty deposits (plaques) build up inside the artery wall.
+
+When healthy, arteries are smooth and open, allowing blood to flow freely. With stenosis, the passage narrows, making blood flow less efficient. The main danger comes when plaque or a blood clot breaks away and travels into the brain, blocking smaller arteries. This can cause a stroke or, if the blockage is temporary, a transient ischaemic attack (TIA).
+
+## How common is carotid stenosis and why does it matter?
+
+Carotid artery stenosis becomes more common with age. It is estimated that up to 5% of the general population may have some degree of narrowing. Around 10–15% of all ischaemic strokes are linked to carotid stenosis. Because stroke is one of the leading causes of disability and death, recognising and managing carotid stenosis is important.
+
+## Causes and risk factors
+
+The most common cause is atherosclerosis, but several factors increase the risk of developing it:
+
+* Smoking
+* High blood pressure
+* High cholesterol
+* Diabetes
+* Obesity and lack of exercise
+* Older age
+* A history of cardiovascular disease
+
+These risks often combine, making lifestyle changes and medical treatment essential in slowing or preventing disease progression.
+
+## Symptoms
+
+Many people with carotid artery stenosis do not have symptoms until the narrowing becomes severe or causes an event. Possible symptoms include:
+
+* A transient ischaemic attack (TIA) with sudden weakness, speech problems or numbness lasting less than 24 hours
+* Stroke with more permanent neurological symptoms
+* Temporary loss of vision in one eye, described as a dark curtain coming across the vision (amaurosis fugax)
+
+If stenosis has not yet caused symptoms, it is often discovered incidentally, for example when a doctor hears a bruit in the neck.
+
+## How carotid stenosis is diagnosed
+
+The first-line test is duplex ultrasound, a painless scan that uses sound waves to measure blood flow and detect narrowing. If intervention is considered, further imaging such as CT angiography or MR angiography can give more precise information about the artery’s structure and the location of the plaque.
+
+## Treatment approaches
+
+The treatment of carotid artery stenosis has two main aims: to reduce the risk of stroke and to manage risk factors for atherosclerosis.
+
+Medical treatment is important for everyone with carotid stenosis. This usually involves antiplatelet therapy (such as aspirin), cholesterol-lowering medication, strict blood pressure and diabetes control, and lifestyle measures such as stopping smoking and maintaining a healthy weight.
+
+When the narrowing is severe (often 70% or more) and the patient has already had symptoms such as a TIA or stroke, a procedure to reopen the artery can greatly reduce the chance of another stroke.
+
+## Carotid revascularisation
+
+Revascularisation means restoring blood flow by opening the blocked artery. Two main procedures are used:
+
+* **Carotid endarterectomy**, where the surgeon makes an incision in the neck, opens the artery and physically removes the plaque.
+* **Carotid stenting**, where a stent (a small metal mesh tube) is placed inside the artery to hold it open and keep blood flowing.
+
+Both procedures carry risks, and the choice depends on factors such as the patient’s overall health, anatomy of the blockage and local expertise.
+
+## Carotid stenting in detail
+
+Carotid stenting is a minimally invasive treatment designed to reduce the risk of stroke in people with significant carotid stenosis. Instead of making a large incision in the neck, doctors use thin tubes (catheters) to reach the carotid artery, usually through an artery in the leg (femoral access), sometimes the arm (radial access), or directly through the neck just above the collarbone (a technique called TCAR, or transcarotid artery revascularisation).
+
+A small balloon may be used to widen the artery before placing the stent. The stent is then positioned across the narrowed segment. Once expanded, it stays in place permanently, acting as a scaffold that keeps the artery open. Modern procedures also use protection devices or flow-reversal systems to reduce the chance of plaque debris travelling into the brain during the procedure.
+
+## Benefits and outcomes of stenting
+
+Carotid stenting offers several advantages compared with open surgery: it is less invasive, involves smaller or no neck incisions, and usually has a shorter recovery time. For most patients, blood flow improves immediately, lowering the risk of stroke.
+
+Studies show that stenting and endarterectomy have similar long-term effectiveness, though stenting may carry a slightly higher risk of minor stroke, while endarterectomy carries a higher risk of nerve injury. Both procedures are generally durable, with more than 95% of patients maintaining good artery function long-term.
+
+## Risks of stenting
+
+Like any procedure, carotid stenting has potential risks, including stroke, bleeding at the puncture site, damage to the artery, low or high blood pressure during the procedure, or, rarely, death. The risks vary depending on the severity of the disease and the patient’s overall health.
+
+## Life after stenting
+
+Carotid stenting does not cure atherosclerosis. Patients must continue with risk factor control and medication to prevent further plaque build-up, both in the treated artery and elsewhere in the circulation. Regular follow-up imaging of the carotid arteries is recommended.
+
+Most patients return to normal activities within a week. Long-term success depends on maintaining healthy lifestyle habits, taking prescribed medicines, and keeping blood pressure, cholesterol and diabetes well controlled.
+
 
 # Further information  {Stroke}
 
@@ -1206,3 +1285,126 @@ Follow up
 
 
 
+# Introduction to Subdural Haematoma {MMA Embolisation}
+
+
+## Subdural haematoma
+
+A subdural haematoma is a collection of blood that builds up between the surface of the brain and the thin covering around it called the dura. It usually happens after a head injury, though sometimes it can develop slowly over time. Because the blood takes up space inside the skull, it puts pressure on the brain. This can be very serious and often needs urgent hospital treatment.
+
+## Symptoms of a subdural haematoma
+
+The symptoms can appear straight away after a head injury, or they may develop gradually over days or weeks. Common symptoms include:
+
+* A severe headache that does not improve with painkillers
+* Feeling or being sick
+* Confusion, memory problems or changes in behaviour
+* Drowsiness or difficulty staying awake
+* Slurred speech or swallowing problems
+* Blurred or double vision
+* Weakness or numbness on one side of the body
+* Loss of balance or frequent falls
+* Seizures (fits)
+* Loss of consciousness, which may last a few seconds or much longer
+
+## When to seek emergency help
+
+A subdural haematoma can be life-threatening. You should call 999 immediately if someone has hit their head and:
+
+* Has not woken up after being knocked out
+* Is very drowsy or struggling to stay awake
+* Has a seizure (fit)
+* Has weakness, numbness or problems speaking, seeing or walking
+* Has bleeding or clear fluid coming from their ears or nose
+* Has bruising around the eyes or behind the ears without direct injury
+* Has had a serious accident such as a car crash or fall from height
+
+Do not try to drive the person to hospital yourself. Wait for emergency services to arrive.
+
+## Diagnosis
+
+If a subdural haematoma is suspected, doctors will carry out a brain scan, usually a CT scan or sometimes an MRI. This shows the size and position of the bleed and helps guide treatment.
+
+
+## Treatment options
+
+The treatment depends on the size of the bleed and the symptoms.
+
+* **Observation and medicines**: Small haematomas may only need monitoring and medicines to reduce swelling.
+* **Surgery**: Most people with a significant subdural haematoma need surgery to remove the blood and relieve pressure on the brain. This can be done in two main ways:
+
+  * **Burr hole drainage**: the surgeon drills small holes in the skull and drains the blood.
+  * **Craniotomy**: a section of the skull is temporarily removed so the surgeon can remove the clot before replacing the bone.
+* **MMA embolisation**: In some cases, especially with chronic subdural haematomas, a newer treatment called *middle meningeal artery embolisation* may be used. This is a minimally invasive procedure where a doctor uses a thin tube inserted through an artery (often in the leg or wrist) to reach the small artery that supplies the haematoma. Tiny particles or liquids are then injected to block the artery. This helps stop the bleeding and reduces the chance of the haematoma coming back after surgery, or sometimes avoids the need for surgery altogether.
+
+
+## Recovery from a subdural haematoma
+
+Recovery can take weeks or months. Some people may be left with long-term problems such as difficulty speaking, moving or remembering things. Seizures are also possible. Rehabilitation may involve physiotherapy, occupational therapy and speech and language therapy.
+
+Severe subdural haematomas still carry a high risk of death, even with the best care.
+
+## Living with the effects of a subdural haematoma
+
+The impact of a subdural haematoma can be challenging physically and emotionally. Support is available from healthcare teams, as well as from local or national brain injury groups. Talking with others who have gone through similar experiences can also help.
+
+Would you like me to expand the **MMA embolisation section** into a separate heading, with more detail about how it is done and what benefits or risks patients should know about?
+
+
+# Middle Meningeal Artery Embolisation {MMA Embolisation}
+
+## Middle Meningeal Artery Embolisation
+
+Middle meningeal artery embolisation (MMAE) is a modern, minimally invasive treatment for **chronic subdural haematoma**. This condition happens when blood slowly collects on the surface of the brain, usually after a head injury, and often affects older people.
+
+Traditionally, treatment has involved surgery to drain the blood. While effective, surgery can be risky and the haematoma sometimes comes back. MMAE is an alternative or additional treatment that addresses the root cause of the problem, making recurrence much less likely.
+
+
+## Traditional treatment and its challenges
+
+The usual treatment is surgery, often by drilling small holes in the skull to drain the blood (burr-hole surgery). This works well for many patients, but:
+
+* About 1 in 4 patients has a recurrence within a month
+* Some patients are not strong enough to undergo surgery
+* The operation carries risks, especially in frail or elderly people
+
+## How MMA embolisation works
+
+MMA embolisation targets the **middle meningeal artery**, which supplies blood to the membrane around the haematoma. By blocking this artery, doctors stop the repeated leaks that keep the haematoma alive. Over time, the body can then safely reabsorb the blood.
+
+The procedure is performed by an endovascular specialist. Using X-ray guidance, a thin tube (catheter) is inserted through a small cut in the wrist or groin and carefully threaded through the blood vessels to reach the middle meningeal artery. Once in place, the artery is sealed off using tiny particles, special medical glue, or very small coils.
+
+The whole procedure usually takes less than an hour. Most patients are awake but relaxed with mild sedation, and many can go home the same day.
+
+
+## Who can have MMA embolisation?
+
+MMAE may be suitable for:
+
+* Patients with a chronic subdural haematoma and only mild to moderate symptoms
+* Patients who need surgery but are at high risk of recurrence (for example, those on blood thinners or with brain shrinkage due to ageing)
+* Patients who have already had surgery but whose haematoma has come back
+
+## Benefits of MMA embolisation
+
+Compared with traditional surgery, MMA embolisation has several advantages:
+
+* Minimally invasive, with only a small incision in the wrist or groin
+* Less discomfort and faster recovery
+* Often performed without a hospital stay
+* Much lower recurrence rate (around 2–3% compared with up to 25% after surgery)
+* Targets the underlying cause of the bleeding, not just the blood that has already collected
+
+
+## Risks and possible complications
+
+MMA embolisation is generally very safe, but as with any medical procedure there are risks. These include bleeding, infection, stroke, pain, or vision problems. Serious complications are rare and occur in only about 1% of patients.
+
+## Recovery and follow-up
+
+Most people can return to normal activities straight away. The small wound at the access site just needs to be kept clean and dry. Follow-up CT scans are usually done at 6 and 12 weeks to check that the haematoma is resolving.
+
+
+## Outlook
+
+Chronic subdural haematoma is becoming more common as the population ages, especially in people on blood-thinning medicines. MMA embolisation offers a safe and effective alternative to surgery, with fewer recurrences and quicker recovery.
