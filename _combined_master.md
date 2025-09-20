@@ -165,7 +165,7 @@ An aneurysm is a bulge in the wall of a blood vessel caused by a small area of w
 
 Brain aneurysms most commonly affect middle aged and older adults with a higher prevalence in women. They are extremely rare in children. The cause of a particular aneurysm usually is unknown, although some individuals have a genetic predisposition to developing them. Aneurysms can also rarely develop after certain infections or trauma.
 
-![Angiogram of an aneurysm. ](img/an_angio.png){#fig:aneurysm_angio}
+![Angiogram of an aneurysm. ](img/an_angio.webp){#fig:aneurysm_angio}
 
 
 
@@ -362,7 +362,7 @@ Once the catheter is in position, small platinum coils are threaded through the 
 
 After the coils are properly placed, the catheter is carefully withdrawn from the body. The patient is usually required to stay in the hospital for the night following the procedure to enable the medical team to monitor the recovery.
 
-![Real case of coil embolisation of a cerebral aneurysm. (A) 3-dimensional representation of the aneurysm is acquired, used for planning the rest of the procedure. (B) Angiography of the aneurysm is performed. (C) The aneurysm has had several coils inserted, ensuring that blood no longer fills it.  ](img/an_coiling.png){#fig:aneurysm_angio}
+![Real case of coil embolisation of a cerebral aneurysm. (A) 3-dimensional representation of the aneurysm is acquired, used for planning the rest of the procedure. (B) Angiography of the aneurysm is performed. (C) The aneurysm has had several coils inserted, ensuring that blood no longer fills it.  ](img/an_coiling.webp){#fig:aneurysm_angio}
 
 
 ## What is stent assisted coiling?
@@ -381,7 +381,7 @@ Once the stent is in place, small coils are threaded through the catheter and pl
 
 After the procedure, you will likely need to take a course of antiplatelet medications such as clopidogrel, in addition to aspirin. These help to prevent the formation of blood clots around the stent. This is a routine precaution and an important part of ensuring the success of the procedure. Antiplatelet medications are given in low doses and make the platelets in your blood less sticky, reducing the chance that a clot will form. These are often stopped at 6 months, with aspirin continuing for 1-2 years.
 
-![Real case of stent & coil embolisation of a cerebral aneurysm. (A) An aneurysm is seen at the tip of the basilar artery. (B) A stent is deployed across the neck of the aneurysm, and a single coil has been placed in the aneurysm (C) Angiography during placement of the stent. (D) The aneurysm has been filled with coils. ](img/stent_coiling.png){#fig:aneurysm_angio}
+![Real case of stent & coil embolisation of a cerebral aneurysm. (A) An aneurysm is seen at the tip of the basilar artery. (B) A stent is deployed across the neck of the aneurysm, and a single coil has been placed in the aneurysm (C) Angiography during placement of the stent. (D) The aneurysm has been filled with coils. ](img/stent_coiling.webp){#fig:aneurysm_angio}
 
 
 ## What is flow diversion?
@@ -397,7 +397,7 @@ Over time, this decreased blood flow into the aneurysm encourages the formation 
 
 Flow diversion is particularly effective for recurrent, large, wide-necked, or thrombosed aneurysms that can't be adequately treated with other methods. It is also necessary to take a course of antiplatelet medications after insertion of flow diverters.
 
-![Real case of flow diversion of a cerebral aneurysm. (A) An aneurysm is seen of the internal carotid artery (ICA). (B) A flow-diverting stent is deployed across the neck of the aneurysm. (C) The flow-diverting stent is seen from a different angle. (D) The stent is seen within the blood vessel. ](img/flow_diversion.png){#fig:aneurysm_angio}
+![Real case of flow diversion of a cerebral aneurysm. (A) An aneurysm is seen of the internal carotid artery (ICA). (B) A flow-diverting stent is deployed across the neck of the aneurysm. (C) The flow-diverting stent is seen from a different angle. (D) The stent is seen within the blood vessel. ](img/flow_diversion.webp){#fig:aneurysm_angio}
 
 
 
@@ -480,7 +480,7 @@ description: Additional resources and references for patients and professionals.
 # Are there any new treatments for brain aneurysms? {features}
 ---
 description: What has changed in brain aneurysm treatment, and what the newest minimally invasive options mean for patients.
-image: feature_newaneurysm.jpg
+image: feature_newaneurysm.webp
 tags: Aneurysm
 ---
 
@@ -498,7 +498,7 @@ In 2007, the arrival of flow-diverter stents transformed practice, offering dura
 
 ## Intrasaccular devices
 
-![Intrasaccular devices for aneurysm treatment: (A) WEB SL. (B) WEB SLS. (C) Contour. (D) Neqstent. (E) Artisse. (F) Nautilus. Courtesy of Microvention, Stryker, Medtronic, and Endostream.](img/Intrasaccular.jpg){#fig:aneurysm_angio}
+![Intrasaccular devices for aneurysm treatment: (A) WEB SL. (B) WEB SLS. (C) Contour. (D) Neqstent. (E) Artisse. (F) Nautilus. Courtesy of Microvention, Stryker, Medtronic, and Endostream.](img/Intrasaccular.webp){#fig:aneurysm_angio}
 
 The most recent development are intrasaccular devices. These sit inside the aneurysm itself at the neck, blocking blood entry without the need for a permanent stent. This makes them attractive in bifurcation aneurysms, since long-term dual antiplatelet therapy can usually be avoided. 
 
@@ -525,7 +525,7 @@ Modern treatments now enable a broader range of aneurysm shapes and locations, w
 # How long do you need to stay in hospital for a brain aneurysm? {features}
 ---
 description: What to expect when staying in hospital for treatment of a brain aneurysm.
-image: feature_stayhospital.jpg
+image: feature_stayhospital.webp
 tags: Aneurysm
 ---
 
@@ -564,7 +564,7 @@ Treatment may be either endovascular or surgical, but the general trend is towar
 # Is brain aneurysm surgery high risk? {features}
 ---
 description: What to expect from aneurysm treatment, how surgical risks compare with endovascular options, and why many aneurysms are monitored rather than operated on.
-image: surgery.jpg
+image: surgery.webp
 tags: Aneurysm
 ---
 
@@ -626,7 +626,7 @@ Both clipping and endovascular procedures should be performed in hospitals with 
 # Can you prevent brain aneurysms? {features}
 ---
 description: Are brain aneuryms inevitable or you can reduce your chances?
-image: prevent.png
+image: prevent.webp
 tags: Aneurysm
 ---
 
@@ -676,7 +676,7 @@ Finally, remember that the absolute risk of rupture in the general population is
 # Who should be screened for brain aneurysms? {features}
 ---
 description:Who should and should not be screened for brain aneurysms?
-image: feature_screening.jpg
+image: feature_screening.webp
 tags: Aneurysm
 ---
 ## What is brain aneurysm screening?
@@ -729,7 +729,7 @@ If you are in a higher-risk group, your doctor can talk through whether screenin
 # What are the warning signs of a brain aneurysm? {features}
 ---
 description: Explains the key symptoms of a brain aneurysm rupture, what unruptured aneurysms can cause, and when to seek urgent medical help.
-image: feature_an_symptoms.jpg
+image: feature_an_symptoms.webp
 tags: Aneurysm
 ---
 
@@ -760,7 +760,7 @@ Call emergency services immediately if you develop a sudden, extremely severe he
 # Living with an unruptured brain aneurysm {features}
 ---
 description: Covers what it means to be diagnosed with a brain aneurysm, the risks involved, and what can patients can do to stay safe.
-image: feature.jpg
+image: feature.webp
 tags: Aneurysm
 ---
 
@@ -795,7 +795,7 @@ Your team will focus on blood pressure and other cardiovascular risks. Aspirin h
 # Can lifestyle changes reduce the risk of a brain aneurysm? {features}
 ---
 description: Describes the role of lifestyle in preventing aneurysms and bleeds.
-image: feature_health.jpg
+image: feature_health.webp
 tags: Aneurysm
 ---
 
@@ -830,7 +830,7 @@ Family history and certain genetic conditions such as autosomal dominant polycys
 # Should I have my aneurysm clipped or coiled? {features}
 ---
 description: Understanding the differences between clipping and coiling for brain aneurysms and how to decide which treatment may be best for you.
-image: feature_clipcoil.jpg
+image: feature_clipcoil.webp
 tags: Aneurysm
 ---
 
@@ -921,7 +921,7 @@ However, ultimately this is a **personal decision**, and the final choice depend
 # How are brain aneurysms treated? {features}
 ---
 description: Outlines the main treatment approaches for brain aneurysms, comparing coiling, clipping, and newer devices, and explains how doctors decide which option is best.
-image: feature_aneurysm_rx.jpg
+image: feature_aneurysm_rx.webp
 tags: Aneurysm
 ---
 
