@@ -4,7 +4,7 @@ Website Image Optimiser + Template Updater + Optional Cleanup + Dimensions CSV +
 
 - Converts ALL raster images to WebP (downsize only via ">" modifier).
 - Updates references in templates/ and master/.
-- Adds width/height to <img> tags in HTML (templates/ and master/) for local images with known dimensions.
+- Adds width and height to <img> tags in HTML (templates/ and master/) for local images with known dimensions.
 - Optional removal of original rasters in img/ after success.
 - Writes a CSV of image dimensions for raster images (skips SVG).
 
@@ -40,6 +40,17 @@ FNAME_CHARS = r"A-Za-z0-9._\-"
 IMG_TAG_RE = re.compile(r"<img\b[^>]*\bsrc\s*=\s*(['\"])(?P<src>[^'\"]+)\1[^>]*>", re.IGNORECASE)
 WIDTH_RE = re.compile(r"\bwidth\s*=\s*(['\"])[^'\"]+\1", re.IGNORECASE)
 HEIGHT_RE = re.compile(r"\bheight\s*=\s*(['\"])[^'\"]+\1", re.IGNORECASE)
+
+# Transient and editor artefacts to ignore
+TRANSIENT_SUFFIXES = {".swp", ".tmp", ".bak"}
+def is_transient(p: Path) -> bool:
+    n = p.name
+    return (
+        n.startswith(".#")         # Emacs lockfiles
+        or n.endswith("~")         # backup files
+        or n == ".DS_Store"
+        or p.suffix.lower() in TRANSIENT_SUFFIXES
+    )
 
 def find_imagemagick_bin(explicit: Optional[str] = None) -> Tuple[str, bool]:
     candidates = []
@@ -103,7 +114,7 @@ def build_convert_cmd(
         cmd += [im_bin, "convert"]
     else:
         cmd += [im_bin]
-    # ">" shrinks only; never enlarges
+    # ">" shrinks only
     cmd += [str(src), "-resize", f"{target_width}x>", "-strip"]
     if has_alpha and use_lossless_for_alpha:
         cmd += ["-define", "webp:lossless=true"]
@@ -144,7 +155,6 @@ def process_one(
         dst_name = f"{src.stem}.webp"
         dst_path = out_dir / dst_name
 
-        # If up to date, optionally remove raster
         if not needs_processing(src, dst_path, overwrite):
             if remove_originals and src.suffix.lower() in RASTER_EXTS:
                 if dry_run:
@@ -219,7 +229,10 @@ def update_templates(root: Path, mapping: Dict[str, str], log_file: Path, dry_ru
     targets = []
     for base in [templates_dir, master_dir]:
         if base.exists():
-            targets += [p for p in base.rglob("*") if p.suffix.lower() in {".html", ".md"}]
+            targets += [
+                p for p in base.rglob("*")
+                if p.suffix.lower() in {".html", ".md"} and not is_transient(p)
+            ]
     if not targets:
         return
 
@@ -229,9 +242,16 @@ def update_templates(root: Path, mapping: Dict[str, str], log_file: Path, dry_ru
         for file_path in targets:
             backup_dir = file_path.parent / "Backup"
             try:
-                text = file_path.read_text(encoding="utf-8")
-            except UnicodeDecodeError:
-                text = file_path.read_text(encoding="latin-1")
+                try:
+                    text = file_path.read_text(encoding="utf-8")
+                except UnicodeDecodeError:
+                    text = file_path.read_text(encoding="latin-1")
+            except FileNotFoundError:
+                print(f"SKIP {file_path.relative_to(root)}  vanished during scan")
+                continue
+            except Exception as e:
+                print(f"SKIP {file_path.relative_to(root)}  read error: {e}")
+                continue
 
             original_text = text
             applied = []
@@ -254,21 +274,66 @@ def update_templates(root: Path, mapping: Dict[str, str], log_file: Path, dry_ru
             else:
                 print(f"SKIP {file_path.relative_to(root)}  no matches")
 
-def write_dimensions_csv(img_dir: Path, images: List[Path], out_csv: Path) -> int:
+# ---------- Dimension helpers with robust WebP fallback ----------
+
+def identify_size_with_im(im_bin: str, requires_wrapper: bool, path: Path) -> Optional[Tuple[int, int]]:
+    """Use ImageMagick identify as a fallback when Pillow cannot read a format."""
+    try:
+        if requires_wrapper:
+            cmd = [im_bin, "identify", "-format", "%w %h", str(path)]
+        else:
+            # 'identify' is the binary when im_bin == 'convert'; still works
+            base = "identify" if im_bin == "convert" else im_bin
+            cmd = [base, "-format", "%w %h", str(path)]
+        proc = subprocess.run(cmd, capture_output=True, text=True)
+        if proc.returncode == 0:
+            parts = proc.stdout.strip().split()
+            if len(parts) == 2 and parts[0].isdigit() and parts[1].isdigit():
+                return int(parts[0]), int(parts[1])
+    except Exception:
+        pass
+    return None
+
+def read_size(path: Path, im_bin: str, requires_wrapper: bool) -> Optional[Tuple[int, int]]:
+    """Try Pillow first, fall back to ImageMagick identify for formats like WebP when Pillow lacks support."""
+    try:
+        with Image.open(path) as im:
+            return im.size
+    except Exception:
+        return identify_size_with_im(im_bin, requires_wrapper, path)
+
+def write_dimensions_csv(img_dir: Path, images: List[Path], out_csv: Path, im_bin: str, requires_wrapper: bool) -> int:
     rows = []
     for p in images:
         try:
-            with Image.open(p) as im:
-                w, h = im.size
-                fmt = im.format or ""
-            rows.append({
-                "relative_path": str(p.relative_to(img_dir)),
-                "filename": p.name,
-                "width": w,
-                "height": h,
-                "format": fmt,
-                "animated_gif": "yes" if (p.suffix.lower() == ".gif" and is_animated_gif(p)) else "no",
-            })
+            size = read_size(p, im_bin, requires_wrapper)
+            if size:
+                w, h = size
+                fmt = ""
+                try:
+                    with Image.open(p) as im:
+                        fmt = im.format or ""
+                except Exception:
+                    # If Pillow cannot open, leave fmt blank
+                    fmt = ""
+                rows.append({
+                    "relative_path": str(p.relative_to(img_dir)),
+                    "filename": p.name,
+                    "width": w,
+                    "height": h,
+                    "format": fmt,
+                    "animated_gif": "yes" if (p.suffix.lower() == ".gif" and is_animated_gif(p)) else "no",
+                })
+            else:
+                rows.append({
+                    "relative_path": str(p.relative_to(img_dir)),
+                    "filename": p.name,
+                    "width": "",
+                    "height": "",
+                    "format": "",
+                    "animated_gif": "",
+                    "error": "could not read size",
+                })
         except Exception as e:
             rows.append({
                 "relative_path": str(p.relative_to(img_dir)),
@@ -290,7 +355,7 @@ def write_dimensions_csv(img_dir: Path, images: List[Path], out_csv: Path) -> in
             writer.writerow(r)
     return len(rows)
 
-def build_dims_maps(img_dir: Path, images: List[Path]) -> Tuple[Dict[str, Tuple[int,int]], Dict[str, Tuple[int,int]]]:
+def build_dims_maps(img_dir: Path, images: List[Path], im_bin: str, requires_wrapper: bool) -> Tuple[Dict[str, Tuple[int,int]], Dict[str, Tuple[int,int]]]:
     """
     Returns:
       by_basename: {'file.webp': (w,h), ...}
@@ -299,23 +364,24 @@ def build_dims_maps(img_dir: Path, images: List[Path]) -> Tuple[Dict[str, Tuple[
     by_basename: Dict[str, Tuple[int,int]] = {}
     by_relpath: Dict[str, Tuple[int,int]] = {}
     for p in images:
-        try:
-            with Image.open(p) as im:
-                w, h = im.size
-        except Exception:
+        size = read_size(p, im_bin, requires_wrapper)
+        if not size:
             continue
+        w, h = size
         rel = p.relative_to(img_dir).as_posix()
         by_basename[p.name] = (w, h)
         by_relpath[f"img/{rel}"] = (w, h)  # site paths start with img/
     return by_basename, by_relpath
 
+# ---------- HTML injection ----------
+
 def inject_img_dimensions_in_html(root: Path, dims_by_base: Dict[str, Tuple[int,int]], dims_by_rel: Dict[str, Tuple[int,int]], log_file: Path, dry_run: bool) -> None:
-    """Add width/height to <img> tags that point to local images, if missing."""
+    """Add width and height to <img> tags that point to local images, if missing."""
     targets = []
     for folder in ["templates", "master"]:
         d = root / folder
         if d.exists():
-            targets += [p for p in d.rglob("*.html")]
+            targets += [p for p in d.rglob("*.html") if not is_transient(p)]
 
     if not targets:
         return
@@ -327,8 +393,11 @@ def inject_img_dimensions_in_html(root: Path, dims_by_base: Dict[str, Tuple[int,
                     text = file_path.read_text(encoding="utf-8")
                 except UnicodeDecodeError:
                     text = file_path.read_text(encoding="latin-1")
-            except Exception:
-                print(f"SKIP {file_path.relative_to(root)}  read error")
+            except FileNotFoundError:
+                print(f"SKIP {file_path.relative_to(root)}  vanished during scan")
+                continue
+            except Exception as e:
+                print(f"SKIP {file_path.relative_to(root)}  read error: {e}")
                 continue
 
             original = text
@@ -346,34 +415,43 @@ def inject_img_dimensions_in_html(root: Path, dims_by_base: Dict[str, Tuple[int,
                 if src.lower().endswith(".svg") or src.lower().startswith("data:"):
                     return tag
 
-                # Already has width/height?
+                # Already has width and height?
                 if WIDTH_RE.search(tag) and HEIGHT_RE.search(tag):
                     return tag
 
                 # Find dims by relpath then by basename
                 key_rel = src[1:] if src.startswith("/") else src
-                dims = dims_by_rel.get(key_rel)
+                dims = dims_by_rel.get(key_rel) or dims_by_base.get(Path(src).name)
                 if not dims:
-                    dims = dims_by_base.get(Path(src).name)
-                if not dims:
-                    return tag  # unknown size, skip
+                    return tag
 
                 w, h = dims
 
-                # Inject before closing '>' (handle '/>' too)
-                insert = ""
+                # Build attributes that are missing
+                inserts = []
                 if not WIDTH_RE.search(tag):
-                    insert += f' width="{w}"'
+                    inserts.append(f' width="{w}"')
                 if not HEIGHT_RE.search(tag):
-                    insert += f' height="{h}"'
-                if not insert:
+                    inserts.append(f' height="{h}"')
+                if not inserts:
                     return tag
+                insert = "".join(inserts)
 
-                # Find last '>' and insert before it, keeping '/>' intact
+                # Insert before '>' or before a preceding '/' even across newlines
                 end = tag.rfind(">")
                 if end == -1:
                     return tag
-                new_tag = tag[:end] + insert + tag[end:]
+                i = end - 1
+                # skip whitespace before '>'
+                while i >= 0 and tag[i].isspace():
+                    i -= 1
+                if i >= 0 and tag[i] == "/":
+                    # self-closing: inject before the '/'
+                    new_tag = tag[:i] + insert + tag[i:]
+                else:
+                    # normal: inject before '>'
+                    new_tag = tag[:end] + insert + tag[end:]
+
                 edits += 1
                 replacements.append((src, w, h))
                 return new_tag
@@ -391,6 +469,8 @@ def inject_img_dimensions_in_html(root: Path, dims_by_base: Dict[str, Tuple[int,
             else:
                 print(f"SKIP {file_path.relative_to(root)}  no img dim changes")
 
+# ---------- Main ----------
+
 def main():
     parser = argparse.ArgumentParser(description="Optimise images in img/ and update references in templates/ and master/.")
     parser.add_argument("--root", default=".", help="Project root containing img/, templates/, master/")
@@ -407,8 +487,8 @@ def main():
     # Dimensions CSV options
     parser.add_argument("--no-dimensions", action="store_true", help="Do not write the dimensions CSV")
     parser.add_argument("--dimensions-out", default=None, help="Path to write dimensions CSV (default: img/image_dimensions.csv)")
-    # Control HTML width/height injection
-    parser.add_argument("--no-html-dimensions", action="store_true", help="Do not edit HTML to add width/height to <img> tags")
+    # Control HTML width and height injection
+    parser.add_argument("--no-html-dimensions", action="store_true", help="Do not edit HTML to add width and height to <img> tags")
     args = parser.parse_args()
 
     root = Path(args.root).resolve()
@@ -432,13 +512,12 @@ def main():
         print("No images found in img/. Proceeding to template update in case only references need changes.")
     else:
         if not args.no_dimensions:
-            count = write_dimensions_csv(img_dir, images, dims_csv_path)
+            count = write_dimensions_csv(img_dir, images, dims_csv_path, im_bin, requires_wrapper)
             print(f"Wrote {count} entries to {dims_csv_path}")
 
     print(f"Found {len(images)} image(s) in {img_dir}")
     print(f"Backups: {originals_dir}")
-    print(f"Widths: normal={args.max_width}px, giant={args.max_width_giant}px, quality={args.quality}, "
-          f"lossless alpha={'on' if args.lossless_alpha else 'off'}")
+    print(f"Widths: normal={args.max_width}px, giant={args.max_width_giant}px, quality={args.quality}, lossless alpha={'on' if args.lossless_alpha else 'off'}")
     print(f"Threads={args.threads}, overwrite={'on' if args.overwrite else 'off'}, dry-run={'on' if args.dry_run else 'off'}, remove originals={'on' if args.remove_originals else 'off'}")
 
     mapping_pairs: List[Tuple[str, str]] = []
@@ -462,7 +541,7 @@ def main():
             if pair:
                 mapping_pairs.append(pair)
 
-    # Build mapping old->new
+    # Build mapping old -> new
     mapping: Dict[str, str] = {}
     for old_name, new_name in mapping_pairs:
         mapping[old_name] = new_name
@@ -486,7 +565,7 @@ def main():
             for line in deletion_log:
                 log.write(f"{line}\n")
 
-    # Update template references first (e.g. .jpg -> .webp)
+    # Update template references first
     if mapping and (templates_dir.exists() or master_dir.exists()):
         update_templates(root=root, mapping=mapping, log_file=template_log_path, dry_run=args.dry_run)
         if not args.dry_run:
@@ -494,11 +573,16 @@ def main():
     else:
         print("No template updates performed. Either no mapping or templates/master not found.")
 
-    # Add width/height to <img> tags using measured dims
+    # Add width and height to <img> tags using measured dims
     if not args.no_html_dimensions:
-        dims_by_base, dims_by_rel = build_dims_maps(img_dir, images)
-        inject_img_dimensions_in_html(root=root, dims_by_base=dims_by_base, dims_by_rel=dims_by_rel,
-                                      log_file=template_log_path, dry_run=args.dry_run)
+        dims_by_base, dims_by_rel = build_dims_maps(img_dir, images, im_bin, requires_wrapper)
+        inject_img_dimensions_in_html(
+            root=root,
+            dims_by_base=dims_by_base,
+            dims_by_rel=dims_by_rel,
+            log_file=template_log_path,
+            dry_run=args.dry_run
+        )
 
 if __name__ == "__main__":
     main()

@@ -35,6 +35,54 @@
   --feature-teaser-h: 160px;   /* pick 140–180px to taste */
 }
 
+
+/* ===== CLS fixes (header, fonts, images, dynamic blocks) ===== */
+
+/* 1) Reserve header height and pad main to match */
+:root{
+  --header-h-desktop: 132px; /* adjust to your real combined fixed-top height */
+  --header-h-mobile: 82px;   /* ditto for mobile */
+}
+.site-header .fixed-top{ height: var(--header-h-desktop); }
+main{ padding-top: calc(var(--header-h-desktop) + 8px); }
+
+@media (max-width: 991.98px){
+  .site-header .fixed-top{ height: var(--header-h-mobile); }
+  main{ padding-top: calc(var(--header-h-mobile) + 8px); }
+}
+
+/* 2) Stabilise nav bars before JS populates them */
+.desktop-mainnav{ min-height: 48px; }     /* desktop menu rail */
+#mobileNav{ will-change: contents; }      /* hints without reflow */
+
+/* 3) Stop font-swap jumps (fallback metrics) */
+html{
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, "Source Sans Pro", sans-serif;
+  font-size-adjust: 0.5;
+}
+body{
+  ascent-override: 88%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
+/* 4) Lock logo and key images to prevent late resizing */
+.navbar-brand img{ width: 160px; height: 40px; display: block; } /* set your true SVG width */
+.condition-image{ aspect-ratio: 4 / 3; height: auto; }           /* keeps space even if src slow */
+.profile-image{ aspect-ratio: 540 / 713; }                        /* matches your hero headshot */
+
+/* 5) Featured block placeholder so it does not shove content */
+#latest_features .features-skeleton{ min-height: var(--feature-teaser-h); }
+
+/* 6) Minor guards on cards and grids */
+.location-media{ min-height: 120px; }        /* already present, keep as guard */
+.conditions-grid{ contain: layout paint; }   /* isolate hover transforms from neighbours */
+
+/* 7) JS loads without reflowing layout */
+script[src$="menu.js"], script[src$="main.js"]{ }
+
+
+
 /* ===== Base & Typography ===== */
 html,body{
   height:100%;
