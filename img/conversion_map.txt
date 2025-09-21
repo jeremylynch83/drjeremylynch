@@ -34,6 +34,7 @@ front_pulsatile_tinnitus.png -> front_pulsatile_tinnitus.webp
 front_sih.png -> front_sih.webp
 front_spinal_avm.png -> front_spinal_avm.webp
 harleyst.png -> harleyst.webp
+hero.jpg -> hero.webp
 kch.png -> kch.webp
 kcl.png -> kcl.webp
 knowlege.png -> knowlege.webp
