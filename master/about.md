@@ -34,6 +34,27 @@ Interventional neuroradiology (otherwise known as neurointerventional radiology 
 
 # Research {General}
 
+Dr Jeremy Lynch has an extensive and diverse research portfolio spanning artificial intelligence, neurointervention, neuroradiology, and wider clinical practice. His published work includes pioneering studies on the use of large language models and deep learning in radiology, influential multicentre trials evaluating new flow diversion and stent technologies for intracranial aneurysms, and outcome studies shaping endovascular practice. He has also contributed systematic reviews and trial protocols addressing thrombectomy techniques, robotics in neurointervention, and stroke management. Alongside these, Dr Lynch has authored research and reviews across broader medical fields, from surgical education and bariatric surgery to paediatric radiology and risk management.
+
+
+## Books
+
+1. Lynch J, Renowden S, White P. *Oxford Specialist Handbook for Neurointervention*. Oxford University Press.
+2. Lynch J, Shelmerdine S, Mahadevan V. *MRCS Part B OSCE: Anatomy*. JP Medical Publishing Ltd. ISBN: 9781907816345.
+3. Shelmerdine S, North T, Lynch J, Verma A. *OSCE Cases with Mark Schemes*. Anshan Ltd. ISBN: 9781848290631.
+4. Shelmerdine S, North T, Lynch J, Verma A. *Situational Judgement Tests for Foundation Programme Entry*. Anshan Ltd. ISBN: 1848290705.
+
+## Principal Investigator
+
+* **ICARUS trial (2025)**: An international randomised trial comparing urgent intracranial stenting versus continued thrombectomy in stroke patients with intracranial atherosclerosis.
+* **SEATED trial (2025)**: A nationwide UK consortium study collecting real-world data on the safety and efficacy of advanced endovascular devices for aneurysm treatment.
+* **INSPIRE trial (2024)**: A registry of Medtronic implants designed to track device performance and patient outcomes.
+* **PRESIZE trial (2024)**: A UK multicentre study evaluating the accuracy of *PreSize Neurovascular* software in predicting deployed stent length for flow diverters.
+* **PROFATE trial (2023)**: A multicentre randomised controlled trial assessing whether proximal blood flow arrest improves thrombectomy outcomes in acute ischaemic stroke.
+
+
+## Publications
+
 * Sood A, Mansoor N, Memmi C, Lynch M, Lynch J. Generative pretrained transformer-4, an artificial intelligence text predictive model, has a high capability for passing novel written radiology exam questions. Int J Comput Assist Radiol Surg. 2024 Apr;19(4):645-653.
 * Pasarikovski CR, Lynch J, Corrin M, Ku JC, Kumar A, Pereira VM, Krings T, da Costa L, Black SE, Agid R, Yang VX. Carotid stenting for symptomatic carotid artery web: Multicenter experience. Interv Neuroradiol. 2024 Jan 17:15910199231226293.
 * Benger, M., Wood, D., Kafiabadi, S., Al Busaidi, A., Guilhem, E., Lynch, J., Townend, M., Montvila, A., Siddiqui, J., Gadapa, N., Barker, G. J., Ourselin, S., Cole, J. H., & Booth, T. (Year). Factors affecting the labeling accuracy of brain MRI studies relevant for deep learning abnormality detection. Frontiers in Radiology, Neuroradiology.
