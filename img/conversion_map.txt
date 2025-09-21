@@ -6,6 +6,7 @@ an_coiling.png -> an_coiling.webp
 aneurysm.png -> aneurysm.webp
 apple-touch-icon.png -> apple-touch-icon.webp
 avm.png -> avm.webp
+bma.png -> bma.webp
 bristol.png -> bristol.webp
 cpd.png -> cpd.webp
 ct-scanner.jpg -> ct-scanner.webp
@@ -55,6 +56,8 @@ spinal_avm.png -> spinal_avm.webp
 stent_coiling.png -> stent_coiling.webp
 surgery.jpg -> surgery.webp
 template-easy-customize.png -> template-easy-customize.webp
+topdoctors.png -> topdoctors.webp
 tufail.jpg -> tufail.webp
 ukng.png -> ukng.webp
 wellington.png -> wellington.webp
+wfitn.png -> wfitn.webp
