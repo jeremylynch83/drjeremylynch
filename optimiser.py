@@ -3,16 +3,12 @@
 Website Image Optimiser + Responsive Variants + Template Updater + Optional Cleanup
 + Dimensions CSV + HTML width/height injection + lazy loading
 
-Changes vs previous:
-- Generates multiple responsive widths per image (e.g. 360, 720, 1200).
-- Keeps {stem}.webp as the largest variant for backwards compatibility.
-- Updates HTML <img> tags to add:
-    * srcset with discovered variants
-    * sizes (configurable; sensible default)
-    * loading="lazy" (unless opted-out)
-    * decoding="async"
-- Preserves/updates width and height attributes when known.
-- Optional per-filename sizes mapping via JSON (e.g. img/sizes.json).
+Key points:
+- Converts only non-WebP sources.
+- If img/Originals/ exists, rebuilds from there (non-WebP only) into img/.
+- If Originals/ is missing, uses non-WebP in img/ and backs them up to Originals/.
+- You can delete all WebP in img/ and rerun to restore from Originals/.
+- Repairs old/broken HTML like src="img/rcr-360-360.webp" by inferring the stem and inserting correct src, srcset, sizes, width/height, lazy and decoding.
 
 Requires: Python 3.8+, ImageMagick, Pillow
 """
@@ -36,8 +32,8 @@ except ImportError:
     print("Pillow is required. Install with: pip install pillow", file=sys.stderr)
     sys.exit(1)
 
-IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".gif", ".webp"}  # SVG intentionally excluded
-RASTER_EXTS = {".png", ".jpg", ".jpeg", ".gif"}
+IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".gif", ".webp"}  # SVG excluded
+RASTER_EXTS = {".png", ".jpg", ".jpeg", ".gif"}          # non-WebP
 ORIGINALS_DIRNAME = "Originals"
 CONV_MAP_FILENAME = "conversion_map.txt"
 TEMPLATE_LOG_FILENAME = "template_updates.log"
@@ -45,22 +41,22 @@ SIZES_JSON = "sizes.json"  # optional config in img/
 
 FNAME_CHARS = r"A-Za-z0-9._\-"
 
-# Regex to find <img ... src="..."> case-insensitively
+# <img ... src="...">
 IMG_TAG_RE = re.compile(r"<img\b[^>]*\bsrc\s*=\s*(['\"])(?P<src>[^'\"]+)\1[^>]*>", re.IGNORECASE)
 WIDTH_RE = re.compile(r"\bwidth\s*=\s*(['\"])[^'\"]+\1", re.IGNORECASE)
 HEIGHT_RE = re.compile(r"\bheight\s*=\s*(['\"])[^'\"]+\1", re.IGNORECASE)
 LOADING_RE = re.compile(r"\bloading\s*=\s*(['\"])[^'\"]+\1", re.IGNORECASE)
 DECODING_RE = re.compile(r"\bdecoding\s*=\s*(['\"])[^'\"]+\1", re.IGNORECASE)
-SRCSET_RE = re.compile(r"\bsrcset\s*=\s*(['\"]).*?\1", re.IGNORECASE | re.DOTALL)
-SIZES_ATTR_RE = re.compile(r"\bsizes\s*=\s*(['\"]).*?\1", re.IGNORECASE | re.DOTALL)
 
-# Transient and editor artefacts to ignore
+# Detect bogus names like stem-360-360.webp or stem-800x800.webp
+BOGUS_WEBP_RE = re.compile(r"^(?P<stem>[A-Za-z0-9._-]+)-(?:(\d+)-(\d+)|(\d+)x(\d+))\.webp$", re.IGNORECASE)
+
 TRANSIENT_SUFFIXES = {".swp", ".tmp", ".bak"}
 def is_transient(p: Path) -> bool:
     n = p.name
     return (
-        n.startswith(".#")         # Emacs lockfiles
-        or n.endswith("~")         # backup files
+        n.startswith(".#")
+        or n.endswith("~")
         or n == ".DS_Store"
         or p.suffix.lower() in TRANSIENT_SUFFIXES
     )
@@ -106,12 +102,16 @@ def get_image_info(path: Path) -> Tuple[int, int, bool, str]:
         return w, h, has_alpha, fmt
 
 def backup_original(src: Path, originals_dir: Path) -> None:
-    originals_dir.mkdir(exist_ok=True)
-    base = src.stem
-    for p in originals_dir.iterdir():
-        if p.is_file() and p.stem == base:
+    """Backup src into Originals/ once (skip if already there)."""
+    try:
+        if originals_dir in src.parents:
             return
-    shutil.copy2(src, originals_dir / src.name)
+    except Exception:
+        pass
+    originals_dir.mkdir(exist_ok=True)
+    dst = originals_dir / src.name
+    if not dst.exists():
+        shutil.copy2(src, dst)
 
 def needs_processing(src: Path, dst: Path, overwrite: bool) -> bool:
     if overwrite or not dst.exists():
@@ -134,7 +134,6 @@ def build_convert_cmd(
         cmd += [im_bin, "convert"]
     else:
         cmd += [im_bin]
-    # ">" shrinks only
     cmd += [str(src), "-resize", f"{target_width}x>", "-strip"]
     if has_alpha and use_lossless_for_alpha:
         cmd += ["-define", "webp:lossless=true"]
@@ -152,6 +151,11 @@ def collect_images(img_dir: Path, recursive: bool) -> List[Path]:
     if recursive:
         return [p for p in img_dir.rglob("*") if p.suffix.lower() in IMAGE_EXTS and ORIGINALS_DIRNAME not in p.parts]
     return [p for p in img_dir.iterdir() if p.is_file() and p.suffix.lower() in IMAGE_EXTS]
+
+def collect_non_webp_sources(base: Path, recursive: bool) -> List[Path]:
+    if recursive:
+        return [p for p in base.rglob("*") if p.suffix.lower() in RASTER_EXTS]
+    return [p for p in base.iterdir() if p.is_file() and p.suffix.lower() in RASTER_EXTS]
 
 def write_text_atomic(target: Path, text: str) -> None:
     tmp = target.with_suffix(target.suffix + ".tmp")
@@ -259,12 +263,13 @@ def build_dims_maps(img_dir: Path, images: List[Path], im_bin: str, requires_wra
         w, h = size
         rel = p.relative_to(img_dir).as_posix()
         by_basename[p.name] = (w, h)
-        by_relpath[f"img/{rel}"] = (w, h)  # site paths start with img/
+        by_relpath[f"img/{rel}"] = (w, h)
     return by_basename, by_relpath
 
 # ---------- Variant generation ----------
 
 def variant_name(stem: str, width: int) -> str:
+    # width only
     return f"{stem}-{width}.webp"
 
 def generate_variants_for(
@@ -279,14 +284,13 @@ def generate_variants_for(
 ) -> Tuple[List[Tuple[int, Path]], Optional[Path], str]:
     """
     Returns ([(w, path), ...], path_to_max_as_base, status_msg)
-    Also ensures {stem}.webp equals the largest variant (re-rendered if needed).
+    Ensures {stem}.webp equals the largest variant.
     """
     width, height, has_alpha, _ = get_image_info(src)
     stem = src.stem
     created: List[Tuple[int, Path]] = []
     max_w = max(variant_widths) if variant_widths else width
 
-    # Produce each width
     for w in sorted(set(variant_widths)):
         dst = out_dir / variant_name(stem, w)
         if needs_processing(src, dst, overwrite):
@@ -297,7 +301,6 @@ def generate_variants_for(
                 return created, None, f"ERR   {src.name} [{width}x{height}] variant {w}: {proc.stderr.strip() or proc.stdout.strip()}"
         created.append((w, dst))
 
-    # Ensure {stem}.webp as largest variant
     largest_dst = out_dir / f"{stem}.webp"
     if needs_processing(src, largest_dst, overwrite):
         cmd = build_convert_cmd(im_bin, requires_wrapper, src, largest_dst, max_w, quality, use_lossless_for_alpha, has_alpha, None)
@@ -306,7 +309,6 @@ def generate_variants_for(
         if proc.returncode != 0:
             return created, None, f"ERR   {src.name} base {max_w}: {proc.stderr.strip() or proc.stdout.strip()}"
 
-    # Reflect base in created list if not already same width
     if max_w not in [w for w, _ in created]:
         created.append((max_w, largest_dst))
 
@@ -315,14 +317,6 @@ def generate_variants_for(
 # ---------- HTML updates (srcset/sizes/lazy/decoding + width/height) ----------
 
 def load_sizes_map(json_path: Path) -> List[Tuple[str, str]]:
-    """
-    Returns list of (pattern, sizes_value) pairs. Patterns are glob-style and match the basename.
-    Example JSON (img/sizes.json):
-      {
-        "front_*": "(max-width: 768px) 90vw, 356px",
-        "logo_*": "120px"
-      }
-    """
     if not json_path.exists():
         return []
     try:
@@ -341,28 +335,24 @@ def find_sizes_for(basename: str, sizes_map: List[Tuple[str, str]], default_size
             return sizes
     return default_sizes
 
-def build_srcset_candidates(img_dir: Path, basename: str) -> List[Tuple[int, str]]:
+def build_srcset_candidates(img_dir: Path, stem_or_basename: str) -> List[Tuple[int, str]]:
     """
-    Look for img/{stem}-{w}.webp and include {stem}.webp as the largest candidate.
+    Collect img/{stem}-{w}.webp plus {stem}.webp as largest candidate.
     Returns list of (width, url_path) sorted ascending.
     """
-    stem, _ = os.path.splitext(basename)
-    # Collect -{w}.webp variants
+    stem = os.path.splitext(stem_or_basename)[0]
     candidates: List[Tuple[int, str]] = []
-    for p in (img_dir).glob(f"{stem}-*.webp"):
-        # parse "-{w}.webp"
+    for p in img_dir.glob(f"{stem}-*.webp"):
         m = re.search(r"-(\d+)\.webp$", p.name)
         if m:
             w = int(m.group(1))
             candidates.append((w, f"img/{p.name}"))
-    # Add {stem}.webp if exists and not duplicate
     base = img_dir / f"{stem}.webp"
     if base.exists():
-        # Try to infer width from file name list; if unknown, use a large sentinel so it sorts last
         known_ws = [w for w, _ in candidates]
         base_w = max(known_ws) if known_ws else 99999
         candidates.append((base_w, f"img/{base.name}"))
-    # De-dup and sort
+    # de-dup and sort
     dedup: Dict[str, int] = {}
     for w, url in candidates:
         dedup[url] = w
@@ -373,7 +363,6 @@ def insert_or_replace_attr(tag: str, attr: str, value: str) -> str:
     patt = re.compile(rf"\b{attr}\s*=\s*(['\"]).*?\1", re.IGNORECASE | re.DOTALL)
     if patt.search(tag):
         return patt.sub(f'{attr}="{value}"', tag)
-    # insert before '>'
     end = tag.rfind(">")
     if end == -1:
         return tag
@@ -427,7 +416,7 @@ def inject_img_attributes(
                 tag = m.group(0)
                 src = m.group("src").strip()
 
-                # Only local paths inside img/ and not SVG or data URLs
+                # only local paths inside img/
                 if not (src.startswith("img/") or src.startswith("/img/")):
                     return tag
                 if src.lower().endswith(".svg") or src.lower().startswith("data:"):
@@ -437,7 +426,15 @@ def inject_img_attributes(
                 key_rel = src[1:] if src.startswith("/") else src
                 basename = Path(key_rel).name
 
-                # Dimensions (prefer exact relpath, then basename)
+                # Detect and repair bogus names like stem-360-360.webp or stem-800x800.webp
+                bogus = BOGUS_WEBP_RE.match(basename)
+                if bogus:
+                    stem = bogus.group("stem")
+                    basename = f"{stem}.webp"  # treat as if correct base
+                else:
+                    stem = os.path.splitext(basename)[0]
+
+                # width/height
                 dims = dims_by_rel.get(key_rel) or dims_by_base.get(basename)
                 if dims:
                     w, h = dims
@@ -446,22 +443,24 @@ def inject_img_attributes(
                     if not HEIGHT_RE.search(tag):
                         tag = insert_or_replace_attr(tag, "height", str(h))
 
-                # Build srcset candidates based on files present
-                candidates = build_srcset_candidates(img_dir, basename)
+                # srcset + sizes
+                candidates = build_srcset_candidates(img_dir, stem)
                 if candidates:
                     srcset_str = ", ".join([f"{url} {width}w" for width, url in candidates])
                     tag = insert_or_replace_attr(tag, "srcset", srcset_str)
 
-                    # sizes: from map, else default
                     sizes_val = find_sizes_for(basename, sizes_map, default_sizes)
                     tag = insert_or_replace_attr(tag, "sizes", sizes_val)
 
-                    # Set src to the smallest reasonable candidate as a fallback
-                    smallest_url = candidates[0][1]
-                    tag = insert_or_replace_attr(tag, "src", smallest_url)
+                    # Always use base {stem}.webp as fallback src if present
+                    base_path = img_dir / f"{stem}.webp"
+                    if base_path.exists():
+                        tag = insert_or_replace_attr(tag, "src", f"img/{base_path.name}")
+                    else:
+                        smallest_url = candidates[0][1]
+                        tag = insert_or_replace_attr(tag, "src", smallest_url)
 
-                # loading="lazy" and decoding="async"
-                # Skip forcing lazy if explicit data-lcp, fetchpriority="high" or loading already present
+                # lazy and decoding
                 tag_lower = tag.lower()
                 is_priority = ("data-lcp" in tag_lower) or ('fetchpriority="high"' in tag_lower)
                 if force_lazy and not is_priority and not LOADING_RE.search(tag):
@@ -489,8 +488,6 @@ def inject_img_attributes(
 # ---------- Template filename replacements (legacy) ----------
 
 def update_templates_filenames(root: Path, mapping: Dict[str, str], log_file: Path, dry_run: bool) -> None:
-    # Retained for completeness. With srcset we do not need to rewrite names,
-    # but we keep it to migrate any stale references if desired.
     templates_dir = root / "templates"
     master_dir = root / "master"
     targets = []
@@ -557,54 +554,49 @@ def process_one(
     deletion_log: List[str],
 ) -> Tuple[str, Optional[List[Tuple[str, str]]]]:
     """
-    Returns status string and optional [(old_name, new_name), ...] mappings for legacy replacement.
+    Returns status string and optional [(old_name, new_name), ...] mappings.
+    Converts only non-WebP sources.
     """
     try:
-        if not src.is_file() or src.suffix.lower() not in IMAGE_EXTS:
+        if not src.is_file() or src.suffix.lower() not in (RASTER_EXTS | {".webp"}):
             return f"SKIP  Not an image: {src.name}", None
+        if src.suffix.lower() == ".webp":
+            return f"SKIP  WebP source ignored: {src.name}", None
         if is_animated_gif(src):
             return f"SKIP  Animated GIF not processed: {src.name}", None
 
-        backup_original(src, originals_dir)
+        # Backup if source is not already in Originals
+        if originals_dir not in src.parents:
+            backup_original(src, originals_dir)
 
-        # Generate variants if raster or already webp
-        if src.suffix.lower() in (RASTER_EXTS | {".webp"}):
-            if dry_run:
-                msg = f"DRY   variants {[w for w in variant_widths]} for {src.name}"
-                # Simulate mapping: keep {stem}.webp as base
-                base_name = f"{src.stem}.webp"
-                pairs = [(src.name, base_name)] if src.suffix.lower() != ".webp" else []
-                return msg, pairs
+        if dry_run:
+            base_name = f"{src.stem}.webp"
+            pairs = [(src.name, base_name)]
+            return f"DRY   variants {[w for w in variant_widths]} for {src.name}", pairs
 
-            variants, base_path, status = generate_variants_for(
-                src=src,
-                out_dir=out_dir,
-                im_bin=im_bin,
-                requires_wrapper=requires_wrapper,
-                variant_widths=variant_widths,
-                quality=quality,
-                use_lossless_for_alpha=use_lossless_for_alpha,
-                overwrite=overwrite
-            )
-            if base_path is None:
-                return status, None
+        variants, base_path, status = generate_variants_for(
+            src=src,
+            out_dir=out_dir,
+            im_bin=im_bin,
+            requires_wrapper=requires_wrapper,
+            variant_widths=variant_widths,
+            quality=quality,
+            use_lossless_for_alpha=use_lossless_for_alpha,
+            overwrite=overwrite
+        )
+        if base_path is None:
+            return status, None
 
-            # Optionally remove original rasters once variants exist
-            if remove_originals and src.suffix.lower() in RASTER_EXTS:
-                try:
-                    src.unlink()
-                    deletion_log.append(f"Removed original raster: {src.name}")
-                except Exception as e:
-                    deletion_log.append(f"Failed to remove {src.name}: {e}")
+        # Optionally remove original rasters if they live in img/ (never delete from Originals/)
+        if remove_originals and (src.suffix.lower() in RASTER_EXTS) and (out_dir in src.parents):
+            try:
+                src.unlink()
+                deletion_log.append(f"Removed original raster from img/: {src.name}")
+            except Exception as e:
+                deletion_log.append(f"Failed to remove {src.name}: {e}")
 
-            # Legacy mapping: point old raster name to base {stem}.webp
-            pairs: List[Tuple[str, str]] = []
-            if src.suffix.lower() != ".webp":
-                pairs.append((src.name, base_path.name))
-
-            return status, pairs
-
-        return f"SKIP  Unsupported: {src.name}", None
+        pairs: List[Tuple[str, str]] = [(src.name, base_path.name)]
+        return status, pairs
 
     except Exception as e:
         return f"ERR   {src.name}: {e}", None
@@ -612,7 +604,7 @@ def process_one(
 def main():
     parser = argparse.ArgumentParser(description="Optimise images in img/ with responsive variants and update HTML.")
     parser.add_argument("--root", default=".", help="Project root containing img/, templates/, master/")
-    parser.add_argument("--recursive", action="store_true", help="Recurse into img/ subfolders")
+    parser.add_argument("--recursive", action="store_true", help="Recurse into sources and img/ subfolders")
     parser.add_argument("--variant-widths", type=parse_variant_widths, default="360,720,1200",
                         help="Comma-separated widths to generate (e.g. 360,720,1200)")
     parser.add_argument("--quality", type=int, default=80, help="WebP quality for lossy output")
@@ -629,9 +621,9 @@ def main():
 
     # HTML control
     parser.add_argument("--default-sizes", default="(max-width: 768px) 90vw, 356px",
-                        help='Default "sizes" attribute to use when no pattern matches (e.g. "(max-width: 768px) 90vw, 356px")')
+                        help='Default "sizes" attribute to use when no pattern matches')
     parser.add_argument("--no-html-update", action="store_true", help="Skip HTML updates (srcset/sizes/lazy/width/height)")
-    parser.add_argument("--no-lazy", action="store_true", help="Do not add loading=lazy (leave existing tags unchanged)")
+    parser.add_argument("--no-lazy", action="store_true", help="Do not add loading=lazy")
 
     args = parser.parse_args()
 
@@ -651,32 +643,35 @@ def main():
 
     im_bin, requires_wrapper = find_imagemagick_bin(args.imagemagick_bin)
 
-    images = collect_images(img_dir, args.recursive)
-    if not images:
-        print("No images found in img/. Proceeding to template update in case only references need changes.")
+    # Determine source set: prefer Originals/ (non-WebP only). Else use non-WebP in img/ and back them up.
+    if originals_dir.exists():
+        sources = collect_non_webp_sources(originals_dir, args.recursive)
+        source_origin = f"{ORIGINALS_DIRNAME}/"
     else:
-        if not args.no_dimensions:
-            count = write_dimensions_csv(img_dir, images, dims_csv_path, im_bin, requires_wrapper)
-            print(f"Wrote {count} entries to {dims_csv_path}")
+        sources = collect_non_webp_sources(img_dir, args.recursive)
+        source_origin = "img/ (backing up to Originals/)"
 
-    print(f"Found {len(images)} image(s) in {img_dir}")
-    print(f"Backups: {originals_dir}")
+    # Current files in img/ for CSV and HTML map
+    images_now = collect_images(img_dir, args.recursive)
+    if images_now and not args.no_dimensions:
+        count = write_dimensions_csv(img_dir, images_now, dims_csv_path, im_bin, requires_wrapper)
+        print(f"Wrote {count} entries to {dims_csv_path}")
+
+    print(f"Source set: {len(sources)} non-WebP file(s) from {source_origin}")
+    print(f"Outputs -> {img_dir}")
     print(f"Variants: {args.variant_widths} px, quality={args.quality}, lossless alpha={'on' if args.lossless_alpha else 'off'}")
-    print(f"Threads={args.threads}, overwrite={'on' if args.overwrite else 'off'}, dry-run={'on' if args.dry_run else 'off'}, remove originals={'on' if args.remove_originals else 'off'}")
+    print(f"Threads={args.threads}, overwrite={'on' if args.overwrite else 'off'}, dry-run={'on' if args.dry_run else 'off'}, remove originals from img/={'on' if args.remove_originals else 'off'}")
 
     mapping_pairs: List[Tuple[str, str]] = []
     deletion_log: List[str] = []
 
-    # Convert in parallel (generate variants)
     work = []
-    for p in images:
-        # Only process actual rasters or existing webp files
-        if p.suffix.lower() in IMAGE_EXTS:
-            work.append((
-                p, img_dir, originals_dir, im_bin, requires_wrapper,
-                args.variant_widths, args.quality, args.lossless_alpha,
-                args.overwrite, args.dry_run, args.remove_originals, deletion_log
-            ))
+    for p in sources:
+        work.append((
+            p, img_dir, originals_dir, im_bin, requires_wrapper,
+            args.variant_widths, args.quality, args.lossless_alpha,
+            args.overwrite, args.dry_run, args.remove_originals, deletion_log
+        ))
 
     with cf.ThreadPoolExecutor(max_workers=args.threads) as ex:
         futures = [ex.submit(process_one, *w) for w in work]
@@ -686,31 +681,23 @@ def main():
             if pairs:
                 mapping_pairs.extend(pairs)
 
-    # Build mapping old -> new (legacy raster name -> base .webp)
     mapping: Dict[str, str] = {}
     for old_name, new_name in mapping_pairs:
         mapping[old_name] = new_name
 
-    # Write conversion map
     if not args.dry_run and mapping:
         with open(conv_map_path, "w", encoding="utf-8") as f:
             for old, new in sorted(mapping.items()):
                 f.write(f"{old} -> {new}\n")
         print(f"Wrote conversion map: {conv_map_path}")
 
-    # Update legacy filename references if needed (not strictly required with srcset)
     if mapping and (templates_dir.exists() or master_dir.exists()):
         update_templates_filenames(root=root, mapping=mapping, log_file=template_log_path, dry_run=args.dry_run)
 
-    # Build dims maps from current files including variants
     if not args.no_html_update:
         all_imgs_now = collect_images(img_dir, args.recursive)
         dims_by_base, dims_by_rel = build_dims_maps(img_dir, all_imgs_now, im_bin, requires_wrapper)
-
-        # Load optional sizes map
         sizes_map = load_sizes_map(img_dir / SIZES_JSON)
-
-        # Inject attributes into HTML
         inject_img_attributes(
             root=root,
             img_dir=img_dir,
@@ -727,7 +714,6 @@ def main():
     else:
         print("HTML responsive updates skipped (--no-html-update).")
 
-    # Append deletion log
     if not args.dry_run and deletion_log:
         with open(template_log_path, "a", encoding="utf-8") as log:
             for line in deletion_log:
