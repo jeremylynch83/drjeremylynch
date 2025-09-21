@@ -33,8 +33,12 @@ Dr Lynch has published several academic book chapters and journal articles. He i
 Interventional neuroradiology (otherwise known as neurointerventional radiology or endovascular neurosurgery) is a medical specialty that deals with minimally invasive treatments for diseases of the brain and spine involving blood vessels. Common conditions that are treated include brain aneurysms, strokes, carotid stenosis, and brain tumour embolisation.
 
 # Research {General}
+---
+image: research.webp
+tags: Aneurysm
+---
 
-Dr Jeremy Lynch has an extensive and diverse research portfolio spanning artificial intelligence, neurointervention, neuroradiology, and wider clinical practice. His published work includes pioneering studies on the use of large language models and deep learning in radiology, influential multicentre trials evaluating new flow diversion and stent technologies for intracranial aneurysms, and outcome studies shaping endovascular practice. He has also contributed systematic reviews and trial protocols addressing thrombectomy techniques, robotics in neurointervention, and stroke management. Alongside these, Dr Lynch has authored research and reviews across broader medical fields, from surgical education and bariatric surgery to paediatric radiology and risk management.
+Dr Jeremy Lynch has an extensive research portfolio spanning artificial intelligence, neurointervention, neuroradiology, and wider clinical practice. His published work includes multicentre trials evaluating new flow diversion and stent technologies for intracranial aneurysms, outcome studies shaping endovascular practice, and research into the use of large language models and deep learning in radiology. He has also contributed systematic reviews and trial protocols addressing thrombectomy techniques, robotics in neurointervention, and stroke management. Alongside these, Dr Lynch has authored research and reviews across broader medical fields, from surgical education and bariatric surgery to paediatric radiology and risk management.
 
 
 ## Books

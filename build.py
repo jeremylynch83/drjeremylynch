@@ -169,7 +169,8 @@ def parse_headings_and_group(file_path: str):
 class PageInfo:
     __slots__ = (
         'filename', 'title', 'section', 'sec_lower', 'tags', 'tags_norm',
-        'description', 'image_url', 'body_lines', 'yaml_lines'
+        'description', 'image_url', 'body_lines', 'yaml_lines',
+        'show_lead', 'show_hero'
     )
 
     def __init__(self, **kw: Any) -> None:
@@ -224,6 +225,11 @@ def create_md_content_from_headings(
             return i, meta
         return start_index, {}
 
+    def _truthy(val: str | None, default: bool = True) -> bool:
+        if val is None or val == "":
+            return default
+        return val.strip().lower() in {"1", "true", "yes", "on"}
+
     i = 0
     while i < len(lines):
         line = lines[i].rstrip()
@@ -250,6 +256,10 @@ def create_md_content_from_headings(
             tags_list = parse_tags_field(meta.get("tags", ""))
             tags_norm = [norm_tag(t) for t in tags_list]
             label = meta.get("label") or (tags_list[0] if tags_list else "")
+
+            # Visibility flags for on-page lead and hero
+            show_lead = _truthy(meta.get("show_lead"), default=True)
+            show_hero = _truthy(meta.get("show_hero"), default=True)
 
             if image_url:
                 image_url = f"img/{image_url}" if not image_url.startswith(("http://", "https://", "img/")) else image_url
@@ -298,14 +308,15 @@ def create_md_content_from_headings(
 
             body_lines: List[str] = [f"# {title_text}"]
 
-            if sec_lower == "features" and description:
+            # Show a visible lead paragraph and hero image for ANY section when provided,
+            # gated by show_lead/show_hero flags (default true).
+            if show_lead and description:
                 body_lines.append(f'<p class="lead text-secondary">{html.escape(description)}</p>')
 
-            # Feature hero figure without empty style block
-            if sec_lower == "features" and image_url:
+            if show_hero and image_url:
                 alt = html.escape(title_text, quote=True)
                 figure_html = (
-                    f'<figure class="feature-hero my-3 shadow-sm">'
+                    f'<figure class="article-hero my-3 shadow-sm">'
                     f'<img src="{html.escape(image_url, quote=True)}" alt="{alt}" loading="lazy" decoding="async">'
                     '</figure>'
                 )
@@ -322,6 +333,8 @@ def create_md_content_from_headings(
                 image_url=image_url,
                 body_lines=body_lines,
                 yaml_lines=yaml_lines,
+                show_lead=show_lead,
+                show_hero=show_hero,
             )
 
             i = next_i

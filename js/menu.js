@@ -8,6 +8,7 @@ const menus = [
     sections: [
       { header: 'Appointments', links: [
         { label: 'Book an Appointment', href: '#book' },
+        { label: 'Refer a patient', href: '#book' },
         { label: 'Fees', href: 'General_Fees.html' }
       ]},
       { header: 'Hospitals & Locations', links: [

@@ -49,6 +49,7 @@ profile_shot.png -> profile_shot.webp
 queens.png -> queens.webp
 rcr.png -> rcr.webp
 rcs.png -> rcs.webp
+research.png -> research.webp
 sara.png -> sara.webp
 sharing-default.png -> sharing-default.webp
 smile.png -> smile.webp
