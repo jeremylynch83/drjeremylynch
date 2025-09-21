@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -48,13 +48,13 @@
     <meta name="twitter:description" content="Consultant interventional neuroradiologist in London with expertise in aneurysms, AVMs, fistulas, stenting, angiography, MRI and CT scan services." />
     <meta name="twitter:image" content="https://www.drjeremylynch.com/images/social-image.jpg" />
 
-<!-- Bootstrap (render-blocking) -->
-<link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      crossorigin="anonymous">
+    <!-- Bootstrap (render-blocking) -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          crossorigin="anonymous">
 
-<!-- Your sheet (render-blocking, loaded after Bootstrap so it wins) -->
-<link rel="stylesheet" href="css/main.css">
+    <!-- Your sheet (render-blocking, loaded after Bootstrap so it wins) -->
+    <link rel="stylesheet" href="css/main.css">
 
 
 
@@ -127,12 +127,66 @@
     }
     </script>
 
-<style>
+    <style>
+      /* ===== Hero video ===== */
+      :root {
+        /* adjust if your fixed header is taller */
+        --header-safe-top: 0px;
+      }
+      .site-header .fixed-top { z-index: 1030; }
 
-</style>
+      .hero {
+        position: relative;
+        height: 100vh;               /* one full viewport */
+        min-height: 540px;           /* optional floor */
+        overflow: hidden;
+        background: #000;            /* fallback while video loads */
+      }
+      .hero__video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;           /* fill without distortion */
+        object-position: center;     
+      }
+      .hero__scrim {                 /* improves text contrast */
+        position: absolute;
 
+        inset: 0;
+        background: linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.55));
+        pointer-events: none;
+      }
+      .hero__content {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 2rem;
+        color: #fff;
+      }
+      .hero__kicker { letter-spacing: .08em; text-transform: uppercase; opacity: .9; }
 
+      .hero__cta-wrap { position: absolute; bottom: 2rem; left: 0; right: 0; }
 
+      /* Respect users who prefer reduced motion */
+      @media (prefers-reduced-motion: reduce) {
+        .hero__video { display: none; }
+        .hero { background: #111 url('img/hero-poster.jpg') center/cover no-repeat; }
+      }
+
+      /* Optional: keep first content section visually separate */
+      .bg-grey { background-color: #f7f7f7; }
+
+      /* Ensure the hero is not hidden under the fixed header on very small screens */
+      body { padding-top: var(--header-safe-top); }
+
+      /* Simple scroll hint icon */
+      .scroll-hint { position: absolute; bottom: 1.25rem; left: 50%; transform: translateX(-50%); font-size: .875rem; color: rgba(255,255,255,.85); }
+    </style>
 
   </head>
 
@@ -175,9 +229,34 @@
       <div class="menu-backdrop" id="menuBackdrop" hidden></div>
     </header>
 
+    <!-- ===== Fullscreen hero video ===== -->
+    <div id="hero" class="hero" aria-label="Intro">
+      <video class="hero__video" autoplay loop muted playsinline preload="metadata" poster="img/hero-poster.jpg" aria-hidden="true">
+        <!-- Replace with your file path. Provide multiple formats if available. -->
+        <source src="img/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero__scrim"></div>
+
+      <div class="hero__content container">
+        <div>
+<h1 class="display-5 fw-bold mb-3" style="color: #fff; font-size: 4rem;">
+  Expert minimally invasive care for brain and spine
+</h1>
+<div class="d-flex justify-content-center gap-3">
+  <a href="#profile" 
+     class="btn btn-outline-light btn-lg" 
+     style="font-size: 1.55rem; font-weight: 600; padding: 0.75rem 1.5rem; border-width: 3px;">
+    LEARN MORE
+  </a>
+</div>
+
+        </div>
+      </div>
+    </div>
+
     <main id="home">
 
-      <section class="container py-4 bg-grey">
+      <section class="container py-4 bg-grey" id="profile">
         <div class="row g-4">
           <!-- Profile card -->
           <div class="col-md-4">
@@ -397,44 +476,44 @@
           </div>
 
 
-	    <!-- Pulsatile tinnitus -->
-	    <div class="col">
-	      <article class="condition-card">
-		<img src="img/front_pulsatile_tinnitus.webp" class="condition-image" alt="Illustration of ear with nearby blood vessels" width="1003" height="756" srcset="img/front_pulsatile_tinnitus-360.webp 360w, img/front_pulsatile_tinnitus-720.webp 720w, img/front_pulsatile_tinnitus-1200.webp 1200w, img/front_pulsatile_tinnitus.webp 1200w" sizes="(max-width: 768px) 90vw, 356px" loading="lazy" decoding="async">
-		<div class="condition-body">
-		  <h3 class="condition-title">Pulsatile Tinnitus</h3>
-		  <p class="condition-text">A rhythmic sound in the ear often caused by a blood vessel problem. We investigate the cause and offer targeted endovascular treatments.</p>
-		  <a class="btn btn-dark mt-auto" href="Pulsatile_Tinnitus_Introduction_to_Pulsatile_Tinnitus.html">Find out more</a>
-		</div>
-		<a href="Pulsatile_Tinnitus_Introduction_to_Pulsatile_Tinnitus.html" class="stretched-link" aria-label="Pulsatile tinnitus"></a>
-	      </article>
-	    </div>
+        <!-- Pulsatile tinnitus -->
+        <div class="col">
+          <article class="condition-card">
+        <img src="img/front_pulsatile_tinnitus.webp" class="condition-image" alt="Illustration of ear with nearby blood vessels" width="1003" height="756" srcset="img/front_pulsatile_tinnitus-360.webp 360w, img/front_pulsatile_tinnitus-720.webp 720w, img/front_pulsatile_tinnitus-1200.webp 1200w, img/front_pulsatile_tinnitus.webp 1200w" sizes="(max-width: 768px) 90vw, 356px" loading="lazy" decoding="async">
+        <div class="condition-body">
+          <h3 class="condition-title">Pulsatile Tinnitus</h3>
+          <p class="condition-text">A rhythmic sound in the ear often caused by a blood vessel problem. We investigate the cause and offer targeted endovascular treatments.</p>
+          <a class="btn btn-dark mt-auto" href="Pulsatile_Tinnitus_Introduction_to_Pulsatile_Tinnitus.html">Find out more</a>
+        </div>
+        <a href="Pulsatile_Tinnitus_Introduction_to_Pulsatile_Tinnitus.html" class="stretched-link" aria-label="Pulsatile tinnitus"></a>
+          </article>
+        </div>
 
-	    <!-- Carotid stenosis -->
-	    <div class="col">
-	      <article class="condition-card">
-		<img src="img/front_carotid_stenosis.webp" class="condition-image" alt="Ultrasound of the carotid artery" width="1024" height="1536" srcset="img/front_carotid_stenosis-360.webp 360w, img/front_carotid_stenosis-720.webp 720w, img/front_carotid_stenosis-1200.webp 1200w, img/front_carotid_stenosis.webp 1200w" sizes="(max-width: 768px) 90vw, 356px" loading="lazy" decoding="async">
-		<div class="condition-body">
-		  <h3 class="condition-title">Carotid Stenting</h3>
-		  <p class="condition-text">Narrowing of the neck artery that supplies the brain. We assess stroke risk and treat with stenting when appropriate.</p>
-		  <a class="btn btn-dark mt-auto" href="Stroke_Carotid_artery_stenosis.html">Find out more</a>
-		</div>
-		<a href="Stroke_Carotid_artery_stenosis.html" class="stretched-link" aria-label="Carotid stenosis"></a>
-	      </article>
-	    </div>
+        <!-- Carotid stenosis -->
+        <div class="col">
+          <article class="condition-card">
+        <img src="img/front_carotid_stenosis.webp" class="condition-image" alt="Ultrasound of the carotid artery" width="1024" height="1536" srcset="img/front_carotid_stenosis-360.webp 360w, img/front_carotid_stenosis-720.webp 720w, img/front_carotid_stenosis-1200.webp 1200w, img/front_carotid_stenosis.webp 1200w" sizes="(max-width: 768px) 90vw, 356px" loading="lazy" decoding="async">
+        <div class="condition-body">
+          <h3 class="condition-title">Carotid Stenting</h3>
+          <p class="condition-text">Narrowing of the neck artery that supplies the brain. We assess stroke risk and treat with stenting when appropriate.</p>
+          <a class="btn btn-dark mt-auto" href="Stroke_Carotid_artery_stenosis.html">Find out more</a>
+        </div>
+        <a href="Stroke_Carotid_artery_stenosis.html" class="stretched-link" aria-label="Carotid stenosis"></a>
+          </article>
+        </div>
 
-	    <!-- Middle meningeal artery (MMA) embolisation -->
-	    <div class="col">
-	      <article class="condition-card">
-		<img src="img/front_mma.webp" class="condition-image" alt="Angiogram of the middle meningeal artery" width="1024" height="1536" srcset="img/front_mma-360.webp 360w, img/front_mma-720.webp 720w, img/front_mma-1200.webp 1200w, img/front_mma.webp 1200w" sizes="(max-width: 768px) 90vw, 356px" loading="lazy" decoding="async">
-		<div class="condition-body">
-		  <h3 class="condition-title">MMA Embolisation</h3>
-		  <p class="condition-text">A minimally invasive treatment for chronic subdural haematoma. Tiny particles or liquid close branches of the middle meningeal artery.</p>
-		  <a class="btn btn-dark mt-auto" href="MMA_Embolisation_Middle_Meningeal_Artery_Embolisation.html">Find out more</a>
-		</div>
-		<a href="MMA_Embolisation_Middle_Meningeal_Artery_Embolisation.html" class="stretched-link" aria-label="MMA embolisation"></a>
-	      </article>
-	    </div>
+        <!-- Middle meningeal artery (MMA) embolisation -->
+        <div class="col">
+          <article class="condition-card">
+        <img src="img/front_mma.webp" class="condition-image" alt="Angiogram of the middle meningeal artery" width="1024" height="1536" srcset="img/front_mma-360.webp 360w, img/front_mma-720.webp 720w, img/front_mma-1200.webp 1200w, img/front_mma.webp 1200w" sizes="(max-width: 768px) 90vw, 356px" loading="lazy" decoding="async">
+        <div class="condition-body">
+          <h3 class="condition-title">MMA Embolisation</h3>
+          <p class="condition-text">A minimally invasive treatment for chronic subdural haematoma. Tiny particles or liquid close branches of the middle meningeal artery.</p>
+          <a class="btn btn-dark mt-auto" href="MMA_Embolisation_Middle_Meningeal_Artery_Embolisation.html">Find out more</a>
+        </div>
+        <a href="MMA_Embolisation_Middle_Meningeal_Artery_Embolisation.html" class="stretched-link" aria-label="MMA embolisation"></a>
+          </article>
+        </div>
 
         </div>
       </section>
@@ -607,7 +686,7 @@
             </h2>
             <div id="a1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="accordion-body">
-		Neurointervention is treatment of diseases of the brain and spine via minimally invasive endovascular image-guided techniques. The names neurointervention, interventional neuroradiology, and endovascular neurosurgery are all exactly the same. They are synonyms.
+        Neurointervention is treatment of diseases of the brain and spine via minimally invasive endovascular image-guided techniques. The names neurointervention, interventional neuroradiology, and endovascular neurosurgery are all exactly the same. They are synonyms.
               </div>
             </div>
           </div>
@@ -710,6 +789,17 @@
     </main>
 
     $footer$
+
+    <script>
+      // Optional: measure fixed header height once and pad body to avoid jump on anchor links
+      window.addEventListener('load', function() {
+        const fixedTop = document.querySelector('.site-header .fixed-top');
+        if (fixedTop) {
+          const h = fixedTop.getBoundingClientRect().height;
+          document.documentElement.style.setProperty('--header-safe-top', h + 'px');
+        }
+      });
+    </script>
 
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
