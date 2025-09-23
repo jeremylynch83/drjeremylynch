@@ -637,82 +637,9 @@ select option {
     right: 0;
     z-index: 1030;
 }
-
-@supports (animation-timeline: scroll()) {
-    @keyframes navGlass {
-        from {
-            background-color: rgba(255, 255, 255, 0);
-            backdrop-filter: none;
-        }
-        to {
-            background-color: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(6px);
-        }
-    }
-    @keyframes navInk {
-        from {
-            color: #fff;
-        }
-        to {
-            color: #111;
-        }
-    }
-    @keyframes logoInk {
-        from {
-            filter: invert(1) brightness(1);
-        }
-        to {
-            filter: none;
-        }
-    }
-
-    .site-header .fixed-top {
-        animation: navGlass both;
-        animation-timeline: scroll();
-        animation-range: 0 200px;
-    }
-    .site-header .navbar,
-    .site-header .navbar .nav-link,
-    .site-header .navbar .navbar-toggler {
-        animation: navInk both;
-        animation-timeline: scroll();
-        animation-range: 0 200px;
-    }
-    .navbar-brand img {
-        animation: logoInk both;
-        animation-timeline: scroll();
-        animation-range: 0 200px;
-    }
-}
-
-@supports not (animation-timeline: scroll()) {
-    /* Initial state: transparent with white text/logo */
-    .site-header .fixed-top {
-        background-color: transparent;
-        backdrop-filter: none;
-    }
-    .site-header .navbar,
-    .site-header .navbar .nav-link,
-    .site-header .navbar .navbar-toggler {
-        color: #fff;
-    }
-    .navbar-brand img {
-        filter: invert(1) brightness(1);
-    }
-
-    /* Scrolled state */
-    body.scrolled .site-header .fixed-top {
-        background-color: rgba(255, 255, 255, 0.85);
-        backdrop-filter: blur(6px);
-    }
-    body.scrolled .site-header .navbar,
-    body.scrolled .site-header .navbar .nav-link,
-    body.scrolled .site-header .navbar .navbar-toggler {
-        color: #111;
-    }
-    body.scrolled .navbar-brand img {
-        filter: none;
-    }
+/* Remove fixed translucent default; animation/fallback controls the background */
+.site-header .navbar {
+    border: none;
 }
 
 /* =========================
@@ -1029,9 +956,39 @@ select option {
     margin-bottom: 0 !important; /* keeps it visually centred */
 }
 
+/* Make hamburger follow currentColor and draw its bars with currentColor */
 .navbar .navbar-toggler {
-    border: 0 !important;
-    box-shadow: none !important; /* use your focus-visible outline instead */
+    color: inherit;
+    border: 0;
+    box-shadow: none;
+}
+/* Kill Bootstrap's default dark SVG */
+.navbar-light .navbar-toggler-icon,
+.navbar-toggler-icon {
+    background-image: none !important;
+}
+
+/* Custom hamburger: 3 white bars at top */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: currentColor; /* inherits from .navbar-toggler */
+    margin: 5px 0;
+    transition: background-color 0.2s ease;
+}
+
+/* White initially */
+.navbar-toggler {
+    color: #fff !important;
+}
+
+/* Black after scroll */
+body.scrolled .navbar-toggler {
+    color: #111 !important;
 }
 
 /* Mobile drawer scroller area */
@@ -1837,4 +1794,32 @@ p.profile_text {
         background: #2b3140;
         border-color: rgba(255, 255, 255, 0.2);
     }
+}
+
+/* Initial state: transparent with white UI */
+.site-header .fixed-top {
+    background-color: transparent;
+    backdrop-filter: none;
+}
+.site-header .navbar,
+.site-header .navbar .nav-link,
+.site-header .navbar .navbar-toggler {
+    color: #fff;
+}
+.navbar-brand img {
+    filter: invert(1) brightness(1);
+}
+
+/* Scrolled state: frosted white with dark UI */
+body.scrolled .site-header .fixed-top {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+}
+body.scrolled .site-header .navbar,
+body.scrolled .site-header .navbar .nav-link,
+body.scrolled .site-header .navbar .navbar-toggler {
+    color: #111;
+}
+body.scrolled .navbar-brand img {
+    filter: none;
 }
