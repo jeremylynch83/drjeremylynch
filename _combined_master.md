@@ -381,7 +381,7 @@ There are no medications that can be given to shrink aneurysms, however stopping
 # Endovascular treatment of aneurysms {Aneurysms}
 ---
 description: Minimally invasive procedures including coiling, stent-assisted coiling, flow diversion, and intrasaccular devices.
-keywords: "brain aneurysm, cerebral aneurysm, intracranial aneurysm, subarachnoid haemorrhage"
+keywords: "brain aneurysm, cerebral aneurysm, intracranial aneurysm, subarachnoid haemorrhage, London"
 tags: "Aneurysm, Brain aneurysm, Cerebral aneurysm"
 about: "Cerebral aneurysm"
 mainEntity: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"

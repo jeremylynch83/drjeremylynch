@@ -24,7 +24,10 @@
         </noscript>
 
         $if(description)$
-        <meta name="description" content="$description$" />
+        <meta
+            name="description"
+            content="$description$ | London Endovascular Neurosurgery"
+        />
         $endif$ $if(keywords)$
         <meta name="keywords" content="$keywords$" />
         $endif$
@@ -103,45 +106,89 @@
         </style>
 
         <!-- JSON-LD -->
+        <!-- MedicalWebPage / Article -->
         <script type="application/ld+json">
             {
               "@context": "https://schema.org",
               "@type": $if(schema_type)$"$schema_type$"$else$"MedicalWebPage"$endif$,
-              "headline": "$title$",
-              $if(description)$"description": "$description$", $endif$
-              $if(canonical)$"url": "$canonical$", $endif$
-              "inLanguage": "en-GB",
-              $if(image)$"image": ["$image$"],$endif$
-              "author": { "@type": "Person", "name": "Dr Jeremy Lynch" },
+              "headline": "$title$"$if(description)$,
+              "description": "$description$"$endif$$if(canonical)$,
+              "url": "$canonical$"$endif$,
+              "inLanguage": "en-GB"$if(image)$,
+              "image": ["$image$"]$endif$,
+              "author": {
+                "@type": "Person",
+                "name": "Dr Jeremy Lynch"
+              },
               "publisher": {
                 "@type": "Organization",
                 "name": "Jeremy Lynch Neuroradiology",
-                "logo": { "@type": "ImageObject", "url": "https://www.drjeremylynch.com/images/social-image.jpg" }
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.drjeremylynch.com/images/social-image.jpg"
+                }
               },
               "medicalSpecialty": [
                 "Neurosurgery",
                 "Interventional Neuroradiology"
-              ]
-              $if(about)$, "about": {
+              ]$if(about)$,
+              "about": {
                 "@type": "MedicalCondition",
-                "name": "$about$",
-                "alternateName": "Brain aneurysm"
-                $if(sameAs_json)$, "sameAs": "$sameAs_json$$endif$"
-              }$endif$
-              $if(mainEntityUrl)$, "mainEntity": {
+                "name": "$about$"$if(about_alternate)$,
+                "alternateName": "$about_alternate$"$endif$$if(sameAs_json)$,
+                "sameAs": "$sameAs_json$"$endif$
+              }$endif$$if(mainEntityUrl)$,
+              "mainEntity": {
                 "@type": "MedicalCondition",
                 "name": "$about$",
                 "sameAs": ["$mainEntityUrl$"]
-              }$endif$
-              $if(mainEntity)$$if(mainEntityUrl)$$else$, "mainEntity": {
+              }$endif$$if(mainEntity)$$if(mainEntityUrl)$$else$,
+              "mainEntity": {
                 "@type": "MedicalTherapy",
                 "name": "$mainEntity$",
                 "therapyType": "SurgicalProcedure",
                 "procedureType": "TherapeuticProcedure"
-              }$endif$$endif$
-              $if(keywords)$, "keywords": "$keywords$"$endif$
-              $if(datePublished)$, "datePublished": "$datePublished$"$endif$
-              $if(dateModified)$, "dateModified": "$dateModified$"$endif$
+              }$endif$$endif$$if(keywords)$,
+              "keywords": "$keywords$"$endif$$if(datePublished)$,
+              "datePublished": "$datePublished$"$endif$$if(dateModified)$,
+              "dateModified": "$dateModified$"$endif$,
+              "contentLocation": {
+                "@type": "Place",
+                "name": "London",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "London",
+                  "addressCountry": "UK"
+                }
+              }
+            }
+        </script>
+
+        <!-- Separate block for Local SEO (Physician / Practice) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Physician",
+                "name": "Dr Jeremy Lynch",
+                "image": "https://www.drjeremylynch.com/images/social-image.jpg",
+                "url": "https://www.drjeremylynch.com",
+                "telephone": "+44-20-XXXX-XXXX",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Your clinic address here",
+                    "addressLocality": "London",
+                    "postalCode": "EC1A 1AA",
+                    "addressCountry": "UK"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 51.515,
+                    "longitude": -0.09
+                },
+                "medicalSpecialty": [
+                    "Neurosurgery",
+                    "Interventional Neuroradiology"
+                ]
             }
         </script>
     </head>

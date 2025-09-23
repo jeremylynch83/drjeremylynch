@@ -24,8 +24,11 @@ aneurysms? | Dr Jeremy Lynch</title>
             />
         </noscript>
 
-                <meta name="description" content="Are brain aneuryms
-inevitable or you can reduce your chances?" />
+                <meta
+            name="description"
+            content="Are brain aneuryms inevitable or you can reduce
+your chances? | London Endovascular Neurosurgery"
+        />
                  <meta name="keywords" content="Aneurysm" />
                 <meta name="author" content="Jeremy Lynch Neuroradiology" />
         <meta name="robots" content="index, follow" />
@@ -93,32 +96,71 @@ aneuryms inevitable or you can reduce your chances?" />
         </style>
 
         <!-- JSON-LD -->
+        <!-- MedicalWebPage / Article -->
         <script type="application/ld+json">
             {
               "@context": "https://schema.org",
               "@type": "Article",
               "headline": "Can you prevent brain aneurysms?",
               "description": "Are brain aneuryms inevitable or you can
-reduce your chances?", 
-              "url": "https://www.drjeremylynch.com/features_Can_you_prevent_brain_aneurysms.html", 
+reduce your chances?",
+              "url": "https://www.drjeremylynch.com/features_Can_you_prevent_brain_aneurysms.html",
               "inLanguage": "en-GB",
               "image": ["https://www.drjeremylynch.com/img/prevent.webp"],
-              "author": { "@type": "Person", "name": "Dr Jeremy Lynch" },
+              "author": {
+                "@type": "Person",
+                "name": "Dr Jeremy Lynch"
+              },
               "publisher": {
                 "@type": "Organization",
                 "name": "Jeremy Lynch Neuroradiology",
-                "logo": { "@type": "ImageObject", "url": "https://www.drjeremylynch.com/images/social-image.jpg" }
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.drjeremylynch.com/images/social-image.jpg"
+                }
               },
               "medicalSpecialty": [
                 "Neurosurgery",
                 "Interventional Neuroradiology"
-              ]
-              
-              
-              
-              , "keywords": "Aneurysm"
-              
-              
+              ],
+              "keywords": "Aneurysm",
+              "contentLocation": {
+                "@type": "Place",
+                "name": "London",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "London",
+                  "addressCountry": "UK"
+                }
+              }
+            }
+        </script>
+
+        <!-- Separate block for Local SEO (Physician / Practice) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Physician",
+                "name": "Dr Jeremy Lynch",
+                "image": "https://www.drjeremylynch.com/images/social-image.jpg",
+                "url": "https://www.drjeremylynch.com",
+                "telephone": "+44-20-XXXX-XXXX",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Your clinic address here",
+                    "addressLocality": "London",
+                    "postalCode": "EC1A 1AA",
+                    "addressCountry": "UK"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 51.515,
+                    "longitude": -0.09
+                },
+                "medicalSpecialty": [
+                    "Neurosurgery",
+                    "Interventional Neuroradiology"
+                ]
             }
         </script>
     </head>

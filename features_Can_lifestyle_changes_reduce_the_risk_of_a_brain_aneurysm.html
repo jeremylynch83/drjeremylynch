@@ -24,8 +24,11 @@ aneurysm? | Dr Jeremy Lynch</title>
             />
         </noscript>
 
-                <meta name="description" content="Describes the role of
-lifestyle in preventing aneurysms and bleeds." />
+                <meta
+            name="description"
+            content="Describes the role of lifestyle in preventing
+aneurysms and bleeds. | London Endovascular Neurosurgery"
+        />
                  <meta name="keywords" content="Aneurysm" />
                 <meta name="author" content="Jeremy Lynch Neuroradiology" />
         <meta name="robots" content="index, follow" />
@@ -93,6 +96,7 @@ role of lifestyle in preventing aneurysms and bleeds." />
         </style>
 
         <!-- JSON-LD -->
+        <!-- MedicalWebPage / Article -->
         <script type="application/ld+json">
             {
               "@context": "https://schema.org",
@@ -100,26 +104,64 @@ role of lifestyle in preventing aneurysms and bleeds." />
               "headline": "Can lifestyle changes reduce the risk of a
 brain aneurysm?",
               "description": "Describes the role of lifestyle in
-preventing aneurysms and bleeds.", 
-              "url": "https://www.drjeremylynch.com/features_Can_lifestyle_changes_reduce_the_risk_of_a_brain_aneurysm.html", 
+preventing aneurysms and bleeds.",
+              "url": "https://www.drjeremylynch.com/features_Can_lifestyle_changes_reduce_the_risk_of_a_brain_aneurysm.html",
               "inLanguage": "en-GB",
               "image": ["https://www.drjeremylynch.com/img/feature_health.webp"],
-              "author": { "@type": "Person", "name": "Dr Jeremy Lynch" },
+              "author": {
+                "@type": "Person",
+                "name": "Dr Jeremy Lynch"
+              },
               "publisher": {
                 "@type": "Organization",
                 "name": "Jeremy Lynch Neuroradiology",
-                "logo": { "@type": "ImageObject", "url": "https://www.drjeremylynch.com/images/social-image.jpg" }
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.drjeremylynch.com/images/social-image.jpg"
+                }
               },
               "medicalSpecialty": [
                 "Neurosurgery",
                 "Interventional Neuroradiology"
-              ]
-              
-              
-              
-              , "keywords": "Aneurysm"
-              
-              
+              ],
+              "keywords": "Aneurysm",
+              "contentLocation": {
+                "@type": "Place",
+                "name": "London",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "London",
+                  "addressCountry": "UK"
+                }
+              }
+            }
+        </script>
+
+        <!-- Separate block for Local SEO (Physician / Practice) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Physician",
+                "name": "Dr Jeremy Lynch",
+                "image": "https://www.drjeremylynch.com/images/social-image.jpg",
+                "url": "https://www.drjeremylynch.com",
+                "telephone": "+44-20-XXXX-XXXX",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Your clinic address here",
+                    "addressLocality": "London",
+                    "postalCode": "EC1A 1AA",
+                    "addressCountry": "UK"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 51.515,
+                    "longitude": -0.09
+                },
+                "medicalSpecialty": [
+                    "Neurosurgery",
+                    "Interventional Neuroradiology"
+                ]
             }
         </script>
     </head>
