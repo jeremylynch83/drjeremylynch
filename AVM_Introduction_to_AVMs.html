@@ -1,125 +1,171 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Introduction to AVMs | Dr Jeremy Lynch</title>
+        <title>Introduction to AVMs | Dr Jeremy Lynch</title>
 
-    <!-- Preconnect for fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
+                rel="stylesheet"
+            />
+        </noscript>
 
-    <!-- Async Google Fonts -->
-    <link rel="preload" 
-          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" 
-          as="style" 
-          onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    </noscript>
-
-
-            <meta name="author" content="Jeremy Lynch Neuroradiology" />
-    <meta name="robots" content="index, follow" />
-    <meta name="format-detection" content="telephone=no" />
-
-        <link rel="canonical" href="https://www.drjeremylynch.com/AVM_Introduction_to_AVMs.html" />
-    
-    <!-- Open Graph -->
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:site_name" content="Dr Jeremy Lynch Neuroradiology" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Introduction to
-AVMs | Dr Jeremy Lynch" />
-                <meta property="og:url" content="https://www.drjeremylynch.com/AVM_Introduction_to_AVMs.html" />
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Introduction to
-AVMs | Dr Jeremy Lynch" />
+                 <meta name="author" content="Jeremy Lynch Neuroradiology" />
+        <meta name="robots" content="index, follow" />
+        <meta name="format-detection" content="telephone=no" />
+                <link rel="canonical" href="https://www.drjeremylynch.com/AVM_Introduction_to_AVMs.html" />
         
-    <!-- Async Bootstrap 5 CSS -->
-    <link rel="preload" 
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-          as="style" 
-          onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    </noscript>
+        <!-- Open Graph -->
+        <meta property="og:locale" content="en_GB" />
+        <meta
+            property="og:site_name"
+            content="Dr Jeremy Lynch Neuroradiology"
+        />
+                <meta property="og:type" content="article" />
+                <meta property="og:title" content="Introduction to
+AVMs | Dr Jeremy Lynch" />
+                  <meta property="og:url" content="https://www.drjeremylynch.com/AVM_Introduction_to_AVMs.html" />
+        
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Introduction to
+AVMs | Dr Jeremy Lynch" />
+         
+        <!-- CSS -->
+        <link
+            rel="preload"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>
+            <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            />
+        </noscript>
 
-<link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="css/main.css"></noscript>
+        <link
+            rel="preload"
+            href="css/main.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript><link rel="stylesheet" href="css/main.css" /></noscript>
 
+        <!-- Page-scoped override: article pages keep black UI on frosted white -->
+        <style>
+            .article-page .site-header .fixed-top {
+                background-color: rgba(255, 255, 255, 0.85) !important;
+                backdrop-filter: blur(6px);
+            }
+            .article-page .site-header .navbar,
+            .article-page .site-header .navbar .nav-link,
+            .article-page .site-header .navbar .navbar-toggler {
+                color: #111 !important;
+            }
+            .article-page .navbar-brand img {
+                filter: none !important;
+            }
+            .article-page .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+            }
+        </style>
 
-    <!-- JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Introduction to AVMs",
-      
-      "url": "https://www.drjeremylynch.com/AVM_Introduction_to_AVMs.html", 
-      "inLanguage": "en-GB",
-      
-      "author": { "@type": "Person", "name": "Dr Jeremy Lynch" },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Jeremy Lynch Neuroradiology",
-        "logo": { "@type": "ImageObject", "url": "https://www.drjeremylynch.com/images/social-image.jpg" }
-      }
-      
-      
-    }
-    </script>
-  </head>
+        <!-- JSON-LD -->
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Introduction to AVMs",
+              
+              "url": "https://www.drjeremylynch.com/AVM_Introduction_to_AVMs.html", 
+              "inLanguage": "en-GB",
+              
+              "author": { "@type": "Person", "name": "Dr Jeremy Lynch" },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Jeremy Lynch Neuroradiology",
+                "logo": { "@type": "ImageObject", "url": "https://www.drjeremylynch.com/images/social-image.jpg" }
+              }
+              
+              
+            }
+        </script>
+    </head>
 
-  <body>
-    <header class="site-header">
-      <div class="fixed-top">
-        <!-- Top row: logo with mobile button on the right -->
-        <nav class="navbar navbar-light bg-white py-2">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img src="img/drj.svg" alt="Dr Jeremy Lynch Logo" height="40" />
-            </a>
+    <body class="article-page">
+        <header class="site-header">
+            <div class="fixed-top">
+                <!-- Top row: logo with mobile button on the right -->
+                <nav class="navbar navbar-light py-2">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <img
+                                src="img/drj.svg"
+                                alt="Dr Jeremy Lynch Logo"
+                                width="160"
+                                height="40"
+                            />
+                        </a>
 
-            <!-- Mobile button -->
-            <button class="navbar-toggler d-lg-none" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#mobileNav"
-                    aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle menu">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </nav>
+                        <!-- Mobile button -->
+                        <button
+                            class="navbar-toggler d-lg-none"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#mobileNav"
+                            aria-controls="mobileNav"
+                            aria-expanded="false"
+                            aria-label="Toggle menu"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </nav>
 
-        <!-- Desktop bar beneath the logo -->
-        <nav class="navbar navbar-expand d-none d-lg-block desktop-mainnav">
-          <div class="container-fluid">
-            <ul class="navbar-nav mx-auto" id="desktopTopLevel"></ul>
-          </div>
-        </nav>
+                <!-- Desktop bar beneath the logo -->
+                <nav
+                    class="navbar navbar-expand d-none d-lg-block desktop-mainnav"
+                >
+                    <div class="container-fluid">
+                        <ul
+                            class="navbar-nav mx-auto"
+                            id="desktopTopLevel"
+                        ></ul>
+                    </div>
+                </nav>
 
-        <!-- Mobile full menu opens below header -->
-        <div class="collapse d-lg-none border-bottom" id="mobileNav">
-          <div class="mobile-scroller">
-            <div class="container py-3" id="mobileMenu"></div>
-          </div>
-        </div>
-      </div>
+                <!-- Mobile full menu opens below header -->
+                <div class="collapse d-lg-none border-bottom" id="mobileNav">
+                    <div class="mobile-scroller">
+                        <div class="container py-3" id="mobileMenu"></div>
+                    </div>
+                </div>
+            </div>
 
-      <!-- Backdrop lives below the fixed header so it never covers the menu -->
-      <div class="menu-backdrop" id="menuBackdrop" hidden></div>
-    </header>
+            <!-- Backdrop lives below the fixed header so it never covers the menu -->
+            <div class="menu-backdrop" id="menuBackdrop" hidden></div>
+        </header>
 
-    <main  >
-      <section class="container py-4">
-
-
-        <!-- Breadcrumbs (shown only when 'breadcrumbs' is provided by the page) -->
-<!--
-                <div class="crumb-wrap " role="navigation" aria-label="Breadcrumb">
+        <main>
+            <section class="container py-4">
+                <!-- Breadcrumbs (optional) -->
+                <!--
+                <div class="crumb-wrap" role="navigation" aria-label="Breadcrumb">
           <nav>
             <ol class="breadcrumb mb-0">
                             <li class="breadcrumb-item"
@@ -133,110 +179,120 @@ AVMs | Dr Jeremy Lynch" />
                           </ol>
           </nav>
         </div>
-        
--->
+                -->
 
-<div class="row g-4">
-  <!-- Main Content -->
-  <div class="col-12 col-md-8">
-    <section id="introduction-to-avms" class="article-content">
-    <h1>Introduction to AVMs</h1>
-    <p>A brain arteriovenous malformation (AVM) is a complex, abnormal
-    network of blood vessels in the brain. In a healthy brain, blood
-    circulates from arteries to veins via tiny vessels called
-    capillaries. The capillaries allow for the exchange of oxygen and
-    nutrients from the blood to the brain tissue, and the removal of
-    waste products. However, in a brain AVM, there is a direct
-    connections between the arteries and veins, bypassing these
-    capillaries.</p>
-    <figure>
-    <img src="img/avm.svg" alt="Arteriovenous malformations." />
-    <figcaption aria-hidden="true">Arteriovenous
-    malformations.</figcaption>
-    </figure>
-    <p>Whilst AVMs may lead to health problems, many do not cause any
-    problems and can be left alone without treatment.</p>
-    <p>The most frequent problems are headaches and seizures. Headaches
-    can vary in intensity and frequency, potentially mimicking migraines
-    in some instances. Seizures may manifest in various ways, ranging
-    from changes in a person’s behavior or consciousness to involuntary
-    movements or loss of control over movement.</p>
-    <p>In serious cases, the abnormal blood vessels in an AVM may
-    rupture, causing bleeding within the brain (intracranial
-    haemorrhage). Bleeding from a ruptured AVM can cause a sudden,
-    severe headache, nausea, vomiting, incontinence, blurred vision, and
-    even loss of consciousness. Depending on the location of the bleed,
-    impairments caused by local brain tissue damage are also possible,
-    including seizure, weakness on one side of the body (hemiparesis), a
-    loss of touch sensation on one side of the body, and deficits in
-    language processing (aphasia).</p>
-    <h2 id="cause">Cause</h2>
-    <p>The exact cause of brain AVMs is not fully understood, but they
-    are most commonly believed to originate before birth. They may grow
-    over time or remain static in size.</p>
-    <h2 id="epidemiology-of-brain-avms">Epidemiology of Brain AVMs</h2>
-    <p>Brain AVMs are relatively rare, with an estimated annual
-    detection rate of around 1 per 100,000 people. The prevalence in
-    adults is approximately 18 per 100,000.</p>
-    <p>AVMs seem to occur more often in males than females. However,
-    symptoms may start or worsen in females during pregnancy due to the
-    increased blood flow and volume. There is also a significant
-    occurrence (15-20%) of AVMs in patients with hereditary hemorrhagic
-    telangiectasia, also known as Osler-Weber-Rendu syndrome, which is a
-    genetic disorder that leads to abnormal blood vessel formation.</p>
-    <h2 id="prognosis-of-brain-avms">Prognosis of Brain AVMs</h2>
-    <p>The main risk associated with brain arteriovenous malformations
-    (AVMs) is intracranial haemorrhage, which is bleeding inside the
-    skull. This risk varies among patients and is difficult to measure
-    because many patients with AVMs don’t show symptoms and therefore
-    never seek medical attention.</p>
-    <p>The earlier in life an AVM appears, the greater the likelihood of
-    experiencing a haemorrhage over one’s lifetime. Ruptured AVMs can
-    lead to serious health complications. Ruptures may cause loss of
-    life or permanent disability.</p>
-    </section>
+                <div class="row g-4">
+                    <!-- Main Content -->
+                    <div class="col-12 col-md-8">
+                        <section id="introduction-to-avms"
+class="article-content">
+<h1>Introduction to AVMs</h1>
+<p>A brain arteriovenous malformation (AVM) is a complex, abnormal
+network of blood vessels in the brain. In a healthy brain, blood
+circulates from arteries to veins via tiny vessels called capillaries.
+The capillaries allow for the exchange of oxygen and nutrients from the
+blood to the brain tissue, and the removal of waste products. However,
+in a brain AVM, there is a direct connections between the arteries and
+veins, bypassing these capillaries.</p>
+<figure>
+<img src="img/avm.svg" alt="Arteriovenous malformations." />
+<figcaption aria-hidden="true">Arteriovenous malformations.</figcaption>
+</figure>
+<p>Whilst AVMs may lead to health problems, many do not cause any
+problems and can be left alone without treatment.</p>
+<p>The most frequent problems are headaches and seizures. Headaches can
+vary in intensity and frequency, potentially mimicking migraines in some
+instances. Seizures may manifest in various ways, ranging from changes
+in a person’s behavior or consciousness to involuntary movements or loss
+of control over movement.</p>
+<p>In serious cases, the abnormal blood vessels in an AVM may rupture,
+causing bleeding within the brain (intracranial haemorrhage). Bleeding
+from a ruptured AVM can cause a sudden, severe headache, nausea,
+vomiting, incontinence, blurred vision, and even loss of consciousness.
+Depending on the location of the bleed, impairments caused by local
+brain tissue damage are also possible, including seizure, weakness on
+one side of the body (hemiparesis), a loss of touch sensation on one
+side of the body, and deficits in language processing (aphasia).</p>
+<h2 id="cause">Cause</h2>
+<p>The exact cause of brain AVMs is not fully understood, but they are
+most commonly believed to originate before birth. They may grow over
+time or remain static in size.</p>
+<h2 id="epidemiology-of-brain-avms">Epidemiology of Brain AVMs</h2>
+<p>Brain AVMs are relatively rare, with an estimated annual detection
+rate of around 1 per 100,000 people. The prevalence in adults is
+approximately 18 per 100,000.</p>
+<p>AVMs seem to occur more often in males than females. However,
+symptoms may start or worsen in females during pregnancy due to the
+increased blood flow and volume. There is also a significant occurrence
+(15-20%) of AVMs in patients with hereditary hemorrhagic telangiectasia,
+also known as Osler-Weber-Rendu syndrome, which is a genetic disorder
+that leads to abnormal blood vessel formation.</p>
+<h2 id="prognosis-of-brain-avms">Prognosis of Brain AVMs</h2>
+<p>The main risk associated with brain arteriovenous malformations
+(AVMs) is intracranial haemorrhage, which is bleeding inside the skull.
+This risk varies among patients and is difficult to measure because many
+patients with AVMs don’t show symptoms and therefore never seek medical
+attention.</p>
+<p>The earlier in life an AVM appears, the greater the likelihood of
+experiencing a haemorrhage over one’s lifetime. Ruptured AVMs can lead
+to serious health complications. Ruptures may cause loss of life or
+permanent disability.</p>
+</section>                         <hr class="my-4" />
+                        <p class="text-center">
+                            <a href="AVM_Symptoms_of_AVMs.html" class="text-decoration-none"
+                                >Next: Symptoms of AVMs</a
+                            >
+                        </p>
+                                            </div>
 
-        <hr class="my-4">
-    <p class="text-center">
-      <a href="AVM_Symptoms_of_AVMs.html" class="text-decoration-none">Next: Symptoms
-of AVMs</a>
-    </p>
-      </div>
+                                        <!-- Article Links -->
+                    <aside class="col-md-4 related">
+                        <div class="sticky-sidebar">
+                            <h4 class="h6 text-uppercase text-muted mb-3">
+                                Related Articles
+                            </h4>
+                            <ul class="list-group list-group-flush text-center">
+                                                                <li class="list-group-item px-0">
+                                                                        <span class="fw-semibold d-inline-block"
+                                        >Introduction to AVMs</span
+                                    >
+                                                                    </li>
+                                                                <li class="list-group-item px-0">
+                                                                        <a
+                                        href="AVM_Symptoms_of_AVMs.html"
+                                        class="text-decoration-none d-inline-block"
+                                        >Symptoms of AVMs</a
+                                    >
+                                                                    </li>
+                                                                <li class="list-group-item px-0">
+                                                                        <a
+                                        href="AVM_Diagnosis_of_AVMs.html"
+                                        class="text-decoration-none d-inline-block"
+                                        >Diagnosis of AVMs</a
+                                    >
+                                                                    </li>
+                                                                <li class="list-group-item px-0">
+                                                                        <a
+                                        href="AVM_Treatment_of_AVMs.html"
+                                        class="text-decoration-none d-inline-block"
+                                        >Treatment of AVMs</a
+                                    >
+                                                                    </li>
+                                                                <li class="list-group-item px-0">
+                                                                        <a
+                                        href="AVM_Further_information.html"
+                                        class="text-decoration-none d-inline-block"
+                                        >Further information</a
+                                    >
+                                                                    </li>
+                                                            </ul>
+                        </div>
+                    </aside>
+                                    </div>
+            </section>
+        </main>
 
-    <!-- Article Links -->
-  <aside class="col-md-4 related">
-    <div class="sticky-sidebar">
-      <h4 class="h6 text-uppercase text-muted mb-3">Related Articles</h4>
-      <ul class="list-group list-group-flush text-center">
-                <li class="list-group-item px-0">
-                      <span class="fw-semibold d-inline-block">Introduction
-to AVMs</span>
-                  </li>
-                <li class="list-group-item px-0">
-                      <a href="AVM_Symptoms_of_AVMs.html" class="text-decoration-none d-inline-block">Symptoms
-of AVMs</a>
-                  </li>
-                <li class="list-group-item px-0">
-                      <a href="AVM_Diagnosis_of_AVMs.html" class="text-decoration-none d-inline-block">Diagnosis
-of AVMs</a>
-                  </li>
-                <li class="list-group-item px-0">
-                      <a href="AVM_Treatment_of_AVMs.html" class="text-decoration-none d-inline-block">Treatment
-of AVMs</a>
-                  </li>
-                <li class="list-group-item px-0">
-                      <a href="AVM_Further_information.html" class="text-decoration-none d-inline-block">Further
-information</a>
-                  </li>
-              </ul>
-    </div>
-  </aside>
-  </div>
-
-      </section>
-    </main>
-
-     <!doctype html>
+         <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -565,12 +621,8 @@ information</a>
   </body>
 </html> 
 
-
-
-    <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/menu.js"></script>
-
-
-  </body>
+        <script src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/menu.js"></script>
+    </body>
 </html>

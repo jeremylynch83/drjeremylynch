@@ -1,123 +1,169 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Risks | Dr Jeremy Lynch</title>
+        <title>Risks | Dr Jeremy Lynch</title>
 
-    <!-- Preconnect for fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
+                rel="stylesheet"
+            />
+        </noscript>
 
-    <!-- Async Google Fonts -->
-    <link rel="preload" 
-          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" 
-          as="style" 
-          onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    </noscript>
-
-
-            <meta name="author" content="Jeremy Lynch Neuroradiology" />
-    <meta name="robots" content="index, follow" />
-    <meta name="format-detection" content="telephone=no" />
-
-        <link rel="canonical" href="https://www.drjeremylynch.com/Angiography_Risks.html" />
-    
-    <!-- Open Graph -->
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:site_name" content="Dr Jeremy Lynch Neuroradiology" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Risks | Dr Jeremy Lynch" />
-                <meta property="og:url" content="https://www.drjeremylynch.com/Angiography_Risks.html" />
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Risks | Dr Jeremy Lynch" />
+                 <meta name="author" content="Jeremy Lynch Neuroradiology" />
+        <meta name="robots" content="index, follow" />
+        <meta name="format-detection" content="telephone=no" />
+                <link rel="canonical" href="https://www.drjeremylynch.com/Angiography_Risks.html" />
         
-    <!-- Async Bootstrap 5 CSS -->
-    <link rel="preload" 
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-          as="style" 
-          onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    </noscript>
+        <!-- Open Graph -->
+        <meta property="og:locale" content="en_GB" />
+        <meta
+            property="og:site_name"
+            content="Dr Jeremy Lynch Neuroradiology"
+        />
+                <meta property="og:type" content="article" />
+                <meta property="og:title" content="Risks | Dr Jeremy Lynch" />
+                  <meta property="og:url" content="https://www.drjeremylynch.com/Angiography_Risks.html" />
+        
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Risks | Dr Jeremy Lynch" />
+         
+        <!-- CSS -->
+        <link
+            rel="preload"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>
+            <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            />
+        </noscript>
 
-<link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="css/main.css"></noscript>
+        <link
+            rel="preload"
+            href="css/main.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript><link rel="stylesheet" href="css/main.css" /></noscript>
 
+        <!-- Page-scoped override: article pages keep black UI on frosted white -->
+        <style>
+            .article-page .site-header .fixed-top {
+                background-color: rgba(255, 255, 255, 0.85) !important;
+                backdrop-filter: blur(6px);
+            }
+            .article-page .site-header .navbar,
+            .article-page .site-header .navbar .nav-link,
+            .article-page .site-header .navbar .navbar-toggler {
+                color: #111 !important;
+            }
+            .article-page .navbar-brand img {
+                filter: none !important;
+            }
+            .article-page .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+            }
+        </style>
 
-    <!-- JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Risks",
-      
-      "url": "https://www.drjeremylynch.com/Angiography_Risks.html", 
-      "inLanguage": "en-GB",
-      
-      "author": { "@type": "Person", "name": "Dr Jeremy Lynch" },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Jeremy Lynch Neuroradiology",
-        "logo": { "@type": "ImageObject", "url": "https://www.drjeremylynch.com/images/social-image.jpg" }
-      }
-      
-      
-    }
-    </script>
-  </head>
+        <!-- JSON-LD -->
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Risks",
+              
+              "url": "https://www.drjeremylynch.com/Angiography_Risks.html", 
+              "inLanguage": "en-GB",
+              
+              "author": { "@type": "Person", "name": "Dr Jeremy Lynch" },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Jeremy Lynch Neuroradiology",
+                "logo": { "@type": "ImageObject", "url": "https://www.drjeremylynch.com/images/social-image.jpg" }
+              }
+              
+              
+            }
+        </script>
+    </head>
 
-  <body>
-    <header class="site-header">
-      <div class="fixed-top">
-        <!-- Top row: logo with mobile button on the right -->
-        <nav class="navbar navbar-light bg-white py-2">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img src="img/drj.svg" alt="Dr Jeremy Lynch Logo" height="40" />
-            </a>
+    <body class="article-page">
+        <header class="site-header">
+            <div class="fixed-top">
+                <!-- Top row: logo with mobile button on the right -->
+                <nav class="navbar navbar-light py-2">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <img
+                                src="img/drj.svg"
+                                alt="Dr Jeremy Lynch Logo"
+                                width="160"
+                                height="40"
+                            />
+                        </a>
 
-            <!-- Mobile button -->
-            <button class="navbar-toggler d-lg-none" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#mobileNav"
-                    aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle menu">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </nav>
+                        <!-- Mobile button -->
+                        <button
+                            class="navbar-toggler d-lg-none"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#mobileNav"
+                            aria-controls="mobileNav"
+                            aria-expanded="false"
+                            aria-label="Toggle menu"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </nav>
 
-        <!-- Desktop bar beneath the logo -->
-        <nav class="navbar navbar-expand d-none d-lg-block desktop-mainnav">
-          <div class="container-fluid">
-            <ul class="navbar-nav mx-auto" id="desktopTopLevel"></ul>
-          </div>
-        </nav>
+                <!-- Desktop bar beneath the logo -->
+                <nav
+                    class="navbar navbar-expand d-none d-lg-block desktop-mainnav"
+                >
+                    <div class="container-fluid">
+                        <ul
+                            class="navbar-nav mx-auto"
+                            id="desktopTopLevel"
+                        ></ul>
+                    </div>
+                </nav>
 
-        <!-- Mobile full menu opens below header -->
-        <div class="collapse d-lg-none border-bottom" id="mobileNav">
-          <div class="mobile-scroller">
-            <div class="container py-3" id="mobileMenu"></div>
-          </div>
-        </div>
-      </div>
+                <!-- Mobile full menu opens below header -->
+                <div class="collapse d-lg-none border-bottom" id="mobileNav">
+                    <div class="mobile-scroller">
+                        <div class="container py-3" id="mobileMenu"></div>
+                    </div>
+                </div>
+            </div>
 
-      <!-- Backdrop lives below the fixed header so it never covers the menu -->
-      <div class="menu-backdrop" id="menuBackdrop" hidden></div>
-    </header>
+            <!-- Backdrop lives below the fixed header so it never covers the menu -->
+            <div class="menu-backdrop" id="menuBackdrop" hidden></div>
+        </header>
 
-    <main  >
-      <section class="container py-4">
-
-
-        <!-- Breadcrumbs (shown only when 'breadcrumbs' is provided by the page) -->
-<!--
-                <div class="crumb-wrap " role="navigation" aria-label="Breadcrumb">
+        <main>
+            <section class="container py-4">
+                <!-- Breadcrumbs (optional) -->
+                <!--
+                <div class="crumb-wrap" role="navigation" aria-label="Breadcrumb">
           <nav>
             <ol class="breadcrumb mb-0">
                             <li class="breadcrumb-item"
@@ -131,92 +177,104 @@
                           </ol>
           </nav>
         </div>
-        
--->
+                -->
 
-<div class="row g-4">
-  <!-- Main Content -->
-  <div class="col-12 col-md-8">
-    <section id="risks" class="article-content">
-    <h1>Risks</h1>
-    <p>Any medical procedure can involve risks. It is first important to
-    understand that a cerebral angiogram is recommended when the risks
-    involved in not undertaking the test (for example, non-diagnosis of
-    a serious disease) outweigh the risks of the procedure.</p>
-    <p>The overwhelming majority of patients undergoing cerebral
-    angiography do not have a complication. However, if a complication
-    does occur, it can be significant.</p>
-    <h2 id="stroke">Stroke</h2>
-    <p>The main potential complication of cerebral angiography is of
-    having a stroke, with a rate of approximately 0.5% (or 1 in 200
-    people). This risk varies and is likely lower if you are normally in
-    good health without other disease. A stroke is caused by a blood
-    clot obstructing the normal flow of blood to the brain. The symptoms
-    can involve one or more of the following: weakness of the face,
-    arms, or legs, difficulty with speech, or difficulty with vision.
-    Strokes can also be of variable severity: from brief and barely
-    noticeable to very severe. They can be temporary or result in
-    permanent deficit. The good news is that strokes that result from
-    cerebral angiogram tend to be of lesser severity with good potential
-    for recovery. As strokes tend to occur during, or shortly after the
-    procedure you are also in the best place (under direct medical
-    supervision) if they were to occur.</p>
-    <h2 id="bleeding-from-the-access-site">Bleeding from the access
-    site</h2>
-    <p>The second main risk is of damage to the artery at the access
-    site. It is common to get small amount of bleeding after the
-    procedure and this usually stops spontaneously. If the bleeding is
-    heavier or if there is internal bleeding then this sometimes require
-    treatment, such as an injection of thrombin or even surgical repair.
-    It is very rare for this to be necessary, however. The risk is lower
-    if the wrist (rather than the groin) is used as the access site.</p>
-    <h2 id="blockage-of-the-access-site-artery">Blockage of the access
-    site artery</h2>
-    <p>Another rare complication is blockage of the artery at the access
-    site, resulting in not enough blood getting to the arm or leg. This
-    condition may require surgery to remedy.</p>
-    </section>
+                <div class="row g-4">
+                    <!-- Main Content -->
+                    <div class="col-12 col-md-8">
+                        <section id="risks" class="article-content">
+<h1>Risks</h1>
+<p>Any medical procedure can involve risks. It is first important to
+understand that a cerebral angiogram is recommended when the risks
+involved in not undertaking the test (for example, non-diagnosis of a
+serious disease) outweigh the risks of the procedure.</p>
+<p>The overwhelming majority of patients undergoing cerebral angiography
+do not have a complication. However, if a complication does occur, it
+can be significant.</p>
+<h2 id="stroke">Stroke</h2>
+<p>The main potential complication of cerebral angiography is of having
+a stroke, with a rate of approximately 0.5% (or 1 in 200 people). This
+risk varies and is likely lower if you are normally in good health
+without other disease. A stroke is caused by a blood clot obstructing
+the normal flow of blood to the brain. The symptoms can involve one or
+more of the following: weakness of the face, arms, or legs, difficulty
+with speech, or difficulty with vision. Strokes can also be of variable
+severity: from brief and barely noticeable to very severe. They can be
+temporary or result in permanent deficit. The good news is that strokes
+that result from cerebral angiogram tend to be of lesser severity with
+good potential for recovery. As strokes tend to occur during, or shortly
+after the procedure you are also in the best place (under direct medical
+supervision) if they were to occur.</p>
+<h2 id="bleeding-from-the-access-site">Bleeding from the access
+site</h2>
+<p>The second main risk is of damage to the artery at the access site.
+It is common to get small amount of bleeding after the procedure and
+this usually stops spontaneously. If the bleeding is heavier or if there
+is internal bleeding then this sometimes require treatment, such as an
+injection of thrombin or even surgical repair. It is very rare for this
+to be necessary, however. The risk is lower if the wrist (rather than
+the groin) is used as the access site.</p>
+<h2 id="blockage-of-the-access-site-artery">Blockage of the access site
+artery</h2>
+<p>Another rare complication is blockage of the artery at the access
+site, resulting in not enough blood getting to the arm or leg. This
+condition may require surgery to remedy.</p>
+</section>                         <hr class="my-4" />
+                        <p class="text-center">
+                            <a href="Angiography_During_a_Cerebral_Angiogram.html" class="text-decoration-none"
+                                >Next: During a Cerebral Angiogram</a
+                            >
+                        </p>
+                                            </div>
 
-        <hr class="my-4">
-    <p class="text-center">
-      <a href="Angiography_During_a_Cerebral_Angiogram.html" class="text-decoration-none">Next: During
-a Cerebral Angiogram</a>
-    </p>
-      </div>
+                                        <!-- Article Links -->
+                    <aside class="col-md-4 related">
+                        <div class="sticky-sidebar">
+                            <h4 class="h6 text-uppercase text-muted mb-3">
+                                Related Articles
+                            </h4>
+                            <ul class="list-group list-group-flush text-center">
+                                                                <li class="list-group-item px-0">
+                                                                        <a
+                                        href="Angiography_Cerebral_angiography.html"
+                                        class="text-decoration-none d-inline-block"
+                                        >Cerebral angiography</a
+                                    >
+                                                                    </li>
+                                                                <li class="list-group-item px-0">
+                                                                        <a
+                                        href="Angiography_Before_a_Cerebral_Angiogram.html"
+                                        class="text-decoration-none d-inline-block"
+                                        >Before a Cerebral Angiogram</a
+                                    >
+                                                                    </li>
+                                                                <li class="list-group-item px-0">
+                                                                        <span class="fw-semibold d-inline-block"
+                                        >Risks</span
+                                    >
+                                                                    </li>
+                                                                <li class="list-group-item px-0">
+                                                                        <a
+                                        href="Angiography_During_a_Cerebral_Angiogram.html"
+                                        class="text-decoration-none d-inline-block"
+                                        >During a Cerebral Angiogram</a
+                                    >
+                                                                    </li>
+                                                                <li class="list-group-item px-0">
+                                                                        <a
+                                        href="Angiography_After_a_Cerebral_Angiogram.html"
+                                        class="text-decoration-none d-inline-block"
+                                        >After a Cerebral Angiogram</a
+                                    >
+                                                                    </li>
+                                                            </ul>
+                        </div>
+                    </aside>
+                                    </div>
+            </section>
+        </main>
 
-    <!-- Article Links -->
-  <aside class="col-md-4 related">
-    <div class="sticky-sidebar">
-      <h4 class="h6 text-uppercase text-muted mb-3">Related Articles</h4>
-      <ul class="list-group list-group-flush text-center">
-                <li class="list-group-item px-0">
-                      <a href="Angiography_Cerebral_angiography.html" class="text-decoration-none d-inline-block">Cerebral
-angiography</a>
-                  </li>
-                <li class="list-group-item px-0">
-                      <a href="Angiography_Before_a_Cerebral_Angiogram.html" class="text-decoration-none d-inline-block">Before
-a Cerebral Angiogram</a>
-                  </li>
-                <li class="list-group-item px-0">
-                      <span class="fw-semibold d-inline-block">Risks</span>
-                  </li>
-                <li class="list-group-item px-0">
-                      <a href="Angiography_During_a_Cerebral_Angiogram.html" class="text-decoration-none d-inline-block">During
-a Cerebral Angiogram</a>
-                  </li>
-                <li class="list-group-item px-0">
-                      <a href="Angiography_After_a_Cerebral_Angiogram.html" class="text-decoration-none d-inline-block">After
-a Cerebral Angiogram</a>
-                  </li>
-              </ul>
-    </div>
-  </aside>
-  </div>
-
-      </section>
-    </main>
-
-     <!doctype html>
+         <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -545,12 +603,8 @@ a Cerebral Angiogram</a>
   </body>
 </html> 
 
-
-
-    <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/menu.js"></script>
-
-
-  </body>
+        <script src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/menu.js"></script>
+    </body>
 </html>
