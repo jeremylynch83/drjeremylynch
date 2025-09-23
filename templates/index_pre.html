@@ -23,9 +23,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Async Google Fonts -->
-    <link rel="preload" 
-          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" 
-          as="style" 
+    <link rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
+          as="style"
           onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
@@ -150,7 +150,7 @@
         height: 100%;
         transform: translate(-50%, -50%);
         object-fit: cover;           /* fill without distortion */
-        object-position: center;     
+        object-position: center;
       }
       .hero__scrim {                 /* improves text contrast */
         position: absolute;
@@ -203,7 +203,7 @@
     <header class="site-header">
       <div class="fixed-top">
         <!-- Top row: logo with mobile button on the right -->
-        <nav class="navbar navbar-light bg-white py-2">
+        <nav class="navbar navbar-light py-2">
           <div class="container">
             <a class="navbar-brand" href="index.html">
               <img src="img/drj.svg" alt="Dr Jeremy Lynch Logo" width="160" height="40">
@@ -253,13 +253,13 @@
 </h1>
 
 <div class="d-flex justify-content-center gap-3">
-  <a href="#profile" 
-     class="btn btn-outline-light btn-lg" 
+  <a href="#profile"
+     class="btn btn-outline-light btn-lg"
      style="font-size: 1.55rem; font-weight: 600; padding: 0.75rem 1.5rem; border-width: 3px;">
     LEARN MORE
   </a>
-  <a href="#book" 
-     class="btn btn-outline-light btn-lg" 
+  <a href="#book"
+     class="btn btn-outline-light btn-lg"
      style="font-size: 1.55rem; font-weight: 600; padding: 0.75rem 1.5rem; border-width: 3px;">
     BOOK APPOINTMENT
   </a>
@@ -294,7 +294,7 @@
 
               <h3 class="fw-bold mb-3 fs-5" style="padding-top: 0px;">Dr Jeremy Lynch</h3>
 
-  
+
               <p class="mb-0 text-center small">
                 <strong>GMC number:</strong><br />
                 6156572
@@ -773,7 +773,7 @@
             </h2>
             <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="accordion-body">
-                A referral is not required if self-paying. However, some medical insurances do require a referral for reimbursement. Please contact us or your medical insurance if you are unsure. 
+                A referral is not required if self-paying. However, some medical insurances do require a referral for reimbursement. Please contact us or your medical insurance if you are unsure.
               </div>
             </div>
           </div>
@@ -786,7 +786,7 @@
             </h2>
             <div id="a22" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="accordion-body">
-                It is £250 for an in-person and £200 for an online/telephone consultation. Follow-up consultations are £200. Procedure fees are variable and described on <a href="General_Fees.html"> this page</a>.   
+                It is £250 for an in-person and £200 for an online/telephone consultation. Follow-up consultations are £200. Procedure fees are variable and described on <a href="General_Fees.html"> this page</a>.
               </div>
             </div>
           </div>
@@ -863,6 +863,15 @@
     $footer$
 
     <script>
+
+    (function(){
+      var body = document.body;
+      var check = function(){ body.classList.toggle("scrolled", window.scrollY > 1); };
+      check();
+      window.addEventListener("scroll", check, {passive:true});
+    })();
+
+
       // Optional: measure fixed header height once and pad body to avoid jump on anchor links
       window.addEventListener('load', function() {
         const fixedTop = document.querySelector('.site-header .fixed-top');
