@@ -1,6 +1,12 @@
 #  Introduction to brain aneurysms {Aneurysms}
 ---
-description: Introduction to brain aneurysms: Overview of what brain aneurysms are, their causes, risks, and who is most affected.
+title: "Introduction to brain aneurysms"
+description: "Introduction to brain aneurysms: Overview of what brain aneurysms are, their causes, risks, and who is most affected."
+keywords: "brain aneurysm, cerebral aneurysm, intracranial aneurysm, subarachnoid haemorrhage"
+tags: "Aneurysm, Brain aneurysm, Cerebral aneurysm"
+about: "Cerebral aneurysm"
+mainEntity: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
+sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
 ---
 
 ## What is an aneurysm?
@@ -55,6 +61,11 @@ Many aneurysms are benign, causing no symptoms and never rupturing. However, som
 #  Symptoms of brain aneurysms {Aneurysms}
 ---
 description: Key warning signs and differences between ruptured and unruptured aneurysms.
+keywords: "brain aneurysm, cerebral aneurysm, intracranial aneurysm, subarachnoid haemorrhage"
+tags: "Aneurysm, Brain aneurysm, Cerebral aneurysm"
+about: "Cerebral aneurysm"
+mainEntity: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
+sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
 ---
 
 A brain aneurysm typically doesn't cause symptoms until it's very large or it ruptures.
@@ -77,6 +88,11 @@ In rare instances unruptured aneurysms symptoms might include:
 #  Diagnosis of brain aneurysms {Aneurysms}
 ---
 description: Medical imaging and tests used to identify brain aneurysms and related complications.
+keywords: "brain aneurysm, cerebral aneurysm, intracranial aneurysm, subarachnoid haemorrhage"
+tags: "Aneurysm, Brain aneurysm, Cerebral aneurysm"
+about: "Cerebral aneurysm"
+mainEntity: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
+sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
 ---
 
 ## Computerised Tomography (CT Scan)
@@ -106,6 +122,11 @@ In the context of aneurysms, it is usually performed when doctors suspect an ane
 #  Ruptured aneurysms {Aneurysms}
 ---
 description: Consequences, treatments, and long-term outcomes following aneurysm rupture.
+keywords: "brain aneurysm, cerebral aneurysm, intracranial aneurysm, subarachnoid haemorrhage"
+tags: "Aneurysm, Brain aneurysm, Cerebral aneurysm"
+about: "Cerebral aneurysm"
+mainEntity: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
+sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
 ---
 
 ## What are the consequences of aneurysm rupture?
@@ -146,6 +167,11 @@ It is possible to make a full recovery from aneurysm rupture. Unfortunately, som
 #  Unruptured aneurysms {Aneurysms}
 ---
 description: When treatment is necessary, factors influencing risk, and management options.
+keywords: "brain aneurysm, cerebral aneurysm, intracranial aneurysm, subarachnoid haemorrhage"
+tags: "Aneurysm, Brain aneurysm, Cerebral aneurysm"
+about: "Cerebral aneurysm"
+mainEntity: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
+sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
 ---
 
 ## I have an aneurysm. Does it need to be treated?
@@ -176,6 +202,11 @@ There are no medications that can be given to shrink aneurysms, however stopping
 # Endovascular treatment of aneurysms {Aneurysms}
 ---
 description: Minimally invasive procedures including coiling, stent-assisted coiling, flow diversion, and intrasaccular devices.
+keywords: "brain aneurysm, cerebral aneurysm, intracranial aneurysm, subarachnoid haemorrhage"
+tags: "Aneurysm, Brain aneurysm, Cerebral aneurysm"
+about: "Cerebral aneurysm"
+mainEntity: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
+sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
 ---
 
 The development of endovascular techniques has completely revolutionised the treatment of brain aneurysms increasing the safety of the procedure and reducing the invasiveness and recovery time. The majority of brain aneurysms are now treated using endovascular techniques. There are very few aneurysms that cannot now be treated endovascularly.
@@ -280,6 +311,11 @@ Serious but rare risks include a 5% chance of stroke from the procedure due to a
 # Surgical treatment of aneurysms {Aneurysms}
 ---
 description: Explanation of surgical clipping, risks, recovery, and when it is preferred.
+keywords: "brain aneurysm, cerebral aneurysm, intracranial aneurysm, subarachnoid haemorrhage"
+tags: "Aneurysm, Brain aneurysm, Cerebral aneurysm"
+about: "Cerebral aneurysm"
+mainEntity: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
+sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
 ---
 
 Surgical clipping is an established but more invasive method of treatment that still has a role in managing certain cerebral aneurysms. The procedure involves making an opening in the skull (a procedure called a craniotomy) to locate the aneurysm. With the help of a microscope, the surgeon places the clip on the aneurysm's neck, sealing it off from the rest of the blood vessel.
@@ -301,6 +337,11 @@ However, in skilled hands, surgical clipping can provide a solution for many typ
 #  Further information {Aneurysms}
 ---
 description: Additional resources and references for patients and professionals.
+keywords: "brain aneurysm, cerebral aneurysm, intracranial aneurysm, subarachnoid haemorrhage"
+tags: "Aneurysm, Brain aneurysm, Cerebral aneurysm"
+about: "Cerebral aneurysm"
+mainEntity: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
+sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
 ---
 
 ## United Kingdom

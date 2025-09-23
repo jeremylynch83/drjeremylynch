@@ -106,7 +106,7 @@
         <script type="application/ld+json">
             {
               "@context": "https://schema.org",
-              "@type": $if(schema_type)$"$schema_type$"$else$"Article"$endif$,
+              "@type": $if(schema_type)$"$schema_type$"$else$"MedicalWebPage"$endif$,
               "headline": "$title$",
               $if(description)$"description": "$description$", $endif$
               $if(canonical)$"url": "$canonical$", $endif$
@@ -117,7 +117,29 @@
                 "@type": "Organization",
                 "name": "Jeremy Lynch Neuroradiology",
                 "logo": { "@type": "ImageObject", "url": "https://www.drjeremylynch.com/images/social-image.jpg" }
-              }
+              },
+              "medicalSpecialty": [
+                "Neurosurgery",
+                "Interventional Neuroradiology"
+              ]
+              $if(about)$, "about": {
+                "@type": "MedicalCondition",
+                "name": "$about$",
+                "alternateName": "Brain aneurysm"
+                $if(sameAs_json)$, "sameAs": "$sameAs_json$$endif$"
+              }$endif$
+              $if(mainEntityUrl)$, "mainEntity": {
+                "@type": "MedicalCondition",
+                "name": "$about$",
+                "sameAs": ["$mainEntityUrl$"]
+              }$endif$
+              $if(mainEntity)$$if(mainEntityUrl)$$else$, "mainEntity": {
+                "@type": "MedicalTherapy",
+                "name": "$mainEntity$",
+                "therapyType": "SurgicalProcedure",
+                "procedureType": "TherapeuticProcedure"
+              }$endif$$endif$
+              $if(keywords)$, "keywords": "$keywords$"$endif$
               $if(datePublished)$, "datePublished": "$datePublished$"$endif$
               $if(dateModified)$, "dateModified": "$dateModified$"$endif$
             }

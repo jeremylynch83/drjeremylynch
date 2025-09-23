@@ -5,6 +5,7 @@ import subprocess
 import unicodedata
 import string
 import html
+import json
 from datetime import datetime, timezone
 from typing import Dict, List, Tuple, Any
 
@@ -170,7 +171,8 @@ class PageInfo:
     __slots__ = (
         'filename', 'title', 'section', 'sec_lower', 'tags', 'tags_norm',
         'description', 'image_url', 'body_lines', 'yaml_lines',
-        'show_lead', 'show_hero'
+        'show_lead', 'show_hero',
+        'about', 'main_entity', 'main_entity_url', 'same_as'  # NEW
     )
 
     def __init__(self, **kw: Any) -> None:
@@ -206,20 +208,57 @@ def create_md_content_from_headings(
 
     current: PageInfo | None = None
 
-    def parse_inline_meta(start_index: int) -> Tuple[int, Dict[str, str]]:
-        """Parse inline YAML under a heading."""
+    def parse_inline_meta(start_index: int) -> Tuple[int, Dict[str, Any]]:
+        """Parse inline YAML under a heading. Supports simple key: value lines and a basic list block for 'sameas:'."""
         i = start_index
         if i < len(lines) and lines[i].strip() == '---':
             i += 1
-            meta: Dict[str, str] = {}
+            meta: Dict[str, Any] = {}
+            collecting_sameas = False
+            sameas_list: List[str] = []
             while i < len(lines) and lines[i].strip() != '---':
-                line = lines[i]
+                raw = lines[i]
+                line = raw.strip()
+                if not line:
+                    i += 1
+                    continue
+
+                # List item when collecting sameAs
+                if collecting_sameas and line.startswith('-'):
+                    item = line[1:].strip().strip('"').strip("'")
+                    if item:
+                        sameas_list.append(item)
+                    i += 1
+                    continue
+
+                # New key starts, so end list collection if active
+                if collecting_sameas:
+                    meta['sameas'] = sameas_list[:]
+                    collecting_sameas = False
+                    sameas_list = []
+
+                # Key: value line
                 if ':' in line:
                     k, v = line.split(':', 1)
                     k = k.strip().lower()
                     v = v.strip().strip('"').strip("'")
-                    meta[k] = v
+                    if k == 'sameas':
+                        # Begin collecting list items on following lines
+                        collecting_sameas = True
+                        # Allow inline single-line sameAs value if present
+                        if v:
+                            sameas_list = [v]
+                            collecting_sameas = False
+                            meta['sameas'] = sameas_list[:]
+                            sameas_list = []
+                    else:
+                        meta[k] = v
                 i += 1
+
+            # Close off list collection if the block ends
+            if collecting_sameas:
+                meta['sameas'] = sameas_list[:]
+
             if i < len(lines) and lines[i].strip() == '---':
                 i += 1
             return i, meta
@@ -256,6 +295,13 @@ def create_md_content_from_headings(
             tags_list = parse_tags_field(meta.get("tags", ""))
             tags_norm = [norm_tag(t) for t in tags_list]
             label = meta.get("label") or (tags_list[0] if tags_list else "")
+
+            # NEW: read about, mainEntity, sameAs
+            about = meta.get("about", "")
+            main_entity_raw = meta.get("mainentity", "")
+            same_as_list = meta.get("sameas", [])
+            if isinstance(same_as_list, str) and same_as_list:
+                same_as_list = [s.strip() for s in same_as_list.split(',') if s.strip()]
 
             # Visibility flags for on-page lead and hero
             show_lead = _truthy(meta.get("show_lead"), default=True)
@@ -335,6 +381,10 @@ def create_md_content_from_headings(
                 yaml_lines=yaml_lines,
                 show_lead=show_lead,
                 show_hero=show_hero,
+                about=about,
+                main_entity=(None if (main_entity_raw.startswith("http://") or main_entity_raw.startswith("https://")) else main_entity_raw),
+                main_entity_url=(main_entity_raw if (main_entity_raw.startswith("http://") or main_entity_raw.startswith("https://")) else ""),
+                same_as=same_as_list,
             )
 
             i = next_i
@@ -414,6 +464,20 @@ def _seo_yaml_for_page(p: PageInfo) -> List[str]:
     if p.tags:
         keywords = ", ".join(p.tags)
         seo.append(f'keywords: {yaml_quote(keywords)}')
+
+    # NEW: pass through medical context
+    if getattr(p, "about", ""):
+        seo.append(f'about: {yaml_quote(p.about)}')
+    if getattr(p, "main_entity", ""):
+        seo.append(f'mainEntity: {yaml_quote(p.main_entity)}')
+    if getattr(p, "main_entity_url", ""):
+        seo.append(f'mainEntityUrl: {yaml_quote(p.main_entity_url)}')
+    if getattr(p, "same_as", None):
+        try:
+            seo.append(f'sameAs_json: {json.dumps(p.same_as)}')
+        except Exception:
+            pass
+
     return seo
 
 def build_page_markdown(p: PageInfo, all_pages: List[PageInfo]) -> Tuple[str, str]:
