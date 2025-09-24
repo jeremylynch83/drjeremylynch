@@ -44,8 +44,8 @@ logo.png -> logo.webp
 mdu.png -> mdu.webp
 mri scanner.jpg -> mri scanner.webp
 prevent.png -> prevent.webp
-profile_shot (copy).png -> profile_shot (copy).webp
 profile_shot.png -> profile_shot.webp
+profile_shot_old.png -> profile_shot_old.webp
 queens.png -> queens.webp
 rcr.png -> rcr.webp
 rcs.png -> rcs.webp
