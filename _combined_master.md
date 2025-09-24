@@ -927,7 +927,7 @@ Clipping is an established therapy with an excellent chance of protecting the an
 
 ## Can aneurysms recur after clipping?
 
-Yes, although this is rare as no treatment is 100% effective. In the ISAT trial, 6% of clipped aneurysms were incompletely occluded at follow-up. If this occurs, further treatment may be needed. It is worth noting that recurrence rates for unruptured aneurysms are lower than this.
+Yes, although this is rare. In the ISAT trial, 6% of clipped aneurysms were incompletely occluded at follow-up. It is worth noting that recurrence rates for unruptured aneurysms are lower than this.
 
 ## Can aneurysms bleed after clipping?
 
