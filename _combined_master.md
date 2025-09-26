@@ -548,6 +548,10 @@ sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
 description: What has changed in brain aneurysm treatment, and what the newest minimally invasive options mean for patients.
 image: feature_newaneurysm.webp
 tags: Aneurysm
+keywords: "brain aneurysm treatment, new devices, minimally invasive, London"
+about: "Overview of how surgical clipping, endovascular coiling, flow diverters, and intrasaccular devices have changed brain aneurysm treatment."
+mainEntity: "https://www.nhs.uk/conditions/brain-aneurysm/treatment/"
+sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
 ---
 
 ## Surgical clipping
@@ -593,6 +597,10 @@ Modern treatments now enable a broader range of aneurysm shapes and locations, w
 description: What to expect when staying in hospital for treatment of a brain aneurysm.
 image: feature_stayhospital.webp
 tags: Aneurysm
+keywords: "brain aneurysm hospital stay, recovery, neurosurgery, London"
+about: "Typical hospital stays after surgical clipping, endovascular treatment, and in cases of ruptured aneurysms."
+mainEntity: "https://www.nhs.uk/conditions/brain-aneurysm/treatment/"
+sameAs: "https://en.wikipedia.org/wiki/Subarachnoid_haemorrhage"
 ---
 
 If you are told you have a brain aneurysm, one of the first questions you may ask is how long you might need to stay in hospital for treatment. The answer depends on whether the aneurysm has **ruptured** (bled) or is **unruptured** (found before bleeding).
@@ -632,6 +640,10 @@ Treatment may be either endovascular or surgical, but the general trend is towar
 description: What to expect from aneurysm treatment, how surgical risks compare with endovascular options, and why many aneurysms are monitored rather than operated on.
 image: surgery.webp
 tags: Aneurysm
+keywords: "brain aneurysm surgery risk, clipping, coiling, London"
+about: "Comparing the risks of surgical clipping and endovascular treatment for brain aneurysms, including outcomes and recovery."
+mainEntity: "https://www.nhs.uk/conditions/brain-aneurysm/"
+sameAs: "https://en.wikipedia.org/wiki/Intracranial_aneurysm"
 ---
 
 Brain aneurysms (otherwise known as cerebral or intracranial aneurysms) are treated to prevent them from bleeding, to stop a rebleed if one has already burst, or if they are enlarging and causing symptoms by pressing on the brain or nerves. Not every aneurysm needs an operation. Not all need treatment, with many best monitored with scans over time, alongside control of blood pressure, stopping smoking, and other lifestyle changes. Doctors use structured scoring systems such as **PHASES** (which predicts rupture risk) and **UIATS** (Unruptured Intracranial Aneurysm Treatment Score) to help decide whether treatment is necessary.
@@ -691,9 +703,13 @@ Both clipping and endovascular procedures should be performed in hospitals with 
 
 # Can you prevent brain aneurysms? {features}
 ---
-description: Are brain aneuryms inevitable or you can reduce your chances?
+description: Are brain aneurysms inevitable or can you reduce your chances?
 image: prevent.webp
 tags: Aneurysm
+keywords: "prevent brain aneurysm, risk factors, lifestyle changes, London"
+about: "Explores genetic and lifestyle risk factors for brain aneurysms and how to reduce risk."
+mainEntity: "https://www.nhs.uk/conditions/brain-aneurysm/prevention/"
+sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm#Prevention"
 ---
 
 ## What causes aneurysms?
@@ -741,10 +757,15 @@ Finally, remember that the absolute risk of rupture in the general population is
 
 # Who should be screened for brain aneurysms? {features}
 ---
-description:Who should and should not be screened for brain aneurysms?
+description: Who should and should not be screened for brain aneurysms?
 image: feature_screening.webp
 tags: Aneurysm
+keywords: "brain aneurysm screening, MRI scan, high risk groups, London"
+about: "Explains who benefits from aneurysm screening and how it is performed."
+mainEntity: "https://www.nhs.uk/conditions/brain-aneurysm/diagnosis/"
+sameAs: "https://en.wikipedia.org/wiki/Screening_(medicine)"
 ---
+
 ## What is brain aneurysm screening?
 A brain aneurysm is a weak spot in a blood vessel in the brain that can balloon out. Most never cause problems, but if an aneurysm bursts it can cause a serious type of stroke called a subarachnoid haemorrhage (SAH).
 
@@ -797,6 +818,10 @@ If you are in a higher-risk group, your doctor can talk through whether screenin
 description: Explains the key symptoms of a brain aneurysm rupture, what unruptured aneurysms can cause, and when to seek urgent medical help.
 image: feature_an_symptoms.webp
 tags: Aneurysm
+keywords: "brain aneurysm symptoms, warning signs, thunderclap headache, London"
+about: "Typical symptoms of ruptured and unruptured brain aneurysms and when to seek medical care."
+mainEntity: "https://www.nhs.uk/conditions/brain-aneurysm/symptoms/"
+sameAs: "https://en.wikipedia.org/wiki/Subarachnoid_hemorrhage#Signs_and_symptoms"
 ---
 
 ## What is a brain aneurysm?
@@ -825,9 +850,13 @@ Call emergency services immediately if you develop a sudden, extremely severe he
 
 # Living with an unruptured brain aneurysm {features}
 ---
-description: Covers what it means to be diagnosed with a brain aneurysm, the risks involved, and what can patients can do to stay safe.
+description: Covers what it means to be diagnosed with a brain aneurysm, the risks involved, and what patients can do to stay safe.
 image: feature.webp
 tags: Aneurysm
+keywords: "unruptured brain aneurysm, monitoring, lifestyle, London"
+about: "How unruptured aneurysms are managed, including risk assessment, monitoring, and lifestyle changes."
+mainEntity: "https://www.nhs.uk/conditions/brain-aneurysm/"
+sameAs: "https://en.wikipedia.org/wiki/Unruptured_intracranial_aneurysm"
 ---
 
 ## What does it mean to have an unruptured aneurysm?
@@ -863,6 +892,10 @@ Your team will focus on blood pressure and other cardiovascular risks. Aspirin h
 description: Describes the role of lifestyle in preventing aneurysms and bleeds.
 image: feature_health.webp
 tags: Aneurysm
+keywords: "brain aneurysm prevention, lifestyle, vascular health, London"
+about: "The impact of lifestyle on aneurysm risk, including smoking, blood pressure, alcohol, and stimulant use."
+mainEntity: "https://www.nhs.uk/live-well/"
+sameAs: "https://en.wikipedia.org/wiki/Stroke_prevention"
 ---
 
 ## Which risks can lifestyle influence?
@@ -898,6 +931,10 @@ Family history and certain genetic conditions such as autosomal dominant polycys
 description: Understanding the differences between clipping and coiling for brain aneurysms and how to decide which treatment may be best for you.
 image: feature_clipcoil.webp
 tags: Aneurysm
+keywords: "aneurysm clipping, aneurysm coiling, treatment decision, London"
+about: "Comparison of clipping and coiling techniques, their risks, benefits, and how doctors and patients decide."
+mainEntity: "https://www.nhs.uk/conditions/brain-aneurysm/treatment/"
+sameAs: "https://en.wikipedia.org/wiki/Endovascular_coiling"
 ---
 
 You may be in the situation where doctors have recommended treatment for a brain aneurysm but two options have been offered: **clipping** (surgery) or **coiling** (endovascular treatment). This can be confusing, especially since each treatment has different pros and cons. To make the decision, it is best first to understand the two treatments in detail, as your own priorities may align more with one than the other.
@@ -985,6 +1022,10 @@ Yes. Typically, follow-up scans are performed with **MRA** (magnetic resonance a
 description: Outlines the main treatment approaches for brain aneurysms, comparing coiling, clipping, and newer devices, and explains how doctors decide which option is best.
 image: feature_aneurysm_rx.webp
 tags: Aneurysm
+keywords: "brain aneurysm treatment, clipping, coiling, flow diverters, London"
+about: "Overview of main treatment approaches for brain aneurysms and how doctors decide the best option."
+mainEntity: "https://www.nhs.uk/conditions/brain-aneurysm/treatment/"
+sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm#Treatment"
 ---
 
 ## What are the main treatment paths?
