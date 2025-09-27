@@ -1,4 +1,10 @@
 # About Dr Lynch {General}
+---
+tags: General
+keywords: "Jeremy Lynch, Interventional Neuroradiology, Consultant, London, Neurointervention"
+about: "Dr Jeremy Lynch MBChB MRCS FRCR is a Consultant Interventional Neuroradiologist based in London. He trained in Bristol, London, and Toronto and specialises in minimally invasive treatments for vascular diseases of the brain, head, neck, and spine."
+mainEntity: "https://www.drjeremylynch.com/"
+sameAs: "https://www.
 
 ## Biography
 
@@ -29,14 +35,28 @@ Dr Lynch has published several academic book chapters and journal articles. He i
 
 
 # Interventional neuroradiology
+---
+description: Overview of interventional neuroradiology, a specialty using minimally invasive procedures to treat vascular diseases of the brain and spine.
+tags: General
+keywords: "interventional neuroradiology, neurointervention, endovascular neurosurgery, brain aneurysm, stroke, embolisation"
+about: "Interventional neuroradiology, also called neurointervention or endovascular neurosurgery, treats conditions such as aneurysms, stroke, carotid stenosis, and brain tumours using image-guided minimally invasive techniques."
+mainEntity: "https://www.kch.nhs.uk/services/services-a-to-z/interventional-neuroradiology/"
+sameAs: "https://en.wikipedia.org/wiki/Interventional_radiology#Neurointerventional_radiology"
+---
 
 Interventional neuroradiology (otherwise known as neurointerventional radiology or endovascular neurosurgery) is a medical specialty that deals with minimally invasive treatments for diseases of the brain and spine involving blood vessels. Common conditions that are treated include brain aneurysms, strokes, carotid stenosis, and brain tumour embolisation.
 
 # Research {General}
 ---
+description: Research portfolio of Dr Lynch.
+tags: General
 image: research.webp
-tags: Aneurysm
+keywords: "research, neurointervention, aneurysm, thrombectomy, AI, robotics"
+about: "Dr Jeremy Lynch has authored multicentre aneurysm device trials, outcome studies in neurointervention, and research into AI and deep learning in radiology, as well as systematic reviews in thrombectomy and robotics."
+mainEntity: "https://pubmed.ncbi.nlm.nih.gov/?term=Lynch+J+neuroradiology"
+sameAs: "https://www.drjeremylynch.com/research"
 ---
+
 
 Dr Jeremy Lynch has an extensive research portfolio spanning artificial intelligence, neurointervention, neuroradiology, and wider clinical practice. His published work includes multicentre trials evaluating new flow diversion and stent technologies for intracranial aneurysms, outcome studies shaping endovascular practice, and research into the use of large language models and deep learning in radiology. He has also contributed systematic reviews and trial protocols addressing thrombectomy techniques, robotics in neurointervention, and stroke management. Alongside these, Dr Lynch has authored research and reviews across broader medical fields, from surgical education and bariatric surgery to paediatric radiology and risk management.
 
@@ -109,10 +129,18 @@ To the fullest extent permitted by law, the website owner accepts no liability f
 Users are strongly advised to seek advice from a qualified healthcare professional regarding any medical concerns or conditions. Never disregard or delay seeking medical advice because of information found on this website.
 
 # Fees {General}
+---
+description: Information about consultation fees and charges for imaging, angiography, and endovascular treatments.
+tags: General
+keywords: "consultation fees, CT, MRI, angiography, embolisation, private health insurance"
+about: "Consultation fees are £250 for in-person and £200 for virtual or follow-up appointments. Imaging, angiography, and embolisation are charged separately and may be covered by private insurance."
+mainEntity: "https://www.drjeremylynch.com/fees"
+sameAs: "https://www.drjeremylynch.com/fees"
+---
 
 ## Consultation Fees
 
-The fee for an in-person consultation is £250 and for a virtual/telephone consultation it is £200. Follow-up consultations are £200. 
+The fee for an in-person consultation is £250 and for a virtual/telephone consultation it is £200. Follow-up consultations are £200.
 
 This covers a clinic appointment to discuss your condition, review relevant medical information, and provide specialist advice. Please note that this does not include the cost of any investigations, imaging, or procedures, which will be charged separately if required.
 
@@ -141,6 +169,14 @@ The cost of such procedures will vary depending on the nature and complexity of 
 Patients with private health insurance will usually have these treatments covered by their insurer, subject to the terms of their policy (including any excess or shortfall). Self-paying patients will be provided with a clear estimate before proceeding.
 
 # Cancellations {General}
+---
+description: Cancellation policy for clinic appointments including required notice and potential charges.
+tags: General
+keywords: "cancellations, appointment policy, clinic terms"
+about: "Appointments must be cancelled with at least 48 hours’ notice to avoid charges. Late cancellations or non-attendance may incur a fee."
+mainEntity: "https://www.drjeremylynch.com/cancellations"
+sameAs: "https://www.drjeremylynch.com/cancellations"
+---
 
 If you are unable to attend a booked appointment, please provide at least 48 hours’ notice of cancellation. This allows the appointment to be offered to another patient.
 
@@ -151,6 +187,15 @@ If the doctor needs to cancel or reschedule an appointment, all reasonable effor
 By booking an appointment, you acknowledge and agree to these terms.
 
 # The Wellington Hospital {Locations}
+---
+description: The Wellington Hospital in St John’s Wood, London is a major private hospital operated by HCA Healthcare.
+tags: Locations
+keywords: "Wellington Hospital, London, private hospital, HCA Healthcare, neurosurgery, interventional neuroradiology"
+about: "The Wellington Hospital is the UK’s largest private hospital, offering neurosurgery, cardiac care, oncology, rehabilitation, and interventional neuroradiology in state-of-the-art facilities."
+mainEntity: "https://www.hcahealthcare.co.uk/facilities/the-wellington-hospital"
+sameAs: "https://en.wikipedia.org/wiki/Wellington_Hospital,_London"
+---
+
 
 The Wellington Hospital, in St John’s Wood, London, is the largest private hospital in the UK. It is owned by the American company HCA Healthcare. The hospital provides a broad range of services, including cardiac care, neurosurgery, liver and HPB (hepato-pancreato-biliary) medicine, rehabilitation, gynaecology, orthopaedics and oncology, along with diagnostics. The site comprises the South Building, the North Building, a Diagnostics and Outpatients Centre, and the Platinum Medical Centre, which specialises in oncology.
 
@@ -159,6 +204,15 @@ All interventional neuroradiology procedures at The Wellington Hospital are perf
 The hospital was founded by Dr Arthur Levin and originally commissioned by British and Commonwealth Holdings. The South Building, designed by Fred Woodhead, opened in April 1974, followed by the North Building in 1978. A Diagnostics and Outpatients Centre in Golders Green opened in 2007, and the Platinum Medical Centre—with MRI and PET-CT scanners—opened in May 2011.
 
 # Kings College Hospital {Locations}
+---
+description: King’s College Hospital in Denmark Hill, London is an NHS teaching hospital and trauma centre providing advanced interventional neuroradiology services.
+tags: Locations
+keywords: "King’s College Hospital, NHS, Denmark Hill, trauma centre, interventional neuroradiology, stroke, aneurysm"
+about: "King’s College Hospital is a leading NHS teaching hospital and trauma centre in London, providing interventional neuroradiology for aneurysms, stroke, AVMs, and other vascular conditions."
+mainEntity: "https://www.kch.nhs.uk/services/services-a-to-z/interventional-neuroradiology/"
+sameAs: "https://en.wikipedia.org/wiki/King%27s_College_Hospital"
+---
+
 
 King’s College Hospital in Denmark Hill, London, is a major NHS teaching hospital and one of London’s key adult and children Major Trauma Centres. It serves local areas and acts as a tertiary referral centre for much of southern England. The hospital is a cornerstone of King’s Health Partners and closely affiliated with King’s College London, offering a broad spectrum of specialist services, including neurosciences and neurosurgery
 
@@ -167,8 +221,17 @@ the interventional Neuroradiology at King’s treats complex vascular conditions
 As one of the UK’s most established interventional neuroradiology programmes, King’s handles substantial caseloads—performing approximately 150–200 mechanical thrombectomies and a similar number of aneurysm treatments each year—and contributes actively to research and clinical trials that shape neurovascular practice globally. The service is supported by a multidisciplinary infrastructure, including a modern biplane angiography suite, and collaborates closely with neurosurgeons, neurologists, stroke physicians, intensive care teams, anaesthetists, and specialist nurses to ensure comprehensive, patient-centred care
 
 # Queens Hospital in Romford {Locations}
+---
+description: Queen’s Hospital in Romford is a modern NHS teaching hospital with specialist neurosurgery and interventional neuroradiology services.
+tags: Locations
+keywords: "Queen’s Hospital Romford, NHS, neurosurgery, interventional neuroradiology, Essex"
+about: "Queen’s Hospital Romford, operated by Barking, Havering and Redbridge University Hospitals NHS Trust, is a major centre for neurosurgery and interventional neuroradiology serving Essex and surrounding regions."
+mainEntity: "https://www.bhrhospitals.nhs.uk/queens-hospital/"
+sameAs: "https://en.wikipedia.org/wiki/Queen%27s_Hospital,_Romford"
+---
 
-Queen’s Hospital in Romford is a large, modern NHS teaching hospital operated by the Barking, Havering and Redbridge University Hospitals NHS Trust. Serving approximately 800,000 people, it was purpose-built and opened in 2006 to replace several older hospitals in the area. The hospital consists of multiple interconnected circular towers surrounded by low-rise buildings that house wards, diagnostics, theatres, and an effective layout for inpatient and outpatient services.
+
+Queen’s Hospital in Romford is a large NHS teaching hospital operated by the Barking, Havering and Redbridge University Hospitals NHS Trust. Serving approximately 800,000 people, it was purpose-built and opened in 2006 to replace several older hospitals in the area. The hospital consists of multiple interconnected circular towers surrounded by low-rise buildings that house wards, diagnostics, theatres, and an effective layout for inpatient and outpatient services.
 
 It features an emergency department, hyper-acute stroke unit, specialist neuroscience centre, renal dialysis, a birthing centre, 16 operating theatres, and a helipad for urgent air transfers. As a teaching site affiliated with Barts and The London School of Medicine and Dentistry, the hospital plays a key role in training future clinicians.
 

@@ -1,4 +1,10 @@
 ﻿# About Dr Lynch {General}
+---
+tags: General
+keywords: "Jeremy Lynch, Interventional Neuroradiology, Consultant, London, Neurointervention"
+about: "Dr Jeremy Lynch MBChB MRCS FRCR is a Consultant Interventional Neuroradiologist based in London. He trained in Bristol, London, and Toronto and specialises in minimally invasive treatments for vascular diseases of the brain, head, neck, and spine."
+mainEntity: "https://www.drjeremylynch.com/"
+sameAs: "https://www.
 
 ## Biography
 
@@ -29,14 +35,28 @@ Dr Lynch has published several academic book chapters and journal articles. He i
 
 
 # Interventional neuroradiology
+---
+description: Overview of interventional neuroradiology, a specialty using minimally invasive procedures to treat vascular diseases of the brain and spine.
+tags: General
+keywords: "interventional neuroradiology, neurointervention, endovascular neurosurgery, brain aneurysm, stroke, embolisation"
+about: "Interventional neuroradiology, also called neurointervention or endovascular neurosurgery, treats conditions such as aneurysms, stroke, carotid stenosis, and brain tumours using image-guided minimally invasive techniques."
+mainEntity: "https://www.kch.nhs.uk/services/services-a-to-z/interventional-neuroradiology/"
+sameAs: "https://en.wikipedia.org/wiki/Interventional_radiology#Neurointerventional_radiology"
+---
 
 Interventional neuroradiology (otherwise known as neurointerventional radiology or endovascular neurosurgery) is a medical specialty that deals with minimally invasive treatments for diseases of the brain and spine involving blood vessels. Common conditions that are treated include brain aneurysms, strokes, carotid stenosis, and brain tumour embolisation.
 
 # Research {General}
 ---
+description: Research portfolio of Dr Lynch.
+tags: General
 image: research.webp
-tags: Aneurysm
+keywords: "research, neurointervention, aneurysm, thrombectomy, AI, robotics"
+about: "Dr Jeremy Lynch has authored multicentre aneurysm device trials, outcome studies in neurointervention, and research into AI and deep learning in radiology, as well as systematic reviews in thrombectomy and robotics."
+mainEntity: "https://pubmed.ncbi.nlm.nih.gov/?term=Lynch+J+neuroradiology"
+sameAs: "https://www.drjeremylynch.com/research"
 ---
+
 
 Dr Jeremy Lynch has an extensive research portfolio spanning artificial intelligence, neurointervention, neuroradiology, and wider clinical practice. His published work includes multicentre trials evaluating new flow diversion and stent technologies for intracranial aneurysms, outcome studies shaping endovascular practice, and research into the use of large language models and deep learning in radiology. He has also contributed systematic reviews and trial protocols addressing thrombectomy techniques, robotics in neurointervention, and stroke management. Alongside these, Dr Lynch has authored research and reviews across broader medical fields, from surgical education and bariatric surgery to paediatric radiology and risk management.
 
@@ -109,10 +129,18 @@ To the fullest extent permitted by law, the website owner accepts no liability f
 Users are strongly advised to seek advice from a qualified healthcare professional regarding any medical concerns or conditions. Never disregard or delay seeking medical advice because of information found on this website.
 
 # Fees {General}
+---
+description: Information about consultation fees and charges for imaging, angiography, and endovascular treatments.
+tags: General
+keywords: "consultation fees, CT, MRI, angiography, embolisation, private health insurance"
+about: "Consultation fees are £250 for in-person and £200 for virtual or follow-up appointments. Imaging, angiography, and embolisation are charged separately and may be covered by private insurance."
+mainEntity: "https://www.drjeremylynch.com/fees"
+sameAs: "https://www.drjeremylynch.com/fees"
+---
 
 ## Consultation Fees
 
-The fee for an in-person consultation is £250 and for a virtual/telephone consultation it is £200. Follow-up consultations are £200. 
+The fee for an in-person consultation is £250 and for a virtual/telephone consultation it is £200. Follow-up consultations are £200.
 
 This covers a clinic appointment to discuss your condition, review relevant medical information, and provide specialist advice. Please note that this does not include the cost of any investigations, imaging, or procedures, which will be charged separately if required.
 
@@ -141,6 +169,14 @@ The cost of such procedures will vary depending on the nature and complexity of 
 Patients with private health insurance will usually have these treatments covered by their insurer, subject to the terms of their policy (including any excess or shortfall). Self-paying patients will be provided with a clear estimate before proceeding.
 
 # Cancellations {General}
+---
+description: Cancellation policy for clinic appointments including required notice and potential charges.
+tags: General
+keywords: "cancellations, appointment policy, clinic terms"
+about: "Appointments must be cancelled with at least 48 hours’ notice to avoid charges. Late cancellations or non-attendance may incur a fee."
+mainEntity: "https://www.drjeremylynch.com/cancellations"
+sameAs: "https://www.drjeremylynch.com/cancellations"
+---
 
 If you are unable to attend a booked appointment, please provide at least 48 hours’ notice of cancellation. This allows the appointment to be offered to another patient.
 
@@ -151,6 +187,15 @@ If the doctor needs to cancel or reschedule an appointment, all reasonable effor
 By booking an appointment, you acknowledge and agree to these terms.
 
 # The Wellington Hospital {Locations}
+---
+description: The Wellington Hospital in St John’s Wood, London is a major private hospital operated by HCA Healthcare.
+tags: Locations
+keywords: "Wellington Hospital, London, private hospital, HCA Healthcare, neurosurgery, interventional neuroradiology"
+about: "The Wellington Hospital is the UK’s largest private hospital, offering neurosurgery, cardiac care, oncology, rehabilitation, and interventional neuroradiology in state-of-the-art facilities."
+mainEntity: "https://www.hcahealthcare.co.uk/facilities/the-wellington-hospital"
+sameAs: "https://en.wikipedia.org/wiki/Wellington_Hospital,_London"
+---
+
 
 The Wellington Hospital, in St John’s Wood, London, is the largest private hospital in the UK. It is owned by the American company HCA Healthcare. The hospital provides a broad range of services, including cardiac care, neurosurgery, liver and HPB (hepato-pancreato-biliary) medicine, rehabilitation, gynaecology, orthopaedics and oncology, along with diagnostics. The site comprises the South Building, the North Building, a Diagnostics and Outpatients Centre, and the Platinum Medical Centre, which specialises in oncology.
 
@@ -159,6 +204,15 @@ All interventional neuroradiology procedures at The Wellington Hospital are perf
 The hospital was founded by Dr Arthur Levin and originally commissioned by British and Commonwealth Holdings. The South Building, designed by Fred Woodhead, opened in April 1974, followed by the North Building in 1978. A Diagnostics and Outpatients Centre in Golders Green opened in 2007, and the Platinum Medical Centre—with MRI and PET-CT scanners—opened in May 2011.
 
 # Kings College Hospital {Locations}
+---
+description: King’s College Hospital in Denmark Hill, London is an NHS teaching hospital and trauma centre providing advanced interventional neuroradiology services.
+tags: Locations
+keywords: "King’s College Hospital, NHS, Denmark Hill, trauma centre, interventional neuroradiology, stroke, aneurysm"
+about: "King’s College Hospital is a leading NHS teaching hospital and trauma centre in London, providing interventional neuroradiology for aneurysms, stroke, AVMs, and other vascular conditions."
+mainEntity: "https://www.kch.nhs.uk/services/services-a-to-z/interventional-neuroradiology/"
+sameAs: "https://en.wikipedia.org/wiki/King%27s_College_Hospital"
+---
+
 
 King’s College Hospital in Denmark Hill, London, is a major NHS teaching hospital and one of London’s key adult and children Major Trauma Centres. It serves local areas and acts as a tertiary referral centre for much of southern England. The hospital is a cornerstone of King’s Health Partners and closely affiliated with King’s College London, offering a broad spectrum of specialist services, including neurosciences and neurosurgery
 
@@ -167,8 +221,17 @@ the interventional Neuroradiology at King’s treats complex vascular conditions
 As one of the UK’s most established interventional neuroradiology programmes, King’s handles substantial caseloads—performing approximately 150–200 mechanical thrombectomies and a similar number of aneurysm treatments each year—and contributes actively to research and clinical trials that shape neurovascular practice globally. The service is supported by a multidisciplinary infrastructure, including a modern biplane angiography suite, and collaborates closely with neurosurgeons, neurologists, stroke physicians, intensive care teams, anaesthetists, and specialist nurses to ensure comprehensive, patient-centred care
 
 # Queens Hospital in Romford {Locations}
+---
+description: Queen’s Hospital in Romford is a modern NHS teaching hospital with specialist neurosurgery and interventional neuroradiology services.
+tags: Locations
+keywords: "Queen’s Hospital Romford, NHS, neurosurgery, interventional neuroradiology, Essex"
+about: "Queen’s Hospital Romford, operated by Barking, Havering and Redbridge University Hospitals NHS Trust, is a major centre for neurosurgery and interventional neuroradiology serving Essex and surrounding regions."
+mainEntity: "https://www.bhrhospitals.nhs.uk/queens-hospital/"
+sameAs: "https://en.wikipedia.org/wiki/Queen%27s_Hospital,_Romford"
+---
 
-Queen’s Hospital in Romford is a large, modern NHS teaching hospital operated by the Barking, Havering and Redbridge University Hospitals NHS Trust. Serving approximately 800,000 people, it was purpose-built and opened in 2006 to replace several older hospitals in the area. The hospital consists of multiple interconnected circular towers surrounded by low-rise buildings that house wards, diagnostics, theatres, and an effective layout for inpatient and outpatient services.
+
+Queen’s Hospital in Romford is a large NHS teaching hospital operated by the Barking, Havering and Redbridge University Hospitals NHS Trust. Serving approximately 800,000 people, it was purpose-built and opened in 2006 to replace several older hospitals in the area. The hospital consists of multiple interconnected circular towers surrounded by low-rise buildings that house wards, diagnostics, theatres, and an effective layout for inpatient and outpatient services.
 
 It features an emergency department, hyper-acute stroke unit, specialist neuroscience centre, renal dialysis, a birthing centre, 16 operating theatres, and a helipad for urgent air transfers. As a teaching site affiliated with Barts and The London School of Medicine and Dentistry, the hospital plays a key role in training future clinicians.
 
@@ -1063,7 +1126,14 @@ Monitoring typically includes strict control of vascular risk factors and interv
 
 
 #  Introduction to AVMs {AVM}
-
+---
+description: An overview of brain arteriovenous malformations, their causes, symptoms, risks, and prognosis.
+tags: AVM
+keywords: "brain AVM, arteriovenous malformation, neurological disorder, London"
+about: "Brain AVMs are abnormal tangles of arteries and veins that bypass capillaries. They may cause seizures, headaches, or bleeding but often remain silent."
+mainEntity: "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/cerebral-arterio-venous-malformation-endovascular-treatment"
+sameAs: "https://en.wikipedia.org/wiki/Cerebral_arteriovenous_malformation"
+---
 
 A brain arteriovenous malformation (AVM) is a complex, abnormal network of blood vessels in the brain. In a healthy brain, blood circulates from arteries to veins via tiny vessels called capillaries. The capillaries allow for the exchange of oxygen and nutrients from the blood to the brain tissue, and the removal of waste products. However, in a brain AVM, there is a direct connections between the arteries and veins, bypassing these capillaries.
 
@@ -1095,6 +1165,14 @@ The main risk associated with brain arteriovenous malformations (AVMs) is intrac
 The earlier in life an AVM appears, the greater the likelihood of experiencing a haemorrhage over one's lifetime. Ruptured AVMs can lead to serious health complications. Ruptures may cause loss of life or permanent disability.
 
 #  Symptoms of AVMs {AVM}
+---
+description: Symptoms caused by arteriovenous malformations, including seizures, bleeding, and neurological deficits depending on location.
+tags: AVM
+keywords: "AVM symptoms, seizures, brain haemorrhage, neurological signs, London"
+about: "Brain and spinal AVMs may cause seizures, haemorrhage, or neurological deficits depending on their size and site."
+mainEntity: "https://www.mayoclinic.org/diseases-conditions/brain-avm/symptoms-causes/syc-20350260"
+sameAs: "https://en.wikipedia.org/wiki/Arteriovenous_malformation#Signs_and_symptoms"
+---
 
 Brain and spine arteriovenous malformations (AVMs) are abnormal tangles of blood vessels consisting of connections between the arteries and veins. They often do not cause any clinical problems until they rupture. AVMs can cause symptoms either by bleeding (rupturing), pressing on the brain or spinal cord, or by reducing the amount of oxygen reaching the brain tissue.
 
@@ -1126,6 +1204,15 @@ In the context of AVMs, these symptoms can result from the AVM disrupting the no
 
 
 #  Diagnosis of AVMs {AVM}
+---
+description: Imaging methods used to diagnose AVMs, including CT, MRI, CTA, MRA, and cerebral angiography.
+tags: AVM
+keywords: "AVM diagnosis, CT, MRI, cerebral angiography, London"
+about: "AVMs are diagnosed using imaging such as CT, MRI, angiography, and contrast-based techniques to define size, location, and blood flow."
+mainEntity: "https://www.mayoclinic.org/diseases-conditions/brain-avm/diagnosis-treatment/drc-20350265"
+sameAs: "https://en.wikipedia.org/wiki/Arteriovenous_malformation#Diagnosis"
+---
+
 
 There are three primary imaging techniques used in the diagnosis and investigation of brain AVMs: computed tomography (CT), magnetic resonance imaging (MRI), and cerebral angiography.
 
@@ -1145,6 +1232,15 @@ Cerebral angiography, sometimes also called a cerebral arteriogram, provides the
 
 
 #  Treatment of AVMs {AVM}
+---
+description: Explains medical, surgical, radiosurgical, and endovascular treatment options for arteriovenous malformations.
+tags: AVM
+keywords: "AVM treatment, embolisation, radiosurgery, neurosurgery, London"
+about: "Management of AVMs may involve anticonvulsant medicines, surgery, radiosurgery such as Gamma Knife, or endovascular embolisation."
+mainEntity: "https://www.butterflyavmcharity.org.uk/treatments/"
+sameAs: "https://www.gammaknife.org.uk/conditions-treated/conditions/arteriovenous-malformations"
+---
+
 
 The treatment of brain arteriovenous malformations (AVMs) depends on several factors, including the AVM's location and size, and whether it has caused bleeding.
 
@@ -1160,11 +1256,20 @@ Surgical removal of the involved blood vessels is a preferred treatment for many
 
 Radiosurgery, such as Gamma Knife therapy, can successfully treat small and medium sized AVMs. This method precisely delivers controlled radiation doses to the AVM area in the brain. While radiosurgery does not require an incision or craniotomy, it may take three or more years to fully know the treatment's effects, during which time there's still a risk of bleeding. Some patients may need repeat treatments. Radiosurgery can also have risks such as headache, seizures, or permanent neurological deficits.
 
-**Neuroendovascular Therapy**
+**Endovascular Treatment**
 
-Embolisation is a treatment approach performed by specialists known as interventional neuroradiologists. This procedure involves injecting substances into the blood vessels feeding the AVM to block them, reducing blood flow to the AVM. These substances are delivered via a catheter guided by real-time imaging. Embolisation is may be the primary therapy, or an additional treatment before surgery or radiosurgery to reduce the AVM size.
+Embolisation is a treatment approach performed by specialists known as interventional neuroradiologists. This procedure involves injecting substances into the blood vessels feeding the AVM to block them, reducing blood flow to the AVM. These substances are delivered via a catheter guided by real-time imaging. Embolisation may be the primary therapy, or an additional treatment before surgery or radiosurgery to reduce the AVM size.
 
 #  Further information {AVM}
+---
+description: Key UK and international organisations providing information, support, and resources for patients with AVMs.
+tags: AVM
+keywords: "AVM support, patient resources, charities, London"
+about: "Information and support resources for AVM patients and families, including UK charities such as the Butterfly AVM Charity and Brain & Spine Foundation."
+mainEntity: "https://www.butterflyavmcharity.org.uk/"
+sameAs: "https://www.thebraincharity.org.uk/condition/arteriovenous-malformation/"
+---
+
 
 ## United Kingdom
 
@@ -1182,7 +1287,17 @@ Embolisation is a treatment approach performed by specialists known as intervent
 
 * [DrBulletin](https://www.drbulletin.com/): The latest medical research news for a range of subjects including neurointervention and neurosurgery.
 
+
 # Introduction to DAVF {DAVF}
+---
+description: An introduction to dural arteriovenous fistulas (DAVFs), including what they are, causes, risks, and how they are discovered.
+tags: DAVF
+keywords: "dural arteriovenous fistula, DAVF, abnormal vessels, London"
+about: "A DAVF is an abnormal connection between arteries and veins in the dura of the brain or spinal cord, bypassing capillaries and raising the risk of haemorrhage."
+mainEntity: "https://www.mayoclinic.org/diseases-conditions/dural-arteriovenous-fistulas/symptoms-causes/syc-20350552"
+sameAs: "https://en.wikipedia.org/wiki/Dural_arteriovenous_fistula"
+---
+
 
 ## What is a dural arteriovenous fistula?
 
@@ -1201,6 +1316,14 @@ Some patients have no symptoms, and the DAVF may be found incidentally on a CT o
 
 
 # Symptoms of DAVF {DAVF}
+---
+description: The symptoms of dural arteriovenous fistulas, ranging from headaches and tinnitus to seizures and brain haemorrhage.
+tags: DAVF
+keywords: "DAVF symptoms, pulsatile tinnitus, brain haemorrhage, seizures, London"
+about: "Symptoms vary by DAVF location and blood flow, including headaches, neurological deficits, pulsatile tinnitus, seizures, and sometimes life-threatening haemorrhage."
+mainEntity: "https://www.mayoclinic.org/diseases-conditions/dural-arteriovenous-fistulas/symptoms-causes/syc-20350552"
+sameAs: "https://en.wikipedia.org/wiki/Dural_arteriovenous_fistula#Signs_and_symptoms"
+---
 
 
 A dural arteriovenous fistula (DAVF) creates an abnormal connection between high-pressure arteries and low-pressure veins, bypassing the normal capillary network. This abnormal shunting of blood can cause a number of problems. The entry of arterial blood into the venous system raises venous pressure, and since veins are not designed to handle such force, they may stretch, dilate or even rupture, which can lead to bleeding in or around the brain. In some cases, blood flows backwards within the veins, a process known as venous reflux. This congestion reduces normal blood flow in parts of the brain or spinal cord, which over time can injure tissue and produce symptoms such as weakness, numbness or seizures. A DAVF may also divert blood away from healthy brain or spinal tissue, depriving it of oxygen and nutrients and thereby causing further neurological problems. The exact effects depend on the location of the fistula. For example, when a DAVF occurs near the ear, patients may develop pulsatile tinnitus, a rhythmic whooshing sound that follows the heartbeat.
@@ -1234,6 +1357,15 @@ Not everyone with a DAVF develops symptoms. When symptoms do occur, they can var
 
 
 # Diagnosis of DAVF {DAVF}
+---
+description: Explains how DAVFs are diagnosed, including CT, MRI, CTA, MRA, and digital subtraction angiography.
+tags: DAVF
+keywords: "DAVF diagnosis, CT, MRI, angiography, London"
+about: "Diagnosis of DAVF uses a stepwise approach including medical history, CT, MRI, angiography and digital subtraction angiography, the gold standard for defining abnormal blood flow."
+mainEntity: "https://www.mayoclinic.org/diseases-conditions/dural-arteriovenous-fistulas/diagnosis-treatment/drc-20350558"
+sameAs: "https://en.wikipedia.org/wiki/Dural_arteriovenous_fistula#Diagnosis"
+---
+
 
 Diagnosing a dural arteriovenous fistula (DAVF) is a step-by-step process that involves various tests and examinations. The goal is not only to confirm the presence of a DAVF, but also to understand its size, location, and the precise pattern of abnormal blood flow. This helps us formulate a suitable treatment plan.
 
@@ -1253,6 +1385,15 @@ Several types of imaging tests can help visualize the blood vessels in the brain
 - **Digital Subtraction Angiogram (DSA):** DSA is a more invasive procedure that is often used when other imaging tests are inconclusive or when precise details of the blood vessels are needed for treatment planning. In this test, a contrast dye is injected into your blood vessels through a catheter, usually inserted in your groin. As the dye travels through your vessels, a series of X-ray images are taken, which can provide a clear, detailed view of the blood flow and reveal the exact location and characteristics of a DAVF. While more involved and with more potential risks than other imaging studies, DSA is considered the "gold standard" for diagnosing DAVFs due to its high level of detail.
 
 # Treatment of DAVF {DAVF}
+---
+description: Treatment approaches for DAVFs, including endovascular embolisation, surgical excision, and risk considerations.
+tags: DAVF
+keywords: "DAVF treatment, embolisation, endovascular, neurosurgery, London"
+about: "The mainstay of DAVF treatment is endovascular embolisation, often using coils or liquid agents, but surgery may be needed in select cases."
+mainEntity: "https://www.mayoclinic.org/diseases-conditions/dural-arteriovenous-fistulas/diagnosis-treatment/drc-20350558"
+sameAs: "https://en.wikipedia.org/wiki/Dural_arteriovenous_fistula#Treatment"
+---
+
 
 
 The goals of treating a dural arteriovenous fistula are twofold: to relieve symptoms and to reduce the risk of serious bleeding around the brain in the future. The mainstay of treatment is endovascular therapy, in which a catheter is guided through the blood vessels to the site of the fistula. Special materials such as coils, glue or other embolic agents are then used to block the abnormal connection between arteries and veins, restoring more normal blood flow.
@@ -1300,6 +1441,15 @@ Surgical excision is an alternative treatment in which a craniotomy (skull incis
 On arrival to the ward, a period of bed rest is required for recovery. During this time, the nursing staff carry out regular checks, including inspection of the catheter entry site in the groin to ensure there is no bleeding. If bleeding occurs, the period of rest is extended. Some bruising and soreness around the groin is common, but most patients experience little or no after effects.
 
 # Introduction to spinal vascular disease {Spinal}
+---
+description: An introduction to spinal vascular malformations, including fistulae, AVMs, cavernous malformations, and capillary telangiectasia.
+tags: Spinal
+keywords: "spinal vascular disease, spinal AVM, spinal fistula, London"
+about: "Spinal vascular malformations are abnormal connections between blood vessels in the spinal cord. They include fistulae, AVMs, cavernous malformations, and capillary telangiectasia, and can cause pain, weakness, or neurological deficits."
+mainEntity: "https://www.mayoclinic.org/diseases-conditions/spinal-arteriovenous-malformation/symptoms-causes/syc-20355613"
+sameAs: "https://en.wikipedia.org/wiki/Spinal_arteriovenous_malformation"
+---
+
 
 Spinal vascular malformations are uncommon conditions that involve abnormal connections between blood vessels in your spinal cord. They are essential to recognize because, if left undiagnosed and untreated, they can lead to serious complications. Symptoms can vary from person to person and can include pain, numbness, weakness, or difficulty moving your limbs. Bladder and bowel function can be impaired. The process of diagnosing these conditions is frequently prolonged due to the gradual onset of symptoms and limited awareness of the disease among non-expert practitioners. Radiological investigation can also be challenging as these conditions can resemble other non-vascular processes.
 
@@ -1325,6 +1475,15 @@ Cavernous malformations, also known as cavernomas, are clusters of abnormal, tin
 Capillary telangiectasia involves clusters of widened capillaries that do not have a normal vessel wall. While they are typically the least symptomatic of spinal vascular malformations, they can occasionally put pressure on the spinal cord, causing symptoms such as difficulty walking or loss of bowel or bladder control.
 
 # Symptoms of spinal vascular disease {Spinal}
+---
+description: Symptoms of spinal vascular malformations, ranging from pain and weakness to severe neurological deficits and haemorrhage.
+tags: Spinal
+keywords: "spinal vascular disease symptoms, paralysis, spinal haemorrhage, London"
+about: "Spinal vascular malformations may present with pain, weakness, numbness, bladder or bowel problems, and if untreated can cause progressive disability or life-threatening haemorrhage."
+mainEntity: "https://www.mayoclinic.org/diseases-conditions/spinal-arteriovenous-malformation/symptoms-causes/syc-20355613"
+sameAs: "https://en.wikipedia.org/wiki/Spinal_arteriovenous_malformation#Signs_and_symptoms"
+---
+
 
 The symptoms of spinal vascular malformations can widely vary from person to person. They are largely dependent on the location and severity of the malformation. Some individuals may not experience noticeable symptoms for many years, or even at all, while others may endure symptoms that severely disrupt daily activities or present life-threatening risks.
 
@@ -1355,6 +1514,15 @@ Without timely and appropriate treatment, spinal vascular malformations can prog
    - Bleeding (haemorrhage), which can accelerate damage to the spinal cord
 
 # Diagnosis of spinal vascular disease {Spinal}
+---
+description: How spinal vascular malformations are diagnosed, including MRI and angiography to define abnormal vessels.
+tags: Spinal
+keywords: "spinal vascular disease diagnosis, MRI, spinal angiography, London"
+about: "Diagnosis of spinal vascular malformations relies on MRI to detect abnormalities and angiography to define the precise blood vessel connections and flow patterns."
+mainEntity: "https://www.mayoclinic.org/medical-professionals/neurology-neurosurgery/news/spinal-vascular-malformations-early-interventions-and-importance-of-proper-diagnosis/mqc-20502077"
+sameAs: "https://en.wikipedia.org/wiki/Spinal_arteriovenous_malformation#Diagnosis"
+---
+
 
 Spinal vascular malformations can be challenging to diagnose due to their symptoms often mirroring those of other spinal conditions, such as spinal dural arteriovenous fistula, spinal stenosis, multiple sclerosis, or a spinal cord tumor.
 
@@ -1365,6 +1533,15 @@ To determine the cause of your symptoms, your doctor will likely recommend sever
    - **Angiography:** This test is typically required to pinpoint the exact location and characteristics of the blood vessels involved in the malformation. During an angiography, a slender tube, known as a catheter, is inserted into an artery in the groin and carefully directed towards the spinal cord. A dye is then injected into the blood vessels in the spinal cord, making them visible under X-ray imaging. This helps provide a clearer picture of any vascular irregularities.
 
 # Treatment of spinal vascular disease {Spinal}
+---
+description: Treatment approaches for spinal vascular malformations, including surgery, endovascular embolisation, and radiosurgery.
+tags: Spinal
+keywords: "spinal vascular disease treatment, embolisation, neurosurgery, radiosurgery, London"
+about: "Spinal vascular malformations may be treated with surgery, endovascular embolisation, or radiosurgery. Medications can help symptoms, but intervention aims to prevent bleeding and progressive neurological damage."
+mainEntity: "https://pubmed.ncbi.nlm.nih.gov/28552139/"
+sameAs: "https://en.wikipedia.org/wiki/Spinal_arteriovenous_malformation#Treatment"
+---
+
 
 Treating spinal vascular malformations typically involves a combination of methods aimed at alleviating symptoms and minimizing the risk of potential complications. The treatment plan is customized based on various factors such as the size, location, and blood flow of the malformation, your neurological exam findings, and your overall health status.
 
@@ -1386,6 +1563,14 @@ This is a minimally invasive procedure, often used to reduce the risk of bleedin
 This treatment uses targeted radiation to destroy the malformation's blood vessels. Over time, these vessels degenerate and close off. Radiosurgery is frequently employed to treat small, unruptured malformations.
 
 # Introduction to stroke {Stroke}
+---
+description: An introduction to stroke, including what it is, its main types, symptoms, risk factors, and treatment.
+tags: Stroke
+keywords: "stroke, ischaemic stroke, haemorrhagic stroke, London"
+about: "A stroke is a medical emergency caused by interrupted blood flow to the brain, most often due to a clot (ischaemic) or bleeding (haemorrhagic). It can cause sudden neurological deficits and requires urgent diagnosis and treatment."
+mainEntity: "https://www.nhs.uk/conditions/stroke/"
+sameAs: "https://en.wikipedia.org/wiki/Stroke"
+---
 
 ## What is a Stroke?
 
@@ -1442,6 +1627,15 @@ Strokes can have permanent symptoms such as persistent weakness, inability to wa
 
 
 # Symptoms of stroke {Stroke}
+---
+description: Recognising the symptoms of stroke and understanding the FAST mnemonic to act quickly.
+tags: Stroke
+keywords: "stroke symptoms, FAST, paralysis, speech problems, London"
+about: "Stroke symptoms include weakness, speech problems, vision loss, and severe headache. Recognising these early and acting fast can save lives."
+mainEntity: "https://www.nhs.uk/conditions/stroke/symptoms/"
+sameAs: "https://en.wikipedia.org/wiki/Stroke#Signs_and_symptoms"
+---
+
 
 ## Recognizing the Symptoms of a Stroke
 
@@ -1490,6 +1684,15 @@ If you have any risk factors for a stroke, such as high blood pressure, obesity,
 The symptoms of a stroke can be alarming. Knowing what to look for and acting quickly can make a significant difference. Remember, if you suspect a stroke, don't wait — seek help immediately.
 
 # Diagnosis of stroke {Stroke}
+---
+description: How strokes are diagnosed, including CT, MRI, angiography, and additional cardiac and vascular investigations.
+tags: Stroke
+keywords: "stroke diagnosis, CT scan, MRI, angiography, London"
+about: "Stroke diagnosis relies on urgent imaging to distinguish between ischaemic and haemorrhagic stroke, with CT, MRI, and angiography guiding treatment decisions."
+mainEntity: "https://www.nhs.uk/conditions/stroke/diagnosis/"
+sameAs: "https://en.wikipedia.org/wiki/Stroke#Diagnosis"
+---
+
 
 Diagnosing a stroke involves the use of imaging technologies to view the brain and detect any abnormalities. Let's delve into the details of how doctors diagnose a stroke.
 
@@ -1530,6 +1733,15 @@ Once a stroke has been diagnosed, additional studies are conducted to determine 
 
 
 # Treatment of stroke {Stroke}
+---
+description: Treatment of stroke, including thrombolysis, thrombectomy, neurosurgery, and long-term risk factor management.
+tags: Stroke
+keywords: "stroke treatment, thrombolysis, thrombectomy, neurosurgery, London"
+about: "Treatment for stroke includes clot-busting drugs, mechanical thrombectomy, neurosurgical decompression, supportive care in stroke units, and long-term risk factor management."
+mainEntity: "https://www.nhs.uk/conditions/stroke/treatment/"
+sameAs: "https://en.wikipedia.org/wiki/Stroke#Treatment"
+---
+
 
 Stroke treatment involves immediate interventions like thrombolysis and thrombectomy, neurosurgical procedures, and supportive care, followed by long-term risk factor management. This article delves into these strategies, outlining their significance in stroke recovery and future stroke prevention.
 
@@ -1544,7 +1756,7 @@ Endorsements for the use of thrombolysis come from reputable organizations such 
 
 Intra-arterial fibrinolysis, where a catheter is passed up an artery into the brain and the medication is injected at the site of thrombosis, can also enhance outcomes in people with acute ischemic stroke.
 
-## Thrombectomy
+## Mechanical thrombectomy
 
 Thrombectomy is a surgical procedure for removing a blood clot. In mechanical thrombectomy, the procedure involves using a special retrieval device to remove the clot and restore normal blood flow. If the clot is removed before it causes permanent damage, the prognosis usually improves. It's performed globally in specialist hospitals and is suitable for many, but not all, stroke patients.
 
@@ -1563,6 +1775,15 @@ Moreover, supportive care is integral to the treatment of stroke patients. This 
 Risk factor management is a fundamental part of stroke treatment and aims to reduce the chances of future stroke events. This involves lifestyle modifications, such as a balanced diet, regular exercise, smoking cessation, and limited alcohol consumption, combined with appropriate medical therapy. Underlying medical conditions, such as hypertension, diabetes, high cholesterol, and atrial fibrillation, need to be appropriately managed with the help of medication and lifestyle changes.
 
 # Carotid artery stenosis {Stroke}
+---
+description: What carotid artery stenosis is, its risk factors, diagnosis, and treatment options including stenting and endarterectomy.
+tags: Stroke
+keywords: "carotid artery stenosis, endarterectomy, stenting, stroke risk, London"
+about: "Carotid artery stenosis is a narrowing of the arteries that supply the brain, often caused by atherosclerosis. Severe stenosis may require endarterectomy or stenting to prevent stroke."
+mainEntity: "https://www.nhs.uk/conditions/carotid-endarterectomy/"
+sameAs: "https://en.wikipedia.org/wiki/Carotid_endarterectomy"
+---
+
 
 ## What is carotid artery stenosis?
 
@@ -1643,6 +1864,15 @@ Most patients return to normal activities within a week. Long-term success depen
 
 
 # Further information  {Stroke}
+---
+description: Support organisations and further resources for stroke awareness, treatment, and recovery.
+tags: Stroke
+keywords: "stroke support, charities, awareness, London"
+about: "Resources for stroke patients and families in the UK, US, and worldwide, including charities, research organisations, and advocacy groups."
+mainEntity: "https://www.stroke.org.uk/"
+sameAs: "https://www.world-stroke.org/"
+---
+
 
 ## United Kingdom
 
@@ -1667,6 +1897,14 @@ Most patients return to normal activities within a week. Long-term success depen
 
 
 # Interventional neuroradiology  {Interventional neuroradiology}
+---
+description: An introduction to interventional neuroradiology, a minimally invasive specialty treating brain and spine vascular conditions using image-guided techniques.
+tags: Interventional neuroradiology
+keywords: "interventional neuroradiology, neurointervention, endovascular neurosurgery, London"
+about: "Interventional neuroradiology is a subspecialty using minimally invasive image-guided techniques to diagnose and treat vascular diseases of the brain, head, neck, and spine. Conditions treated include aneurysms, stroke, AVMs, fistulas, stenosis, and tumours."
+mainEntity: "https://www.kch.nhs.uk/services/services-a-to-z/interventional-neuroradiology/"
+sameAs: "https://en.wikipedia.org/wiki/Interventional_neuroradiology"
+---
 
 ## What is an interventional neuroradiology doctor?
 
@@ -1701,6 +1939,15 @@ A common procedure that we perform is called a cerebral angiogram. “Cerebral�
 This is achieved via inserting a tiny tube called a catheter into an artery or vein. The usual entrance site is the groin or the wrist, as these are easily accessible and safe places. We then advance the tube into the blood vessel involved in the disease process. We can place tiny devices, such as coils or stents, or retrieve blood clots, through these tubes. As the tubes inside the body we use advanced imaging equipment, such as X-rays, CT, or MRI to guide them.
 
 # Introduction to CT scans  {CT scans}
+---
+description: An introduction to CT scans, their role in emergency medicine and interventional neuroradiology, and how they compare with MRI.
+tags: CT scans
+keywords: "CT scan, computed tomography, CTA, brain imaging, London"
+about: "A CT scan uses X-rays and computer processing to produce detailed cross-sectional images. In neurointervention, CT and CT angiography are essential for diagnosing haemorrhage, stroke, aneurysms, and vascular malformations quickly and accurately."
+mainEntity: "https://www.nhs.uk/conditions/ct-scan/"
+sameAs: "https://en.wikipedia.org/wiki/CT_scan"
+---
+
 
 A CT scan, or computed tomography scan, is an imaging test that uses X-rays and computer processing to create detailed cross-sectional pictures of the body. It is quick, precise, and widely used in emergency and inpatient settings because it can rapidly detect conditions such as bleeding, fractures, and organ injury.
 
@@ -1711,6 +1958,14 @@ Compared with MRI, CT is usually preferred in urgent cases, such as suspected an
 CT scanning has clear advantages: it is quick, precise, and excellent for detecting bleeding and vascular pathology with CTA. Its disadvantages include the use of ionising radiation and the possibility of artefacts, particularly when metal devices such as coils or stents have already been placed, which can obscure detail in follow-up imaging.
 
 # Introduction to MRI scans  {MRI scans}
+---
+description: An introduction to MRI scans and magnetic resonance angiography, their advantages in neuroimaging, and comparison with CT in neuroradiology.
+tags: MRI scans
+keywords: "MRI scan, MRA, brain imaging, neuroimaging, London"
+about: "MRI uses powerful magnets and radio waves to produce detailed images of the brain and spine. It provides excellent soft tissue contrast without radiation, making it key in assessing stroke, aneurysms, AVMs, and spinal cord disease. MRA enables non-invasive vascular imaging."
+mainEntity: "https://www.nhs.uk/conditions/mri-scan/"
+sameAs: "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging"
+---
 
 MRI scanning, or magnetic resonance imaging, uses powerful magnets and radio waves rather than X-rays to generate detailed images of the body. It provides exceptional contrast between different soft tissues and can create images in multiple planes without moving the patient. Unlike CT, MRI does not involve ionising radiation, which makes it particularly valuable for repeated imaging or for younger patients.
 
@@ -1721,6 +1976,14 @@ Magnetic resonance angiography (MRA) is a specialised application that allows bl
 The advantages of MRI and MRA are their excellent soft tissue detail, the absence of radiation, and the ability to evaluate both vessels and surrounding structures in a single examination. They are also especially effective in areas where CT is limited by bone. Limitations include longer scanning times, sensitivity to patient movement, and contraindications in patients with certain implants or severe claustrophobia. Metallic devices such as coils or stents can cause artefacts, although these are often less pronounced than in CT. For this reason, MRI and MRA are typically used in planned or follow-up settings, while CT and CTA are preferred for rapid emergency imaging.
 
 # Cerebral angiography  {Angiography}
+---
+description: An introduction to cerebral angiography, including what it is, why it is used, and how it compares to CT and MRI.
+tags: Angiography
+keywords: "cerebral angiography, angiogram, brain vessels, London"
+about: "Cerebral angiography uses X-rays and contrast dye via catheter insertion to image blood vessels in the brain and neck. It is used for diagnosing aneurysms, stenosis, vascular malformations, and for planning interventions."
+mainEntity: "https://www.nhs.uk/tests-and-treatments/angiography/"
+sameAs: "https://en.wikipedia.org/wiki/Angiography"
+---
 
 ## What is a cerebral angiogram?
 
@@ -1744,6 +2007,14 @@ They are also used to follow-up diseases previously treated.
 The image quality is often superior when using angiography, allowing the discovery of diseases that do not show up on alternative scans and allowing the planning of certain procedures. As CT and MRI scans are safer, faster, and usually more pleasant to undergo we only do cerebral angiograms when we need to. Having said that, generally the risk (and degree of unpleasantness) is not usually very great.
 
 # Before a Cerebral Angiogram  {Angiography}
+---
+description: Guidance on how to prepare for a cerebral angiogram, including fasting, medication instructions, allergy disclosure, pregnancy considerations, and pre-procedure tests.
+tags: Angiography
+keywords: "angiogram preparation, pre-angiography instructions, London"
+about: "Before a cerebral angiogram, patients may be asked not to eat or drink for a few hours, report allergies, continue or stop medications, and undergo blood tests or health checks to ensure suitability."
+mainEntity: "https://www.nhs.uk/tests-and-treatments/angiography/what-happens/"
+sameAs: "https://en.wikipedia.org/wiki/Angiography"
+---
 
 ## Can I eat or drink before the procedure?
 
@@ -1775,6 +2046,15 @@ Cerebral angiograms involve small doses of radiation, but usually directed towar
 At least a few days before the procedure you may have routine blood tests performed, although this is not always necessary if you are in good health otherwise.
 
 # Risks  {Angiography}
+---
+description: The potential risks of cerebral angiography, including stroke, bleeding at the access site, and complications related to contrast dye.
+tags: Angiography
+keywords: "angiography risks, angiogram complications, stroke risk, London"
+about: "While cerebral angiograms are generally safe, rare complications include stroke (approx. 0.5% risk), bleeding, artery injury, urinary dye reaction, and risk at the access site."
+mainEntity: "https://www.nhs.uk/tests-and-treatments/angiography/"
+sameAs: "https://en.wikipedia.org/wiki/Angiography#Risks"
+---
+
 
 Any medical procedure can involve risks. It is first important to understand that a cerebral angiogram is recommended when the risks involved in not undertaking the test (for example, non-diagnosis of a serious disease) outweigh the risks of the procedure.
 
@@ -1793,6 +2073,15 @@ The second main risk is of damage to the artery at the access site. It is common
 Another rare complication is blockage of the artery at the access site, resulting in not enough blood getting to the arm or leg. This condition may require surgery to remedy.
 
 # During a Cerebral Angiogram  {Angiography}
+---
+description: What happens during a cerebral angiogram, including catheter insertion, contrast injection, X-ray imaging and procedural details.
+tags: Angiography
+keywords: "angiogram procedure, during angiography, catheter, X-ray, London"
+about: "During a cerebral angiogram, a catheter is guided through the wrist or groin into vessels, contrast is injected, and X-ray imaging is used to produce detailed vascular images. The procedure typically takes 30 minutes to 2 hours."
+mainEntity: "https://www.nhs.uk/tests-and-treatments/angiography/what-happens/"
+sameAs: "https://en.wikipedia.org/wiki/Angiography#Procedure"
+---
+
 
 ## What happens on the day?
 
@@ -1811,6 +2100,15 @@ It is very important you stay still throughout the procedure to ensure the pictu
 After all the imaging is finished the tube in the access site is removed. If the puncture site was the groin sometimes a collagen "plug" is used to seal the blood vessel. Alternatively, usually just applying firm pressure to the blood vessel for 10 minutes is sufficient as the hole is fairly small. If the puncture site was the wrist then an inflatable compression device is applied for a few hours after.
 
 # After a Cerebral Angiogram  {Angiography}
+---
+description: What to expect after a cerebral angiogram, including recovery, monitoring, home care, restrictions, and obtaining results.
+tags: Angiography
+keywords: "after angiography, angiogram recovery, post-angiogram advice, London"
+about: "After a cerebral angiogram, patients are monitored for several hours (often ~4 hours), and then usually discharged the same day. Rest, avoid strenuous activity, and follow instructions for wound care and driving restrictions."
+mainEntity: "https://www.guysandstthomas.nhs.uk/health-information/catheter-angiogram-check-blood-vessels"
+sameAs: "https://en.wikipedia.org/wiki/Angiography"
+---
+
 
 ## What happens after the exam?
 
@@ -1828,6 +2126,14 @@ Sometimes the doctor can tell you at the end of the procedure. It is not unusual
 
 
 # About the brain {Essential knowledge}
+---
+description: An overview of the brain’s structure, functions, and blood supply, including the cerebral hemispheres, cerebellum, brainstem, and Circle of Willis.
+tags: Essential knowledge
+keywords: "brain anatomy, cerebral hemispheres, cerebellum, brainstem, Circle of Willis, London"
+about: "The brain coordinates movement, senses, memory, language and vital functions. It requires a dense vascular network to supply oxygen and remove wastes. Interruptions in circulation can result in serious conditions such as stroke or aneurysm."
+mainEntity: "https://www.ncbi.nlm.nih.gov/books/NBK234157/"  # Major Structures & Functions of the Brain
+sameAs: "https://en.wikipedia.org/wiki/Human_brain"
+---
 
 
 The brain is the most complex organ in the body. It coordinates movement, sensation, language, memory, and thought, while also regulating unconscious functions such as breathing, heart rate, and sleep. Although it makes up only about 2% of body weight, the brain uses around 20% of the body’s oxygen and energy supply.
@@ -1897,6 +2203,16 @@ Running through the centre of the vertebrae is the **spinal canal**, which conta
 Just like the brain, the spinal cord depends on a constant blood supply. Interruption of this supply, due to narrowing, blockage, or bleeding in the spinal vessels, can cause loss of function, weakness, or paralysis.
 
 ## Structure of the Spine
+---
+description: An overview of the spine and spinal cord, including vertebrae, spinal nerves, coverings, and blood supply.
+tags: Essential knowledge
+keywords: "spine anatomy, spinal cord, vertebrae, spinal nerves, spinal blood supply, London"
+about: "The spine supports the body, protects the spinal cord, and allows motion. The spinal cord relays signals between brain and body; its function depends on a fine vascular supply, and injury or disease can lead to serious deficits."
+mainEntity: "https://en.wikipedia.org/wiki/Vertebral_column"
+sameAs: "https://en.wikipedia.org/wiki/Spinal_cord"
+---
+
+
 
 * **Cervical spine** – The top 7 vertebrae (neck region). Supports the head and allows movement such as turning and nodding.
 * **Thoracic spine** – The next 12 vertebrae (upper and mid-back). These connect to the ribs and help protect the chest organs.
@@ -2078,6 +2394,15 @@ Because the spinal cord relies on this delicate blood supply, any blockage or bl
 
 
 # Introduction to idiopathic Intracranial Hypertension {IIH}
+---
+description: An introduction to idiopathic intracranial hypertension (IIH): raised brain pressure without an obvious cause, risk factors, and consequences.
+tags: IIH
+keywords: "idiopathic intracranial hypertension, IIH, pseudotumour cerebri, raised intracranial pressure, London"
+about: "Idiopathic intracranial hypertension (IIH) is a condition where pressure inside the skull is too high with no clear cause. It can damage vision if untreated, and is more common in young women with obesity."
+mainEntity: "https://www.nhs.uk/conditions/intracranial-hypertension/"  :contentReference[oaicite:0]{index=0}
+sameAs: "https://en.wikipedia.org/wiki/Idiopathic_intracranial_hypertension"  :contentReference[oaicite:1]{index=1}
+---
+
 
 ## What is IIH?
 
@@ -2119,6 +2444,15 @@ Anyone can develop IIH, but the risk is higher if you:
 * Are aged 20 to 45.
 
 # Symptoms {IIH}
+---
+description: The symptoms of idiopathic intracranial hypertension, such as headache, vision changes, pulsatile tinnitus, and optic nerve swelling.
+tags: IIH
+keywords: "IIH symptoms, headache, papilloedema, pulsatile tinnitus, vision loss"
+about: "Symptoms arise from raised intracranial pressure. These include severe headache, visual symptoms (blurring, blind spots), pulsatile tinnitus, and papilloedema. If not treated, vision may be permanently lost."
+mainEntity: "https://www.nhs.uk/conditions/intracranial-hypertension/"  :contentReference[oaicite:2]{index=2}
+sameAs: "https://en.wikipedia.org/wiki/Idiopathic_intracranial_hypertension#Signs_and_symptoms"  :contentReference[oaicite:3]{index=3}
+---
+
 
 ## What symptoms can it cause?
 
@@ -2128,6 +2462,15 @@ Anyone can develop IIH, but the risk is higher if you:
 * Swelling of the optic nerves seen on an eye exam (papilloedema). This can be in one or both eyes and may not cause symptoms at first.
 
 # Diagnosis {IIH}
+---
+description: The methods used to diagnose IIH, including imaging, eye tests, and lumbar puncture.
+tags: IIH
+keywords: "IIH diagnosis, MRI, CT, lumbar puncture, visual field tests"
+about: "Diagnosis of IIH involves excluding other causes of raised intracranial pressure using brain imaging (MRI/CT), eye examinations, and measuring CSF pressure by lumbar puncture."
+mainEntity: "https://www.nhs.uk/conditions/intracranial-hypertension/"  :contentReference[oaicite:4]{index=4}
+sameAs: "https://en.wikipedia.org/wiki/Idiopathic_intracranial_hypertension#Diagnosis"  :contentReference[oaicite:5]{index=5}
+---
+
 ## How is IIH diagnosed?
 
 Tests usually include:
@@ -2140,6 +2483,15 @@ Doctors use agreed criteria to make the diagnosis. These include symptoms of rai
 
 
 # Treatment {IIH}
+---
+description: Treatment options for IIH, including weight management, medicines, stenting, shunts, and optic nerve surgery.
+tags: IIH
+keywords: "IIH treatment, acetazolamide, venous sinus stenting, CSF shunt, optic nerve sheath fenestration"
+about: "Treatment aims to reduce intracranial pressure, relieve symptoms, and protect vision. Options include weight loss, medications like acetazolamide, stenting of venous sinuses, shunts, and optic nerve sheath fenestration."
+mainEntity: "https://www.nhs.uk/conditions/intracranial-hypertension/"  :contentReference[oaicite:6]{index=6}
+sameAs: "https://en.wikipedia.org/wiki/Idiopathic_intracranial_hypertension#Treatment"  :contentReference[oaicite:7]{index=7}
+---
+
 
 The goals are to lower the pressure, relieve symptoms and protect your sight. Your plan is tailored to you and depends on how severe your symptoms and eye findings are.
 
@@ -2170,6 +2522,14 @@ Used when vision is at risk, symptoms are severe, or medicines are not enough.
 With timely treatment, most people improve and the risk of permanent sight loss falls. IIH does not usually affect life expectancy. Ongoing follow-up is important, especially regular eye checks.
 
 # Venous sinus stenting {IIH}
+---
+description: Venous sinus stenting as a treatment option for idiopathic intracranial hypertension (IIH), including when it is used, procedure details, risks, and aftercare.
+tags: IIH
+keywords: "venous sinus stenting, IIH treatment, intracranial hypertension, stent, neurointervention"
+about: "Venous sinus stenting is used in IIH patients when vision is threatened and medication is insufficient. A stent is inserted to open narrowed brain veins, improve drainage, and reduce intracranial pressure."
+mainEntity: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6450594/"
+sameAs: "https://en.wikipedia.org/wiki/Idiopathic_intracranial_hypertension"
+---
 
 ## When is it considered?
 
@@ -2205,6 +2565,14 @@ Figures below are approximate and depend on your individual health. Your team wi
 * Seek urgent help if you have sudden worsening headache, new neurological symptoms, new or worsening visual loss, severe groin or wrist pain or swelling, or an allergic reaction.
 
 # Introduction to Spontaneous Intracranial Hypotension {Spontaneous Intracranial Hypotension}
+---
+description: An overview of spontaneous intracranial hypotension (SIH) caused by CSF leaks, its presentation, and causes.
+tags: Spontaneous Intracranial Hypotension
+keywords: "SIH, spontaneous intracranial hypotension, CSF leak, low pressure headache"
+about: "SIH occurs when cerebrospinal fluid leaks, reducing pressure inside the skull. It commonly causes headaches worse when standing, and may need advanced imaging to locate the leak."
+mainEntity: "https://www.neurosurgery.columbia.edu/patient-care/conditions/spontaneous-intracranial-hypotension"  :contentReference[oaicite:8]{index=8}
+sameAs: "https://en.wikipedia.org/wiki/Spontaneous_intracranial_hypotension"  :contentReference[oaicite:9]{index=9}
+---
 
 ## What is SIH?
 
@@ -2234,6 +2602,15 @@ SIH is due to a CSF leak from the spine. Common patterns include:
 Women, and people with conditions that make connective tissues more stretchy or fragile, such as Marfan syndrome, Ehlers–Danlos syndrome, or general joint hypermobility.
 
 # Symptoms {Spontaneous Intracranial Hypotension}
+---
+description: Symptoms of SIH, including orthostatic headache, nausea, balance problems, and cognitive signs.
+tags: Spontaneous Intracranial Hypotension
+keywords: "SIH symptoms, orthostatic headache, tinnitus, dizziness, brain fog"
+about: "Common symptoms of SIH include headaches that worsen upright, nausea, neck pain, tinnitus, blurred vision, and sometimes neurological symptoms like slurred speech or tremor."
+mainEntity: "https://www.neurosurgery.columbia.edu/patient-care/conditions/spontaneous-intracranial-hypotension"  :contentReference[oaicite:10]{index=10}
+sameAs: "https://en.wikipedia.org/wiki/Spontaneous_intracranial_hypotension#Signs_and_symptoms"  :contentReference[oaicite:11]{index=11}
+---
+
 
 ## What symptoms can it cause?
 
@@ -2251,6 +2628,15 @@ Other symptoms can include:
 * Rarely, hormonal effects such as raised prolactin with possible milky nipple discharge
 
 # Diagnosis {Spontaneous Intracranial Hypotension}
+---
+description: Diagnostic investigations for SIH, including MRI, CT/myelography, and dynamic imaging techniques.
+tags: Spontaneous Intracranial Hypotension
+keywords: "SIH diagnosis, MRI, CT myelography, dynamic myelography, CSF leak"
+about: "SIH diagnosis uses contrast MRI of brain and spine, CT or dynamic myelography, and sometimes lumbar puncture, although CSF pressure may be normal. Advanced imaging is often required to find the leak."
+mainEntity: "https://pubmed.ncbi.nlm.nih.gov/38135500/"  :contentReference[oaicite:12]{index=12}
+sameAs: "https://en.wikipedia.org/wiki/Spontaneous_intracranial_hypotension#Diagnosis"  :contentReference[oaicite:13]{index=13}
+---
+
 
 ## MRI
 
@@ -2278,6 +2664,15 @@ In simple terms, the fluoroscopic approach involves:
 * Usual post-lumbar puncture care and brief bed rest.
 
 # Treatment {Spontaneous Intracranial Hypotension}
+---
+description: Treatments for SIH, including epidural blood patches, fibrin glue patches, and follow-up strategies.
+tags: Spontaneous Intracranial Hypotension
+keywords: "SIH treatment, epidural blood patch, fibrin glue, CSF leak repair"
+about: "Treatment of SIH includes conservative measures, epidural blood patches (targeted or non-targeted), and use of fibrin glue. Most patients improve, though repeat treatment may be needed."
+mainEntity: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8140691/"  :contentReference[oaicite:14]{index=14}
+sameAs: "https://en.wikipedia.org/wiki/Spontaneous_intracranial_hypotension#Treatment"  :contentReference[oaicite:15]{index=15}
+---
+
 
 ## Conservative measures
 
@@ -2311,6 +2706,14 @@ If a specific leak is found, a doctor can inject a medical glue (fibrin sealant)
 Many people improve or are cured with EBPs, targeted sealant, or treatment of a CSF-venous fistula. Some need repeat treatments. A small group have persistent or recurring symptoms and benefit from advanced imaging and specialist care. Earlier treatment improves the chance of full recovery and lowers the risk of long-term problems.
 
 # CSF venous embolisation {Spontaneous Intracranial Hypotension}
+---
+description: CSF venous embolisation is a minimally invasive treatment for spontaneous intracranial hypotension (SIH) caused by a CSF-venous fistula. It explains when the procedure is used, steps, risks, and post-procedure follow-up.
+tags: Spontaneous Intracranial Hypotension
+keywords: "CSF venous embolisation, CSF-venous fistula, SIH treatment, neurointervention"
+about: "CSF venous embolisation involves advancing catheters via venous routes to deliver a liquid embolic into abnormal spinal venous connections draining CSF. It is offered when blood or glue patches fail and a fistula is confirmed."
+mainEntity: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12087204/"
+sameAs: "https://en.wikipedia.org/wiki/Spontaneous_intracranial_hypotension"
+---
 
 ## When is it considered?
 
@@ -2350,6 +2753,14 @@ Follow up
 
 
 # Introduction to Subdural Haematoma {MMA Embolisation}
+---
+description: An overview of subdural haematoma, including types, causes, symptoms, and typical management.
+tags: MMA Embolisation
+keywords: "subdural haematoma, chronic subdural, acute subdural, MMA embolisation"
+about: "A subdural haematoma is bleeding between the dura and brain surface, often from head injury. It can be acute or chronic. Treatments include monitoring, surgical drainage, and emerging endovascular options like MMA embolisation."
+mainEntity: "https://www.nhs.uk/conditions/subdural-haematoma/"  :contentReference[oaicite:16]{index=16}
+sameAs: "https://en.wikipedia.org/wiki/Subdural_hematoma"  :contentReference[oaicite:17]{index=17}
+---
 
 
 ## Subdural haematoma
@@ -2416,6 +2827,15 @@ Would you like me to expand the **MMA embolisation section** into a separate hea
 
 
 # Middle Meningeal Artery Embolisation {MMA Embolisation}
+---
+description: Middle meningeal artery embolisation (MMAE) as a minimally invasive treatment for chronic subdural haematoma.
+tags: MMA Embolisation
+keywords: "middle meningeal artery embolisation, MMAE, chronic subdural haematoma, neurointervention"
+about: "MMA embolisation is an endovascular technique used to reduce recurrence of chronic subdural haematoma by occluding the middle meningeal artery, which contributes to membrane vascular supply."
+mainEntity: "https://www.nhs.uk/conditions/subdural-haematoma/"  :contentReference[oaicite:18]{index=18}
+sameAs: "https://en.wikipedia.org/wiki/Embolization"  :contentReference[oaicite:19]{index=19}
+---
+
 
 ## Middle Meningeal Artery Embolisation
 
@@ -2475,10 +2895,18 @@ Chronic subdural haematoma is becoming more common as the population ages, espec
 
 
 # Introduction to Pulsatile Tinnitus {Pulsatile Tinnitus}
+---
+description: Introduction to pulsatile tinnitus (PT), its definition, seriousness, causes, inheritance, and risk factors.
+tags: Pulsatile Tinnitus
+keywords: "pulsatile tinnitus, vascular tinnitus, IIH, venous sinus stenosis, carotid disease"
+about: "Pulsatile tinnitus is a rhythmic noise that matches the heartbeat, often due to altered blood or cerebrospinal fluid flow. It may indicate underlying vascular disease such as dural AV fistula, carotid stenosis, or idiopathic intracranial hypertension."
+mainEntity: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12317842/"
+sameAs: "https://en.wikipedia.org/wiki/Tinnitus#Pulsatile_tinnitus"
+---
 
 ## What is PT?
 
-Pulsatile tinnitus is a rare form of tinnitus where the sound beats in time with your pulse. It is not a disease itself but a symptom that often relates to blood flow or cerebrospinal fluid (CSF) movement near the ear. 
+Pulsatile tinnitus is a rare form of tinnitus where the sound beats in time with your pulse. It is not a disease itself but a symptom that often relates to blood flow or cerebrospinal fluid (CSF) movement near the ear.
 
 While non-pulsatile tinnitus usually arises from inner ear or hearing pathway problems, pulsatile tinnitus is more often due to awareness of blood or CSF flow. It can interfere with concentration, sleep and work, and in some people is linked with anxiety or low mood. In certain cases, it may be the first sign of an underlying medical condition.
 
@@ -2505,12 +2933,30 @@ Pulsatile tinnitus is usually not inherited. Although some people are born with 
 Women of childbearing age with raised body mass index and idiopathic intracranial hypertension are at particular risk. Older adults with atherosclerosis or other vascular risk factors are also more likely to be affected. People with high blood pressure, anaemia, overactive thyroid or Paget disease, and those with a history of head or neck trauma or venous sinus thrombosis, may be more susceptible.
 
 # Symptoms {Pulsatile Tinnitus}
+---
+description: Symptoms of pulsatile tinnitus, including characteristic sounds and associated conditions such as IIH, carotid disease, or tumours.
+tags: Pulsatile Tinnitus
+keywords: "pulsatile tinnitus symptoms, whooshing sound, heartbeat tinnitus, papilloedema, carotid bruit"
+about: "Pulsatile tinnitus typically causes a rhythmic whooshing sound that follows the pulse. Symptoms vary with the underlying cause and may include visual changes, headaches, or ear findings such as a bluish mass."
+mainEntity: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12317842/"
+sameAs: "https://en.wikipedia.org/wiki/Tinnitus#Pulsatile_tinnitus"
+---
+
 
 ## What symptoms can it cause?
 
 People with pulsatile tinnitus typically describe a rhythmic whooshing or swooshing sound in one or both ears, or sometimes in the head, that matches the heartbeat. The sound is often more noticeable at night or in quiet environments. Venous causes may change with head position or gentle pressure on the neck. Other symptoms depend on the underlying cause: idiopathic intracranial hypertension can produce headaches, visual symptoms or swelling of the optic nerves; carotid artery disease may cause a neck bruit; tumours or jugular bulb abnormalities can appear as a bluish mass behind the eardrum; and carotid cavernous fistulae may present with eye redness and bulging.
 
 # Diagnosis {Pulsatile Tinnitus}
+---
+description: How pulsatile tinnitus is diagnosed, including clinical assessment, hearing tests, and imaging with ultrasound, CT, or MRI/MRV.
+tags: Pulsatile Tinnitus
+keywords: "pulsatile tinnitus diagnosis, MRV, MRA, temporal bone CT, carotid ultrasound"
+about: "Diagnosis of pulsatile tinnitus involves clinical history, examination, hearing tests, and targeted imaging such as ultrasound, CT, MRI, MR angiography or venography to identify vascular or structural causes."
+mainEntity: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12250305/"
+sameAs: "https://en.wikipedia.org/wiki/Tinnitus#Pulsatile_tinnitus"
+---
+
 
 ## How is PT diagnosed?
 
@@ -2519,6 +2965,15 @@ Diagnosis begins with a clinical assessment, including a detailed history and ex
 Imaging is chosen according to the suspected cause. Ultrasound of the carotid arteries and neck veins can identify flow disturbances or narrowing. CT of the head and neck provides detailed anatomy, with high-resolution temporal bone CT particularly useful for sigmoid sinus or jugular bulb abnormalities. MRI gives information about the brain, inner ear and surrounding soft tissues. Specialised MRI techniques, such as MRA and MRV, are used to study arteries and veins, including screening for transverse sinus stenosis and dural arteriovenous fistulae.
 
 # Treatment {Pulsatile Tinnitus}
+---
+description: Treatment options for pulsatile tinnitus, including conservative therapy, psychological support, and venous sinus stenting for selected vascular causes.
+tags: Pulsatile Tinnitus
+keywords: "pulsatile tinnitus treatment, sound therapy, CBT, ACT, venous sinus stenting"
+about: "Management of pulsatile tinnitus includes conservative measures such as sound therapy, relaxation, and counselling. When venous sinus stenosis is present, venous sinus stenting can improve blood flow and relieve symptoms."
+mainEntity: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12317842/"
+sameAs: "https://my.clevelandclinic.org/health/diseases/23422-pulsatile-tinnitus"
+---
+
 
 ## Conservative treatments
 

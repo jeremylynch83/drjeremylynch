@@ -1,9 +1,17 @@
 
 # Introduction to Pulsatile Tinnitus {Pulsatile Tinnitus}
+---
+description: Introduction to pulsatile tinnitus (PT), its definition, seriousness, causes, inheritance, and risk factors.
+tags: Pulsatile Tinnitus
+keywords: "pulsatile tinnitus, vascular tinnitus, IIH, venous sinus stenosis, carotid disease"
+about: "Pulsatile tinnitus is a rhythmic noise that matches the heartbeat, often due to altered blood or cerebrospinal fluid flow. It may indicate underlying vascular disease such as dural AV fistula, carotid stenosis, or idiopathic intracranial hypertension."
+mainEntity: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12317842/"
+sameAs: "https://en.wikipedia.org/wiki/Tinnitus#Pulsatile_tinnitus"
+---
 
 ## What is PT?
 
-Pulsatile tinnitus is a rare form of tinnitus where the sound beats in time with your pulse. It is not a disease itself but a symptom that often relates to blood flow or cerebrospinal fluid (CSF) movement near the ear. 
+Pulsatile tinnitus is a rare form of tinnitus where the sound beats in time with your pulse. It is not a disease itself but a symptom that often relates to blood flow or cerebrospinal fluid (CSF) movement near the ear.
 
 While non-pulsatile tinnitus usually arises from inner ear or hearing pathway problems, pulsatile tinnitus is more often due to awareness of blood or CSF flow. It can interfere with concentration, sleep and work, and in some people is linked with anxiety or low mood. In certain cases, it may be the first sign of an underlying medical condition.
 
@@ -30,12 +38,30 @@ Pulsatile tinnitus is usually not inherited. Although some people are born with 
 Women of childbearing age with raised body mass index and idiopathic intracranial hypertension are at particular risk. Older adults with atherosclerosis or other vascular risk factors are also more likely to be affected. People with high blood pressure, anaemia, overactive thyroid or Paget disease, and those with a history of head or neck trauma or venous sinus thrombosis, may be more susceptible.
 
 # Symptoms {Pulsatile Tinnitus}
+---
+description: Symptoms of pulsatile tinnitus, including characteristic sounds and associated conditions such as IIH, carotid disease, or tumours.
+tags: Pulsatile Tinnitus
+keywords: "pulsatile tinnitus symptoms, whooshing sound, heartbeat tinnitus, papilloedema, carotid bruit"
+about: "Pulsatile tinnitus typically causes a rhythmic whooshing sound that follows the pulse. Symptoms vary with the underlying cause and may include visual changes, headaches, or ear findings such as a bluish mass."
+mainEntity: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12317842/"
+sameAs: "https://en.wikipedia.org/wiki/Tinnitus#Pulsatile_tinnitus"
+---
+
 
 ## What symptoms can it cause?
 
 People with pulsatile tinnitus typically describe a rhythmic whooshing or swooshing sound in one or both ears, or sometimes in the head, that matches the heartbeat. The sound is often more noticeable at night or in quiet environments. Venous causes may change with head position or gentle pressure on the neck. Other symptoms depend on the underlying cause: idiopathic intracranial hypertension can produce headaches, visual symptoms or swelling of the optic nerves; carotid artery disease may cause a neck bruit; tumours or jugular bulb abnormalities can appear as a bluish mass behind the eardrum; and carotid cavernous fistulae may present with eye redness and bulging.
 
 # Diagnosis {Pulsatile Tinnitus}
+---
+description: How pulsatile tinnitus is diagnosed, including clinical assessment, hearing tests, and imaging with ultrasound, CT, or MRI/MRV.
+tags: Pulsatile Tinnitus
+keywords: "pulsatile tinnitus diagnosis, MRV, MRA, temporal bone CT, carotid ultrasound"
+about: "Diagnosis of pulsatile tinnitus involves clinical history, examination, hearing tests, and targeted imaging such as ultrasound, CT, MRI, MR angiography or venography to identify vascular or structural causes."
+mainEntity: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12250305/"
+sameAs: "https://en.wikipedia.org/wiki/Tinnitus#Pulsatile_tinnitus"
+---
+
 
 ## How is PT diagnosed?
 
@@ -44,6 +70,15 @@ Diagnosis begins with a clinical assessment, including a detailed history and ex
 Imaging is chosen according to the suspected cause. Ultrasound of the carotid arteries and neck veins can identify flow disturbances or narrowing. CT of the head and neck provides detailed anatomy, with high-resolution temporal bone CT particularly useful for sigmoid sinus or jugular bulb abnormalities. MRI gives information about the brain, inner ear and surrounding soft tissues. Specialised MRI techniques, such as MRA and MRV, are used to study arteries and veins, including screening for transverse sinus stenosis and dural arteriovenous fistulae.
 
 # Treatment {Pulsatile Tinnitus}
+---
+description: Treatment options for pulsatile tinnitus, including conservative therapy, psychological support, and venous sinus stenting for selected vascular causes.
+tags: Pulsatile Tinnitus
+keywords: "pulsatile tinnitus treatment, sound therapy, CBT, ACT, venous sinus stenting"
+about: "Management of pulsatile tinnitus includes conservative measures such as sound therapy, relaxation, and counselling. When venous sinus stenosis is present, venous sinus stenting can improve blood flow and relieve symptoms."
+mainEntity: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12317842/"
+sameAs: "https://my.clevelandclinic.org/health/diseases/23422-pulsatile-tinnitus"
+---
+
 
 ## Conservative treatments
 
@@ -64,5 +99,3 @@ Outcomes are generally very positive. Many patients experience immediate relief,
 ## Aftercare and follow-up
 
 After the procedure, patients usually continue dual antiplatelet therapy for three to six months, followed by long-term aspirin if advised. Management of idiopathic intracranial hypertension, such as weight loss and medication, remains important when relevant. Ongoing monitoring includes tracking the pattern of tinnitus, regular eye checks for papilloedema in IIH, and management of blood pressure and cardiovascular risk factors. Follow-up imaging may be needed if symptoms persist or recur. Urgent medical help should be sought if there is sudden severe headache, new neurological symptoms, sudden visual loss, or ear pain with bleeding.
-
-
