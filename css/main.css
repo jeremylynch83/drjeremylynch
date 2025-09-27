@@ -1055,7 +1055,10 @@ body.scrolled .navbar-toggler {
 }
 @media (max-width: 991.98px) {
     #mobileNav {
-        position: relative;
+        position: fixed;
+        top: var(--header-h, 64px); /* lines up exactly under header */
+        left: 0;
+        right: 0;
         z-index: 1050;
     }
 }
@@ -1822,4 +1825,8 @@ body.scrolled .site-header .navbar .navbar-toggler {
 }
 body.scrolled .navbar-brand img {
     filter: none;
+}
+
+.collapsing {
+    transition: height 0.15s ease; /* faster */
 }
