@@ -190,6 +190,7 @@ By booking an appointment, you acknowledge and agree to these terms.
 ---
 description: The Wellington Hospital in St John’s Wood, London is a major private hospital operated by HCA Healthcare.
 tags: Locations
+image: wellington_building.webp
 keywords: "Wellington Hospital, London, private hospital, HCA Healthcare, neurosurgery, interventional neuroradiology"
 about: "The Wellington Hospital is the UK’s largest private hospital, offering neurosurgery, cardiac care, oncology, rehabilitation, and interventional neuroradiology in state-of-the-art facilities."
 mainEntity: "https://www.hcahealthcare.co.uk/facilities/the-wellington-hospital"
@@ -197,11 +198,11 @@ sameAs: "https://en.wikipedia.org/wiki/Wellington_Hospital,_London"
 ---
 
 
-The Wellington Hospital, in St John’s Wood, London, is the largest private hospital in the UK. It is owned by the American company HCA Healthcare. The hospital provides a broad range of services, including cardiac care, neurosurgery, liver and HPB (hepato-pancreato-biliary) medicine, rehabilitation, gynaecology, orthopaedics and oncology, along with diagnostics. The site comprises the South Building, the North Building, a Diagnostics and Outpatients Centre, and the Platinum Medical Centre, which specialises in oncology.
-
-All interventional neuroradiology procedures at The Wellington Hospital are performed using its state-of-the-art biplane angiography suite and expert staff.
+All interventional neuroradiology procedures are performed at The Wellington Hospital using its state-of-the-art biplane angiography suite and expert staff. The HCA Wellington Hospital, in St John’s Wood, London, is the largest private hospital in the UK, providing the full range of tertiary services. The site comprises the South Building, the North Building, a Diagnostics and Outpatients Centre, and the Platinum Medical Centre, which specialises in oncology.
 
 The hospital was founded by Dr Arthur Levin and originally commissioned by British and Commonwealth Holdings. The South Building, designed by Fred Woodhead, opened in April 1974, followed by the North Building in 1978. A Diagnostics and Outpatients Centre in Golders Green opened in 2007, and the Platinum Medical Centre—with MRI and PET-CT scanners—opened in May 2011.
+
+
 
 # Kings College Hospital {Locations}
 ---

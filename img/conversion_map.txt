@@ -61,4 +61,5 @@ topdoctors.png -> topdoctors.webp
 tufail.jpg -> tufail.webp
 ukng.png -> ukng.webp
 wellington.png -> wellington.webp
+wellington_building.jpg -> wellington_building.webp
 wfitn.png -> wfitn.webp
