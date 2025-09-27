@@ -189,7 +189,7 @@ By booking an appointment, you acknowledge and agree to these terms.
 
 # The Wellington Hospital {Locations}
 ---
-description: The Wellington Hospital in St John’s Wood, London is a major private hospital operated by HCA Healthcare.
+description: About the Wellington Hospital in St John’s Wood, the largest private hospital in the UK.
 tags: Locations
 image: wellington_building.webp
 keywords: "Wellington Hospital, London, private hospital, HCA Healthcare, neurosurgery, interventional neuroradiology"
@@ -203,7 +203,22 @@ All interventional neuroradiology procedures are performed at The Wellington Hos
 
 The hospital was founded by Dr Arthur Levin and originally commissioned by British and Commonwealth Holdings. The South Building, designed by Fred Woodhead, opened in April 1974, followed by the North Building in 1978. A Diagnostics and Outpatients Centre in Golders Green opened in 2007, and the Platinum Medical Centre—with MRI and PET-CT scanners—opened in May 2011.
 
+## Getting here
 
+Address:
+Wellington Place
+St John's Wood
+London
+NW8 9LE
+
+By underground:
+The hospital is a short walk from St John’s Wood underground station.
+
+By bus:
+The 13, 46, 113, 117, 187 and 274 bus services stop nearby.
+
+By car:
+For those arriving by car, there are some street parking spaces nearby or you can use the independent car parks in St John’s Wood or Maida Vale.
 
 # Kings College Hospital {Locations}
 ---

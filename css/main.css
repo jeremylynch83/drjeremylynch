@@ -1830,3 +1830,59 @@ body.scrolled .navbar-brand img {
 .collapsing {
     transition: height 0.15s ease; /* faster */
 }
+
+.review-slide {
+    height: 220px; /* slightly smaller height */
+    padding: 2rem;
+}
+
+.review-slide blockquote p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #222;
+    max-width: 600px; /* narrower text width */
+    margin: 0 auto;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .review-slide {
+        height: 180px;
+        padding: 1.5rem;
+    }
+
+    .review-slide blockquote p {
+        font-size: 1.1rem;
+        max-width: 70%; /* compress text on small screens */
+    }
+}
+
+#reviewsCarousel .carousel-item {
+    background: transparent;
+}
+
+/* Smaller arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    width: 1.2rem; /* smaller */
+    height: 1.2rem; /* smaller */
+    border: solid #666; /* softer grey */
+    border-width: 0 0.2rem 0.2rem 0;
+    display: inline-block;
+}
+
+.carousel-control-prev-icon {
+    transform: rotate(135deg);
+}
+
+.carousel-control-next-icon {
+    transform: rotate(-45deg);
+}
+
+/* Indicator dots */
+.carousel-indicators [data-bs-target] {
+    background-color: #005eb8;
+}
