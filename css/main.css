@@ -42,7 +42,7 @@
 /* 1) Reserve header height and pad main to match */
 :root {
     --header-h-desktop: 132px; /* adjust to your real combined fixed-top height */
-    --header-h-mobile: 82px; /* ditto for mobile */
+    --header-h-mobile: 65px; /* ditto for mobile */
 }
 .site-header .fixed-top {
     height: var(--header-h-desktop);
