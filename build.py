@@ -411,6 +411,7 @@ def convert_md_to_html(md_content: str, html_filename: str, template_path: str) 
             "-o", html_filename,
             "--template", template_path,
             "--include-after-body=templates/footer.html",
+            "--filter", "pandoc-crossref",
         ],
         input=md_content,
         text=True,

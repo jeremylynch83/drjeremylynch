@@ -127,7 +127,7 @@ body {
     background: var(--clr-bg);
     line-height: 1.8;
     font-family: var(--ff-base) !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
     font-weight: 400 !important; /* keep normal text regular */
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -235,12 +235,6 @@ main .col-md-8 figcaption {
 main .col-md-8 {
     counter-reset: figure;
 }
-main .col-md-8 figure figcaption::before {
-    counter-increment: figure;
-    content: "Figure " counter(figure) ": ";
-    font-weight: 700;
-    color: var(--clr-heading);
-}
 
 /* Global figcaption alignment fallback */
 figcaption {
@@ -266,6 +260,12 @@ figcaption {
     justify-self: center;
     text-align: center;
 }
+
+.navbar .navbar-collapse {
+    grid-column: 3; /* visible menu sits on the right */
+    justify-self: end;
+}
+
 .navbar .navbar-toggler {
     grid-column: 3;
     justify-self: end;
@@ -273,10 +273,7 @@ figcaption {
     align-items: center;
     justify-content: center;
 }
-.navbar .navbar-collapse {
-    grid-column: 3; /* visible menu sits on the right */
-    justify-self: end;
-}
+
 .navbar .navbar-brand small {
     line-height: 1.2;
     color: var(--clr-text-muted);
@@ -1899,7 +1896,7 @@ body.scrolled .navbar-brand img {
 .link_guide {
     position: relative;
     background: #cbd1dc;
-    border-radius: 12px;
+    border-radius: 5px;
     overflow: hidden;
     margin: 2rem 0;
     padding: clamp(1.25rem, 3vw, 3rem);
@@ -1998,4 +1995,9 @@ body.scrolled .navbar-brand img {
     .link_guide .guide-image {
         display: none;
     }
+}
+
+.link_guide a:hover {
+    background: #444; /* darker shade on hover */
+    color: #fff; /* keep text white */
 }

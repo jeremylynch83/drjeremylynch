@@ -11,7 +11,7 @@ sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
 
 ## What is an aneurysm?
 
-An aneurysm is a bulge in the wall of a blood vessel caused by a small area of weakness. Aneurysms can occur in various parts of the body, but one of the most common locations is the brain. These are known as intracranial or cerebral aneurysms. Some aneurysms have the potential to rupture which can result in bleeding around the brain called subarachnoid haemorrhage.
+An aneurysm is a bulge in the wall of a blood vessel caused by a small area of weakness (@fig:aneurysm). Aneurysms can occur in various parts of the body, but one of the most common locations is the brain. These are known as intracranial or cerebral aneurysms. Some aneurysms have the potential to rupture which can result in bleeding around the brain called subarachnoid haemorrhage.
 
 ![Illustration of a cerebral aneurysm. ](img/aneurysm.svg){#fig:aneurysm }
 
@@ -131,9 +131,17 @@ sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
 
 ## What are the consequences of aneurysm rupture?
 
-Aneurysm rupture results in a severe headache caused by bleeding around the brain, termed subarachnoid haemorrhage. A common description of this is a "thunderclap" headache. It may be accompanied by a stiff neck, sickness, vomiting, sensitivity to light, and loss of consciousness. Aneurysmal haemorrhage may lead to death. Rates of mortality vary in different studies and range from 20-50%. There is some evidence that the mortality rate from aneurysm rupture is decreasing over time due to advances in medical care.
+Aneurysm rupture results in a severe headache caused by bleeding around the brain, termed subarachnoid haemorrhage (@fig:ruptured_aneurysm). A common description of this is a "thunderclap" headache. It may be accompanied by a stiff neck, sickness, vomiting, sensitivity to light, and loss of consciousness. Aneurysmal haemorrhage may lead to death. Rates of mortality vary in different studies and range from 20-50%. There is some evidence that the mortality rate from aneurysm rupture is decreasing over time due to advances in medical care.
 
-![Ruptured aneurysm. ](img/ruptured_aneurysm.svg)
+![Ruptured aneurysm. ](img/ruptured_aneurysm.svg){#fig:ruptured_aneurysm }
+
+## How are ruptured aneurysms diagnosed?
+
+A CT scan is performed which almost always shows the bleeding (@fig:ct_sah). If the blood load is very low then rarely it does not show up and a lumbar pucnture is performed to detect red blood cells in the CSF.
+
+![CT scan of a ruptured aneurysm showing blood around the brain. ](img/SAH-360.webp){#fig:ct_sah }
+
+## What are the consequences of aneurysm rupture?
 
 A patient with a ruptured aneurysm is admitted to hospital. In the initial phase, the individual is placed in an intensive care unit (ICU) where healthcare professionals can closely monitor their condition. The duration of the hospital stay will differ from person to person. Depending on the severity of the condition, it may range from a couple of weeks to a longer duration.
 
@@ -144,13 +152,13 @@ Another significant complication that may follow aneurysm rupture is cerebral va
 
 ## How are ruptured aneurysms treated?
 
-Ruptured aneurysms require immediate treatment to prevent further bleeding, as the consequences of this may be disastrous. Two techniques are available to achieve this. The primary and less invasive method is endovascular coiling. In this procedure, a catheter is inserted into a blood vessel and guided towards the aneurysm, whereupon small coils are released. These coils facilitate blood clotting, thus averting further rupture. The UK National Institute for Health and Care Excellence (NICE) recommends endovascular treatment for aneurysmal rupture if it possible due to the significantly improved chance of survival following the treatment. In addition, patients have a higher likelihood of living independently coupled with a reduced risk of developing seizures. This is based on evidence from high-quality clinical trials such as the International Subarachnoid Aneurysm Trial conducted over a period of 16 years.
+Ruptured aneurysms require urgent treatment to prevent further bleeding, as the consequences of this may be disastrous. Two techniques are available to achieve this. The primary and less invasive method is endovascular coiling. In this procedure, a catheter is inserted into a blood vessel and guided towards the aneurysm, whereupon small coils are released. These coils facilitate blood clotting, thus averting further rupture. The UK National Institute for Health and Care Excellence (NICE) recommends endovascular treatment (coiling) for aneurysmal rupture if it possible due to the significantly improved chance of survival following the treatment (@fig:coiling). In addition, patients have a higher likelihood of living independently coupled with a reduced risk of developing seizures. This is based on evidence from high-quality clinical trials such as the International Subarachnoid Aneurysm Trial conducted over a period of 16 years.
 
-![Aneurysm coil embolisation. ](img/aneurysm coiling.svg)
+![Aneurysm coil embolisation. ](img/aneurysm coiling.svg){#fig:coiling }
 
-The alternative method, surgical clipping, involves a neurosurgeon creating an opening in the skull and placing a metallic clip on the aneurysm's neck, effectively blocking the blood flow within. This is performed in the minority of cases where endovascular treatment is not possible.
+The alternative method, surgical clipping, involves a neurosurgeon creating an opening in the skull and placing a metallic clip on the aneurysm's neck, effectively blocking the blood flow within (@fig:clipping). This is performed in the minority of cases where endovascular treatment is not possible.
 
-![Aneurysm clipping. ](img/aneurysm-clipping.svg)
+![Aneurysm clipping. ](img/aneurysm-clipping.svg){#fig:clipping }
 
 
 ## What are the long-term consequences of aneurysm rupture?
@@ -233,58 +241,56 @@ All endovascular treatments aim to initiate the body’s natural healing process
 
 Coil embolisation is undertaken during general anaesthesia. The doctor  makes a small incision of about 3 mm, typically in the wrist or groin, to access a blood vessel. Following this, they insert a long, thin tube, called a catheter, through the incision into the blood vessel. Using a method called fluoroscopy, which involves real-time X-ray imaging, the doctor is able to navigate the catheter through the patient's vascular system until it reaches the blood vessels of the brain where the aneurysm is located.
 
-Once the catheter is in position, small platinum coils are threaded through the catheter and into the aneurysm. These coils are soft and flexible, allowing them to adapt to the shape of the aneurysm. As the blood comes into contact with the coils, it begins to clot, gradually filling up the aneurysm over time. This process effectively isolates the aneurysm from the rest of the circulatory system, thus preventing it from rupturing. The coils are left in place and do not need to be removed.
+Once the catheter is in position, small platinum coils are threaded through the catheter and into the aneurysm (@fig:coiling_aneurysm and @fig:aneurysm_angio2). These coils are soft and flexible, allowing them to adapt to the shape of the aneurysm. As the blood comes into contact with the coils, it begins to clot, gradually filling up the aneurysm over time. This process effectively isolates the aneurysm from the rest of the circulatory system, thus preventing it from rupturing. The coils are left in place and do not need to be removed.
 
-![Illustration demonstrating coil embolisation of a brain aneurysm. ](img/aneurysm coiling.svg)
+![Illustration demonstrating coil embolisation of a brain aneurysm. ](img/aneurysm coiling.svg){#fig:coiling_aneurysm }
 
 After the coils are properly placed, the catheter is carefully withdrawn from the body. The patient is usually required to stay in the hospital for the night following the procedure to enable the medical team to monitor the recovery.
 
-![Real case of coil embolisation of a cerebral aneurysm. (A) 3-dimensional representation of the aneurysm is acquired, used for planning the rest of the procedure. (B) Angiography of the aneurysm is performed. (C) The aneurysm has had several coils inserted, ensuring that blood no longer fills it.  ](img/an_coiling.webp){#fig:aneurysm_angio}
+![Real case of coil embolisation of a cerebral aneurysm. (A) 3-dimensional representation of the aneurysm is acquired, used for planning the rest of the procedure. (B) Angiography of the aneurysm is performed. (C) The aneurysm has had several coils inserted, ensuring that blood no longer fills it.  ](img/an_coiling.webp){#fig:aneurysm_angio2}
 
 
 ## What is stent assisted coiling?
 
-
-
 Stent-assisted coiling involves the insertion of a small, mesh-like tube called a stent in addition to coils.
 
-Similar to coil embolisation, a tiny catheter is navigated through the blood vessels, starting from an access point typically in the wrist or groin, all the way up to the site of the aneurysm in the brain. The stent is then placed across the opening of the aneurysm, acting like a small scaffold that provides support to the blood vessel wall, which can be weakened due to the aneurysm.
+Similar to coil embolisation, a tiny catheter is navigated through the blood vessels, starting from an access point typically in the wrist or groin, all the way up to the site of the aneurysm in the brain. The stent is then placed across the opening of the aneurysm, acting like a small scaffold that provides support to the blood vessel wall, which can be weakened due to the aneurysm (@fig:stent_coiling and @fig:aneurysm_angio3).
 
 Once the stent is in place, small coils are threaded through the catheter and placed into the aneurysm. The coils promote blood clotting, thereby filling the aneurysm and preventing it from rupturing. The stent helps to hold these coils in place and prevents them from slipping into the normal blood vessel. It's particularly useful in treating wide-neck aneurysms, where the risk of coils slipping into the parent vessel (the blood vessel supplying the aneurysm) is higher. The stent also typically increases the durability of the procedure, reducing the risk of recurrence.
 
 
 
-![Illustration of aneurysm coiling.](img/stent-coiling.svg)
+![Illustration of aneurysm coiling.](img/stent-coiling.svg){#fig:stent_coiling }
 
 After the procedure, you will likely need to take a course of antiplatelet medications such as clopidogrel, in addition to aspirin. These help to prevent the formation of blood clots around the stent. This is a routine precaution and an important part of ensuring the success of the procedure. Antiplatelet medications are given in low doses and make the platelets in your blood less sticky, reducing the chance that a clot will form. These are often stopped at 6 months, with aspirin continuing for 1-2 years.
 
-![Real case of stent & coil embolisation of a cerebral aneurysm. (A) An aneurysm is seen at the tip of the basilar artery. (B) A stent is deployed across the neck of the aneurysm, and a single coil has been placed in the aneurysm (C) Angiography during placement of the stent. (D) The aneurysm has been filled with coils. ](img/stent_coiling.webp){#fig:aneurysm_angio}
+![Real case of stent & coil embolisation of a cerebral aneurysm. (A) An aneurysm is seen at the tip of the basilar artery. (B) A stent is deployed across the neck of the aneurysm, and a single coil has been placed in the aneurysm (C) Angiography during placement of the stent. (D) The aneurysm has been filled with coils. ](img/stent_coiling.webp){#fig:aneurysm_angio3}
 
 
 ## What is flow diversion?
 
 Flow diversion is another minimally invasive endovascular treatment designed to manage brain aneurysms. The primary aim of this treatment is to divert blood flow away from the aneurysm and therefore prevent rupture.
 
-A flow diverter, similar to a stent, is a small tubular mesh device that's placed inside the parent artery, the blood vessel supplying the aneurysm. The flow diverter is designed to alter the blood flow dynamics in the artery, thereby diverting blood away from the aneurysm. They can be used with or without placement of coils in the aneurysm.
+A flow diverter, similar to a stent, is a small tubular mesh device that's placed inside the parent artery, the blood vessel supplying the aneurysm (@fig:flow_diversion and @fig:aneurysm_angio4). The flow diverter is designed to alter the blood flow dynamics in the artery, thereby diverting blood away from the aneurysm. They can be used with or without placement of coils in the aneurysm.
 
 Over time, this decreased blood flow into the aneurysm encourages the formation of a blood clot within the aneurysm, which helps to seal it off from the rest of the blood vessel. As the aneurysm shrinks and heals, the artery regains a more normal shape and function. This process can take several weeks to months.
 
-![Flow diversion. ](img/flow-diversion.svg)
+![Flow diversion. ](img/flow-diversion.svg){#fig:flow_diversion }
 
 
 Flow diversion is particularly effective for recurrent, large, wide-necked, or thrombosed aneurysms that can't be adequately treated with other methods. It is also necessary to take a course of antiplatelet medications after insertion of flow diverters.
 
-![Real case of flow diversion of a cerebral aneurysm. (A) An aneurysm is seen of the internal carotid artery (ICA). (B) A flow-diverting stent is deployed across the neck of the aneurysm. (C) The flow-diverting stent is seen from a different angle. (D) The stent is seen within the blood vessel. ](img/flow_diversion.webp){#fig:aneurysm_angio}
+![Real case of flow diversion of a cerebral aneurysm. (A) An aneurysm is seen of the internal carotid artery (ICA). (B) A flow-diverting stent is deployed across the neck of the aneurysm. (C) The flow-diverting stent is seen from a different angle. (D) The stent is seen within the blood vessel. ](img/flow_diversion.webp){#fig:aneurysm_angio4}
 
 
 
 ## What is an intrasaccular device?
 
-Intrasaccular devices such as the WEB (Woven EndoBridge) device may be used in the treatment of wide neck aneurysms which would otherwise require stents or flow diverters.
+Intrasaccular devices such as the WEB (Woven EndoBridge) device may be used in the treatment of wide neck aneurysms which would otherwise require stents or flow diverters (@fig:web_device).
 
 The WEB device, made of ultra-fine braided wires, is a flexible, self-expanding mesh that resembles a tiny basket. It is introduced into the aneurysm using a catheter navigated through the blood vessels from a small incision usually made in the wrist or groin. Once inside the aneurysm, the WEB device expands to fit the shape and size of the aneurysm, serving as a barrier that disrupts the blood flow within. This promotes clot formation within the aneurysm, sealing it off and isolating it from the rest of the circulation, thereby reducing or eliminating the risk of rupture.
 
-![The WEB intrasaccular device.](img/web-device.svg)
+![The WEB intrasaccular device.](img/web-device.svg){#fig:web_device }
 
 A benefit of the WEB device is related to post-procedure medications. With stents or flow diverters, patients are typically required to take antiplatelet medications for a period of time to prevent blood clot formation around the treatment site. However, because of the way the WEB sits in the aneurysm itself rather than the blood vessel, patients usually do not need to take these medications.
 
@@ -295,7 +301,7 @@ Endovascular treatment is highly effective at permanently eliminating the aneury
 
 In preventing adverse consequences such as disability or death endovascular treatment is comparable surgical clipping. It is the recommended treatment in ruptured aneurysms as studies have shown that endovascular treatment is safer.
 
-However whilst very high, as with every medical treatment, including surgical clipping, the success rate is not 100%. In a large study at least one further treatment was necessary in 4.9% of patients to eliminate the risk from the aneurysm. For this reason, endovascularly treated aneurysms are  monitored with follow-up scans for a period of time to ensure that the aneurysm is eliminated. If a further treatment is required this can normally be performed safely in a planned elective setting also with an endovascular procedure.
+Recurrences are rare. In a large study at least one further treatment was necessary in 4.9% of patients. They are picked up on follow-up scans and further endovascular treatment can be performed to safely eliminate them. It is important to be aware that recurrences are also possible when the aneurysm is surgically clipped.
 
 The key benefit arises from the low invasiveness of the procedure, reducing harm incurred during the treatment itself.
 

@@ -1,5 +1,6 @@
 DAVF.png -> DAVF.webp
 Intrasaccular.jpg -> Intrasaccular.webp
+SAH.png -> SAH.webp
 alt_logo.png -> alt_logo.webp
 an_angio.png -> an_angio.webp
 an_coiling.png -> an_coiling.webp
