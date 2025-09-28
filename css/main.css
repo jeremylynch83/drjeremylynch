@@ -127,7 +127,7 @@ body {
     background: var(--clr-bg);
     line-height: 1.8;
     font-family: var(--ff-base) !important;
-    font-size: 18px !important;
+    font-size: 17px !important;
     font-weight: 400 !important; /* keep normal text regular */
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;

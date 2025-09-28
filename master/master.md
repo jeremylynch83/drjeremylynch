@@ -22,16 +22,16 @@ In serious cases, the abnormal blood vessels in an AVM may rupture, causing blee
 
 The exact cause of brain AVMs is not fully understood, but they are most commonly believed to originate before birth. They may grow over time or remain static in size.
 
-## Epidemiology of Brain AVMs
+## Epidemiology
 
-Brain AVMs are relatively rare, with an estimated annual detection rate of around 1 per 100,000 people. The prevalence in adults is approximately 18 per 100,000.
+Brain AVMs are  rare, with an estimated annual detection rate of around 1 per 100,000 people. The prevalence in adults is approximately 18 per 100,000.
 
-AVMs seem to occur more often in males than females. However, symptoms may start or worsen in females during pregnancy due to the increased blood flow and volume. There is also a significant occurrence (15-20%) of AVMs in patients with hereditary hemorrhagic telangiectasia, also known as Osler-Weber-Rendu syndrome, which is a genetic disorder that leads to abnormal blood vessel formation.
-
-
+They seem to occur more often in males than females. However, symptoms may start or worsen in females during pregnancy due to the increased blood flow and volume. There is also a significant occurrence (15 to 20%) of AVMs in patients with hereditary hemorrhagic telangiectasia, also known as Osler-Weber-Rendu syndrome, which is a genetic disorder that leads to abnormal blood vessel formation.
 
 
-## Prognosis of Brain AVMs
+
+
+## Prognosis
 
 The main risk associated with brain arteriovenous malformations (AVMs) is intracranial haemorrhage, which is bleeding inside the skull. This risk varies among patients and is difficult to measure because many patients with AVMs don't show symptoms and therefore never seek medical attention.
 
@@ -39,7 +39,6 @@ The earlier in life an AVM appears, the greater the likelihood of experiencing a
 
 #  Symptoms of AVMs {AVM}
 ---
-description: Symptoms caused by arteriovenous malformations, including seizures, bleeding, and neurological deficits depending on location.
 tags: AVM
 keywords: "AVM symptoms, seizures, brain haemorrhage, neurological signs, London"
 about: "Brain and spinal AVMs may cause seizures, haemorrhage, or neurological deficits depending on their size and site."
@@ -47,29 +46,27 @@ mainEntity: "https://www.mayoclinic.org/diseases-conditions/brain-avm/symptoms-c
 sameAs: "https://en.wikipedia.org/wiki/Arteriovenous_malformation#Signs_and_symptoms"
 ---
 
-Brain and spine arteriovenous malformations (AVMs) are abnormal tangles of blood vessels consisting of connections between the arteries and veins. They often do not cause any clinical problems until they rupture. AVMs can cause symptoms either by bleeding (rupturing), pressing on the brain or spinal cord, or by reducing the amount of oxygen reaching the brain tissue.
+AVMs often do not cause any clinical problems until they rupture. AVMs can cause symptoms either by bleeding (rupturing), pressing on the brain or spinal cord, or by reducing the amount of oxygen reaching the brain tissue.
 
 Symptoms might include the following:
+
+## Headaches
+
+Some people with AVMs experience headaches, while others never do. When headaches occur, they are often similar to migraines and can sometimes happen at the back of the head. Having headaches does not mean that the AVM is more likely to bleed. The risk of bleeding depends mainly on features seen on brain scans, not on whether headaches are present.
+
+Treatment for an AVM is usually focused on reducing the risk of bleeding. If headaches remain the main issue, they are often treated in the same way as other types of headache, with medicines and lifestyle measures tailored to the individual.
 
 ## Bleeding
 
 Brain AVMs may cause bleeding into the brain (haemorrhage), causing sudden, severe headaches, confusion, nausea, vomiting, and may lead to a loss of consciousness.
 
-
 ## Seizures
 
-Seizures are a sudden, uncontrolled electrical disturbance in the brain that can cause changes in behavior, movements, feelings, and levels of consciousness. They can range in severity, from virtually undetectable periods of inattention or staring to full-blown convulsions.
+Seizures are bursts of abnormal brain activity that can affect behaviour, movement, sensation, and awareness, ranging from brief staring to severe convulsions.
 
-Seizures can be categorized into focal (partial) and generalized (total) seizures:
+Focal seizures begin in one area of the brain and may or may not impair awareness, sometimes progressing to convulsions. Generalised seizures involve the whole brain, causing loss of consciousness, spasms, or convulsions, and include absence, tonic-clonic, atonic, and myoclonic types.
 
-1. **Focal (Partial) Seizures**: These seizures appear to result from abnormal activity in just one part of the brain. Focal seizures can occur without a loss of consciousness or with a change in consciousness. Symptoms might include sudden, jerky movements of one part of the body, distortions in hearing or seeing, stomach discomfort, or a sudden sense of fear. These seizures can also progress to a loss of consciousness and convulsions, a progression known as a focal-to-bilateral tonic-clonic seizure.
-
-2. **Generalized (Total) Seizures**: These seizures involve all areas of the brain. They can cause a loss of consciousness, falls, muscle spasms, or convulsions. Generalized seizures are further categorized into several types including absence (formerly known as petit mal), tonic-clonic (formerly known as grand mal), atonic, and myoclonic seizures.
-
-Convulsions refer to repeated, uncontrolled body movements. These are often seen in tonic-clonic seizures where the person may stiffen and have jerking muscle activity. The person may also lose consciousness. Finally, a person's "level of consciousness" refers to their awareness of themselves and their environment. Changes in a person's level of consciousness include being fully awake, responsive, unresponsive, or anything in between.
-
-In the context of AVMs, these symptoms can result from the AVM disrupting the normal electrical activity of the brain.
-
+Convulsions are uncontrolled movements, often with stiffening, jerking, and loss of consciousness. In AVMs, seizures arise when the malformation disrupts normal electrical activity.
 
 ## Neurological Symptoms
 
@@ -97,11 +94,16 @@ For a more detailed view, a computerized tomography angiogram (CTA) may be perfo
 
 **Magnetic Resonance Imaging (MRI)**
 
-MRI is more sensitive than CT in diagnosing AVMs and provides better information about the exact location of the malformation. MRI uses a powerful magnetic field and radio waves to create detailed images of the brain and other structures. An MRI can provide a clear, detailed view of the brain's soft tissues, making it particularly useful in imaging AVMs. For even more detailed imaging, a magnetic resonance angiogram (MRA) can be performed, similar to a CTA, a contrast agent is injected into the bloodstream to highlight the blood vessels.
+MRI is more sensitive than CT in diagnosing AVMs and provides better information about the exact location of the malformation (@fig:mri_avm). MRI uses a powerful magnetic field and radio waves to create detailed images of the brain and other structures. An MRI can provide a clear, detailed view of the brain's soft tissues, making it particularly useful in imaging AVMs. For even more detailed imaging, a magnetic resonance angiogram (MRA) can be performed, similar to a CTA, a contrast agent is injected into the bloodstream to highlight the blood vessels.
+
+![MRI of an AVM. ](img/mri_avm-360.webp){#fig:mri_avm}
 
 **Cerebral Angiography**
 
-Cerebral angiography, sometimes also called a cerebral arteriogram, provides the most detailed images of a cerebral AVM. This procedure involves threading a catheter (a thin, flexible tube) through an artery in the arm or leg up to the arteries in the head. A contrast agent is then injected through the catheter. As the contrast agent flows through the blood vessels of the brain, a sequence of X-ray images are taken. These images can provide a highly detailed view of the AVM, showing the exact location, size, and the blood flow pattern.
+Cerebral angiography, sometimes also called a cerebral arteriogram, provides the most detailed images of a cerebral AVM (@fig:avm_angio). This procedure involves threading a catheter (a thin, flexible tube) through an artery in the arm or leg up to the arteries in the head. A contrast agent is then injected through the catheter. As the contrast agent flows through the blood vessels of the brain, a sequence of X-ray images are taken. These images can provide a highly detailed view of the AVM, showing the exact location, size, and the blood flow pattern.
+
+![Cerebral angiogram of an AVM located in the occipital lobe (back of the brain). ](img/avm_angio-360.webp){#fig:avm_angio}
+
 
 
 #  Treatment of AVMs {AVM}
@@ -119,19 +121,20 @@ The treatment of brain arteriovenous malformations (AVMs) depends on several fac
 
 **Medical Treatment**
 
-Anticonvulsant medications, such as phenytoin, are used to control seizures. Other medications or procedures can be employed to relieve pressure inside the skull caused by the AVM. Curative treatment may be required eventually to prevent  haemorrhage. However, all interventions come with some risk of causing neurological deficits.
-
-**Surgical Treatment**
-
-Surgical removal of the involved blood vessels is a preferred treatment for many types of AVMs. In this procedure, a neurosurgeon temporarily removes part of the skull (craniotomy), separates the AVM from the surrounding brain tissue, and removes (resects) the abnormal vessels. This method can result in an immediate, complete removal of the AVM, but the risks depend on the size and location of the malformation. Not all AVMs are suitable for surgical treatment, and the decision depends on several factors, including the AVM's size, location, and the patient's overall health status.
-
-**Radiosurgical Treatment**
-
-Radiosurgery, such as Gamma Knife therapy, can successfully treat small and medium sized AVMs. This method precisely delivers controlled radiation doses to the AVM area in the brain. While radiosurgery does not require an incision or craniotomy, it may take three or more years to fully know the treatment's effects, during which time there's still a risk of bleeding. Some patients may need repeat treatments. Radiosurgery can also have risks such as headache, seizures, or permanent neurological deficits.
+Anticonvulsant medications, such as phenytoin, are used to control seizures. Other medications or procedures can be employed to relieve pressure inside the skull caused by the AVM. Curative treatment may eventually be required to prevent haemorrhage. However, all interventions carry some risk of causing neurological deficits.
 
 **Endovascular Treatment**
 
-Embolisation is a treatment approach performed by specialists known as interventional neuroradiologists. This procedure involves injecting substances into the blood vessels feeding the AVM to block them, reducing blood flow to the AVM. These substances are delivered via a catheter guided by real-time imaging. Embolisation may be the primary therapy, or an additional treatment before surgery or radiosurgery to reduce the AVM size.
+Embolisation is a treatment approach performed by specialists known as interventional neuroradiologists. This procedure involves injecting substances into the blood vessels feeding the AVM to block them, reducing blood flow to the AVM. These substances are delivered via a catheter guided by real-time imaging. Benefits include the minimally invasive nature of the treatment and the immediate effect compared with radiosurgery. Endovascular therapy can also access areas of the brain that would be high-risk surgically. The cure rate depends on the type of AVM, however, and not all AVMs are treated endovascularly as first-line therapy. Embolisation may also be used as an additional treatment before surgery or radiosurgery to reduce AVM size.
+
+**Surgical Treatment**
+
+Surgical removal of the involved blood vessels is a good option for many types of AVMs. In this procedure, a neurosurgeon temporarily removes part of the skull (craniotomy), separates the AVM from the surrounding brain tissue, and removes (resects) the abnormal vessels. This method can result in immediate, complete removal of the AVM, but the risks depend on the size and location of the malformation. Not all AVMs are suitable for surgical treatment, and the decision depends on several factors, including the AVM's size, location, and the patient's overall health.
+
+**Radiosurgical Treatment**
+
+Radiosurgery, such as Gamma Knife therapy, can successfully treat small and medium-sized AVMs. This method precisely delivers controlled doses of radiation to the AVM area in the brain. While radiosurgery does not require an incision or craniotomy, it may take three or more years to fully assess the treatment's effects, during which time there is still a risk of bleeding. Some patients may need repeat treatments. Radiosurgery can also carry risks such as headache, seizures, or permanent neurological deficits.
+
 
 #  Further information {AVM}
 ---
@@ -176,9 +179,9 @@ sameAs: "https://en.wikipedia.org/wiki/Dural_arteriovenous_fistula"
 
 A dural arteriovenous fistula (DAVF) is an abnormal connection between the arteries and veins of the brain.
 
-Normally a fine network of microscopic capillaries connects arteries and veins in all tissues including the brain. Capillaries assist in slowing down the blood flow between arteries and veins. A DAVF is a tangle of feeding arteries and draining veins in the brain that have abnormal connections which bypass the normal capillaries. The word “dura” refers to the membrane covering the brain and spinal cord. The high pressure blood flowing from arteries directly into thinner walled draining veins or venous sinuses results in a risk of brain haemorrhage (bleeding). This abnormal blood flow between arteries and veins is called a shunt. DAVF can vary in size, between a few millimetres to several centimetres and can occur anywhere in the dura directly outside of the brain or spinal cord.
+Normally a fine network of microscopic capillaries connects arteries and veins in all tissues including the brain (@fig:davf_diagram). Capillaries assist in slowing down the blood flow between arteries and veins. A DAVF is a tangle of feeding arteries and draining veins in the brain that have abnormal connections which bypass the normal capillaries. The word “dura” refers to the membrane covering the brain and spinal cord. The high pressure blood flowing from arteries directly into thinner walled draining veins or venous sinuses results in a risk of brain haemorrhage (bleeding). This abnormal blood flow between arteries and veins is called a shunt. DAVF can vary in size, between a few millimetres to several centimetres and can occur anywhere in the dura directly outside of the brain or spinal cord.
 
-![Dural fistulas. ](img/davf.svg)
+![Dural fistulas. ](img/davf.svg){#fig:davf_diagram}
 
 
 The exact cause of a dural arteriovenous fistula (DAVF) is often unknown. In most cases, DAVFs are not inherited but are thought to develop after events such as blood clots in the brain’s large draining veins (venous thrombosis), head injury, brain surgery, or infection.
@@ -190,7 +193,6 @@ Some patients have no symptoms, and the DAVF may be found incidentally on a CT o
 
 # Symptoms of DAVF {DAVF}
 ---
-description: The symptoms of dural arteriovenous fistulas, ranging from headaches and tinnitus to seizures and brain haemorrhage.
 tags: DAVF
 keywords: "DAVF symptoms, pulsatile tinnitus, brain haemorrhage, seizures, London"
 about: "Symptoms vary by DAVF location and blood flow, including headaches, neurological deficits, pulsatile tinnitus, seizures, and sometimes life-threatening haemorrhage."
@@ -199,7 +201,11 @@ sameAs: "https://en.wikipedia.org/wiki/Dural_arteriovenous_fistula#Signs_and_sym
 ---
 
 
-A dural arteriovenous fistula (DAVF) creates an abnormal connection between high-pressure arteries and low-pressure veins, bypassing the normal capillary network. This abnormal shunting of blood can cause a number of problems. The entry of arterial blood into the venous system raises venous pressure, and since veins are not designed to handle such force, they may stretch, dilate or even rupture, which can lead to bleeding in or around the brain. In some cases, blood flows backwards within the veins, a process known as venous reflux. This congestion reduces normal blood flow in parts of the brain or spinal cord, which over time can injure tissue and produce symptoms such as weakness, numbness or seizures. A DAVF may also divert blood away from healthy brain or spinal tissue, depriving it of oxygen and nutrients and thereby causing further neurological problems. The exact effects depend on the location of the fistula. For example, when a DAVF occurs near the ear, patients may develop pulsatile tinnitus, a rhythmic whooshing sound that follows the heartbeat.
+A dural arteriovenous fistula (DAVF) creates an abnormal connection between high-pressure arteries and low-pressure veins, bypassing the normal capillary network. This abnormal shunting of blood can cause a number of problems. The entry of arterial blood into the venous system raises venous pressure, and since veins are not designed to handle such force, they may stretch, dilate or even rupture, which can lead to bleeding in or around the brain.
+
+In some cases, blood flows backwards within the veins, a process known as venous reflux. This congestion reduces normal blood flow in parts of the brain or spinal cord, which over time can injure tissue and produce symptoms such as weakness, numbness or seizures. A DAVF may also divert blood away from healthy brain or spinal tissue, depriving it of oxygen and nutrients and thereby causing further neurological problems such as early dementia.
+
+The exact effects depend on the location of the fistula. For example, when a DAVF occurs near the ear, patients may develop pulsatile tinnitus, a rhythmic whooshing sound that follows the heartbeat.
 
 Not everyone with a DAVF develops symptoms. When symptoms do occur, they can vary widely depending on the location of the DAVF and the way it affects blood flow. Some people develop symptoms gradually, while others may notice them suddenly.
 
@@ -231,7 +237,6 @@ Not everyone with a DAVF develops symptoms. When symptoms do occur, they can var
 
 # Diagnosis of DAVF {DAVF}
 ---
-description: Explains how DAVFs are diagnosed, including CT, MRI, CTA, MRA, and digital subtraction angiography.
 tags: DAVF
 keywords: "DAVF diagnosis, CT, MRI, angiography, London"
 about: "Diagnosis of DAVF uses a stepwise approach including medical history, CT, MRI, angiography and digital subtraction angiography, the gold standard for defining abnormal blood flow."
@@ -240,7 +245,7 @@ sameAs: "https://en.wikipedia.org/wiki/Dural_arteriovenous_fistula#Diagnosis"
 ---
 
 
-Diagnosing a dural arteriovenous fistula (DAVF) is a step-by-step process that involves various tests and examinations. The goal is not only to confirm the presence of a DAVF, but also to understand its size, location, and the precise pattern of abnormal blood flow. This helps us formulate a suitable treatment plan.
+Diagnosing a dural arteriovenous fistula (DAVF) is a step-by-step process that involves various tests and examinations. The goal is not only to confirm the presence of a DAVF, but also to understand its risk, size, location, and the precise pattern of abnormal blood flow. This helps us formulate a suitable treatment plan.
 
 ## Medical History and Physical Examination
 
@@ -282,9 +287,11 @@ The goals of treating a dural arteriovenous fistula are twofold: to relieve symp
 
 Dural arteriovenous fistula (DAVF) embolisation is carried out under general anaesthesia in the angiography suite and typically takes between one and three hours. A multidisciplinary team of radiologists, radiographers, anaesthetists and nurses monitors the patient closely throughout.
 
-The procedure begins with the insertion of a thin, flexible plastic tube (catheter) into either the femoral artery in the groin or an artery in the wrist. The catheter is advanced through the aorta into the cerebral arteries of the neck and brain. Once the most accessible feeding vessel is identified, additional catheters, including a microcatheter, are introduced to reach the point of the fistulous connection. Embolic material, often glue-like in consistency, is then injected to occlude the DAVF. In some cases, small platinum coils are deployed in addition. The embolic material forms an artificial clot, preventing further abnormal blood flow into the fistula. X-rays are obtained throughout to confirm successful obliteration.
+The procedure begins with the insertion of a thin, flexible plastic tube (catheter) into either the femoral artery in the groin or an artery in the wrist. The catheter is advanced through the aorta into the cerebral arteries of the neck and brain. Once the most accessible feeding vessel is identified, additional catheters, including a microcatheter, are introduced to reach the point of the fistulous connection (@fig:davf_embo). Embolic material, often glue-like in consistency, is then injected to occlude the DAVF. In some cases, small platinum coils are deployed in addition. The embolic material forms an artificial clot, preventing further abnormal blood flow into the fistula. X-rays are obtained throughout to confirm successful obliteration.
 
 At the end of the procedure, the catheters are removed and the puncture site in the groin or wrist is sealed with a collagen plug or controlled manually to prevent bleeding. The procedure usually takes 2–3 hours.
+
+![Dural fistula embolisation. (A) A DAVF is seen towards the top of the head. (B) Coils are placed, blocking the blood flow. (C) The fistula is gone at the end of the procedure. ](img/davf_embo.webp){#fig:davf_embo}
 
 
 ## Will it hurt?
@@ -294,24 +301,28 @@ The procedure is performed under general anaesthesia, so no pain is experienced 
 
 ## What are the risks of DAVF embolisation?
 
-All medical procedures carry risks, and for dural arteriovenous fistula (DAVF) embolisation these depend on the size, position and configuration of the vessels. In some cases, safe treatment may not be possible.
+All medical procedures carry risks, and for dural arteriovenous fistula (DAVF) embolisation these depend on the size, position and configuration of the vessels.
 
-An iodine-based contrast agent is used to visualise the blood vessels on X-ray. While usually safe, it can occasionally cause allergic reactions and may affect kidney function, especially in patients with pre-existing kidney disease. A blood test may be required beforehand. The procedure is performed under general anaesthetic, and its risks will be discussed by the anaesthetist.
+1. **Contrast dye risks** – The iodine-based dye used to show the blood vessels on X-ray can occasionally cause an allergic reaction (ranging from mild rash to severe reaction needing urgent treatment) and can sometimes affect kidney function, especially in people with pre-existing kidney problems. A blood test may be done beforehand to check kidney function.
 
-Serious complications are uncommon but can occur. Stroke is the main risk, seen in about 5% of cases, and may cause weakness, speech or visual problems, which can be temporary or permanent. A very rare risk of severe brain injury resulting in death exists, estimated at about 1%.
+2. **Risks of the general anaesthetic** – As with any general anaesthetic, there are some risks such as sickness or sore throat, and very rarely more serious complications.
 
-Radiation from X-rays carries a very small long-term cancer risk and can rarely cause temporary hair loss or skin redness. Patients of childbearing capacity aged 12–55 must be asked about pregnancy before treatment.
+3. **Stroke** – The main risk of the procedure is stroke, which occurs in about 5 in every 100 people. A stroke can cause weakness, problems with speech, or changes in vision. These effects can sometimes be temporary but may also be permanent.
 
-Bruising at the access site in the groin or wrist is common and usually minor, though rarely it may enlarge and require further treatment, including surgery.
+4. **Severe brain injury or death** – There is a very rare risk of a severe brain injury that can result in death, estimated at about 1 in every 100 patients.
+
+5. **Radiation exposure** – The X-rays used carry a very small long-term risk of developing cancer, and very occasionally can cause temporary hair loss or skin redness around the treated area.
+
+6. **Bruising at the access site** – The procedure is usually done through a small tube in the wrist or groin. Bruising in this area is common and generally minor, though rarely the bruise can become large and may need further treatment, including surgery.
 
 
 ## Are there any alternatives?
 
-Surgical excision is an alternative treatment in which a craniotomy (skull incision) is performed to directly access the DAVF. The feeding arteries and draining veins are then clipped and disconnected. This is a well-established but more invasive treatment that can provide lasting protection against rupture or haemorrhage. Surgical excision carries its own specific risks, which are discussed in detail by the neurosurgeon.
+Surgical excision is an alternative treatment in which a craniotomy (skull incision) is performed to directly access the DAVF. The feeding arteries and draining veins are then clipped and disconnected. This is a well-established but more invasive treatment that can provide lasting protection against rupture or haemorrhage. Surgical excision also carries its own specific risks.
 
 ## What happens after the embolisation?
 
-On arrival to the ward, a period of bed rest is required for recovery. During this time, the nursing staff carry out regular checks, including inspection of the catheter entry site in the groin to ensure there is no bleeding. If bleeding occurs, the period of rest is extended. Some bruising and soreness around the groin is common, but most patients experience little or no after effects.
+On arrival to the ward, a period of bed rest is required for recovery. During this time, the nursing staff carry out regular checks, including inspection of the catheter entry site in the groin to ensure there is no bleeding. If bleeding occurs, the period of rest is extended. Some bruising and soreness around the groin is common, but most patients experience little or no after effects. Most commonly patients go home the day after treatment.
 
 # Introduction to spinal vascular disease {Spinal}
 ---

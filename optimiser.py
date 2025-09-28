@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
 """
-Website Image Optimiser + Responsive Variants + Template Updater + Optional Cleanup
-+ Dimensions CSV + HTML width/height injection + lazy loading
+Website Image Optimiser + Responsive Variants + Template Updater
 
 Key points:
-- Converts only non-WebP sources.
-- If img/Originals/ exists, rebuilds from there (non-WebP only) into img/.
-- If Originals/ is missing, uses non-WebP in img/ and backs them up to Originals/.
+- Converts only non-WebP sources from img/Originals/ into img/.
 - You can delete all WebP in img/ and rerun to restore from Originals/.
 - Repairs old/broken HTML like src="img/rcr-360-360.webp" by inferring the stem and inserting correct src, srcset, sizes, width/height, lazy and decoding.
 
@@ -15,7 +12,6 @@ Requires: Python 3.8+, ImageMagick, Pillow
 
 import argparse
 import concurrent.futures as cf
-import csv
 import fnmatch
 import json
 import os
@@ -32,11 +28,10 @@ except ImportError:
     print("Pillow is required. Install with: pip install pillow", file=sys.stderr)
     sys.exit(1)
 
-IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".gif", ".webp"}  # SVG excluded
-RASTER_EXTS = {".png", ".jpg", ".jpeg", ".gif"}          # non-WebP
+# TIFF enabled
+IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".tif", ".tiff"}  # SVG excluded
+RASTER_EXTS = {".png", ".jpg", ".jpeg", ".gif", ".tif", ".tiff"}          # non-WebP
 ORIGINALS_DIRNAME = "Originals"
-CONV_MAP_FILENAME = "conversion_map.txt"
-TEMPLATE_LOG_FILENAME = "template_updates.log"
 SIZES_JSON = "sizes.json"  # optional config in img/
 
 FNAME_CHARS = r"A-Za-z0-9._\-"
@@ -72,7 +67,8 @@ def find_imagemagick_bin(explicit: Optional[str] = None) -> Tuple[str, bool]:
     candidates = []
     if explicit:
         candidates.append(explicit)
-    candidates += ["convert", "magick"]
+    # Prefer IM v7 entrypoint
+    candidates += ["magick", "convert"]
     for exe in candidates:
         try:
             out = subprocess.run([exe, "-version"], capture_output=True, text=True)
@@ -100,18 +96,6 @@ def get_image_info(path: Path) -> Tuple[int, int, bool, str]:
         fmt = (im.format or "").upper()
         has_alpha = ("A" in mode) or (im.info.get("transparency") is not None)
         return w, h, has_alpha, fmt
-
-def backup_original(src: Path, originals_dir: Path) -> None:
-    """Backup src into Originals/ once (skip if already there)."""
-    try:
-        if originals_dir in src.parents:
-            return
-    except Exception:
-        pass
-    originals_dir.mkdir(exist_ok=True)
-    dst = originals_dir / src.name
-    if not dst.exists():
-        shutil.copy2(src, dst)
 
 def needs_processing(src: Path, dst: Path, overwrite: bool) -> bool:
     if overwrite or not dst.exists():
@@ -199,59 +183,38 @@ def read_size(path: Path, im_bin: str, requires_wrapper: bool) -> Optional[Tuple
     except Exception:
         return identify_size_with_im(im_bin, requires_wrapper, path)
 
-# ---------- CSV helpers ----------
+# ---------- Pillow fallback helpers ----------
 
-def write_dimensions_csv(img_dir: Path, images: List[Path], out_csv: Path, im_bin: str, requires_wrapper: bool) -> int:
-    rows = []
-    for p in images:
-        try:
-            size = read_size(p, im_bin, requires_wrapper)
-            if size:
-                w, h = size
-                fmt = ""
-                try:
-                    with Image.open(p) as im:
-                        fmt = im.format or ""
-                except Exception:
-                    fmt = ""
-                rows.append({
-                    "relative_path": str(p.relative_to(img_dir)),
-                    "filename": p.name,
-                    "width": w,
-                    "height": h,
-                    "format": fmt,
-                    "animated_gif": "yes" if (p.suffix.lower() == ".gif" and is_animated_gif(p)) else "no",
-                })
+def pillow_resize(im: Image.Image, target_width: int) -> Image.Image:
+    if target_width <= 0:
+        return im
+    w, h = im.size
+    if w <= target_width:
+        return im
+    new_h = max(1, int(round(h * (target_width / float(w)))))
+    return im.resize((target_width, new_h), Image.LANCZOS)
+
+def save_webp_with_pillow(src: Path, dst: Path, target_width: int, quality: int, use_lossless_for_alpha: bool) -> Optional[str]:
+    try:
+        with Image.open(src) as im:
+            if getattr(im, "n_frames", 1) > 1:
+                im.seek(0)
+            im.load()
+            if im.mode not in ("RGB", "RGBA"):
+                im = im.convert("RGBA" if ("A" in im.mode) else "RGB")
+            im_resized = pillow_resize(im, target_width)
+            params = {}
+            if "A" in im_resized.mode and use_lossless_for_alpha:
+                params.update(lossless=True, method=6)
             else:
-                rows.append({
-                    "relative_path": str(p.relative_to(img_dir)),
-                    "filename": p.name,
-                    "width": "",
-                    "height": "",
-                    "format": "",
-                    "animated_gif": "",
-                    "error": "could not read size",
-                })
-        except Exception as e:
-            rows.append({
-                "relative_path": str(p.relative_to(img_dir)),
-                "filename": p.name,
-                "width": "",
-                "height": "",
-                "format": "",
-                "animated_gif": "",
-                "error": str(e),
-            })
-    out_csv.parent.mkdir(parents=True, exist_ok=True)
-    fieldnames = ["relative_path", "filename", "width", "height", "format", "animated_gif", "error"]
-    with out_csv.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        for r in rows:
-            if "error" not in r:
-                r["error"] = ""
-            writer.writerow(r)
-    return len(rows)
+                params.update(quality=int(quality), method=6)
+            ensure_dir(dst)
+            im_resized.save(dst, format="WEBP", **params)
+        return None
+    except Exception as e:
+        return str(e)
+
+# ---------- Build dimensions maps for HTML updates ----------
 
 def build_dims_maps(img_dir: Path, images: List[Path], im_bin: str, requires_wrapper: bool) -> Tuple[Dict[str, Tuple[int,int]], Dict[str, Tuple[int,int]]]:
     by_basename: Dict[str, Tuple[int,int]] = {}
@@ -269,7 +232,6 @@ def build_dims_maps(img_dir: Path, images: List[Path], im_bin: str, requires_wra
 # ---------- Variant generation ----------
 
 def variant_name(stem: str, width: int) -> str:
-    # width only
     return f"{stem}-{width}.webp"
 
 def generate_variants_for(
@@ -298,7 +260,10 @@ def generate_variants_for(
             ensure_dir(dst)
             proc = subprocess.run(cmd, capture_output=True, text=True)
             if proc.returncode != 0:
-                return created, None, f"ERR   {src.name} [{width}x{height}] variant {w}: {proc.stderr.strip() or proc.stdout.strip()}"
+                # Pillow fallback
+                err = save_webp_with_pillow(src, dst, w, quality, use_lossless_for_alpha)
+                if err is not None:
+                    return created, None, f"ERR   {src.name} [{width}x{height}] variant {w}: {proc.stderr.strip() or proc.stdout.strip()} | pillow: {err}"
         created.append((w, dst))
 
     largest_dst = out_dir / f"{stem}.webp"
@@ -307,7 +272,10 @@ def generate_variants_for(
         ensure_dir(largest_dst)
         proc = subprocess.run(cmd, capture_output=True, text=True)
         if proc.returncode != 0:
-            return created, None, f"ERR   {src.name} base {max_w}: {proc.stderr.strip() or proc.stdout.strip()}"
+            # Pillow fallback
+            err = save_webp_with_pillow(src, largest_dst, max_w, quality, use_lossless_for_alpha)
+            if err is not None:
+                return created, None, f"ERR   {src.name} base {max_w}: {proc.stderr.strip() or proc.stdout.strip()} | pillow: {err}"
 
     if max_w not in [w for w, _ in created]:
         created.append((max_w, largest_dst))
@@ -352,7 +320,6 @@ def build_srcset_candidates(img_dir: Path, stem_or_basename: str) -> List[Tuple[
         known_ws = [w for w, _ in candidates]
         base_w = max(known_ws) if known_ws else 99999
         candidates.append((base_w, f"img/{base.name}"))
-    # de-dup and sort
     dedup: Dict[str, int] = {}
     for w, url in candidates:
         dedup[url] = w
@@ -381,7 +348,6 @@ def inject_img_attributes(
     sizes_map: List[Tuple[str, str]],
     default_sizes: str,
     force_lazy: bool,
-    log_file: Path,
     dry_run: bool
 ) -> None:
     targets = []
@@ -393,101 +359,89 @@ def inject_img_attributes(
     if not targets:
         return
 
-    with open(log_file, "a", encoding="utf-8") as log:
-        for file_path in targets:
+    for file_path in targets:
+        try:
             try:
-                try:
-                    text = file_path.read_text(encoding="utf-8")
-                except UnicodeDecodeError:
-                    text = file_path.read_text(encoding="latin-1")
-            except FileNotFoundError:
-                print(f"SKIP {file_path.relative_to(root)}  vanished during scan")
-                continue
-            except Exception as e:
-                print(f"SKIP {file_path.relative_to(root)}  read error: {e}")
-                continue
+                text = file_path.read_text(encoding="utf-8")
+            except UnicodeDecodeError:
+                text = file_path.read_text(encoding="latin-1")
+        except FileNotFoundError:
+            print(f"SKIP {file_path.relative_to(root)}  vanished during scan")
+            continue
+        except Exception as e:
+            print(f"SKIP {file_path.relative_to(root)}  read error: {e}")
+            continue
 
-            original = text
-            edits = 0
-            replacements = []
+        original = text
+        edits = 0
 
-            def repl(m: re.Match) -> str:
-                nonlocal edits
-                tag = m.group(0)
-                src = m.group("src").strip()
+        def repl(m: re.Match) -> str:
+            nonlocal edits
+            tag = m.group(0)
+            src = m.group("src").strip()
 
-                # only local paths inside img/
-                if not (src.startswith("img/") or src.startswith("/img/")):
-                    return tag
-                if src.lower().endswith(".svg") or src.lower().startswith("data:"):
-                    return tag
-
-                # normalise to "img/..."
-                key_rel = src[1:] if src.startswith("/") else src
-                basename = Path(key_rel).name
-
-                # Detect and repair bogus names like stem-360-360.webp or stem-800x800.webp
-                bogus = BOGUS_WEBP_RE.match(basename)
-                if bogus:
-                    stem = bogus.group("stem")
-                    basename = f"{stem}.webp"  # treat as if correct base
-                else:
-                    stem = os.path.splitext(basename)[0]
-
-                # width/height
-                dims = dims_by_rel.get(key_rel) or dims_by_base.get(basename)
-                if dims:
-                    w, h = dims
-                    if not WIDTH_RE.search(tag):
-                        tag = insert_or_replace_attr(tag, "width", str(w))
-                    if not HEIGHT_RE.search(tag):
-                        tag = insert_or_replace_attr(tag, "height", str(h))
-
-                # srcset + sizes
-                candidates = build_srcset_candidates(img_dir, stem)
-                if candidates:
-                    srcset_str = ", ".join([f"{url} {width}w" for width, url in candidates])
-                    tag = insert_or_replace_attr(tag, "srcset", srcset_str)
-
-                    sizes_val = find_sizes_for(basename, sizes_map, default_sizes)
-                    tag = insert_or_replace_attr(tag, "sizes", sizes_val)
-
-                    # Always use base {stem}.webp as fallback src if present
-                    base_path = img_dir / f"{stem}.webp"
-                    if base_path.exists():
-                        tag = insert_or_replace_attr(tag, "src", f"img/{base_path.name}")
-                    else:
-                        smallest_url = candidates[0][1]
-                        tag = insert_or_replace_attr(tag, "src", smallest_url)
-
-                # lazy and decoding
-                tag_lower = tag.lower()
-                is_priority = ("data-lcp" in tag_lower) or ('fetchpriority="high"' in tag_lower)
-                if force_lazy and not is_priority and not LOADING_RE.search(tag):
-                    tag = insert_or_replace_attr(tag, "loading", "lazy")
-                if not DECODING_RE.search(tag):
-                    tag = insert_or_replace_attr(tag, "decoding", "async")
-
-                edits += 1
-                replacements.append((basename, "updated"))
+            if not (src.startswith("img/") or src.startswith("/img/")):
+                return tag
+            if src.lower().endswith(".svg") or src.lower().startswith("data:"):
                 return tag
 
-            text = IMG_TAG_RE.sub(repl, text)
+            key_rel = src[1:] if src.startswith("/") else src
+            basename = Path(key_rel).name
 
-            if edits and text != original:
-                backup_dir = file_path.parent / "Backup"
-                if not dry_run:
-                    ensure_backup(file_path, backup_dir)
-                    write_text_atomic(file_path, text)
-                for base, _ in replacements:
-                    log.write(f"{file_path.relative_to(root)} :: responsive attrs for {base}\n")
-                print(f"{'DRY  ' if dry_run else 'EDIT '}{file_path.relative_to(root)}  responsive updates: {edits}")
+            bogus = BOGUS_WEBP_RE.match(basename)
+            if bogus:
+                stem = bogus.group("stem")
+                basename = f"{stem}.webp"
             else:
-                print(f"SKIP {file_path.relative_to(root)}  no responsive changes")
+                stem = os.path.splitext(basename)[0]
+
+            dims = dims_by_rel.get(key_rel) or dims_by_base.get(basename)
+            if dims:
+                w, h = dims
+                if not WIDTH_RE.search(tag):
+                    tag = insert_or_replace_attr(tag, "width", str(w))
+                if not HEIGHT_RE.search(tag):
+                    tag = insert_or_replace_attr(tag, "height", str(h))
+
+            candidates = build_srcset_candidates(img_dir, stem)
+            if candidates:
+                srcset_str = ", ".join([f"{url} {width}w" for width, url in candidates])
+                tag = insert_or_replace_attr(tag, "srcset", srcset_str)
+
+                sizes_val = find_sizes_for(basename, sizes_map, default_sizes)
+                tag = insert_or_replace_attr(tag, "sizes", sizes_val)
+
+                base_path = img_dir / f"{stem}.webp"
+                if base_path.exists():
+                    tag = insert_or_replace_attr(tag, "src", f"img/{base_path.name}")
+                else:
+                    smallest_url = candidates[0][1]
+                    tag = insert_or_replace_attr(tag, "src", smallest_url)
+
+            tag_lower = tag.lower()
+            is_priority = ("data-lcp" in tag_lower) or ('fetchpriority="high"' in tag_lower)
+            if force_lazy and not is_priority and not LOADING_RE.search(tag):
+                tag = insert_or_replace_attr(tag, "loading", "lazy")
+            if not DECODING_RE.search(tag):
+                tag = insert_or_replace_attr(tag, "decoding", "async")
+
+            edits += 1
+            return tag
+
+        text = IMG_TAG_RE.sub(repl, text)
+
+        if edits and text != original:
+            backup_dir = file_path.parent / "Backup"
+            if not dry_run:
+                ensure_backup(file_path, backup_dir)
+                write_text_atomic(file_path, text)
+            print(f"{'DRY  ' if dry_run else 'EDIT '}{file_path.relative_to(root)}  responsive updates: {edits}")
+        else:
+            print(f"SKIP {file_path.relative_to(root)}  no responsive changes")
 
 # ---------- Template filename replacements (legacy) ----------
 
-def update_templates_filenames(root: Path, mapping: Dict[str, str], log_file: Path, dry_run: bool) -> None:
+def update_templates_filenames(root: Path, mapping: Dict[str, str], dry_run: bool) -> None:
     templates_dir = root / "templates"
     master_dir = root / "master"
     targets = []
@@ -502,47 +456,43 @@ def update_templates_filenames(root: Path, mapping: Dict[str, str], log_file: Pa
 
     patterns = {old: build_safe_pattern(old) for old in mapping}
 
-    with open(log_file, "a", encoding="utf-8") as log:
-        for file_path in targets:
+    for file_path in targets:
+        try:
             try:
-                try:
-                    text = file_path.read_text(encoding="utf-8")
-                except UnicodeDecodeError:
-                    text = file_path.read_text(encoding="latin-1")
-            except FileNotFoundError:
-                print(f"SKIP {file_path.relative_to(root)}  vanished during scan")
-                continue
-            except Exception as e:
-                print(f"SKIP {file_path.relative_to(root)}  read error: {e}")
-                continue
+                text = file_path.read_text(encoding="utf-8")
+            except UnicodeDecodeError:
+                text = file_path.read_text(encoding="latin-1")
+        except FileNotFoundError:
+            print(f"SKIP {file_path.relative_to(root)}  vanished during scan")
+            continue
+        except Exception as e:
+            print(f"SKIP {file_path.relative_to(root)}  read error: {e}")
+            continue
 
-            original_text = text
-            applied = []
+        original_text = text
+        applied = []
 
-            for old, new in mapping.items():
-                pat = patterns[old]
-                new_text, count = pat.subn(new, text)
-                if count > 0:
-                    text = new_text
-                    applied.append((old, new, count))
+        for old, new in mapping.items():
+            pat = patterns[old]
+            new_text, count = pat.subn(new, text)
+            if count > 0:
+                text = new_text
+                applied.append((old, new, count))
 
-            if applied and text != original_text:
-                if not dry_run:
-                    ensure_backup(file_path, file_path.parent / "Backup")
-                    write_text_atomic(file_path, text)
-                for old, new, count in applied:
-                    log.write(f"{file_path.relative_to(root)} :: {old} -> {new} ({count} repl)\n")
-                action = "DRY  " if dry_run else "EDIT "
-                print(f"{action}{file_path.relative_to(root)}  replacements: {len(applied)}")
-            else:
-                print(f"SKIP {file_path.relative_to(root)}  no filename matches")
+        if applied and text != original_text:
+            if not dry_run:
+                ensure_backup(file_path, file_path.parent / "Backup")
+                write_text_atomic(file_path, text)
+            action = "DRY  " if dry_run else "EDIT "
+            print(f"{action}{file_path.relative_to(root)}  replacements: {len(applied)}")
+        else:
+            print(f"SKIP {file_path.relative_to(root)}  no filename matches")
 
 # ---------- Main processing ----------
 
 def process_one(
     src: Path,
     out_dir: Path,
-    originals_dir: Path,
     im_bin: str,
     requires_wrapper: bool,
     variant_widths: Sequence[int],
@@ -550,8 +500,6 @@ def process_one(
     use_lossless_for_alpha: bool,
     overwrite: bool,
     dry_run: bool,
-    remove_originals: bool,
-    deletion_log: List[str],
 ) -> Tuple[str, Optional[List[Tuple[str, str]]]]:
     """
     Returns status string and optional [(old_name, new_name), ...] mappings.
@@ -564,10 +512,6 @@ def process_one(
             return f"SKIP  WebP source ignored: {src.name}", None
         if is_animated_gif(src):
             return f"SKIP  Animated GIF not processed: {src.name}", None
-
-        # Backup if source is not already in Originals
-        if originals_dir not in src.parents:
-            backup_original(src, originals_dir)
 
         if dry_run:
             base_name = f"{src.stem}.webp"
@@ -587,14 +531,6 @@ def process_one(
         if base_path is None:
             return status, None
 
-        # Optionally remove original rasters if they live in img/ (never delete from Originals/)
-        if remove_originals and (src.suffix.lower() in RASTER_EXTS) and (out_dir in src.parents):
-            try:
-                src.unlink()
-                deletion_log.append(f"Removed original raster from img/: {src.name}")
-            except Exception as e:
-                deletion_log.append(f"Failed to remove {src.name}: {e}")
-
         pairs: List[Tuple[str, str]] = [(src.name, base_path.name)]
         return status, pairs
 
@@ -604,7 +540,7 @@ def process_one(
 def main():
     parser = argparse.ArgumentParser(description="Optimise images in img/ with responsive variants and update HTML.")
     parser.add_argument("--root", default=".", help="Project root containing img/, templates/, master/")
-    parser.add_argument("--recursive", action="store_true", help="Recurse into sources and img/ subfolders")
+    parser.add_argument("--recursive", action="store_true", help="Recurse into Originals/ subfolders")
     parser.add_argument("--variant-widths", type=parse_variant_widths, default="360,720,1200",
                         help="Comma-separated widths to generate (e.g. 360,720,1200)")
     parser.add_argument("--quality", type=int, default=80, help="WebP quality for lossy output")
@@ -612,12 +548,7 @@ def main():
     parser.add_argument("--threads", type=int, default=os.cpu_count() or 4, help="Worker threads")
     parser.add_argument("--overwrite", action="store_true", help="Recreate WebP even if up to date")
     parser.add_argument("--dry-run", action="store_true", help="Show planned actions only")
-    parser.add_argument("--remove-originals", action="store_true", help="Remove .png/.jpg/.jpeg/.gif in img/ after successful WebP creation and backup")
     parser.add_argument("--imagemagick-bin", default=None, help='ImageMagick binary. For example "convert" or "magick"')
-
-    # Dimensions CSV options
-    parser.add_argument("--no-dimensions", action="store_true", help="Do not write the dimensions CSV")
-    parser.add_argument("--dimensions-out", default=None, help="Path to write dimensions CSV (default: img/image_dimensions.csv)")
 
     # HTML control
     parser.add_argument("--default-sizes", default="(max-width: 768px) 90vw, 356px",
@@ -637,40 +568,28 @@ def main():
         sys.exit(1)
 
     originals_dir = img_dir / ORIGINALS_DIRNAME
-    conv_map_path = img_dir / CONV_MAP_FILENAME
-    template_log_path = img_dir / TEMPLATE_LOG_FILENAME
-    dims_csv_path = Path(args.dimensions_out) if args.dimensions_out else (img_dir / "image_dimensions.csv")
+    if not originals_dir.exists():
+        print(f"{ORIGINALS_DIRNAME}/ not found under img/. Please place sources in img/{ORIGINALS_DIRNAME}/", file=sys.stderr)
+        sys.exit(1)
 
     im_bin, requires_wrapper = find_imagemagick_bin(args.imagemagick_bin)
 
-    # Determine source set: prefer Originals/ (non-WebP only). Else use non-WebP in img/ and back them up.
-    if originals_dir.exists():
-        sources = collect_non_webp_sources(originals_dir, args.recursive)
-        source_origin = f"{ORIGINALS_DIRNAME}/"
-    else:
-        sources = collect_non_webp_sources(img_dir, args.recursive)
-        source_origin = "img/ (backing up to Originals/)"
+    # Source set: always from Originals/ (non-WebP only)
+    sources = collect_non_webp_sources(originals_dir, args.recursive)
 
-    # Current files in img/ for CSV and HTML map
-    images_now = collect_images(img_dir, args.recursive)
-    if images_now and not args.no_dimensions:
-        count = write_dimensions_csv(img_dir, images_now, dims_csv_path, im_bin, requires_wrapper)
-        print(f"Wrote {count} entries to {dims_csv_path}")
-
-    print(f"Source set: {len(sources)} non-WebP file(s) from {source_origin}")
+    print(f"Source set: {len(sources)} non-WebP file(s) from {ORIGINALS_DIRNAME}/")
     print(f"Outputs -> {img_dir}")
     print(f"Variants: {args.variant_widths} px, quality={args.quality}, lossless alpha={'on' if args.lossless_alpha else 'off'}")
-    print(f"Threads={args.threads}, overwrite={'on' if args.overwrite else 'off'}, dry-run={'on' if args.dry_run else 'off'}, remove originals from img/={'on' if args.remove_originals else 'off'}")
+    print(f"Threads={args.threads}, overwrite={'on' if args.overwrite else 'off'}, dry-run={'on' if args.dry_run else 'off'}")
 
     mapping_pairs: List[Tuple[str, str]] = []
-    deletion_log: List[str] = []
 
     work = []
     for p in sources:
         work.append((
-            p, img_dir, originals_dir, im_bin, requires_wrapper,
+            p, img_dir, im_bin, requires_wrapper,
             args.variant_widths, args.quality, args.lossless_alpha,
-            args.overwrite, args.dry_run, args.remove_originals, deletion_log
+            args.overwrite, args.dry_run
         ))
 
     with cf.ThreadPoolExecutor(max_workers=args.threads) as ex:
@@ -681,19 +600,16 @@ def main():
             if pairs:
                 mapping_pairs.extend(pairs)
 
+    # Build mapping old->new names for legacy template replacements
     mapping: Dict[str, str] = {}
     for old_name, new_name in mapping_pairs:
         mapping[old_name] = new_name
 
-    if not args.dry_run and mapping:
-        with open(conv_map_path, "w", encoding="utf-8") as f:
-            for old, new in sorted(mapping.items()):
-                f.write(f"{old} -> {new}\n")
-        print(f"Wrote conversion map: {conv_map_path}")
-
+    # Legacy template filename replacements (optional)
     if mapping and (templates_dir.exists() or master_dir.exists()):
-        update_templates_filenames(root=root, mapping=mapping, log_file=template_log_path, dry_run=args.dry_run)
+        update_templates_filenames(root=root, mapping=mapping, dry_run=args.dry_run)
 
+    # Responsive HTML updates
     if not args.no_html_update:
         all_imgs_now = collect_images(img_dir, args.recursive)
         dims_by_base, dims_by_rel = build_dims_maps(img_dir, all_imgs_now, im_bin, requires_wrapper)
@@ -706,18 +622,10 @@ def main():
             sizes_map=sizes_map,
             default_sizes=args.default_sizes,
             force_lazy=(not args.no_lazy),
-            log_file=template_log_path,
             dry_run=args.dry_run
         )
-        if not args.dry_run:
-            print(f"Template update log: {template_log_path}")
     else:
         print("HTML responsive updates skipped (--no-html-update).")
-
-    if not args.dry_run and deletion_log:
-        with open(template_log_path, "a", encoding="utf-8") as log:
-            for line in deletion_log:
-                log.write(f"{line}\n")
 
 if __name__ == "__main__":
     main()
