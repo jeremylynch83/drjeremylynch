@@ -1886,3 +1886,116 @@ body.scrolled .navbar-brand img {
 .carousel-indicators [data-bs-target] {
     background-color: #005eb8;
 }
+
+.lead {
+    font-weight: 400; /* normal */
+}
+
+.next-link {
+    font-weight: 600;
+}
+
+/* Card container */
+.link_guide {
+    position: relative;
+    background: #cbd1dc;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 2rem 0;
+    padding: clamp(1.25rem, 3vw, 3rem);
+    /* reserve a right column for the image */
+    padding-right: clamp(280px, 40%, 560px);
+    min-height: 320px;
+}
+
+/* Extra gap between text and image */
+.link_guide > *:not(.guide-image) {
+    padding-right: 1.5rem;
+}
+
+/* Typography */
+.link_guide h2 {
+    margin: 0 0 1rem;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.2vw, 2.25rem); /* slightly smaller */
+    color: #111;
+}
+.link_guide p {
+    font-size: clamp(1rem, 1.2vw, 1.25rem);
+    line-height: 1.6;
+    margin: 0 0 1.5rem;
+    color: #333;
+}
+.link_guide p:last-child {
+    margin-bottom: 0;
+}
+
+/* List with ticks */
+.link_guide ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+.link_guide li {
+    position: relative;
+    margin: 0.5rem 0;
+    padding-left: 2rem;
+}
+.link_guide li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #fff;
+    color: #212529;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Button */
+.link_guide a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: #fff;
+    background: #212529;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Right image column */
+.link_guide .guide-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: clamp(280px, 40%, 560px);
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0;
+    border: 0;
+}
+
+/* Mobile: hide image entirely */
+@media (max-width: 768px) {
+    .link_guide {
+        padding: 1.25rem;
+        min-height: unset;
+        padding-right: 1.25rem; /* remove reserved image space */
+    }
+    .link_guide > *:not(.guide-image) {
+        padding-right: 0;
+    }
+    .link_guide .guide-image {
+        display: none;
+    }
+}

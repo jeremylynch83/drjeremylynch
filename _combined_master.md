@@ -672,6 +672,19 @@ Modern treatments now enable a broader range of aneurysm shapes and locations, w
 * Since **ISAT**, many ruptured aneurysms suitable for either approach are treated **endovascularly**, with better long-term outcomes than clipping.
 * Overall, endovascular therapy is becoming **safer** and **more durable**, with **shorter recovery** for many patients.
 
+::: {.link_guide}
+## Full guide to brain aneurysms
+
+Take control of your health with clear, expert information:
+
+- What brain aneurysms are
+- Diagnosis and treatment explained
+- When to seek help
+
+[Read the full detailed guide](Aneurysms_Introduction_to_brain_aneurysms.html)
+![](img/feature_aneurysm_rx.webp){.guide-image}
+:::
+
 # How long do you need to stay in hospital for a brain aneurysm? {features}
 ---
 description: What to expect when staying in hospital for treatment of a brain aneurysm.
@@ -713,6 +726,19 @@ Treatment may be either endovascular or surgical, but the general trend is towar
 * **Endovascular treatment** is minimally invasive, usually with a **quicker recovery** and early return to normal activities.
 * **Clipping** is more invasive, requiring a longer stay and a recovery that can take **weeks to months**.
 * For **ruptured aneurysms** (subarachnoid haemorrhage), hospital stay is usually **at least 14 days**, often with time in **ICU**. * The **ISAT trial** showed that endovascular treatment gives better long-term outcomes than surgery for many ruptured aneurysms.
+
+::: {.link_guide}
+## Full guide to brain aneurysms
+
+Take control of your health with clear, expert information:
+
+- What brain aneurysms are
+- Diagnosis and treatment explained
+- When to seek help
+
+[Read the full detailed guide](Aneurysms_Introduction_to_brain_aneurysms.html)
+![](img/feature_aneurysm_rx.webp){.guide-image}
+:::
 
 
 # Is brain aneurysm surgery high risk? {features}
@@ -779,7 +805,18 @@ Both clipping and endovascular procedures should be performed in hospitals with 
 * Newer technology and techniques are making endovascular treatment even safer.
 * These procedures are best performed in specialist centres with high volumes and access to **intensive care** support.
 
+::: {.link_guide}
+## Full guide to brain aneurysms
 
+Take control of your health with clear, expert information:
+
+- What brain aneurysms are
+- Diagnosis and treatment explained
+- When to seek help
+
+[Read the full detailed guide](Aneurysms_Introduction_to_brain_aneurysms.html)
+![](img/feature_aneurysm_rx.webp){.guide-image}
+:::
 
 # Can you prevent brain aneurysms? {features}
 ---
@@ -832,7 +869,18 @@ Finally, remember that the absolute risk of rupture in the general population is
 * **Reduce** risk by stopping smoking, controlling blood pressure, moderating alcohol, avoiding stimulants and maintaining overall vascular health. Consider aspirin only on clinician advice.
 * Most incidental aneurysms do not need treatment. When treatment is needed, both **clipping** and endovascular options are effective. Endovascular treatment is minimally invasive and often means a quicker recovery.
 
+::: {.link_guide}
+## Full guide to brain aneurysms
 
+Take control of your health with clear, expert information:
+
+- What brain aneurysms are
+- Diagnosis and treatment explained
+- When to seek help
+
+[Read the full detailed guide](Aneurysms_Introduction_to_brain_aneurysms.html)
+![](img/feature_aneurysm_rx.webp){.guide-image}
+:::
 
 
 # Who should be screened for brain aneurysms? {features}
@@ -892,6 +940,18 @@ If you are in a higher-risk group, your doctor can talk through whether screenin
 - The test of choice is an MRI-based scan called **MRA**.
 - The goal is to improve quality of life, not just to detect aneurysms.
 
+::: {.link_guide}
+## Full guide to brain aneurysms
+
+Take control of your health with clear, expert information:
+
+- What brain aneurysms are
+- Diagnosis and treatment explained
+- When to seek help
+
+[Read the full detailed guide](Aneurysms_Introduction_to_brain_aneurysms.html)
+![](img/feature_aneurysm_rx.webp){.guide-image}
+:::
 
 # What are the warning signs of a brain aneurysm? {features}
 ---
@@ -926,7 +986,18 @@ Call emergency services immediately if you develop a sudden, extremely severe he
 * Other warning signs include **neck** stiffness, vomiting, fainting, seizures and sudden weakness or speech problems.
 * Most unruptured aneurysms are **silent**, but large ones can cause pain behind the eye or double vision.
 
+::: {.link_guide}
+## Full guide to brain aneurysms
 
+Take control of your health with clear, expert information:
+
+- What brain aneurysms are
+- Diagnosis and treatment explained
+- When to seek help
+
+[Read the full detailed guide](Aneurysms_Introduction_to_brain_aneurysms.html)
+![](img/feature_aneurysm_rx.webp){.guide-image}
+:::
 
 # Living with an unruptured brain aneurysm {features}
 ---
@@ -966,6 +1037,18 @@ Your team will focus on blood pressure and other cardiovascular risks. Aspirin h
 * Monitoring includes tight control of risk **factors** and planned imaging follow-up.
 * Seek urgent care for a sudden, **worst-ever** headache or new neurological symptoms.
 
+::: {.link_guide}
+## Full guide to brain aneurysms
+
+Take control of your health with clear, expert information:
+
+- What brain aneurysms are
+- Diagnosis and treatment explained
+- When to seek help
+
+[Read the full detailed guide](Aneurysms_Introduction_to_brain_aneurysms.html)
+![](img/feature_aneurysm_rx.webp){.guide-image}
+:::
 
 # Can lifestyle changes reduce the risk of a brain aneurysm? {features}
 ---
@@ -1005,6 +1088,18 @@ Family history and certain genetic conditions such as autosomal dominant polycys
 - Aspirin may help in selected cases, but only under specialist advice.
 - Genetics and family history matter, and may guide screening, but lifestyle still counts.
 
+::: {.link_guide}
+## Full guide to brain aneurysms
+
+Take control of your health with clear, expert information:
+
+- What brain aneurysms are
+- Diagnosis and treatment explained
+- When to seek help
+
+[Read the full detailed guide](Aneurysms_Introduction_to_brain_aneurysms.html)
+![](img/feature_aneurysm_rx.webp){.guide-image}
+:::
 
 # Should I have my aneurysm clipped or coiled? {features}
 ---
@@ -1094,7 +1189,18 @@ Yes. Typically, follow-up scans are performed with **MRA** (magnetic resonance a
 * Both treatments are **very effective**, and the risk of bleeding afterwards is **extremely low**.
 * Ultimately this is a **personal decision**, and the final choice depends on your own preferences and circumstances. We encourage you to talk to different specialists, and possibly also to those who have undergone treatment, to get as much information as you can before making the decision.
 
+::: {.link_guide}
+## Full guide to brain aneurysms
 
+Take control of your health with clear, expert information:
+
+- What brain aneurysms are
+- Diagnosis and treatment explained
+- When to seek help
+
+[Read the full detailed guide](Aneurysms_Introduction_to_brain_aneurysms.html)
+![](img/feature_aneurysm_rx.webp){.guide-image}
+:::
 
 
 # How are brain aneurysms treated? {features}
@@ -1140,6 +1246,19 @@ Monitoring typically includes strict control of vascular risk factors and interv
 * After a bleed, early **treatment** reduces rebleeding risk.
 * Newer options include **stents**, flow diverters and intrasaccular devices, used selectively.
 * Many unruptured aneurysms are **monitored** rather than treated, using structured risk tools and planned imaging.
+
+::: {.link_guide}
+## Full guide to brain aneurysms
+
+Take control of your health with clear, expert information:
+
+- What brain aneurysms are
+- Diagnosis and treatment explained
+- When to seek help
+
+[Read the full detailed guide](Aneurysms_Introduction_to_brain_aneurysms.html)
+![](img/feature_aneurysm_rx.webp){.guide-image}
+:::
 
 
 #  Introduction to AVMs {AVM}
