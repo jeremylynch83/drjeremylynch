@@ -260,7 +260,7 @@ The vascular neurosurgery and interventional neuroradiology team treat complex c
 #  Introduction to brain aneurysms {Aneurysms}
 ---
 title: "Introduction to brain aneurysms"
-description: "Introduction to brain aneurysms: Overview of what brain aneurysms are, their causes, risks, and who is most affected."
+description: "Overview of what brain aneurysms are, their causes, risks, and who is most affected."
 keywords: "brain aneurysm, cerebral aneurysm, intracranial aneurysm, subarachnoid haemorrhage"
 tags: "Aneurysm, Brain aneurysm, Cerebral aneurysm"
 about: "Cerebral aneurysm"
