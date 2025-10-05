@@ -48,6 +48,12 @@ def yaml_quote(s: str) -> str:
     """Quote a string safely for simple YAML metadata usage."""
     return '"' + s.replace('"', '\\"') + '"'
 
+# Collapse any internal whitespace to single spaces
+# Avoids Pandoc or Markdown line breaks leaking into JSON-LD strings
+
+def _one_line(s: str) -> str:
+    return " ".join((s or "").split())
+
 def display_section_name(section: str) -> str:
     """Pretty display name for a section label."""
     if section.lower() == "features":
@@ -401,6 +407,73 @@ def create_md_content_from_headings(
 
 
 # =======================
+# JSON-LD generation
+# =======================
+
+def _schema_json_for_page(p: PageInfo) -> str:
+    """Build minified JSON-LD for the page. Uses provided medical context when available."""
+    # Determine type
+    atype = "NewsArticle" if p.sec_lower == "news" else "Article"
+
+    schema: Dict[str, Any] = {
+        "@context": "https://schema.org",
+        "@type": atype,
+        "headline": p.title,
+        "description": _one_line(p.description or ""),
+        "url": abs_url(p.filename),
+        "inLanguage": "en-GB",
+        "author": {"@type": "Person", "name": "Dr Jeremy Lynch"},
+        "publisher": {
+            "@type": "Organization",
+            "name": "Dr Jeremy Lynch",
+            "logo": {
+                "@type": "ImageObject",
+                "url": abs_url(p.image_url) if p.image_url else abs_url("images/social-image.jpg")
+            }
+        }
+    }
+
+    # Optional keywords from tags
+    if getattr(p, 'tags', None):
+        schema["keywords"] = ", ".join(p.tags)
+
+    # Optional representative image
+    if p.image_url:
+        schema["image"] = abs_url(p.image_url)
+
+    # Optional contentLocation (default to London GB to match site)
+    schema["contentLocation"] = {
+        "@type": "Place",
+        "name": "London",
+        "address": {"@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB"}
+    }
+
+    # Medical context if provided
+    if getattr(p, 'about', None):
+        about_obj: Dict[str, Any] = {"@type": "MedicalCondition", "name": _one_line(p.about)}
+        # If sameAs list exists, use first for about
+        if getattr(p, 'same_as', None):
+            if isinstance(p.same_as, list) and p.same_as:
+                about_obj["sameAs"] = p.same_as[0] if len(p.same_as) == 1 else p.same_as
+        schema["about"] = about_obj
+
+    # Main entity if provided as text or URL
+    if getattr(p, 'main_entity', None) or getattr(p, 'main_entity_url', None):
+        main_obj: Dict[str, Any] = {"@type": "MedicalCondition"}
+        if p.main_entity:
+            main_obj["name"] = _one_line(p.main_entity)
+        if p.main_entity_url:
+            main_obj["sameAs"] = p.main_entity_url
+        schema["mainEntity"] = main_obj
+
+    # If no explicit about/mainEntity but we have sameAs list, add them under sameAs at top level for discoverability
+    if "about" not in schema and getattr(p, 'same_as', None):
+        schema["sameAs"] = p.same_as
+
+    return json.dumps(schema, ensure_ascii=False, separators=(",", ":"))
+
+
+# =======================
 # HTML generation
 # =======================
 
@@ -412,6 +485,7 @@ def convert_md_to_html(md_content: str, html_filename: str, template_path: str) 
             "--template", template_path,
             "--include-after-body=templates/footer.html",
             "--filter", "pandoc-crossref",
+            "--wrap=none",  # prevent hard wrapping that breaks JSON strings
         ],
         input=md_content,
         text=True,
@@ -459,7 +533,7 @@ def _seo_yaml_for_page(p: PageInfo) -> List[str]:
         'schema_type: "NewsArticle"' if p.sec_lower == "news" else 'schema_type: "Article"',
     ]
     if p.description:
-        seo.append(f'description: {yaml_quote(p.description)}')
+        seo.append(f'description: {yaml_quote(_one_line(p.description))}')
     if p.image_url:
         seo.append(f'image: {yaml_quote(abs_url(p.image_url))}')
     if p.tags:
@@ -468,9 +542,9 @@ def _seo_yaml_for_page(p: PageInfo) -> List[str]:
 
     # NEW: pass through medical context
     if getattr(p, "about", ""):
-        seo.append(f'about: {yaml_quote(p.about)}')
+        seo.append(f'about: {yaml_quote(_one_line(p.about))}')
     if getattr(p, "main_entity", ""):
-        seo.append(f'mainEntity: {yaml_quote(p.main_entity)}')
+        seo.append(f'mainEntity: {yaml_quote(_one_line(p.main_entity))}')
     if getattr(p, "main_entity_url", ""):
         seo.append(f'mainEntityUrl: {yaml_quote(p.main_entity_url)}')
     if getattr(p, "same_as", None):
@@ -507,6 +581,10 @@ def build_page_markdown(p: PageInfo, all_pages: List[PageInfo]) -> Tuple[str, st
 
     # Wrap body lines inside a container for article content
     body_wrapped = ['<div class="article-content">'] + body + ['</div>']
+
+    # Insert minified JSON-LD early in the content so Pandoc does not reflow it
+    schema_json = _schema_json_for_page(p)
+    body_wrapped.insert(1, f'<script type="application/ld+json">{schema_json}</script>')
 
     md_content = f"{yaml_block}\n\n" + "\n".join(body_wrapped)
     return p.filename, md_content
