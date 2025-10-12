@@ -466,28 +466,16 @@ There are two major categories of strokes:
 
 1. **Ischaemic Stroke**: This is the most common type of stroke, accounting for about 87% of all cases. It is caused by a blood clot blocking a blood vessel in the brain, resulting in a lack of blood flow and oxygen to the brain tissue.
 
-![Ischaemic stroke. ](img/ischaemic-stroke.svg)
+![Ischaemic stroke. ](img/ischaemic-stroke.svg) {#fig:i_stroke}
 
 
 
 
 2. **Hemorrhagic Stroke**: This is less common but can be more serious. It is caused by bleeding directly into the brain or the space around the brain, typically due to a ruptured blood vessel or an abnormal vascular structure.
 
-![Hemorrhagic Stroke](img/haemorrhagic-stroke.svg)
+![Hemorrhagic Stroke](img/haemorrhagic-stroke.svg) {#fig:h_stroke}
 
 
-## Symptoms
-
-Symptoms of a stroke usually appear suddenly and may include:
-
-- Weakness or numbness on one side of the body
-- Drooping of one side of the face
-- Difficulty in speaking or understanding
-- Dizziness or loss of balance
-- Loss of vision to one side
-- Severe headache (typically in hemorrhagic stroke)
-
-In some cases, the symptoms may be temporary, lasting a few minutes or persisting up to 24 hours. This is known as a transient ischaemic attack (TIA) or a "mini-stroke." Even if symptoms resolve they should be treated urgently as they often serve as a warning for an impending full stroke.
 
 ## Risk Factors
 
@@ -526,20 +514,22 @@ sameAs: "https://en.wikipedia.org/wiki/Stroke#Signs_and_symptoms"
 A stroke can be a life-threatening condition, and it's crucial to recognise the signs and act quickly to get medical help. If you suspect that you or someone else is experiencing a stroke, it's essential to seek medical help immediately. Rapid action can significantly improve outcomes and reduce the long-term effects of a stroke. Remember, every minute counts.
 
 
-## 1. Understanding Stroke Symptoms
+## Understanding Stroke Symptoms
 
 A stroke can cause a range of symptoms, depending on which part of the brain is affected. These symptoms usually begin suddenly and may not progress further.
 
 Symptoms of stroke can include:
 
-- **Hemiplegia and muscle weakness**: This can affect your face or cause one arm to drift downward when you try to raise it.
+- **Muscle weakness (hemiplegia)**: This can affect the ability to move one side of your face, one leg, or one arm. 
 - **Numbness or reduced sensory sensation**: You may experience this on one side of your body or face.
 - **Speech difficulty**: You may find it hard to speak clearly or to understand what others are saying.
 - **Vision problems**: You may lose vision in one or both eyes, or see double.
-- **Severe headache**: This may occur with a hemorrhagic stroke, which involves bleeding in the brain.
+- **Severe headache**: This may occur with a haemorrhagic stroke, which involves bleeding in the brain.
 - **Balance problems and vertigo**: You may feel dizzy, unsteady or have difficulty walking.
 
-## 2. Remember the FAST Mnemonic
+In some cases, the symptoms may be temporary, lasting a few minutes or persisting up to 24 hours. This is known as a transient ischaemic attack (TIA) or a "mini-stroke." Even if symptoms resolve they should be treated urgently as they often serve as a warning for an impending full stroke.
+
+## Remember the FAST Mnemonic
 
 To help you remember the main symptoms of a stroke, you can use the FAST mnemonic:
 
@@ -548,24 +538,19 @@ To help you remember the main symptoms of a stroke, you can use the FAST mnemoni
 - **S (Speech)**: Ask the person to repeat a simple phrase. Is their speech slurred or strange?
 - **T (Time)**: If you observe any of these signs, call your local emergency number immediately.
 
-## 3. Other Symptoms
+## Other Symptoms
 
 Depending on the exact part of the brain affected by the stroke, specific symptoms may be experienced:
 
-- **Problems with taste, smell, hearing or vision**
-- **Drooping of an eyelid and weakness of ocular muscles**
-- **Decreased reflexes, such as a reduced gag or swallow reflex**
-- **Altered breathing and heart rate**
-- **Confusion or lack of insight into their disability**
-- **Difficulty with voluntary movements (apraxia) or issues with coordination**
+- Problems with taste, smell, hearing or vision
+- Drooping of an eyelid and weakness of ocular muscles
+- Decreased reflexes, such as a reduced gag or swallow reflex
+- Altered breathing and heart rate
+- Confusion or lack of insight into their disability
+- Difficulty with voluntary movements (apraxia) or issues with coordination
 
 The more extensive the area of the brain affected, the more functions are likely to be lost.
 
-## 5. Regular Check-ups
-
-If you have any risk factors for a stroke, such as high blood pressure, obesity, diabetes or a previous mini-stroke (TIA), it's important to have regular check-ups with your doctor. They can help you manage your risk and possibly prevent a stroke from occurring.
-
-The symptoms of a stroke can be alarming. Knowing what to look for and acting quickly can make a significant difference. Remember, if you suspect a stroke, don't wait — seek help immediately.
 
 # Diagnosis of stroke {Stroke}
 ---
@@ -578,22 +563,27 @@ sameAs: "https://en.wikipedia.org/wiki/Stroke#Diagnosis"
 ---
 
 
-Diagnosing a stroke involves the use of imaging technologies to view the brain and detect any abnormalities. Let's delve into the details of how doctors diagnose a stroke.
+Diagnosing a stroke involves the use of imaging technologies to view the brain and detect any abnormalities. 
 
 Radiology scans are the primary diagnostic tools for identifying stroke. They help distinguish between ischaemic stroke (caused by a blockage) and haemorrhagic stroke (caused by bleeding).
 
 ## Computed Tomography (CT) Scan
 
-A CT scan of the brain is often the first imaging modality used in suspected stroke cases because it is quick, affordable, and widely available. While CT is excellent for excluding haemorrhage, it has limited sensitivity in detecting an ischemic stroke in the acute setting. Over time, however, the effects of stroke become more pronounced and obvious on CT scans.
+A CT scan of the brain is often the first imaging modality used in suspected stroke cases because it is quick, affordable, and widely available. While CT is excellent for excluding haemorrhage, it has limited sensitivity in detecting an ischaemic stroke in the acute setting. Over time, however, the effects of stroke become more pronounced and obvious on CT scans (@fig:ct_stroke).
 
 The main goals of an acute CT scan are to:
+
 1. Exclude intracranial haemorrhage, which would rule out the use of thrombolytic therapy.
-2. Look for early signs of ischemia.
+2. Look for early signs of ischaemia.
 3. Exclude other conditions that might mimic a stroke, such as a brain tumor.
+
+![CT scan of the brain of a patient with stroke. (A) Shows the bright clot. (B) Shows the darker region where the brain has not received enough blood. ](img/stroke_ct.webp){#fig:ct_stroke}
 
 ## CT Angiography
 
-CT angiography involves the injection of a contrast dye into the veins to  identify clots within an intracranial blood vessel, provide insights into the stroke's etiology, assess the carotid and vertebral arteries in the neck, and help to guide intra-arterial thrombolysis or clot retrieval.
+CT angiography involves the injection of a contrast dye into the veins to  identify clots within an intracranial blood vessel, provide insights into the stroke's aetiology, assess the carotid and vertebral arteries in the neck, and help to guide intra-arterial thrombolysis or clot retrieval (@fig:cta_stroke).
+
+![CT angiogram of a patient with a stroke. The arrow shows a blockage in the blood vessel, where the contrast (and therefore also blood) cannot pass. ](img/cta.webp){#fig:cta_stroke}
 
 
 ## CT Perfusion
@@ -602,10 +592,12 @@ CT perfusion is another type of test involving the injection of a contrast dye t
 
 ## Magnetic Resonance Imaging (MRI)
 
-MRI provides higher sensitivity and specificity than CT for diagnosing acute ischemic stroke. However, it is more time-consuming and not as readily available as CT. MR angiography can also be performed which is similar to CT angiography, and can help identify the location of the blood clot. MR angiography does not necessitate the injection of dye, however.
+MRI provides higher sensitivity and specificity than CT for diagnosing acute ischemic stroke (@fig:mri_stroke). However, it is more time-consuming and not as readily available as CT. MR angiography can also be performed which is similar to CT angiography, and can help identify the location of the blood clot. MR angiography does not necessitate the injection of dye, however.
+
+![MRI of a patient with a stroke. The brighter region within the circle is the area affected by the stroke. ](img/mri_stroke.webp){#fig:mri_stroke}
 
 
-## 3. Further Investigations
+## Further Investigations
 
 Once a stroke has been diagnosed, additional studies are conducted to determine the underlying cause. These may include:
 
@@ -627,32 +619,30 @@ sameAs: "https://en.wikipedia.org/wiki/Stroke#Treatment"
 ---
 
 
-Stroke treatment involves immediate interventions like thrombolysis and thrombectomy, neurosurgical procedures, and supportive care, followed by long-term risk factor management. This article delves into these strategies, outlining their significance in stroke recovery and future stroke prevention.
+Stroke treatment involves immediate interventions like thrombolysis and thrombectomy, neurosurgical procedures, and supportive care, followed by long-term risk factor management. 
 
 
 ## Thrombolysis
 
-Thrombolysis, a procedure involving the dissolution of blood clots, plays a crucial role in the treatment of acute ischemic stroke. It is especially effective when administered within the first three hours of symptom onset. Using recombinant tissue plasminogen activator (rtPA), a 10% overall benefit regarding living without disability can be achieved, although this treatment does not improve chances of survival. The sooner it's administered, the greater the benefits.
+Thrombolysis, a procedure involving the dissolution of blood clots, plays a crucial role in the treatment of acute ischemic stroke. It is especially effective when administered within the first 3 hours of symptom onset. A clot-busting drug called recombinant tissue plasminogen activator (rtPA) or tenectaplase is injected into the veins. The sooner it's administered, the greater the benefits.
 
-However, the effect of thrombolysis becomes less certain when administered between three and four and a half hours after symptom onset. Beyond four and a half hours, thrombolysis can result in adverse outcomes. Certain patients with findings of salvageable tissue on medical imaging between 4.5 hours and 9 hours after symptom onset, or those who wake up with a stroke, may still benefit from alteplase treatment.
-
-Endorsements for the use of thrombolysis come from reputable organizations such as the American Heart Association, the American College of Emergency Physicians, and the American Academy of Neurology. It's worth noting that 6.4% of patients with large strokes could experience substantial brain bleeding as a complication of rtPA administration, contributing to increased short-term mortality.
+However, the effect of thrombolysis becomes less certain when administered between three and four and a half hours after symptom onset. Beyond four and a half hours, thrombolysis can result in adverse outcomes. Certain patients with findings of salvageable tissue on medical imaging between 4.5 hours and 9 hours after symptom onset, or those who wake up with a stroke, may still benefit from alteplase treatment. It's worth noting that 6.4% of patients with large strokes could experience substantial brain bleeding as a complication of rtPA administration, contributing to increased short-term mortality.
 
 Intra-arterial fibrinolysis, where a catheter is passed up an artery into the brain and the medication is injected at the site of thrombosis, can also enhance outcomes in people with acute ischemic stroke.
 
 ## Mechanical thrombectomy
 
-Thrombectomy is a surgical procedure for removing a blood clot. In mechanical thrombectomy, the procedure involves using a special retrieval device to remove the clot and restore normal blood flow. If the clot is removed before it causes permanent damage, the prognosis usually improves. It's performed globally in specialist hospitals and is suitable for many, but not all, stroke patients.
+Mechanical thrombectomy is a procedure for removing a blood clot, which is the underlying problem causing the stroke. It involves using a special retrieval device to capture the clot and restore normal blood flow. If the clot is removed before it causes permanent damage, the prognosis usually improves. It's performed globally in specialist hospitals and is suitable for many, but not all, stroke patients.
 
 Risks associated with mechanical thrombectomy include potential failure to retrieve the clot, potential allergic reactions to contrast dye agents, and potential kidney dysfunction resulting from the excretion of the contrast agent. Additionally, the procedure requires general anesthesia, posing its own risks. More serious, but rarer, complications include severe brain injury, post-procedure brain bleeding, and radiation-induced health issues.
 
-Mechanical thrombectomy is usually considered an emergency and potentially life-saving treatment. An alternative to thrombectomy is the administration of a ‘clot-busting’ thrombolytic drug, although this option may not be as effective or suitable for all patients due to various risk factors.
+Mechanical thrombectomy is an emergency and potentially life-saving treatment.
 
 ## Neurosurgical Intervention and Supportive Care
 
-In certain cases, neurosurgical intervention can be employed to help patients survive the period of maximal swelling after a stroke. Such interventions include decompressive craniectomies, performed with or without duroplasty. These procedures are particularly useful for younger patients with large Middle Cerebral Artery (MCA) infarcts or posterior fossa infarcts.
+In certain cases, neurosurgical intervention can be necessary to help patients survive the period of maximal swelling after a stroke. Such interventions include temporarily taking off part of the skull to allow the brain to swell, called decompressive craniectomies. This may be important in large strokes, especially in younger patients. 
 
-Moreover, supportive care is integral to the treatment of stroke patients. This often involves dedicated inpatient stroke units to prevent the numerous complications encountered by stroke patients, such as aspiration pneumonia and pressure ulcers.
+Supportive care is integral to the treatment of stroke patients. This often involves dedicated inpatient stroke units to prevent the numerous complications encountered by stroke patients, such as aspiration pneumonia and pressure ulcers.
 
 ## Risk Factor Management in Stroke
 
