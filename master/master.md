@@ -632,11 +632,13 @@ Intra-arterial fibrinolysis, where a catheter is passed up an artery into the br
 
 ## Mechanical thrombectomy
 
-Mechanical thrombectomy is a procedure for removing a blood clot, which is the underlying problem causing the stroke. It involves using a special retrieval device to capture the clot and restore normal blood flow. If the clot is removed before it causes permanent damage, the prognosis usually improves. It's performed globally in specialist hospitals and is suitable for many, but not all, stroke patients.
+Mechanical thrombectomy is a procedure for removing a blood clot, which is the underlying problem causing the stroke. It involves using a special retrieval device to capture the clot and restore normal blood flow (@fig:dsa_mt). If the clot is removed before it causes permanent damage, the prognosis usually improves. It's performed globally in specialist hospitals and is suitable for many, but not all, stroke patients.
 
 Risks associated with mechanical thrombectomy include potential failure to retrieve the clot, potential allergic reactions to contrast dye agents, and potential kidney dysfunction resulting from the excretion of the contrast agent. Additionally, the procedure requires general anesthesia, posing its own risks. More serious, but rarer, complications include severe brain injury, post-procedure brain bleeding, and radiation-induced health issues.
 
 Mechanical thrombectomy is an emergency and potentially life-saving treatment.
+
+![Mechanical thrombectomy. (A) The arterial blood flow is obstructed at the arrow by a blood clot. (B) A long tube called an aspiration catheter is inserted into the artery and suction is applied. (C) The clot is sucked out and the blood flow into the smaller arteries is restored.](img/dsa_mt.webp){#fig:dsa_mt}
 
 ## Neurosurgical Intervention and Supportive Care
 
