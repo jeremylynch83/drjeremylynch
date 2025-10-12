@@ -1733,16 +1733,16 @@ A stroke is a medical emergency caused by a sudden interruption in the blood flo
 
 There are two major categories of strokes:
 
-1. **Ischaemic Stroke**: This is the most common type of stroke, accounting for about 87% of all cases. It is caused by a blood clot blocking a blood vessel in the brain, resulting in a lack of blood flow and oxygen to the brain tissue.
+1. **Ischaemic Stroke**: This is the most common type of stroke, accounting for about 87% of all cases. It is caused by a blood clot blocking a blood vessel in the brain, resulting in a lack of blood flow and oxygen to the brain tissue (@fig:i_stroke).
 
-![Ischaemic stroke. ](img/ischaemic-stroke.svg) {#fig:i_stroke}
-
-
+![Ischaemic stroke. ](img/ischaemic-stroke.svg){#fig:i_stroke}
 
 
-2. **Hemorrhagic Stroke**: This is less common but can be more serious. It is caused by bleeding directly into the brain or the space around the brain, typically due to a ruptured blood vessel or an abnormal vascular structure.
 
-![Hemorrhagic Stroke](img/haemorrhagic-stroke.svg) {#fig:h_stroke}
+
+2. **Hemorrhagic Stroke**: This is less common but can be more serious. It is caused by bleeding directly into the brain or the space around the brain, typically due to a ruptured blood vessel or an abnormal vascular structure (@fig:h_stroke).
+
+![Hemorrhagic Stroke](img/haemorrhagic-stroke.svg){#fig:h_stroke}
 
 
 
@@ -1989,7 +1989,9 @@ Both procedures carry risks, and the choice depends on factors such as the patie
 
 Carotid stenting is a minimally invasive treatment designed to reduce the risk of stroke in people with significant carotid stenosis. Instead of making a large incision in the neck, doctors use thin tubes (catheters) to reach the carotid artery, usually through an artery in the leg (femoral access), sometimes the arm (radial access), or directly through the neck just above the collarbone (a technique called TCAR, or transcarotid artery revascularisation).
 
-A small balloon may be used to widen the artery before placing the stent. The stent is then positioned across the narrowed segment. Once expanded, it stays in place permanently, acting as a scaffold that keeps the artery open. Modern procedures also use protection devices or flow-reversal systems to reduce the chance of plaque debris travelling into the brain during the procedure.
+A small balloon may be used to widen the artery before placing the stent. The stent is then positioned across the narrowed segment (@fig:carotid_stent). Once expanded, it stays in place permanently, acting as a scaffold that keeps the artery open. Modern procedures also use protection devices or flow-reversal systems to reduce the chance of plaque debris travelling into the brain during the procedure.
+
+![Carotid stenting. (A) Angiography of the carotid artery showing a narrowing (arrowhead). (B) A balloon has been inserted into the narrowing to expand it. (B) The stent is then inserted but is constrained within its container sheath. (C) The stent is unsheathed across the stenosis. ](img/dsa_stent.webp){#fig:carotid_stent}
 
 ## Benefits and outcomes of stenting
 
