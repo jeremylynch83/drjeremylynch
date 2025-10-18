@@ -98,7 +98,7 @@ const menus = [
           },
           {
             label: "Idiopathic Intracranial Hypertension",
-            href: "Idiopathic_Intracranial_Hypertension_Introduction_to_idiopathic_Intracranial_Hypertension.html",
+            href: "IIH_Introduction_to_idiopathic_Intracranial_Hypertension.html",
           },
           {
             label: "Spontaneous Intracranial Hypotension",

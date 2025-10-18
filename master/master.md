@@ -884,6 +884,51 @@ They are also used to follow-up diseases previously treated.
 
 The image quality is often superior when using angiography, allowing the discovery of diseases that do not show up on alternative scans and allowing the planning of certain procedures. As CT and MRI scans are safer, faster, and usually more pleasant to undergo we only do cerebral angiograms when we need to. Having said that, generally the risk (and degree of unpleasantness) is not usually very great.
 
+# Spinal angiography  {Angiography}
+
+---
+description: An introduction to spinal angiography, including what it is, why it is used, and how it differs from other imaging techniques.
+tags: Angiography
+keywords: "spinal angiography, spinal cord vessels, spinal angiogram, London"
+about: "Spinal angiography uses X-rays and contrast dye via catheter insertion to image the blood vessels supplying the spinal cord. It is used to diagnose vascular malformations, tumours, and other disorders affecting spinal circulation."
+mainEntity: "[https://www.nhs.uk/tests-and-treatments/angiography/](https://www.nhs.uk/tests-and-treatments/angiography/)"
+sameAs: "[https://en.wikipedia.org/wiki/Spinal_angiography](https://en.wikipedia.org/wiki/Spinal_angiography)"
+---
+
+## What is a spinal angiogram?
+
+A spinal angiogram is a specialised X-ray test that provides detailed images of the blood vessels supplying the spinal cord. It involves inserting a thin tube (catheter) into an artery, usually in the groin, and navigating it to the arteries that feed the spine. An iodine-based dye (contrast) is then injected through the catheter to make the vessels visible on X-rays.
+
+## Why is spinal angiography performed?
+
+Spinal angiography is most often carried out to diagnose and assess:
+
+* Spinal arteriovenous malformations (AVMs)
+* Dural arteriovenous fistulas (dAVFs)
+* Spinal tumours with abnormal blood supply
+* Vascular causes of spinal cord injury or bleeding
+
+It is also used to guide treatment planning and to confirm successful therapy after an intervention.
+
+## What are the risks of spinal angiography?
+
+Spinal angiography is generally safe when performed by experienced specialists, but as it involves introducing a catheter into the arteries and injecting contrast dye, there are some specific risks to be aware of.
+
+Common but usually minor risks:
+
+* **Bruising or soreness** at the catheter insertion site (usually in the groin).
+* **Temporary pain** or warmth when the contrast dye is injected.
+* **Allergic reaction** to the contrast dye, which is usually mild (for example, a rash or itching).
+
+Uncommon but more serious risks:
+
+* **Arterial injury or blockage.** The catheter can occasionally damage a vessel or cause a small clot, potentially affecting blood flow.
+* **Spinal cord ischaemia.** Very rarely, the blood supply to the spinal cord can be affected, leading to weakness, numbness, or paralysis. This is the most serious potential complication, though it occurs in less than 1 in 1,000 cases in specialist centres.
+* **Contrast-induced kidney injury.** The iodine-based dye can temporarily affect kidney function, particularly in people with pre-existing kidney disease.
+* **Infection or bleeding** at the puncture site, which is uncommon and usually minor.
+
+
+
 # Before a Cerebral Angiogram  {Angiography}
 ---
 description: Guidance on how to prepare for a cerebral angiogram, including fasting, medication instructions, allergy disclosure, pregnancy considerations, and pre-procedure tests.
@@ -1706,7 +1751,7 @@ Would you like me to expand the **MMA embolisation section** into a separate hea
 
 # Middle Meningeal Artery Embolisation {MMA Embolisation}
 ---
-description: Middle meningeal artery embolisation (MMAE) as a minimally invasive treatment for chronic subdural haematoma.
+description: Middle meningeal artery embolisation (MMAE) is a minimally invasive treatment for chronic subdural haematoma.
 tags: MMA Embolisation
 keywords: "middle meningeal artery embolisation, MMAE, chronic subdural haematoma, neurointervention"
 about: "MMA embolisation is an endovascular technique used to reduce recurrence of chronic subdural haematoma by occluding the middle meningeal artery, which contributes to membrane vascular supply."
@@ -1752,18 +1797,17 @@ MMAE may be suitable for:
 
 ## Benefits of MMA embolisation
 
-Compared with traditional surgery, MMA embolisation has several advantages:
+MMA embolisation has several advantages:
 
 * Minimally invasive, with only a small incision in the wrist or groin
 * Less discomfort and faster recovery
-* Often performed without a hospital stay
-* Much lower recurrence rate (around 2–3% compared with up to 25% after surgery)
+* Can be performed without a hospital stay
 * Targets the underlying cause of the bleeding, not just the blood that has already collected
 
 
 ## Risks and possible complications
 
-MMA embolisation is generally very safe, but as with any medical procedure there are risks. These include bleeding, infection, stroke, pain, or vision problems. Serious complications are rare and occur in only about 1% of patients.
+MMA embolisation is generally very safe, but as with any medical procedure there are risks. These include bleeding in the brain or access site (wrist or groin), infection, stroke, pain, or vision problems. Serious complications are rare and occur in only about 1% of patients.
 
 ## Recovery and follow-up
 
@@ -1772,4 +1816,4 @@ Most people can return to normal activities straight away. The small wound at th
 
 ## Outlook
 
-Chronic subdural haematoma is becoming more common as the population ages, especially in people on blood-thinning medicines. MMA embolisation offers a safe and effective alternative to surgery, with fewer recurrences and quicker recovery.
+Chronic subdural haematoma is becoming more common as the population ages, especially in people on blood-thinning medicines. MMA embolisation offers a safe and effective treatment to reduce recurrences.
