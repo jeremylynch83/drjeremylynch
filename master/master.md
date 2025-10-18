@@ -520,7 +520,7 @@ A stroke can cause a range of symptoms, depending on which part of the brain is 
 
 Symptoms of stroke can include:
 
-- **Muscle weakness (hemiplegia)**: This can affect the ability to move one side of your face, one leg, or one arm. 
+- **Muscle weakness (hemiplegia)**: This can affect the ability to move one side of your face, one leg, or one arm.
 - **Numbness or reduced sensory sensation**: You may experience this on one side of your body or face.
 - **Speech difficulty**: You may find it hard to speak clearly or to understand what others are saying.
 - **Vision problems**: You may lose vision in one or both eyes, or see double.
@@ -563,7 +563,7 @@ sameAs: "https://en.wikipedia.org/wiki/Stroke#Diagnosis"
 ---
 
 
-Diagnosing a stroke involves the use of imaging technologies to view the brain and detect any abnormalities. 
+Diagnosing a stroke involves the use of imaging technologies to view the brain and detect any abnormalities.
 
 Radiology scans are the primary diagnostic tools for identifying stroke. They help distinguish between ischaemic stroke (caused by a blockage) and haemorrhagic stroke (caused by bleeding).
 
@@ -619,7 +619,7 @@ sameAs: "https://en.wikipedia.org/wiki/Stroke#Treatment"
 ---
 
 
-Stroke treatment involves immediate interventions like thrombolysis and thrombectomy, neurosurgical procedures, and supportive care, followed by long-term risk factor management. 
+Stroke treatment involves immediate interventions like thrombolysis and thrombectomy, neurosurgical procedures, and supportive care, followed by long-term risk factor management.
 
 
 ## Thrombolysis
@@ -642,7 +642,7 @@ Mechanical thrombectomy is an emergency and potentially life-saving treatment.
 
 ## Neurosurgical Intervention and Supportive Care
 
-In certain cases, neurosurgical intervention can be necessary to help patients survive the period of maximal swelling after a stroke. Such interventions include temporarily taking off part of the skull to allow the brain to swell, called decompressive craniectomies. This may be important in large strokes, especially in younger patients. 
+In certain cases, neurosurgical intervention can be necessary to help patients survive the period of maximal swelling after a stroke. Such interventions include temporarily taking off part of the skull to allow the brain to swell, called decompressive craniectomies. This may be important in large strokes, especially in younger patients.
 
 Supportive care is integral to the treatment of stroke patients. This often involves dedicated inpatient stroke units to prevent the numerous complications encountered by stroke patients, such as aspiration pneumonia and pressure ulcers.
 
@@ -1734,9 +1734,12 @@ The usual treatment is surgery, often by drilling small holes in the skull to dr
 
 MMA embolisation targets the **middle meningeal artery**, which supplies blood to the membrane around the haematoma. By blocking this artery, doctors stop the repeated leaks that keep the haematoma alive. Over time, the body can then safely reabsorb the blood.
 
-The procedure is performed by an endovascular specialist. Using X-ray guidance, a thin tube (catheter) is inserted through a small cut in the wrist or groin and carefully threaded through the blood vessels to reach the middle meningeal artery. Once in place, the artery is sealed off using tiny particles, special medical glue, or very small coils.
+The procedure is performed by an endovascular specialist. Using X-ray guidance, a thin tube (catheter) is inserted through a small cut in the wrist or groin and carefully threaded through the blood vessels to reach the middle meningeal artery. Once in place, the artery is sealed off using tiny particles, an embolic glue-like substance (@fig:mma_embo), or very small coils.
 
 The whole procedure usually takes less than an hour. Most patients are awake but relaxed with mild sedation, and many can go home the same day.
+
+![Middle meningeal embolisation of a subdural haematoma. (A) A CT scan of a subdural haematoma (arrowhead). (B) Angiography of the external carotid artery. (C) Selective angiography of the middle meningeal artery. (D) After injection of an embolic agent filling the entire artery.](img/mma_embo.webp){#fig:mma_embo}
+
 
 
 ## Who can have MMA embolisation?
