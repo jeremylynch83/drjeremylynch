@@ -5,6 +5,7 @@ keywords: "Jeremy Lynch, Interventional Neuroradiology, Consultant, London, Neur
 about: "Dr Jeremy Lynch MBChB MRCS FRCR is a Consultant Interventional Neuroradiologist based in London. He trained in Bristol, London, and Toronto and specialises in minimally invasive treatments for vascular diseases of the brain, head, neck, and spine."
 mainEntity: "https://www.drjeremylynch.com/"
 sameAs: "https://www.kch.nhs.uk/services/consultants-a-to-z/dr-jeremy-lynch/"
+image: about_img.webp
 ---
 
 ## Biography
