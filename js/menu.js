@@ -375,18 +375,12 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-/* ==========================================================
-   Desktop controls
-   - Ignore clicks (and mouse focus) on top toggles at ≥992px.
-   - Hovering a different top item clears all open/show/focus.
-   ========================================================== */
 (function () {
   const DESKTOP_Q = "(min-width: 992px)";
   const mq = window.matchMedia(DESKTOP_Q);
   const toggleSel = ".desktop-mainnav .nav-item.dropdown > .nav-link";
   const itemSel = ".desktop-mainnav .nav-item.dropdown";
 
-  // Safety: dispose any Bootstrap Dropdown instances if present
   function disposeDropdowns() {
     document.querySelectorAll(toggleSel).forEach((el) => {
       const inst = bootstrap.Dropdown.getInstance(el);
@@ -407,29 +401,36 @@ document.addEventListener("keydown", (e) => {
     });
   }
 
+  function suppressHoverUntilPointerMoves() {
+    if (!mq.matches) return;
+    document.body.classList.add("suppress-desktop-hover");
+
+    const onMove = () => {
+      document.body.classList.remove("suppress-desktop-hover");
+      window.removeEventListener("pointermove", onMove, true);
+      window.removeEventListener("mousemove", onMove, true);
+    };
+
+    window.addEventListener("pointermove", onMove, true);
+    window.addEventListener("mousemove", onMove, true);
+  }
+
   function attachHandlers() {
     disposeDropdowns();
 
-    // Ignore clicks and mouse focus on desktop
     document.querySelectorAll(toggleSel).forEach((link) => {
-      // Prevent navigation and stop persistent :focus-within from mouse
       link.addEventListener(
         "pointerdown",
         (e) => {
           if (!mq.matches) return;
-          // Primary button only
           if (e.button !== 0) return;
           e.preventDefault();
           e.stopPropagation();
-          if (e.pointerType === "mouse" || e.pointerType === "pen") {
-            // Drop focus so :focus-within does not keep menu open
-            link.blur();
-          }
+          if (e.pointerType === "mouse" || e.pointerType === "pen") link.blur();
         },
         { passive: false },
       );
 
-      // Extra guard on click
       link.addEventListener(
         "click",
         (e) => {
@@ -442,7 +443,6 @@ document.addEventListener("keydown", (e) => {
       );
     });
 
-    // When hovering a different item, clear all other states
     document.querySelectorAll(itemSel).forEach((item) => {
       item.addEventListener("pointerenter", () => {
         if (!mq.matches) return;
@@ -450,16 +450,25 @@ document.addEventListener("keydown", (e) => {
       });
     });
 
-    // Also clear if mouse leaves the whole nav bar
     const navbar = document.querySelector(".desktop-mainnav");
     if (navbar) {
       navbar.addEventListener("pointerleave", () => {
         if (!mq.matches) return;
         clearAll();
       });
+
+      navbar.addEventListener("click", (e) => {
+        if (!mq.matches) return;
+        const a = e.target.closest(".dropdown-menu a[href]");
+        if (!a) return;
+
+        clearAll();
+        suppressHoverUntilPointerMoves();
+      });
     }
   }
 
   attachHandlers();
+  suppressHoverUntilPointerMoves();
   mq.addEventListener("change", attachHandlers);
 })();

@@ -715,6 +715,22 @@ select option {
     }
 }
 
+@media (min-width: 992px) {
+    /* Stop hover re-opening the mega menu during page navigation/load */
+    body.suppress-desktop-hover
+        .desktop-mainnav
+        .nav-item.dropdown:hover
+        > .dropdown-menu {
+        display: none !important;
+    }
+    body.suppress-desktop-hover
+        .desktop-mainnav
+        .nav-item.dropdown:hover
+        > .nav-link::after {
+        transform: none !important;
+    }
+}
+
 /* Fallback when mask is unsupported */
 @supports not (mask: url("")) {
     .desktop-mainnav .nav-item.dropdown > .nav-link::after {
