@@ -142,11 +142,17 @@ sameAs: "https://www.drjeremylynch.com/fees"
 
 ## Consultation Fees
 
-The fee for an in-person consultation is £250 and for a virtual/telephone consultation it is £200. Follow-up consultations are £200.
+If your appointment will be funded by medical insurance, please provide your confirmed insurance details before attending. We cannot confirm insured appointments without this information. We are recognised by Allianz Partners, Aviva, AXA Health, Bupa, Healix Health Services Ltd, VitalityHealth and WPA.
+
+Self-paying patients are welcome and the consultation fee is payable before the appointment.
+
+- Self-Pay Initial Consultation, Clinic: 45 minutes, £350
+- Self-Pay Initial Consultation, Video: 45 minutes, £300
+- Self-Pay Follow-up Consultation, Clinic: 30 minutes, £300
+- Self-Pay Follow-up Consultation, Video: 30 minutes, £250
 
 This covers a clinic appointment to discuss your condition, review relevant medical information, and provide specialist advice. Please note that this does not include the cost of any investigations, imaging, or procedures, which will be charged separately if required.
 
-If you have private health insurance, the consultation fee may be covered by your insurer. Please note that you may still be responsible for any policy excess, co-payment, or shortfall depending on the terms of your cover. Self-paying patients are welcome and the consultation fee is payable before the appointment.
 
 ## CT or MRI Imaging Investigations
 
