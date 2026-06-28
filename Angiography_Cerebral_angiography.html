@@ -372,11 +372,14 @@ An introduction to cerebral angiography, including what it is, why it is used, a
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding: 72px 16px;
             }
             #bookingContent {
-                max-width: 520px;
+                max-width: 860px;
                 text-align: center;
-                padding: 0 16px;
+                padding: 28px;
+                background: rgba(0, 0, 0, 0.55);
+                border: 1px solid rgba(255, 255, 255, 0.25);
             }
             #bookingContent h1 {
                 font-size: 28px;
@@ -384,14 +387,74 @@ An introduction to cerebral angiography, including what it is, why it is used, a
                 margin: 0;
                 color: #fff;
             }
+            #bookingContent h2 {
+                font-size: 18px;
+                letter-spacing: 1px;
+                margin: 0 0 12px;
+                color: #fff;
+                text-transform: uppercase;
+            }
             #bookingContent p {
                 margin-top: 20px;
                 font-size: 14px;
+                line-height: 1.55;
+                color: #fff;
+            }
+            #bookingContent a:not(.custom-btn) {
+                color: #fff;
+                text-decoration: underline;
+            }
+
+            .booking-panel,
+            .important-notice,
+            .booking-enquiry-intro {
+                margin-top: 24px;
+            }
+
+            .booking-panel p:first-of-type,
+            .important-notice p:first-of-type,
+            .booking-enquiry-intro p:first-of-type {
+                margin-top: 0;
+            }
+
+            .booking-actions {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 14px;
+                margin-top: 24px;
+            }
+
+            .zanda-booking-btn,
+            .open-enquiry-btn {
+                width: 260px;
+                min-height: 68px;
+                box-sizing: border-box;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #fff;
+                color: #0b4f6c;
+                background: #fff;
+                font: inherit;
+                line-height: 1.2;
+                text-align: center;
+            }
+            .zanda-booking-btn:hover,
+            .zanda-booking-btn:focus,
+            .open-enquiry-btn:hover,
+            .open-enquiry-btn:focus {
+                background: #0b4f6c;
+                border-color: #0b4f6c;
                 color: #fff;
             }
 
+            .booking-contact {
+                margin-top: 22px !important;
+            }
+
             form {
-                margin-top: 32px;
+                margin-top: 0;
                 font-size: 12px;
             }
             .form-group {
@@ -500,6 +563,141 @@ An introduction to cerebral angiography, including what it is, why it is used, a
                 margin: 0;
             }
 
+
+            .modal-overlay {
+                position: fixed;
+                inset: 0;
+                z-index: 2147483000;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                padding: 24px;
+                background: rgba(0, 0, 0, 0.82);
+                backdrop-filter: blur(2px);
+                -webkit-backdrop-filter: blur(2px);
+                pointer-events: auto;
+            }
+
+            .modal-overlay.is-open {
+                display: flex;
+            }
+
+            .modal-dialog {
+                position: relative;
+                z-index: 2147483001;
+                width: min(560px, 100%);
+                max-height: calc(100vh - 48px);
+                overflow-y: auto;
+                box-sizing: border-box;
+                background: rgba(0, 0, 0, 0.78);
+                border: 1px solid rgba(255, 255, 255, 0.25);
+                padding: 34px 30px 30px;
+                color: #fff;
+                text-align: center;
+                pointer-events: auto;
+            }
+
+            .modal-dialog h2 {
+                margin: 0 0 30px;
+                color: #fff;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+
+            .modal-dialog .form-group {
+                margin-bottom: 8px;
+            }
+
+            .modal-dialog input[type="text"],
+            .modal-dialog input[type="tel"],
+            .modal-dialog input[type="email"],
+            .modal-dialog select {
+                height: 42px;
+                font-size: 15px;
+            }
+
+            .modal-dialog textarea {
+                min-height: 92px;
+                font-size: 15px;
+            }
+
+            .modal-dialog input,
+            .modal-dialog select,
+            .modal-dialog textarea,
+            .modal-dialog button {
+                position: relative;
+                z-index: 2147483002;
+                pointer-events: auto;
+            }
+
+            .modal-actions {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 14px;
+                margin-top: 26px;
+            }
+
+            .modal-actions button {
+                width: 170px;
+                min-height: 54px;
+                box-sizing: border-box;
+                margin-top: 0;
+                border: 1px solid #fff;
+                font: inherit;
+                line-height: 1.2;
+                letter-spacing: 1px;
+            }
+
+            .modal-actions #submitBtn {
+                background: #fff;
+                color: #0b4f6c;
+            }
+
+            .modal-actions #submitBtn:hover,
+            .modal-actions #submitBtn:focus {
+                background: #0b4f6c;
+                border-color: #0b4f6c;
+                color: #fff;
+            }
+
+            .cancel-enquiry-btn {
+                background-color: transparent;
+                border: 1px solid #fff;
+                color: #fff;
+            }
+
+            .cancel-enquiry-btn:hover,
+            .cancel-enquiry-btn:focus {
+                background: #fff;
+                color: #0b4f6c;
+            }
+
+            body.modal-open {
+                overflow: hidden;
+            }
+
+            @media (max-width: 600px) {
+                .zanda-booking-btn,
+                .open-enquiry-btn,
+                .modal-actions button {
+                    width: 100%;
+                }
+
+                .modal-actions {
+                    flex-direction: column;
+                }
+
+                .modal-overlay {
+                    padding: 12px;
+                }
+
+                .modal-dialog {
+                    padding: 26px 20px 22px;
+                }
+            }
+
             .noscript-warning {
                 background: #f44336;
                 color: #fff;
@@ -525,15 +723,65 @@ An introduction to cerebral angiography, including what it is, why it is used, a
             <div id="book">
                 <div id="bookingContent">
                     <h1>BOOK APPOINTMENT</h1>
-                    <p>
-                        To book an in-person or virtual consultation, or refer a
-                        patient to Dr Lynch, enter the details below and our
-                        practice management team will contact you to schedule
-                        the appointment. Alternatively please phone <a href="tel:+442035408250">020 3540 8250</a>  or email
-                        <a href="mailto:enquiries@drjeremylynch.com"
-                            >enquiries@drjeremylynch.com</a
-                        >.
-                    </p>
+                    <div class="booking-panel">
+                        <p>
+                            You can book an in-person or virtual consultation
+                            online. Self-pay patients can book and pay securely
+                            through the booking portal. Insured patients can
+                            also book online, with insurance details confirmed
+                            before attending. We are recognised by Allianz
+                            Partners, Aviva, AXA Health, Bupa, Healix Health
+                            Services Ltd, VitalityHealth and WPA.
+                        </p>
+
+                        <p>
+                            If you have had relevant medical imaging, including
+                            MRI, CT, X-ray, ultrasound or angiography, it is
+                            highly recommended that this is transferred before
+                            your appointment wherever possible. Our team will
+                            assist you with this. If this is from another health
+                            provider this may take a few days.
+                        </p>
+
+                        <div class="booking-actions">
+                            <a
+                                href="https://clientportal.uk.zandahealth.com/clientportal/drjeremylynch/home"
+                                target="_blank"
+                                rel="noopener"
+                                class="custom-btn zanda-booking-btn"
+                                >BOOK ONLINE</a
+                            >
+                            <button
+                                id="openEnquiryModal"
+                                type="button"
+                                class="custom-btn open-enquiry-btn"
+                            >
+                                SEND ENQUIRY
+                            </button>
+                        </div>
+
+                        <p class="booking-contact">
+                            Alternatively please phone
+                            <a href="tel:+442035408250">020 3540 8250</a> or
+                            email
+                            <a href="mailto:enquiries@drjeremylynch.com"
+                                >enquiries@drjeremylynch.com</a
+                            >.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                id="enquiryModal"
+                class="modal-overlay"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="enquiryModalTitle"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog">
+                    <h2 id="enquiryModalTitle">Send enquiry</h2>
 
                     <form id="appointmentForm" novalidate>
                         <!-- Spam controls (server must enforce) -->
@@ -609,17 +857,19 @@ An introduction to cerebral angiography, including what it is, why it is used, a
                                     Do you have medical insurance?
                                 </option>
                                 <option value="no">No</option>
-                                <option value="bupa">BUPA</option>
-                                <option value="AXA">AXA Health</option>
+                                <option value="Allianz Partners">
+                                    Allianz Partners
+                                </option>
+                                <option value="Aviva">Aviva</option>
+                                <option value="AXA Health">AXA Health</option>
+                                <option value="Bupa">Bupa</option>
+                                <option value="Healix Health Services Ltd">
+                                    Healix Health Services Ltd
+                                </option>
                                 <option value="VitalityHealth">
                                     VitalityHealth
                                 </option>
-                                <option value="The Exeter">The Exeter</option>
-                                <option
-                                    value="WPA (Western Provident Association)"
-                                >
-                                    WPA (Western Provident Association)
-                                </option>
+                                <option value="WPA">WPA</option>
                                 <option value="Other">Other</option>
                             </select>
                         </div>
@@ -627,13 +877,26 @@ An introduction to cerebral angiography, including what it is, why it is used, a
                         <div class="form-group">
                             <textarea
                                 name="extra-info"
-                                placeholder="Additional information (optional)"
+                                placeholder="Booking question, insurance detail or imaging query (optional)"
                             ></textarea>
                         </div>
 
-                        <button id="submitBtn" type="submit" class="custom-btn">
-                            BOOK CONSULTATION
-                        </button>
+                        <div class="modal-actions">
+                            <button
+                                id="submitBtn"
+                                type="submit"
+                                class="custom-btn"
+                            >
+                                SEND
+                            </button>
+                            <button
+                                id="cancelEnquiryBtn"
+                                type="button"
+                                class="custom-btn cancel-enquiry-btn"
+                            >
+                                CANCEL
+                            </button>
+                        </div>
 
                         <div id="submitStatus" aria-live="polite"></div>
                     </form>
@@ -666,6 +929,62 @@ An introduction to cerebral angiography, including what it is, why it is used, a
             const submitBtn = document.getElementById("submitBtn");
             const statusEl = document.getElementById("submitStatus");
             const formTimeEl = document.getElementById("form_time");
+            const enquiryModal = document.getElementById("enquiryModal");
+            const openEnquiryModalBtn =
+                document.getElementById("openEnquiryModal");
+            const cancelEnquiryBtn = document.getElementById("cancelEnquiryBtn");
+
+            function openEnquiryModal() {
+                enquiryModal.classList.add("is-open");
+                enquiryModal.setAttribute("aria-hidden", "false");
+                document.body.classList.add("modal-open");
+                if (formTimeEl) formTimeEl.value = Date.now();
+
+                const firstField = appointmentForm.querySelector(
+                    "input:not([type='hidden'])",
+                );
+                if (firstField) firstField.focus();
+            }
+
+            function closeEnquiryModal() {
+                enquiryModal.classList.remove("is-open");
+                enquiryModal.setAttribute("aria-hidden", "true");
+                document.body.classList.remove("modal-open");
+                statusEl.textContent = "";
+                appointmentForm.removeAttribute("aria-busy");
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = "SEND";
+                openEnquiryModalBtn.focus();
+            }
+
+            if (openEnquiryModalBtn) {
+                openEnquiryModalBtn.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    openEnquiryModal();
+                });
+            }
+
+            if (cancelEnquiryBtn) {
+                cancelEnquiryBtn.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    closeEnquiryModal();
+                });
+            }
+
+            if (enquiryModal) {
+                enquiryModal.addEventListener("click", function (event) {
+                    if (event.target === enquiryModal) closeEnquiryModal();
+                });
+            }
+
+            document.addEventListener("keydown", function (event) {
+                if (
+                    event.key === "Escape" &&
+                    enquiryModal.classList.contains("is-open")
+                ) {
+                    closeEnquiryModal();
+                }
+            });
 
             // Set a timestamp as soon as the page loads (time trap)
             if (formTimeEl) formTimeEl.value = Date.now();
@@ -690,7 +1009,7 @@ An introduction to cerebral angiography, including what it is, why it is used, a
                 // Client-side check for user experience only (server must enforce)
                 if (!appointmentForm.checkValidity()) {
                     alert(
-                        "Please fill in all parts of the form before submitting.",
+                        "Please fill in all required fields before submitting.",
                     );
                     return;
                 }
@@ -700,7 +1019,7 @@ An introduction to cerebral angiography, including what it is, why it is used, a
                 submitBtn.innerHTML =
                     '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Submitting…';
                 appointmentForm.setAttribute("aria-busy", "true");
-                statusEl.textContent = "Submitting your request…";
+                statusEl.textContent = "Submitting your enquiry…";
 
                 const formData = new FormData(appointmentForm);
 
@@ -720,10 +1039,11 @@ An introduction to cerebral angiography, including what it is, why it is used, a
                         return response.text();
                     })
                     .then(() => {
-                        document.getElementById("bookingContent").innerHTML = `
+                        appointmentForm.innerHTML = `
               <div style="text-align:center;">
                 <i class="fa-solid fa-circle-check" style="font-size:48px; color:#fff;" aria-hidden="true"></i>
-                <h3 style="margin-top:16px; color:#fff;">Thank you, your request has been submitted</h3>
+                <h3 style="margin-top:16px; color:#fff;">Thank you, your enquiry has been submitted</h3>
+                <button type="button" class="custom-btn" onclick="window.location.reload()" style="margin-top:20px;">CLOSE</button>
               </div>`;
                     })
                     .catch((error) => {
@@ -731,7 +1051,7 @@ An introduction to cerebral angiography, including what it is, why it is used, a
                         submitBtn.disabled = false;
                         submitBtn.innerHTML =
                             submitBtn.dataset.originalHtml ||
-                            "BOOK CONSULTATION";
+                            "SEND";
                         appointmentForm.setAttribute("aria-busy", "false");
                         statusEl.textContent =
                             "Sorry, something went wrong. Please try again.";
