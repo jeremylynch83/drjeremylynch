@@ -324,7 +324,7 @@ mainEntity: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
 sameAs: "https://en.wikipedia.org/wiki/Cerebral_aneurysm"
 ---
 
-Surgical clipping is an established but more invasive method of treatment that still has a role in managing certain cerebral aneurysms. The procedure involves making an opening in the skull (a procedure called a craniotomy) to locate the aneurysm. With the help of a microscope, the surgeon places the clip on the aneurysm's neck, sealing it off from the rest of the blood vessel.
+Surgical clipping is an established treatment that retains an important role in managing certain cerebral aneurysms. The procedure involves making an opening in the skull (a procedure called a craniotomy) to locate the aneurysm. With the help of a microscope, the surgeon places the clip on the aneurysm's neck, sealing it off from the rest of the blood vessel.
 
 ![Clipping of a cerebral aneurysm.](img/aneurysm-clipping.svg)
 
@@ -334,7 +334,7 @@ The procedure can lead to some physical discomfort in the days following the sur
 
 The period following the operation requires careful management of your activities. In the first few weeks after going home, it's essential to maintain a routine, stay hydrated, eat well, and rest regularly. Enlist help for household chores if possible and consider some gentle exercise to gradually build up your strength. Most people require about 2-3 months off work for full recovery. Returning to work earlier won't necessarily harm you, but it may prolong the recovery period due to increased tiredness.
 
-However, in skilled hands, surgical clipping can provide a solution for many types of aneurysms, particularly those that may not be suitable for other treatments, like coil embolisation or flow diversion.
+However, in skilled hands, surgical clipping can provide a solution for many types of aneurysms, particularly those that may not be suitable for other treatments.
 
 ## References
 
