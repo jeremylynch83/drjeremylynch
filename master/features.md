@@ -94,12 +94,6 @@ When an aneurysm **ruptures**, it causes a type of stroke called a **subarachnoi
 
 Treatment may be either endovascular or surgical, but the general trend is towards endovascular approaches when suitable, as supported by the **International Subarachnoid Aneurysm Trial (ISAT)**. This large study showed that, in patients with ruptured aneurysms suitable for either approach, endovascular treatment led to better outcomes and fewer long-term complications than open surgery.
 
-## Key takeaways
-
-* For **unruptured aneurysms**, hospital stay is about **1 day** after endovascular treatment and **about a week** after surgical clipping.
-* **Endovascular treatment** is minimally invasive, usually with a **quicker recovery** and early return to normal activities.
-* **Clipping** is more invasive, requiring a longer stay and a recovery that can take **weeks to months**.
-* For **ruptured aneurysms** (subarachnoid haemorrhage), hospital stay is usually **at least 14 days**, often with time in **ICU**. * The **ISAT trial** showed that endovascular treatment gives better long-term outcomes than surgery for many ruptured aneurysms.
 
 ::: {.link_guide}
 ## Full guide to brain aneurysms
@@ -452,9 +446,7 @@ Monitoring typically includes strict control of vascular risk factors and interv
 
 ## Key takeaways
 
-* The majority of aneurysms are now treated **endovascularly**.
 * After a bleed, early **treatment** reduces rebleeding risk.
-* Newer options include **stents**, flow diverters and intrasaccular devices, used selectively.
 * Many unruptured aneurysms are **monitored** rather than treated, using structured risk tools and planned imaging.
 
 ::: {.link_guide}
