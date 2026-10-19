@@ -196,9 +196,10 @@
         height: 100vh;               /* one full viewport */
         min-height: 540px;           /* optional floor */
         overflow: hidden;
-        background: #000;            /* fallback while video loads */
+        background: #111 url('img/hero-poster.jpg') center/cover no-repeat; /* first video frame while loading or unavailable */
       }
       .hero__video {
+        opacity: 0;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -208,6 +209,7 @@
         object-fit: cover;           /* fill without distortion */
         object-position: center;
       }
+      .hero__video.is-playing { opacity: 1; }
       .hero__scrim {                 /* improves text contrast */
         position: absolute;
 
@@ -297,9 +299,9 @@
 
     <!-- ===== Fullscreen hero video ===== -->
     <div id="hero" class="hero" aria-label="Intro">
-      <video class="hero__video" autoplay loop muted playsinline preload="metadata" poster="img/hero.webp" aria-hidden="true">
-        <!-- Replace with your file path. Provide multiple formats if available. -->
-        <source src="img/hero.mp4" type="video/mp4">
+      <video class="hero__video" autoplay loop muted playsinline preload="none" poster="img/hero-poster.jpg" aria-hidden="true">
+        <source data-src="img/hero.mp4" type="video/mp4">
+        <source data-src="img/hero.webm" type="video/webm">
       </video>
       <div class="hero__scrim"></div>
 
@@ -1873,6 +1875,7 @@
       });
     </script>
 
+    <script src="js/hero-video.js" defer></script>
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/menu.js"></script>
